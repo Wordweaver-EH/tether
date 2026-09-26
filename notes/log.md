@@ -66,3 +66,5 @@
      metacognition and ToM: give them decisions where they matter, or report them as negatives.
   3. Penalize or reason about scan thrashing: turning costs information (motion blur during fast turns?). This is a
      rule question, so log it as a decision if adopted.
+- **p1b-fixes landed** (d98049f, Sol high): all six findings addressed (H2 partial: cloned percepts, shared intrinsics documented); 69 tests. The mind now keeps a private, fallible estimate of its own hidden spear (D13 consequence).
+- Launched **p4-exploits** (Sol xhigh): strong dodger, parametrised policies, best-response search, verdict on degeneracy, repair candidates only if needed.

@@ -1,6 +1,14 @@
-# Tether, phase 2
+# Tether
 
-This repository contains the deterministic rules, visibility filter, raw session log, a CPU-only headless harness, and the phase 2 NPC mind and tournament. `SPEC.md` defines the rules. `DESIGN.md` defines the mind and later phases. Node 24 is required; there are no packages to install.
+This repository contains the deterministic rules, visibility filter, raw session log, a CPU-only headless harness, the NPC mind and tournament, and a static web client with Mind View replay. `SPEC.md` defines the rules. `DESIGN.md` defines the mind and later phases. Node 24 is required; there are no packages to install.
+
+## Play and inspect a bout
+
+Start the local static server with `node serve.mjs`, then open `http://localhost:8765/` for human versus mind. The server listens only on localhost and needs no build step or installed packages. Choose easy, normal, or hard and Mode B (forward cone, default) or Mode A (full view). Each bout lasts five minutes. The arena border flashes briefly after a point; play resumes immediately.
+
+Move with **WASD**; point the mouse to set desired facing. Facing turns at 360°/s. **Left click** throws, **right click** or **Space** recalls an embedded spear, and **Esc** pauses. An optional gamepad uses the left stick for movement, right stick for facing, right trigger to throw, and left trigger to recall. The sound button mutes the subtle action and score tones.
+
+After the bout, download the full JSONL log, including mind traces. Open `http://localhost:8765/replay/` (Mind View), choose that file or drag it onto the viewer. Mind View verifies the log by replaying raw inputs, then offers a scrubber, speed and frame controls, event jumps, world and belief overlays, and the mind's focus timeline. Browser rendering and audio require a browser playtest; `node --test` covers the pure client and replay logic.
 
 ## Run
 
@@ -64,7 +72,7 @@ Before the clone boundary and D13 spear visibility change, local 20-bout, 300-se
 | Logging | Required metadata, raw inputs, event fields, 20 Hz samples, visibility transitions, mode on every record, replay equality and tamper detection. |
 | Contamination | Legal spear states, no spear interaction, no auto recall, and seeded 20,000-step fuzz runs in **each** mode checking geometry, state, scoring, and stationary embeds. |
 
-The rendering and privacy checklist items (two separate participant displays, wedge drawing, hidden markers, arrows, camera, debug overlays, and audio) require a client. Phase 2 has no browser view, display, camera, or audio path, so they cannot be exercised here.
+The static client draws from the P1 percept and the replay shows the true world only as a separate inspection tool. Browser display, input, and audio behavior still need a browser playtest.
 
 ## Interpretations
 

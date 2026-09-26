@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tether — Play</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brandmark">T</span><span>TETHER <small>ARENA / 01</small></span></div>
+      <div id="hud" class="hud" hidden><span class="label">YOU</span><strong id="p1Score">0</strong><span class="divider">:</span><strong id="p2Score">0</strong><span class="label">MIND</span><span id="timer" class="timer">05:00</span></div>
+      <div class="tools"><button id="mute" class="text-button" aria-pressed="false">Sound on</button><a href="../replay/">Mind View ↗</a></div>
+    </header>
+    <section class="stage" aria-label="Tether arena">
+      <canvas id="arena" aria-label="Arena, player view"></canvas>
+      <div id="start" class="dialog">
+        <div class="eyebrow">A DUEL OF ATTENTION</div>
+        <h1>Hold the line.<br><em>Watch the other.</em></h1>
+        <p>One spear each. Throw to pin it in the arena. Recall it across a fixed line to catch your opponent.</p>
+        <div class="selectors">
+          <label>Mind difficulty<select id="difficulty"><option value="easy">Easy</option><option value="normal" selected>Normal</option><option value="hard">Hard</option></select></label>
+          <label>Visibility<select id="mode"><option value="MODE_B" selected>Mode B · forward cone</option><option value="MODE_A">Mode A · full view</option></select></label>
+        </div>
+        <button id="begin" class="primary">Enter arena <span>→</span></button>
+        <div id="stats" class="stats"></div>
+      </div>
+      <div id="pause" class="dialog compact" hidden><div class="eyebrow">PAUSED</div><h2>Take a breath.</h2><button id="resume" class="primary">Resume <span>→</span></button><p>Esc to resume</p></div>
+      <div id="result" class="dialog compact" hidden><div class="eyebrow">BOUT COMPLETE</div><h2 id="resultTitle">Draw</h2><p id="resultScore"></p><div class="actions"><button id="rematch" class="primary">Rematch <span>→</span></button><button id="download" class="secondary">Download log</button></div><a href="../replay/">Open Mind View ↗</a></div>
+    </section>
+    <footer><span><b>WASD</b> move <b>Mouse</b> face <b>Click</b> throw <b>Right click / Space</b> recall <b>Esc</b> pause</span><span id="status">MODE B / 120 HZ</span></footer>
+  </main>
+  <script type="module" src="app.mjs"></script>
+</body></html>

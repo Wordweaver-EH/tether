@@ -97,3 +97,4 @@ reusable part.
 - A named-strategy round robin is not a best-response search. Plan a parametrised-policy search as a standard reviewer
   (`codegame review --exploits`).
 - The ablation table format (full vs ablated, paired seeds, Wilson CIs, a "reading" column) is reusable as-is.
+- p2 wished for: live tournament progress and memory reporting, a CPU trace inspector, and automatic source-hash provenance on reports (the codegame record).

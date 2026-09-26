@@ -20,5 +20,5 @@
   - An earlier Sol max web-prototype build (two-human A/B) was killed by the owner after about 2 minutes ("first think
     it out"). Superseded.
   - p1-sim: Sol max (AA II 48), sim + perception + logging + tests. Launched 18:02.
-  - p2-mind: Astra max (II 53; first Astra trial, per Zvi's "Astra for ambitious coding"). Brief drafted; it launches
+  - p2-mind: Sol max (owner: avoid Astra). Brief drafted; it launches
     after p1 lands.

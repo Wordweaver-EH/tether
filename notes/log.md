@@ -68,3 +68,4 @@
      rule question, so log it as a decision if adopted.
 - **p1b-fixes landed** (d98049f, Sol high): all six findings addressed (H2 partial: cloned percepts, shared intrinsics documented); 69 tests. The mind now keeps a private, fallible estimate of its own hidden spear (D13 consequence).
 - Launched **p4-exploits** (Sol xhigh): strong dodger, parametrised policies, best-response search, verdict on degeneracy, repair candidates only if needed.
+- **Owner insight on the workspace negative:** the bottleneck is adaptive only under costs (finite processing, one body needing coherent action, the value of broadcast). Phase 2 gave the no-workspace mind free parallel compute. Decision D14: a finite cognition budget and a budget sweep; the same logic applies to metacognition and ToM (they pay only when information is costly).

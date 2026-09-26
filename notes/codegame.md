@@ -70,3 +70,13 @@ reusable part.
   Codegame's `new` template should require exactly that shape.
 - Separate "the tests pass" from "the tests check the rule": an adversarial review job (rv1) is part of the loop. It
   is a candidate `codegame review --tests` reviewer.
+- The adversarial test review paid off at once: 3 high, 2 medium, 1 low, plus weak tests. `review --tests` becomes a
+  core reviewer.
+- My own brief introduced a SPEC violation. Codegame should check briefs against SPEC, or better, generate the
+  perception contract from the SPEC's visibility section.
+- Agent isolation: percept deep copies are not enough in a shared realm. Codegame runs agents in worker threads with
+  structured clone at the boundary.
+- Plumbing: a job's files vanished inside the repo's gitignored jobs/ folder. Keep job logs outside the working tree
+  that agents edit (e.g. C:\arcx\research\codex-jobs\<game>\).
+- Rollout JSONL `task_complete.last_agent_message` recovers a final answer when answer.md is lost. Build this into
+  job status tooling.

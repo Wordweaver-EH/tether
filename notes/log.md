@@ -27,3 +27,16 @@
   cheap. Interpretations are in the README: 0.1 deadzones, 1e-9 epsilon, HELD spear at the owner's centre.
 - Launched **p2-mind** (Sol xhigh; snapshot/restore added to the brief) and **rv1-sim** (Sol high adversarial review
   of p1, read-only, scratch scripts only) in parallel.
+- **rv1-sim review** (Sol high, ~730k tokens) found six issues. Its answer.md and codex.log vanished from jobs/rv1-sim
+  (cause unknown; the report was recovered from the Codex session file). It is in research/2026-09-26-rv1-sim-review.md.
+  - **H1: own off-cone non-HELD spear visible in MODE_B.** My p1 brief caused this ("you always know your own spear"),
+    contradicting SPEC. Decision D13: follow SPEC.
+  - **H2:** agents share the JS realm and could monkeypatch builtins to see the world. Irrelevant for our own mind;
+    relevant to codegame (untrusted agents run in workers).
+  - **H3, a real bug:** a sustained shallow wall slide accumulates penetration, and a throw from there passes through
+    obstacle A.
+  - **M4:** the FOV epsilon widens the cone. **M5:** replay verifies only hashes, not logged fields. **L6:** the hash
+    depends on key order.
+  - Test gaps: the "no tunnelling" test had its endpoint inside the victim; no corner, shallow-slide, or
+    neutralize-and-hit reset tests.
+  - Fix job p1b queued after p2 lands (p2 is editing sim.js now).

@@ -12,3 +12,4 @@
 | D8 | 2026-09-26 | Working name "Tether" | the spear is tethered to its owner by the fixed recall line | owner prefers another |
 | D9 | 2026-09-26 | Model routing: p1 sim on Sol max; p2 mind on Astra max (first Astra trial); Claude reviews and owns design/taste | AA II calibration (Sol 48, Astra 53); Zvi review: Astra for ambitious long coding | ledger outcomes |
 | D10 | 2026-09-26 | This session is the pilot for a reusable codegame harness (codefilm for games); lessons go in notes/codegame.md; arena/replay are built game-agnostic | owner: this session is for the skills, taste and plumbing | - |
+| D11 | 2026-09-26 | Prior-art repos cloned read-only to C:rcx	hird_party\codegame (godot-mcp, godot-agent-loop, gua, awesome-gamedev-agent-skills, vitric, godogen); fork or vendor only after r1 + Tether phases show what we need | owner: install/fork freely; avoid adopting before evidence | - |

@@ -61,6 +61,23 @@ test('generic runner passes the seed into a game and replays it without snapshot
   assert.equal(replayGameLog(game, hooks, result.log).score.a, 19);
 });
 
+test('arena agents receive structured clones even if a game exposes an object reference', () => {
+  const game = {
+    CONSTANTS: {}, createWorld: () => ({ tick: 0, position: { x: 1 } }),
+    percept: (world) => ({ position: world.position }),
+    step(world) { world.tick++; return []; },
+    hashWorld: (world) => String(world.position.x),
+  };
+  const hooks = { playerIds: ['a', 'b'], simHz: () => 1,
+    boutSeconds: () => 1, ended: (world) => world.tick >= 1,
+    score: (world) => ({ a: world.position.x, b: 0 }),
+    elapsed: (world) => world.tick };
+  const result = runGameBout({ game, adapter: hooks,
+    agents: [{ act(view) { view.position.x = 999; return {}; } },
+      { act: () => ({}) }], mode: 'X' });
+  assert.equal(result.score.a, 1);
+});
+
 test('scripted families receive only percepts and cannot distinguish hidden worlds', () => {
   const a = createWorld(), b = createWorld();
   for (const w of [a, b]) w.players[0].facing = { x: 1, y: 0 };

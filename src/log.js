@@ -1,5 +1,6 @@
 import { CONSTANTS, createWorld, hashWorld, step } from './sim.js';
 import { isVisible } from './perception.js';
+import { isDeepStrictEqual } from 'node:util';
 
 const E = CONSTANTS.experiment;
 const T = CONSTANTS.technical;
@@ -150,12 +151,14 @@ export function replayFromLog(lines) {
   }
   const world = createWorld({ moveDeadzone: metadata.deadzones.move,
     aimDeadzone: metadata.deadzones.aim, epsilon: metadata.epsilon });
+  const logger = createSessionLogger({ world, mode: metadata.mode });
+  const actual = records.slice(1).filter((record) => record.recordType !== 'MIND_TRACE');
   let pending = {};
-  let verifiedSamples = 0;
-  for (const record of records.slice(1)) {
+  for (const record of actual) {
     if (record.mode !== metadata.mode) throw new Error('mixed modes in log');
     if (record.recordType === 'INPUT') {
-      if (record.step !== world.tick + 1 || pending[record.player]) {
+      if (record.step !== world.tick + 1 || !['P1', 'P2'].includes(record.player) ||
+          pending[record.player]) {
         throw new Error(`unexpected input at step ${record.step}`);
       }
       pending[record.player] = {
@@ -164,16 +167,25 @@ export function replayFromLog(lines) {
         throw: record.throw_pressed, recall: record.recall_pressed,
       };
       if (pending.P1 && pending.P2) {
-        step(world, [pending.P1, pending.P2]);
+        const inputs = [pending.P1, pending.P2];
+        const events = step(world, inputs);
+        logger.recordStep(world, inputs, events);
         pending = {};
       }
-    } else if (record.recordType === 'SAMPLE') {
-      if (record.step !== world.tick || record.hash !== hashWorld(world)) {
-        throw new Error(`world hash mismatch at step ${record.step}`);
-      }
-      verifiedSamples++;
     }
   }
   if (Object.keys(pending).length) throw new Error('incomplete input pair');
+  const expected = logger.records.slice(1);
+  if (actual.length !== expected.length) throw new Error('log record count mismatch');
+  let verifiedSamples = 0;
+  for (let index = 0; index < actual.length; index++) {
+    const record = actual[index];
+    const generated = expected[index];
+    if (record.recordType === 'SAMPLE' && record.hash !== generated.hash)
+      throw new Error(`world hash mismatch at step ${record.step}`);
+    if (!isDeepStrictEqual(record, clone(generated)))
+      throw new Error(`log ${record.recordType} mismatch at step ${record.step}`);
+    if (record.recordType === 'SAMPLE') verifiedSamples++;
+  }
   return { world, verifiedSamples, finalHash: hashWorld(world) };
 }

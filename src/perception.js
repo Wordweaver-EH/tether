@@ -6,13 +6,13 @@ const copy = (point) => ({ x: point.x, y: point.y });
 export function isVisible(viewerPos, viewerFacing, targetPos) {
   const dx = targetPos.x - viewerPos.x;
   const dy = targetPos.y - viewerPos.y;
-  const distance = Math.hypot(dx, dy);
-  if (distance === 0) return true;
-  const facingLength = Math.hypot(viewerFacing.x, viewerFacing.y);
-  if (facingLength === 0) throw new RangeError('viewerFacing must be nonzero');
-  const projection = (viewerFacing.x * dx + viewerFacing.y * dy) / facingLength;
-  // The tiny roundoff allowance includes coordinates constructed at exactly 60 degrees.
-  return projection + 1e-12 >= distance * Math.cos(E.FOV_HALF_ANGLE_RAD);
+  const distanceSquared = dx * dx + dy * dy;
+  if (distanceSquared === 0) return true;
+  const facingSquared = viewerFacing.x ** 2 + viewerFacing.y ** 2;
+  if (facingSquared === 0) throw new RangeError('viewerFacing must be nonzero');
+  const projection = viewerFacing.x * dx + viewerFacing.y * dy;
+  // cos(60°)^2 = 1/4. Squaring avoids an absolute distance allowance.
+  return projection >= 0 && 4 * projection * projection >= facingSquared * distanceSquared;
 }
 
 function spearView(spear, own) {
@@ -37,13 +37,16 @@ export function percept(world, viewerId, mode) {
   const ownSpear = world.spears[index];
   const enemySpear = world.spears[1 - index];
   const bodyVisible = mode === 'MODE_A' || isVisible(own.position, own.facing, enemy.position);
+  const ownSpearVisible = mode === 'MODE_A' || ownSpear.state === 'HELD' ||
+    isVisible(own.position, own.facing, ownSpear.position);
   const spearVisible = mode === 'MODE_A' || (enemySpear.state === 'HELD'
     ? bodyVisible : isVisible(own.position, own.facing, enemySpear.position));
   return {
     viewerId, mode,
     own: {
       position: copy(own.position), facing: copy(own.facing),
-      velocity: copy(own.velocity), spear: spearView(ownSpear, true),
+      velocity: copy(own.velocity),
+      spear: ownSpearVisible ? spearView(ownSpear, true) : null,
     },
     scores: { P1: world.players[0].score, P2: world.players[1].score },
     time: { elapsedSec: world.elapsedSec, remainingSec: world.remainingSec,

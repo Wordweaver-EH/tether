@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createWorld, snapshotWorld, restoreWorld, hashWorld, step } from '../src/sim.js';
 import { percept } from '../src/perception.js';
 import { createMind } from '../src/mind/index.mjs';
+import { createOwnSpearMemory } from '../src/mind/own-spear.mjs';
 import { createBelief } from '../src/mind/belief.mjs';
 import { createWorkspace } from '../src/mind/workspace.mjs';
 import { specialists } from '../src/mind/specialists.mjs';
@@ -33,6 +34,38 @@ test('a hidden opponent provides no information to the mind, and it cannot acces
     assert.deepEqual(ma.act(va, 1 / 120), mb.act(vb, 1 / 120));
   }
   assert.deepEqual(ma.trace(), mb.trace());
+});
+
+test('the mind keeps a private estimate when its own embedded spear leaves the cone', () => {
+  const world = createWorld();
+  world.players[0].facing = { x: -1, y: 0 };
+  world.spears[0].state = 'EMBEDDED';
+  world.spears[0].position = { x: -8, y: 0 };
+  world.spears[0].embedSurfaceId = 'WALL_W';
+  const memory = createOwnSpearMemory();
+  const visible = percept(world, 'P1', 'MODE_B');
+  assert.equal(memory.observe(visible).state, 'EMBEDDED');
+  world.players[0].facing = { x: 1, y: 0 };
+  const hidden = percept(world, 'P1', 'MODE_B');
+  assert.equal(hidden.own.spear, null);
+  hidden.time.elapsedSec = 1;
+  assert.deepEqual(memory.observe(hidden).position, { x: -8, y: 0 });
+  const thrown = createOwnSpearMemory();
+  const held = percept(createWorld(), 'P1', 'MODE_B');
+  held.own.facing = { x: -1, y: 0 };
+  thrown.observe(held);
+  thrown.command({ throw: true }, held, 0);
+  const estimated = thrown.observe(hidden);
+  assert.equal(estimated.state, 'EMBEDDED');
+  assert.equal(estimated.embedSurfaceId, 'WALL_W');
+  assert.deepEqual(estimated.position, { x: -8, y: 0 });
+  const mind = createMind({ seed: 17 });
+  for (let i = 0; i < 80; i++) {
+    const view = structuredClone(i < 25 ? visible : hidden);
+    view.time.elapsedSec = i / 120;
+    mind.act(view, 1 / 120);
+  }
+  assert.ok(mind.trace().length > 0);
 });
 
 test('cognitive cycle is 30 Hz after latency; trace reports only focus transitions', () => {

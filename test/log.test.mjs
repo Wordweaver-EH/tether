@@ -137,6 +137,21 @@ test('JSONL replay reproduces all sample hashes and detects tampering', () => {
     JSON.parse(line).step === 6);
   tampered[sampleIndex] = JSON.stringify({ ...JSON.parse(tampered[sampleIndex]), hash: 'bad' });
   assert.throws(() => replayFromLog(tampered), /world hash mismatch at step 6/);
+  const changedSample = [...result.logLines];
+  const sample = JSON.parse(changedSample[sampleIndex]);
+  sample.players.P2.position.x = 999;
+  changedSample[sampleIndex] = JSON.stringify(sample);
+  assert.throws(() => replayFromLog(changedSample), /log SAMPLE mismatch at step 6/);
+  const eventIndex = result.logLines.findIndex((line) =>
+    JSON.parse(line).recordType === 'EVENT');
+  assert.ok(eventIndex > 0);
+  const changedEvent = [...result.logLines];
+  const event = JSON.parse(changedEvent[eventIndex]);
+  event.type = 'FORGED_EVENT';
+  changedEvent[eventIndex] = JSON.stringify(event);
+  assert.throws(() => replayFromLog(changedEvent), /log EVENT mismatch/);
+  const missingEvent = result.logLines.filter((_, index) => index !== eventIndex);
+  assert.throws(() => replayFromLog(missingEvent), /log record count mismatch/);
 });
 
 test('headless agents receive isolated percepts and the harness returns scores and events', () => {

@@ -4,6 +4,7 @@ import { createWorkspace } from './workspace.mjs';
 import { createAttentionSchema, createAffect, createMemory, createReflection,
   createSpeech, planMove, planGaze } from './components.mjs';
 import { rng, point, add, clamp } from './math.mjs';
+import { createOwnSpearMemory } from './own-spear.mjs';
 
 const FLAGS = ['noBelief', 'noPrediction', 'singleUtility', 'noWorkspace',
   'noHysteresis', 'noMetacog', 'noAttentionSchema', 'noToM'];
@@ -40,6 +41,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
   memory.load(memorySnapshot);
   const reflection = createReflection();
   const speech = createSpeech();
+  const ownSpearMemory = createOwnSpearMemory();
   const records = [];
   let tick = 0;
   let queue = [];
@@ -53,6 +55,10 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
 
   function cycle(view) {
     const now = view.time.elapsedSec;
+    const visibleOwnSpear = !!view.own.spear;
+    const rememberedSpear = ownSpearMemory.observe(view);
+    view = { ...view, own: { ...view.own, spear: rememberedSpear },
+      ownSpearVisible: visibleOwnSpear };
     memory.observePercept(view, now);
     if (view.opponent) lastVisibleAt = now;
     if (view.own.spear.state !== previousSpearState) {
@@ -83,6 +89,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     input.moveX = move.x; input.moveY = move.y;
     input.throw = !!chosen.outputs.throw && view.own.spear.state === 'HELD';
     input.recall = !!chosen.outputs.recall && view.own.spear.state === 'EMBEDDED';
+    ownSpearMemory.command(input, view, now + config.latencySec);
     const counterfactualNote = input.recall ||
       (chosen.ignition && chosen.focus === 'Anchor') ?
       reflection.considerRecall({ time: now, spear: view.own.spear,

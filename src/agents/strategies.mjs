@@ -1,4 +1,5 @@
 import { add, sub, unit, dot, distance, lineDistance, point, clamp } from '../mind/math.mjs';
+import { createOwnSpearMemory } from '../mind/own-spear.mjs';
 
 const blank = () => ({ moveX: 0, moveY: 0, aimX: 0, aimY: 0,
   throw: false, recall: false });
@@ -16,11 +17,13 @@ function script(kind) {
   let time = 0, embeddedAt = -Infinity, priorSpear = 'HELD';
   let lastSeen = null, previousShot = -Infinity;
   let knownEnemySpear = null;
+  const ownSpear = createOwnSpearMemory();
   return {
     act(view, dt) {
       time += dt;
       const input = blank();
-      const me = view.own.position, spear = view.own.spear;
+      const me = view.own.position, spear = ownSpear.observe(view);
+      const finish = () => { ownSpear.command(input, view, view.time.elapsedSec); return input; };
       if (view.opponent) lastSeen = { ...view.opponent.position };
       if (spear.state !== priorSpear) {
         if (spear.state === 'EMBEDDED') embeddedAt = time;
@@ -46,7 +49,7 @@ function script(kind) {
           input.throw = spear.state === 'HELD' && aligned(view.own.facing, d, 0.07);
         }
         if (spear.state === 'EMBEDDED') input.recall = true;
-        return input;
+        return finish();
       }
       if (kind === 'camper') {
         const corner = point(me.x > 0 ? 7.25 : -7.25, me.y >= 0 ? 4.25 : -4.25);
@@ -56,7 +59,7 @@ function script(kind) {
           input.throw = spear.state === 'HELD' && aligned(view.own.facing, d, 0.085);
         } else face(input, me, point(0, 0));
         if (spear.state === 'EMBEDDED' && time - embeddedAt > 1.8) input.recall = true;
-        return input;
+        return finish();
       }
       if (kind === 'spearRusher') {
         if (knownEnemySpear?.state === 'EMBEDDED') {
@@ -73,7 +76,7 @@ function script(kind) {
           input.throw = aligned(view.own.facing, d, 0.08);
         }
         if (spear.state === 'EMBEDDED' && time - embeddedAt > 0.9) input.recall = true;
-        return input;
+        return finish();
       }
       if (kind === 'directShooter') {
         if (seen) {
@@ -86,7 +89,7 @@ function script(kind) {
           move(input, me, known ?? point(0, 0));
         }
         if (spear.state === 'EMBEDDED') input.recall = true;
-        return input;
+        return finish();
       }
       if (kind === 'immediateRecaller') {
         const target = seen ?? wall;
@@ -95,7 +98,7 @@ function script(kind) {
         input.throw = spear.state === 'HELD' && aligned(view.own.facing, d, 0.11) &&
           time - previousShot > 0.2;
         if (spear.state === 'EMBEDDED') input.recall = true;
-        return input;
+        return finish();
       }
       if (kind === 'embedWaiter') {
         if (spear.state === 'HELD') {
@@ -113,7 +116,7 @@ function script(kind) {
             crossing.t > 0 && crossing.t < 1 && time - embeddedAt > 0.25;
           if (time - embeddedAt > 7) input.recall = true;
         } else if (known) face(input, me, known);
-        return input;
+        return finish();
       }
       throw new RangeError(`unknown strategy: ${kind}`);
     },

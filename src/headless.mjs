@@ -22,9 +22,10 @@ export function runBout({ agents, mode = 'MODE_B', seed = 1,
     agent.settings?.() ?? null);
   const events = [];
   for (let tick = 0; tick < ticks && !world.ended; tick++) {
-    // percept() constructs independent copies; each agent receives only its view.
+    // Clone across the agent boundary so neither a view nor returned input
+    // shares object references with the simulation.
     const inputs = agents.map((agent, index) =>
-      agent.act(percept(world, `P${index + 1}`, mode), dt) ?? {});
+      structuredClone(agent.act(structuredClone(percept(world, `P${index + 1}`, mode)), dt) ?? {}));
     const currentEvents = step(world, inputs);
     for (const event of currentEvents) {
       events.push({ ...event, step: world.tick, timestamp: world.elapsedSec });

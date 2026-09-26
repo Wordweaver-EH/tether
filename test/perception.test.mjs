@@ -14,6 +14,12 @@ test('the cone includes exact 60 degree rays and zero offset, excludes just outs
   const beyond = Math.PI / 3 + 1e-8;
   assert.equal(isVisible(origin, facing, { x: Math.cos(beyond), y: Math.sin(beyond) }), false);
   assert.equal(isVisible(origin, facing, { x: -1, y: 0 }), false);
+  for (const distance of [1e-6, 1, 1e6]) {
+    const outside = Math.PI / 3 + 1e-13;
+    assert.equal(isVisible(origin, facing, { x: distance * Math.cos(outside),
+      y: distance * Math.sin(outside) }), false, `outside at ${distance}`);
+  }
+  assert.equal(isVisible(origin, facing, { x: -1e-13, y: 0 }), false);
 });
 
 test('mode B hides the opponent and HELD spear completely, including nested fields', () => {
@@ -39,7 +45,7 @@ test('mode B hides the opponent and HELD spear completely, including nested fiel
   assert.equal(view.cone.occlusion, false);
 });
 
-test('own spear is always known; a non-held enemy spear is independent of enemy body', () => {
+test('own and enemy non-held spears are independently cone filtered in mode B', () => {
   const w = createWorld();
   w.players[0].facing = { x: -1, y: 0 };
   w.spears[0].state = 'EMBEDDED';
@@ -50,10 +56,21 @@ test('own spear is always known; a non-held enemy spear is independent of enemy 
   w.spears[1].direction = { x: -1, y: 0 };
   const view = percept(w, 'P1', 'MODE_B');
   assert.equal(view.opponent, null);
-  assert.deepEqual(view.own.spear.position, { x: 2.22, y: 4.44 });
-  assert.equal(view.own.spear.embedSurfaceId, 'A_N');
+  assert.equal(view.own.spear, null);
   assert.equal(view.opponentSpear.state, 'OUTBOUND');
   assert.deepEqual(view.opponentSpear.position, { x: -6, y: 0 });
+  assert.equal(JSON.stringify(view).includes('2.22'), false);
+  assert.equal(JSON.stringify(view).includes('A_N'), false);
+  assert.equal(percept(w, 'P1', 'MODE_A').own.spear.embedSurfaceId, 'A_N');
+  w.spears[0].position = { x: -7, y: 0 };
+  assert.deepEqual(percept(w, 'P1', 'MODE_B').own.spear.position, { x: -7, y: 0 });
+  w.spears[0].state = 'HELD';
+  w.spears[0].position = { ...w.players[0].position };
+  assert.equal(percept(w, 'P1', 'MODE_B').own.spear.state, 'HELD');
+  w.players[1].facing = { x: 1, y: 0 };
+  w.spears[1].state = 'EMBEDDED';
+  w.spears[1].position = { x: -6, y: 0 };
+  assert.equal(percept(w, 'P2', 'MODE_B').own.spear, null);
 });
 
 test('no obstacle occlusion or range cutoff; mode A sees both bodies and spears', () => {

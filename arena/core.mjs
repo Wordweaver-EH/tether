@@ -16,7 +16,8 @@ export function runGameBout({ game, adapter, agents, mode, seed = 1,
   const ids = adapter.playerIds;
   for (let tick = 0; tick < Math.round(seconds * hz) && !adapter.ended(world); tick++) {
     const views = ids.map((id) => game.percept(world, id, mode));
-    const inputs = agents.map((agent, index) => agent.act(views[index], dt) ?? {});
+    const inputs = agents.map((agent, index) =>
+      structuredClone(agent.act(structuredClone(views[index]), dt) ?? {}));
     const currentEvents = game.step(world, inputs);
     adapter.observeStep?.(metricState, { world, views, inputs,
       events: currentEvents, dt, mode, tick: tick + 1 });

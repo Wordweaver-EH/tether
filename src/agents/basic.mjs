@@ -27,17 +27,19 @@ export function randomWalker(seed = 1) {
 
 export function aimAndThrow() {
   let recallClock = 0;
+  const ownSpear = createOwnSpearMemory();
   return {
     act(view, dt) {
       const input = noInput();
+      const spear = ownSpear.observe(view);
       if (view.opponent) {
         input.aimX = view.opponent.position.x - view.own.position.x;
         input.aimY = view.opponent.position.y - view.own.position.y;
       }
-      if (view.own.spear.state === 'HELD' && view.opponent) {
+      if (spear.state === 'HELD' && view.opponent) {
         input.throw = true;
         recallClock = 0;
-      } else if (view.own.spear.state === 'EMBEDDED') {
+      } else if (spear.state === 'EMBEDDED') {
         recallClock += dt;
         if (recallClock >= 1) {
           input.recall = true;
@@ -46,7 +48,9 @@ export function aimAndThrow() {
       } else {
         recallClock = 0;
       }
+      ownSpear.command(input, view, view.time.elapsedSec);
       return input;
     },
   };
 }
+import { createOwnSpearMemory } from '../mind/own-spear.mjs';

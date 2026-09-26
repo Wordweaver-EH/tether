@@ -27,6 +27,12 @@ test('arena dimensions, starts, obstacle sizes, and rotational symmetry', () => 
   assert.deepEqual(b, { id: 'B', minX: -a.maxX, maxX: -a.minX,
     minY: -a.maxY, maxY: -a.minY });
   assert.notEqual(hashWorld(createWorld()), hashWorld((() => { const w = createWorld(); w.tick++; return w; })()));
+  const same = createWorld();
+  same.players[0].position = { y: 0, x: -5.5 };
+  same.spears[0].position = { y: 0, x: -5.5 };
+  same.technical = { epsilon: t.EPSILON, aimDeadzone: t.AIM_DEADZONE,
+    moveDeadzone: t.MOVE_DEADZONE };
+  assert.equal(hashWorld(same), hashWorld(createWorld()));
 });
 
 test('movement is symmetric, full speed above deadzone, stops immediately, and ignores body overlap', () => {
@@ -119,6 +125,43 @@ test('a near miss stays a near miss at swept precision', () => {
   const events = step(w, [blank(), blank()]);
   assert.ok(!events.some((event) => event.type === 'HIT'));
   near(w.spears[0].position.x, 0.05);
+});
+
+test('a grazing swept spear hits while both endpoints are outside the body', () => {
+  const w = createWorld();
+  putSpear(w, 0, 'OUTBOUND', -0.05, 0, 1, 0);
+  w.players[1].position = { x: 0, y: 0.349 };
+  assert.ok(Math.hypot(-0.05, -0.349) > 0.35);
+  assert.ok(Math.hypot(0.05, -0.349) > 0.35);
+  const events = step(w, [blank(), blank()]);
+  assert.equal(events.find((event) => event.type === 'HIT')?.phase, 'OUTBOUND');
+});
+
+test('an obstacle corner is first contact and an inside spear contacts at t=0', () => {
+  const corner = createWorld();
+  putSpear(corner, 0, 'OUTBOUND', -3.05, 0.2, Math.SQRT1_2, Math.SQRT1_2);
+  const event = step(corner, [blank(), blank()]).find((item) => item.type === 'EMBED');
+  assert.equal(event.surface, 'A_W');
+  near(event.position.x, -3);
+  near(event.position.y, 0.25);
+  const inside = createWorld();
+  putSpear(inside, 0, 'OUTBOUND', -2.9, 1, 1, 0);
+  const embedded = step(inside, [blank(), blank()]).find((item) => item.type === 'EMBED');
+  assert.deepEqual(embedded.position, { x: -2.9, y: 1 });
+  assert.equal(embedded.surface, 'A_W');
+});
+
+test('sustained shallow wall slide stays outside and a throw contacts at spawn', () => {
+  const w = createWorld();
+  w.players[0].position = { x: -3.35, y: 0.5 };
+  for (let i = 0; i < 60; i++) {
+    step(w, [{ ...blank(), moveX: 1e-6, moveY: 1 }, blank()]);
+    assert.ok(w.players[0].position.x <= -3.35, `step ${i}`);
+  }
+  const events = step(w, [{ ...blank(), throw: true }, blank()]);
+  assert.equal(events.find((event) => event.type === 'EMBED')?.surface, 'A_W');
+  near(w.spears[0].position.x, -3);
+  assert.equal(w.spears[0].state, 'EMBEDDED');
 });
 
 test('every static face has its own id and contact point', () => {
@@ -327,6 +370,21 @@ test('simultaneous hits award both players and reset only once, preserving score
   assert.deepEqual(w.spears.map((s) => s.recallTarget), [null, null]);
   near(w.elapsedSec, 1 / 120);
   assert.equal(w.players[0].score, 1);
+});
+
+test('neutralization followed by a hit in one step scores and resets once', () => {
+  const w = createWorld();
+  w.players[1].position = { x: -7.63, y: 0 };
+  putSpear(w, 0, 'EMBEDDED', -8, 0, -1, 0, 'WALL_W');
+  putSpear(w, 1, 'OUTBOUND', -5.93, 0, 1, 0);
+  const events = step(w, [blank(), { ...blank(), moveX: -1 }]);
+  assert.deepEqual(events.map((event) => event.type),
+    ['SPEAR_NEUTRALIZED', 'HIT', 'RESET']);
+  assert.deepEqual(w.players.map((player) => player.score), [0, 1]);
+  assert.deepEqual(w.spears.map((spear) => spear.state), ['HELD', 'HELD']);
+  assert.deepEqual(w.players.map((player) => player.position),
+    [{ x: -5.5, y: 0 }, { x: 5.5, y: 0 }]);
+  near(w.elapsedSec, 1 / 120);
 });
 
 test('scores have no cap', () => {

@@ -93,13 +93,14 @@ function boxEntry(start, delta, box, epsilon) {
     const d = delta[axis];
     const lo = axis === 'x' ? box.minX : box.minY;
     const hi = axis === 'x' ? box.maxX : box.maxY;
-    if (Math.abs(d) <= epsilon) {
-      if (s < lo - epsilon || s > hi + epsilon) return null;
+    if (d === 0) {
+      if (s < lo || s > hi) return null;
       continue;
     }
     const near = d > 0 ? (lo - s) / d : (hi - s) / d;
     const far = d > 0 ? (hi - s) / d : (lo - s) / d;
-    if (near > entry) {
+    if (entry === -Infinity || near > entry +
+        16 * Number.EPSILON * Math.max(1, Math.abs(entry))) {
       entry = near;
       face = axis === 'x' ? (d > 0 ? 'W' : 'E') : (d > 0 ? 'S' : 'N');
       normal = axis === 'x' ? vec(d > 0 ? -1 : 1, 0) : vec(0, d > 0 ? -1 : 1);
@@ -107,7 +108,7 @@ function boxEntry(start, delta, box, epsilon) {
     exit = Math.min(exit, far);
   }
   if (entry > exit + epsilon || entry < -epsilon || entry > 1 + epsilon ||
-      dot(delta, normal) >= -epsilon) return null;
+      dot(delta, normal) >= 0) return null;
   return { t: Math.max(0, Math.min(1, entry)), face, normal };
 }
 
@@ -123,6 +124,29 @@ function earliest(best, candidate, epsilon) {
 function staticContact(start, delta, radius, epsilon) {
   let best = null;
   const arena = E.ARENA;
+  if (radius === 0) {
+    // A point spawned on or inside geometry has already made contact.
+    for (const [inside, surface, normal] of [
+      [start.x <= arena.minX, 'WALL_W', vec(1, 0)],
+      [start.x >= arena.maxX, 'WALL_E', vec(-1, 0)],
+      [start.y <= arena.minY, 'WALL_S', vec(0, 1)],
+      [start.y >= arena.maxY, 'WALL_N', vec(0, -1)],
+    ]) if (inside) best = earliest(best, { t: 0, surface, normal }, epsilon);
+    for (const obstacle of E.OBSTACLES) {
+      if (start.x < obstacle.minX || start.x > obstacle.maxX ||
+          start.y < obstacle.minY || start.y > obstacle.maxY) continue;
+      const faces = [
+        [start.x - obstacle.minX, 'W', vec(-1, 0)],
+        [obstacle.maxX - start.x, 'E', vec(1, 0)],
+        [start.y - obstacle.minY, 'S', vec(0, -1)],
+        [obstacle.maxY - start.y, 'N', vec(0, 1)],
+      ];
+      faces.sort((a, b) => a[0] - b[0] || a[1].localeCompare(b[1]));
+      best = earliest(best, { t: 0, surface: `${obstacle.id}_${faces[0][1]}`,
+        normal: faces[0][2] }, epsilon);
+    }
+    if (best) return best;
+  }
   const bounds = [
     [delta.x < 0, 'WALL_W', (arena.minX + radius - start.x) / delta.x, vec(1, 0)],
     [delta.x > 0, 'WALL_E', (arena.maxX - radius - start.x) / delta.x, vec(-1, 0)],
@@ -159,6 +183,22 @@ function moveWithSlide(position, delta, epsilon) {
       remaining.x -= inward * hit.normal.x;
       remaining.y -= inward * hit.normal.y;
     }
+  }
+  // Remove roundoff accumulated by long shallow slides on expanded faces.
+  pos.x = Math.max(E.ARENA.minX + E.PLAYER_RADIUS,
+    Math.min(E.ARENA.maxX - E.PLAYER_RADIUS, pos.x));
+  pos.y = Math.max(E.ARENA.minY + E.PLAYER_RADIUS,
+    Math.min(E.ARENA.maxY - E.PLAYER_RADIUS, pos.y));
+  for (const box of E.OBSTACLES) {
+    const minX = box.minX - E.PLAYER_RADIUS;
+    const maxX = box.maxX + E.PLAYER_RADIUS;
+    const minY = box.minY - E.PLAYER_RADIUS;
+    const maxY = box.maxY + E.PLAYER_RADIUS;
+    if (pos.x <= minX || pos.x >= maxX || pos.y <= minY || pos.y >= maxY) continue;
+    const faces = [[pos.x - minX, 'x', minX], [maxX - pos.x, 'x', maxX],
+      [pos.y - minY, 'y', minY], [maxY - pos.y, 'y', maxY]];
+    faces.sort((a, b) => a[0] - b[0]);
+    pos[faces[0][1]] = faces[0][2];
   }
   return pos;
 }
@@ -342,12 +382,15 @@ export function step(world, inputs) {
   return events;
 }
 
-// JSON uses a fixed field order here; the hash includes every mutable rule state.
+// Hash an explicit scalar sequence, independent of object insertion order.
 export function hashWorld(world) {
   const state = [world.tick, world.elapsedSec, world.remainingSec, world.ended,
-    world.technical, world.players.map((p) => [p.id, p.position, p.velocity, p.facing, p.score]),
-    world.spears.map((s) => [s.owner, s.state, s.position, s.direction,
-      s.embedSurfaceId, s.recallTarget])];
+    world.technical.moveDeadzone, world.technical.aimDeadzone, world.technical.epsilon,
+    ...world.players.flatMap((p) => [p.id, p.position.x, p.position.y,
+      p.velocity.x, p.velocity.y, p.facing.x, p.facing.y, p.score]),
+    ...world.spears.flatMap((s) => [s.owner, s.state, s.position.x, s.position.y,
+      s.direction.x, s.direction.y, s.embedSurfaceId,
+      s.recallTarget?.x ?? null, s.recallTarget?.y ?? null])];
   const json = JSON.stringify(state);
   let hash = 0xcbf29ce484222325n;
   for (let i = 0; i < json.length; i++) {

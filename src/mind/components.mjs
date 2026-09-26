@@ -5,7 +5,8 @@ export function createAttentionSchema(ablations = {}) {
   let lastOpponent = null;
   function update(view, belief, now) {
     if (view.opponent) refreshed.opponent = now;
-    if (view.own.spear.state !== 'HELD') refreshed.ownSpear = now;
+    if (view.ownSpearVisible !== false && view.own.spear.state !== 'HELD')
+      refreshed.ownSpear = now;
     if (view.opponentSpear) refreshed.enemySpear = now;
     if (view.opponent && !ablations.noToM) {
       lastOpponent = { origin: { ...view.opponent.position }, facing: { ...view.opponent.facing },

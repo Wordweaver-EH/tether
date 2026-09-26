@@ -40,3 +40,29 @@
   - Test gaps: the "no tunnelling" test had its endpoint inside the victim; no corner, shallow-slide, or
     neutralize-and-hit reset tests.
   - Fix job p1b queued after p2 lands (p2 is editing sim.js now).
+- **p2-mind landed** (commit ee086fa, Sol xhigh, ~2 h). Full report in reports/phase2-tournament.md; the tuned run was
+  8,432 bouts in 480 s on 8 threads.
+  - The normal mind vs scripts (tuned): camper 35%, spinner 13%, spearRusher 58%, **immediateRecaller 3%,
+    directShooter 0.5%**, embedWaiter ~100%.
+  - **immediateRecaller beats embedWaiter 384/384.** Suspected mechanism: a missed direct throw embeds in the wall
+    behind the target, so an instant recall is a free second shot through the target's area. This is the SPEC's
+    "immediate recall dominates" failure mode, but it is unconfirmed until a strong dodger and a best-response search
+    exist.
+  - Ablations (full mind vs ablated):
+    - **clearly load-bearing:** singleUtility 99.6% and noAttentionSchema 75.7%;
+    - **null:** noMetacog 50%, noToM 55%, noPrediction and noBelief ~46%;
+    - **negative:** noWorkspace 25% and noHysteresis 29%. The bottleneck as designed is pure cost.
+  - The mind scans at ~280 facing reversals per minute: it has become the degenerate scanner itself.
+  - The tuned mind's embeds are 72% "second location" (median 8.2 s before recall), but many end at a hard-coded 8 s
+    threshold.
+- Launched **p1b-fixes** (Sol high) and **p3-client** (Sol high: web play + Mind View) in parallel. They touch
+  disjoint files. Job folders now live in C:\arcx\research\codex-jobs\tether\.
+- **Next (my design calls):**
+  1. Strong dodger + best-response search (parametrised policy family, evolutionary search) to test whether the rules
+     are degenerate. If they are, run minimal rule-repair candidates through the same search before touching the mind
+     again.
+  2. Make the workspace pay for itself as attention does in brains: focus should buy something (sharper aim, shorter
+     latency or better prediction on the attended item), paid for with worse processing of the rest. The same goes for
+     metacognition and ToM: give them decisions where they matter, or report them as negatives.
+  3. Penalize or reason about scan thrashing: turning costs information (motion blur during fast turns?). This is a
+     rule question, so log it as a decision if adopted.

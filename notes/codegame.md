@@ -88,3 +88,12 @@ reusable part.
   that agents edit (e.g. C:\arcx\research\codex-jobs\<game>\).
 - Rollout JSONL `task_complete.last_agent_message` recovers a final answer when answer.md is lost. Build this into
   job status tooling.
+### Phase 2 (mind + arena)
+- The arena immediately answered the design's biggest question (does immediate recall dominate?) with 8k bouts in 8
+  minutes. **Tournaments are the core loop of codegame**, the equivalent of codefilm's preview.
+- Scripted strategies need their own validation: Sol found `embedWaiter` shooting through the spawn opponent. Codegame
+  should sanity-check strategy scripts (they do what their name says) before trusting tables.
+- Metric definitions must be versioned (`metricVersion`) and must exclude teleports/resets.
+- A named-strategy round robin is not a best-response search. Plan a parametrised-policy search as a standard reviewer
+  (`codegame review --exploits`).
+- The ablation table format (full vs ablated, paired seeds, Wilson CIs, a "reading" column) is reusable as-is.

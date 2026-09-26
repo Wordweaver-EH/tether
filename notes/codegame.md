@@ -52,3 +52,16 @@ reusable part.
   Pixi later). Codegame's contract should be engine-agnostic at the core. Godot enters as an adapter through its MCP,
   not as the foundation.
 - Research job r1-prior-art (Luna max) is extracting their exact interfaces and formats (jobs/r1-prior-art/answer.md).
+
+## r1 prior-art result (Luna max, 780k tokens; full report in research/2026-09-26-prior-art-interfaces.md)
+- It confirms the headless core `{createWorld, step (one fixed tick), percept, hashWorld}`. It adds
+  **snapshotWorld/restoreWorld**, which Tether's NPC counterfactual reflection needs anyway. Add these in p2.
+- Browser wrapper: `window.__codegame = {contractVersion, ready, tickRate, reset, advance(ticks, inputsByTick), percept,
+  hashWorld, snapshot, restore, render}`. Rendering never advances the sim.
+- Commands: new, preview, verify, playtest, replay, review, status, ship (gate).
+- Record: `codegame.json` with source tree hash, checks with statuses pass/fail/unsupported/not_run/**stale** (a
+  source-hash change marks old evidence stale), and immutable runs.
+- Reviewers by value per effort: determinism, invariants, scenarios, degenerate-strategy search, semantic/visual,
+  perf, human feel.
+- Borrow schemas and conventions (MIT/Apache, keep notices); reimplement runtimes. Eval lesson (GameLogicBench,
+  GameASG-Bench, Sep 2026): grade replayable outcomes and invariants, not tool-call traces.

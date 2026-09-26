@@ -69,3 +69,22 @@
 - **p1b-fixes landed** (d98049f, Sol high): all six findings addressed (H2 partial: cloned percepts, shared intrinsics documented); 69 tests. The mind now keeps a private, fallible estimate of its own hidden spear (D13 consequence).
 - Launched **p4-exploits** (Sol xhigh): strong dodger, parametrised policies, best-response search, verdict on degeneracy, repair candidates only if needed.
 - **Owner insight on the workspace negative:** the bottleneck is adaptive only under costs (finite processing, one body needing coherent action, the value of broadcast). Phase 2 gave the no-workspace mind free parallel compute. Decision D14: a finite cognition budget and a budget sweep; the same logic applies to metacognition and ToM (they pay only when information is costly).
+- **p3-client landed** (ff7d30f) and **p3b-smoke PASS** (6ca879d, Sol high).
+  - Headless Edge with `--disable-gpu` ran on SwiftShader; the Radeon was not touched.
+  - Checks passed: movement, throw, embed, recall, visibility, snapshot, render, the 300 s result, log download,
+    Mind View verification. 84 tests.
+  - It fixed a `node:util` browser import and a favicon error. Reusable script: tools/smoke.mjs. The
+    `window.__codegame` hook exists behind `?test=1`.
+  - **Finding: cross-runtime determinism.** An Edge-produced log diverges in Node's verifier at tick 132 (a tiny float
+    difference in facing). This blocks analysing human sessions in Node. Fix: deterministic math (own trig/rotation,
+    or quantised facing). This is a must-fix before human telemetry counts.
+  - My taste review of the contact sheet:
+    - Both cones share one teal fill, so it is hard to tell whose cone is whose. Tint the NPC cone orange and keep it
+      fainter.
+    - Outside-cone space could be darker so "you can't see there" is felt.
+    - The held-spear and facing notch read the same.
+    - In the smoke bout the Mind View focus stayed on Deceive the whole time: check for focus lock.
+- **Paused (owner request) after the smoke test.** p4-exploits was stopped mid-search (session
+  01a0e014-e31b-7603-b059-ada41ceeeefd, resumable). Its uncommitted files are left in the working tree: arena/search*,
+  src/agents/dodger.mjs, src/agents/param.mjs, reports/phase4a-pilot.json, and edits to sim.js, perception.js and
+  tether-adapter.mjs.

@@ -98,3 +98,12 @@ reusable part.
   (`codegame review --exploits`).
 - The ablation table format (full vs ablated, paired seeds, Wilson CIs, a "reading" column) is reusable as-is.
 - p2 wished for: live tournament progress and memory reporting, a CPU trace inspector, and automatic source-hash provenance on reports (the codegame record).
+### Phase 3 (client + smoke)
+- `preview` = a software-renderer check (abort if a real GPU is reported) + seeded hook-driven input + state
+  assertions + named screenshots + log download + replay verification + contact sheet + a machine-readable report.
+  Built as tools/smoke.mjs on codefilm's Edge/playwright-core; this is the codegame preview prototype.
+- **Cross-runtime determinism is a contract requirement.** Browser V8 and Node diverged at tick 132 on float math. The
+  codegame contract needs deterministic math (no Math.sin/cos/atan2 in sim paths, or verified-identical
+  implementations) and a verifier run that replays browser logs in Node.
+- A contact sheet was enough for me to make taste calls (cone colours, fog, focus lock) from one image. Screenshots
+  for visual questions only, as the Godot MCP rule says.

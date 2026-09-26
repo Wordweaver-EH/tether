@@ -1,4 +1,4 @@
-import { CONSTANTS, createWorld, step } from '../src/sim.js';
+import { CONSTANTS, createWorld, hashWorld, snapshotWorld, step } from '../src/sim.js';
 import { percept } from '../src/perception.js';
 import { createMind } from '../src/mind/index.mjs';
 import { createSessionLogger } from '../src/log.js';
@@ -15,6 +15,8 @@ let phase = 'start', lastFrame = null, lastPaint = -Infinity, startDirty = true;
 let flashUntil = 0, audio = null, muted = false;
 let outer = null, outerUntil = 0, lastSpeechReportTime = -1, sessionStart = performance.now();
 let memorySnapshot = null, boutNumber = 0, embedAt = new Map(), stats = null;
+const testMode = new URLSearchParams(location.search).get('test') === '1';
+let testSeed = null, testInputs = [];
 
 function show(phaseName) {
   phase = phaseName;
@@ -45,15 +47,16 @@ function tone(freq, duration = 0.065) {
     osc.connect(gain).connect(audio.destination); osc.start(); osc.stop(audio.currentTime + duration + 0.01);
   } catch { /* Audio is optional. */ }
 }
-function startBout(rematch = false) {
+function startBout(rematch = false, seedOverride = null) {
   unlockAudio();
   if (rematch) recordRematch(localStorage);
   mode = $('mode').value; world = createWorld();
-  mind = createMind({ seed: (Date.now() + boutNumber) >>> 0, difficulty: $('difficulty').value,
+  const seed = seedOverride ?? (Date.now() + boutNumber) >>> 0;
+  mind = createMind({ seed, difficulty: $('difficulty').value,
     captureTrace: true, memorySnapshot });
   logger = createSessionLogger({ world, mode, sessionId: String(sessionStart),
     boutId: `bout-${++boutNumber}`, renderRate: 60, buildId: 'phase3-web',
-    seed: (Date.now() + boutNumber) >>> 0 });
+    seed });
   logger.records[0].agent_technical = [null, mind.settings()];
   embedAt = new Map(); stats = { throws: 0, recalls: 0, embeds: 0, neutralizations: 0,
     delayedRecalls: 0, unseenActions: 0, scoreMargins: [], hits: 0 };
@@ -88,12 +91,13 @@ function handleEvents(events) {
       stats.scoreMargins.push({ time: world.elapsedSec, margin: event.scores.P1 - event.scores.P2 }); }
   }
 }
-function tick(dt) {
+function tick(dt, override = null) {
   if (world.ended) { endBout(); return; }
   const view1 = percept(world, 'P1', mode);
   const view2 = percept(world, 'P2', mode);
   const pad = navigator.getGamepads?.()[0] ?? null;
-  const actions = [input.take(view1.own.position, pad), mind.act(view2, dt)];
+  const actions = [override ?? input.take(view1.own.position, pad), mind.act(view2, dt)];
+  if (testMode) testInputs.push({ ...actions[0] });
   if (!view2.opponent && (actions[0].throw || actions[0].recall)) stats.unseenActions++;
   const events = step(world, actions);
   logger.recordStep(world, actions, events);
@@ -109,19 +113,20 @@ function tick(dt) {
   }
   if (world.ended) endBout();
 }
+function paint(now) {
+  const view = percept(world, 'P1', mode);
+  if (!view.opponent) { outer = null; outerUntil = 0; }
+  drawPlay(canvas, renderModel(view, now < outerUntil ? outer : null), now < flashUntil);
+  $('p1Score').textContent = view.scores.P1; $('p2Score').textContent = view.scores.P2;
+  const seconds = Math.ceil(view.time.remainingSec);
+  $('timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
+  lastPaint = now;
+}
 function frame(now) {
   if (phase === 'playing') {
-    if (lastFrame !== null) clock.advance(Math.max(0, (now - lastFrame) / 1000), tick);
+    if (!testMode && lastFrame !== null) clock.advance(Math.max(0, (now - lastFrame) / 1000), tick);
     lastFrame = now;
-    if (phase === 'playing' && now - lastPaint >= 1000 / 60) {
-      const view = percept(world, 'P1', mode);
-      if (!view.opponent) { outer = null; outerUntil = 0; }
-      drawPlay(canvas, renderModel(view, now < outerUntil ? outer : null), now < flashUntil);
-      $('p1Score').textContent = view.scores.P1; $('p2Score').textContent = view.scores.P2;
-      const seconds = Math.ceil(view.time.remainingSec);
-      $('timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
-      lastPaint = now;
-    }
+    if (!testMode && phase === 'playing' && now - lastPaint >= 1000 / 60) paint(now);
   } else if (phase === 'start' && startDirty) {
     drawPlay(canvas, renderModel(percept(world, 'P1', 'MODE_B')), false);
     startDirty = false;
@@ -163,3 +168,39 @@ canvas.addEventListener('pointerdown', (event) => {
 });
 window.addEventListener('pagehide', () => recordSessionDuration(localStorage, (performance.now() - sessionStart) / 1000));
 updateStats(); requestAnimationFrame(frame);
+if (testMode) window.__codegame = {
+  contractVersion: 1, ready: true, tickRate: CONSTANTS.technical.SIM_HZ,
+  reset(seed) {
+    if (!Number.isSafeInteger(seed) || seed < 0) throw new RangeError('seed must be a nonnegative integer');
+    testSeed = seed; testInputs = []; memorySnapshot = null;
+    $('mode').value = 'MODE_B'; $('difficulty').value = 'normal';
+    startBout(false, seed);
+    this.render();
+    return hashWorld(world);
+  },
+  advance(ticks, inputsByTick = []) {
+    if (phase !== 'playing') throw new Error('bout is not playing');
+    if (!Number.isSafeInteger(ticks) || ticks < 0 || !Array.isArray(inputsByTick) ||
+        inputsByTick.length > ticks) throw new RangeError('invalid advance arguments');
+    for (let i = 0; i < ticks && phase === 'playing'; i++) tick(clock.dt, inputsByTick[i] ?? null);
+    return { tick: world.tick, hash: hashWorld(world), phase };
+  },
+  percept(viewer) { return percept(world, viewer, mode); },
+  hashWorld() { return hashWorld(world); },
+  snapshot() {
+    if (testSeed === null) throw new Error('reset first');
+    return { seed: testSeed, inputs: structuredClone(testInputs), world: snapshotWorld(world),
+      hash: hashWorld(world) };
+  },
+  restore(state) {
+    if (!state || !Array.isArray(state.inputs) || !Number.isSafeInteger(state.seed) ||
+        state.inputs.length !== state.world?.tick) throw new TypeError('invalid snapshot');
+    this.reset(state.seed);
+    this.advance(state.inputs.length, state.inputs);
+    if (hashWorld(world) !== state.hash) throw new Error('snapshot replay diverged');
+    this.render();
+    return hashWorld(world);
+  },
+  render() { if (phase === 'playing') paint(performance.now());
+    return { tick: world.tick, hash: hashWorld(world) }; },
+};

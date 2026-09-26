@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "software renderer",
+      "pass": true,
+      "detail": "Google Inc. (Google) ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "client loaded",
+      "pass": true,
+      "detail": "test hook ready"
+    },
+    {
+      "name": "codegame contract",
+      "pass": true,
+      "detail": "{\"version\":1,\"rate\":120,\"names\":true}"
+    },
+    {
+      "name": "hook absent in normal play",
+      "pass": true,
+      "detail": "true"
+    },
+    {
+      "name": "normal client browser errors",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "name": "bout starts from UI",
+      "pass": true,
+      "detail": "HUD visible"
+    },
+    {
+      "name": "seeded MODE_B normal start",
+      "pass": true,
+      "detail": "tick 0, hash 55c21736f9eb776a"
+    },
+    {
+      "name": "WASD movement",
+      "pass": true,
+      "detail": "{\"x\":-3.802943725152272,\"y\":-1.6970562748477152}"
+    },
+    {
+      "name": "mouse aim and click throw",
+      "pass": true,
+      "detail": "spear OUTBOUND"
+    },
+    {
+      "name": "spear embeds",
+      "pass": true,
+      "detail": "spear EMBEDDED"
+    },
+    {
+      "name": "Space recalls",
+      "pass": true,
+      "detail": "spear RETURNING"
+    },
+    {
+      "name": "MODE_B hides off-cone NPC",
+      "pass": true,
+      "detail": "opponent hidden"
+    },
+    {
+      "name": "20 seconds of game time",
+      "pass": true,
+      "detail": "tick 2400, hash 7a0d5cd4d196c111"
+    },
+    {
+      "name": "render does not advance simulation",
+      "pass": true,
+      "detail": "7a0d5cd4d196c111 = 7a0d5cd4d196c111"
+    },
+    {
+      "name": "snapshot restore reproducible",
+      "pass": true,
+      "detail": "7a0d5cd4d196c111"
+    },
+    {
+      "name": "bout result screen",
+      "pass": true,
+      "detail": "Draw, tick 36000"
+    },
+    {
+      "name": "downloaded log verifies in Edge",
+      "pass": true,
+      "detail": "6001 samples, 55e1c89be9943976"
+    },
+    {
+      "name": "Mind View verifies downloaded log",
+      "pass": true,
+      "detail": "VERIFIED · 6001 SAMPLES"
+    },
+    {
+      "name": "Mind View middle with all overlays",
+      "pass": true,
+      "detail": "{\"time\":150,\"layers\":true,\"focus\":\"Deceive\"}"
+    },
+    {
+      "name": "client browser errors",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "name": "Mind View browser errors",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "name": "contact sheet",
+      "pass": true,
+      "detail": "7 screenshots"
+    }
+  ],
+  "renderer": "Google Inc. (Google) ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "graphics": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "vendor": "Google Inc. (Google)",
+    "software": true
+  },
+  "timings": {
+    "rendererMs": 447,
+    "gameplayMs": 1679,
+    "boutMs": 5487,
+    "totalMs": 6401
+  },
+  "sourceTreeHash": "c9740b2d9ae52cb9c7346d15dbb1a576ea14543fa144ffe70d3a5246c9613351",
+  "gitHead": "265a119d0700f608ac142ccd6b85b4a5e657c0ce",
+  "screenshots": [
+    {
+      "name": "01_start",
+      "path": "reports/smoke/01_start.png"
+    },
+    {
+      "name": "02_first_throw",
+      "path": "reports/smoke/02_first_throw.png"
+    },
+    {
+      "name": "03_embedded",
+      "path": "reports/smoke/03_embedded.png"
+    },
+    {
+      "name": "04_recall",
+      "path": "reports/smoke/04_recall.png"
+    },
+    {
+      "name": "05_npc_hidden",
+      "path": "reports/smoke/05_npc_hidden.png"
+    },
+    {
+      "name": "06_result",
+      "path": "reports/smoke/06_result.png"
+    },
+    {
+      "name": "07_mind_view_middle",
+      "path": "reports/smoke/07_mind_view_middle.png"
+    }
+  ]
+}

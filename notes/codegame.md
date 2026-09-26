@@ -33,3 +33,22 @@ reusable part.
   That is a reusable reviewer, not a one-off.
 - Taste call: keep the rules frozen and put the ambition in the opponent and the instruments. Resist adding systems.
 - Plumbing gotcha: a fresh git repo has no identity, so agents' commits fail. `new` must set it.
+
+## Prior art (from the earlier code-to-game research; my assessment of what each contributes)
+- **Godot MCP (satelliteoflove, MIT).** Input injection, time freeze/step, structured state queries, screenshots,
+  frame-time profiling, and an eval harness running tasks through headless Claude Code.
+  - Borrow: the **state-first, screenshots-only-for-visual-questions** rule.
+  - Borrow: the **eval harness idea**, i.e. measure how well agents build and fix games *with* codegame. This is the
+    harness's own test.
+- **Godot Agent Loop (MIT).** Deterministic `game_scenario`, input simulation, test runners, performance evidence.
+  Borrow the scenario-as-test format. Windows coverage is runtime and input only.
+- **Gua (MIT).** Semantic UI/world tree, virtual time, action record/replay, screenshot diff. The semantic tree matters
+  for UI-heavy games; Tether's `percept()` is the same idea for world state.
+- **Awesome GameDev Agent Skills (Apache-2.0).** 73 skills. The skills layer (game feel, perf budgets) is where
+  *taste* can be packaged. Adopt selectively.
+- **Vitric.** Bot-swarm playtests as a delivery gate. Tether's arena is the same idea plus ablations and exploit
+  search.
+- **Engine routes:** Tether runs as "route 0": a pure-JS deterministic core with any renderer (canvas now; Three.js or
+  Pixi later). Codegame's contract should be engine-agnostic at the core. Godot enters as an adapter through its MCP,
+  not as the foundation.
+- Research job r1-prior-art (Luna max) is extracting their exact interfaces and formats (jobs/r1-prior-art/answer.md).

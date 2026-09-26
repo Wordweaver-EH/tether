@@ -356,3 +356,18 @@ export function hashWorld(world) {
   }
   return hash.toString(16).padStart(16, '0');
 }
+
+// Snapshots are independent values. They include technical constants and every
+// mutable rule field, so a restored world can be stepped or hashed immediately.
+export function snapshotWorld(world) {
+  return structuredClone(world);
+}
+
+export function restoreWorld(snapshot) {
+  if (!snapshot || !Array.isArray(snapshot.players) || snapshot.players.length !== 2 ||
+      !Array.isArray(snapshot.spears) || snapshot.spears.length !== 2 ||
+      !Number.isInteger(snapshot.tick) || !snapshot.technical) {
+    throw new TypeError('invalid world snapshot');
+  }
+  return structuredClone(snapshot);
+}

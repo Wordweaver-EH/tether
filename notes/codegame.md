@@ -70,6 +70,14 @@ reusable part.
   Codegame's `new` template should require exactly that shape.
 - Separate "the tests pass" from "the tests check the rule": an adversarial review job (rv1) is part of the loop. It
   is a candidate `codegame review --tests` reviewer.
+
+### Phase 2 (mind and arena)
+- The reusable core is `arena/core.mjs`: inject a game module and adapter, step perception-only agents, record inputs/hashes/traces, and replay to verify. The arena never imports Tether; its adapter owns player IDs, score extraction, strategies, and behavior metrics.
+- A generic `codegame arena` command needs a declarative pair matrix, shared seeded seat rotations, worker limits, and confidence intervals. The Tether first pass keeps raw bout results so new summaries can be computed without rerunning expensive simulations.
+- A game-specific metric definition must travel with the report. Here, "second location" is an embed held more than 2 seconds while the owner travels at least 2 units and reaches 1 unit from its starting body position. This operational definition is reviewable and can be changed without touching rules.
+- Replay hashes and mind traces are separate streams: the former verify simulation, the latter explain agent decisions. A generic scrubber can join them on tick. Snapshot/restore gives replay a starting state and later counterfactual branches.
+- A scoring reset initially inflated the "second location" metric by treating the teleport as player travel and inflated scan reversals by treating reset facing as a turn. The adapter now uses HIT event positions for pre-reset travel and excludes reset facing. Codegame should scaffold transition-boundary metric tests and attach a metric-definition version to every run.
+- Tooling still wanted: a progress-aware tournament dashboard with partial aggregates and worker memory monitoring; paired-seed confidence interval tooling; automatic metric version tags; a percept-leak fuzzer; and an interactive CPU-only trace inspector before any browser client exists.
 - The adversarial test review paid off at once: 3 high, 2 medium, 1 low, plus weak tests. `review --tests` becomes a
   core reviewer.
 - My own brief introduced a SPEC violation. Codegame should check briefs against SPEC, or better, generate the

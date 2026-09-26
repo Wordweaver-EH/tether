@@ -79,7 +79,7 @@ function loggedInput(raw, player, tick, mode) {
 
 export function createSessionLogger({ world, mode, sessionId = 'session-1',
   boutId = 'bout-1', timestampStart = new Date().toISOString(),
-  renderRate = null, buildId = 'phase1', seed = null } = {}) {
+  renderRate = null, buildId = 'phase2', seed = null } = {}) {
   if (!world) throw new TypeError('world is required');
   if (mode !== 'MODE_A' && mode !== 'MODE_B') throw new RangeError('invalid mode');
   if (world.tick !== 0) throw new RangeError('logger must start at step 0');

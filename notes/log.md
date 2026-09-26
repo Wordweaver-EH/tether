@@ -22,3 +22,8 @@
   - p1-sim: Sol max (AA II 48), sim + perception + logging + tests. Launched 18:02.
   - p2-mind: Sol max (owner: avoid Astra). Brief drafted; it launches
     after p1 lands.
+- **p1-sim landed** (commit 21a6a52, Sol max, 128k tokens, ~45 min). I re-ran the suite: 35/35 green. Headless speed
+  2.5M steps/s idle and 870k with scripted agents, far above the 100k target, so tournaments of thousands of bouts are
+  cheap. Interpretations are in the README: 0.1 deadzones, 1e-9 epsilon, HELD spear at the owner's centre.
+- Launched **p2-mind** (Sol xhigh; snapshot/restore added to the brief) and **rv1-sim** (Sol high adversarial review
+  of p1, read-only, scratch scripts only) in parallel.

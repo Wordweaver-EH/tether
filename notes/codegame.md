@@ -65,3 +65,8 @@ reusable part.
   perf, human feel.
 - Borrow schemas and conventions (MIT/Apache, keep notices); reimplement runtimes. Eval lesson (GameLogicBench,
   GameASG-Bench, Sep 2026): grade replayable outcomes and invariants, not tool-call traces.
+### Phase 1 (sim core)
+- A spec with numeric constants plus a checklist let Sol build the full core in one shot (35 tests, 128k tokens).
+  Codegame's `new` template should require exactly that shape.
+- Separate "the tests pass" from "the tests check the rule": an adversarial review job (rv1) is part of the loop. It
+  is a candidate `codegame review --tests` reviewer.

@@ -1,0 +1,1894 @@
+{
+  "schema": "codegame-search-v1",
+  "metricVersion": "tether-phase4a-v1-reset-safe",
+  "condition": "baseline",
+  "override": {},
+  "config": {
+    "adapter": "./arena/tether-search-adapter.mjs",
+    "condition": "baseline",
+    "mode": "both",
+    "seed": 431,
+    "workers": 6,
+    "budgetMin": 0.4,
+    "evalSeconds": 30,
+    "validationSeeds": 2,
+    "out": "reports/phase4a-pilot.json"
+  },
+  "startedUtc": "2026-09-26T23:42:49.988Z",
+  "elapsedSec": 65.47,
+  "bouts": 756,
+  "generations": [
+    {
+      "mode": "es",
+      "generation": 0,
+      "best": "seed-direct",
+      "fitness": 0.7508221847668823,
+      "bouts": 16
+    },
+    {
+      "mode": "es",
+      "generation": 1,
+      "best": "es-5",
+      "fitness": 1.001459008051675,
+      "bouts": 64
+    },
+    {
+      "mode": "es",
+      "generation": 2,
+      "best": "es-13",
+      "fitness": 1.001311566355425,
+      "bouts": 64
+    },
+    {
+      "mode": "es",
+      "generation": 3,
+      "best": "es-23",
+      "fitness": 1.0023232275623026,
+      "bouts": 64
+    },
+    {
+      "mode": "es",
+      "generation": 4,
+      "best": "es-32",
+      "fitness": 1.0024279032106054,
+      "bouts": 64
+    },
+    {
+      "mode": "es",
+      "generation": 5,
+      "best": "es-35",
+      "fitness": 1.0020467853707145,
+      "bouts": 64
+    },
+    {
+      "mode": "coevo",
+      "generation": 0,
+      "best": "seed-direct",
+      "fitness": 0.4166666666666667,
+      "bouts": 24
+    },
+    {
+      "mode": "coevo",
+      "generation": 1,
+      "best": "coevo-46",
+      "fitness": 0.7088893329330578,
+      "bouts": 96
+    },
+    {
+      "mode": "coevo",
+      "generation": 2,
+      "best": "coevo-54",
+      "fitness": 0.8339892385843948,
+      "bouts": 96
+    },
+    {
+      "mode": "coevo",
+      "generation": 3,
+      "best": "coevo-64",
+      "fitness": 0.7502907511678396,
+      "bouts": 96
+    }
+  ],
+  "hallOfFame": [
+    {
+      "name": "es-32",
+      "vector": [
+        0.2216546630691737,
+        0.46845744721529387,
+        1,
+        0.028926587245459795,
+        0.5267260316234703,
+        0.7595517884492875,
+        0.3233240690007806,
+        0.1980578927611932,
+        0,
+        0.33630456171836703,
+        0.3070079896505922,
+        0.30524595133384513,
+        0.9677600551480426,
+        0.5584639504831285,
+        0.3181268045042331,
+        0.9367579576093704,
+        0.4540916353277861,
+        0.19713987871445718,
+        0.2403668480897322,
+        0.3863489951349117,
+        0.7348830823861062
+      ],
+      "fitness": 1.0024279032106054,
+      "trainWinRate": 1,
+      "trainMargin": 13.5
+    },
+    {
+      "name": "es-23",
+      "vector": [
+        0.10790889471769333,
+        0.4439759969705095,
+        1,
+        0.09902264464929247,
+        0.4250175318547214,
+        0.7511099640075118,
+        0.44706519342027606,
+        0.009860424867831175,
+        0,
+        0.28083099039737136,
+        0.22982387979887425,
+        0.5221632559782062,
+        0.8706463391901924,
+        0.7972676126733422,
+        0.40197419839135057,
+        0.9177616062667221,
+        0.5875673984251916,
+        0.22377580757625404,
+        0.1411913235178217,
+        0.374889191836796,
+        0.8046432890798896
+      ],
+      "fitness": 1.0023232275623026,
+      "trainWinRate": 1,
+      "trainMargin": 12.375
+    },
+    {
+      "name": "es-35",
+      "vector": [
+        0.23439211053494363,
+        0.552135817310152,
+        0.8777553682681173,
+        0.006711755852247713,
+        0.6656961156601707,
+        0.5666776548158379,
+        0.34412022254616026,
+        0.19021162115596232,
+        0,
+        0.28361829796247184,
+        0.41496065798215565,
+        0.4617137863848527,
+        1,
+        0.7179908457538113,
+        0.4478936969923476,
+        0.8817467465717346,
+        0.41032985670957706,
+        0.07946362422686071,
+        0.1869893336826935,
+        0.26065324599084183,
+        0.5844311115313321
+      ],
+      "fitness": 1.0020467853707145,
+      "trainWinRate": 1,
+      "trainMargin": 10
+    },
+    {
+      "name": "es-19",
+      "vector": [
+        0,
+        0.6965418736332406,
+        0.8419528321204707,
+        0.49747334676518584,
+        0,
+        0.8387652144217864,
+        0.6438898861808703,
+        0.046041744666174056,
+        0,
+        0.28594450823031364,
+        0.33347751780692486,
+        0.8059486826004628,
+        0.6691132932482287,
+        0.8451218391871079,
+        0.6628198336965094,
+        0.877629868936725,
+        0.574713664041832,
+        0.09801808679290115,
+        0.2737106165010482,
+        0.3126507836121388,
+        1
+      ],
+      "fitness": 1.0015524942132952,
+      "trainWinRate": 1,
+      "trainMargin": 6.875
+    },
+    {
+      "name": "es-5",
+      "vector": [
+        0.13444597699679434,
+        0.3929273393129309,
+        1,
+        0.26776230349115576,
+        0.13189233898899208,
+        0.7357859204178676,
+        0.5297485299725085,
+        0,
+        0,
+        0.2377466191248968,
+        0,
+        0.5755995469836687,
+        0.5636020480282604,
+        0.9721161039173603,
+        0.5053170352109397,
+        0.7603248227778823,
+        0.6268128098482265,
+        0,
+        0.24473340587969866,
+        0.26113647019465197,
+        0.859726613917388
+      ],
+      "fitness": 1.001459008051675,
+      "trainWinRate": 1,
+      "trainMargin": 6.375
+    },
+    {
+      "name": "es-30",
+      "vector": [
+        0,
+        0.7330911626977225,
+        0.7714259378565476,
+        0.5435935634272501,
+        0,
+        0.8820499510290102,
+        0.6279579662298784,
+        0.021321221336722377,
+        0.014331611527130007,
+        0.2635231545083225,
+        0.49604187574144454,
+        0.8332617881128732,
+        0.6281761034084483,
+        0.708766954629682,
+        0.6787014411526422,
+        0.7236466952776537,
+        0.37926346013322465,
+        0.16410957386158406,
+        0.19503488761745397,
+        0.43046611172214827,
+        1
+      ],
+      "fitness": 1.001459008051675,
+      "trainWinRate": 1,
+      "trainMargin": 6.375
+    },
+    {
+      "name": "es-8",
+      "vector": [
+        0,
+        0.4794785046086957,
+        0.9186638480917049,
+        0.2940140926819622,
+        0.032701224274622895,
+        0.7069126841444522,
+        0.6785971538033336,
+        0.14827092524431645,
+        0,
+        0.21717938779294488,
+        0.1468735842957663,
+        0.44884961353784253,
+        0.7514268083460629,
+        1,
+        0.38903279385032746,
+        0.9073485660655424,
+        0.7131577952643856,
+        0,
+        0.09592579135671256,
+        0.384482744355432,
+        0.9867524431254715
+      ],
+      "fitness": 1.0014108093454601,
+      "trainWinRate": 1,
+      "trainMargin": 6.125
+    },
+    {
+      "name": "es-13",
+      "vector": [
+        0.07263702026940881,
+        0.5151765861486395,
+        0.9888551986068487,
+        0.43162862770728316,
+        0.08637067883989463,
+        0.7117470309352503,
+        0.6566212164033205,
+        0,
+        0,
+        0.4218721125172451,
+        0.22010376504063606,
+        0.6721949786989186,
+        0.5352754916884005,
+        0.9540942521393299,
+        0.5335104549654449,
+        0.9071464758608491,
+        0.5844715681755914,
+        0,
+        0.377438932842575,
+        0.276171262960627,
+        0.9493087638402358
+      ],
+      "fitness": 1.001311566355425,
+      "trainWinRate": 1,
+      "trainMargin": 5.625
+    }
+  ],
+  "champions": [
+    {
+      "name": "es-32",
+      "vector": [
+        0.2216546630691737,
+        0.46845744721529387,
+        1,
+        0.028926587245459795,
+        0.5267260316234703,
+        0.7595517884492875,
+        0.3233240690007806,
+        0.1980578927611932,
+        0,
+        0.33630456171836703,
+        0.3070079896505922,
+        0.30524595133384513,
+        0.9677600551480426,
+        0.5584639504831285,
+        0.3181268045042331,
+        0.9367579576093704,
+        0.4540916353277861,
+        0.19713987871445718,
+        0.2403668480897322,
+        0.3863489951349117,
+        0.7348830823861062
+      ],
+      "parameters": {
+        "throwMode": 0.4433093261383474,
+        "leadSec": 0.21080585124688225,
+        "throwRange": 15,
+        "throwAlignment": 0.02324407736495604,
+        "throwInterval": 0.7900890474352055,
+        "surfaceBias": 0.519103576898575,
+        "embedOffset": -1.0600555859953165,
+        "recallMode": 0.5941736782835796,
+        "recallDelay": 0,
+        "crossTolerance": 0.8385329830071423,
+        "anchorHold": 5.991103865457698,
+        "preferredDistance": 3.886164371737837,
+        "distanceGain": 1.9355201102960853,
+        "strafeSign": 0.11692790096625694,
+        "strafeStrength": 0.4771902067563496,
+        "dodgeStrength": 1.8735159152187408,
+        "recallAvoidance": 0.9081832706555723,
+        "coverUse": 0.2957098180716858,
+        "neutralization": 0.3605502721345983,
+        "gazeScanPeriod": 2.6249194732420147,
+        "gazeTrack": 0.7348830823861062
+      },
+      "training": {
+        "winRate": 1,
+        "margin": 13.5
+      },
+      "validation": {
+        "immediateRecaller": {
+          "winRate": {
+            "mean": 0.25,
+            "lo": 0.045586062644636216,
+            "hi": 0.6993639475573634,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1259,
+            "embeds": 1024,
+            "outboundHits": 17,
+            "returningHits": 1,
+            "secondLocation": 0,
+            "directHitShare": 0.9444444444444444,
+            "embedShare": 0.8133439237490071,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 184
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 103,
+                "P2": 5
+              }
+            },
+            {
+              "seed": 900433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "camper": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 986,
+            "embeds": 726,
+            "outboundHits": 260,
+            "returningHits": 4,
+            "secondLocation": 0,
+            "directHitShare": 0.9848484848484849,
+            "embedShare": 0.7363083164300203,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 901433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 72,
+                "P2": 5
+              }
+            },
+            {
+              "seed": 901434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 13,
+                "P2": 59
+              }
+            },
+            {
+              "seed": 901431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 71,
+                "P2": 6
+              }
+            }
+          ]
+        },
+        "spinner": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1333,
+            "embeds": 1088,
+            "outboundHits": 237,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.8162040510127532,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 902431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 56,
+                "P2": 5
+              }
+            },
+            {
+              "seed": 902432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 62
+              }
+            },
+            {
+              "seed": 902433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 57,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "spearRusher": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1112,
+            "embeds": 891,
+            "outboundHits": 193,
+            "returningHits": 30,
+            "secondLocation": 0,
+            "directHitShare": 0.8654708520179372,
+            "embedShare": 0.8012589928057554,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 903431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 62,
+                "P2": 32
+              }
+            },
+            {
+              "seed": 903432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 36,
+                "P2": 43
+              }
+            },
+            {
+              "seed": 903433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 67,
+                "P2": 31
+              }
+            }
+          ]
+        },
+        "directShooter": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.15003570882017148,
+            "hi": 0.8499642911798285,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1334,
+            "embeds": 983,
+            "outboundHits": 189,
+            "returningHits": 1,
+            "secondLocation": 0,
+            "directHitShare": 0.9947368421052631,
+            "embedShare": 0.7368815592203898,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 904433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 89,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 904434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 85,
+                "P2": 26
+              }
+            },
+            {
+              "seed": 904431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 70,
+                "P2": 4
+              }
+            }
+          ]
+        },
+        "embedWaiter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1360,
+            "embeds": 0,
+            "outboundHits": 1356,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 905431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 339,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 905432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 339
+              }
+            },
+            {
+              "seed": 905433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 339,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "reactiveDodger": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 828,
+            "embeds": 735,
+            "outboundHits": 92,
+            "returningHits": 65,
+            "secondLocation": 0,
+            "directHitShare": 0.5859872611464968,
+            "embedShare": 0.8876811594202898,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 906431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 40,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 906432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 38
+              }
+            },
+            {
+              "seed": 906433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 32,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "es-23": {
+          "winRate": {
+            "mean": 0.75,
+            "lo": 0.3006360524426366,
+            "hi": 0.9544139373553637,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 976,
+            "embeds": 852,
+            "outboundHits": 95,
+            "returningHits": 40,
+            "secondLocation": 0,
+            "directHitShare": 0.7037037037037037,
+            "embedShare": 0.8729508196721312,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 907433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 32,
+                "P2": 34
+              }
+            },
+            {
+              "seed": 907434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 23,
+                "P2": 29
+              }
+            },
+            {
+              "seed": 907431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 37,
+                "P2": 31
+              }
+            }
+          ]
+        },
+        "es-35": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 920,
+            "embeds": 817,
+            "outboundHits": 83,
+            "returningHits": 47,
+            "secondLocation": 0,
+            "directHitShare": 0.6384615384615384,
+            "embedShare": 0.8880434782608696,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 908431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 29,
+                "P2": 25
+              }
+            },
+            {
+              "seed": 908432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 23,
+                "P2": 35
+              }
+            },
+            {
+              "seed": 908433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 37,
+                "P2": 27
+              }
+            }
+          ]
+        }
+      },
+      "overall": {
+        "winRate": {
+          "mean": 0.8333333333333334,
+          "lo": 0.6810888526532568,
+          "hi": 0.9212965937143589,
+          "n": 36
+        },
+        "metrics": {
+          "throws": 10108,
+          "embeds": 7116,
+          "outboundHits": 2522,
+          "returningHits": 188,
+          "secondLocation": 0,
+          "directHitShare": 0.9306273062730628,
+          "embedShare": 0.70399683419074,
+          "secondLocationFraction": 0
+        },
+        "exampleSeeds": [
+          {
+            "seed": 900431,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 2,
+              "P2": 184
+            }
+          },
+          {
+            "seed": 901433,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 72,
+              "P2": 5
+            }
+          },
+          {
+            "seed": 903431,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 62,
+              "P2": 32
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "es-23",
+      "vector": [
+        0.10790889471769333,
+        0.4439759969705095,
+        1,
+        0.09902264464929247,
+        0.4250175318547214,
+        0.7511099640075118,
+        0.44706519342027606,
+        0.009860424867831175,
+        0,
+        0.28083099039737136,
+        0.22982387979887425,
+        0.5221632559782062,
+        0.8706463391901924,
+        0.7972676126733422,
+        0.40197419839135057,
+        0.9177616062667221,
+        0.5875673984251916,
+        0.22377580757625404,
+        0.1411913235178217,
+        0.374889191836796,
+        0.8046432890798896
+      ],
+      "parameters": {
+        "throwMode": 0.21581778943538665,
+        "leadSec": 0.19978919863672928,
+        "throwRange": 15,
+        "throwAlignment": 0.04322145372504835,
+        "throwInterval": 0.6375262977820821,
+        "surfaceBias": 0.5022199280150237,
+        "embedOffset": -0.3176088394783436,
+        "recallMode": 0.029581274603493524,
+        "recallDelay": 0,
+        "crossTolerance": 0.7414542331953999,
+        "anchorHold": 4.987710437385365,
+        "preferredDistance": 5.795036652608215,
+        "distanceGain": 1.7412926783803848,
+        "strafeSign": 0.5945352253466845,
+        "strafeStrength": 0.6029612975870259,
+        "dodgeStrength": 1.8355232125334442,
+        "recallAvoidance": 1.1751347968503831,
+        "coverUse": 0.33566371136438106,
+        "neutralization": 0.21178698527673256,
+        "gazeScanPeriod": 2.561890555102378,
+        "gazeTrack": 0.8046432890798896
+      },
+      "training": {
+        "winRate": 1,
+        "margin": 12.375
+      },
+      "validation": {
+        "immediateRecaller": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1103,
+            "embeds": 943,
+            "outboundHits": 155,
+            "returningHits": 3,
+            "secondLocation": 0,
+            "directHitShare": 0.9810126582278481,
+            "embedShare": 0.8549410698096102,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 37,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 45
+              }
+            },
+            {
+              "seed": 900433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 40,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "camper": {
+          "winRate": {
+            "mean": 0.75,
+            "lo": 0.3006360524426366,
+            "hi": 0.9544139373553637,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1555,
+            "embeds": 1412,
+            "outboundHits": 142,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.9594594594594594,
+            "embedShare": 0.9080385852090033,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 901433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 75,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 901431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 73,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "spinner": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1281,
+            "embeds": 867,
+            "outboundHits": 376,
+            "returningHits": 31,
+            "secondLocation": 0,
+            "directHitShare": 0.9238329238329238,
+            "embedShare": 0.6768149882903981,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 902431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 108,
+                "P2": 23
+              }
+            },
+            {
+              "seed": 902432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 10,
+                "P2": 90
+              }
+            },
+            {
+              "seed": 902433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 111,
+                "P2": 18
+              }
+            }
+          ]
+        },
+        "spearRusher": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1113,
+            "embeds": 955,
+            "outboundHits": 137,
+            "returningHits": 15,
+            "secondLocation": 0,
+            "directHitShare": 0.9013157894736842,
+            "embedShare": 0.8580413297394429,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 903431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 26,
+                "P2": 10
+              }
+            },
+            {
+              "seed": 903432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 17,
+                "P2": 44
+              }
+            },
+            {
+              "seed": 903433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 28,
+                "P2": 6
+              }
+            }
+          ]
+        },
+        "directShooter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1218,
+            "embeds": 1100,
+            "outboundHits": 116,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.9830508474576272,
+            "embedShare": 0.90311986863711,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 904433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 39,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 904434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 28
+              }
+            },
+            {
+              "seed": 904431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 28,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "embedWaiter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1356,
+            "embeds": 0,
+            "outboundHits": 1352,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 905431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 338,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 905432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 338
+              }
+            },
+            {
+              "seed": 905433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 338,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "reactiveDodger": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 993,
+            "embeds": 908,
+            "outboundHits": 83,
+            "returningHits": 57,
+            "secondLocation": 0,
+            "directHitShare": 0.5928571428571429,
+            "embedShare": 0.9144008056394763,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 906431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 29,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 906432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 43
+              }
+            },
+            {
+              "seed": 906433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 32,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "es-32": {
+          "winRate": {
+            "mean": 0.75,
+            "lo": 0.3006360524426366,
+            "hi": 0.9544139373553637,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 952,
+            "embeds": 838,
+            "outboundHits": 70,
+            "returningHits": 58,
+            "secondLocation": 0,
+            "directHitShare": 0.546875,
+            "embedShare": 0.8802521008403361,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 907433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 36,
+                "P2": 29
+              }
+            },
+            {
+              "seed": 907434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 30,
+                "P2": 31
+              }
+            },
+            {
+              "seed": 907431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 36,
+                "P2": 30
+              }
+            }
+          ]
+        },
+        "es-35": {
+          "winRate": {
+            "mean": 0.875,
+            "lo": 0.39576575000237485,
+            "hi": 0.9868092346946258,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 989,
+            "embeds": 914,
+            "outboundHits": 48,
+            "returningHits": 29,
+            "secondLocation": 0,
+            "directHitShare": 0.6233766233766234,
+            "embedShare": 0.9241658240647118,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 908431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 20,
+                "P2": 19
+              }
+            },
+            {
+              "seed": 908432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 13,
+                "P2": 20
+              }
+            },
+            {
+              "seed": 908434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 15,
+                "P2": 22
+              }
+            }
+          ]
+        }
+      },
+      "overall": {
+        "winRate": {
+          "mean": 0.9305555555555556,
+          "lo": 0.7998528512582598,
+          "hi": 0.9782283502999106,
+          "n": 36
+        },
+        "metrics": {
+          "throws": 10560,
+          "embeds": 7937,
+          "outboundHits": 2479,
+          "returningHits": 201,
+          "secondLocation": 0,
+          "directHitShare": 0.925,
+          "embedShare": 0.7516098484848485,
+          "secondLocationFraction": 0
+        },
+        "exampleSeeds": [
+          {
+            "seed": 900431,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 37,
+              "P2": 2
+            }
+          },
+          {
+            "seed": 901433,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 75,
+              "P2": 1
+            }
+          },
+          {
+            "seed": 903431,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 26,
+              "P2": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "es-35",
+      "vector": [
+        0.23439211053494363,
+        0.552135817310152,
+        0.8777553682681173,
+        0.006711755852247713,
+        0.6656961156601707,
+        0.5666776548158379,
+        0.34412022254616026,
+        0.19021162115596232,
+        0,
+        0.28361829796247184,
+        0.41496065798215565,
+        0.4617137863848527,
+        1,
+        0.7179908457538113,
+        0.4478936969923476,
+        0.8817467465717346,
+        0.41032985670957706,
+        0.07946362422686071,
+        0.1869893336826935,
+        0.26065324599084183,
+        0.5844311115313321
+      ],
+      "parameters": {
+        "throwMode": 0.46878422106988726,
+        "leadSec": 0.24846111778956842,
+        "throwRange": 13.410819787485524,
+        "throwAlignment": 0.016912850417890597,
+        "throwInterval": 0.998544173490256,
+        "surfaceBias": 0.13335530963167574,
+        "embedOffset": -0.9352786647230387,
+        "recallMode": 0.5706348634678869,
+        "recallDelay": 0,
+        "crossTolerance": 0.7463320214343258,
+        "anchorHold": 7.394488553768023,
+        "preferredDistance": 5.263081320186704,
+        "distanceGain": 2,
+        "strafeSign": 0.43598169150762267,
+        "strafeStrength": 0.6718405454885215,
+        "dodgeStrength": 1.7634934931434691,
+        "recallAvoidance": 0.8206597134191541,
+        "coverUse": 0.11919543634029106,
+        "neutralization": 0.2804840005240402,
+        "gazeScanPeriod": 1.93359285294963,
+        "gazeTrack": 0.5844311115313321
+      },
+      "training": {
+        "winRate": 1,
+        "margin": 10
+      },
+      "validation": {
+        "immediateRecaller": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.15003570882017148,
+            "hi": 0.8499642911798285,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 999,
+            "embeds": 902,
+            "outboundHits": 60,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.967741935483871,
+            "embedShare": 0.9029029029029029,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 18,
+                "P2": 55
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 8
+              }
+            },
+            {
+              "seed": 900433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 26,
+                "P2": 50
+              }
+            }
+          ]
+        },
+        "camper": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 970,
+            "embeds": 906,
+            "outboundHits": 59,
+            "returningHits": 17,
+            "secondLocation": 0,
+            "directHitShare": 0.7763157894736842,
+            "embedShare": 0.934020618556701,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 901433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 39,
+                "P2": 8
+              }
+            },
+            {
+              "seed": 901434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 901431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 35,
+                "P2": 7
+              }
+            }
+          ]
+        },
+        "spinner": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 722,
+            "embeds": 640,
+            "outboundHits": 74,
+            "returningHits": 19,
+            "secondLocation": 0,
+            "directHitShare": 0.7956989247311828,
+            "embedShare": 0.8864265927977839,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 902431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 12,
+                "P2": 4
+              }
+            },
+            {
+              "seed": 902432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 19,
+                "P2": 38
+              }
+            },
+            {
+              "seed": 902433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 7,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "spearRusher": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 933,
+            "embeds": 828,
+            "outboundHits": 101,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.9805825242718447,
+            "embedShare": 0.887459807073955,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 903431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 18,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 903432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 25,
+                "P2": 33
+              }
+            },
+            {
+              "seed": 903433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 18,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "directShooter": {
+          "winRate": {
+            "mean": 0.75,
+            "lo": 0.3006360524426366,
+            "hi": 0.9544139373553637,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1105,
+            "embeds": 754,
+            "outboundHits": 308,
+            "returningHits": 1,
+            "secondLocation": 0,
+            "directHitShare": 0.9967637540453075,
+            "embedShare": 0.6823529411764706,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 904433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 139,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 904434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 52
+              }
+            },
+            {
+              "seed": 904431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 42,
+                "P2": 47
+              }
+            }
+          ]
+        },
+        "embedWaiter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 1200,
+            "embeds": 0,
+            "outboundHits": 1200,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 905431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 300,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 905432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 300
+              }
+            },
+            {
+              "seed": 905433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 300,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "reactiveDodger": {
+          "winRate": {
+            "mean": 1,
+            "lo": 0.5100999795960008,
+            "hi": 1,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 692,
+            "embeds": 615,
+            "outboundHits": 77,
+            "returningHits": 44,
+            "secondLocation": 0,
+            "directHitShare": 0.6363636363636364,
+            "embedShare": 0.888728323699422,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 906431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 31,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 906432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 30
+              }
+            },
+            {
+              "seed": 906433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 31,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "es-32": {
+          "winRate": {
+            "mean": 0.25,
+            "lo": 0.045586062644636216,
+            "hi": 0.6993639475573634,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 748,
+            "embeds": 662,
+            "outboundHits": 54,
+            "returningHits": 30,
+            "secondLocation": 0,
+            "directHitShare": 0.6428571428571429,
+            "embedShare": 0.8850267379679144,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 907433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 30,
+                "P2": 25
+              }
+            },
+            {
+              "seed": 907434,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 25,
+                "P2": 18
+              }
+            },
+            {
+              "seed": 907431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 16,
+                "P2": 27
+              }
+            }
+          ]
+        },
+        "es-23": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.15003570882017148,
+            "hi": 0.8499642911798285,
+            "n": 4
+          },
+          "metrics": {
+            "throws": 819,
+            "embeds": 754,
+            "outboundHits": 43,
+            "returningHits": 25,
+            "secondLocation": 0,
+            "directHitShare": 0.6323529411764706,
+            "embedShare": 0.9206349206349206,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 908431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 22,
+                "P2": 18
+              }
+            },
+            {
+              "seed": 908432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 14,
+                "P2": 17
+              }
+            },
+            {
+              "seed": 908433,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 18,
+                "P2": 19
+              }
+            }
+          ]
+        }
+      },
+      "overall": {
+        "winRate": {
+          "mean": 0.7777777777777778,
+          "lo": 0.6191498017214091,
+          "hi": 0.882838070251604,
+          "n": 36
+        },
+        "metrics": {
+          "throws": 8188,
+          "embeds": 6061,
+          "outboundHits": 1976,
+          "returningHits": 140,
+          "secondLocation": 0,
+          "directHitShare": 0.9338374291115312,
+          "embedShare": 0.7402296042989741,
+          "secondLocationFraction": 0
+        },
+        "exampleSeeds": [
+          {
+            "seed": 900431,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 18,
+              "P2": 55
+            }
+          },
+          {
+            "seed": 901433,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 39,
+              "P2": 8
+            }
+          },
+          {
+            "seed": 903431,
+            "mode": "MODE_B",
+            "seat": "P1",
+            "score": {
+              "P1": 18,
+              "P2": 3
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { add, sub, unit, dot, distance, lineDistance, point, clamp } from '../mind/math.mjs';
 import { createOwnSpearMemory } from '../mind/own-spear.mjs';
+import { createSpearMemory } from './spear-memory.mjs';
 
 const blank = () => ({ moveX: 0, moveY: 0, aimX: 0, aimY: 0,
   throw: false, recall: false });
@@ -13,11 +14,12 @@ const move = (input, from, target) => {
 };
 const aligned = (facing, direction, tolerance = 0.1) => dot(facing, direction) > Math.cos(tolerance);
 
-function script(kind) {
+function script(kind, publicSpeeds = null) {
   let time = 0, embeddedAt = -Infinity, priorSpear = 'HELD';
   let lastSeen = null, previousShot = -Infinity;
   let knownEnemySpear = null;
-  const ownSpear = createOwnSpearMemory();
+  const ownSpear = publicSpeeds ? createSpearMemory(publicSpeeds) :
+    createOwnSpearMemory();
   return {
     act(view, dt) {
       time += dt;
@@ -123,11 +125,11 @@ function script(kind) {
   };
 }
 
-export const immediateRecaller = () => script('immediateRecaller');
-export const camper = () => script('camper');
-export const spinner = () => script('spinner');
-export const spearRusher = () => script('spearRusher');
-export const directShooter = () => script('directShooter');
-export const embedWaiter = () => script('embedWaiter');
+export const immediateRecaller = (speeds) => script('immediateRecaller', speeds);
+export const camper = (speeds) => script('camper', speeds);
+export const spinner = (speeds) => script('spinner', speeds);
+export const spearRusher = (speeds) => script('spearRusher', speeds);
+export const directShooter = (speeds) => script('directShooter', speeds);
+export const embedWaiter = (speeds) => script('embedWaiter', speeds);
 export const STRATEGIES = { immediateRecaller, camper, spinner,
   spearRusher, directShooter, embedWaiter };

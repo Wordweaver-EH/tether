@@ -60,6 +60,16 @@ function unitInput(x, y, deadzone) {
 }
 
 export function createWorld(config = {}) {
+  const override = config.experiment ?? {};
+  const allowed = ['PLAYER_SPEED', 'TURN_RATE_RAD',
+    'OUTBOUND_SPEED', 'RETURN_SPEED'];
+  if (Object.keys(override).some((key) => !allowed.includes(key)))
+    throw new RangeError('unsupported experiment override');
+  const experiment = { ...E, ...override };
+  for (const key of allowed) {
+    if (!Number.isFinite(experiment[key]) || experiment[key] <= 0)
+      throw new RangeError(`invalid experiment override: ${key}`);
+  }
   const technical = {
     moveDeadzone: config.moveDeadzone ?? T.MOVE_DEADZONE,
     aimDeadzone: config.aimDeadzone ?? T.AIM_DEADZONE,
@@ -70,7 +80,7 @@ export function createWorld(config = {}) {
       throw new RangeError(`Invalid technical constant: ${name}`);
     }
   }
-  const players = E.STARTS.map((start, i) => ({
+  const players = experiment.STARTS.map((start, i) => ({
     id: playerId(i), position: copy(start.position), velocity: vec(0, 0),
     facing: copy(start.facing), score: 0,
   }));
@@ -78,8 +88,10 @@ export function createWorld(config = {}) {
     owner: player.id, state: 'HELD', position: copy(player.position),
     direction: copy(player.facing), embedSurfaceId: null, recallTarget: null,
   }));
-  return { tick: 0, elapsedSec: 0, remainingSec: E.BOUT_SECONDS,
-    ended: false, technical, players, spears };
+  return { tick: 0, elapsedSec: 0, remainingSec: experiment.BOUT_SECONDS,
+    ended: false, technical, experiment,
+    experimentOverrides: Object.keys(override).length ? structuredClone(override) : null,
+    players, spears };
 }
 
 // First entry into a closed axis-aligned box. The contact face names the box face.
@@ -121,7 +133,7 @@ function earliest(best, candidate, epsilon) {
   return best;
 }
 
-function staticContact(start, delta, radius, epsilon) {
+function staticContact(start, delta, radius, epsilon, E) {
   let best = null;
   const arena = E.ARENA;
   if (radius === 0) {
@@ -169,12 +181,12 @@ function staticContact(start, delta, radius, epsilon) {
   return best;
 }
 
-function moveWithSlide(position, delta, epsilon) {
+function moveWithSlide(position, delta, epsilon, E) {
   let pos = copy(position);
   let remaining = copy(delta);
   for (let i = 0; i < 4; i++) {
     if (Math.abs(remaining.x) + Math.abs(remaining.y) <= epsilon) break;
-    const hit = staticContact(pos, remaining, E.PLAYER_RADIUS, epsilon);
+    const hit = staticContact(pos, remaining, E.PLAYER_RADIUS, epsilon, E);
     if (!hit) { pos = pointAt(pos, remaining, 1); break; }
     pos = pointAt(pos, remaining, hit.t);
     remaining = vec(remaining.x * (1 - hit.t), remaining.y * (1 - hit.t));
@@ -227,6 +239,7 @@ function setHeld(spear, owner) {
 }
 
 function resetAfterHit(world) {
+  const E = world.experiment ?? CONSTANTS.experiment;
   for (let i = 0; i < 2; i++) {
     const player = world.players[i];
     const start = E.STARTS[i];
@@ -241,6 +254,7 @@ export function step(world, inputs) {
   if (world.ended) return [];
   if (!Array.isArray(inputs) || inputs.length !== 2) throw new TypeError('inputs must be [p1, p2]');
   const actions = inputs.map(inputOf);
+  const E = world.experiment ?? CONSTANTS.experiment;
   const events = [];
   const epsilon = world.technical.epsilon;
   const previous = world.players.map((p) => copy(p.position));
@@ -302,7 +316,7 @@ export function step(world, inputs) {
     const move = unitInput(actions[i].moveX, actions[i].moveY, world.technical.moveDeadzone);
     player.velocity = move ? vec(move.x * E.PLAYER_SPEED, move.y * E.PLAYER_SPEED) : vec(0, 0);
     player.position = moveWithSlide(player.position,
-      vec(player.velocity.x * DT, player.velocity.y * DT), epsilon);
+      vec(player.velocity.x * DT, player.velocity.y * DT), epsilon, E);
   }
 
   // 5. Neutralization uses the previous-to-current centre sweep.
@@ -340,7 +354,7 @@ export function step(world, inputs) {
     const delta = vec(spear.direction.x * travel, spear.direction.y * travel);
     const victim = world.players[1 - i];
     const playerT = circleTOI(start, delta, victim.position, E.PLAYER_RADIUS, epsilon);
-    const staticHit = phase === 'OUTBOUND' ? staticContact(start, delta, 0, epsilon) : null;
+    const staticHit = phase === 'OUTBOUND' ? staticContact(start, delta, 0, epsilon, E) : null;
     if (playerT !== null && (!staticHit || playerT <= staticHit.t + epsilon)) {
       const hitPos = pointAt(start, delta, playerT);
       spear.position = hitPos;
@@ -385,6 +399,7 @@ export function step(world, inputs) {
 // Hash an explicit scalar sequence, independent of object insertion order.
 export function hashWorld(world) {
   const state = [world.tick, world.elapsedSec, world.remainingSec, world.ended,
+    ...(world.experimentOverrides ? [world.experimentOverrides] : []),
     world.technical.moveDeadzone, world.technical.aimDeadzone, world.technical.epsilon,
     ...world.players.flatMap((p) => [p.id, p.position.x, p.position.y,
       p.velocity.x, p.velocity.y, p.facing.x, p.facing.y, p.score]),

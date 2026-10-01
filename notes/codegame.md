@@ -51,7 +51,7 @@ reusable part.
 - **Engine routes:** Tether runs as "route 0": a pure-JS deterministic core with any renderer (canvas now; Three.js or
   Pixi later). Codegame's contract should be engine-agnostic at the core. Godot enters as an adapter through its MCP,
   not as the foundation.
-- Research job r1-prior-art (Luna max) is extracting their exact interfaces and formats (jobs/r1-prior-art/answer.md).
+- Research job r1-prior-art (Luna max) is extracting their exact interfaces and formats (docs/build-history/r1-prior-art-answer.md).
 
 ## r1 prior-art result (Luna max, 780k tokens; full report in research/2026-09-26-prior-art-interfaces.md)
 - It confirms the headless core `{createWorld, step (one fixed tick), percept, hashWorld}`. It adds

@@ -1,6 +1,6 @@
 # Handoff: continue Tether (for the owner's ChatGPT Dot, 2026-10-01)
 
-Repo: github.com/Wordweaver-EH/tether (private). Work on your own cloud computer (clone the repo there); do not use the owner's PC or start Codex / Work tasks (those bill a different budget). Start by reading this file, then SPEC.md, DESIGN.md, notes/decisions.md and notes/log.md.
+Repo: github.com/Wordweaver-EH/tether (private). Work on your own cloud computer (clone the repo there); do not use the owner's PC or start Codex / Work tasks (those bill a different budget). Start by reading this file, then SPEC.md, DESIGN.md, notes/decisions.md and notes/log.md; docs/build-history/ has the briefs and summaries of every earlier build phase (p2-mind = the mind design, p4-exploits = task 1).
 
 ## The project
 Tether is a deterministic spear-duel web game, human vs a non-LLM NPC "mind". Plain JS, Node >= 20, no dependencies, no build step. `SPEC.md` = the game rules (authoritative, do not change rules without a decision record). `DESIGN.md` = the plan and build phases. `notes/decisions.md` = D1-D18 (read before working). `notes/log.md` = history. Run `node --test` (84 tests, all green at the last commit); CPU tournaments: `node arena/tournament.mjs ...` (README).

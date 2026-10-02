@@ -1,0 +1,2985 @@
+{
+  "schema": "codegame-search-v2-balanced",
+  "source": {
+    "sha256": "e3d12311a8df3d14979d3a567b26c643d8ccd285e00faee352891443439a9357",
+    "files": [
+      {
+        "path": "src/agents/basic.mjs",
+        "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e"
+      },
+      {
+        "path": "src/agents/dodger.mjs",
+        "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3"
+      },
+      {
+        "path": "src/agents/param.mjs",
+        "sha256": "2bdaad30ec1e6320f56ae2ad0c5f8d5bde8760b71364d4740cf61f36ec7eef90"
+      },
+      {
+        "path": "src/agents/spear-memory.mjs",
+        "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573"
+      },
+      {
+        "path": "src/agents/strategies.mjs",
+        "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b"
+      },
+      {
+        "path": "src/deterministic-math.js",
+        "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+      },
+      {
+        "path": "src/headless.mjs",
+        "sha256": "e316da96298c6aa722255723c070f24078cae7a8bedf1a937809185dd2862e9c"
+      },
+      {
+        "path": "src/log.js",
+        "sha256": "2d05fbabb442a4636900621132bdece09ff1ae9b6b4393ae333e1522383217a1"
+      },
+      {
+        "path": "src/mind/belief.mjs",
+        "sha256": "758df2a7d9f5265ac9777b5622970bea35ad3669d4e8c0660ba51ae90c4c58d1"
+      },
+      {
+        "path": "src/mind/components.mjs",
+        "sha256": "51c8a4de5337f342d4c03ad38484e6f9e0e02e47b6137b847097b585d02aaa6c"
+      },
+      {
+        "path": "src/mind/index.mjs",
+        "sha256": "c2829b3a5827df0fe15699ed70c4cdff47602471c4508b30cc4e3a46770c9090"
+      },
+      {
+        "path": "src/mind/math.mjs",
+        "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617"
+      },
+      {
+        "path": "src/mind/own-spear.mjs",
+        "sha256": "f896e6025f86964253f0b5164358a00108c7e07728011036e425858761f7a6ac"
+      },
+      {
+        "path": "src/mind/specialists.mjs",
+        "sha256": "8ae7ee4a70be2379307ee06b9f98d6cc44713b4333642c88992be8dc9ee0ed4f"
+      },
+      {
+        "path": "src/mind/workspace.mjs",
+        "sha256": "99fc7e9723e5a08f1ecf6e2e470c4608b53615e092be1a2e29ac192e5ed64767"
+      },
+      {
+        "path": "src/perception.js",
+        "sha256": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9"
+      },
+      {
+        "path": "src/sim.js",
+        "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+      },
+      {
+        "path": "arena/compare.mjs",
+        "sha256": "67508e035a84a284c4a2753707597d90123e84043f6feb785ff2c3fe2a2776e6"
+      },
+      {
+        "path": "arena/core.mjs",
+        "sha256": "74d9b9d9937e50fc45d5c0db6a8655e283ace4da6e4e389785e98c1009b6b552"
+      },
+      {
+        "path": "arena/dodger-eval.mjs",
+        "sha256": "a0cf9a152199b2bf747c1424af7b1a5695624f135b51d64311f0edbebd54c34b"
+      },
+      {
+        "path": "arena/evaluate-policies.mjs",
+        "sha256": "92f7fe6fd59e9c8c895c44484a694ce006f11fd8b3760f9c43d3b7253b270644"
+      },
+      {
+        "path": "arena/search-worker.mjs",
+        "sha256": "82bb3a5dbd6d81b0c65c7dc64f121a1b361d8fce9bec54ffdd2a75decb6f2df2"
+      },
+      {
+        "path": "arena/search.mjs",
+        "sha256": "647d3f33e84a832d65f3d2e6f023735c1f3bb8d26f05e6a0bbd784cb7be53d30"
+      },
+      {
+        "path": "arena/tether-adapter.mjs",
+        "sha256": "1d0cde23756b0cf8d6573276d2c49f04abbc6602b946ddb600f8d8a365c0141a"
+      },
+      {
+        "path": "arena/tether-search-adapter.mjs",
+        "sha256": "cc10c4f9779b4fa3b5b1ee8714b04c95184ee725649384c954bcce6bc8d3abab"
+      },
+      {
+        "path": "arena/tournament.mjs",
+        "sha256": "eafdb68c854ce9372361351d9cd72a0ba4206e036c445fc478ef6f214dcdb65c"
+      },
+      {
+        "path": "arena/worker.mjs",
+        "sha256": "9d05fc31763d3ac0052426699735ea4ef50daa118cf07c9cdccaf8614ad4bb38"
+      }
+    ]
+  },
+  "metricVersion": "tether-phase4a-v2-balanced-reset-safe",
+  "condition": "recall8",
+  "override": {
+    "RETURN_SPEED": 8
+  },
+  "config": {
+    "adapter": "./arena/tether-search-adapter.mjs",
+    "condition": "recall8",
+    "mode": "both",
+    "seed": 431,
+    "workers": 4,
+    "budgetMin": 25,
+    "generations": 2,
+    "evalSeconds": 20,
+    "validationSeconds": 30,
+    "validationSeeds": 2,
+    "out": "reports/phase4a-screen-recall8.json"
+  },
+  "startedUtc": "2026-10-01T23:21:11.837Z",
+  "elapsedSec": 49.262,
+  "bouts": 552,
+  "generations": [
+    {
+      "mode": "es",
+      "generation": 0,
+      "best": "seed-direct",
+      "fitness": 0.5494319391389791,
+      "bouts": 20
+    },
+    {
+      "mode": "es",
+      "generation": 1,
+      "best": "es-3",
+      "fitness": 1.000964538212595,
+      "bouts": 80
+    },
+    {
+      "mode": "coevo",
+      "generation": 0,
+      "best": "seed-direct",
+      "fitness": 0.4994440004002756,
+      "bouts": 28
+    },
+    {
+      "mode": "coevo",
+      "generation": 1,
+      "best": "coevo-10",
+      "fitness": 0.8574277107136133,
+      "bouts": 112
+    }
+  ],
+  "hallOfFame": [
+    {
+      "name": "es-3",
+      "vector": [
+        0,
+        0.3449787622805064,
+        0.6214346752221195,
+        0.37996902915000463,
+        0.11778092162280032,
+        0.5521494691250846,
+        0.5937398819606752,
+        0.07491641325037927,
+        0,
+        0.06385498828720299,
+        0.09775777068748498,
+        0.29163017909677524,
+        0.4360498960353434,
+        0.8861293013943359,
+        0.44068308541613316,
+        0.7443043093020096,
+        0.6599412411693483,
+        0.02915309122018516,
+        0.2514240118358284,
+        0.41009784435176033,
+        1
+      ],
+      "fitness": 1.000964538212595,
+      "trainWinRate": 1,
+      "trainMargin": 4
+    },
+    {
+      "name": "es-1",
+      "vector": [
+        0,
+        0.14624254795008648,
+        0.876695951578064,
+        0.37759934116996374,
+        0.16961641634504,
+        0.5381073237974197,
+        0.37974554953351614,
+        0,
+        0.0008620581906288862,
+        0.08977654188778249,
+        0,
+        0.33861312814878125,
+        0.4008863480873406,
+        0.8806164330849424,
+        0.45175900238721317,
+        0.8871421178067103,
+        0.78567443943955,
+        0,
+        0.07771162228658793,
+        0.1772190321252935,
+        1
+      ],
+      "fitness": 0.9506161120278709,
+      "trainWinRate": 0.95,
+      "trainMargin": 2.5
+    },
+    {
+      "name": "coevo-10",
+      "vector": [
+        0.027555047699250282,
+        0.35322660438374925,
+        0.8877490665249956,
+        0.1857047624644219,
+        0.16992741713828097,
+        0.3641150902993977,
+        0.46893185084778816,
+        0.12707910423912108,
+        0.0967154443692416,
+        0.23359845093172044,
+        0.25500097027528457,
+        0.43163752794993865,
+        0.6708647112464532,
+        0.8293904863931238,
+        0.3774153410016248,
+        0.9888824047949165,
+        0.8095830303318798,
+        0.1973202307317406,
+        0.03208908705599603,
+        0.3788250852029093,
+        1
+      ],
+      "fitness": 0.8574277107136133,
+      "trainWinRate": 0.8571428571428571,
+      "trainMargin": 1.1428571428571428
+    },
+    {
+      "name": "coevo-13",
+      "vector": [
+        0,
+        0.4581294394781192,
+        0.8347768613983375,
+        0.46552582000571785,
+        0.020196638597796357,
+        0.4754603003198281,
+        0.6295158673981205,
+        0,
+        0,
+        0.38796144117135556,
+        0.3785354139918032,
+        0.5304260183608328,
+        0.4710833070697263,
+        0.981602692976594,
+        0.49544744933272394,
+        0.8998804375221953,
+        0.6567766491258517,
+        0,
+        0.3354702254412696,
+        0.28807529034253887,
+        1
+      ],
+      "fitness": 0.7502316806216439,
+      "trainWinRate": 0.75,
+      "trainMargin": 0.9285714285714286
+    },
+    {
+      "name": "seed-direct",
+      "vector": [
+        0,
+        0.3333333333333333,
+        0.8461538461538461,
+        0.29824561403508776,
+        0.06666666666666667,
+        0.5,
+        0.5,
+        0,
+        0,
+        0.19999999999999998,
+        0.15384615384615385,
+        0.43181818181818177,
+        0.5,
+        1,
+        0.4666666666666666,
+        0.75,
+        0.7,
+        0,
+        0.19999999999999998,
+        0.2727272727272727,
+        1
+      ],
+      "fitness": 0.5494319391389791,
+      "trainWinRate": 0.55,
+      "trainMargin": -2.3
+    },
+    {
+      "name": "seed-anchor",
+      "vector": [
+        1,
+        0.11111111111111112,
+        0.8461538461538461,
+        0.2280701754385965,
+        0.19999999999999998,
+        0.85,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.13999999999999999,
+        0.37142857142857144,
+        0.5384615384615384,
+        0.43181818181818177,
+        0.4,
+        0,
+        0.6666666666666666,
+        0.75,
+        0.7,
+        0.3333333333333333,
+        0.26666666666666666,
+        0.18181818181818182,
+        1
+      ],
+      "fitness": 0.2990354617874051,
+      "trainWinRate": 0.3,
+      "trainMargin": -4
+    }
+  ],
+  "champions": [
+    {
+      "name": "es-3",
+      "vector": [
+        0,
+        0.3449787622805064,
+        0.6214346752221195,
+        0.37996902915000463,
+        0.11778092162280032,
+        0.5521494691250846,
+        0.5937398819606752,
+        0.07491641325037927,
+        0,
+        0.06385498828720299,
+        0.09775777068748498,
+        0.29163017909677524,
+        0.4360498960353434,
+        0.8861293013943359,
+        0.44068308541613316,
+        0.7443043093020096,
+        0.6599412411693483,
+        0.02915309122018516,
+        0.2514240118358284,
+        0.41009784435176033,
+        1
+      ],
+      "parameters": {
+        "throwMode": 0,
+        "leadSec": 0.1552404430262279,
+        "throwRange": 10.078650777887553,
+        "throwAlignment": 0.12329117330775131,
+        "throwInterval": 0.1766713824342005,
+        "surfaceBias": 0.10429893825016912,
+        "embedOffset": 0.562439291764051,
+        "recallMode": 0.2247492397511378,
+        "recallDelay": 0,
+        "crossTolerance": 0.3617462295026052,
+        "anchorHold": 3.2708510189373046,
+        "preferredDistance": 3.7663455760516227,
+        "distanceGain": 0.8720997920706868,
+        "strafeSign": 0.7722586027886718,
+        "strafeStrength": 0.6610246281241997,
+        "dodgeStrength": 1.4886086186040193,
+        "recallAvoidance": 1.3198824823386965,
+        "coverUse": 0.04372963683027774,
+        "neutralization": 0.3771360177537426,
+        "gazeScanPeriod": 2.755538143934682,
+        "gazeTrack": 1
+      },
+      "training": {
+        "winRate": 1,
+        "margin": 4
+      },
+      "validation": {
+        "immediateRecaller": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 270,
+            "embeds": 182,
+            "outboundHits": 40,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.674074074074074,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 5,
+                "P2": 13
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 14
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 13,
+                "P2": 5
+              }
+            }
+          ]
+        },
+        "camper": {
+          "winRate": {
+            "mean": 0.875,
+            "lo": 0.875,
+            "hi": 0.875,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 6,
+          "draws": 2,
+          "losses": 0,
+          "metrics": {
+            "throws": 209,
+            "embeds": 174,
+            "outboundHits": 34,
+            "returningHits": 15,
+            "secondLocation": 0,
+            "directHitShare": 0.6938775510204082,
+            "embedShare": 0.8325358851674641,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 12,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 13,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 7,
+                "P2": 2
+              }
+            }
+          ]
+        },
+        "spinner": {
+          "winRate": {
+            "mean": 0.1875,
+            "lo": 0,
+            "hi": 0.375,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 1,
+          "draws": 1,
+          "losses": 6,
+          "metrics": {
+            "throws": 198,
+            "embeds": 152,
+            "outboundHits": 17,
+            "returningHits": 11,
+            "secondLocation": 0,
+            "directHitShare": 0.6071428571428571,
+            "embedShare": 0.7676767676767676,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 5,
+                "P2": 6
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 6,
+                "P2": 5
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 11,
+                "P2": 4
+              }
+            }
+          ]
+        },
+        "spearRusher": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.25,
+            "hi": 0.75,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 4,
+          "losses": 2,
+          "metrics": {
+            "throws": 252,
+            "embeds": 182,
+            "outboundHits": 44,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.7222222222222222,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 5,
+                "P2": 8
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 8,
+                "P2": 5
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 6,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "directShooter": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 296,
+            "embeds": 180,
+            "outboundHits": 70,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.6081081081081081,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 10,
+                "P2": 11
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 14
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 11,
+                "P2": 10
+              }
+            }
+          ]
+        },
+        "embedWaiter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 338,
+            "embeds": 302,
+            "outboundHits": 34,
+            "returningHits": 20,
+            "secondLocation": 0,
+            "directHitShare": 0.6296296296296297,
+            "embedShare": 0.893491124260355,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 9,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 8,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 9
+              }
+            }
+          ]
+        },
+        "reactiveDodger": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 212,
+            "embeds": 204,
+            "outboundHits": 6,
+            "returningHits": 8,
+            "secondLocation": 0,
+            "directHitShare": 0.42857142857142855,
+            "embedShare": 0.9622641509433962,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 2
+              }
+            }
+          ]
+        },
+        "mind-tuned": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 237,
+            "embeds": 217,
+            "outboundHits": 20,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.7692307692307693,
+            "embedShare": 0.9156118143459916,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "es-1": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.25,
+            "hi": 0.75,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 4,
+          "losses": 2,
+          "metrics": {
+            "throws": 218,
+            "embeds": 214,
+            "outboundHits": 2,
+            "returningHits": 8,
+            "secondLocation": 0,
+            "directHitShare": 0.2,
+            "embedShare": 0.981651376146789,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 3,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "coevo-10": {
+          "winRate": {
+            "mean": 0.375,
+            "lo": 0,
+            "hi": 0.75,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 2,
+          "losses": 4,
+          "metrics": {
+            "throws": 266,
+            "embeds": 250,
+            "outboundHits": 8,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.8,
+            "embedShare": 0.9398496240601504,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 3,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "coevo-13": {
+          "winRate": {
+            "mean": 0.375,
+            "lo": 0.25,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 0,
+          "draws": 6,
+          "losses": 2,
+          "metrics": {
+            "throws": 390,
+            "embeds": 384,
+            "outboundHits": 2,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.5,
+            "embedShare": 0.9846153846153847,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P2",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "seed-direct": {
+          "winRate": {
+            "mean": 0.375,
+            "lo": 0.25,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 2,
+          "losses": 4,
+          "metrics": {
+            "throws": 312,
+            "embeds": 308,
+            "outboundHits": 2,
+            "returningHits": 4,
+            "secondLocation": 0,
+            "directHitShare": 0.3333333333333333,
+            "embedShare": 0.9871794871794872,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 2,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "seed-anchor": {
+          "winRate": {
+            "mean": 0.4375,
+            "lo": 0.375,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 3,
+          "losses": 3,
+          "metrics": {
+            "throws": 328,
+            "embeds": 302,
+            "outboundHits": 7,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.5384615384615384,
+            "embedShare": 0.9207317073170732,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 11
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 7
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 6
+              }
+            }
+          ]
+        }
+      },
+      "byMode": {
+        "MODE_A": {
+          "winRate": {
+            "mean": 0.451923076923077,
+            "lo": 0.38461538461538464,
+            "hi": 0.5192307692307693,
+            "n": 52,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 17,
+          "draws": 13,
+          "losses": 22,
+          "metrics": {
+            "throws": 1705,
+            "embeds": 1411,
+            "outboundHits": 136,
+            "returningHits": 40,
+            "secondLocation": 0,
+            "directHitShare": 0.7727272727272727,
+            "embedShare": 0.827565982404692,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 5,
+                "P2": 13
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 14
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 12,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "MODE_B": {
+          "winRate": {
+            "mean": 0.7211538461538461,
+            "lo": 0.6923076923076923,
+            "hi": 0.75,
+            "n": 52,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 32,
+          "draws": 11,
+          "losses": 9,
+          "metrics": {
+            "throws": 1821,
+            "embeds": 1640,
+            "outboundHits": 150,
+            "returningHits": 42,
+            "secondLocation": 0,
+            "directHitShare": 0.78125,
+            "embedShare": 0.900604063701263,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 6,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 6,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 7,
+                "P2": 2
+              }
+            }
+          ]
+        }
+      },
+      "overall": {
+        "winRate": {
+          "mean": 0.5865384615384615,
+          "lo": 0.5384615384615384,
+          "hi": 0.6346153846153846,
+          "n": 104,
+          "clusters": 2,
+          "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+        },
+        "wins": 49,
+        "draws": 24,
+        "losses": 31,
+        "metrics": {
+          "throws": 3526,
+          "embeds": 3051,
+          "outboundHits": 286,
+          "returningHits": 82,
+          "secondLocation": 0,
+          "directHitShare": 0.7771739130434783,
+          "embedShare": 0.86528644356211,
+          "secondLocationFraction": 0
+        },
+        "exampleSeeds": [
+          {
+            "seed": 900431,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 5,
+              "P2": 13
+            }
+          },
+          {
+            "seed": 900432,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 3,
+              "P2": 14
+            }
+          },
+          {
+            "seed": 900431,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 12,
+              "P2": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "es-1",
+      "vector": [
+        0,
+        0.14624254795008648,
+        0.876695951578064,
+        0.37759934116996374,
+        0.16961641634504,
+        0.5381073237974197,
+        0.37974554953351614,
+        0,
+        0.0008620581906288862,
+        0.08977654188778249,
+        0,
+        0.33861312814878125,
+        0.4008863480873406,
+        0.8806164330849424,
+        0.45175900238721317,
+        0.8871421178067103,
+        0.78567443943955,
+        0,
+        0.07771162228658793,
+        0.1772190321252935,
+        1
+      ],
+      "parameters": {
+        "throwMode": 0,
+        "leadSec": 0.06580914657753892,
+        "throwRange": 13.397047370514832,
+        "throwAlignment": 0.12261581223343966,
+        "throwInterval": 0.25442462451756,
+        "surfaceBias": 0.07621464759483931,
+        "embedOffset": -0.7215267027989034,
+        "recallMode": 0,
+        "recallDelay": 0.004310290953144431,
+        "crossTolerance": 0.4071089483036193,
+        "anchorHold": 2,
+        "preferredDistance": 4.179795527709275,
+        "distanceGain": 0.8017726961746812,
+        "strafeSign": 0.7612328661698848,
+        "strafeStrength": 0.6776385035808198,
+        "dodgeStrength": 1.7742842356134205,
+        "recallAvoidance": 1.5713488788791,
+        "coverUse": 0,
+        "neutralization": 0.11656743342988189,
+        "gazeScanPeriod": 1.474704676689114,
+        "gazeTrack": 1
+      },
+      "training": {
+        "winRate": 0.95,
+        "margin": 2.5
+      },
+      "validation": {
+        "immediateRecaller": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 238,
+            "embeds": 210,
+            "outboundHits": 24,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.8823529411764706,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 17
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 17,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "camper": {
+          "winRate": {
+            "mean": 0.625,
+            "lo": 0.625,
+            "hi": 0.625,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 2,
+          "losses": 2,
+          "metrics": {
+            "throws": 249,
+            "embeds": 231,
+            "outboundHits": 17,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.7391304347826086,
+            "embedShare": 0.927710843373494,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 8,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 8,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 6
+              }
+            }
+          ]
+        },
+        "spinner": {
+          "winRate": {
+            "mean": 0.6875,
+            "lo": 0.5,
+            "hi": 0.875,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 5,
+          "draws": 1,
+          "losses": 2,
+          "metrics": {
+            "throws": 221,
+            "embeds": 156,
+            "outboundHits": 48,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.8888888888888888,
+            "embedShare": 0.7058823529411765,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 6,
+                "P2": 4
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 5,
+                "P2": 8
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 9,
+                "P2": 5
+              }
+            }
+          ]
+        },
+        "spearRusher": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 234,
+            "embeds": 198,
+            "outboundHits": 36,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.9473684210526315,
+            "embedShare": 0.8461538461538461,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 10
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 10
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 10,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "directShooter": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 246,
+            "embeds": 210,
+            "outboundHits": 20,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.9090909090909091,
+            "embedShare": 0.8536585365853658,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 17
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 17
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 17,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "embedWaiter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 264,
+            "embeds": 184,
+            "outboundHits": 78,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.975,
+            "embedShare": 0.696969696969697,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 11,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 11,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 11
+              }
+            }
+          ]
+        },
+        "reactiveDodger": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 210,
+            "embeds": 200,
+            "outboundHits": 8,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.5714285714285714,
+            "embedShare": 0.9523809523809523,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "mind-tuned": {
+          "winRate": {
+            "mean": 0.875,
+            "lo": 0.75,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 7,
+          "draws": 0,
+          "losses": 1,
+          "metrics": {
+            "throws": 182,
+            "embeds": 170,
+            "outboundHits": 11,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.8461538461538461,
+            "embedShare": 0.9340659340659341,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "es-3": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 214,
+            "embeds": 206,
+            "outboundHits": 6,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.75,
+            "embedShare": 0.9626168224299065,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            }
+          ]
+        },
+        "coevo-10": {
+          "winRate": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 0,
+          "draws": 0,
+          "losses": 8,
+          "metrics": {
+            "throws": 278,
+            "embeds": 266,
+            "outboundHits": 2,
+            "returningHits": 6,
+            "secondLocation": 0,
+            "directHitShare": 0.25,
+            "embedShare": 0.9568345323741008,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 4
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 4
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 4,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "coevo-13": {
+          "winRate": {
+            "mean": 0.375,
+            "lo": 0.25,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 2,
+          "losses": 4,
+          "metrics": {
+            "throws": 328,
+            "embeds": 318,
+            "outboundHits": 6,
+            "returningHits": 4,
+            "secondLocation": 0,
+            "directHitShare": 0.6,
+            "embedShare": 0.9695121951219512,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 2,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "seed-direct": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 4,
+          "losses": 2,
+          "metrics": {
+            "throws": 236,
+            "embeds": 220,
+            "outboundHits": 4,
+            "returningHits": 8,
+            "secondLocation": 0,
+            "directHitShare": 0.3333333333333333,
+            "embedShare": 0.9322033898305084,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 2,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "seed-anchor": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 4,
+          "losses": 2,
+          "metrics": {
+            "throws": 240,
+            "embeds": 230,
+            "outboundHits": 4,
+            "returningHits": 4,
+            "secondLocation": 0,
+            "directHitShare": 0.5,
+            "embedShare": 0.9583333333333334,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 4
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 5
+              }
+            }
+          ]
+        }
+      },
+      "byMode": {
+        "MODE_A": {
+          "winRate": {
+            "mean": 0.46153846153846156,
+            "lo": 0.36538461538461536,
+            "hi": 0.5576923076923077,
+            "n": 52,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 20,
+          "draws": 8,
+          "losses": 24,
+          "metrics": {
+            "throws": 1632,
+            "embeds": 1492,
+            "outboundHits": 103,
+            "returningHits": 31,
+            "secondLocation": 0,
+            "directHitShare": 0.7686567164179104,
+            "embedShare": 0.9142156862745098,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 17
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 8,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "MODE_B": {
+          "winRate": {
+            "mean": 0.7019230769230769,
+            "lo": 0.6923076923076923,
+            "hi": 0.7115384615384616,
+            "n": 52,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 34,
+          "draws": 5,
+          "losses": 13,
+          "metrics": {
+            "throws": 1508,
+            "embeds": 1307,
+            "outboundHits": 161,
+            "returningHits": 19,
+            "secondLocation": 0,
+            "directHitShare": 0.8944444444444445,
+            "embedShare": 0.866710875331565,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 5,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 6,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 6
+              }
+            }
+          ]
+        }
+      },
+      "overall": {
+        "winRate": {
+          "mean": 0.5817307692307692,
+          "lo": 0.5288461538461539,
+          "hi": 0.6346153846153846,
+          "n": 104,
+          "clusters": 2,
+          "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+        },
+        "wins": 54,
+        "draws": 13,
+        "losses": 37,
+        "metrics": {
+          "throws": 3140,
+          "embeds": 2799,
+          "outboundHits": 264,
+          "returningHits": 50,
+          "secondLocation": 0,
+          "directHitShare": 0.8407643312101911,
+          "embedShare": 0.8914012738853503,
+          "secondLocationFraction": 0
+        },
+        "exampleSeeds": [
+          {
+            "seed": 900431,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 0,
+              "P2": 17
+            }
+          },
+          {
+            "seed": 900432,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 1,
+              "P2": 16
+            }
+          },
+          {
+            "seed": 900431,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 8,
+              "P2": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "coevo-10",
+      "vector": [
+        0.027555047699250282,
+        0.35322660438374925,
+        0.8877490665249956,
+        0.1857047624644219,
+        0.16992741713828097,
+        0.3641150902993977,
+        0.46893185084778816,
+        0.12707910423912108,
+        0.0967154443692416,
+        0.23359845093172044,
+        0.25500097027528457,
+        0.43163752794993865,
+        0.6708647112464532,
+        0.8293904863931238,
+        0.3774153410016248,
+        0.9888824047949165,
+        0.8095830303318798,
+        0.1973202307317406,
+        0.03208908705599603,
+        0.3788250852029093,
+        1
+      ],
+      "parameters": {
+        "throwMode": 0.055110095398500564,
+        "leadSec": 0.15895197197268718,
+        "throwRange": 13.540737864824944,
+        "throwAlignment": 0.06792585730236024,
+        "throwInterval": 0.25489112570742145,
+        "surfaceBias": -0.2717698194012046,
+        "embedOffset": -0.18640889491327117,
+        "recallMode": 0.3812373127173633,
+        "recallDelay": 0.483577221846208,
+        "crossTolerance": 0.6587972891305107,
+        "anchorHold": 5.315012613578699,
+        "preferredDistance": 4.998410245959461,
+        "distanceGain": 1.3417294224929064,
+        "strafeSign": 0.6587809727862477,
+        "strafeStrength": 0.5661230115024373,
+        "dodgeStrength": 1.977764809589833,
+        "recallAvoidance": 1.6191660606637597,
+        "coverUse": 0.2959803460976109,
+        "neutralization": 0.048133630583994044,
+        "gazeScanPeriod": 2.5835379686160014,
+        "gazeTrack": 1
+      },
+      "training": {
+        "winRate": 0.8571428571428571,
+        "margin": 1.1428571428571428
+      },
+      "validation": {
+        "immediateRecaller": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 258,
+            "embeds": 236,
+            "outboundHits": 18,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.9147286821705426,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 16,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "camper": {
+          "winRate": {
+            "mean": 0.6875,
+            "lo": 0.625,
+            "hi": 0.75,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 3,
+          "losses": 1,
+          "metrics": {
+            "throws": 273,
+            "embeds": 242,
+            "outboundHits": 29,
+            "returningHits": 4,
+            "secondLocation": 0,
+            "directHitShare": 0.8787878787878788,
+            "embedShare": 0.8864468864468864,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 9,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 9,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            }
+          ]
+        },
+        "spinner": {
+          "winRate": {
+            "mean": 0.625,
+            "lo": 0.5,
+            "hi": 0.75,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 5,
+          "draws": 0,
+          "losses": 3,
+          "metrics": {
+            "throws": 230,
+            "embeds": 156,
+            "outboundHits": 57,
+            "returningHits": 5,
+            "secondLocation": 0,
+            "directHitShare": 0.9193548387096774,
+            "embedShare": 0.6782608695652174,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 10,
+                "P2": 4
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 5,
+                "P2": 7
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 7,
+                "P2": 6
+              }
+            }
+          ]
+        },
+        "spearRusher": {
+          "winRate": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "metrics": {
+            "throws": 242,
+            "embeds": 216,
+            "outboundHits": 20,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.9090909090909091,
+            "embedShare": 0.8925619834710744,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 10
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 10
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 10,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "directShooter": {
+          "winRate": {
+            "mean": 0.375,
+            "lo": 0.25,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 2,
+          "losses": 4,
+          "metrics": {
+            "throws": 264,
+            "embeds": 246,
+            "outboundHits": 18,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.9318181818181818,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 16,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "embedWaiter": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 244,
+            "embeds": 16,
+            "outboundHits": 224,
+            "returningHits": 0,
+            "secondLocation": 0,
+            "directHitShare": 1,
+            "embedShare": 0.06557377049180328,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 33,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 23,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 33
+              }
+            }
+          ]
+        },
+        "reactiveDodger": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 160,
+            "embeds": 148,
+            "outboundHits": 8,
+            "returningHits": 10,
+            "secondLocation": 0,
+            "directHitShare": 0.4444444444444444,
+            "embedShare": 0.925,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "mind-tuned": {
+          "winRate": {
+            "mean": 0.8125,
+            "lo": 0.75,
+            "hi": 0.875,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 5,
+          "draws": 3,
+          "losses": 0,
+          "metrics": {
+            "throws": 245,
+            "embeds": 233,
+            "outboundHits": 10,
+            "returningHits": 4,
+            "secondLocation": 0,
+            "directHitShare": 0.7142857142857143,
+            "embedShare": 0.9510204081632653,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            }
+          ]
+        },
+        "es-3": {
+          "winRate": {
+            "mean": 0.75,
+            "lo": 0.5,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 6,
+          "draws": 0,
+          "losses": 2,
+          "metrics": {
+            "throws": 186,
+            "embeds": 166,
+            "outboundHits": 16,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.8888888888888888,
+            "embedShare": 0.8924731182795699,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 2,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            }
+          ]
+        },
+        "es-1": {
+          "winRate": {
+            "mean": 0.75,
+            "lo": 0.5,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 6,
+          "draws": 0,
+          "losses": 2,
+          "metrics": {
+            "throws": 194,
+            "embeds": 186,
+            "outboundHits": 8,
+            "returningHits": 12,
+            "secondLocation": 0,
+            "directHitShare": 0.4,
+            "embedShare": 0.9587628865979382,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 4,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 2,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "coevo-13": {
+          "winRate": {
+            "mean": 0.375,
+            "lo": 0.25,
+            "hi": 0.5,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 2,
+          "draws": 2,
+          "losses": 4,
+          "metrics": {
+            "throws": 412,
+            "embeds": 408,
+            "outboundHits": 2,
+            "returningHits": 2,
+            "secondLocation": 0,
+            "directHitShare": 0.5,
+            "embedShare": 0.9902912621359223,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 1,
+                "P2": 0
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 1
+              }
+            }
+          ]
+        },
+        "seed-direct": {
+          "winRate": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 8,
+          "draws": 0,
+          "losses": 0,
+          "metrics": {
+            "throws": 190,
+            "embeds": 170,
+            "outboundHits": 12,
+            "returningHits": 8,
+            "secondLocation": 0,
+            "directHitShare": 0.6,
+            "embedShare": 0.8947368421052632,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 3,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 4,
+                "P2": 1
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P2",
+              "score": {
+                "P1": 1,
+                "P2": 3
+              }
+            }
+          ]
+        },
+        "seed-anchor": {
+          "winRate": {
+            "mean": 0.5625,
+            "lo": 0.5,
+            "hi": 0.625,
+            "n": 8,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 1,
+          "draws": 7,
+          "losses": 0,
+          "metrics": {
+            "throws": 306,
+            "embeds": 301,
+            "outboundHits": 3,
+            "returningHits": 1,
+            "secondLocation": 0,
+            "directHitShare": 0.75,
+            "embedShare": 0.9836601307189542,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P2",
+              "score": {
+                "P1": 0,
+                "P2": 3
+              }
+            }
+          ]
+        }
+      },
+      "byMode": {
+        "MODE_A": {
+          "winRate": {
+            "mean": 0.5480769230769231,
+            "lo": 0.5384615384615384,
+            "hi": 0.5576923076923077,
+            "n": 52,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 24,
+          "draws": 9,
+          "losses": 19,
+          "metrics": {
+            "throws": 1648,
+            "embeds": 1443,
+            "outboundHits": 180,
+            "returningHits": 32,
+            "secondLocation": 0,
+            "directHitShare": 0.8490566037735849,
+            "embedShare": 0.8756067961165048,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 0,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 16
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_A",
+              "seat": "P1",
+              "score": {
+                "P1": 9,
+                "P2": 0
+              }
+            }
+          ]
+        },
+        "MODE_B": {
+          "winRate": {
+            "mean": 0.8269230769230769,
+            "lo": 0.8076923076923077,
+            "hi": 0.8461538461538461,
+            "n": 52,
+            "clusters": 2,
+            "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+          },
+          "wins": 39,
+          "draws": 8,
+          "losses": 5,
+          "metrics": {
+            "throws": 1556,
+            "embeds": 1281,
+            "outboundHits": 245,
+            "returningHits": 18,
+            "secondLocation": 0,
+            "directHitShare": 0.9315589353612167,
+            "embedShare": 0.8232647814910026,
+            "secondLocationFraction": 0
+          },
+          "exampleSeeds": [
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 4,
+                "P2": 2
+              }
+            },
+            {
+              "seed": 900432,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 4,
+                "P2": 3
+              }
+            },
+            {
+              "seed": 900431,
+              "mode": "MODE_B",
+              "seat": "P1",
+              "score": {
+                "P1": 1,
+                "P2": 2
+              }
+            }
+          ]
+        }
+      },
+      "overall": {
+        "winRate": {
+          "mean": 0.6875,
+          "lo": 0.6730769230769231,
+          "hi": 0.7019230769230769,
+          "n": 104,
+          "clusters": 2,
+          "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+        },
+        "wins": 63,
+        "draws": 17,
+        "losses": 24,
+        "metrics": {
+          "throws": 3204,
+          "embeds": 2724,
+          "outboundHits": 425,
+          "returningHits": 50,
+          "secondLocation": 0,
+          "directHitShare": 0.8947368421052632,
+          "embedShare": 0.850187265917603,
+          "secondLocationFraction": 0
+        },
+        "exampleSeeds": [
+          {
+            "seed": 900431,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 0,
+              "P2": 16
+            }
+          },
+          {
+            "seed": 900432,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 1,
+              "P2": 16
+            }
+          },
+          {
+            "seed": 900431,
+            "mode": "MODE_A",
+            "seat": "P1",
+            "score": {
+              "P1": 9,
+              "P2": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

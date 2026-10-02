@@ -1,0 +1,29 @@
+{
+  "schema": "tether-split-file-v1",
+  "purpose": "Transport-only split of the original v2 general-audit gzip for API request-size limits; no scientific data edits",
+  "sourceFingerprint": "19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5",
+  "original": {
+    "file": "phase5-final.json.gz",
+    "bytes": 16095792,
+    "sha256": "2eec0d8f78941cfba02ee0ff9301e1380b7959c2ec9d6fffbbc959a1ab3a189c"
+  },
+  "parts": [
+    {
+      "file": "phase5-final.json.gz.part-01",
+      "bytes": 8000000,
+      "sha256": "5742720b664ff8d1e61565e7457d0a5392ab1215fddf64c9aa8973b491097b37"
+    },
+    {
+      "file": "phase5-final.json.gz.part-02",
+      "bytes": 8000000,
+      "sha256": "add7c0bcc7720d5949aea8bdba0e162e999d08469eff3561041ed7da8b8ade41"
+    },
+    {
+      "file": "phase5-final.json.gz.part-03",
+      "bytes": 95792,
+      "sha256": "5f3edd4eaa79a562b2429261695561b2a03666962185d288321f8297ed9fb5f5"
+    }
+  ],
+  "reassembly": "node tools/reassemble-phase5.mjs",
+  "note": "Parts are ordered slices of one gzip stream, not independently decompressible gzip files. Concatenation reconstructs the exact original gzip bytes."
+}

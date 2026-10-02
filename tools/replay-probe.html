@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Tether cross-runtime replay probe</title>
+<h1>Cross-runtime replay probe</h1><p>This generates a 30-second Mode B raw-input log in this browser. Download it and verify with Node.</p>
+<button id="run">Generate browser log</button><pre id="result"></pre>
+<script type="module">
+import { replayProbe } from './replay-probe.mjs';
+import { replayFromLog } from '../src/log.js';
+document.querySelector('#run').onclick = () => {
+  const { log, finalHash } = replayProbe();
+  const replay = replayFromLog(log);
+  document.querySelector('#result').textContent = `Browser: ${navigator.userAgent}\nFinal hash: ${finalHash}\nVerified samples: ${replay.verifiedSamples}\nRun: node tools/verify-browser-replay.mjs <downloaded-file>`;
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([log], { type: 'application/x-ndjson' }));
+  a.download = 'tether-browser-replay.jsonl'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+</script></html>

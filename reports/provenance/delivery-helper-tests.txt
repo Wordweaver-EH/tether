@@ -1,0 +1,15 @@
+✔ diagnostic server serves the unmodified browser probe with HTML MIME (73.10602ms)
+✔ diagnostic server serves probe and simulation module imports (63.898667ms)
+✔ diagnostic server supports HEAD without a response body (10.990875ms)
+✔ diagnostic server refuses mutation methods (10.295972ms)
+✔ diagnostic server excludes repository, reports, unrelated tools, and the game client (24.605116ms)
+✔ diagnostic resolver rejects source traversal, encoded separators, and non-module assets (0.566741ms)
+✔ diagnostic server reports malformed and absent paths without crashing (16.669331ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 447.99669

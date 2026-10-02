@@ -1,0 +1,34 @@
+{
+  "config": {
+    "seeds": 32,
+    "adaptationSeeds": 64,
+    "episodes": 12,
+    "heldout": 3,
+    "workers": 1,
+    "durationSec": 300,
+    "budgets": [
+      192
+    ],
+    "modes": [
+      "MODE_B"
+    ],
+    "opponents": [
+      "direct",
+      "anchor"
+    ],
+    "variants": [
+      "full",
+      "noMetacog",
+      "noAutomatization",
+      "noLearning"
+    ],
+    "seedStart": 101,
+    "adaptationSeedStart": 700001,
+    "resume": false,
+    "label": "final",
+    "out": "../final-reports/learning-final"
+  },
+  "jobs": 1152,
+  "startedAt": "2026-10-01T23:39:55.319Z",
+  "sourceHash": "19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5"
+}

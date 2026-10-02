@@ -1,0 +1,20 @@
+✔ param family has independent bounded policy dimensions and delayed percepts (8.54201ms)
+✔ reactive dodger waits 150 ms then moves perpendicular to visible outbound line (1.022881ms)
+✔ dodger avoids a believed embedded recall line without world state (0.516515ms)
+✔ config overrides affect only named worlds and both sim and perception (4.246808ms)
+✔ search controls are bounded and Wilson CI is finite at both extremes (0.990515ms)
+✔ own spear belief uses condition-specific public recall speed (0.590313ms)
+✔ held-out scheduler crosses every seed with every mode and seat independently (12.154122ms)
+✔ paired interval treats draws as half points and clusters by seed (5.068575ms)
+✔ search rejects nonfinite budgets and supports reproducible generation counts (0.867802ms)
+✔ held-out evaluation rejects invalid controls before spawning workers (3.752569ms)
+✔ training excludes self-play and does not count a candidate reused as a rival (2.312228ms)
+✔ training compares candidates on the same crossed seeds, modes and seats (0.638004ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 296.327057

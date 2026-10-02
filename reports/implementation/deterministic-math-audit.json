@@ -1,0 +1,12 @@
+{
+  "mathVersion": "ieee-arithmetic-v1",
+  "samples": 100000,
+  "seed": 139,
+  "maxSqrtRelativeErrorVsHost": 2.220446049250313e-16,
+  "maxHypotRelativeErrorVsHost": 4.440892098500626e-16,
+  "maxTrigAbsoluteErrorVsHost": 7.771561172376096e-16,
+  "maxSingleTurnComponentErrorVsPriorAlgorithm": 3.3306690738754696e-16,
+  "existingRuleTestAbsoluteTolerance": 1e-11,
+  "collisionEpsilon": 1e-9,
+  "note": "Sampled comparison, not a proof of correct rounding. Replay relies on specified arithmetic rather than host agreement."
+}

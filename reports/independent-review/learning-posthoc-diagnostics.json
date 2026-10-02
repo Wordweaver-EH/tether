@@ -1,0 +1,1346 @@
+{
+  "status": "POST HOC terminal-only independent contrasts, 10000draw percentile bootstrap, seedclustered and unadjusted",
+  "validation": {
+    "rows": 8704,
+    "byProtocol": {
+      "learning": 7680,
+      "adaptation": 1024
+    },
+    "uniqueRows": 8704,
+    "full300s": true,
+    "budgetBounds": true,
+    "shotCohortCountIdentities": true
+  },
+  "heldoutPaired": [
+    {
+      "variant": "noMetacog",
+      "metric": "win",
+      "direction": "ablated minus full",
+      "mean": -0.01953125,
+      "lo": -0.05078125,
+      "hi": 0.01432291666666667,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "scoreMargin",
+      "direction": "ablated minus full",
+      "mean": 1.9583333333333333,
+      "lo": 0.515625,
+      "hi": 3.4974609374999996,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "shotHitRate",
+      "direction": "ablated minus full",
+      "mean": 0.003523308982986409,
+      "lo": -0.012303589636254652,
+      "hi": 0.02015038671413499,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "type2Share",
+      "direction": "ablated minus full",
+      "mean": -0.8370330160274226,
+      "lo": -0.8492661215142672,
+      "hi": -0.8244501719705393,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "automaticShare",
+      "direction": "ablated minus full",
+      "mean": -0.616867877987771,
+      "lo": -0.6490698319089309,
+      "hi": -0.5839500460325181,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "computePerDecision",
+      "direction": "ablated minus full",
+      "mean": -57.13949995367797,
+      "lo": -57.59112782564387,
+      "hi": -56.66878795511395,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "win",
+      "direction": "ablated minus full",
+      "mean": -0.010416666666666668,
+      "lo": -0.02734375,
+      "hi": 0.00390625,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "scoreMargin",
+      "direction": "ablated minus full",
+      "mean": -0.1796875,
+      "lo": -0.546875,
+      "hi": 0.20833333333333334,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "shotHitRate",
+      "direction": "ablated minus full",
+      "mean": 0.0001564457208532064,
+      "lo": -0.004183667127253755,
+      "hi": 0.00461008478606761,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "type2Share",
+      "direction": "ablated minus full",
+      "mean": 0.017550838428756717,
+      "lo": 0.01281814549749861,
+      "hi": 0.022762436017695016,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "automaticShare",
+      "direction": "ablated minus full",
+      "mean": -0.616867877987771,
+      "lo": -0.6490120162242913,
+      "hi": -0.5830286429382064,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "computePerDecision",
+      "direction": "ablated minus full",
+      "mean": 1.179876551788031,
+      "lo": 0.8309755998702992,
+      "hi": 1.5668998112377253,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noLearning",
+      "metric": "win",
+      "direction": "ablated minus full",
+      "mean": 0.04036458333333333,
+      "lo": 0.005208333333333333,
+      "hi": 0.078125,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noLearning",
+      "metric": "scoreMargin",
+      "direction": "ablated minus full",
+      "mean": 3.7109375,
+      "lo": 2.4192708333333335,
+      "hi": 5.059895833333334,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noLearning",
+      "metric": "shotHitRate",
+      "direction": "ablated minus full",
+      "mean": 0.03455455641982888,
+      "lo": 0.022157270737615423,
+      "hi": 0.04730791765615848,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noLearning",
+      "metric": "type2Share",
+      "direction": "ablated minus full",
+      "mean": -0.5080614809153233,
+      "lo": -0.5361752043959608,
+      "hi": -0.47919136933713175,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noLearning",
+      "metric": "automaticShare",
+      "direction": "ablated minus full",
+      "mean": -0.616867877987771,
+      "lo": -0.6490970026750973,
+      "hi": -0.5826726147049286,
+      "n": 32,
+      "pairedObservations": 384
+    },
+    {
+      "variant": "noLearning",
+      "metric": "computePerDecision",
+      "direction": "ablated minus full",
+      "mean": -35.13153372243839,
+      "lo": -37.40584335047249,
+      "hi": -32.795544891838055,
+      "n": 32,
+      "pairedObservations": 384
+    }
+  ],
+  "trainingFirstLast": [
+    {
+      "variant": "full",
+      "metric": "win",
+      "direction": "training episode12 minus1",
+      "mean": 0.02734375,
+      "lo": -0.01953125,
+      "hi": 0.07421875,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "scoreMargin",
+      "direction": "training episode12 minus1",
+      "mean": -1.109375,
+      "lo": -2.8359375,
+      "hi": 0.4609375,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "shotHitRate",
+      "direction": "training episode12 minus1",
+      "mean": -0.006555329739219341,
+      "lo": -0.027063154188002574,
+      "hi": 0.012823335868464765,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "type2Share",
+      "direction": "training episode12 minus1",
+      "mean": 0.10001563368538077,
+      "lo": 0.08227893534602557,
+      "hi": 0.11706866227765424,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "automaticShare",
+      "direction": "training episode12 minus1",
+      "mean": 0.3949798499166204,
+      "lo": 0.35285749027237356,
+      "hi": 0.43726855631600886,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "computePerDecision",
+      "direction": "training episode12 minus1",
+      "mean": 6.649058504724849,
+      "lo": 5.1744188611728745,
+      "hi": 8.06144959005003,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "sparseCreditSuccess",
+      "direction": "training episode12 minus1",
+      "mean": 0.004311239948884154,
+      "lo": -0.00787800588624307,
+      "hi": 0.016485036170435417,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "full",
+      "metric": "failureBrier",
+      "direction": "training episode12 minus1",
+      "mean": -0.1360270572336687,
+      "lo": -0.16691940365943342,
+      "hi": -0.1072797974685043,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "win",
+      "direction": "training episode12 minus1",
+      "mean": -0.03125,
+      "lo": -0.0859375,
+      "hi": 0.015625,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "scoreMargin",
+      "direction": "training episode12 minus1",
+      "mean": 0.8515625,
+      "lo": -1.4140625,
+      "hi": 3.1796875,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "shotHitRate",
+      "direction": "training episode12 minus1",
+      "mean": 0.00902612700900739,
+      "lo": -0.016594448722338766,
+      "hi": 0.036064230882988484,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "type2Share",
+      "direction": "training episode12 minus1",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "automaticShare",
+      "direction": "training episode12 minus1",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "computePerDecision",
+      "direction": "training episode12 minus1",
+      "mean": 0.10395705947748801,
+      "lo": -0.07663537034463551,
+      "hi": 0.2887045754585895,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "sparseCreditSuccess",
+      "direction": "training episode12 minus1",
+      "mean": 0.00234770712516415,
+      "lo": -0.012308192529580689,
+      "hi": 0.0183207572051394,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noMetacog",
+      "metric": "failureBrier",
+      "direction": "training episode12 minus1",
+      "mean": -0.1309554945136894,
+      "lo": -0.16035841092507516,
+      "hi": -0.10128069379367921,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "win",
+      "direction": "training episode12 minus1",
+      "mean": 0.0234375,
+      "lo": -0.01953125,
+      "hi": 0.06640625,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "scoreMargin",
+      "direction": "training episode12 minus1",
+      "mean": -1.625,
+      "lo": -3.6015625,
+      "hi": 0.0859375,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "shotHitRate",
+      "direction": "training episode12 minus1",
+      "mean": -0.013139069893856797,
+      "lo": -0.03610873930575289,
+      "hi": 0.008694580851518278,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "type2Share",
+      "direction": "training episode12 minus1",
+      "mean": 0.10053154530294607,
+      "lo": 0.0852504212409672,
+      "hi": 0.11477656857976652,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "automaticShare",
+      "direction": "training episode12 minus1",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "computePerDecision",
+      "direction": "training episode12 minus1",
+      "mean": 6.792985686492496,
+      "lo": 5.429335134102279,
+      "hi": 8.062250295302945,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "sparseCreditSuccess",
+      "direction": "training episode12 minus1",
+      "mean": 0.0008205387791682256,
+      "lo": -0.012275645149241104,
+      "hi": 0.01387646407437953,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noAutomatization",
+      "metric": "failureBrier",
+      "direction": "training episode12 minus1",
+      "mean": -0.13569776237026787,
+      "lo": -0.16565625074304982,
+      "hi": -0.10717346111859077,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "win",
+      "direction": "training episode12 minus1",
+      "mean": 0.0546875,
+      "lo": 0.01171875,
+      "hi": 0.1015625,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "scoreMargin",
+      "direction": "training episode12 minus1",
+      "mean": 0.296875,
+      "lo": -1.6484375,
+      "hi": 2.1875,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "shotHitRate",
+      "direction": "training episode12 minus1",
+      "mean": -0.0006993129897789573,
+      "lo": -0.025735428377726764,
+      "hi": 0.024048036498471974,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "type2Share",
+      "direction": "training episode12 minus1",
+      "mean": -0.04842968315730962,
+      "lo": -0.08476846946220122,
+      "hi": -0.012104554613674276,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "automaticShare",
+      "direction": "training episode12 minus1",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "computePerDecision",
+      "direction": "training episode12 minus1",
+      "mean": -3.3379064758198984,
+      "lo": -5.74857168913285,
+      "hi": -1.036135352973875,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "variant": "noLearning",
+      "metric": "sparseCreditSuccess",
+      "direction": "training episode12 minus1",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "variant": "noLearning",
+      "metric": "failureBrier",
+      "direction": "training episode12 minus1",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    }
+  ],
+  "trainingChangeVersusNoLearning": [
+    {
+      "metric": "win",
+      "direction": "(full episode12-1) minus (noLearning episode12-1)",
+      "mean": -0.02734375,
+      "lo": -0.09375,
+      "hi": 0.0390625,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "metric": "scoreMargin",
+      "direction": "(full episode12-1) minus (noLearning episode12-1)",
+      "mean": -1.40625,
+      "lo": -3.6875,
+      "hi": 0.8359375,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "metric": "shotHitRate",
+      "direction": "(full episode12-1) minus (noLearning episode12-1)",
+      "mean": -0.005856016749440382,
+      "lo": -0.03406511468641788,
+      "hi": 0.022492749412289487,
+      "n": 32,
+      "pairedObservations": 128
+    }
+  ],
+  "fullSituationFirstLast": [
+    {
+      "situation": "EMBEDDED:hidden:far",
+      "metric": "successRate",
+      "mean": 0.0,
+      "lo": -0.5,
+      "hi": 0.5,
+      "n": 6,
+      "pairedObservations": 6
+    },
+    {
+      "situation": "EMBEDDED:hidden:far",
+      "metric": "type2Share",
+      "mean": 0.33003649627714904,
+      "lo": 0.23121932283230529,
+      "hi": 0.4310425702393013,
+      "n": 32,
+      "pairedObservations": 86
+    },
+    {
+      "situation": "EMBEDDED:hidden:far",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 86
+    },
+    {
+      "situation": "EMBEDDED:hidden:far",
+      "metric": "computePerDecision",
+      "mean": 20.445686444410676,
+      "lo": 14.083623838007298,
+      "hi": 26.795069553839937,
+      "n": 32,
+      "pairedObservations": 86
+    },
+    {
+      "situation": "EMBEDDED:hidden:far",
+      "metric": "failureBrier",
+      "mean": -0.58226725895247,
+      "lo": -0.8295630907853896,
+      "hi": -0.26776790539103484,
+      "n": 6,
+      "pairedObservations": 6
+    },
+    {
+      "situation": "EMBEDDED:hidden:near",
+      "metric": "successRate",
+      "mean": 0.0,
+      "lo": -0.2166666666666667,
+      "hi": 0.225,
+      "n": 20,
+      "pairedObservations": 24
+    },
+    {
+      "situation": "EMBEDDED:hidden:near",
+      "metric": "type2Share",
+      "mean": 0.37493203244694967,
+      "lo": 0.28752540315988695,
+      "hi": 0.45692382683978994,
+      "n": 32,
+      "pairedObservations": 87
+    },
+    {
+      "situation": "EMBEDDED:hidden:near",
+      "metric": "automaticShare",
+      "mean": 0.30343749999999997,
+      "lo": 0.2109375,
+      "hi": 0.4063541666666667,
+      "n": 32,
+      "pairedObservations": 87
+    },
+    {
+      "situation": "EMBEDDED:hidden:near",
+      "metric": "computePerDecision",
+      "mean": 23.986174062051106,
+      "lo": 18.34350121398434,
+      "hi": 29.303644867227543,
+      "n": 32,
+      "pairedObservations": 87
+    },
+    {
+      "situation": "EMBEDDED:hidden:near",
+      "metric": "failureBrier",
+      "mean": -0.44699460688685244,
+      "lo": -0.6092542914182927,
+      "hi": -0.27977546244969453,
+      "n": 20,
+      "pairedObservations": 24
+    },
+    {
+      "situation": "EMBEDDED:seen:far",
+      "metric": "successRate",
+      "mean": 0.010641650685442174,
+      "lo": -0.02132952952255265,
+      "hi": 0.0444337352439922,
+      "n": 32,
+      "pairedObservations": 123
+    },
+    {
+      "situation": "EMBEDDED:seen:far",
+      "metric": "type2Share",
+      "mean": 0.11371107401236152,
+      "lo": 0.09057683905509284,
+      "hi": 0.1372181268520481,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "EMBEDDED:seen:far",
+      "metric": "automaticShare",
+      "mean": 0.5213744913065703,
+      "lo": 0.4616452396837132,
+      "hi": 0.5802482868868968,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "EMBEDDED:seen:far",
+      "metric": "computePerDecision",
+      "mean": 7.374069166886409,
+      "lo": 5.819394592417998,
+      "hi": 8.981076818733152,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "EMBEDDED:seen:far",
+      "metric": "failureBrier",
+      "mean": -0.10650577276884941,
+      "lo": -0.14620520003268725,
+      "hi": -0.07178666758592953,
+      "n": 32,
+      "pairedObservations": 123
+    },
+    {
+      "situation": "EMBEDDED:seen:near",
+      "metric": "successRate",
+      "mean": 0.0008013243657138958,
+      "lo": -0.046772024654038395,
+      "hi": 0.042808691412142656,
+      "n": 32,
+      "pairedObservations": 117
+    },
+    {
+      "situation": "EMBEDDED:seen:near",
+      "metric": "type2Share",
+      "mean": 0.3051611970989111,
+      "lo": 0.25289517252386734,
+      "hi": 0.36009566488764105,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "EMBEDDED:seen:near",
+      "metric": "automaticShare",
+      "mean": 0.7604123676652152,
+      "lo": 0.6996579563533472,
+      "hi": 0.8208817511622658,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "EMBEDDED:seen:near",
+      "metric": "computePerDecision",
+      "mean": 19.447684346556116,
+      "lo": 16.010955654745914,
+      "hi": 22.990394613192308,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "EMBEDDED:seen:near",
+      "metric": "failureBrier",
+      "mean": -0.150638119866149,
+      "lo": -0.1903494282231475,
+      "hi": -0.11258548940687926,
+      "n": 32,
+      "pairedObservations": 117
+    },
+    {
+      "situation": "HELD:hidden:far",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "HELD:hidden:far",
+      "metric": "type2Share",
+      "mean": 0.033802208022156874,
+      "lo": -0.01076923076923077,
+      "hi": 0.08741609732978015,
+      "n": 25,
+      "pairedObservations": 36
+    },
+    {
+      "situation": "HELD:hidden:far",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 25,
+      "pairedObservations": 36
+    },
+    {
+      "situation": "HELD:hidden:far",
+      "metric": "computePerDecision",
+      "mean": 2.067253564849471,
+      "lo": -1.5470678451982804,
+      "hi": 6.450517439082654,
+      "n": 25,
+      "pairedObservations": 36
+    },
+    {
+      "situation": "HELD:hidden:far",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "HELD:hidden:near",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "HELD:hidden:near",
+      "metric": "type2Share",
+      "mean": 0.029752672322824945,
+      "lo": -0.12294282732760611,
+      "hi": 0.17101355008798455,
+      "n": 23,
+      "pairedObservations": 31
+    },
+    {
+      "situation": "HELD:hidden:near",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 23,
+      "pairedObservations": 31
+    },
+    {
+      "situation": "HELD:hidden:near",
+      "metric": "computePerDecision",
+      "mean": 2.0049815876835795,
+      "lo": -10.152971754348373,
+      "hi": 13.409824273630976,
+      "n": 23,
+      "pairedObservations": 31
+    },
+    {
+      "situation": "HELD:hidden:near",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "HELD:seen:far",
+      "metric": "successRate",
+      "mean": -0.000715514239408124,
+      "lo": -0.01284897840576916,
+      "hi": 0.011522078815827856,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "HELD:seen:far",
+      "metric": "type2Share",
+      "mean": 0.03255179755382914,
+      "lo": 0.01981527779163957,
+      "hi": 0.04824387944589755,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "HELD:seen:far",
+      "metric": "automaticShare",
+      "mean": 0.14205217710330048,
+      "lo": 0.06234026427126824,
+      "hi": 0.2280338236877835,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "HELD:seen:far",
+      "metric": "computePerDecision",
+      "mean": 2.6709848926267306,
+      "lo": 1.4979198218824532,
+      "hi": 4.044585966744268,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "HELD:seen:far",
+      "metric": "failureBrier",
+      "mean": -0.13501671306388874,
+      "lo": -0.16730502418484594,
+      "hi": -0.10549384217043328,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "HELD:seen:near",
+      "metric": "successRate",
+      "mean": -0.0775359623015873,
+      "lo": -0.1601718284970238,
+      "hi": 0.009065677703372904,
+      "n": 32,
+      "pairedObservations": 100
+    },
+    {
+      "situation": "HELD:seen:near",
+      "metric": "type2Share",
+      "mean": 0.5239364274010132,
+      "lo": 0.48553296392423406,
+      "hi": 0.5608390773507544,
+      "n": 32,
+      "pairedObservations": 125
+    },
+    {
+      "situation": "HELD:seen:near",
+      "metric": "automaticShare",
+      "mean": 0.36616277441782435,
+      "lo": 0.2820972608829971,
+      "hi": 0.45450932989373916,
+      "n": 32,
+      "pairedObservations": 125
+    },
+    {
+      "situation": "HELD:seen:near",
+      "metric": "computePerDecision",
+      "mean": 41.742030085300655,
+      "lo": 38.71971002546574,
+      "hi": 44.65367734252244,
+      "n": 32,
+      "pairedObservations": 125
+    },
+    {
+      "situation": "HELD:seen:near",
+      "metric": "failureBrier",
+      "mean": -0.22086930871281923,
+      "lo": -0.285229986378905,
+      "hi": -0.1612561548458034,
+      "n": 32,
+      "pairedObservations": 100
+    },
+    {
+      "situation": "OUTBOUND:hidden:far",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:hidden:far",
+      "metric": "type2Share",
+      "mean": -0.1588095238095238,
+      "lo": -0.6342857142857142,
+      "hi": 0.3,
+      "n": 5,
+      "pairedObservations": 5
+    },
+    {
+      "situation": "OUTBOUND:hidden:far",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 5,
+      "pairedObservations": 5
+    },
+    {
+      "situation": "OUTBOUND:hidden:far",
+      "metric": "computePerDecision",
+      "mean": -10.404761904761907,
+      "lo": -49.371428571428574,
+      "hi": 30.195238095238096,
+      "n": 5,
+      "pairedObservations": 5
+    },
+    {
+      "situation": "OUTBOUND:hidden:far",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:hidden:near",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:hidden:near",
+      "metric": "type2Share",
+      "mean": -0.10154320987654325,
+      "lo": -0.49259259259259264,
+      "hi": 0.345679012345679,
+      "n": 9,
+      "pairedObservations": 9
+    },
+    {
+      "situation": "OUTBOUND:hidden:near",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 9,
+      "pairedObservations": 9
+    },
+    {
+      "situation": "OUTBOUND:hidden:near",
+      "metric": "computePerDecision",
+      "mean": -8.123456790123457,
+      "lo": -40.54814814814815,
+      "hi": 27.654320987654323,
+      "n": 9,
+      "pairedObservations": 9
+    },
+    {
+      "situation": "OUTBOUND:hidden:near",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:seen:far",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:seen:far",
+      "metric": "type2Share",
+      "mean": 0.001579081631653741,
+      "lo": -0.01059182332455491,
+      "hi": 0.013119070967651697,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "OUTBOUND:seen:far",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "OUTBOUND:seen:far",
+      "metric": "computePerDecision",
+      "mean": -0.38719731719897066,
+      "lo": -1.494681596844321,
+      "hi": 0.7071911585483253,
+      "n": 32,
+      "pairedObservations": 128
+    },
+    {
+      "situation": "OUTBOUND:seen:far",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:seen:near",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "OUTBOUND:seen:near",
+      "metric": "type2Share",
+      "mean": -0.00088027223454748,
+      "lo": -0.039060715209683385,
+      "hi": 0.03680654002692657,
+      "n": 32,
+      "pairedObservations": 122
+    },
+    {
+      "situation": "OUTBOUND:seen:near",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 122
+    },
+    {
+      "situation": "OUTBOUND:seen:near",
+      "metric": "computePerDecision",
+      "mean": -1.0682953092851353,
+      "lo": -4.5606905895193215,
+      "hi": 2.421575677003456,
+      "n": 32,
+      "pairedObservations": 122
+    },
+    {
+      "situation": "OUTBOUND:seen:near",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:hidden:far",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:hidden:far",
+      "metric": "type2Share",
+      "mean": 0.07291370272098692,
+      "lo": -0.1057559891077251,
+      "hi": 0.256665684855433,
+      "n": 21,
+      "pairedObservations": 27
+    },
+    {
+      "situation": "RETURNING:hidden:far",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 21,
+      "pairedObservations": 27
+    },
+    {
+      "situation": "RETURNING:hidden:far",
+      "metric": "computePerDecision",
+      "mean": 7.067412166280617,
+      "lo": -8.137417233408316,
+      "hi": 22.493838196179176,
+      "n": 21,
+      "pairedObservations": 27
+    },
+    {
+      "situation": "RETURNING:hidden:far",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:hidden:near",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:hidden:near",
+      "metric": "type2Share",
+      "mean": -0.08373264380956957,
+      "lo": -0.2636906368049293,
+      "hi": 0.09254184611123387,
+      "n": 27,
+      "pairedObservations": 41
+    },
+    {
+      "situation": "RETURNING:hidden:near",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 27,
+      "pairedObservations": 41
+    },
+    {
+      "situation": "RETURNING:hidden:near",
+      "metric": "computePerDecision",
+      "mean": -6.782340532939037,
+      "lo": -21.428187646243803,
+      "hi": 7.253585154110275,
+      "n": 27,
+      "pairedObservations": 41
+    },
+    {
+      "situation": "RETURNING:hidden:near",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:seen:far",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:seen:far",
+      "metric": "type2Share",
+      "mean": -0.020234908647268113,
+      "lo": -0.04205853356032998,
+      "hi": 0.0011919159079448885,
+      "n": 32,
+      "pairedObservations": 125
+    },
+    {
+      "situation": "RETURNING:seen:far",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 125
+    },
+    {
+      "situation": "RETURNING:seen:far",
+      "metric": "computePerDecision",
+      "mean": -1.544845266434248,
+      "lo": -3.379252013176985,
+      "hi": 0.2583541774436548,
+      "n": 32,
+      "pairedObservations": 125
+    },
+    {
+      "situation": "RETURNING:seen:far",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:seen:near",
+      "metric": "successRate",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    },
+    {
+      "situation": "RETURNING:seen:near",
+      "metric": "type2Share",
+      "mean": -0.01902946849279963,
+      "lo": -0.04955648082770925,
+      "hi": 0.010545565170073334,
+      "n": 32,
+      "pairedObservations": 123
+    },
+    {
+      "situation": "RETURNING:seen:near",
+      "metric": "automaticShare",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 32,
+      "pairedObservations": 123
+    },
+    {
+      "situation": "RETURNING:seen:near",
+      "metric": "computePerDecision",
+      "mean": -0.8854093544359869,
+      "lo": -3.6903768392687297,
+      "hi": 1.8049850929718707,
+      "n": 32,
+      "pairedObservations": 123
+    },
+    {
+      "situation": "RETURNING:seen:near",
+      "metric": "failureBrier",
+      "mean": null,
+      "lo": null,
+      "hi": null,
+      "n": 0,
+      "pairedObservations": 0
+    }
+  ],
+  "adaptationSpecificity": [
+    {
+      "metric": "hitRate",
+      "switching": false,
+      "contrast": "full-minus-off last-minus-first",
+      "mean": -0.019025572276098517,
+      "lo": -0.05242663813071303,
+      "hi": 0.01399424754595675,
+      "n": 64,
+      "pairedObservations": 180
+    },
+    {
+      "metric": "hitRate",
+      "switching": true,
+      "contrast": "full-minus-off last-minus-first",
+      "mean": 0.0224709617234389,
+      "lo": -0.01803797611900415,
+      "hi": 0.06359103664769687,
+      "n": 64,
+      "pairedObservations": 200
+    },
+    {
+      "metric": "hitRate",
+      "contrast": "switching minus fixed of full-minus-off last-minus-first",
+      "mean": 0.06982310820400334,
+      "lo": 0.01448186917254289,
+      "hi": 0.12546315804817548,
+      "n": 64,
+      "pairedObservations": 136
+    },
+    {
+      "metric": "hitsPerMinute",
+      "switching": false,
+      "contrast": "full-minus-off last-minus-first",
+      "mean": -0.07968750000000002,
+      "lo": -0.45234374999999993,
+      "hi": 0.3140624999999999,
+      "n": 64,
+      "pairedObservations": 256
+    },
+    {
+      "metric": "hitsPerMinute",
+      "switching": true,
+      "contrast": "full-minus-off last-minus-first",
+      "mean": 0.10546874999999997,
+      "lo": -0.30937499999999996,
+      "hi": 0.5109374999999999,
+      "n": 64,
+      "pairedObservations": 256
+    },
+    {
+      "metric": "hitsPerMinute",
+      "contrast": "switching minus fixed of full-minus-off last-minus-first",
+      "mean": 0.18515624999999997,
+      "lo": -0.2765625,
+      "hi": 0.6399023437499992,
+      "n": 64,
+      "pairedObservations": 256
+    },
+    {
+      "metric": "hitRate",
+      "contrast": "per-seed original available-pair DID switching minus fixed; different available pairsets retained",
+      "mean": 0.04149653399953741,
+      "lo": -0.007492966205945046,
+      "hi": 0.08994934514189747,
+      "n": 64
+    },
+    {
+      "metric": "hitsPerMinute",
+      "contrast": "per-seed original available-pair DID switching minus fixed; different available pairsets retained",
+      "mean": 0.18515625000000002,
+      "lo": -0.29062499999999997,
+      "hi": 0.6351562500000001,
+      "n": 64
+    }
+  ],
+  "adaptationSpecificityCaveat": "The complete-case switching-minus-fixed hit-rate contrast conditions on only 136 of 256 paired seat/family sets; the original available-pair estimands use 180 fixed and 200 switching sets. Its positive interval is subset/weighting-sensitive, post hoc, and unadjusted. Both original primary hit-rate effects and the difference of their available-pair seedmeans are null-compatible. Hits-per-minute includes all256 sets."
+}

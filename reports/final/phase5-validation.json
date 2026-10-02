@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "bouts": 39168,
+  "variants": 17,
+  "boutsPerVariant": 2304,
+  "budgetRows": 48,
+  "pairedBoutsPerBudgetRow": 768,
+  "seedClusters": 32,
+  "sourceFingerprint": "19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5",
+  "runtimeHours": 7.9564916666666665,
+  "checks": [
+    "unique complete jobs",
+    "balanced variants/budgets",
+    "full300s bouts",
+    "per-cycle and cumulative budget caps",
+    "score/win recomputation",
+    "paired effect mean recomputation",
+    "32seed clusters per primary CI",
+    "unchanged source fingerprint"
+  ]
+}

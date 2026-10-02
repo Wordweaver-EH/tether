@@ -1,0 +1,70 @@
+{
+  "condition": "recall8",
+  "bouts": 552,
+  "elapsedSec": 49.262,
+  "champions": [
+    {
+      "name": "es-3",
+      "overall": {
+        "mean": 0.5865384615384615,
+        "lo": 0.5384615384615384,
+        "hi": 0.6346153846153846,
+        "n": 104,
+        "clusters": 2,
+        "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+      },
+      "spear": {
+        "throws": 3526,
+        "embeds": 3051,
+        "outboundHits": 286,
+        "returningHits": 82,
+        "secondLocation": 0,
+        "directHitShare": 0.7771739130434783,
+        "embedShare": 0.86528644356211,
+        "secondLocationFraction": 0
+      }
+    },
+    {
+      "name": "es-1",
+      "overall": {
+        "mean": 0.5817307692307692,
+        "lo": 0.5288461538461539,
+        "hi": 0.6346153846153846,
+        "n": 104,
+        "clusters": 2,
+        "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+      },
+      "spear": {
+        "throws": 3140,
+        "embeds": 2799,
+        "outboundHits": 264,
+        "returningHits": 50,
+        "secondLocation": 0,
+        "directHitShare": 0.8407643312101911,
+        "embedShare": 0.8914012738853503,
+        "secondLocationFraction": 0
+      }
+    },
+    {
+      "name": "coevo-10",
+      "overall": {
+        "mean": 0.6875,
+        "lo": 0.6730769230769231,
+        "hi": 0.7019230769230769,
+        "n": 104,
+        "clusters": 2,
+        "method": "seed-cluster percentile bootstrap, 2000 replicates; win=1 draw=0.5"
+      },
+      "spear": {
+        "throws": 3204,
+        "embeds": 2724,
+        "outboundHits": 425,
+        "returningHits": 50,
+        "secondLocation": 0,
+        "directHitShare": 0.8947368421052632,
+        "embedShare": 0.850187265917603,
+        "secondLocationFraction": 0
+      }
+    }
+  ]
+}

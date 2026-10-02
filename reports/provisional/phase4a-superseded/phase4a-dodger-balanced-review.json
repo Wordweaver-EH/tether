@@ -1,0 +1,154 @@
+[
+  {
+    "distance": 3,
+    "defender": "dodger",
+    "samples": 40,
+    "shots": 40,
+    "hits": 40,
+    "hitPerShot": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    },
+    "boutHit": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    }
+  },
+  {
+    "distance": 3,
+    "defender": "idle",
+    "samples": 40,
+    "shots": 40,
+    "hits": 40,
+    "hitPerShot": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    },
+    "boutHit": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    }
+  },
+  {
+    "distance": 5,
+    "defender": "dodger",
+    "samples": 40,
+    "shots": 60,
+    "hits": 40,
+    "hitPerShot": {
+      "mean": 0.6666666666666666,
+      "lo": 0.540566298666634,
+      "hi": 0.7727090578407216,
+      "n": 60
+    },
+    "boutHit": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    }
+  },
+  {
+    "distance": 5,
+    "defender": "idle",
+    "samples": 40,
+    "shots": 40,
+    "hits": 40,
+    "hitPerShot": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    },
+    "boutHit": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    }
+  },
+  {
+    "distance": 8,
+    "defender": "dodger",
+    "samples": 40,
+    "shots": 5703,
+    "hits": 19,
+    "hitPerShot": {
+      "mean": 0.0033315798702437316,
+      "lo": 0.002133928435511508,
+      "hi": 0.005197902887789984,
+      "n": 5703
+    },
+    "boutHit": {
+      "mean": 0.475,
+      "lo": 0.32935229550181694,
+      "hi": 0.6250289314607027,
+      "n": 40
+    }
+  },
+  {
+    "distance": 8,
+    "defender": "idle",
+    "samples": 40,
+    "shots": 40,
+    "hits": 40,
+    "hitPerShot": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    },
+    "boutHit": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    }
+  },
+  {
+    "distance": 11,
+    "defender": "dodger",
+    "samples": 40,
+    "shots": 8159,
+    "hits": 0,
+    "hitPerShot": {
+      "mean": 0,
+      "lo": 0,
+      "hi": 0.0004706204270826473,
+      "n": 8159
+    },
+    "boutHit": {
+      "mean": 0,
+      "lo": 0,
+      "hi": 0.08762453925039232,
+      "n": 40
+    }
+  },
+  {
+    "distance": 11,
+    "defender": "idle",
+    "samples": 40,
+    "shots": 40,
+    "hits": 40,
+    "hitPerShot": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    },
+    "boutHit": {
+      "mean": 1,
+      "lo": 0.9123754607496077,
+      "hi": 1,
+      "n": 40
+    }
+  }
+]

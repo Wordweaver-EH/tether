@@ -1,0 +1,5927 @@
+{
+  "status": "SMOKE ONLY; not final evidence",
+  "config": {
+    "seeds": 1,
+    "adaptationSeeds": 1,
+    "episodes": 1,
+    "heldout": 1,
+    "workers": 1,
+    "durationSec": 2,
+    "budgets": [
+      192
+    ],
+    "modes": [
+      "MODE_B"
+    ],
+    "opponents": [
+      "direct"
+    ],
+    "variants": [
+      "full",
+      "noMetacog"
+    ],
+    "seedStart": 101,
+    "adaptationSeedStart": 700001,
+    "resume": true,
+    "label": "smoke",
+    "out": "reports/learning-integration-smoke"
+  },
+  "expectedBouts": 16,
+  "rows": [
+    {
+      "id": 0,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "full",
+      "seed": 1010001,
+      "episode": 1,
+      "phase": "training",
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1700,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 9.083045999999996,
+          "decisionWallMedianMs": 9.083045999999996,
+          "decisionWallP95Ms": 9.083045999999996,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.3878156216216184,
+          "decisionWallMedianMs": 0.38511199999999235,
+          "decisionWallP95Ms": 0.748800000000017,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 17,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1700,
+          "decisionLatencySec": 2.5499999999999994,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 17,
+          "decisionWallMeanMs": 0.23514111764705892,
+          "decisionWallMedianMs": 0.15085700000000202,
+          "decisionWallP95Ms": 0.33503899999999476,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.6643881339137889,
+          "meanSideProbability": 0.16780593304310565,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.7605034026267831,
+          "meanSideProbability": 0.11974829868660858,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.14905649156217066,
+          "confidence": 0.7018870168756587,
+          "samples": 4.708865809999999,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 47.84254999999999,
+      "simulationWallMsPerCycle": 0.8698645454545453
+    },
+    {
+      "id": 0,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "noMetacog",
+      "seed": 1010001,
+      "episode": 1,
+      "phase": "training",
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5500,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 100,
+        "escalations": 0,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 0,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 3700,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1700,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.7683729999999969,
+          "decisionWallMedianMs": 0.7683729999999969,
+          "decisionWallP95Ms": 0.7683729999999969,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 3700,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.25305127027027113,
+          "decisionWallMedianMs": 0.22940099999999575,
+          "decisionWallP95Ms": 0.3379850000000033,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 17,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1700,
+          "decisionLatencySec": 2.5499999999999994,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 17,
+          "decisionWallMeanMs": 0.16064194117647315,
+          "decisionWallMedianMs": 0.13414600000004384,
+          "decisionWallP95Ms": 0.2127479999999764,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.6643881339137889,
+          "meanSideProbability": 0.16780593304310565,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.7605034026267831,
+          "meanSideProbability": 0.11974829868660858,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.14905649156217066,
+          "confidence": 0.7018870168756587,
+          "samples": 4.708865809999999,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 30.19631899999999,
+      "simulationWallMsPerCycle": 0.5490239818181816
+    },
+    {
+      "id": 0,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "noMetacog",
+      "seed": 101010001,
+      "episode": 2,
+      "phase": "heldout",
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5500,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 100,
+        "escalations": 0,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 0,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0.25,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 21,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2100,
+            "decisionLatencySec": 3.149999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 24,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2400,
+            "decisionLatencySec": 3.5999999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:far": {
+            "decisions": 4,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 400,
+            "decisionLatencySec": 0.6000000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:near": {
+            "decisions": 5,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 500,
+            "decisionLatencySec": 0.7500000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0.25,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.3000870000000191,
+          "decisionWallMedianMs": 0.3000870000000191,
+          "decisionWallP95Ms": 0.3000870000000191,
+          "predictedFailureOnOutcomes": 0.25,
+          "actualFailure": 1,
+          "failureBrier": 0.5625,
+          "failureAbsoluteError": 0.75
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 21,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2100,
+          "decisionLatencySec": 3.149999999999999,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 21,
+          "decisionWallMeanMs": 0.15720466666667085,
+          "decisionWallMedianMs": 0.15285799999998062,
+          "decisionWallP95Ms": 0.22005599999999959,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 24,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2400,
+          "decisionLatencySec": 3.5999999999999988,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999994,
+          "automaticShare": 0,
+          "measuredCycles": 24,
+          "decisionWallMeanMs": 0.23435379166666573,
+          "decisionWallMedianMs": 0.1962190000000419,
+          "decisionWallP95Ms": 0.27447999999998274,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:far": {
+          "decisions": 4,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 400,
+          "decisionLatencySec": 0.6000000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 4,
+          "decisionWallMeanMs": 0.49320124999998427,
+          "decisionWallMedianMs": 0.23628499999995256,
+          "decisionWallP95Ms": 0.6847099999999955,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:near": {
+          "decisions": 5,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 500,
+          "decisionLatencySec": 0.7500000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 5,
+          "decisionWallMeanMs": 0.09506759999998167,
+          "decisionWallMedianMs": 0.1022829999999999,
+          "decisionWallP95Ms": 0.10264799999998786,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.8015896111454476,
+          "meanSideProbability": 0.09920519442727631,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.8383211157316065,
+          "meanSideProbability": 0.08083944213419678,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.8575986186191319,
+          "meanSideProbability": 0.07120069069043408,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.10859467464360964,
+          "confidence": 0.7828106507127808,
+          "samples": 7.208554685410128,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.07752480661459264,
+          "confidence": 0.8449503867708147,
+          "samples": 10.899096994480836,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 20.703258000000005,
+      "simulationWallMsPerCycle": 0.3764228727272728
+    },
+    {
+      "id": 0,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "full",
+      "seed": 101010001,
+      "episode": 2,
+      "phase": "heldout",
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5724,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 10,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0.25,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 21,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 2260,
+            "decisionLatencySec": 3.149999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 24,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2400,
+            "decisionLatencySec": 3.5999999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:far": {
+            "decisions": 4,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 464,
+            "decisionLatencySec": 0.6000000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:near": {
+            "decisions": 5,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 500,
+            "decisionLatencySec": 0.7500000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0.25,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.160254000000009,
+          "decisionWallMedianMs": 0.160254000000009,
+          "decisionWallP95Ms": 0.160254000000009,
+          "predictedFailureOnOutcomes": 0.25,
+          "actualFailure": 1,
+          "failureBrier": 0.5625,
+          "failureAbsoluteError": 0.75
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 21,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 2260,
+          "decisionLatencySec": 3.149999999999999,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.09523809523809523,
+          "computePerDecision": 107.61904761904762,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 21,
+          "decisionWallMeanMs": 0.18198780952380253,
+          "decisionWallMedianMs": 0.10934200000002647,
+          "decisionWallP95Ms": 0.4031969999999774,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 24,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2400,
+          "decisionLatencySec": 3.5999999999999988,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999994,
+          "automaticShare": 0,
+          "measuredCycles": 24,
+          "decisionWallMeanMs": 0.1964937916666661,
+          "decisionWallMedianMs": 0.14864000000000033,
+          "decisionWallP95Ms": 0.282195999999999,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:far": {
+          "decisions": 4,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 1,
+          "budgetSpent": 464,
+          "decisionLatencySec": 0.6000000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.25,
+          "computePerDecision": 116,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 4,
+          "decisionWallMeanMs": 0.16234750000000986,
+          "decisionWallMedianMs": 0.1089799999999741,
+          "decisionWallP95Ms": 0.22516200000001163,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:near": {
+          "decisions": 5,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 500,
+          "decisionLatencySec": 0.7500000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 5,
+          "decisionWallMeanMs": 0.09407179999999471,
+          "decisionWallMedianMs": 0.08514800000000378,
+          "decisionWallP95Ms": 0.1089439999999513,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.8015896111454476,
+          "meanSideProbability": 0.09920519442727631,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.8383211157316065,
+          "meanSideProbability": 0.08083944213419678,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.8575986186191319,
+          "meanSideProbability": 0.07120069069043408,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.10859467464360964,
+          "confidence": 0.7828106507127808,
+          "samples": 7.208554685410128,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.07752480661459264,
+          "confidence": 0.8449503867708147,
+          "samples": 10.899096994480836,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 17.186599,
+      "simulationWallMsPerCycle": 0.3124836181818182
+    },
+    {
+      "id": 1,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variant": "full",
+      "durationSec": 2,
+      "switching": false,
+      "side": 1,
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1700,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.4781080000000202,
+          "decisionWallMedianMs": 0.4781080000000202,
+          "decisionWallP95Ms": 0.4781080000000202,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.2612807027027094,
+          "decisionWallMedianMs": 0.14543199999997114,
+          "decisionWallP95Ms": 0.519473000000005,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 17,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1700,
+          "decisionLatencySec": 2.5499999999999994,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 17,
+          "decisionWallMeanMs": 0.16539735294117341,
+          "decisionWallMedianMs": 0.1458849999999643,
+          "decisionWallP95Ms": 0.2901329999999689,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.6643881339137889,
+          "meanSideProbability": 0.16780593304310565,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.7605034026267831,
+          "meanSideProbability": 0.11974829868660858,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.14905649156217066,
+          "confidence": 0.7018870168756587,
+          "samples": 4.708865809999999,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": 1,
+        "before": {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": 0.7018870168756587
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 21.693336999999985,
+      "simulationWallMsPerCycle": 0.3944243090909088
+    },
+    {
+      "id": 2,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variant": "noAdaptation",
+      "durationSec": 2,
+      "switching": false,
+      "side": 1,
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1700,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.281483000000037,
+          "decisionWallMedianMs": 0.281483000000037,
+          "decisionWallP95Ms": 0.281483000000037,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.1614581351351382,
+          "decisionWallMedianMs": 0.14066300000001775,
+          "decisionWallP95Ms": 0.31593099999997776,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 17,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1700,
+          "decisionLatencySec": 2.5499999999999994,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 17,
+          "decisionWallMeanMs": 0.18766158823530077,
+          "decisionWallMedianMs": 0.10882200000003195,
+          "decisionWallP95Ms": 0.3207079999999678,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        }
+      ],
+      "adaptationSamples": [],
+      "reversal": {
+        "switchAt": 1,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 15.949144999999987,
+      "simulationWallMsPerCycle": 0.2899844545454543
+    },
+    {
+      "id": 3,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variant": "full",
+      "durationSec": 2,
+      "switching": true,
+      "side": 1,
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:far": {
+            "decisions": 16,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1600,
+            "decisionLatencySec": 2.3999999999999995,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.1920729999999935,
+          "decisionWallMedianMs": 0.1920729999999935,
+          "decisionWallP95Ms": 0.1920729999999935,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.13168237837838026,
+          "decisionWallMedianMs": 0.12461300000001074,
+          "decisionWallP95Ms": 0.21779300000002877,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.26025199999997994,
+          "decisionWallMedianMs": 0.26025199999997994,
+          "decisionWallP95Ms": 0.26025199999997994,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "RETURNING:seen:far": {
+          "decisions": 16,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1600,
+          "decisionLatencySec": 2.3999999999999995,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 16,
+          "decisionWallMeanMs": 0.1644475625000048,
+          "decisionWallMedianMs": 0.11630800000000363,
+          "decisionWallP95Ms": 0.18086399999998548,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.3736290091091248,
+          "meanSideProbability": 0.3416583678097157,
+          "lastReversals": 1
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.34215581568361997,
+          "meanSideProbability": 0.6710779078418099,
+          "lastReversals": 1
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.5092665566540988,
+          "confidence": 0.018533113308197624,
+          "samples": 1.9272164524999997,
+          "reversals": 1
+        }
+      ],
+      "reversal": {
+        "switchAt": 1,
+        "before": {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        "firstReopen": {
+          "time": 1.05,
+          "probability": 0.5092665566540988,
+          "confidence": 0.018533113308197624,
+          "samples": 1.9272164524999997,
+          "reversals": 1
+        },
+        "reopenDelaySec": 0.050000000000000044,
+        "minConfidenceAfterSwitch": 0.018533113308197624
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 13.906925999999999,
+      "simulationWallMsPerCycle": 0.2528532
+    },
+    {
+      "id": 4,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 1,
+      "opponent": "direct",
+      "variant": "noAdaptation",
+      "durationSec": 2,
+      "switching": true,
+      "side": 1,
+      "score": {
+        "P1": 0,
+        "P2": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:far": {
+            "decisions": 16,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1600,
+            "decisionLatencySec": 2.3999999999999995,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.19848799999999756,
+          "decisionWallMedianMs": 0.19848799999999756,
+          "decisionWallP95Ms": 0.19848799999999756,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.15559751351351703,
+          "decisionWallMedianMs": 0.10806700000000546,
+          "decisionWallP95Ms": 0.3269700000000171,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.26346399999999903,
+          "decisionWallMedianMs": 0.26346399999999903,
+          "decisionWallP95Ms": 0.26346399999999903,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "RETURNING:seen:far": {
+          "decisions": 16,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1600,
+          "decisionLatencySec": 2.3999999999999995,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 16,
+          "decisionWallMeanMs": 0.19475056250000478,
+          "decisionWallMedianMs": 0.12095899999997073,
+          "decisionWallP95Ms": 0.3584280000000035,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        }
+      ],
+      "adaptationSamples": [],
+      "reversal": {
+        "switchAt": 1,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 14.85737899999998,
+      "simulationWallMsPerCycle": 0.2701341636363633
+    },
+    {
+      "id": 5,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "full",
+      "seed": 1010001,
+      "episode": 1,
+      "phase": "training",
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 21,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 2260,
+            "decisionLatencySec": 3.149999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 33,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 3300,
+            "decisionLatencySec": 4.950000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.24074699999999893,
+          "decisionWallMedianMs": 0.24074699999999893,
+          "decisionWallP95Ms": 0.24074699999999893,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 21,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 2260,
+          "decisionLatencySec": 3.149999999999999,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.09523809523809523,
+          "computePerDecision": 107.61904761904762,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 21,
+          "decisionWallMeanMs": 0.3474387619047575,
+          "decisionWallMedianMs": 0.12439200000000028,
+          "decisionWallP95Ms": 0.21834799999999177,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 33,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 3300,
+          "decisionLatencySec": 4.950000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 33,
+          "decisionWallMeanMs": 0.1454268484848533,
+          "decisionWallMedianMs": 0.11723000000000638,
+          "decisionWallP95Ms": 0.24690699999996468,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.6643881339137889,
+          "meanSideProbability": 0.16780593304310565,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.7605034026267831,
+          "meanSideProbability": 0.11974829868660858,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.14905649156217066,
+          "confidence": 0.7018870168756587,
+          "samples": 4.708865809999999,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 17.809573,
+      "simulationWallMsPerCycle": 0.32381041818181816
+    },
+    {
+      "id": 5,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "noMetacog",
+      "seed": 1010001,
+      "episode": 1,
+      "phase": "training",
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5500,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 100,
+        "escalations": 0,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 0,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 21,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2100,
+            "decisionLatencySec": 3.149999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 33,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 3300,
+            "decisionLatencySec": 4.950000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.2852889999999775,
+          "decisionWallMedianMs": 0.2852889999999775,
+          "decisionWallP95Ms": 0.2852889999999775,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 21,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2100,
+          "decisionLatencySec": 3.149999999999999,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 21,
+          "decisionWallMeanMs": 0.1875008095238129,
+          "decisionWallMedianMs": 0.09076500000003307,
+          "decisionWallP95Ms": 0.2982499999999959,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 33,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 3300,
+          "decisionLatencySec": 4.950000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 33,
+          "decisionWallMeanMs": 0.17208939393939351,
+          "decisionWallMedianMs": 0.15547600000002149,
+          "decisionWallP95Ms": 0.31061799999997675,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.6643881339137889,
+          "meanSideProbability": 0.16780593304310565,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.7605034026267831,
+          "meanSideProbability": 0.11974829868660858,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.14905649156217066,
+          "confidence": 0.7018870168756587,
+          "samples": 4.708865809999999,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 15.827219000000014,
+      "simulationWallMsPerCycle": 0.28776761818181845
+    },
+    {
+      "id": 5,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "noMetacog",
+      "seed": 101010001,
+      "episode": 2,
+      "phase": "heldout",
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5500,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 100,
+        "escalations": 0,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 0,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0.25,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 21,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2100,
+            "decisionLatencySec": 3.149999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 24,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2400,
+            "decisionLatencySec": 3.5999999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:far": {
+            "decisions": 4,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 400,
+            "decisionLatencySec": 0.6000000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:near": {
+            "decisions": 5,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 500,
+            "decisionLatencySec": 0.7500000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0.25,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.282636000000025,
+          "decisionWallMedianMs": 0.282636000000025,
+          "decisionWallP95Ms": 0.282636000000025,
+          "predictedFailureOnOutcomes": 0.25,
+          "actualFailure": 1,
+          "failureBrier": 0.5625,
+          "failureAbsoluteError": 0.75
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 21,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2100,
+          "decisionLatencySec": 3.149999999999999,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 21,
+          "decisionWallMeanMs": 0.08860704761905308,
+          "decisionWallMedianMs": 0.08051399999999376,
+          "decisionWallP95Ms": 0.12284799999997631,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 24,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2400,
+          "decisionLatencySec": 3.5999999999999988,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999994,
+          "automaticShare": 0,
+          "measuredCycles": 24,
+          "decisionWallMeanMs": 0.17589412499999213,
+          "decisionWallMedianMs": 0.16944899999998597,
+          "decisionWallP95Ms": 0.2692729999999983,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:far": {
+          "decisions": 4,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 400,
+          "decisionLatencySec": 0.6000000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 4,
+          "decisionWallMeanMs": 0.19526749999999993,
+          "decisionWallMedianMs": 0.18164100000001326,
+          "decisionWallP95Ms": 0.20349900000002208,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:near": {
+          "decisions": 5,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 500,
+          "decisionLatencySec": 0.7500000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 5,
+          "decisionWallMeanMs": 0.18103640000000495,
+          "decisionWallMedianMs": 0.1764079999999808,
+          "decisionWallP95Ms": 0.19744700000001103,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.8015896111454476,
+          "meanSideProbability": 0.09920519442727631,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.8383211157316065,
+          "meanSideProbability": 0.08083944213419678,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.8575986186191319,
+          "meanSideProbability": 0.07120069069043408,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.10859467464360964,
+          "confidence": 0.7828106507127808,
+          "samples": 7.208554685410128,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.07752480661459264,
+          "confidence": 0.8449503867708147,
+          "samples": 10.899096994480836,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 14.831072000000006,
+      "simulationWallMsPerCycle": 0.26965585454545465
+    },
+    {
+      "id": 5,
+      "protocol": "learning",
+      "clusterSeed": 101,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variants": [
+        "full",
+        "noMetacog"
+      ],
+      "durationSec": 2,
+      "episodes": 1,
+      "heldout": 1,
+      "side": 1,
+      "variant": "full",
+      "seed": 101010001,
+      "episode": 2,
+      "phase": "heldout",
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5804,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 4,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 14,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0.25,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 21,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 2260,
+            "decisionLatencySec": 3.149999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 24,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2400,
+            "decisionLatencySec": 3.5999999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:far": {
+            "decisions": 4,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 464,
+            "decisionLatencySec": 0.6000000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:hidden:near": {
+            "decisions": 5,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 500,
+            "decisionLatencySec": 0.7500000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0.25,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.27806800000001886,
+          "decisionWallMedianMs": 0.27806800000001886,
+          "decisionWallP95Ms": 0.27806800000001886,
+          "predictedFailureOnOutcomes": 0.25,
+          "actualFailure": 1,
+          "failureBrier": 0.5625,
+          "failureAbsoluteError": 0.75
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 21,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 2260,
+          "decisionLatencySec": 3.149999999999999,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.09523809523809523,
+          "computePerDecision": 107.61904761904762,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 21,
+          "decisionWallMeanMs": 0.08714447619047946,
+          "decisionWallMedianMs": 0.07486400000004778,
+          "decisionWallP95Ms": 0.1377520000000345,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 24,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 2400,
+          "decisionLatencySec": 3.5999999999999988,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999994,
+          "automaticShare": 0,
+          "measuredCycles": 24,
+          "decisionWallMeanMs": 0.10590683333333335,
+          "decisionWallMedianMs": 0.10347400000000562,
+          "decisionWallP95Ms": 0.14346399999999448,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:far": {
+          "decisions": 4,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 1,
+          "budgetSpent": 464,
+          "decisionLatencySec": 0.6000000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.25,
+          "computePerDecision": 116,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 4,
+          "decisionWallMeanMs": 0.08312274999998692,
+          "decisionWallMedianMs": 0.06576699999999391,
+          "decisionWallP95Ms": 0.09968499999996538,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:hidden:near": {
+          "decisions": 5,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 500,
+          "decisionLatencySec": 0.7500000000000001,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 5,
+          "decisionWallMeanMs": 0.10518140000000357,
+          "decisionWallMedianMs": 0.11263700000000654,
+          "decisionWallP95Ms": 0.1224250000000211,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.8015896111454476,
+          "meanSideProbability": 0.09920519442727631,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.8383211157316065,
+          "meanSideProbability": 0.08083944213419678,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.8575986186191319,
+          "meanSideProbability": 0.07120069069043408,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.10859467464360964,
+          "confidence": 0.7828106507127808,
+          "samples": 7.208554685410128,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.07752480661459264,
+          "confidence": 0.8449503867708147,
+          "samples": 10.899096994480836,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": null,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 9.783344999999997,
+      "simulationWallMsPerCycle": 0.17787899999999995
+    },
+    {
+      "id": 6,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variant": "full",
+      "durationSec": 2,
+      "switching": false,
+      "side": 1,
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1700,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.17600699999997005,
+          "decisionWallMedianMs": 0.17600699999997005,
+          "decisionWallP95Ms": 0.17600699999997005,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.10266589189188835,
+          "decisionWallMedianMs": 0.09619499999996606,
+          "decisionWallP95Ms": 0.14809999999999945,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 17,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1700,
+          "decisionLatencySec": 2.5499999999999994,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 17,
+          "decisionWallMeanMs": 0.08989311764706626,
+          "decisionWallMedianMs": 0.07744000000002416,
+          "decisionWallP95Ms": 0.135703000000035,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.6643881339137889,
+          "meanSideProbability": 0.16780593304310565,
+          "lastReversals": 0
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.7605034026267831,
+          "meanSideProbability": 0.11974829868660858,
+          "lastReversals": 0
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.14905649156217066,
+          "confidence": 0.7018870168756587,
+          "samples": 4.708865809999999,
+          "reversals": 0
+        }
+      ],
+      "reversal": {
+        "switchAt": 1,
+        "before": {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": 0.7018870168756587
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 8.991003999999975,
+      "simulationWallMsPerCycle": 0.16347279999999956
+    },
+    {
+      "id": 7,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variant": "noAdaptation",
+      "durationSec": 2,
+      "switching": false,
+      "side": 1,
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1700,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 1.3721980000000258,
+          "decisionWallMedianMs": 1.3721980000000258,
+          "decisionWallP95Ms": 1.3721980000000258,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.12351100000000001,
+          "decisionWallMedianMs": 0.09953899999999294,
+          "decisionWallP95Ms": 0.20507599999996273,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 17,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1700,
+          "decisionLatencySec": 2.5499999999999994,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 17,
+          "decisionWallMeanMs": 0.09625641176471082,
+          "decisionWallMedianMs": 0.0837439999999674,
+          "decisionWallP95Ms": 0.15962899999999536,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        }
+      ],
+      "adaptationSamples": [],
+      "reversal": {
+        "switchAt": 1,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 12.614573000000007,
+      "simulationWallMsPerCycle": 0.22935587272727287
+    },
+    {
+      "id": 8,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variant": "full",
+      "durationSec": 2,
+      "switching": true,
+      "side": 1,
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:far": {
+            "decisions": 16,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1600,
+            "decisionLatencySec": 2.3999999999999995,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.44483200000001943,
+          "decisionWallMedianMs": 0.44483200000001943,
+          "decisionWallP95Ms": 0.44483200000001943,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.11478786486486263,
+          "decisionWallMedianMs": 0.09997199999997974,
+          "decisionWallP95Ms": 0.18897699999996576,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.15127200000000585,
+          "decisionWallMedianMs": 0.15127200000000585,
+          "decisionWallP95Ms": 0.15127200000000585,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "RETURNING:seen:far": {
+          "decisions": 16,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1600,
+          "decisionLatencySec": 2.3999999999999995,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 16,
+          "decisionWallMeanMs": 0.17761224999999925,
+          "decisionWallMedianMs": 0.11219999999997299,
+          "decisionWallP95Ms": 0.33709799999996903,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 20,
+          "meanConfidence": 0.30814076618643993,
+          "meanSideProbability": 0.34592961690678004,
+          "lastReversals": 0
+        },
+        {
+          "samples": 20,
+          "meanConfidence": 0.3736290091091248,
+          "meanSideProbability": 0.3416583678097157,
+          "lastReversals": 1
+        },
+        {
+          "samples": 15,
+          "meanConfidence": 0.34215581568361997,
+          "meanSideProbability": 0.6710779078418099,
+          "lastReversals": 1
+        }
+      ],
+      "adaptationSamples": [
+        {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        {
+          "time": 1.05,
+          "probability": 0.5092665566540988,
+          "confidence": 0.018533113308197624,
+          "samples": 1.9272164524999997,
+          "reversals": 1
+        }
+      ],
+      "reversal": {
+        "switchAt": 1,
+        "before": {
+          "time": 0.016666666666666666,
+          "probability": 0.5,
+          "confidence": 0,
+          "samples": 0,
+          "reversals": 0
+        },
+        "firstReopen": {
+          "time": 1.05,
+          "probability": 0.5092665566540988,
+          "confidence": 0.018533113308197624,
+          "samples": 1.9272164524999997,
+          "reversals": 1
+        },
+        "reopenDelaySec": 0.050000000000000044,
+        "minConfidenceAfterSwitch": 0.018533113308197624
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 11.775356999999985,
+      "simulationWallMsPerCycle": 0.21409739999999974
+    },
+    {
+      "id": 9,
+      "protocol": "adaptation",
+      "clusterSeed": 700001,
+      "seed": 700001,
+      "budget": 192,
+      "mode": "MODE_B",
+      "seat": 2,
+      "opponent": "direct",
+      "variant": "noAdaptation",
+      "durationSec": 2,
+      "switching": true,
+      "side": 1,
+      "score": {
+        "P2": 0,
+        "P1": 0
+      },
+      "scoreMargin": 0,
+      "win": 0.5,
+      "elapsedSec": 2,
+      "totals": {
+        "cycles": 55,
+        "budgetSpent": 5740,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 3,
+        "reflexes": 0,
+        "automaticDecisions": 0,
+        "learningUpdates": 1,
+        "counterfactualBranches": 12,
+        "decisionLatencySec": 8.250000000000009,
+        "bySituation": {
+          "HELD:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 1,
+            "outcomes": 1,
+            "escalations": 1,
+            "budgetSpent": 180,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:far": {
+            "decisions": 37,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 3860,
+            "decisionLatencySec": 5.5500000000000025,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:far": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 100,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:far": {
+            "decisions": 16,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1600,
+            "decisionLatencySec": 2.3999999999999995,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "situations": {
+        "HELD:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 1,
+          "outcomes": 1,
+          "escalations": 1,
+          "budgetSpent": 180,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": 0,
+          "type2Share": 1,
+          "computePerDecision": 180,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.1879830000000311,
+          "decisionWallMedianMs": 0.1879830000000311,
+          "decisionWallP95Ms": 0.1879830000000311,
+          "predictedFailureOnOutcomes": 0,
+          "actualFailure": 1,
+          "failureBrier": 1,
+          "failureAbsoluteError": 1
+        },
+        "OUTBOUND:seen:far": {
+          "decisions": 37,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 2,
+          "budgetSpent": 3860,
+          "decisionLatencySec": 5.5500000000000025,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0.05405405405405406,
+          "computePerDecision": 104.32432432432432,
+          "modeledLatencySec": 0.15000000000000008,
+          "automaticShare": 0,
+          "measuredCycles": 37,
+          "decisionWallMeanMs": 0.1420675945945873,
+          "decisionWallMedianMs": 0.12171899999998459,
+          "decisionWallP95Ms": 0.25775900000007823,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "EMBEDDED:seen:far": {
+          "decisions": 1,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 100,
+          "decisionLatencySec": 0.15000000000000002,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.15000000000000002,
+          "automaticShare": 0,
+          "measuredCycles": 1,
+          "decisionWallMeanMs": 0.13888199999996687,
+          "decisionWallMedianMs": 0.13888199999996687,
+          "decisionWallP95Ms": 0.13888199999996687,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        },
+        "RETURNING:seen:far": {
+          "decisions": 16,
+          "successes": 0,
+          "failures": 0,
+          "outcomes": 0,
+          "escalations": 0,
+          "budgetSpent": 1600,
+          "decisionLatencySec": 2.3999999999999995,
+          "predictedFailure": 0,
+          "automaticDecisions": 0,
+          "successRate": null,
+          "type2Share": 0,
+          "computePerDecision": 100,
+          "modeledLatencySec": 0.14999999999999997,
+          "automaticShare": 0,
+          "measuredCycles": 16,
+          "decisionWallMeanMs": 0.15915343749999522,
+          "decisionWallMedianMs": 0.10957900000005338,
+          "decisionWallP95Ms": 0.18825299999991785,
+          "predictedFailureOnOutcomes": null,
+          "actualFailure": null,
+          "failureBrier": null,
+          "failureAbsoluteError": null
+        }
+      },
+      "adaptationWindows": [
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        },
+        {
+          "samples": 0,
+          "meanConfidence": null,
+          "meanSideProbability": null,
+          "lastReversals": null
+        }
+      ],
+      "adaptationSamples": [],
+      "reversal": {
+        "switchAt": 1,
+        "before": null,
+        "firstReopen": null,
+        "reopenDelaySec": null,
+        "minConfidenceAfterSwitch": null
+      },
+      "shots": [
+        {
+          "throws": 1,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 1,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        },
+        {
+          "throws": 0,
+          "hits": 0,
+          "resolved": 0,
+          "censored": 0,
+          "hitsInTimeWindow": 0,
+          "hitRate": null,
+          "hitsPerMinute": 0
+        }
+      ],
+      "simulationWallMs": 12.447279999999978,
+      "simulationWallMsPerCycle": 0.22631418181818141
+    }
+  ],
+  "summary": {
+    "curves": [
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "training",
+        "episode": 1,
+        "situation": "EMBEDDED:seen:far",
+        "bouts": 2,
+        "decisions": 50,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15,
+            "lo": 0.15,
+            "hi": 0.15,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.19028398306595612,
+            "lo": 0.19028398306595612,
+            "hi": 0.19028398306595612,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.1340435000000042,
+            "lo": 0.1340435000000042,
+            "hi": 0.1340435000000042,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.2909729999999797,
+            "lo": 0.2909729999999797,
+            "hi": 0.2909729999999797,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "training",
+        "episode": 1,
+        "situation": "HELD:seen:far",
+        "bouts": 2,
+        "decisions": 2,
+        "outcomes": 2,
+        "metrics": {
+          "successRate": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "type2Share": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 180,
+            "lo": 180,
+            "hi": 180,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "actualFailure": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "failureBrier": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "failureAbsoluteError": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMeanMs": {
+            "mean": 4.6618964999999974,
+            "lo": 4.6618964999999974,
+            "hi": 4.6618964999999974,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 4.6618964999999974,
+            "lo": 4.6618964999999974,
+            "hi": 4.6618964999999974,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 4.6618964999999974,
+            "lo": 4.6618964999999974,
+            "hi": 4.6618964999999974,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "training",
+        "episode": 1,
+        "situation": "OUTBOUND:seen:far",
+        "bouts": 2,
+        "decisions": 58,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0.07464607464607464,
+            "lo": 0.07464607464607464,
+            "hi": 0.07464607464607464,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 105.97168597168597,
+            "lo": 105.97168597168597,
+            "hi": 105.97168597168597,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.3676271917631879,
+            "lo": 0.3676271917631879,
+            "hi": 0.3676271917631879,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.2547519999999963,
+            "lo": 0.2547519999999963,
+            "hi": 0.2547519999999963,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.4835740000000044,
+            "lo": 0.4835740000000044,
+            "hi": 0.4835740000000044,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "training",
+        "episode": 1,
+        "situation": "EMBEDDED:seen:far",
+        "bouts": 2,
+        "decisions": 50,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15,
+            "lo": 0.15,
+            "hi": 0.15,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.16636566755793333,
+            "lo": 0.16636566755793333,
+            "hi": 0.16636566755793333,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.14481100000003266,
+            "lo": 0.14481100000003266,
+            "hi": 0.14481100000003266,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.2616829999999766,
+            "lo": 0.2616829999999766,
+            "hi": 0.2616829999999766,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "training",
+        "episode": 1,
+        "situation": "HELD:seen:far",
+        "bouts": 2,
+        "decisions": 2,
+        "outcomes": 2,
+        "metrics": {
+          "successRate": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "actualFailure": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "failureBrier": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "failureAbsoluteError": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.5268309999999872,
+            "lo": 0.5268309999999872,
+            "hi": 0.5268309999999872,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.5268309999999872,
+            "lo": 0.5268309999999872,
+            "hi": 0.5268309999999872,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.5268309999999872,
+            "lo": 0.5268309999999872,
+            "hi": 0.5268309999999872,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "training",
+        "episode": 1,
+        "situation": "OUTBOUND:seen:far",
+        "bouts": 2,
+        "decisions": 58,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.22027603989704203,
+            "lo": 0.22027603989704203,
+            "hi": 0.22027603989704203,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.1600830000000144,
+            "lo": 0.1600830000000144,
+            "hi": 0.1600830000000144,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.3181174999999996,
+            "lo": 0.3181174999999996,
+            "hi": 0.3181174999999996,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "EMBEDDED:hidden:far",
+        "bouts": 2,
+        "decisions": 8,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.3442343749999921,
+            "lo": 0.3442343749999921,
+            "hi": 0.3442343749999921,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.2089629999999829,
+            "lo": 0.2089629999999829,
+            "hi": 0.2089629999999829,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.4441045000000088,
+            "lo": 0.4441045000000088,
+            "hi": 0.4441045000000088,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "EMBEDDED:hidden:near",
+        "bouts": 2,
+        "decisions": 10,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.13805199999999332,
+            "lo": 0.13805199999999332,
+            "hi": 0.13805199999999332,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.13934549999999035,
+            "lo": 0.13934549999999035,
+            "hi": 0.13934549999999035,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.15004749999999945,
+            "lo": 0.15004749999999945,
+            "hi": 0.15004749999999945,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "EMBEDDED:seen:far",
+        "bouts": 2,
+        "decisions": 48,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.14999999999999994,
+            "lo": 0.14999999999999994,
+            "hi": 0.14999999999999994,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.20512395833332892,
+            "lo": 0.20512395833332892,
+            "hi": 0.20512395833332892,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.18283400000001393,
+            "lo": 0.18283400000001393,
+            "hi": 0.18283400000001393,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.27187649999999053,
+            "lo": 0.27187649999999053,
+            "hi": 0.27187649999999053,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "HELD:seen:far",
+        "bouts": 2,
+        "decisions": 2,
+        "outcomes": 2,
+        "metrics": {
+          "successRate": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": 0.25,
+            "lo": 0.25,
+            "hi": 0.25,
+            "n": 1,
+            "observations": 2
+          },
+          "actualFailure": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "failureBrier": {
+            "mean": 0.5625,
+            "lo": 0.5625,
+            "hi": 0.5625,
+            "n": 1,
+            "observations": 2
+          },
+          "failureAbsoluteError": {
+            "mean": 0.75,
+            "lo": 0.75,
+            "hi": 0.75,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.29136150000002203,
+            "lo": 0.29136150000002203,
+            "hi": 0.29136150000002203,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.29136150000002203,
+            "lo": 0.29136150000002203,
+            "hi": 0.29136150000002203,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.29136150000002203,
+            "lo": 0.29136150000002203,
+            "hi": 0.29136150000002203,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "OUTBOUND:seen:far",
+        "bouts": 2,
+        "decisions": 42,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.14999999999999997,
+            "lo": 0.14999999999999997,
+            "hi": 0.14999999999999997,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.12290585714286197,
+            "lo": 0.12290585714286197,
+            "hi": 0.12290585714286197,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.11668599999998719,
+            "lo": 0.11668599999998719,
+            "hi": 0.11668599999998719,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.17145199999998795,
+            "lo": 0.17145199999998795,
+            "hi": 0.17145199999998795,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "EMBEDDED:hidden:far",
+        "bouts": 2,
+        "decisions": 8,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0.25,
+            "lo": 0.25,
+            "hi": 0.25,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 116,
+            "lo": 116,
+            "hi": 116,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.12273512499999839,
+            "lo": 0.12273512499999839,
+            "hi": 0.12273512499999839,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.087373499999984,
+            "lo": 0.087373499999984,
+            "hi": 0.087373499999984,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.1624234999999885,
+            "lo": 0.1624234999999885,
+            "hi": 0.1624234999999885,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "EMBEDDED:hidden:near",
+        "bouts": 2,
+        "decisions": 10,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.09962659999999915,
+            "lo": 0.09962659999999915,
+            "hi": 0.09962659999999915,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.09889250000000516,
+            "lo": 0.09889250000000516,
+            "hi": 0.09889250000000516,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.1156844999999862,
+            "lo": 0.1156844999999862,
+            "hi": 0.1156844999999862,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "EMBEDDED:seen:far",
+        "bouts": 2,
+        "decisions": 48,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 100,
+            "lo": 100,
+            "hi": 100,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.14999999999999994,
+            "lo": 0.14999999999999994,
+            "hi": 0.14999999999999994,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.15120031249999974,
+            "lo": 0.15120031249999974,
+            "hi": 0.15120031249999974,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.12605700000000297,
+            "lo": 0.12605700000000297,
+            "hi": 0.12605700000000297,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.21282999999999674,
+            "lo": 0.21282999999999674,
+            "hi": 0.21282999999999674,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "HELD:seen:far",
+        "bouts": 2,
+        "decisions": 2,
+        "outcomes": 2,
+        "metrics": {
+          "successRate": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "type2Share": {
+            "mean": 0.5,
+            "lo": 0.5,
+            "hi": 0.5,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 140,
+            "lo": 140,
+            "hi": 140,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.15000000000000002,
+            "lo": 0.15000000000000002,
+            "hi": 0.15000000000000002,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": 0.25,
+            "lo": 0.25,
+            "hi": 0.25,
+            "n": 1,
+            "observations": 2
+          },
+          "actualFailure": {
+            "mean": 1,
+            "lo": 1,
+            "hi": 1,
+            "n": 1,
+            "observations": 2
+          },
+          "failureBrier": {
+            "mean": 0.5625,
+            "lo": 0.5625,
+            "hi": 0.5625,
+            "n": 1,
+            "observations": 2
+          },
+          "failureAbsoluteError": {
+            "mean": 0.75,
+            "lo": 0.75,
+            "hi": 0.75,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.21916100000001393,
+            "lo": 0.21916100000001393,
+            "hi": 0.21916100000001393,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.21916100000001393,
+            "lo": 0.21916100000001393,
+            "hi": 0.21916100000001393,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.21916100000001393,
+            "lo": 0.21916100000001393,
+            "hi": 0.21916100000001393,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      },
+      {
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": 2,
+        "situation": "OUTBOUND:seen:far",
+        "bouts": 2,
+        "decisions": 42,
+        "outcomes": 0,
+        "metrics": {
+          "successRate": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "type2Share": {
+            "mean": 0.09523809523809523,
+            "lo": 0.09523809523809523,
+            "hi": 0.09523809523809523,
+            "n": 1,
+            "observations": 2
+          },
+          "computePerDecision": {
+            "mean": 107.61904761904762,
+            "lo": 107.61904761904762,
+            "hi": 107.61904761904762,
+            "n": 1,
+            "observations": 2
+          },
+          "modeledLatencySec": {
+            "mean": 0.14999999999999997,
+            "lo": 0.14999999999999997,
+            "hi": 0.14999999999999997,
+            "n": 1,
+            "observations": 2
+          },
+          "automaticShare": {
+            "mean": 0,
+            "lo": 0,
+            "hi": 0,
+            "n": 1,
+            "observations": 2
+          },
+          "predictedFailureOnOutcomes": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "actualFailure": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureBrier": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "failureAbsoluteError": {
+            "mean": null,
+            "lo": null,
+            "hi": null,
+            "n": 0,
+            "observations": 0
+          },
+          "decisionWallMeanMs": {
+            "mean": 0.134566142857141,
+            "lo": 0.134566142857141,
+            "hi": 0.134566142857141,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallMedianMs": {
+            "mean": 0.09210300000003713,
+            "lo": 0.09210300000003713,
+            "hi": 0.09210300000003713,
+            "n": 1,
+            "observations": 2
+          },
+          "decisionWallP95Ms": {
+            "mean": 0.27047450000000595,
+            "lo": 0.27047450000000595,
+            "hi": 0.27047450000000595,
+            "n": 1,
+            "observations": 2
+          }
+        }
+      }
+    ],
+    "adaptation": [
+      {
+        "budget": 192,
+        "switching": false,
+        "bouts": 4,
+        "metrics": {
+          "hitRate": {
+            "fullLastMinusFirst": {
+              "mean": null,
+              "lo": null,
+              "hi": null,
+              "n": 0,
+              "observations": 0
+            },
+            "offLastMinusFirst": {
+              "mean": null,
+              "lo": null,
+              "hi": null,
+              "n": 0,
+              "observations": 0
+            },
+            "differenceInDifferences": {
+              "mean": null,
+              "lo": null,
+              "hi": null,
+              "n": 0,
+              "observations": 0
+            },
+            "direction": "(full last minus first) minus (noAdaptation last minus first)"
+          },
+          "hitsPerMinute": {
+            "fullLastMinusFirst": {
+              "mean": 0,
+              "lo": 0,
+              "hi": 0,
+              "n": 1,
+              "observations": 2
+            },
+            "offLastMinusFirst": {
+              "mean": 0,
+              "lo": 0,
+              "hi": 0,
+              "n": 1,
+              "observations": 2
+            },
+            "differenceInDifferences": {
+              "mean": 0,
+              "lo": 0,
+              "hi": 0,
+              "n": 1,
+              "observations": 2
+            },
+            "direction": "(full last minus first) minus (noAdaptation last minus first)"
+          }
+        },
+        "fullScoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        },
+        "posteriorReopen": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        },
+        "reopenDelaySec": {
+          "mean": null,
+          "lo": null,
+          "hi": null,
+          "n": 0,
+          "observations": 0
+        },
+        "censoredShots": 4
+      },
+      {
+        "budget": 192,
+        "switching": true,
+        "bouts": 4,
+        "metrics": {
+          "hitRate": {
+            "fullLastMinusFirst": {
+              "mean": null,
+              "lo": null,
+              "hi": null,
+              "n": 0,
+              "observations": 0
+            },
+            "offLastMinusFirst": {
+              "mean": null,
+              "lo": null,
+              "hi": null,
+              "n": 0,
+              "observations": 0
+            },
+            "differenceInDifferences": {
+              "mean": null,
+              "lo": null,
+              "hi": null,
+              "n": 0,
+              "observations": 0
+            },
+            "direction": "(full last minus first) minus (noAdaptation last minus first)"
+          },
+          "hitsPerMinute": {
+            "fullLastMinusFirst": {
+              "mean": 0,
+              "lo": 0,
+              "hi": 0,
+              "n": 1,
+              "observations": 2
+            },
+            "offLastMinusFirst": {
+              "mean": 0,
+              "lo": 0,
+              "hi": 0,
+              "n": 1,
+              "observations": 2
+            },
+            "differenceInDifferences": {
+              "mean": 0,
+              "lo": 0,
+              "hi": 0,
+              "n": 1,
+              "observations": 2
+            },
+            "direction": "(full last minus first) minus (noAdaptation last minus first)"
+          }
+        },
+        "fullScoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        },
+        "posteriorReopen": {
+          "mean": 1,
+          "lo": 1,
+          "hi": 1,
+          "n": 1,
+          "observations": 2
+        },
+        "reopenDelaySec": {
+          "mean": 0.050000000000000044,
+          "lo": 0.050000000000000044,
+          "hi": 0.050000000000000044,
+          "n": 1,
+          "observations": 2
+        },
+        "censoredShots": 4
+      }
+    ],
+    "boutResults": [
+      {
+        "protocol": "learning",
+        "budget": 192,
+        "variant": "full",
+        "phase": "training",
+        "episode": 1,
+        "switching": null,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "learning",
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "training",
+        "episode": 1,
+        "switching": null,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "learning",
+        "budget": 192,
+        "variant": "noMetacog",
+        "phase": "heldout",
+        "episode": 2,
+        "switching": null,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "learning",
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": 2,
+        "switching": null,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "adaptation",
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": null,
+        "switching": false,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "adaptation",
+        "budget": 192,
+        "variant": "noAdaptation",
+        "phase": "heldout",
+        "episode": null,
+        "switching": false,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "adaptation",
+        "budget": 192,
+        "variant": "full",
+        "phase": "heldout",
+        "episode": null,
+        "switching": true,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      },
+      {
+        "protocol": "adaptation",
+        "budget": 192,
+        "variant": "noAdaptation",
+        "phase": "heldout",
+        "episode": null,
+        "switching": true,
+        "bouts": 2,
+        "win": {
+          "mean": 0.5,
+          "lo": 0.5,
+          "hi": 0.5,
+          "n": 1,
+          "observations": 2
+        },
+        "scoreMargin": {
+          "mean": 0,
+          "lo": 0,
+          "hi": 0,
+          "n": 1,
+          "observations": 2
+        }
+      }
+    ]
+  },
+  "sourceFingerprint": {
+    "before": "67a6944f2d3a2cb9b58e8707804f46bfbbf1a077a17c89990b64fac81c34aaa3",
+    "after": "67a6944f2d3a2cb9b58e8707804f46bfbbf1a077a17c89990b64fac81c34aaa3",
+    "files": {
+      "arena/audit-report.mjs": "455e828348eb20c5efe283328f727e64965b1f359f62a1d82fc213abc41024d4",
+      "arena/audit-stats.mjs": "5f0da96b4200114c2065a2aa6400be3c288696f71d42c39dd0dd4132ac8884da",
+      "arena/audit-worker.mjs": "2bcd6ef7f6caeec2f820c74c338374b68afe1bcb460da71e2df64061cfbb0439",
+      "arena/audit.mjs": "12232dad756816a2e66f5e855dc7ea3683e64f3c0f2c10ee88414e5aa6acde3d",
+      "arena/compare.mjs": "67508e035a84a284c4a2753707597d90123e84043f6feb785ff2c3fe2a2776e6",
+      "arena/core.mjs": "bb54e64b8f35ad1490eb8ac73f9130b3338677c08655370da816cfb865f4854e",
+      "arena/dodger-eval.mjs": "a0cf9a152199b2bf747c1424af7b1a5695624f135b51d64311f0edbebd54c34b",
+      "arena/evaluate-policies.mjs": "e13abd4890d5b4a453b4b37289ee784ef6a96255b42a05fa820d20ca5de0850d",
+      "arena/learning-audit.mjs": "790c8453aa7c854b7653f8791eb59718d0c502b4f47f9ac7613eb585372e0008",
+      "arena/learning-proxy.mjs": "1cc1894816390ddef99c973d1f3903bb48c89a7b6a8cc33300f25a90ba2587b6",
+      "arena/learning-report.mjs": "a88ac782f11259d77a0f20c142450d3c585ffea5340a892b462ddd20d189d436",
+      "arena/learning-runner.mjs": "957adcf91a3e6d84b1a4f169645821ae90e8e06ebb05202b9fdb032ae4130e93",
+      "arena/learning-stats.mjs": "c5d57566e2ea368a663cb9d737741eb2cdf085af830a366baf0a9bbf2735ab47",
+      "arena/learning-worker.mjs": "ddc261c7adaa59af7845159c0076e18ddd85a19300f314d1f3749bc20642a98c",
+      "arena/phase4-final.mjs": "f95c49fe53392fb0b221bddc43de1806dde2d4293ff188bee2c02655204f7a31",
+      "arena/search-worker.mjs": "82bb3a5dbd6d81b0c65c7dc64f121a1b361d8fce9bec54ffdd2a75decb6f2df2",
+      "arena/search.mjs": "9ed79e338edd6b7be560ce6811d1829e8dc426ad36eccba6ead515a4b9b87416",
+      "arena/tether-adapter.mjs": "1d0cde23756b0cf8d6573276d2c49f04abbc6602b946ddb600f8d8a365c0141a",
+      "arena/tether-search-adapter.mjs": "936009c85605f1667145a5c9124861c1d9ac754ce90ee65437fd4317ba08f88c",
+      "arena/tournament.mjs": "eafdb68c854ce9372361351d9cd72a0ba4206e036c445fc478ef6f214dcdb65c",
+      "arena/worker.mjs": "9d05fc31763d3ac0052426699735ea4ef50daa118cf07c9cdccaf8614ad4bb38",
+      "client/app.mjs": "269734f4daf2f2d58ff8107b5bdfda80abcb0914dfa0c0eb66725c0ae18c92d3",
+      "client/canvas.mjs": "c72ca81393c6960616c04dbbd6d44f2a601136dcd7e90c3ce046c14314b9aae1",
+      "client/fixed-step.mjs": "174315aa0e18152ca2a89b4bef28d691d6fbe325e3c1d749b1766da4d4ae4633",
+      "client/index.html": "f5812a0aa0876643999b695341965bafba7ceb6432f0d0d8d1d1240062ab7dba",
+      "client/input.mjs": "4143b54c18a0d08d5a04d7c5bc0282f6094d252633d178162c7bbfcc35a85ff8",
+      "client/json-equal.mjs": "7d74662ad5f5533785a79dc9602b6d3de08a50bbd1c439d688642a170771414e",
+      "client/memory-store.mjs": "bc2b4334901a46fdc10d0e0ac36d5d1867d8dcdbc879006c949c5b17f2f88202",
+      "client/mind-readouts.mjs": "08f2dee0c90f9bd87a6372a229afd7ef1acfc7848200a3989dc74d6a95186482",
+      "client/render-model.mjs": "23178c37e3b4dbae9508cfe5d84e6b35302a59772b26b6bc9feb9867adffc687",
+      "client/style.css": "83e9e05ee6bf573c11d68cb67bf0b816e414c15550093f8839ebd0af0c2a7491",
+      "client/telemetry.mjs": "55be98ce44217dc13fd2a52f514ab18995aae77e78589a7ce732ce24f237806b",
+      "replay/app.mjs": "f06bb2dc3f91f7d32e6ccdc29d764d1c588ab3e0b44412e122e0e45c571d45d6",
+      "replay/index.html": "a066b494679fda638791740ff60880c90a0f8b27cb5046b553770cf63583d138",
+      "replay/log-data.mjs": "e583f84ca5f8f8bb6e985def2962f6132f940133c52f8562c3ea60ee45c39f38",
+      "replay/style.css": "385fa36f53677b5b6ca58e6da684051f0ceb22d100110b75939bc03374601409",
+      "serve.mjs": "d5eea198c9ccd7619a0ebd377594867349b1305d48388ded8eef8678e54bf8f6",
+      "src/agents/basic.mjs": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
+      "src/agents/dodger.mjs": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
+      "src/agents/param.mjs": "2bdaad30ec1e6320f56ae2ad0c5f8d5bde8760b71364d4740cf61f36ec7eef90",
+      "src/agents/spear-memory.mjs": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
+      "src/agents/strategies.mjs": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
+      "src/deterministic-math.js": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",
+      "src/headless.mjs": "7b67c3483a2636fe953d82afa178150dda1f2a464fc6f564d25c954847e8cc26",
+      "src/log.js": "fc82e01484e7f059381fc3291f8b85da6db02fc77b6709c42ed4b1d50bea9ce6",
+      "src/mind/belief.mjs": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8",
+      "src/mind/cognition.mjs": "3e91ca549bc4077da33e13598fe00f50f530aa771786d3c418d8200cbd98e8cf",
+      "src/mind/components.mjs": "79091c38a2c9553d3e94652822dc1c04c1f64ef69b8ac30593450054257fa050",
+      "src/mind/index.mjs": "57a453ba5a7cf191e1019ea8c32226b65d2cf51b5b05d52c0de79bd07d28bb74",
+      "src/mind/math.mjs": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+      "src/mind/own-spear.mjs": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+      "src/mind/specialists.mjs": "b69ab03ff4c964be7e651450837e75ac208c51c1ee9241f374f27dad17068379",
+      "src/mind/workspace.mjs": "99fc7e9723e5a08f1ecf6e2e470c4608b53615e092be1a2e29ac192e5ed64767",
+      "src/perception.js": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9",
+      "src/sim.js": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    }
+  },
+  "command": "node arena/learning-audit.mjs --seeds 1 --adaptationSeeds 1 --episodes 1 --heldout 1 --workers 1 --durationSec 2 --budgets 192 --modes MODE_B --opponents direct --variants full,noMetacog --seedStart 101 --adaptationSeedStart 700001 --resume true --label smoke --out reports/learning-integration-smoke",
+  "runtime": {
+    "node": "v24.19.0",
+    "seconds": 0.048096668999999995,
+    "finishedAt": "2026-10-01T23:32:02.421Z"
+  },
+  "definitions": {
+    "success": "Resolved sparse attack credit: positive score margin within 1.5s of attempted throw/recall. Neutral timeout is failure. Not bout win or verified geometric hit.",
+    "failureAwareness": "Predicted failure at attempt vs actual failure at resolved attack credit; Brier and absolute error on matching outcomes.",
+    "latency": "Configured sensory latency, equal across processing tiers. No fabricated Type2 increment and no empirical computation-latency advantage.",
+    "variantOrder": "Learning variants interleaved each episode and counterbalanced by seed/episode. Adaptation on/off order alternates by seed. Shared-host CPU contention remains a limitation.",
+    "wallTime": "Decision runtime is performance.now() around act() on traced cognitive-cycle ticks, matched by delayed percept timestamp plus queue delay. Per-situation mean/median/p95 milliseconds exclude sim/proxy/percept construction/trace copying. Concurrent CPU load, JIT, GC and measurement overhead remain; latency is not a human reaction-time estimate. Whole-simulation wall time is reported separately.",
+    "hitRate": "Successful resolved throw cohorts / resolved throw cohorts by throw-time third; returning hits credit original throw; unclosed final throws explicitly censored.",
+    "adaptationEffect": "(full last-third minus first-third) minus (noAdaptation last-third minus first-third), paired seeds/seats/families.",
+    "posteriorReopen": "First logged reversal after midpoint, with latency and probability/confidence trajectory; natural maneuver reversals can also trigger this, so fixed proxy is a control.",
+    "uncertainty": "Seed-cluster percentile bootstrap 2000 resamples, descriptive unadjusted 95% CI; repeated seats/families within a seed are averaged, not independent replicates."
+  },
+  "limitations": [
+    "No human play data, no claim of subjective consciousness",
+    "Four competence stages are a hypothesis, never assigned from episode number",
+    "Selected synthetic fixed/switching habits are not fitted human proxies",
+    "One cognition cap here; budget sweep is in separate indicator audit",
+    "Held-out bouts may continue within-bout learning, but their memory never feeds another held-out bout",
+    "Sparse credit is model-defined; delayed consequences past its horizon can be mislabeled",
+    "Sensory latency is fixed; empirical act() timings are host-load/JIT/GC sensitive and measured with trace enabled",
+    "Conditional situation rates may reflect changing situation visitation; all raw counts retained",
+    "No multiple-testing correction; null-compatible intervals are not evidence of equivalence"
+  ]
+}

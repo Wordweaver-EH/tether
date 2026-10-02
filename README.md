@@ -10,7 +10,7 @@ The implementation/evaluation pass is complete, with explicit unmet goals and ve
 
 The earlier **original v2** build, source `19800346…0bc9e5`, completed the Phase 4 search, 39,168-bout mechanism audit, and 8,704-bout learning/adaptation study. Those results are preserved under their original version. They must not be relabeled as full evaluations of the repaired controller; its full 16-ablation/budget/learning/exploit reruns remain unperformed.
 
-Prediction and adaptive gaze helped in original v2; the narrow opponent-cone heuristic hurt. Its affect path was structurally ineffective, prompting the separately tested repair. The predicted workspace scarcity pattern, four-stage competence trajectory, and primary adaptation hit-rate benefits were not demonstrated. Browser-to-Node replay, live presentation, and human engagement remain unverified. No game-rule change was adopted.
+Prediction and adaptive gaze helped in original v2; the narrow opponent-cone heuristic hurt. Its affect path was structurally ineffective, prompting the separately tested repair. The predicted workspace scarcity pattern, four-stage competence trajectory, and primary adaptation hit-rate benefits were not demonstrated. A user-supplied Edge 154 replay fixture passes Node verification (3,600 ticks, 601 samples); live presentation and human engagement remain unverified. No game-rule change was adopted.
 
 - [Results and honest scope](RESULTS.md)
 - [Acceptance status and open goals](CURRENT_STATUS.md)
@@ -45,7 +45,7 @@ node --test test/*.test.mjs            # 139 repaired implementation/runner test
 node --test delivery-tests/*.test.mjs  # 7 diagnostic-server tests
 ```
 
-The cross-build affect regression defaults to the bundled immutable `reference/v2-source/`; `ORIGINAL_SOURCE` can override it. The original 131-test suite and its original source are retained in the frozen archive. Diagnostic helpers and portability-only test changes are documented separately from the evaluated production fingerprints.
+The cross-build affect regression materializes checksum-verified original source from the pinned data-branch commit; run `git fetch origin data/tether-evidence-2026-10-02` first in shallow clones. `ORIGINAL_SOURCE` can override it. See [REPRODUCE.md](REPRODUCE.md). The original 131-test suite and its original source are retained in the frozen archive. Diagnostic helpers and portability-only test changes are documented separately from the evaluated production fingerprints.
 
 ## NPC architecture
 

@@ -1,3 +1,5 @@
+> 2026-10-02 acceptance update: a user-supplied fixture, reported as Edge 154, independently passes Node v24.19.0 replay: 3,600 ticks, 601 samples, final hash `9b729b88b12f9d19`. This closes the fixture-specific browser-to-Node gap below; broad browser coverage, live play, audio and persistence remain unverified. PR #1 is published as a draft. Historical review text below retains its original checkpoint context.
+
 # Tether acceptance and scope map
 
 Status: original general/adversarial/learning studies and the separately versioned targeted affect-repair evaluation are complete. This is an evidence-and-gap map, not a declaration that all of Tether or the functional-indicator/learning goal is complete.

@@ -7,7 +7,7 @@
 - Default playable code: post-audit affect repair, fingerprint `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`
 - Aggregate delivery tests: **146/146 passing** on Node v24.19.0; 139 implementation/runner tests plus seven diagnostic-helper tests
 - Immutable original-v2 reference: fingerprint `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`, all 55 runtime-file hashes verified; full original archive retained with its 131-test suite
-- Cross-build noAffect regression uses the bundled original reference by default; `ORIGINAL_SOURCE` remains available
+- Cross-build noAffect regression materializes checksum-verified original source from the pinned data-branch commit; `ORIGINAL_SOURCE` remains available
 - SPEC constants and mechanics unchanged; only workspace appraisal control and its trace wiring changed between the two evaluated versions
 
 ## Completed CPU evaluations
@@ -24,7 +24,7 @@ The original evidence remains unchanged. No broad repaired-version audit or inte
 ## Original task acceptance at a glance
 
 1. **Phase 4 search:** completed computational study; no universal simple strategy or competitive anchor policy established; no rule adoption
-2. **Cross-runtime determinism:** repair and Node/cross-JIT regressions implemented; actual browser-to-Node proof remains externally blocked
+2. **Cross-runtime determinism:** repair and Node/cross-JIT regressions implemented; the user-supplied Edge 154 fixture passes Node v24.19.0 verification: 3,600 ticks, 601 samples, hash `9b729b88b12f9d19`; browser identity is user-reported
 3. **Mind v2:** mechanisms and explicit ablations implemented, with a repaired affect path. Several original ambitious learning/architecture goals remain unsupported or incomplete
 4. **Indicator audit:** complete original-v2 general and learning datasets/reports delivered, preserving harms and nulls. Restricted comparators do not selectively validate broad consciousness theories; full repaired-code interaction coverage is unperformed
 5. **Taste fixes:** rendering/selection code and automated tests completed; live visual, input, audio and browser-storage checks remain blocked
@@ -33,7 +33,7 @@ See the [detailed independent acceptance matrix](reports/independent-review/acce
 
 ## Important limits
 
-- Available cloud browser navigation returned `net::ERR_BLOCKED_BY_CLIENT`; no bypass was attempted. No current browser fixture, live playtest, or human engagement result is claimed
+- Available cloud browser navigation returned `net::ERR_BLOCKED_BY_CLIENT`; no bypass was attempted. A later user-supplied replay fixture passes independent Node verification; live play and human engagement remain unverified
 - The logical cognition cap is not exact hardware or wall-clock equality
 - `noAttentionSchema`, `noWorkspace`, `noToM`, and `noLearning` are operational software interventions with limited selectivity
 - Four-stage competence and primary within-bout adaptation benefits were not demonstrated; automatic labels are not executed learned-action coverage

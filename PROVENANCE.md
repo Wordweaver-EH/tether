@@ -5,7 +5,7 @@
 - Source repository: https://github.com/Wordweaver-EH/tether
 - Base: `95c0eda043be25bddc77d621e1c031ecdd4d1461`, the paused `wip/p4-exploits` branch
 - Current-master documentation reference: `e298ce18856e3ecb70e368975b8a29d72d93cd09`; background, build briefs, original handoff and D19 are preserved
-- Delivery branch: `dot/complete-tether`; existing Git history is retained. No remote push, PR, merge or deployment was performed
+- Delivery branch: `dot/complete-tether`; existing Git history is retained. Published in draft PR #1; no merge or deployment was performed
 - New local commits are authored by `dot <dot@localhost>`, explicitly identified in commit messages as the OpenAI assistant. Earlier contributor authorship is preserved
 
 ## Two evaluated source versions
@@ -16,7 +16,7 @@ Fingerprint: `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`.
 
 The [original manifest](reports/provenance/source-manifest.json) covers 55 files. The Phase 4 adversarial study, 39,168-bout general audit, and 8,704-bout learning/adaptation audit evaluate this version. Its 131-test suite passed before and after evaluation.
 
-`reference/v2-source/` contains those 55 runtime files and the original `package.json`, byte-for-byte, with no duplicate test directory. It supports direct original-study reproduction and portable cross-build tests. The [full frozen archive](reports/provenance/final-source.tar.gz) also preserves the original tests, tools and documentation. Archive SHA-256: `f11e5053268d6a60caa7a74928b95bb1c590820d1c2efe8c77bd8b836600edc0`.
+On the pinned [data branch](RAW_DATA.md), `reference/v2-source/` contains those 55 runtime files and the original `package.json`, byte-for-byte, with no duplicate test directory. It supports direct original-study reproduction and portable cross-build tests. The [full frozen archive](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/provenance/final-source.tar.gz) also preserves the original tests, tools and documentation. Archive SHA-256: `f11e5053268d6a60caa7a74928b95bb1c590820d1c2efe8c77bd8b836600edc0`.
 
 Phase 4 separately aggregates 39 arena/src modules as `d25f0abae0cddf4e03db9c7c7c5e8add99a9f019309c47b52ec0d2a0ac90ceb5`. Every overlapping file hash matches original v2; differing aggregate scope explains the different digest.
 
@@ -24,11 +24,11 @@ Phase 4 separately aggregates 39 arena/src modules as `d25f0abae0cddf4e03db9c7c7
 
 Fingerprint: `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`.
 
-The root project's [repaired manifest](reports/provenance/repaired-source-manifest.json) matches the separate preregistered 768-bout repair study. Only `src/mind/workspace.mjs` and `src/mind/index.mjs` differ in production from original v2. The [exact production patch](reports/affect-repair-source.patch) has SHA-256 `d0d2acae8b22d25a439ea36ca81f9031e1c66696ca8d0d24e20117aa101e358e`.
+The root project's [repaired manifest](reports/provenance/repaired-source-manifest.json) matches the separate preregistered 768-bout repair study. Only `src/mind/workspace.mjs` and `src/mind/index.mjs` differ in production from original v2. The [exact production patch](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-source.patch) has SHA-256 `d0d2acae8b22d25a439ea36ca81f9031e1c66696ca8d0d24e20117aa101e358e`.
 
 The repair changes all non-noAffect arms. Original broad-audit, budget, learning, and exploit conclusions cannot be relabeled as repaired-version evaluations. The unchanged noAffect baseline has cross-build raw-action/replay equivalence regression coverage, not a claim that all original arms remain unchanged. The comprehensive repaired-version studies were not rerun.
 
-The [repair delivery manifest](reports/affect-repair-delivery-manifest.json) and [registered study manifest](reports/affect-repair-targeted.manifest.json) retain original production/runner/registration hashes. During packaging, only the repair test's default original-source path changed to bundled `reference/v2-source/`; `ORIGINAL_SOURCE` remains supported. The evaluated production, registered runner and registration bytes are untouched. That test-only delta and final test counts are recorded in [delivery integrity](reports/provenance/delivery-integrity.json).
+The [repair delivery manifest](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-delivery-manifest.json) and [registered study manifest](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-targeted.manifest.json) retain original production/runner/registration hashes. Earlier packaging bundled `reference/v2-source/`. The slim PR instead materializes hash-verified source from the pinned evidence commit into a temporary directory; `ORIGINAL_SOURCE` remains supported. See `REPRODUCE.md`. The evaluated production, registered runner and registration bytes are untouched. That test-only delta and final test counts are recorded in [delivery integrity](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/provenance/delivery-integrity.json).
 
 ## Fingerprint scope
 

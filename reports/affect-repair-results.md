@@ -55,10 +55,10 @@ Original v2's broad mechanism audit, budget sweep, learning curves and exploit s
 
 - [Frozen registration](affect-repair-preregistration.md)
 - [Implementation and portability instructions](affect-repair-implementation.md)
-- [Complete source/runner/registration manifest](affect-repair-targeted.manifest.json)
-- [Complete paired raw rows](affect-repair-targeted.rows.jsonl)
-- [Results and machine-readable intervals](affect-repair-targeted.json)
-- [Production source patch](affect-repair-source.patch)
-- [Separate portable-test hashes](affect-repair-test-manifest.sha256)
+- [Complete source/runner/registration manifest](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-targeted.manifest.json)
+- [Complete paired raw rows](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-targeted.rows.jsonl)
+- [Results and machine-readable intervals](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-targeted.json)
+- [Production source patch](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-source.patch)
+- [Separate portable-test hashes](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/affect-repair-test-manifest.sha256)
 
 139 tests passed before launch. A postlaunch test-only ORIGINAL_SOURCE environment override was independently revalidated; production, runner and preregistration bytes were unchanged. No remote publishing or user-computer work was performed.

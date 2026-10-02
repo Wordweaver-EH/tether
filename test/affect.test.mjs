@@ -1,10 +1,13 @@
-import test from 'node:test';
+import test, {after} from 'node:test';
 import assert from 'node:assert/strict';
 import {appraisalControl,createWorkspace} from '../src/mind/workspace.mjs';
 import {createMind} from '../src/mind/index.mjs';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
-const baselineRoot=process.env.ORIGINAL_SOURCE ?? resolve(dirname(fileURLToPath(import.meta.url)),'../reference/v2-source');
+import {materializeOriginalSource} from '../tools/materialize-original-source.mjs';
+const original=process.env.ORIGINAL_SOURCE ? null : materializeOriginalSource();
+if(original) after(()=>original.cleanup());
+const baselineRoot=process.env.ORIGINAL_SOURCE ?? original.path;
 const {createMind:originalMind}=await import(pathToFileURL(resolve(baselineRoot,'src/mind/index.mjs')).href);
 import {createWorld,step} from '../src/sim.js';
 import {percept} from '../src/perception.js';

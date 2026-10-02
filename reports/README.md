@@ -30,7 +30,7 @@ The generated original report is preserved on the data branch; use the corrected
 - [Terminal interpretation](final/learning-interpretation.md), [interactive-free static plots](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/final/learning-final.html), [summary tables](final/learning-final.md)
 - [Compact report, all statistics/methods and curve points](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/final/learning-final.compact.json)
 - [Output-recovery provenance](https://github.com/Wordweaver-EH/tether/blob/c3b8814bb92e4086d273e2c525b722de4144a17a/reports/provenance/learning-final.postprocessing.json)
-- All raw rows prepared as four separate lossless gzip artifacts; they are not in this repository and attachment delivery has not been verified. [Reassembly, availability and hashes](../RAW_DATA.md)
+- All 8,704 raw rows are published on the data branch as lossless byte slices that reconstruct the four original gzip artifacts; remote-commit reconstruction and checksums passed. [Reassembly, availability and hashes](../RAW_DATA.md)
 
 Complete experiments preceded a report-size failure. Output-only streaming recovery and a chart-series color-order correction are explicitly documented; no simulation was rerun or result value altered.
 

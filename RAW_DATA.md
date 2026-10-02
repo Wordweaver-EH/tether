@@ -21,6 +21,17 @@ node tools/reassemble-phase5.mjs
 
 The historical whole-tree checksum manifest predates the transport-publication packaging; use its matching entries plus the transport manifest for later packaging files. Git tree equality is the authoritative lossless-snapshot check.
 
-## Learning raw-data limit remains open
+## Complete learning raw evidence
 
-The four separately prepared learning JSONL gzip parts were never published in the original PR and are therefore **not on this data branch**. This cleanup does not claim their delivery. Their manifest, compressed hashes and exact reconstruction instructions are preserved at the pinned links above. Expected combined raw SHA-256: `892f2e66eba6f1e404a2bceca82828c58649f60613708d9ec6daf70f4338cc7a`, 8,704 rows. Compact learning statistics and interpretations are preserved.
+The four original learning gzip parts are now published losslessly as eleven ordered byte slices on the data branch, appended at commit `d5f743052916ed5925ea852eee09360097c95300`, tree `d2f2c100a0d66c53768a6b8642447c954e6cf7d6`. The original snapshot above remains its unchanged ancestor. [Reconstruction instructions and transport checksums](https://github.com/Wordweaver-EH/tether/blob/d5f743052916ed5925ea852eee09360097c95300/reports/raw-learning/README.md).
+
+```sh
+git fetch origin data/tether-evidence-2026-10-02
+git worktree add --detach ../tether-learning-data d5f743052916ed5925ea852eee09360097c95300
+cd ../tether-learning-data
+node tools/reassemble-learning-raw.mjs
+```
+
+The helper validates all slices, reconstructs the four exact original gzip members, verifies every decompressed part, and checks the ordered combined raw hash and row count. It refuses to overwrite differing output. Verified both before publication and from the fetched remote commit: **354,787,806 raw bytes; 8,704 rows; SHA-256 `892f2e66eba6f1e404a2bceca82828c58649f60613708d9ec6daf70f4338cc7a`**. The compressed members total 78,540,309 bytes. Slices are at most 8,000,000 bytes solely for API transport; no scientific data was changed.
+
+Earlier data-branch documents retain historical unpublished warnings from the original snapshot. This appended data commit closes that gap; no attachment delivery is needed to obtain the raw evidence from Git.

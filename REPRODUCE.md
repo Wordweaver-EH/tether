@@ -19,7 +19,7 @@ Current source fingerprint: `4a7fbb875395bb4f99658eb5b8c78f17558d2c98b6430eb0877
 
 ## Historical experiments and raw evidence
 
-Follow [RAW_DATA.md](RAW_DATA.md) to create a pinned evidence worktree. Run the full reproduction guide in that worktree: it retains every original path, runner, registered protocol, source snapshot and available raw-data artifact. This includes exact original-v2 Phase 4, general-audit and learning commands; affect-study reproduction; and output-only report recovery. Do not relabel those broad original-v2 results as repaired-version evaluations. The separately prepared learning raw parts remain an explicitly undelivered artifact.
+Follow [RAW_DATA.md](RAW_DATA.md) to create a pinned evidence worktree. Run the full reproduction guide in that worktree: it retains every original path, runner, registered protocol, source snapshot and available raw-data artifact. This includes exact original-v2 Phase 4, general-audit and learning commands; affect-study reproduction; and output-only report recovery. Do not relabel those broad original-v2 results as repaired-version evaluations. The complete learning raw parts are now available in the appended data commit; use the separate reconstruction commands in RAW_DATA.md.
 
 ## Browser replay
 

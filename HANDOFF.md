@@ -6,7 +6,7 @@ The root project is the post-audit affect-repaired revision (`c3ead812…fc55cd`
 
 `SPEC.md` remains authoritative; no rule repair was adopted. D19 and the earlier intentions remain in `notes/decisions.md`. The [owner's original 2026-10-01 handoff](docs/build-history/2026-10-01-owner-handoff.md) is retained verbatim as history; its counts and repository-visibility statement are not current verification. The broader architecture in `docs/background/` is motivation, not an implemented-feature inventory.
 
-Run `node --test` for all 146 delivery tests. The cross-build test materializes checksum-verified original-v2 source from the pinned data commit, without a tracked duplicate. [REPRODUCE.md](REPRODUCE.md) gives separate commands for each evaluated version, a permitted-local browser probe, and exact raw-data recovery.
+Run `node --test` for all 148 current tests. The cross-build test materializes checksum-verified original-v2 source from the pinned data commit, without a tracked duplicate. [REPRODUCE.md](REPRODUCE.md) gives separate commands for each evaluated version, a permitted-local browser probe, and exact raw-data recovery.
 
 Priorities for a further research pass include selective ablation designs, executed learned-action coverage, richer state learning, a properly identified budget interaction, matched adversarial controls, and the outstanding browser/human tests. The independent acceptance matrix identifies the unimplemented remainder; these are not quietly marked complete.
 

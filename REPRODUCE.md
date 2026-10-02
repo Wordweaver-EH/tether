@@ -15,7 +15,7 @@ The cross-build affect regression automatically materializes the original runtim
 
 Alternatively, set `ORIGINAL_SOURCE=/absolute/path/to/tether-evidence/reference/v2-source` to use a separately checked-out frozen runtime. This override preserves the existing explicit comparison-source mechanism.
 
-Current production fingerprint: `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`. Original-v2 fingerprint: `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`. Small source manifests remain in `reports/provenance/`. Production code and scientific measurements are unchanged by this cleanup.
+Current source fingerprint: `4a7fbb875395bb4f99658eb5b8c78f17558d2c98b6430eb0877e4f97d550b854`. The evaluated repaired fingerprint was `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`; the only subsequent production-scope change is the HTTP root redirect in `serve.mjs`, with no agent/simulation changes. Original-v2 fingerprint: `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`. Small source manifests remain in `reports/provenance/`. Raw measurements are unchanged. `current-source-manifest.json` describes the served revision; `repaired-source-manifest.json` remains the scientific evaluated-source record.
 
 ## Historical experiments and raw evidence
 

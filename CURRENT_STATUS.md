@@ -4,8 +4,8 @@
 
 ## Delivered code and verification
 
-- Default playable code: post-audit affect repair, fingerprint `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`
-- Aggregate delivery tests: **146/146 passing** on Node v24.19.0; 139 implementation/runner tests plus seven diagnostic-helper tests
+- Default playable code: post-audit affect repair, evaluated fingerprint `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`; current served tree `4a7fbb875395bb4f99658eb5b8c78f17558d2c98b6430eb0877e4f97d550b854` differs only by the HTTP root redirect
+- Aggregate delivery tests: **148/148 passing** on Node v24.19.0; 139 implementation/runner tests plus nine diagnostic-helper tests
 - Immutable original-v2 reference: fingerprint `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`, all 55 runtime-file hashes verified; full original archive retained with its 131-test suite
 - Cross-build noAffect regression materializes checksum-verified original source from the pinned data-branch commit; `ORIGINAL_SOURCE` remains available
 - SPEC constants and mechanics unchanged; only workspace appraisal control and its trace wiring changed between the two evaluated versions

@@ -51,3 +51,7 @@ Tools outside that scope that affect experiments are separately hashed. The affe
 No project `LICENSE`, `COPYING`, or equivalent grant was found in the checked branches/history. This delivery does not invent a license or grant public redistribution rights. Confirm rights with the repository owner before redistribution; repository visibility alone is not a license.
 
 No third-party runtime packages or vendored external code were added. Node is an external runtime under its own license. Research/prior-art references do not imply their code was incorporated or that their licenses cover Tether.
+
+## Post-cleanup launch correction
+
+A separate HTTP-only fix redirects `/` to `/client/`, preserving relative asset/import-map URLs and the original static allowlist. Two delivery tests cover it. This changes `serve.mjs`, which is inside the production fingerprint scope: the current source hash is `4a7fbb875395bb4f99658eb5b8c78f17558d2c98b6430eb0877e4f97d550b854` (see `current-source-manifest.json`). The historical repaired hash above and its manifest remain unchanged as the study identity. All evaluated agent, simulation and client bytes remain unchanged; the serving-only revision has 148/148 passing tests.

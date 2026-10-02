@@ -6,7 +6,7 @@ A deterministic spear-duel web game and CPU-only test bed for a non-LLM cognitiv
 
 ## Current status
 
-The implementation/evaluation pass is complete, with explicit unmet goals and verification limits. The playable code is the **post-audit affect-repaired revision**, source `c3ead812…fc55cd`. It passes **146/146** delivery tests and has a separate 768-bout targeted study.
+The implementation/evaluation pass is complete, with explicit unmet goals and verification limits. The playable code is the **post-audit affect-repaired revision**, source `c3ead812…fc55cd`. It passes **148/148** delivery tests and has a separate 768-bout targeted study.
 
 The earlier **original v2** build, source `19800346…0bc9e5`, completed the Phase 4 search, 39,168-bout mechanism audit, and 8,704-bout learning/adaptation study. Those results are preserved under their original version. They must not be relabeled as full evaluations of the repaired controller; its full 16-ablation/budget/learning/exploit reruns remain unperformed.
 
@@ -40,9 +40,9 @@ After a bout, download the JSONL log. Open `http://localhost:8765/replay/` and c
 ## Tests
 
 ```sh
-node --test                            # 146 tests: repaired implementation + delivery diagnostics
+node --test                            # 148 tests: repaired implementation + delivery diagnostics
 node --test test/*.test.mjs            # 139 repaired implementation/runner tests
-node --test delivery-tests/*.test.mjs  # 7 diagnostic-server tests
+node --test delivery-tests/*.test.mjs  # 9 diagnostic-server tests
 ```
 
 The cross-build affect regression materializes checksum-verified original source from the pinned data-branch commit; run `git fetch origin data/tether-evidence-2026-10-02` first in shallow clones. `ORIGINAL_SOURCE` can override it. See [REPRODUCE.md](REPRODUCE.md). The original 131-test suite and its original source are retained in the frozen archive. Diagnostic helpers and portability-only test changes are documented separately from the evaluated production fingerprints.
@@ -80,3 +80,7 @@ Agents receive cloned percepts and inputs are cloned before simulation. They sti
 Win points assign 1 to a win, 0.5 to a draw, and 0 to a loss. Report intervals are seed-cluster bootstrap intervals with their stated scope and limitations. They are descriptive and not multiplicity-adjusted; an interval compatible with zero does not establish equivalence. Human enjoyment, readability, speech usefulness, and subjective experience are not inferred from bot bouts.
 
 Historical Phase 2 tournaments, old browser screenshots, smoke tests, preliminary physics screens, and superseded diagnostics are separated from final evidence under `reports/`. Do not pool them with the final frozen-source results.
+
+## Play acceptance
+
+The `/` launch route now redirects to `/client/` so relative JavaScript, CSS and import-map paths resolve correctly without broadening the server allowlist. Two HTTP regressions cover launch assets, HEAD and existing restrictions. Follow [the short play checklist](PLAYTEST.md); live browser play is still unverified. This serving-only change does not alter evaluated agents or simulation. Current source manifest: `reports/provenance/current-source-manifest.json`.

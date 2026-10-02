@@ -6,3 +6,7 @@ reports/reproduction/
 reference/v2-source/reports/
 # Reconstructed byte-identical evidence; ordered tracked transport parts are canonical
 reports/final/phase5-final.json.gz
+
+# Reconstructed learning evidence (canonical transport slices remain tracked)
+reports/raw-learning/*.jsonl.gz
+reports/raw-learning/*.jsonl

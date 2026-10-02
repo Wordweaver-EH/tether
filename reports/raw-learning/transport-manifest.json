@@ -1,0 +1,126 @@
+{
+  "purpose": "Lossless ordered split of the complete original-v2 learning/adaptation checkpoint; no row edits or scientific reanalysis",
+  "sourceFingerprint": "19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5",
+  "rawFile": "learning-final.rows.jsonl",
+  "rawSha256": "892f2e66eba6f1e404a2bceca82828c58649f60613708d9ec6daf70f4338cc7a",
+  "rawBytes": 354787806,
+  "rows": 8704,
+  "gzipFormat": "Independent gzip members, mtime=0, compression level 6; concatenate decompressed parts in listed order to reconstruct exact original bytes",
+  "parts": [
+    {
+      "file": "tether-learning-rows-part-01.jsonl.gz",
+      "rows": 2514,
+      "firstLine": 1,
+      "lastLine": 2514,
+      "rawBytes": 100664806,
+      "rawSha256": "1715e0d08339e73876a4d22f74ac6a9f9803cc100ff9c0a159659903e729ce54",
+      "gzipBytes": 21196340,
+      "gzipSha256": "b5863e3a86789cc60aefa9904445d4291c29d998d2500a0b0a0e24011326dca3",
+      "transportPieces": [
+        {
+          "file": "tether-learning-rows-part-01.jsonl.gz.slice-01",
+          "bytes": 8000000,
+          "sha256": "f72ce30a0a4db5d4089fe3234e7a3cc2b8c6150656a6836e629b8fa36dfc498a",
+          "gitBlob": "fc4ca71c69ec8e839f32d0426d3631646bd0161e"
+        },
+        {
+          "file": "tether-learning-rows-part-01.jsonl.gz.slice-02",
+          "bytes": 8000000,
+          "sha256": "cea20f00112b43a461dd9803dfa8c20c24eb51c569c2462e1dfdf7ed31a1049c",
+          "gitBlob": "555bed7476d2f3464b6ef72f8ea1d575e27f462e"
+        },
+        {
+          "file": "tether-learning-rows-part-01.jsonl.gz.slice-03",
+          "bytes": 5196340,
+          "sha256": "e82f796ae5293b44f2f8979f40ec6d2f051b12dc5bea57c31725cf78928f313e",
+          "gitBlob": "ce7e6bd4f72cd8c6d04ad1724df19f9b82657c83"
+        }
+      ]
+    },
+    {
+      "file": "tether-learning-rows-part-02.jsonl.gz",
+      "rows": 2432,
+      "firstLine": 2515,
+      "lastLine": 4946,
+      "rawBytes": 100668233,
+      "rawSha256": "33ddb03b15cb8ebe52b6d2936f18abe7b0bf1b3c65a508766140ba3296b85202",
+      "gzipBytes": 23020624,
+      "gzipSha256": "9c0d53c354d80ec629d734db254e529b3297a58071fd0edf82fc9f7cf8ec4721",
+      "transportPieces": [
+        {
+          "file": "tether-learning-rows-part-02.jsonl.gz.slice-01",
+          "bytes": 8000000,
+          "sha256": "2fbd332f5931c32eeb79839639eed465320f85a3e6cf206569ef2b48e66633b3",
+          "gitBlob": "3075947719782d826dbd115b72e3c32311d2168a"
+        },
+        {
+          "file": "tether-learning-rows-part-02.jsonl.gz.slice-02",
+          "bytes": 8000000,
+          "sha256": "14299dde43daa0f0676d759612894a29c9c980803bffaa8a9083f9326d483940",
+          "gitBlob": "64a37701b5a5c9885d6d57982e7d95183ddf2b5e"
+        },
+        {
+          "file": "tether-learning-rows-part-02.jsonl.gz.slice-03",
+          "bytes": 7020624,
+          "sha256": "fe363da8c4f0afa8a0313921a063178af0870e9aac7565bec9daea0bfb620996",
+          "gitBlob": "74947d086951a2821efc5050257870c7440a0e01"
+        }
+      ]
+    },
+    {
+      "file": "tether-learning-rows-part-03.jsonl.gz",
+      "rows": 2476,
+      "firstLine": 4947,
+      "lastLine": 7422,
+      "rawBytes": 100708085,
+      "rawSha256": "41414bffc137780e68417175c93eaa0462c9d420acd7b3fbecff147a3d4b3717",
+      "gzipBytes": 21947129,
+      "gzipSha256": "74d8b14ae181245699afcad4ddf477c6d6daee82cb4c57a6e4dbd66c29f37984",
+      "transportPieces": [
+        {
+          "file": "tether-learning-rows-part-03.jsonl.gz.slice-01",
+          "bytes": 8000000,
+          "sha256": "e728c71ac870bc90eacbd1eaa484c2e9e9298de8c8334eafba8bfd6b95fc1ccd",
+          "gitBlob": "0e4ac2420738ec2128e549b6b2e6ed818ce083e1"
+        },
+        {
+          "file": "tether-learning-rows-part-03.jsonl.gz.slice-02",
+          "bytes": 8000000,
+          "sha256": "bfa45d78de735c84ecb1da1d40550f4eeef7f000da1c1b18c8ea5c1f8e92ffa9",
+          "gitBlob": "61c39ebed6b12b8f62e65901fd361aa37eab69ef"
+        },
+        {
+          "file": "tether-learning-rows-part-03.jsonl.gz.slice-03",
+          "bytes": 5947129,
+          "sha256": "da8eb43fd7cd7aa358a0fc7cc341f8321ba826f5c35fce739cfd24201cd702b6",
+          "gitBlob": "3d508dbcb7f541770e9e48ab9bd63054fe12bae8"
+        }
+      ]
+    },
+    {
+      "file": "tether-learning-rows-part-04.jsonl.gz",
+      "rows": 1282,
+      "firstLine": 7423,
+      "lastLine": 8704,
+      "rawBytes": 52746682,
+      "rawSha256": "8853a75e790b0c26a9d34fb776d665e2062f1e57215229ffc6f62da05d0847ec",
+      "gzipBytes": 12376216,
+      "gzipSha256": "8129e40973c979d4aee8766ac538263dbdeb10b8bf558427e20260064df510e3",
+      "transportPieces": [
+        {
+          "file": "tether-learning-rows-part-04.jsonl.gz.slice-01",
+          "bytes": 8000000,
+          "sha256": "ae8eb46134fcb4cbbf3e5e800f462545704f17711930d96483d3da8f7e4c48a1",
+          "gitBlob": "f998f203f926855d11ece46ae8d9fd26a41f87ba"
+        },
+        {
+          "file": "tether-learning-rows-part-04.jsonl.gz.slice-02",
+          "bytes": 4376216,
+          "sha256": "57baa68d90abb6dba1add306a43cbe782c7e9760fde558635eb8deb4e98e764b",
+          "gitBlob": "9aff23fc20b7506da5d71ffca14d4df721b13516"
+        }
+      ]
+    }
+  ],
+  "transport": "Ordered byte slices <=8,000,000 bytes reconstruct each original independent gzip member exactly. Slice files are not individually decompressible."
+}

@@ -1,0 +1,58 @@
+{
+  "approved": true,
+  "status": "RECOVERED_RAW_SELECTOR_INDEPENDENT_REVIEW_PASS",
+  "reviewedAt": "2026-10-03T13:16:03.151573+00:00",
+  "approvalScope": "Read-only terminal-UNION selector and sample manifest only. No Git write/upload authorization granted by this receipt; sole publisher and root-approved upload workflow remain required.",
+  "selectorSha256": "f19185ba52cecce393ad229513f47b9973876cee2ba2a8e729b8ad4e6a9ce47f",
+  "testsSha256": "81477c81f4d4515ad4b59ce90dece13e6a5daf857cb5eedd13bdcd16734ea9be",
+  "readmeSha256": "7b266c07dbdbb353e8dd11f6249bcfdf9c9dce230269f2271ab86e262e994f78",
+  "localValidationSha256": "8e399ada70f14048cd4d0a1e1119c8264d046157b5bb106f434d9bc1ad862314",
+  "fullUnionReviewSha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c",
+  "terminalUnionSha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c",
+  "remoteExclusionReceiptSha256": "0c6ace790469b9cac38b516013045c1a3f1c3d526c92b40ef280ca04d42f1ae9",
+  "tests": {
+    "command": "python -m unittest discover -s tether-github-update/recovered-raw-selector -p test_selector.py -v",
+    "passed": 7,
+    "failed": 0,
+    "includesRealMixedOriginOffset640AndFinalResumedOffset4032": true
+  },
+  "sample": {
+    "path": "/workspace/scratch/75679def3745/tether-github-update/recovered-raw-selector/example-b002-v2/LOCAL-MEMBERS.json",
+    "sha256": "ef541a0be455ea678ecd2c64851001b35f4faac13d5e557e7961a691d94381fd",
+    "selectedTaskCount": 64,
+    "members": 329,
+    "bytes": 213621656,
+    "everyMemberHashAndSizeIndependentlyRechecked": true,
+    "allInputOutputMemoryBindingMembersPresent": true,
+    "remainingPrimaryTasksAfter128VerifiedRemoteExclusions": 4096,
+    "remainingOrderSha256": "b54a310372e1e9a3a4015b1b374b65e5be927a893436c2afb873fe03cb3f8d63",
+    "separatePartialManifestSha256": "f64d407b378b80d2a8f0b854c557dd3af777a00a98f483d8cd8c98835d0804d6",
+    "separatePartialCount": 7,
+    "partialScientificSampleIncluded": false
+  },
+  "verifiedControls": [
+    "Stable frozen task-plan order filtered only by128publisher-verifiedremoteIDs;4096remainingIDs partition into64disjoint64task batches",
+    "Exact reviewed terminalUNION805original+3419resume and full-proof-audit/shard hash bindings",
+    "Selected raw/result/memory byte hashes checked against both UNION and approved audit; byte identity safely reuses prior full proof validation without decompression",
+    "Origin-specific original/resume namespaces and exact predecessor memory dependencies, including cross-origin or prior-remote-batch dependencies",
+    "All150locked input files validated and included with workspace-relative portable closure mapping",
+    "Original and resumed release copies now hash-bound to reviewed inventory/recovery release",
+    "Output is fresh/outside original/resume source; member paths relative with no traversal; source aliases/symlinks rejected",
+    "Seven original raw-only partials separately inventoried with exact hashes including zero-byte partial; never included as primary tasks",
+    "No controller imports/runs, scientific aggregation, Git writes or source alteration performed by selector/reviewer"
+  ],
+  "excludedFromApproval": [
+    "prepare_publication.py",
+    "publish_recovered_batch.js",
+    "stream_archive.py execution",
+    "Any unverified future remote-tree state or claim of complete remote backup"
+  ],
+  "futureUseRequirements": [
+    "Each batch must freshly validate selected file hashes; stop on mismatch",
+    "Publisher must avoid repeated offsets/task IDs in the remote checkpoint index and verify uploaded parts/tree/ref before claiming backup",
+    "Archive assembly must recheck member byte hashes; maintain explicit part/task manifests and prior b000/b001immutability",
+    "Upload seven excluded partials separately once; do not add them to primary task counts",
+    "Any selector byte change requires renewed review; obsolete example-b002 is not approved candidate"
+  ],
+  "outstandingSelectorIssues": []
+}

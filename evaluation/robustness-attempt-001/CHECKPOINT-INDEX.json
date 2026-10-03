@@ -2,7 +2,7 @@
   "status": "RAW_PUBLICATION_IN_PROGRESS",
   "sourceCheckpoint": "291026df7effde2b24c8d36a1273b65295a41245",
   "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
-  "checkpointedTasks": 128,
+  "checkpointedTasks": 192,
   "plannedTasks": 4224,
   "batches": [
     {
@@ -18,8 +18,23 @@
       "taskIdsSha256": "450f03e6787b8cb4d75d1fef5708f2b4a12c057f2b269786248d233f6b75d7eb",
       "tasks": 64,
       "archiveSha256": "676c997437308e4af7d7ee5ad6da40d7d1f1a540ee627161545278f6f09bc665"
+    },
+    {
+      "batch": 2,
+      "path": "evaluation/robustness-attempt-001/recovered-batches/b002/",
+      "tasks": 64,
+      "taskIdsSha256": "496efd02141cd3076c0ff474873640593a63fff2d11faefbb9414b6678f1ad27",
+      "archiveSha256": "5588d2dc742cb4e58bf4e1b6b031c3333eafe392954594153fdcf673baddc762",
+      "origin": "qualified-terminal-union",
+      "remainingRange": [
+        1,
+        64
+      ]
     }
   ],
   "wholePhaseCpuClaim": false,
-  "evaluationSuccessClaim": false
+  "evaluationSuccessClaim": false,
+  "fullUnionReviewSha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c",
+  "unionSha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c",
+  "originalPartialsCountedAsScientificTasks": false
 }

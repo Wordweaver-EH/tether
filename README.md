@@ -1,3 +1,5 @@
+> Current version (2026-10-03): the default controller is now the experimental rebuilt N/S + C1/C2 checkpoint. Start with [CURRENT_STATUS.md](CURRENT_STATUS.md) for 264-test verification, source identity, completed new evidence and remaining gaps. The older study results and source manifests below apply only to their explicitly named historical versions.
+
 # Tether
 
 A deterministic spear-duel web game and CPU-only test bed for a non-LLM cognitive architecture. Play a human against the NPC, inspect its recorded mind state, and test cognitive mechanisms through explicit ablations. Plain JavaScript, Node 24, no package dependencies and no build step.

@@ -112,12 +112,8 @@ export function specialists(view, belief, model, affect, ablations) {
       { gaze: intercept,
         move: add(enemy, { x: otherFacing.y * 1.8, y: -otherFacing.x * 1.8 }),
         throw: shot && seen }) : proposal('Flank while outside their gaze', 0);
-  const proposals = { Threat: threat, Hunt: hunt, Anchor: anchor, Contest: contest,
+  return { Threat: threat, Hunt: hunt, Anchor: anchor, Contest: contest,
     Search: search, Deceive: deceive };
-  for (const name of ['Hunt','Search','Deceive', ...(['HELD','UNKNOWN'].includes(theirSpear.state)?['Threat']:[])]) {
-    proposals[name].hypothesis = targetHypothesis(belief);
-  }
-  return proposals;
 }
 
 // Monolithic policy for the GWT-1 ablation. It evaluates one combined priority
@@ -139,15 +135,6 @@ export function singleUtility(view, belief, model) {
     throwSpear = belief.confidence >= model.throwConfidence &&
       dot(view.own.facing, toTarget) > Math.cos(model.throwAngleRad);
   }
-  const result = proposal('Pursue the highest immediate utility', 0.7,
+  return proposal('Pursue the highest immediate utility', 0.7,
     { gaze, move, throw: throwSpear, recall });
-  if (their.state !== 'EMBEDDED' && spear.state !== 'EMBEDDED') result.hypothesis = targetHypothesis(belief);
-  return result;
-}
-
-// Declarative selected content is separate from the specialist's actuator wants.
-function targetHypothesis(belief) {
-  const radius = Math.sqrt(Math.max(0,(belief.covariance?.xx??0)+(belief.covariance?.yy??0)));
-  return {entity:'opponent',mean:{...belief.mean},velocity:{...belief.velocity},
-    uncertainty:{status:'known',radius}};
 }

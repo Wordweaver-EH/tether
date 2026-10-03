@@ -2,9 +2,13 @@ import test, {after} from 'node:test';
 import assert from 'node:assert/strict';
 import {appraisalControl,createWorkspace} from '../src/mind/workspace.mjs';
 import {createMind} from '../src/mind/index.mjs';
-import {materializeCurrentMindWithOriginalWorkspace} from '../tools/compatibility-fixtures.mjs';
-const swapped=await materializeCurrentMindWithOriginalWorkspace();
-after(()=>swapped.cleanup());
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {materializeOriginalSource} from '../tools/materialize-original-source.mjs';
+const original=process.env.ORIGINAL_SOURCE ? null : materializeOriginalSource();
+if(original) after(()=>original.cleanup());
+const baselineRoot=process.env.ORIGINAL_SOURCE ?? original.path;
+const {createMind:originalMind}=await import(pathToFileURL(resolve(baselineRoot,'src/mind/index.mjs')).href);
 import {createWorld,step} from '../src/sim.js';
 import {percept} from '../src/perception.js';
 import {runBout} from '../src/headless.mjs';
@@ -42,7 +46,7 @@ test('noHysteresis remains independent of affect competition controls',()=>{
  assert.deepEqual(a.choose(candidates,.05,{arousal:1}).outputs,b.choose(candidates,.05,{}).outputs);
 });
 test('identical changing percept stream causes real emitted action differences with affect',()=>{
- const a=createMind({seed:991}),b=createMind({seed:991,ablations:{noAffect:true}}),driver=createMind({seed:991,ablations:{noAffect:true}}),bot=STRATEGIES.immediateRecaller(),world=createWorld();let differences=0;
+ const a=createMind({seed:991}),b=createMind({seed:991,ablations:{noAffect:true}}),driver=originalMind({seed:991,ablations:{noAffect:true}}),bot=STRATEGIES.immediateRecaller(),world=createWorld();let differences=0;
  for(let tick=0;tick<1200;tick++){
   const v=percept(world,'P1','MODE_B');const x=a.act(structuredClone(v),1/120),y=b.act(structuredClone(v),1/120);
   if(JSON.stringify(x)!==JSON.stringify(y))differences++;
@@ -50,9 +54,9 @@ test('identical changing percept stream causes real emitted action differences w
  }
  assert.ok(differences>0);
 });
-test('noAffect current controller preserves action and replay logs when only its workspace is replaced by frozen original v2',()=>{
+test('noAffect repaired build exactly preserves original action and replay log streams',()=>{
  for(const mode of ['MODE_A','MODE_B'])for(const seat of [0,1]){
   const run=factory=>{const m=factory({seed:991,ablations:{noAffect:true},captureTrace:false});const bot=STRATEGIES.immediateRecaller();return runBout({agents:seat===0?[m,bot]:[bot,m],mode,durationSec:5,log:true});};
-  const a=run(createMind),b=run(swapped.createMind);assert.deepEqual(a.score,b.score);const normalize=lines=>lines.map(line=>{const r=JSON.parse(line);if(r.recordType==='METADATA')delete r.timestamp_start;return r;});assert.deepEqual(normalize(a.logLines),normalize(b.logLines));
+  const a=run(createMind),b=run(originalMind);assert.deepEqual(a.score,b.score);const normalize=lines=>lines.map(line=>{const r=JSON.parse(line);if(r.recordType==='METADATA')delete r.timestamp_start;return r;});assert.deepEqual(normalize(a.logLines),normalize(b.logLines));
  }
 });

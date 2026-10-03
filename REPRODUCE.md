@@ -1,3 +1,5 @@
+> Current version (2026-10-03): the default controller is now the experimental rebuilt N/S + C1/C2 checkpoint. Start with [CURRENT_STATUS.md](CURRENT_STATUS.md) for 264-test verification, source identity, completed new evidence and remaining gaps. The older study results and source manifests below apply only to their explicitly named historical versions.
+
 # Reproduce and verify
 
 Use Node v24.19.0, the evaluated runtime. No package installation or build is required.

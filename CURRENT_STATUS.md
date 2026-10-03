@@ -1,43 +1,40 @@
-# Current status
+# Current experimental checkpoint: rebuilt N/S plus C1/C2
 
-**The implementation/evaluation pass is delivered, with specific open architecture goals and external validation limits.** This is not an assertion that every original goal has been achieved.
+The default controller now includes the reviewed novelty/completion rebuild and bounded C1/C2 content sharing and prediction-error monitoring. It is an **experimental functional checkpoint**, not a completed cognitive milestone or demonstrated competitive improvement. Historical original-v2 and affect-repair performance must not be attributed to this revision.
 
-## Delivered code and verification
+## Exact current scope
 
-- Default playable code: post-audit affect repair, evaluated fingerprint `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`; current served tree `4a7fbb875395bb4f99658eb5b8c78f17558d2c98b6430eb0877e4f97d550b854` differs only by the HTTP root redirect
-- Aggregate delivery tests: **148/148 passing** on Node v24.19.0; 139 implementation/runner tests plus nine diagnostic-helper tests
-- Immutable original-v2 reference: fingerprint `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`, all 55 runtime-file hashes verified; full original archive retained with its 131-test suite
-- Cross-build noAffect regression materializes checksum-verified original source from the pinned data-branch commit; `ORIGINAL_SOURCE` remains available
-- SPEC constants and mechanics unchanged; only workspace appraisal control and its trace wiring changed between the two evaluated versions
+- Source fingerprint (all `src/` files): `d490afd30119c0d6bfe03373055aeb21a797c6138f1ee744961988238b8948e7`; [per-file manifest](reports/provenance/c1c2-source-manifest.json)
+- Fresh integrated-tree verification: **264/264 tests passing, zero skips**; focused C1/C2 set **75/75**; Node v24.19.0
+- Prior remote tree `bc27ec38b2c7ad8709816943422d4634483ae197` matched all 151 baseline blobs before applying reviewed changes. Existing remote ancestry is preserved, without force push
+- Rule/simulation constants and client assets remain unchanged. Actual browser play/input/audio/storage acceptance remains unverified
+- [Mechanism implementation and limits](C1C2-STATUS.md), [N/S implementation](reports/implementation/rebuilt-novelty-completion.md), [N/S measured results](reports/implementation/rebuilt-ns-results.md)
 
-## Completed CPU evaluations
+## Completed evidence, with nulls preserved
 
-| Study | Version | Completed evidence |
-| --- | --- | --- |
-| Phase 4 adversarial study | Original v2 | 4,320 training + 2,160 selection-validation + 2,816 independent confirmation bouts; source and schedule checked |
-| General mechanism audit | Original v2 | 39,168 full-length bouts; complete paired matrix, budget bounds, scores and seed-cluster intervals validated |
-| Learning/adaptation audit | Original v2 | 8,704 full-length bouts; complete checkpoints validated; output-only recovery after serialization failure |
-| Affect repair study | Post-audit repair | 768 full-length bouts / 384 pairs; independently verified primary endpoints, bounded narrow benefit |
+1. **Rebuilt N versus S:** all 256 primary paired action objects identical; both 125 attempts / 81 hits. Median paired first-decision time ratio S/N 1.1134 (about 11.3% slower). Separate eight-pair fixed-learning continuations: 13 attacks / four hits per arm, two proposals withheld by S, no pending recall plan. No demonstrated gameplay gain; these source versions predate C1/C2
+2. **[Ordinary-experience C2 panel](reports/c1c2/ordinary-experience-results.md):** feedback/control cuts changed gaze in all six held-out cases; acquired versus pristine reliability changed gaze in 4/6. Forecast-error series did not improve. Opponent always visible at delayed decisions, so zero episodic retrieval opportunities. Fixed sensory replays do not establish alternative closed-loop outcomes
+3. **[C1 visibility-gap probe](reports/c1c2/visibility-gap-results.md):** ordinary writes and reads caused movement/gaze differences in all 24 hidden decision slots per seed. Attention cut affected gaze only in gap 1; planner cut was null. Two seeds shared one legal, externally generated sensor tape; this is narrow input-conditioned evidence
 
-The original evidence remains unchanged. No broad repaired-version audit or interaction sweep was silently substituted or inferred.
+Both completed C1/C2 result archives are preserved losslessly at [data commit d8b8887](https://github.com/Wordweaver-EH/tether/tree/d8b8887bdf6218d64759f2e150a505fae92196ee/checkpoints/c1c2-evidence-2026-10-03). Each retains its frozen runner/protocol, raw arms, manifests and scientific reviews. The checksum reassembler verifies all parts and reconstructed archives. Source backup remains at [data commit 06c0a81](https://github.com/Wordweaver-EH/tether/tree/06c0a813c1990ee313e702c9a00d64a3ca9205b0/checkpoints/c1c2-2026-10-02).
 
-## Original task acceptance at a glance
+## Reproduce current software checks
 
-1. **Phase 4 search:** completed computational study; no universal simple strategy or competitive anchor policy established; no rule adoption
-2. **Cross-runtime determinism:** repair and Node/cross-JIT regressions implemented; the user-supplied Edge 154 fixture passes Node v24.19.0 verification: 3,600 ticks, 601 samples, hash `9b729b88b12f9d19`; browser identity is user-reported
-3. **Mind v2:** mechanisms and explicit ablations implemented, with a repaired affect path. Several original ambitious learning/architecture goals remain unsupported or incomplete
-4. **Indicator audit:** complete original-v2 general and learning datasets/reports delivered, preserving harms and nulls. Restricted comparators do not selectively validate broad consciousness theories; full repaired-code interaction coverage is unperformed
-5. **Taste fixes:** rendering/selection code and automated tests completed; live visual, input, audio and browser-storage checks remain blocked
+Using Node v24.19.0 from the repository root:
 
-See the [detailed independent acceptance matrix](reports/independent-review/acceptance-matrix.md) and [results](RESULTS.md).
+```
+node --test
+node --test test/coordination.test.mjs test/prediction-monitor.test.mjs test/content-broadcast.test.mjs test/target-memory.test.mjs test/freeze-learning.test.mjs
+node tools/math-audit.mjs
+sha256sum -c FILE_SHA256SUMS.txt
+```
 
-## Important limits
+Minimal hash-pinned compatibility fixtures are necessary test inputs, not a duplicate source archive. Current regression tests work without `.git` or adjacent historical checkouts. The old whole-controller affect parity assertion is preserved outside test discovery, with its narrower replacement documented in [fixture scope](fixtures/compatibility/README.md). Historical reports/tools retain their historical source and reproduction prerequisites.
 
-- Available cloud browser navigation returned `net::ERR_BLOCKED_BY_CLIENT`; no bypass was attempted. A later user-supplied replay fixture passes independent Node verification; live play and human engagement remain unverified
-- The logical cognition cap is not exact hardware or wall-clock equality
-- `noAttentionSchema`, `noWorkspace`, `noToM`, and `noLearning` are operational software interventions with limited selectivity
-- Four-stage competence and primary within-bout adaptation benefits were not demonstrated; automatic labels are not executed learned-action coverage
-- Original affect was structurally ineffective; repaired affect has only its separately labeled targeted evidence
-- Affect-study recall-by-score-state counts are invalid instrumentation, not observed zeros
-- Optional D18 terminal-reward-only emergence/mesa-objective experiments remain unimplemented
-- Local delivery only: no remote push, PR, merge, deployment, or upload by the build worker
+## Remaining limits
+
+The native witness where an organically created pending recall plan is invalidated remains unverified. Full autonomous closed-loop C1/C2 efficacy, broad transfer, tournaments, live browser acceptance and subjective consciousness are not demonstrated. Unfinished natural closed-loop runner/results are excluded. Nominal work accounting is not certified hardware-compute equality; reliability EWMA is not calibrated confidence.
+
+[Previous status](reports/provenance/pre-c1c2-status.md) and all older study reports remain historical evidence. The PR stays draft. No merge or deployment.
+
+Prepared by dot, the OpenAI assistant.

@@ -284,8 +284,38 @@
       "archiveSha256": "3f1c23302207329c20fef55c04e7ed06cd74eb48c902f3ddb8c1d04a195e1c14",
       "archiveBytes": 57592,
       "path": "batches/conventional-useful-4x-generation-1"
+    },
+    {
+      "id": "conventional-useful-4x-generation-2",
+      "kind": "generation",
+      "arm": "conventional-useful-4x",
+      "index": 2,
+      "tasks": 128,
+      "archiveSha256": "a4cfcedc6ff3dd12d8a629b27c6cf001386d93bdd89b3705eacca152e0be18ae",
+      "archiveBytes": 55967,
+      "path": "batches/conventional-useful-4x-generation-2"
+    },
+    {
+      "id": "conventional-useful-4x-generation-3",
+      "kind": "generation",
+      "arm": "conventional-useful-4x",
+      "index": 3,
+      "tasks": 128,
+      "archiveSha256": "aceb1159809f7199c77cf8a3b9474bd8185f1d60262e71361872f8eb47c97387",
+      "archiveBytes": 63631,
+      "path": "batches/conventional-useful-4x-generation-3"
+    },
+    {
+      "id": "conventional-useful-4x-generation-4",
+      "kind": "generation",
+      "arm": "conventional-useful-4x",
+      "index": 4,
+      "tasks": 128,
+      "archiveSha256": "b0f74c7e20dbd29585f0942957b7e2c95b802bb67fda19ea8830235b5f4f4848",
+      "archiveBytes": 55376,
+      "path": "batches/conventional-useful-4x-generation-4"
     }
   ],
-  "completedTaskRowsArchived": 2816,
-  "uniqueArchivedTaskIdsVerified": 2816
+  "completedTaskRowsArchived": 3200,
+  "uniqueArchivedTaskIdsVerified": 3200
 }

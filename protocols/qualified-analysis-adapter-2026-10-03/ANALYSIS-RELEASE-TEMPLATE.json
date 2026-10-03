@@ -1,0 +1,15 @@
+{
+  "authorized": false,
+  "phase": "qualified-recovered-analysis",
+  "scientificAnalysisAuthorized": false,
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "frozenAnalysisManifestSha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632",
+  "adapterManifestSha256": null,
+  "independentAdapterReview": {"path": null, "sha256": null},
+  "independentUnionReview": {"path": null, "sha256": null},
+  "complete": {"path": "/workspace/scratch/75679def3745/tether-evaluation-recovery/resume-attempt-001/COMPLETE.json", "sha256": null},
+  "union": {"path": "/workspace/scratch/75679def3745/tether-evaluation-recovery/resume-attempt-001/UNION.json", "sha256": null},
+  "supervisorLog": {"path": "/workspace/scratch/75679def3745/tether-evaluation-recovery/resume-attempt-001/SUPERVISOR.jsonl", "sha256": null},
+  "terminalExitAudit": {"path": null, "sha256": null},
+  "output": "/workspace/scratch/75679def3745/tether-qualified-analysis/analysis-attempt-001"
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "status": "INFRASTRUCTURE_ONLY_AWAITING_INDEPENDENT_REVIEW_AND_ROOT_ANALYSIS_RELEASE",
+  "executionAuthority": false,
+  "studyOutcomesAccessed": false,
+  "frozenAnalysisManifestSha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632",
+  "tests": {
+    "synthetic": 31,
+    "passed": 31,
+    "failed": 0
+  },
+  "files": [
+    {
+      "path": "ANALYSIS-RELEASE-TEMPLATE.json",
+      "bytes": 1007,
+      "sha256": "f9a3b2b6b8399f94d2399f4f198e61491e55ed1ce89766fee0adcb6205c593de"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5752,
+      "sha256": "329a056da433627891568ad54b7abf9612338af40de00f5ad2cc301bc2fc7c85"
+    },
+    {
+      "path": "SYNTHETIC-TEST-RESULTS.txt",
+      "bytes": 1939,
+      "sha256": "703f89e07fe54634dfd1d093f26a3267b72a4063aabf7ad72e881e5943a6cdd4"
+    },
+    {
+      "path": "adapter.test.mjs",
+      "bytes": 12463,
+      "sha256": "54943486708487e709147459b9302d92f1530f77f72ef9bd66a75f0e0b03892b"
+    },
+    {
+      "path": "analyze-qualified.mjs",
+      "bytes": 13662,
+      "sha256": "6122bade0e32c2de843f76bbf181c7a926dd105b336f3e3187f7954f403ccf14"
+    },
+    {
+      "path": "gate.mjs",
+      "bytes": 16546,
+      "sha256": "c8630bb0c917423b12f1b33f8a356ab15cb5a1f0e0d64bec0acfda680aedd935"
+    },
+    {
+      "path": "interface-resources.mjs",
+      "bytes": 1334,
+      "sha256": "010af7b72bdd9e7db6b9a2d79e2327a3af2a8201886c2bdbea62ac803c4ba706"
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "generation",
+  "arm": "conventional-useful-4x",
+  "index": 6,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 128,
+  "taskIds": [
+    "screen-conventional-useful-4x-g6-c0-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c0-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c0-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c0-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c0-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c0-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c0-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c0-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c1-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c1-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c1-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c1-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c1-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c1-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c1-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c1-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c10-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c10-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c10-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c10-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c10-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c10-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c10-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c10-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c11-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c11-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c11-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c11-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c11-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c11-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c11-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c11-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c12-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c12-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c12-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c12-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c12-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c12-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c12-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c12-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c13-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c13-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c13-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c13-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c13-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c13-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c13-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c13-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c14-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c14-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c14-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c14-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c14-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c14-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c14-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c14-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c15-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c15-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c15-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c15-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c15-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c15-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c15-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c15-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c2-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c2-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c2-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c2-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c2-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c2-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c2-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c2-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c3-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c3-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c3-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c3-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c3-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c3-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c3-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c3-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c4-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c4-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c4-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c4-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c4-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c4-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c4-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c4-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c5-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c5-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c5-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c5-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c5-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c5-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c5-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c5-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c6-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c6-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c6-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c6-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c6-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c6-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c6-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c6-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c7-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c7-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c7-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c7-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c7-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c7-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c7-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c7-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c8-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c8-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c8-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c8-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c8-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c8-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c8-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c8-k6-o3-s1",
+    "screen-conventional-useful-4x-g6-c9-k6-o0-s0",
+    "screen-conventional-useful-4x-g6-c9-k6-o0-s1",
+    "screen-conventional-useful-4x-g6-c9-k6-o1-s0",
+    "screen-conventional-useful-4x-g6-c9-k6-o1-s1",
+    "screen-conventional-useful-4x-g6-c9-k6-o2-s0",
+    "screen-conventional-useful-4x-g6-c9-k6-o2-s1",
+    "screen-conventional-useful-4x-g6-c9-k6-o3-s0",
+    "screen-conventional-useful-4x-g6-c9-k6-o3-s1"
+  ],
+  "completionMarkers": [
+    "conventional-useful-4x-generation-6-candidates.json",
+    "conventional-useful-4x-generation-6-ranked.json"
+  ],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "conventional-useful-4x-generation-6-candidates.json": {
+      "bytes": 11580,
+      "sha256": "5e917ad114fad17aebb5075deb1cd02d60d1b1dd7a4fa38b3156885afca91bc4"
+    },
+    "conventional-useful-4x-generation-6-ranked.json": {
+      "bytes": 12023,
+      "sha256": "35867cfa0b7d75fa19939e1e5a3f3510f5edc3b59c5ff0c5af86bbeb36d853ef"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o0-s0.json": {
+      "bytes": 2446,
+      "sha256": "ca6d7f8b190c3efdabb44260e7f8c94afce11b927bea1a715bf8c0beff50996d"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o0-s1.json": {
+      "bytes": 2087,
+      "sha256": "94aed20a9000749e734e79ba468b4b4a22fcae9d52c24288c89475416a91bdf8"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o1-s0.json": {
+      "bytes": 2446,
+      "sha256": "613d96812f2315657dbea664b6db80a14c509de48e2e481a8804bfb6b9b40b4a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o1-s1.json": {
+      "bytes": 2089,
+      "sha256": "a85faf8c49904e9157b3a44533c4d95d9e0aee8ccda31740c252bf379d4ac89e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o2-s0.json": {
+      "bytes": 4161,
+      "sha256": "e7fe6fc9c5f972d6cfbf43aaf728b4e91e42c332b8b3a2949db6362fdf0f7e20"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o2-s1.json": {
+      "bytes": 4168,
+      "sha256": "4c82d17e9cdfb06813d951d12cd8e62e17c1161f4477a9c1aa06c41b3a2b3ad4"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o3-s0.json": {
+      "bytes": 2085,
+      "sha256": "47e0aedb86eba05cb1db81dc1e2f7dcfa8d2ebfeaa1f4965aeb9455d5edd17e2"
+    },
+    "raw/screen-conventional-useful-4x-g6-c0-k6-o3-s1.json": {
+      "bytes": 2441,
+      "sha256": "cd4a5d7bfeaf7f99b12d356aa32b29257124cf1c0346fefee06474d8dbff5883"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o0-s0.json": {
+      "bytes": 2501,
+      "sha256": "8dd2c8d66a7018338461b23f8f92a7ebcf6a5116704daa9b76208e25f1c2e39a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o0-s1.json": {
+      "bytes": 2142,
+      "sha256": "01d079468e8665830ab7dc85d8b3117e564b3f52ef9f361c20d11aca4f1c1686"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o1-s0.json": {
+      "bytes": 2496,
+      "sha256": "265efc7d4dba761c2af4383bf1bcfd2bed5c3d7778b74c59369417647cb0632a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o1-s1.json": {
+      "bytes": 2144,
+      "sha256": "ad9edca038963ad65136f28545926f8c3998dcafe440a132c5bcad052aae2316"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o2-s0.json": {
+      "bytes": 4592,
+      "sha256": "5061a282cf78b56cb372bf48113d9dbb32230854d86e06f052437b0810117591"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o2-s1.json": {
+      "bytes": 5636,
+      "sha256": "b27abb9c9fde4c5905cb54a38e4c45b5f42bdda7e7eb4a5b574fd678a6a5ff7e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o3-s0.json": {
+      "bytes": 2140,
+      "sha256": "9fe8bfbe1979dc7e18e196c2bf9f21093c13ae2b6ae7128d36bc5a26c71b0154"
+    },
+    "raw/screen-conventional-useful-4x-g6-c1-k6-o3-s1.json": {
+      "bytes": 2494,
+      "sha256": "908aed6ee9ca7f8065d9f3490f681352bb37cbf8a73b0985b35dfb2fd77b7a78"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o0-s0.json": {
+      "bytes": 2497,
+      "sha256": "12387fa7870bb2abd87d5b5b9a8f9764d3354d90344289c0758dadb22cb7db94"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o0-s1.json": {
+      "bytes": 2140,
+      "sha256": "25564ed21fb38cc663fc534e4bd3a0280a385c026461b4ce406bf0b147238775"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o1-s0.json": {
+      "bytes": 2838,
+      "sha256": "f107fa3ebe209d317b4d22d29dc02c034baad66ce125b58619bd09f106909162"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o1-s1.json": {
+      "bytes": 2140,
+      "sha256": "647b635f422a748ce8a24592b50e4528ad228e255ea181ed7ebf18d3ba5940f7"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o2-s0.json": {
+      "bytes": 6008,
+      "sha256": "ad80b53b66317dd168809042143b1994583aeca63d8da4ffa8f44638cf7538ef"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o2-s1.json": {
+      "bytes": 5640,
+      "sha256": "43c54234fd94df5d1609c654bad158a66f06a1cc57ceab0cf89dc9ac704d5214"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o3-s0.json": {
+      "bytes": 2137,
+      "sha256": "9a0ba159b5cb11659cba2741cad7e8e94ef54e2a6eaa2ea40e1f421917268a78"
+    },
+    "raw/screen-conventional-useful-4x-g6-c10-k6-o3-s1.json": {
+      "bytes": 2493,
+      "sha256": "8b24e96af5fe14bc2f42f8f663135d25a61215453dde31b5ac20040387704f9b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o0-s0.json": {
+      "bytes": 2517,
+      "sha256": "d0895f20b81da8022e733ba58ed29502539b7922b42bb2b298b6f53ec16aebbc"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o0-s1.json": {
+      "bytes": 2158,
+      "sha256": "984b5bb730df9c83e0b1f397cb637d527c8e5df3ed3eae638a0a0d73ebafb47e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o1-s0.json": {
+      "bytes": 2515,
+      "sha256": "73665f7b159e5d48877f8dfda0137a948f34b06379232e452d782c580790c95c"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o1-s1.json": {
+      "bytes": 2160,
+      "sha256": "6c6d7264a4e535451b6861d700d3224be1f8d35efcf1bff092f4cd60beafb5cd"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o2-s0.json": {
+      "bytes": 4214,
+      "sha256": "cbe05515dcfde30573247214de7316adcc4a5c95c8604b05f79f302be6249263"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o2-s1.json": {
+      "bytes": 4586,
+      "sha256": "1f31275fddeec6ef2e44df1746eefcb56393ab5deaff14a87d68dcb4741730ff"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o3-s0.json": {
+      "bytes": 2157,
+      "sha256": "dc5bdb0dea6fa063bd20f1cb0aac47e15b916dbee30afa7bb913d0a8e262e53a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c11-k6-o3-s1.json": {
+      "bytes": 4546,
+      "sha256": "5ffb7b4cfe10ee55618d05775c8f97ebf9cb724996be61f5cb6c0f3d6ac19f69"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o0-s0.json": {
+      "bytes": 2465,
+      "sha256": "ee971d831375039cbd19a00ec015e7be0a2d47c8a4e316520215117124086b1a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o0-s1.json": {
+      "bytes": 2107,
+      "sha256": "9fc7f668e3470213b6f57b981e778ff8fc3ff9e7394d86bb25c6449a84ad87e3"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o1-s0.json": {
+      "bytes": 2467,
+      "sha256": "89e861a372612edcf351d885727db2b34519c9575de19a8ab48e378a91cfb9a8"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o1-s1.json": {
+      "bytes": 2109,
+      "sha256": "b5b139bf314fe3de19c7fcdc5a446cddd74741032e8eb4d2295b16aca6210346"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o2-s0.json": {
+      "bytes": 3848,
+      "sha256": "bfb575459d2255b689944d07cee4f66129ccbc373052185b676183c37852a3fa"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o2-s1.json": {
+      "bytes": 5597,
+      "sha256": "db69c3e0d5b39326599215c01172e91d7c55782015ea22ea24872b429d90d555"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o3-s0.json": {
+      "bytes": 2105,
+      "sha256": "0421a133b436f1cc90e46b96521784697b96e378e92f59cc7e9e2888ff5b8c4b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c12-k6-o3-s1.json": {
+      "bytes": 2463,
+      "sha256": "a4165ede2d9256fe9258586eccb175977cec4706ba0909a188185f221ba06b17"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o0-s0.json": {
+      "bytes": 2469,
+      "sha256": "cf31708445286b12507b9c07a466ed6290e9b84d194455cfc61c623d47cdb864"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o0-s1.json": {
+      "bytes": 2113,
+      "sha256": "c35af71f832e529ecee3fcebdb0feeacb92285ad235acfdc9852d325a95f2549"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o1-s0.json": {
+      "bytes": 2474,
+      "sha256": "4ae8b71748d43fa21169725187ce6b7b38d30b04e44138c235ea3ff80de26166"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o1-s1.json": {
+      "bytes": 2114,
+      "sha256": "af61d090099b749f2933d6be3ac39a434b6cd155d8e0bd329621d28feaae983e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o2-s0.json": {
+      "bytes": 4209,
+      "sha256": "c52626a63efb6f6a4af9def872aa2072c9d808746bc9c0b658e25af0ba9617fd"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o2-s1.json": {
+      "bytes": 4565,
+      "sha256": "80a11eb8992e8eface002de1b41c9ce8c98a62cf38c93f5726a9fdf83f0e2277"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o3-s0.json": {
+      "bytes": 2109,
+      "sha256": "af41a3b202be34816fa824187e61125fbf78e4393601393e18dc59efb75b253f"
+    },
+    "raw/screen-conventional-useful-4x-g6-c13-k6-o3-s1.json": {
+      "bytes": 2804,
+      "sha256": "25cb49699ce6ff8c4a5bd2173bd7f0a3eec7ea3c34022decd6e4eabe44eab535"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o0-s0.json": {
+      "bytes": 2535,
+      "sha256": "441153bfb6bbf446abc150ec4b561976c5a07d0340d8ea4ccc0c6218964eb20f"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o0-s1.json": {
+      "bytes": 2174,
+      "sha256": "df47cd388b2610929e8374bf8b80afecc06b96f1db61bf9375b4e982e631fe84"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o1-s0.json": {
+      "bytes": 2536,
+      "sha256": "611596713416967a9e8edb4bc802d72ed6a72395b5d2aeccdd5f5d8f3b0b751a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o1-s1.json": {
+      "bytes": 2176,
+      "sha256": "ddb4b53c9207d4227c6d6d7fb64cfc90449175c84945eac569a0d619a3db6750"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o2-s0.json": {
+      "bytes": 7452,
+      "sha256": "c027cdcb232b3c47152faaeb15cadc09b95dd373294a50b43666888e29daa840"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o2-s1.json": {
+      "bytes": 4621,
+      "sha256": "f5fdfbfb8fa8ad19aa75b86cacfb71ef3256b3a0f29630203c33104e242fc966"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o3-s0.json": {
+      "bytes": 2169,
+      "sha256": "fbd84f3c31e545e11d3a13bda6842d3e6fea0fa497cf548e2532fa31c95745b7"
+    },
+    "raw/screen-conventional-useful-4x-g6-c14-k6-o3-s1.json": {
+      "bytes": 2526,
+      "sha256": "b6d3d756d80a4c95e88a14e7422e3c9ca4ab23ba2d9e9376d1a1f23c165b86b1"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o0-s0.json": {
+      "bytes": 2482,
+      "sha256": "58f3620c1c3ed5772637eb2d18e6d610feedfb1470bb52dec021747a1cf51585"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o0-s1.json": {
+      "bytes": 2123,
+      "sha256": "f45de036ded2aba805577a7b7d5ac8d5e70bf84c287862329515dd59e50f438d"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o1-s0.json": {
+      "bytes": 2480,
+      "sha256": "39d76c73eca8f17bce2507af840680e84a4eea9934fe382e4460f827b426b1fd"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o1-s1.json": {
+      "bytes": 2126,
+      "sha256": "67d499812ea010ad1ab7955a4abb35c8a0978d945c52d763b6945c168d8ed524"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o2-s0.json": {
+      "bytes": 3876,
+      "sha256": "dabd87f58cd41e24dac3c4de2915887e7596ccaa000e7fcca9eebe73f20e0a18"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o2-s1.json": {
+      "bytes": 3148,
+      "sha256": "5df81015117a8c119a0101ea9cb7bd951242c40932bf908111fb34a6bcf1ecfc"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o3-s0.json": {
+      "bytes": 2120,
+      "sha256": "16471453d207da8de1f86b70c05f977f5c8c318603d5f96c6d82c92c2f6d59cc"
+    },
+    "raw/screen-conventional-useful-4x-g6-c15-k6-o3-s1.json": {
+      "bytes": 4204,
+      "sha256": "85710f2788ef5fd26f5af394ff3aaa87d69e4499903422fa5b39537b25ccaf2b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o0-s0.json": {
+      "bytes": 2481,
+      "sha256": "ea0a6ae0417675ca315d3992c0419d46932e69a4432db76b8b406dde55e85cf8"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o0-s1.json": {
+      "bytes": 2122,
+      "sha256": "f1244825533cbfc6d02d402a8304d0d3e92b4dfc57d4501eae3ccb7569176e7c"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o1-s0.json": {
+      "bytes": 2479,
+      "sha256": "46e291cc9074e21f9e01a455d3a37adf8921623c68dbf656a9499bc70c6ac1d8"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o1-s1.json": {
+      "bytes": 2126,
+      "sha256": "ff9e9bae63650e1a246b9d13295b413d6e21acc472035eeb887dd7acc2ea888b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o2-s0.json": {
+      "bytes": 4934,
+      "sha256": "bbc9b459ee70e920a7a086e9e454e7c107cc5d0662c45cbca9f778590f259d2b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o2-s1.json": {
+      "bytes": 3141,
+      "sha256": "d7526306be25ceb8f80e0d566580a7e038f2a66e1812ca369a1dfb0b14b7fb82"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o3-s0.json": {
+      "bytes": 2120,
+      "sha256": "b51c72470442b3ec81f1147cd35580023e2a7a3d625321c8d78a7691491c8510"
+    },
+    "raw/screen-conventional-useful-4x-g6-c2-k6-o3-s1.json": {
+      "bytes": 3496,
+      "sha256": "fa4f8d27dde2d2c8baaa8e4421e5349c8edafc3343ce240f14c17818713ed76b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o0-s0.json": {
+      "bytes": 2480,
+      "sha256": "0973dd98155d56c774e9d622fa6138669aa541869e39f4a0c663b5a5d409f14b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o0-s1.json": {
+      "bytes": 2122,
+      "sha256": "95d5696ebf566c92765e6578efec7ab3097af2b19612178924f78f3d43b7251f"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o1-s0.json": {
+      "bytes": 2126,
+      "sha256": "9efda06290d1f9e5790264bd4ab3f21bf8c81f7f41b4f6aaca80d25f30a95c1b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o1-s1.json": {
+      "bytes": 2123,
+      "sha256": "d5835b70359b3447369dda182112c6fe25b66cd443ceccbf5843fc0ecd840e13"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o2-s0.json": {
+      "bytes": 8748,
+      "sha256": "31ca47f4d619ebfc987ec20dfb5d9421bb229550ac91f59a6fc9244eb8961e4b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o2-s1.json": {
+      "bytes": 3146,
+      "sha256": "094e35666bcf43a8aaf802172f5fe9455ef92626c910185a55109b7102595811"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o3-s0.json": {
+      "bytes": 2120,
+      "sha256": "de5d0957b03a8eb818f02e389b1c2c8b880d477042d674c2bc41348e0747305c"
+    },
+    "raw/screen-conventional-useful-4x-g6-c3-k6-o3-s1.json": {
+      "bytes": 2830,
+      "sha256": "1e5a49a2e114fc68c08388093a01c748735a45a4c661682beabd3e816d5104f4"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o0-s0.json": {
+      "bytes": 2461,
+      "sha256": "4a5b1159f93c5519eb1e17bf729898b13ce3a30dee7fc5bbe0825bc4f7a6d310"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o0-s1.json": {
+      "bytes": 2103,
+      "sha256": "fa6ef375e17b7b47c6db6985425ef31ea4181f022408f8dffee0dc693d88b999"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o1-s0.json": {
+      "bytes": 2106,
+      "sha256": "7532b5c823575e6360257aca641da2fe48a30e6535754edd0f0e9d3353d82de0"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o1-s1.json": {
+      "bytes": 2108,
+      "sha256": "cb1ffc89991f1e99d5e8d1c92a64c47ca8680e3f66736dca164a67027ce90422"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o2-s0.json": {
+      "bytes": 3854,
+      "sha256": "b34a49b72010b3c4579112dad47be0558134553f6ccba161a5ba431528ca7fec"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o2-s1.json": {
+      "bytes": 4196,
+      "sha256": "e91c013bfe53882475a317982820e40ff8f9abbde33a82be3e1b8c932f53b109"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o3-s0.json": {
+      "bytes": 2101,
+      "sha256": "3ebbb0ce5b1cffc035ca87c638bbf8fe208d13f8eb3bb51fa3c45074d874b8c7"
+    },
+    "raw/screen-conventional-useful-4x-g6-c4-k6-o3-s1.json": {
+      "bytes": 2796,
+      "sha256": "749f1a4612b7f4ec2a2717bf14230165a74fc143413efab473a4baf291b284a9"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o0-s0.json": {
+      "bytes": 2472,
+      "sha256": "f28e86c4f21969b9bd2351b1ef6655e0a481db97e59238180cd7084399bc3ac6"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o0-s1.json": {
+      "bytes": 2114,
+      "sha256": "103e03cfef46932937639dd3719c070d12b57e53e6381aa941a0db20a2bdb00e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o1-s0.json": {
+      "bytes": 2817,
+      "sha256": "e6ba94b7b3dfdf9be6ae395b4971315ada919a4b62343ddd879e00557279c261"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o1-s1.json": {
+      "bytes": 2119,
+      "sha256": "b9bffc3d03fdc4ee5e9554e272df0c1495e5cbd455cd2f71ad5d0b63f5b84f81"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o2-s0.json": {
+      "bytes": 4944,
+      "sha256": "2cbd96f8b70b989e0735297a517e1d1918d36b0a72d86bb025f1c3472af8d462"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o2-s1.json": {
+      "bytes": 4560,
+      "sha256": "81d728d0dd7f391f17d219878e2480651d3ce51c8503c459f3ea2ab117f8d391"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o3-s0.json": {
+      "bytes": 2113,
+      "sha256": "417dbf385ce90971612f5788f842a86da7165ae3ee989fd0e759168349108936"
+    },
+    "raw/screen-conventional-useful-4x-g6-c5-k6-o3-s1.json": {
+      "bytes": 2468,
+      "sha256": "8bd0fe8ecddb57e924b3ee2b3cdbb6ce5bf4bf4851bbc2bb1f3d2df87a6dd620"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o0-s0.json": {
+      "bytes": 2447,
+      "sha256": "de064dbdf3aba128ca0c1db5bf510772b5b8b37daee6b3c3593ebaba17854f5a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o0-s1.json": {
+      "bytes": 2089,
+      "sha256": "408c0c4c1dd2d4faa94a655f55bd34774258da907f7764c538894cf91e32a948"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o1-s0.json": {
+      "bytes": 2094,
+      "sha256": "90d40873caed5d13afcbd59968e47c787a28c1138e26506a6026523f2400635e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o1-s1.json": {
+      "bytes": 2094,
+      "sha256": "a0afd435b90c618cacc6f2433c5bcfb19e0cecb000aab1a781ee932c80f82960"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o2-s0.json": {
+      "bytes": 6942,
+      "sha256": "392a2ca57a7c107be0bd9ebb69394ef57d5bd8e13d51c2446d43597d6b274983"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o2-s1.json": {
+      "bytes": 6262,
+      "sha256": "448317347645e73a7a5d1b6f0c61a554306c727f2999c46022e6374e398c951e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o3-s0.json": {
+      "bytes": 2088,
+      "sha256": "1c31308971edf1674162e2d8a46f4fb71f06484dea821ca5fe7bca2dd9eac2ea"
+    },
+    "raw/screen-conventional-useful-4x-g6-c6-k6-o3-s1.json": {
+      "bytes": 2786,
+      "sha256": "c076da8d73077d8a0b6746815d0025df3f68358586de44ab471b7f56533e6f8d"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o0-s0.json": {
+      "bytes": 2495,
+      "sha256": "f31306d51bdaa08e641776e60767289d70b77e22ba2b50e99492891aa4263bd5"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o0-s1.json": {
+      "bytes": 2138,
+      "sha256": "9adccd65431da106156d76e48da5fa5e8ed9f01884c884a33ee9c519f4c38f7e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o1-s0.json": {
+      "bytes": 2833,
+      "sha256": "27c657a5b0e37df21f796897a4601a43fae16859d222108d81d4fcf7b8dd9102"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o1-s1.json": {
+      "bytes": 2138,
+      "sha256": "70c0869596d969bd6c498da0771f7f2d75f7673c64d9cb21176320a28ea906e3"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o2-s0.json": {
+      "bytes": 5999,
+      "sha256": "8482b0f0d42cfe02d39b3481a01dbbcb41be1019a6dd3913e4d3b15c3bc863fe"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o2-s1.json": {
+      "bytes": 5651,
+      "sha256": "f53919637f7899bb1c5d6fdafdd0bd0f7adc1cc6b36f12f710b872e54e50edd3"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o3-s0.json": {
+      "bytes": 2136,
+      "sha256": "3170aa557f03d76ac3ca8722eb5035af0be5dc5684fa865b3b20bad920877ae3"
+    },
+    "raw/screen-conventional-useful-4x-g6-c7-k6-o3-s1.json": {
+      "bytes": 3169,
+      "sha256": "e0b4e1f66fcb7414cf3bd5b0bd5fed0f7f84d79b6d32579dbe2177a45e4af96e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o0-s0.json": {
+      "bytes": 2468,
+      "sha256": "639053b435613776182325cca5c6c25b8932522262cb34f7de3ba90a5a8f774b"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o0-s1.json": {
+      "bytes": 2110,
+      "sha256": "5094402bca8f629ac71e3799030c7820d562945fc48c9e9fab3133a449657e66"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o1-s0.json": {
+      "bytes": 2113,
+      "sha256": "2a6367dad8c66c909b6ef3ddc3aef765ed405e9ee54911cd190f485291cc54aa"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o1-s1.json": {
+      "bytes": 2111,
+      "sha256": "1ad9ef8a43060aa967c3adbb0d43b9a21c64b70d6df9489161b61d71a1a63a75"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o2-s0.json": {
+      "bytes": 5973,
+      "sha256": "8e57b74678c4a643dca62bd2c4e57c5a4184475f86849fa24c9348de890bd1a8"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o2-s1.json": {
+      "bytes": 3860,
+      "sha256": "c21add1567992b7d4198dcfb144b12b1a61221fd6bbf479d28ebffaa94294ffd"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o3-s0.json": {
+      "bytes": 2102,
+      "sha256": "c6b799096a0e26778f1a336ffd69e7fa3e452c3865b2cff47481c7eccbd9f4bd"
+    },
+    "raw/screen-conventional-useful-4x-g6-c8-k6-o3-s1.json": {
+      "bytes": 2784,
+      "sha256": "9c70c3ff471dc29969d5aa37d2cbda269e2549226d6ce2089eaec26ba41e2057"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o0-s0.json": {
+      "bytes": 2464,
+      "sha256": "ddbcefa37571877c9ed3230d2add286ba109e4fe8ae5b39224f4cf7cdcdb5d5a"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o0-s1.json": {
+      "bytes": 2107,
+      "sha256": "e5beb10043156bf7744bf749d59560183b62ac1a55439f85385e14827ce86d06"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o1-s0.json": {
+      "bytes": 2468,
+      "sha256": "6766a9aae41e106aded7b031df88d13e6f876564bdcfcbc103076a4810a679a4"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o1-s1.json": {
+      "bytes": 2108,
+      "sha256": "edc5e64070a2996865b4432b76b9ee5478cfdb879553cc41c8228e16e19b2e15"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o2-s0.json": {
+      "bytes": 6315,
+      "sha256": "4a3151c9cfa77dc331c849cd20e980aed1d4848adc6b7b47e69321da7a93571f"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o2-s1.json": {
+      "bytes": 5220,
+      "sha256": "c22a52ed8a15190b074bf18bc33b4f83083e493088c69009d78e977760a2106e"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o3-s0.json": {
+      "bytes": 2104,
+      "sha256": "b356779075450b878393422bbef2f70b693a46e1c08dd4b93df679be55f4eead"
+    },
+    "raw/screen-conventional-useful-4x-g6-c9-k6-o3-s1.json": {
+      "bytes": 3482,
+      "sha256": "fd1869747b1421e34a4f878a90baa483d3dd1acd3167265841605998ef03e58b"
+    }
+  }
+}

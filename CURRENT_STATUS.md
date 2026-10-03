@@ -1,4 +1,4 @@
-> Compact pilot update: the reviewed isolated replacement source is included with 319 passing integrated tests. Pilot 001 remains failed/incomplete and fully archived; the compact checkpoint is pilot-only and contains no replacement outcome. See benchmark/STATUS.md for immutable evidence and exact lock identities.
+> Compact pilot update: the reviewed isolated replacement source is included with 319 passing integrated tests. Pilot 001 remains failed/incomplete and fully archived; pilot002 completed all 192 tasks and passed independent integrity audit. Full-study feasibility is blocked under the original raw/CPU caps. See benchmark/STATUS.md for immutable evidence and exact lock identities.
 
 > Pilot harness update: the reviewed isolated experimental runner is included, with 312 passing integrated tests and a verified [pilot-only source/preregistration checkpoint](https://github.com/Wordweaver-EH/tether/tree/1ef4165377f7c7300db30714363f0789c9a0d58b/checkpoints/robustness-pilot-preflight-2026-10-03). No pilot or final-study outcome is asserted here; see benchmark/STATUS.md for exact scope.
 

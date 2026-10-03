@@ -1,6 +1,6 @@
 # Robustness benchmark checkpoint: reviewed interface and training-only plan
 
-The sole default-condition training attempt completed all 4,224 tasks. Its actual selected parameters and twelve memory snapshots are now frozen with an explicit protocol qualification. Data integrity passed independent audit; this is not a clean protocol-compliance pass, and no pilot or held-out result is claimed.
+The sole default-condition training attempt completed all 4,224 tasks. Its actual selected parameters and twelve memory snapshots are now frozen with an explicit protocol qualification. Data integrity passed independent audit; this is not a clean protocol-compliance pass, and its qualifications remain attached to the subsequent development pilots.
 
 ## Reviewed and tested
 
@@ -58,4 +58,10 @@ Pilot 001 stopped incomplete after the runner reported 181/192 completed tasks, 
 
 The independently reviewed compact replacement is now included at exact locked bytes: [checkpoint ecadb1a](https://github.com/Wordweaver-EH/tether/tree/ecadb1ae714e3a8cdecb9e0fc745fdbfc121019a/checkpoints/robustness-compact-pilot-preflight-2026-10-03), lock `8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584`. It binds 107 inputs and 192 pilot tasks, with 46 synthetic preflight tests and offline equivalence/replay checks across all 181 completed original records, without controller calls. Full integrated code checks pass **319/319**, zero skips.
 
-Changes are confined to the experimental observer, evidence representation and exit-race handling. All 56 locked repository inputs match; frozen production source, interface, trained states, task/configuration and seeds are unchanged. The exact experimental README is a historical preflight document; current execution status is reported separately. This code checkpoint contains no replacement result. A fresh pilot-only release is separate, and full evaluation/opponent search remain gated.
+Changes are confined to the experimental observer, evidence representation and exit-race handling. All 56 locked repository inputs match; frozen production source, interface, trained states, task/configuration and seeds are unchanged. The exact experimental README is a historical preflight document; current execution status is reported separately. The subsequent separately released replacement result is recorded below; full evaluation/opponent search remain gated.
+
+## Compact pilot002 completed; full-study feasibility blocked
+
+[Verified result checkpoint 7d46ac4](https://github.com/Wordweaver-EH/tether/tree/7d46ac41ba0ba61306040bd08d30519c46c58d9c/checkpoints/robustness-pilot002-results-2026-10-03) preserves all 507 original attempt files and six metadata files byte-for-byte, plus the independent audit. All 192 tasks completed in 60.523 seconds, exit zero. Independent saved-data integrity passed: 107 input bindings, exact task coverage, raw hashes/chains, applicable faithfulness checks, native outcomes/censors and memory links. All 181 overlapping completed tasks have identical final world and memory hashes to pilot001. No comparative policy-performance conclusion follows.
+
+The full-study feasibility gate is **BLOCKED under the original caps**. Linear development-workload estimates are 22.176 GiB raw and 26.500 accounted CPU-hours, above 16 GiB and 24 CPU-hour ceilings; estimated wall time is 3.699 hours. These are planning estimates, not upper bounds. No full evaluation or opponent search is approved. A separately reviewed and authorized resource/retention amendment or scope/budget decision is required; original evidence and scientific coverage must not be silently discarded or reduced.

@@ -1,0 +1,333 @@
+{
+  "status": "COMPLETED",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "remoteVerifiedCommit": "cadcacb0f6de8ef08849b370cc792d47f75f6144",
+  "elapsedSeconds": 27.008748684995226,
+  "hardwareScope": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "cpuCount": 9
+  },
+  "runs": [
+    {
+      "trial": 0,
+      "controller": "mind",
+      "status": "completed",
+      "elapsedSeconds": 0.5160509859997546,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-mind.jsonl",
+      "sha256": "a867e0053f244e15b0eb889c52c98d65cda910fa567ffc08e9a5448a4411d622"
+    },
+    {
+      "trial": 0,
+      "controller": "param",
+      "status": "completed",
+      "elapsedSeconds": 0.16450227700261166,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-param.jsonl",
+      "sha256": "5b07b01e83350a1377f953832fca8d2c8a8010a2dda97f52bebb429519999612"
+    },
+    {
+      "trial": 0,
+      "controller": "robust-0",
+      "status": "completed",
+      "elapsedSeconds": 0.31497561399737606,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-robust-0.jsonl",
+      "sha256": "2e2c13538e29c85f7266ac7b67fb3df6ae6a91133628c9344576975acb90f86e"
+    },
+    {
+      "trial": 0,
+      "controller": "robust-1",
+      "status": "completed",
+      "elapsedSeconds": 0.3156083470021258,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-robust-1.jsonl",
+      "sha256": "65632ee1dbd260c7d5a94f5727229aba66a977d1fc92c86f1bb8080bf1c0763f"
+    },
+    {
+      "trial": 0,
+      "controller": "robust-2",
+      "status": "completed",
+      "elapsedSeconds": 0.3650158829987049,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-robust-2.jsonl",
+      "sha256": "8dc192b3b4b3effc8e311a8f18a2a797e4b1b85f06082bc2443a33421d0285a5"
+    },
+    {
+      "trial": 0,
+      "controller": "robust-3",
+      "status": "completed",
+      "elapsedSeconds": 0.7668581329999142,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-robust-3.jsonl",
+      "sha256": "d5be5c4195d4fac0a4e288d556076edc1f6bc8e3032250db82107f4c08aec88a"
+    },
+    {
+      "trial": 0,
+      "controller": "robust-4",
+      "status": "completed",
+      "elapsedSeconds": 1.2174271420008154,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-robust-4.jsonl",
+      "sha256": "88819fba398985beb177a0bae9c68aff8bde24225914d5ed13a4c0309d15f25b"
+    },
+    {
+      "trial": 0,
+      "controller": "robust-5",
+      "status": "completed",
+      "elapsedSeconds": 1.8696403760040994,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-0-robust-5.jsonl",
+      "sha256": "980ebc8565d8064257b5ecce0e81fcb485a288865936b9bc0424cdbf660e1b08"
+    },
+    {
+      "trial": 1,
+      "controller": "robust-0",
+      "status": "completed",
+      "elapsedSeconds": 0.26471203999972204,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-robust-0.jsonl",
+      "sha256": "74a59b77b1152af9996bc2a6100c071b20f678974a6e7343ec4007e5619cc656"
+    },
+    {
+      "trial": 1,
+      "controller": "robust-1",
+      "status": "completed",
+      "elapsedSeconds": 0.31505807600478875,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-robust-1.jsonl",
+      "sha256": "89324f0eaf52485e18d2186d44fb70708312c7ca7fbead6441dd0bb10eaa0511"
+    },
+    {
+      "trial": 1,
+      "controller": "robust-2",
+      "status": "completed",
+      "elapsedSeconds": 0.3652772220011684,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-robust-2.jsonl",
+      "sha256": "29461e22bab150432b3cfa2b5aafde50d6f9c97a61559a53f8e3f6172ea057c2"
+    },
+    {
+      "trial": 1,
+      "controller": "robust-3",
+      "status": "completed",
+      "elapsedSeconds": 0.7664811950016883,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-robust-3.jsonl",
+      "sha256": "bb83a8f4ba11d82baee7e394f492643981dd211befc1aca39137ae63bd6c47ac"
+    },
+    {
+      "trial": 1,
+      "controller": "robust-4",
+      "status": "completed",
+      "elapsedSeconds": 1.2173965339970891,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-robust-4.jsonl",
+      "sha256": "a62623e07dcbe0b05a225f12c13d508574d4152e948f5a578f3ceafb8d309d3f"
+    },
+    {
+      "trial": 1,
+      "controller": "robust-5",
+      "status": "completed",
+      "elapsedSeconds": 1.8691786160052288,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-robust-5.jsonl",
+      "sha256": "7f4d81a917ad696ab8f4cd0eab1a5355bdc738ff1380add4bcc6156cdfd814ec"
+    },
+    {
+      "trial": 1,
+      "controller": "mind",
+      "status": "completed",
+      "elapsedSeconds": 0.5156455539981835,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-mind.jsonl",
+      "sha256": "272f29e7fb47526c3f18ab2b856060b5e5c0b005e7a21fa85f31dd0ecd29c2e2"
+    },
+    {
+      "trial": 1,
+      "controller": "param",
+      "status": "completed",
+      "elapsedSeconds": 0.1645982819973142,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-1-param.jsonl",
+      "sha256": "6cd62c88e0a00bbf889ee948a7f2e9f21be6a4463251a19e3df917cfa983a626"
+    },
+    {
+      "trial": 2,
+      "controller": "robust-2",
+      "status": "completed",
+      "elapsedSeconds": 0.416979583002103,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-robust-2.jsonl",
+      "sha256": "b4c5d1eda7a73df19e6564b6e9a8864d4e18b5d307947473ead543682713b537"
+    },
+    {
+      "trial": 2,
+      "controller": "robust-3",
+      "status": "completed",
+      "elapsedSeconds": 0.7665278729982674,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-robust-3.jsonl",
+      "sha256": "b9fc44f5833dc055e4c217f3e75c1384a044594b92caf75a17a3c718186bc0ed"
+    },
+    {
+      "trial": 2,
+      "controller": "robust-4",
+      "status": "completed",
+      "elapsedSeconds": 1.2177139929990517,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-robust-4.jsonl",
+      "sha256": "7d06c3b7ff640e6722e281d164a6440d3beaa85b4764e8da671ae21dff0338d3"
+    },
+    {
+      "trial": 2,
+      "controller": "robust-5",
+      "status": "completed",
+      "elapsedSeconds": 1.8206501140011824,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-robust-5.jsonl",
+      "sha256": "8a9ed7977009ac9c66c430cc7ef47d8999b9c176105aeb244e84dce06e03356b"
+    },
+    {
+      "trial": 2,
+      "controller": "mind",
+      "status": "completed",
+      "elapsedSeconds": 0.4653720880014589,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-mind.jsonl",
+      "sha256": "4af176bc74feabe10f9fca968dc19f7e7f2192ec1ae8535ae48e4b525a76454e"
+    },
+    {
+      "trial": 2,
+      "controller": "param",
+      "status": "completed",
+      "elapsedSeconds": 0.1646988060019794,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-param.jsonl",
+      "sha256": "8831bc0b2a361ad1842f107b400ed0c9d9b2e072d462614fbf34d1b1de97dc42"
+    },
+    {
+      "trial": 2,
+      "controller": "robust-0",
+      "status": "completed",
+      "elapsedSeconds": 0.2652143010054715,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-robust-0.jsonl",
+      "sha256": "10fd9fa47449c1f64847793bde1f1778a84425a6195c9bb636002bd56f73faa0"
+    },
+    {
+      "trial": 2,
+      "controller": "robust-1",
+      "status": "completed",
+      "elapsedSeconds": 0.314966967998771,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-2-robust-1.jsonl",
+      "sha256": "c67514fd4dc35282ce2f5ad186e3ad9f8430581b530a0d05fd72f646e51137d0"
+    },
+    {
+      "trial": 3,
+      "controller": "robust-4",
+      "status": "completed",
+      "elapsedSeconds": 1.1672887399981846,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-robust-4.jsonl",
+      "sha256": "562e43f3c8f855ae4ed421bf6fd3916e7c70e481a28987239776d26183cbcdcf"
+    },
+    {
+      "trial": 3,
+      "controller": "robust-5",
+      "status": "completed",
+      "elapsedSeconds": 1.818992378000985,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-robust-5.jsonl",
+      "sha256": "d66767c26ab53e701e904944eaa9f088d8ffffcf5452a20f3e58bf2f70d5d0d4"
+    },
+    {
+      "trial": 3,
+      "controller": "mind",
+      "status": "completed",
+      "elapsedSeconds": 0.46529414300312055,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-mind.jsonl",
+      "sha256": "535cbfe0e3f9586b62ba7472a64f793c286f8c4f1bd5c85c851dd2b4140be8b4"
+    },
+    {
+      "trial": 3,
+      "controller": "param",
+      "status": "completed",
+      "elapsedSeconds": 0.1645200049970299,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-param.jsonl",
+      "sha256": "0b57ad037e91905af1e82bd04d03b9bacb46708d9db33fce4a76be02b04f062b"
+    },
+    {
+      "trial": 3,
+      "controller": "robust-0",
+      "status": "completed",
+      "elapsedSeconds": 0.314923562000331,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-robust-0.jsonl",
+      "sha256": "9e63f9276301857d3ec5c750f278c35c9779cd6855eb8d9b17c3628d676bc710"
+    },
+    {
+      "trial": 3,
+      "controller": "robust-1",
+      "status": "completed",
+      "elapsedSeconds": 0.31508836500142934,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-robust-1.jsonl",
+      "sha256": "cfc9485a65841cf2d645d2a748698d0c57b8ac5a9ed4b9a8c68f0a4ee394ee12"
+    },
+    {
+      "trial": 3,
+      "controller": "robust-2",
+      "status": "completed",
+      "elapsedSeconds": 0.3652326810042723,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-robust-2.jsonl",
+      "sha256": "693d7b0d488e6291fc77f6a659dbbae9097fddcf44bba4445544f1e0faad5c9f"
+    },
+    {
+      "trial": 3,
+      "controller": "robust-3",
+      "status": "completed",
+      "elapsedSeconds": 0.716513870000199,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-3-robust-3.jsonl",
+      "sha256": "fd266a985bacaa5d40ed068606945c3590272ead0fc82bcb078b7422e86f6f81"
+    },
+    {
+      "trial": 4,
+      "controller": "param",
+      "status": "completed",
+      "elapsedSeconds": 0.16455092700198293,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-param.jsonl",
+      "sha256": "d8071047121fff41528f2f92149e5bc712691d115cc8b10c0a4b6ba99d8afe26"
+    },
+    {
+      "trial": 4,
+      "controller": "robust-0",
+      "status": "completed",
+      "elapsedSeconds": 0.26471284499712056,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-robust-0.jsonl",
+      "sha256": "0a8a7d09179cdbaadf3f0cbffa612b00ddbe9336ad69434f0acd35264f773df9"
+    },
+    {
+      "trial": 4,
+      "controller": "robust-1",
+      "status": "completed",
+      "elapsedSeconds": 0.3149802059997455,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-robust-1.jsonl",
+      "sha256": "9e3f2ce7d4d27fd792afce45fc21e144a925683c43c2731e96ce90c4c238735a"
+    },
+    {
+      "trial": 4,
+      "controller": "robust-2",
+      "status": "completed",
+      "elapsedSeconds": 0.36514314099622425,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-robust-2.jsonl",
+      "sha256": "abc30fdb8daffd8c4800fa5d9c950f834a3561feec5a92870ef09b6150db09b6"
+    },
+    {
+      "trial": 4,
+      "controller": "robust-3",
+      "status": "completed",
+      "elapsedSeconds": 0.7163317960003042,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-robust-3.jsonl",
+      "sha256": "717664d13b06c89d80e40535b69a6ad41212bf07ded82f4251dc5e5bd2ef13f3"
+    },
+    {
+      "trial": 4,
+      "controller": "robust-4",
+      "status": "completed",
+      "elapsedSeconds": 1.1675591210005223,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-robust-4.jsonl",
+      "sha256": "97a6faab69079ed151395633761b6be42d7ab28ff7a61f233fd8254337a456d8"
+    },
+    {
+      "trial": 4,
+      "controller": "robust-5",
+      "status": "completed",
+      "elapsedSeconds": 1.7212443790049292,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-robust-5.jsonl",
+      "sha256": "94466a3feca65193e68059f0fb464785d17b513c95fb70b34778ad4366d28dfb"
+    },
+    {
+      "trial": 4,
+      "controller": "mind",
+      "status": "completed",
+      "elapsedSeconds": 0.4655775680002989,
+      "raw": "/workspace/scratch/75679def3745/tether-baseline-calibration-v1/receipts/trial-4-mind.jsonl",
+      "sha256": "a05c6f87a3cd541ad3c49842663a5db022639669235893d02247e4f39b5c612f"
+    }
+  ]
+}

@@ -1,0 +1,767 @@
+{
+  "status": "PASS",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "remoteVerifiedCommit": "cadcacb0f6de8ef08849b370cc792d47f75f6144",
+  "selectionMetric": "meanWallMs",
+  "trials": 5,
+  "plannedWorkers": 8,
+  "levels": {
+    "conventional-useful-2x": 4,
+    "conventional-useful-4x": 5
+  },
+  "hardwareScope": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "cpuCount": 9
+  },
+  "measurementScope": "Common interface.act on 30Hz decision-bearing120Hz calls, including sensor filtering/queue, native act, common noise and final-command commit; excludes exogenous fixture construction, later diagnostics and stdout",
+  "targetStatus": {
+    "scope": "outcome-blind yoked workload only; later gameplay ratios required",
+    "targets": {
+      "conventional-useful-2x": {
+        "requestedRatio": 2,
+        "level": 4,
+        "achievedMeanWallRatio": 3.2065231822609377,
+        "targetAttained": true,
+        "fractionDecisionsAtOrAboveTargetMindMean": 0.8465
+      },
+      "conventional-useful-4x": {
+        "requestedRatio": 4,
+        "level": 5,
+        "achievedMeanWallRatio": 5.215559709524931,
+        "targetAttained": true,
+        "fractionDecisionsAtOrAboveTargetMindMean": 0.6905
+      }
+    },
+    "duplicateSelectedLevels": false
+  },
+  "estimatedCPUHours": 20.993589834459307,
+  "estimatedWallHours": 5.748397458614827,
+  "resourceEstimate": {
+    "controllerOnlySerialWallHours": 6.331196611486435,
+    "CPUHourPlanningAllowance": 20.993589834459307,
+    "wallHourPlanningAllowance": 5.748397458614827,
+    "formula": "C=[3681280*(param+selected2x+selected4x)+3454464*mind]/3600000, input means in ms; allowance=3*C+2; wall=allowance/min(8,4)+.5",
+    "interpretation": "3x multiplier and2-hour reserve are declared planning assumptions for sim/opponents/serialization etc; not measured or certified total CPU. Runtime ceilings remain monitored stop thresholds."
+  },
+  "controllerMetrics": {
+    "mind": {
+      "count": 2000,
+      "meanWallMs": 0.658810827,
+      "medianWallMs": 0.5887615,
+      "p95WallMs": 1.080207,
+      "meanCPUms": 0.909532
+    },
+    "param": {
+      "count": 2000,
+      "meanWallMs": 0.0246296905,
+      "medianWallMs": 0.015894,
+      "p95WallMs": 0.058868,
+      "meanCPUms": 0.038196
+    },
+    "robust-0": {
+      "count": 2000,
+      "meanWallMs": 0.265037363,
+      "medianWallMs": 0.19806800000000002,
+      "p95WallMs": 0.597941,
+      "meanCPUms": 0.5245435
+    },
+    "robust-1": {
+      "count": 2000,
+      "meanWallMs": 0.3246320535,
+      "medianWallMs": 0.2516085,
+      "p95WallMs": 0.708807,
+      "meanCPUms": 0.6138675
+    },
+    "robust-2": {
+      "count": 2000,
+      "meanWallMs": 0.454846879,
+      "medianWallMs": 0.360592,
+      "p95WallMs": 0.946604,
+      "meanCPUms": 0.74517
+    },
+    "robust-3": {
+      "count": 2000,
+      "meanWallMs": 1.1974604075,
+      "medianWallMs": 1.0383225,
+      "p95WallMs": 2.337938,
+      "meanCPUms": 1.4013615
+    },
+    "robust-4": {
+      "count": 2000,
+      "meanWallMs": 2.1124921895,
+      "medianWallMs": 1.826365,
+      "p95WallMs": 4.304556,
+      "meanCPUms": 2.2473085
+    },
+    "robust-5": {
+      "count": 2000,
+      "meanWallMs": 3.4360672055,
+      "medianWallMs": 2.9567465,
+      "p95WallMs": 7.139499,
+      "meanCPUms": 3.7117925
+    }
+  },
+  "perFixture": {
+    "mind": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 0.757909754,
+        "medianWallMs": 0.668752,
+        "p95WallMs": 1.191664,
+        "meanCPUms": 1.111982
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 0.688792892,
+        "medianWallMs": 0.613919,
+        "p95WallMs": 1.063842,
+        "meanCPUms": 0.803788
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 0.539276066,
+        "medianWallMs": 0.505341,
+        "p95WallMs": 0.940596,
+        "meanCPUms": 0.741526
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 0.649264596,
+        "medianWallMs": 0.572457,
+        "p95WallMs": 1.080347,
+        "meanCPUms": 0.980832
+      }
+    },
+    "param": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 0.027656534,
+        "medianWallMs": 0.0173915,
+        "p95WallMs": 0.055874,
+        "meanCPUms": 0.045298
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 0.026940248,
+        "medianWallMs": 0.01641,
+        "p95WallMs": 0.066841,
+        "meanCPUms": 0.03601
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 0.026645144,
+        "medianWallMs": 0.0171555,
+        "p95WallMs": 0.072049,
+        "meanCPUms": 0.043904
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 0.017276836,
+        "medianWallMs": 0.0096145,
+        "p95WallMs": 0.040451,
+        "meanCPUms": 0.027572
+      }
+    },
+    "robust-0": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 0.26162489,
+        "medianWallMs": 0.19954,
+        "p95WallMs": 0.59802,
+        "meanCPUms": 0.53138
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 0.220165808,
+        "medianWallMs": 0.1892095,
+        "p95WallMs": 0.414523,
+        "meanCPUms": 0.382574
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 0.22208419,
+        "medianWallMs": 0.17328549999999998,
+        "p95WallMs": 0.441014,
+        "meanCPUms": 0.41523
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 0.356274564,
+        "medianWallMs": 0.340918,
+        "p95WallMs": 0.714395,
+        "meanCPUms": 0.76899
+      }
+    },
+    "robust-1": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 0.29582807,
+        "medianWallMs": 0.2433265,
+        "p95WallMs": 0.576067,
+        "meanCPUms": 0.603452
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 0.273699046,
+        "medianWallMs": 0.23586000000000001,
+        "p95WallMs": 0.496397,
+        "meanCPUms": 0.409994
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 0.282413026,
+        "medianWallMs": 0.22893449999999999,
+        "p95WallMs": 0.514955,
+        "meanCPUms": 0.548412
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 0.446588072,
+        "medianWallMs": 0.472376,
+        "p95WallMs": 0.84403,
+        "meanCPUms": 0.893612
+      }
+    },
+    "robust-2": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 0.399851036,
+        "medianWallMs": 0.3295865,
+        "p95WallMs": 0.785703,
+        "meanCPUms": 0.697544
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 0.374444872,
+        "medianWallMs": 0.340478,
+        "p95WallMs": 0.634975,
+        "meanCPUms": 0.49122
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 0.405673314,
+        "medianWallMs": 0.344048,
+        "p95WallMs": 0.74418,
+        "meanCPUms": 0.685352
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 0.639418294,
+        "medianWallMs": 0.645296,
+        "p95WallMs": 1.370464,
+        "meanCPUms": 1.106564
+      }
+    },
+    "robust-3": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 1.000879734,
+        "medianWallMs": 0.9164545,
+        "p95WallMs": 1.491987,
+        "meanCPUms": 1.234284
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 1.035877166,
+        "medianWallMs": 1.062364,
+        "p95WallMs": 1.484324,
+        "meanCPUms": 1.101638
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 1.05635072,
+        "medianWallMs": 1.0246870000000001,
+        "p95WallMs": 1.464805,
+        "meanCPUms": 1.24558
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 1.69673401,
+        "medianWallMs": 2.1030059999999997,
+        "p95WallMs": 2.640996,
+        "meanCPUms": 2.023944
+      }
+    },
+    "robust-4": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 1.727860398,
+        "medianWallMs": 1.5427525000000002,
+        "p95WallMs": 2.549198,
+        "meanCPUms": 1.849196
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 1.813088926,
+        "medianWallMs": 1.888288,
+        "p95WallMs": 2.342176,
+        "meanCPUms": 1.867936
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 1.83571609,
+        "medianWallMs": 1.7544819999999999,
+        "p95WallMs": 2.376278,
+        "meanCPUms": 1.914662
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 3.073303344,
+        "medianWallMs": 3.962446,
+        "p95WallMs": 4.711313,
+        "meanCPUms": 3.35744
+      }
+    },
+    "robust-5": {
+      "central-held": {
+        "count": 500,
+        "meanWallMs": 2.751862254,
+        "medianWallMs": 2.41766,
+        "p95WallMs": 4.011589,
+        "meanCPUms": 2.914262
+      },
+      "obstacle-held": {
+        "count": 500,
+        "meanWallMs": 2.800527546,
+        "medianWallMs": 3.0100015,
+        "p95WallMs": 3.43692,
+        "meanCPUms": 2.859712
+      },
+      "turning-visibility": {
+        "count": 500,
+        "meanWallMs": 2.968083452,
+        "medianWallMs": 2.826781,
+        "p95WallMs": 3.706831,
+        "meanCPUms": 3.066096
+      },
+      "embedded": {
+        "count": 500,
+        "meanWallMs": 5.22379557,
+        "medianWallMs": 6.579871499999999,
+        "p95WallMs": 8.397042,
+        "meanCPUms": 6.0071
+      }
+    }
+  },
+  "perTrial": {
+    "mind": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 0.710307945,
+        "medianWallMs": 0.633128,
+        "p95WallMs": 1.151504,
+        "meanCPUms": 0.9855700000000001
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 0.7037913725,
+        "medianWallMs": 0.6287165,
+        "p95WallMs": 1.146076,
+        "meanCPUms": 0.9738025
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 0.651602705,
+        "medianWallMs": 0.582132,
+        "p95WallMs": 1.120237,
+        "meanCPUms": 0.90891
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 0.6208610225,
+        "medianWallMs": 0.572702,
+        "p95WallMs": 0.991512,
+        "meanCPUms": 0.8629625
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 0.60749109,
+        "medianWallMs": 0.5587664999999999,
+        "p95WallMs": 0.940035,
+        "meanCPUms": 0.816415
+      }
+    },
+    "param": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 0.02231937,
+        "medianWallMs": 0.015548,
+        "p95WallMs": 0.060722,
+        "meanCPUms": 0.03375
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 0.0228927275,
+        "medianWallMs": 0.015628,
+        "p95WallMs": 0.052049,
+        "meanCPUms": 0.0342525
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 0.0255714175,
+        "medianWallMs": 0.016094,
+        "p95WallMs": 0.057757,
+        "meanCPUms": 0.0378825
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 0.02876604,
+        "medianWallMs": 0.0169955,
+        "p95WallMs": 0.069775,
+        "meanCPUms": 0.0457975
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 0.0235988975,
+        "medianWallMs": 0.015519,
+        "p95WallMs": 0.058508,
+        "meanCPUms": 0.0392975
+      }
+    },
+    "robust-0": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 0.2902048575,
+        "medianWallMs": 0.2135915,
+        "p95WallMs": 0.620714,
+        "meanCPUms": 0.570335
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 0.26979659,
+        "medianWallMs": 0.192735,
+        "p95WallMs": 0.626213,
+        "meanCPUms": 0.541345
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 0.2382096625,
+        "medianWallMs": 0.190517,
+        "p95WallMs": 0.490989,
+        "meanCPUms": 0.468295
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 0.2711278,
+        "medianWallMs": 0.201754,
+        "p95WallMs": 0.627685,
+        "meanCPUms": 0.5231325
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 0.255847905,
+        "medianWallMs": 0.1938265,
+        "p95WallMs": 0.541204,
+        "meanCPUms": 0.51961
+      }
+    },
+    "robust-1": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 0.355393775,
+        "medianWallMs": 0.2584995,
+        "p95WallMs": 0.832724,
+        "meanCPUms": 0.6599700000000001
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 0.32888744,
+        "medianWallMs": 0.262085,
+        "p95WallMs": 0.724891,
+        "meanCPUms": 0.612915
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 0.30117616,
+        "medianWallMs": 0.24182399999999998,
+        "p95WallMs": 0.628256,
+        "meanCPUms": 0.557255
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 0.3206278875,
+        "medianWallMs": 0.2627655,
+        "p95WallMs": 0.65741,
+        "meanCPUms": 0.6277725
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 0.317075005,
+        "medianWallMs": 0.2388,
+        "p95WallMs": 0.6914,
+        "meanCPUms": 0.611425
+      }
+    },
+    "robust-2": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 0.4723023025,
+        "medianWallMs": 0.404204,
+        "p95WallMs": 0.932494,
+        "meanCPUms": 0.7806175
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 0.43366857,
+        "medianWallMs": 0.360092,
+        "p95WallMs": 0.867817,
+        "meanCPUms": 0.731795
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 0.5002773475,
+        "medianWallMs": 0.384128,
+        "p95WallMs": 1.254359,
+        "meanCPUms": 0.806625
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 0.419632,
+        "medianWallMs": 0.338179,
+        "p95WallMs": 0.879614,
+        "meanCPUms": 0.6831875000000001
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 0.448354175,
+        "medianWallMs": 0.353627,
+        "p95WallMs": 0.944061,
+        "meanCPUms": 0.723625
+      }
+    },
+    "robust-3": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 1.2316654325,
+        "medianWallMs": 1.0557145000000001,
+        "p95WallMs": 2.514576,
+        "meanCPUms": 1.425285
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 1.2209893675,
+        "medianWallMs": 1.062179,
+        "p95WallMs": 2.387474,
+        "meanCPUms": 1.42664
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 1.25213621,
+        "medianWallMs": 1.098729,
+        "p95WallMs": 2.33087,
+        "meanCPUms": 1.44389
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 1.14595612,
+        "medianWallMs": 0.9756235,
+        "p95WallMs": 2.281033,
+        "meanCPUms": 1.3929525
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 1.1365549075,
+        "medianWallMs": 0.991773,
+        "p95WallMs": 2.257178,
+        "meanCPUms": 1.31804
+      }
+    },
+    "robust-4": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 2.1767840875,
+        "medianWallMs": 1.887016,
+        "p95WallMs": 4.437661,
+        "meanCPUms": 2.3301575
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 2.095144205,
+        "medianWallMs": 1.8568305,
+        "p95WallMs": 4.119823,
+        "meanCPUms": 2.22248
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 2.1789096175,
+        "medianWallMs": 1.8489485,
+        "p95WallMs": 4.413164,
+        "meanCPUms": 2.3112725
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 2.0692512475,
+        "medianWallMs": 1.7969655,
+        "p95WallMs": 4.203309,
+        "meanCPUms": 2.210665
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 2.04237179,
+        "medianWallMs": 1.7493835,
+        "p95WallMs": 4.291772,
+        "meanCPUms": 2.1619675
+      }
+    },
+    "robust-5": {
+      "0": {
+        "count": 400,
+        "meanWallMs": 3.4885179775,
+        "medianWallMs": 2.968154,
+        "p95WallMs": 7.49192,
+        "meanCPUms": 3.72513
+      },
+      "1": {
+        "count": 400,
+        "meanWallMs": 3.56963959,
+        "medianWallMs": 2.980303,
+        "p95WallMs": 7.745272,
+        "meanCPUms": 3.8701425
+      },
+      "2": {
+        "count": 400,
+        "meanWallMs": 3.45983653,
+        "medianWallMs": 2.9507875,
+        "p95WallMs": 6.882682,
+        "meanCPUms": 3.8026325
+      },
+      "3": {
+        "count": 400,
+        "meanWallMs": 3.3918658525,
+        "medianWallMs": 2.992175,
+        "p95WallMs": 6.710142,
+        "meanCPUms": 3.6368875
+      },
+      "4": {
+        "count": 400,
+        "meanWallMs": 3.2704760775,
+        "medianWallMs": 2.8759395000000003,
+        "p95WallMs": 6.785496,
+        "meanCPUms": 3.52417
+      }
+    }
+  },
+  "setupMetrics": {
+    "mind": {
+      "count": 20,
+      "meanWallMs": 0.4746861,
+      "medianWallMs": 0.155559,
+      "p95WallMs": 1.468121,
+      "meanCPUms": 0.49979999999999997
+    },
+    "param": {
+      "count": 20,
+      "meanWallMs": 0.15684495,
+      "medianWallMs": 0.061878,
+      "p95WallMs": 0.494154,
+      "meanCPUms": 0.1752
+    },
+    "robust-0": {
+      "count": 20,
+      "meanWallMs": 0.25101685,
+      "medianWallMs": 0.1004605,
+      "p95WallMs": 0.734026,
+      "meanCPUms": 0.34565
+    },
+    "robust-1": {
+      "count": 20,
+      "meanWallMs": 0.24971454999999998,
+      "medianWallMs": 0.0985035,
+      "p95WallMs": 0.792333,
+      "meanCPUms": 0.27215
+    },
+    "robust-2": {
+      "count": 20,
+      "meanWallMs": 0.2356558,
+      "medianWallMs": 0.0973665,
+      "p95WallMs": 0.702718,
+      "meanCPUms": 0.25830000000000003
+    },
+    "robust-3": {
+      "count": 20,
+      "meanWallMs": 0.26000845,
+      "medianWallMs": 0.099871,
+      "p95WallMs": 0.801197,
+      "meanCPUms": 0.28075
+    },
+    "robust-4": {
+      "count": 20,
+      "meanWallMs": 0.25414464999999997,
+      "medianWallMs": 0.1040465,
+      "p95WallMs": 0.649438,
+      "meanCPUms": 0.27415
+    },
+    "robust-5": {
+      "count": 20,
+      "meanWallMs": 0.24482900000000002,
+      "medianWallMs": 0.1030955,
+      "p95WallMs": 0.709628,
+      "meanCPUms": 0.26785000000000003
+    }
+  },
+  "mindRoutes": {
+    "0": 0,
+    "1": 1345,
+    "2": 655
+  },
+  "mindBranchWork": {
+    "branches": 2360,
+    "completedBranches": 1410,
+    "branchTrials": 10480,
+    "branchSteps": 34075,
+    "realDeliberation": 655
+  },
+  "plannerTotals": {
+    "robust-0": {
+      "candidates": 64000,
+      "hypotheses": 2000,
+      "completedTrajectories": 64000,
+      "integrationSteps": 384000
+    },
+    "robust-1": {
+      "candidates": 96000,
+      "hypotheses": 2000,
+      "completedTrajectories": 96000,
+      "integrationSteps": 576000
+    },
+    "robust-2": {
+      "candidates": 144000,
+      "hypotheses": 2000,
+      "completedTrajectories": 144000,
+      "integrationSteps": 864000
+    },
+    "robust-3": {
+      "candidates": 144000,
+      "hypotheses": 6000,
+      "completedTrajectories": 432000,
+      "integrationSteps": 2592000
+    },
+    "robust-4": {
+      "candidates": 144000,
+      "hypotheses": 6000,
+      "completedTrajectories": 432000,
+      "integrationSteps": 5184000
+    },
+    "robust-5": {
+      "candidates": 240000,
+      "hypotheses": 6000,
+      "completedTrajectories": 720000,
+      "integrationSteps": 8640000
+    }
+  },
+  "plannerFallbackDecisions": {
+    "robust-0": 0,
+    "robust-1": 0,
+    "robust-2": 0,
+    "robust-3": 0,
+    "robust-4": 0,
+    "robust-5": 0
+  },
+  "limitations": [
+    "Yoked exogenous legal percept snapshots, advancing time and visibility, not natural play; emitted commands do not alter later percepts. Log emitted command, perceived own spear state, mind situation/tier/branches and planner counts. Do not infer gameplay representativeness.",
+    "empty/null reset for every independent fixture and trial; learning active within each 4.125s exogenous clip",
+    "Deterministic partial Latin rotation of listed controllers; offsets per trial [0,2,4,6,1], same fixture order within controller. Five trials cannot fully balance eight positions; residual drift limitation retained.",
+    "No gameplay strength or exact total compute claim."
+  ]
+}

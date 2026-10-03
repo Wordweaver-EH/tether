@@ -1,0 +1,20 @@
+{
+  "status": "Completed sole calibration; generated timing receipt; independent saved-row audit pending",
+  "files": {
+    "TIMING-RECEIPT.json": {
+      "bytes": 20232,
+      "sha256": "64a703786c094b21bcc9842dd23edd5a82694dbe9bc46c2ad95971d5333f17fa"
+    },
+    "calibration-complete-results.tar.gz": {
+      "bytes": 2241585,
+      "sha256": "67e5dca229bb7734a718cd5a65e8a25874f683be56678cf8e3db08d6c2a1a50f"
+    },
+    "EXECUTION.json": {
+      "bytes": 13503,
+      "sha256": "dfad807b007bce6967e19483e2353b7618192b07551e6636a13f0c3e8c30a439"
+    }
+  },
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "sourceCommit": "b9134f6a6859032ae37fce8f266f848c483db467",
+  "preOutcomeCommit": "cadcacb0f6de8ef08849b370cc792d47f75f6144"
+}

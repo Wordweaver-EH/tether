@@ -1,0 +1,16 @@
+{
+  "status": "PILOT_INTEGRITY_PASS_FULL_FEASIBILITY_BLOCKED",
+  "pilotIntegrityApproved": true,
+  "fullStudyApproved": false,
+  "searchApproved": false,
+  "lockSha256": "8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584",
+  "completedTasks": 192,
+  "sourceInputsVerified": 107,
+  "projection": {
+    "factor": 220,
+    "rawGiB": 22.176179103553295,
+    "accountedCpuHours": 26.499729666666667,
+    "scope": "linear development-workload planning estimate; not an upper bound"
+  },
+  "reportSha256": "76411994fa22c0a00d049911c30984dc1610fff0b99956a58992cdbda661e90b"
+}

@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "phase": "pilot",
+  "lockSha256": "8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584",
+  "output": "/workspace/scratch/75679def3745/tether-robustness-shifts/pilot-attempt-002",
+  "workers": 8,
+  "independentReview": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-shifts/COMPACT-PILOT-INDEPENDENT-REVIEW.json",
+    "sha256": "d802f3fa97479cc6c58366ce65d7402e227832414770216e57f9d011edb5b056"
+  },
+  "gitCheckpoint": {
+    "path": "/workspace/scratch/75679def3745/tether-github-update/compact-pilot-checkpoint-publication-receipt.json",
+    "sha256": "926e058f53cb051adf6f3ee47533ed5d75e993c8006441c02aeb90e4ae684ce4"
+  },
+  "authorization": "Root explicit compact replacement pilot002 approval2026-10-03T05:13:21Z, contingent Git now verified. Same192 developmental30-second tasks, no search/evaluation or policy tuning; preserve attempt001."
+}

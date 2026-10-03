@@ -1,0 +1,134 @@
+{
+  "tasks": 192,
+  "rows": 215165,
+  "decisions": 172032,
+  "calibration": 794,
+  "nativeIssues": 646,
+  "nativeOutcomes": 620,
+  "nativeCensored": 26,
+  "shadow": 148,
+  "events": 34812,
+  "checkpoints": 5760,
+  "checks": {
+    "actual-motor-transform": {
+      "pass": 172032
+    },
+    "actual-command-commit": {
+      "pass": 172032
+    },
+    "commit-timestamp": {
+      "pass": 172032
+    },
+    "exact-sensor-delay-ticks": {
+      "pass": 172032
+    },
+    "receipt-clock-roundoff-only": {
+      "pass": 172032
+    },
+    "actual-report-present": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "workspace-focus": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "delivered-content": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "evidence-age-text": {
+      "pass": 95706,
+      "notApplicable": 76326
+    },
+    "native-novelty": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "native-prediction": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "native-completion": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "pre-motor-report-command": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "pre-motor-diagnostic-command": {
+      "pass": 107520,
+      "notApplicable": 64512
+    }
+  },
+  "bytes": 108234050,
+  "uncompressedBytes": 967946143,
+  "maxRss": 141611008,
+  "maxTaskWallMs": 7116.799718,
+  "decisionMs": 311100.4014060002,
+  "observerMs": 61084.17826400008,
+  "terminalObserverMs": 269.4301140000029,
+  "childTerminalCpu": 431.67943800000006,
+  "freeze": 24,
+  "memoryLinks": 60,
+  "overlap": 181,
+  "maxTimestampDifference": 3.552713678800501e-15,
+  "arms": {
+    "mind-learning-frozen": {
+      "tasks": 24,
+      "bytes": 16887901,
+      "cpuSeconds": 33.195657999999995,
+      "decisionMs": 13656.875954000006
+    },
+    "mind-no-novelty": {
+      "tasks": 24,
+      "bytes": 17033277,
+      "cpuSeconds": 41.937723000000005,
+      "decisionMs": 22763.577793000004
+    },
+    "mind-full": {
+      "tasks": 24,
+      "bytes": 16999597,
+      "cpuSeconds": 41.90333100000001,
+      "decisionMs": 22139.829939
+    },
+    "mind-fixed-metacog": {
+      "tasks": 24,
+      "bytes": 16974155,
+      "cpuSeconds": 41.623901999999994,
+      "decisionMs": 22485.859395
+    },
+    "conventional": {
+      "tasks": 24,
+      "bytes": 8472021,
+      "cpuSeconds": 11.514776,
+      "decisionMs": 827.5154349999993
+    },
+    "mind-broadcast-cut": {
+      "tasks": 24,
+      "bytes": 16673183,
+      "cpuSeconds": 33.506812000000004,
+      "decisionMs": 14014.631401999999
+    },
+    "conventional-useful-2x": {
+      "tasks": 24,
+      "bytes": 7451436,
+      "cpuSeconds": 90.20932700000002,
+      "decisionMs": 82023.15886099999
+    },
+    "conventional-useful-4x": {
+      "tasks": 24,
+      "bytes": 7742480,
+      "cpuSeconds": 137.78790899999998,
+      "decisionMs": 133188.95262700002
+    }
+  },
+  "parentCpuSeconds": 1.952502,
+  "projection": {
+    "scale": 220,
+    "rawGiB": 22.176179103553295,
+    "childCpuHours": 26.380410100000006,
+    "totalAccountedCpuHours": 26.499729666666667
+  }
+}

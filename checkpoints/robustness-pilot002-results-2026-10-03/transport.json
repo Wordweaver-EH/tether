@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "compact-pilot-attempt-002.tar.gz",
+      "bytes": 110340884,
+      "sha256": "a43c6ccf054f30b755677f9565a7fbfad91bd757a21a56ff3d64f502016fd9e2",
+      "parts": [
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part01",
+          "bytes": 8000000,
+          "sha256": "dd93f0eefbb3a55ae5dda84ef290239d5ffab54d697cad54ccbceb0d0568eaf5"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part02",
+          "bytes": 8000000,
+          "sha256": "9a01b6ccad745a19134a883b353b2b1cf8e1bbb1d38150c7bd58544e48ab5586"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part03",
+          "bytes": 8000000,
+          "sha256": "d0fef10febad057db413e1f9356781d33ad542563487b8d5f09abfba466b1c50"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part04",
+          "bytes": 8000000,
+          "sha256": "98889799a6c0a2d65dc9032f9a6e502f41a357221289de42b99cde6bcbae47cd"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part05",
+          "bytes": 8000000,
+          "sha256": "ae1308dc70ced0852d68ac63e771f26d43c7f54499277323db77aeeb38eb14d8"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part06",
+          "bytes": 8000000,
+          "sha256": "d7da24ae31258fa7173fbccc99cc2643513840916ce1bfca7e015687d6762211"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part07",
+          "bytes": 8000000,
+          "sha256": "8e4d02814fcdea992ce696a5c1d3b6a151c8c275dd4b64cb43a7418675e4c530"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part08",
+          "bytes": 8000000,
+          "sha256": "9c9b9a0d993ea5bd694d5daff64275bf3f9f866434934261bdb441c7a6f92f88"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part09",
+          "bytes": 8000000,
+          "sha256": "9f5b2e357b5bb4a68daefbd90b7e33941f94f818375b36fc893776fb52db3379"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part10",
+          "bytes": 8000000,
+          "sha256": "a643cbf327b273aff1946c39fc068e4217e3d036db864582b40d2e53c3f77b0a"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part11",
+          "bytes": 8000000,
+          "sha256": "d090759efaf1427b718561738a4990b4b6addb4ffe1ddeb9588b843d5d373714"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part12",
+          "bytes": 8000000,
+          "sha256": "2d5b0180cb4222df58474077a8d442f412f656e5fe456c38495c9a07f4cbf296"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part13",
+          "bytes": 8000000,
+          "sha256": "c586d79c4860dbf7b30e5ab1dffe0c4226c508b8a563bd36f1baa48961a4e121"
+        },
+        {
+          "filename": "compact-pilot-attempt-002.tar.gz.part14",
+          "bytes": 6340884,
+          "sha256": "7f8516147e1a7f6a51cfc15cd2eb8f2be86930aa3fec0891104a3a6562761636"
+        }
+      ]
+    }
+  ]
+}

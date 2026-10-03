@@ -20,7 +20,9 @@ export async function verifyTrainingLock(path,here,planId){
   const record=JSON.parse(bytes);if(record.status!==status||record.sourceFingerprint!==fingerprint)throw new Error(`${which} invalid status/source`);return record;}
  await receipt('reviewReceipt','PASS');const timing=await receipt('timingReceipt','PASS'),publication=await receipt('publicationReceipt','VERIFIED');
  if(publication.commit!==lock.remoteVerifiedCommit)throw new Error('remote commit mismatch');
- for(const arm of ['conventional-useful-2x','conventional-useful-4x'])if(!Number.isInteger(lock.levels?.[arm])||lock.levels[arm]<0||lock.levels[arm]>4||timing.levels?.[arm]!==lock.levels[arm])throw new Error('calibrated levels missing/mismatched');
+ for(const arm of ['conventional-useful-2x','conventional-useful-4x'])if(!Number.isInteger(lock.levels?.[arm])||lock.levels[arm]<0||lock.levels[arm]>5||timing.levels?.[arm]!==lock.levels[arm])throw new Error('calibrated levels missing/mismatched');
+ if(!Number.isInteger(lock.workers)||lock.workers<1||lock.workers>8||timing.plannedWorkers!==lock.workers)throw new Error('estimated worker count mismatch');
+ if(timing.selectionMetric!=='meanWallMs'||timing.trials!==5)throw new Error('timing selection metric/trial protocol mismatch');
  if(!timing.hardwareScope||!timing.measurementScope||!timing.targetStatus||!Number.isFinite(timing.estimatedCPUHours)||!Number.isFinite(timing.estimatedWallHours))throw new Error('timing evidence incomplete');
  if(timing.estimatedCPUHours>24||timing.estimatedWallHours>8)throw new Error('resource estimate exceeds hard protocol ceiling; amendment/review required');
  return lock;

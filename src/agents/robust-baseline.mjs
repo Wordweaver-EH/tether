@@ -15,11 +15,12 @@ const copy=a=>({x:a.x,y:a.y});
 // Levels share one objective and horizon. Extra work refines the same action and
 // uncertainty space, rather than adding meaningless delays or spin padding.
 export const CONVENTIONAL_LEVELS=Object.freeze([
+  {aimCount:3,moveCount:3,hypotheses:1,steps:6},
+  {aimCount:5,moveCount:3,hypotheses:1,steps:6},
+  {aimCount:5,moveCount:5,hypotheses:1,steps:6},
+  {aimCount:5,moveCount:5,hypotheses:3,steps:6},
   {aimCount:5,moveCount:5,hypotheses:3,steps:12},
-  {aimCount:9,moveCount:9,hypotheses:5,steps:24},
-  {aimCount:17,moveCount:9,hypotheses:9,steps:48},
-  {aimCount:33,moveCount:17,hypotheses:17,steps:48},
-  {aimCount:65,moveCount:33,hypotheses:33,steps:96},
+  {aimCount:9,moveCount:5,hypotheses:3,steps:12},
 ].map(Object.freeze));
 export const CONVENTIONAL_WEIGHTS=Object.freeze({hit:4,danger:5,range:.08,collision:.3,aim:.025,base:.0001});
 function expandedArena(arena,radius){radius=Math.max(0,radius-1e-9);return {bounds:{minX:arena.bounds.minX+radius,maxX:arena.bounds.maxX-radius,minY:arena.bounds.minY+radius,maxY:arena.bounds.maxY-radius},obstacles:arena.obstacles.map(o=>({...o,minX:o.minX-radius,maxX:o.maxX+radius,minY:o.minY-radius,maxY:o.maxY+radius}))};}

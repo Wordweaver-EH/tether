@@ -9,8 +9,9 @@ const opts=Object.fromEntries(process.argv.slice(2).map(x=>{const[k,...v]=x.repl
 if(!opts.run){console.log(JSON.stringify({status:'PLAN_ONLY_NO_EXECUTION',plan:PLAN,requires:'--run --lock=reviewed-lock.json --out=fresh-attempt --workers=1..8'},null,2));}
 else{
   if(!opts.lock||!opts.out)throw new Error('lock and fresh output required');
-  const n=Number(opts.workers??1);if(!Number.isInteger(n)||n<1||n>8)throw new Error('at most eight workers');
-  const lock=await verifyTrainingLock(resolve(opts.lock),here,PLAN.id),out=resolve(opts.out);await mkdir(out);await mkdir(resolve(out,'raw'));await mkdir(resolve(out,'snapshots'));
+  const lock=await verifyTrainingLock(resolve(opts.lock),here,PLAN.id);
+  const n=Number(opts.workers??lock.workers);if(!Number.isInteger(n)||n<1||n>8||n!==lock.workers)throw new Error('worker count must match reviewed estimate/release');
+  const out=resolve(opts.out);await mkdir(out);await mkdir(resolve(out,'raw'));await mkdir(resolve(out,'snapshots'));
   await consumeRelease(resolve(opts.lock),{attempt:out,at:new Date().toISOString(),sourceFingerprint:lock.sourceFingerprint});
   await writeFile(resolve(out,'LOCK-COPY.json'),JSON.stringify(lock,null,2)+'\n',{flag:'wx'});
   const save=async r=>{await writeFile(resolve(out,'raw',`${r.task.id}.json`),serialize(r)+'\n',{flag:'wx'});};

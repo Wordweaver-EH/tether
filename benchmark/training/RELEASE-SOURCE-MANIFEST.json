@@ -1,6 +1,6 @@
 {
   "status": "REVIEWED_SOURCE_ONLY_NOT_EXECUTION_RELEASE",
-  "sourceFingerprint": "c341ec3e1a612086429dd836b812f4892ff9063124528908048ab1908ebe4fca",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
   "files": [
     {
       "path": "benchmark/interface.mjs",
@@ -35,7 +35,7 @@
     {
       "path": "src/agents/robust-baseline.mjs",
       "key": "repo/src/agents/robust-baseline.mjs",
-      "sha256": "83fd3f9e7bf16d8954a5642f60683edb8e51f07848423526082a2d5b671e8ff6"
+      "sha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0"
     },
     {
       "path": "src/agents/spear-memory.mjs",
@@ -155,12 +155,12 @@
     {
       "path": "benchmark/training/lock-contract.mjs",
       "key": "training/lock-contract.mjs",
-      "sha256": "2a8affa48b8b6cfe29033d4e9080c0144dde67f9ebbd11a0b95cecd0bb9b35cd"
+      "sha256": "271ec091b6edf4527f469b9d6244c86ab765a3304b1d84f503a75fee13b8660c"
     },
     {
       "path": "benchmark/training/lock-contract.test.mjs",
       "key": "training/lock-contract.test.mjs",
-      "sha256": "f2d2dfd42b2db3bd0b347d1a2fc7c5644cef24b8edded55a6ef608cce526bdc3"
+      "sha256": "ecaa98ef3e4e4b438d67800dc1b5df1f014e661c963491efec25a0aee93d4c86"
     },
     {
       "path": "benchmark/training/runtime-controls.mjs",
@@ -185,12 +185,12 @@
     {
       "path": "benchmark/training/TRAINING-PROTOCOL.md",
       "key": "training/TRAINING-PROTOCOL.md",
-      "sha256": "dd9abfaf7e68b448a474ebdb8a3a7331859bb58fdda8bf00f3beecf99883ae5a"
+      "sha256": "cfa72a97447fb35159f1436f8068effc79f42854596fffe6c9e28b1fe5d4bdb2"
     },
     {
       "path": "benchmark/training/training-runner.mjs",
       "key": "training/training-runner.mjs",
-      "sha256": "5f92152582bc83354a779a50730f03bae03dcf532899bdec4d1f2821b72c6888"
+      "sha256": "e150f59299c738d8e00d64abf4d5233b49dcafa6856db346f8a50858c2da575c"
     },
     {
       "path": "benchmark/training/TRAINING-SEEDS.json",

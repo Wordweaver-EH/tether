@@ -1,13 +1,13 @@
 {
   "algorithm": "sha256(sorted(relativePath + NUL + fileSHA256 + LF))",
-  "status": "reviewed interface hooks; defaults parity tested, benchmark not executed",
-  "sourceFingerprint": "9f324e6ac3b86768cb86a7ec5d14c6c49c7a9785c7c1d83e9fb5ea2096c362c3",
+  "status": "benchmark hooks and six-level conventional planner; defaults parity tested, training not executed",
+  "sourceFingerprint": "36255452781709fc32a9ec5c5c6b9e2c16071849ae0e18118fc4c8c38b0908de",
   "files": {
     "src/agents/basic.mjs": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
     "src/agents/dodger.mjs": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
     "src/agents/param.mjs": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1",
     "src/agents/robust-baseline-agent.mjs": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d",
-    "src/agents/robust-baseline.mjs": "83fd3f9e7bf16d8954a5642f60683edb8e51f07848423526082a2d5b671e8ff6",
+    "src/agents/robust-baseline.mjs": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0",
     "src/agents/spear-memory.mjs": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
     "src/agents/strategies.mjs": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
     "src/deterministic-math.js": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",

@@ -2,7 +2,7 @@
 
 Training is still in progress. CHECKPOINT-INDEX.json lists only fully completed, stable task batches already archived here. No final training success, baseline freeze, held-out study result or gameplay superiority is claimed.
 
-Each generation archive contains all 128 screening-task JSON files, exact candidate vectors and completed ranking marker. Each completed selection archive contains all 256 task files and the selection ranking. Mind-wave archives, when present, contain all twelve complete task rows for one sequential training-bout index; later waves are not implied complete.
+Each generation archive contains all 128 screening-task JSON files, exact candidate vectors and completed ranking marker. The original conventional selection archive contains all 256 task files and the selection ranking. Later selections can be checkpointed incrementally in complete 32-task finalist blocks, explicitly labeled selection-in-progress; their final ranking is added separately with references to those immutable blocks. Raw rows are never duplicated when finalizing a selection. Mind-wave archives, when present, contain all twelve complete task rows for one sequential training-bout index; later waves are not implied complete.
 
 Every raw file was parsed, checked against its exact task identity and read twice with unchanged size/mtime/bytes before snapshotting. Archive extraction was verified byte-for-byte. BATCH-MANIFEST.json lists IDs, per-file sizes and SHA-256. These are task-level raw outputs and recorded telemetry summaries, not unrecorded per-tick traces. All unfavorable rows and non-emissions remain included. No runner source or outcomes are modified by publication.
 

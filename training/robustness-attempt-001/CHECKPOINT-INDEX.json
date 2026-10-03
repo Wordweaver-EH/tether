@@ -174,7 +174,68 @@
       "archiveSha256": "7255be82dffa81bf780efc81352ca22388da05370951f492e60ea9fa1280d4db",
       "archiveBytes": 57150,
       "path": "batches/conventional-useful-2x-generation-7"
+    },
+    {
+      "id": "conventional-useful-2x-selection-candidate-g0-c0",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "2c55aa6593486e2ab628f59be1c762ded728891a1b15d0bbbaf90c5157b7b1ef",
+      "archiveBytes": 26187,
+      "path": "batches/conventional-useful-2x-selection-candidate-g0-c0"
+    },
+    {
+      "id": "conventional-useful-2x-selection-candidate-g1-c5",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "a9212f0af32ca7a5fbced030fc78d790a05612eafa59e636b217dc6e5e44feb3",
+      "archiveBytes": 17426,
+      "path": "batches/conventional-useful-2x-selection-candidate-g1-c5"
+    },
+    {
+      "id": "conventional-useful-2x-selection-candidate-g2-c3",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "792083d90d52a2f2a9d89e60c396eb9a415f03bf6435b495023fee2e1a99a5dc",
+      "archiveBytes": 26029,
+      "path": "batches/conventional-useful-2x-selection-candidate-g2-c3"
+    },
+    {
+      "id": "conventional-useful-2x-selection-candidate-g3-c14",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "bba6a73a20b77f28e5d2ec214d39664afdcd553d9b363f7e7fc21f9c170a4fe5",
+      "archiveBytes": 25400,
+      "path": "batches/conventional-useful-2x-selection-candidate-g3-c14"
+    },
+    {
+      "id": "conventional-useful-2x-selection-candidate-g5-c3",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "116de3fc1b2992ff8da6b62bfaaeb5fe6f5a1f1f81a0211786e634cafaa1336b",
+      "archiveBytes": 16467,
+      "path": "batches/conventional-useful-2x-selection-candidate-g5-c3"
+    },
+    {
+      "id": "conventional-useful-2x-selection-candidate-g7-c1",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "167c8a3fc816058c2727ee68203698fea70cb3caa09f0059d7863a9e7f8c71e8",
+      "archiveBytes": 26906,
+      "path": "batches/conventional-useful-2x-selection-candidate-g7-c1"
     }
   ],
-  "completedTaskRowsArchived": 2304
+  "completedTaskRowsArchived": 2496,
+  "uniqueArchivedTaskIdsVerified": 2496
 }

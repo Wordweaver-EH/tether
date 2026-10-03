@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-2x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-2x-g2-c3-k0-o0-s0",
+    "selection-conventional-useful-2x-g2-c3-k0-o0-s1",
+    "selection-conventional-useful-2x-g2-c3-k0-o1-s0",
+    "selection-conventional-useful-2x-g2-c3-k0-o1-s1",
+    "selection-conventional-useful-2x-g2-c3-k0-o2-s0",
+    "selection-conventional-useful-2x-g2-c3-k0-o2-s1",
+    "selection-conventional-useful-2x-g2-c3-k0-o3-s0",
+    "selection-conventional-useful-2x-g2-c3-k0-o3-s1",
+    "selection-conventional-useful-2x-g2-c3-k1-o0-s0",
+    "selection-conventional-useful-2x-g2-c3-k1-o0-s1",
+    "selection-conventional-useful-2x-g2-c3-k1-o1-s0",
+    "selection-conventional-useful-2x-g2-c3-k1-o1-s1",
+    "selection-conventional-useful-2x-g2-c3-k1-o2-s0",
+    "selection-conventional-useful-2x-g2-c3-k1-o2-s1",
+    "selection-conventional-useful-2x-g2-c3-k1-o3-s0",
+    "selection-conventional-useful-2x-g2-c3-k1-o3-s1",
+    "selection-conventional-useful-2x-g2-c3-k2-o0-s0",
+    "selection-conventional-useful-2x-g2-c3-k2-o0-s1",
+    "selection-conventional-useful-2x-g2-c3-k2-o1-s0",
+    "selection-conventional-useful-2x-g2-c3-k2-o1-s1",
+    "selection-conventional-useful-2x-g2-c3-k2-o2-s0",
+    "selection-conventional-useful-2x-g2-c3-k2-o2-s1",
+    "selection-conventional-useful-2x-g2-c3-k2-o3-s0",
+    "selection-conventional-useful-2x-g2-c3-k2-o3-s1",
+    "selection-conventional-useful-2x-g2-c3-k3-o0-s0",
+    "selection-conventional-useful-2x-g2-c3-k3-o0-s1",
+    "selection-conventional-useful-2x-g2-c3-k3-o1-s0",
+    "selection-conventional-useful-2x-g2-c3-k3-o1-s1",
+    "selection-conventional-useful-2x-g2-c3-k3-o2-s0",
+    "selection-conventional-useful-2x-g2-c3-k3-o2-s1",
+    "selection-conventional-useful-2x-g2-c3-k3-o3-s0",
+    "selection-conventional-useful-2x-g2-c3-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 734,
+      "sha256": "1920c54481078e6403b654f800085e92363e3517cdbaf11fc982124c046e6f5c"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o0-s0.json": {
+      "bytes": 2157,
+      "sha256": "8fd01fa068907874b2a7e4df36bdcf83845acd8e9b2729ac6948a79864bf4955"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o0-s1.json": {
+      "bytes": 2158,
+      "sha256": "09159a519d10fc92c53423330083e8aa1b4ed2ca1f1c72386bd73870c5b08dde"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o1-s0.json": {
+      "bytes": 2165,
+      "sha256": "b452fbb0c61210787f181cb588328aaf4df7aa9d4f432da63595a65447535a4e"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o1-s1.json": {
+      "bytes": 2160,
+      "sha256": "78bb8932f84195c11ee89f7cba335274b3fcead0a8cab0268749e9d30373fd0d"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o2-s0.json": {
+      "bytes": 12087,
+      "sha256": "58cbc9dbb64e373e053acc0e3e9dad910f8d3bf6bef5e2d9c94e32215dd53db1"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o2-s1.json": {
+      "bytes": 2859,
+      "sha256": "6ddcb167a57e17496150d5d3aa0cb1a5d542ae76103ca035e45c750ee09ee8d0"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o3-s0.json": {
+      "bytes": 2157,
+      "sha256": "55472cd2a20baf914c184f0276a98c88a54f088d10aee624845aff2378f1c445"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k0-o3-s1.json": {
+      "bytes": 2159,
+      "sha256": "4b75f9eebf3414dd9ebf7505675e50877333ef5c11f240449cf7e79e085f5c5b"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o0-s0.json": {
+      "bytes": 2503,
+      "sha256": "3ba5590ceffc80151409ea7b1a6490a54717917bc29b07ac4b0e310a2e334bcf"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o0-s1.json": {
+      "bytes": 2161,
+      "sha256": "30026b408b8f15bf7d8f22db645c8dc25f622e5a4fa237ccfe66ab5180f84162"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o1-s0.json": {
+      "bytes": 2162,
+      "sha256": "0857217bbf62f8d4e4940a1c32cd8cf9a40829dd7ee02ec4bffde0008eaadcb3"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o1-s1.json": {
+      "bytes": 2163,
+      "sha256": "ac1a2290fd3154465ed539bd6acf8b4e88faab1dc8637978376c23be0a8f3072"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o2-s0.json": {
+      "bytes": 16031,
+      "sha256": "80f87ff8a966b4af1e123b3f51ea8ff3e4c1999c13aa56e8a48ef18cc8a9e5fb"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o2-s1.json": {
+      "bytes": 8527,
+      "sha256": "b3f8c67a9790f7cf880eeea0c6db792e42e4fc43ec984f73d9fcb5f453e6b55c"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o3-s0.json": {
+      "bytes": 2497,
+      "sha256": "abaebada4d0a06653aeaf0eab0926275e650a581b5c7755f2393f86bafa554f3"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k1-o3-s1.json": {
+      "bytes": 2160,
+      "sha256": "54642d881c5a0cc28d882e51fcc0e5292cc063b53ee478ef01c877a29c78e80d"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o0-s0.json": {
+      "bytes": 2157,
+      "sha256": "e341a2a56342d4b2634e5f0aa034aa294f678ce698f4507c08e5097c2ac95a04"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o0-s1.json": {
+      "bytes": 2158,
+      "sha256": "d3754dbfc808c39ebf16e4cd75a1f3a9e350d804d214d5f21eb14a3f0ef005b2"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o1-s0.json": {
+      "bytes": 2501,
+      "sha256": "dd5e72aa1ba6fa523d286f0fa80a6f2b8cdd6c6948dd6a54c959be517baf90ca"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o1-s1.json": {
+      "bytes": 2165,
+      "sha256": "8a9b5c1a757c0edd613f0d07d4cfeefae11435821c8e582c8de9d443f3dfbd9d"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o2-s0.json": {
+      "bytes": 10689,
+      "sha256": "4d5b0a2c77430e14c20196da435d132ec2fbc78d572120d370982cfba0b7e000"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o2-s1.json": {
+      "bytes": 10646,
+      "sha256": "74f6365d9e280ff83b5c7caf1ac31b2a1cf6b4f7cc8d279c5d87bcbe77261d1d"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o3-s0.json": {
+      "bytes": 2500,
+      "sha256": "64a6857ed4d5963e3bc617db60e1dd4e1e36ed4e6b7111a8c290af4628083256"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k2-o3-s1.json": {
+      "bytes": 2498,
+      "sha256": "2613cb35ff1cba5ccb655793311dd51d8b017f18de0a30cbd9b11b6253010049"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o0-s0.json": {
+      "bytes": 2502,
+      "sha256": "6bfcbad67baf9fc068a7327139b46c950e6fc7f67f995375d2972fd4965cab0e"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o0-s1.json": {
+      "bytes": 2496,
+      "sha256": "f179ec45175b80e9c5e791030cf667aca303d20794717ad59f9f6c90be826727"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o1-s0.json": {
+      "bytes": 2507,
+      "sha256": "c5718c1cc37efae8583ff4f8a13328e4854986b476c0e5e6cf401219648aa64b"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o1-s1.json": {
+      "bytes": 2162,
+      "sha256": "d200f2d924dc634e8577b5d3a8ed0ad60b4ee26e343d488b733ba8dda6e689e7"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o2-s0.json": {
+      "bytes": 16447,
+      "sha256": "7679a5cf4998f6e5afee73c1ecfb660bcbfc80761b68873823d763d2fb8d886a"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o2-s1.json": {
+      "bytes": 7806,
+      "sha256": "308c6f60be332a752dbb626940d201a763d047d56bfa840bebdbb5c796ee1594"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o3-s0.json": {
+      "bytes": 2499,
+      "sha256": "29326873ca9858b862adfeea82c605fa319131d765d1b497bf261937fa3b5edf"
+    },
+    "raw/selection-conventional-useful-2x-g2-c3-k3-o3-s1.json": {
+      "bytes": 2495,
+      "sha256": "88247ee2d518bd71a13a6eac3d1e215a722ef1463bc5faa7e9fb7e0978218238"
+    }
+  }
+}

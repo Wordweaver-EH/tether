@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-2x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-2x-g5-c3-k0-o0-s0",
+    "selection-conventional-useful-2x-g5-c3-k0-o0-s1",
+    "selection-conventional-useful-2x-g5-c3-k0-o1-s0",
+    "selection-conventional-useful-2x-g5-c3-k0-o1-s1",
+    "selection-conventional-useful-2x-g5-c3-k0-o2-s0",
+    "selection-conventional-useful-2x-g5-c3-k0-o2-s1",
+    "selection-conventional-useful-2x-g5-c3-k0-o3-s0",
+    "selection-conventional-useful-2x-g5-c3-k0-o3-s1",
+    "selection-conventional-useful-2x-g5-c3-k1-o0-s0",
+    "selection-conventional-useful-2x-g5-c3-k1-o0-s1",
+    "selection-conventional-useful-2x-g5-c3-k1-o1-s0",
+    "selection-conventional-useful-2x-g5-c3-k1-o1-s1",
+    "selection-conventional-useful-2x-g5-c3-k1-o2-s0",
+    "selection-conventional-useful-2x-g5-c3-k1-o2-s1",
+    "selection-conventional-useful-2x-g5-c3-k1-o3-s0",
+    "selection-conventional-useful-2x-g5-c3-k1-o3-s1",
+    "selection-conventional-useful-2x-g5-c3-k2-o0-s0",
+    "selection-conventional-useful-2x-g5-c3-k2-o0-s1",
+    "selection-conventional-useful-2x-g5-c3-k2-o1-s0",
+    "selection-conventional-useful-2x-g5-c3-k2-o1-s1",
+    "selection-conventional-useful-2x-g5-c3-k2-o2-s0",
+    "selection-conventional-useful-2x-g5-c3-k2-o2-s1",
+    "selection-conventional-useful-2x-g5-c3-k2-o3-s0",
+    "selection-conventional-useful-2x-g5-c3-k2-o3-s1",
+    "selection-conventional-useful-2x-g5-c3-k3-o0-s0",
+    "selection-conventional-useful-2x-g5-c3-k3-o0-s1",
+    "selection-conventional-useful-2x-g5-c3-k3-o1-s0",
+    "selection-conventional-useful-2x-g5-c3-k3-o1-s1",
+    "selection-conventional-useful-2x-g5-c3-k3-o2-s0",
+    "selection-conventional-useful-2x-g5-c3-k3-o2-s1",
+    "selection-conventional-useful-2x-g5-c3-k3-o3-s0",
+    "selection-conventional-useful-2x-g5-c3-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 732,
+      "sha256": "078310a5446d3de1b121c18d3feae8398b027f1100c6ee4e2980d7adb69f842c"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o0-s0.json": {
+      "bytes": 2152,
+      "sha256": "44fe383b9bd5b85488575aac66cc0534b9134052bf6af18dd78f8270e7f9162c"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o0-s1.json": {
+      "bytes": 2156,
+      "sha256": "57c0c69fbe0e882c778a8ce43e2ea0040fd53c8540d6f5fb9b776bd3d95d9e29"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o1-s0.json": {
+      "bytes": 2161,
+      "sha256": "21dde9bce360fb19df10d037b77243ea4362ff627c91b8637b877085c36fac07"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o1-s1.json": {
+      "bytes": 2156,
+      "sha256": "6c770aa8849be91b5b1bd8a613fd49b400025f91af9860fdfab6839af07a24fc"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o2-s0.json": {
+      "bytes": 12048,
+      "sha256": "d377e44599526b8bcdc06bcc46a7c477911b8714a539d588890342395400442f"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o2-s1.json": {
+      "bytes": 3906,
+      "sha256": "2e32aa20d19a352868180f287c4c07520dccc20f8048027fe04e287a9c140f94"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o3-s0.json": {
+      "bytes": 2155,
+      "sha256": "47613d6a0ae5a2471445b6d8b4bfca7335a64485a95317e57b6c49e8d35a4371"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k0-o3-s1.json": {
+      "bytes": 2152,
+      "sha256": "12a80ac6d14b4df917b32c9d45c63121ff087cf6621f34c7fe789247cb033dbc"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o0-s0.json": {
+      "bytes": 2493,
+      "sha256": "fde567f28c1d0f05a13c1b8b7a4256797a5a548c92e4cda9446ea8d5f1203631"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o0-s1.json": {
+      "bytes": 2155,
+      "sha256": "3b192aa43f7f6db82ba9f982971966f3b5fa0dc0683433d90882758acd7ae85d"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o1-s0.json": {
+      "bytes": 2160,
+      "sha256": "edd0f2c917ff9d72f614485841a638dd024046b39e30f276567beb71d56746f5"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o1-s1.json": {
+      "bytes": 2163,
+      "sha256": "2235d526b8563365ca8ef7cf1f26d3820ff7cc2a2026fd8498040db6309e6477"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o2-s0.json": {
+      "bytes": 2835,
+      "sha256": "30458c66c3b811ec0d24b2efb18e75c86fe7f2792107226cec58b73861e42719"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o2-s1.json": {
+      "bytes": 4257,
+      "sha256": "5e392f98548fb6b160861d6dd73cab1c7eb7b57498dc06807b65b7073d3d9012"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o3-s0.json": {
+      "bytes": 2499,
+      "sha256": "53932a3398264862cb0ed1373e2537781d17023fdcb645eb79c4f3dc89735110"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k1-o3-s1.json": {
+      "bytes": 2157,
+      "sha256": "187abaeca1807f60a62f8207af9eb2362da7d80f52fc47ef9a40f299e0bd4401"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o0-s0.json": {
+      "bytes": 2151,
+      "sha256": "ee03d7c182359257640d2561b000915c460234315e613d05224a3b010ad2fca8"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o0-s1.json": {
+      "bytes": 2157,
+      "sha256": "c0ce5c10e9cefe7404299e8a12bed913e22e86e6b677c71118c1c7ed14bf995d"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o1-s0.json": {
+      "bytes": 2502,
+      "sha256": "0863b434d6638bddacd5bb7c3a18a19650a087570e69064b035610c0314fe29a"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o1-s1.json": {
+      "bytes": 2163,
+      "sha256": "7abb3e97a7fe51d61eb2e57d93b185f180d1ed3074108e50c1d1b2b73f9ec7db"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o2-s0.json": {
+      "bytes": 7073,
+      "sha256": "6dc7cb4e96def857daa3401970a629a035de7e630b8f951ece8bf27b7c73fa74"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o2-s1.json": {
+      "bytes": 7069,
+      "sha256": "0fd14d8778552fa6e344092f4aacb216f5a5619fb02dd998cd2a572eafb6f3c1"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o3-s0.json": {
+      "bytes": 2498,
+      "sha256": "5d5b1b07d0295d08b86a70311d18022c74d15c78293e1d481f1938e478c30d8b"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k2-o3-s1.json": {
+      "bytes": 2835,
+      "sha256": "637c0a6c03729f313230d527628ce274a4da9841cd571440e660a08323aa0c4e"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o0-s0.json": {
+      "bytes": 2498,
+      "sha256": "5d8d68e5da1de57bb0c07457ce3ccebd1e9556e0534ed14ec0c709801752cc74"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o0-s1.json": {
+      "bytes": 2497,
+      "sha256": "7c35b571984fe25e51fbe17e425c0f889b073b0e2f3413a33524906e3e59b9a6"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o1-s0.json": {
+      "bytes": 2506,
+      "sha256": "6552e979aec137a3f022b11b21e2c2e425e2dd7eb2ea300f69097cfdf82bc7b4"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o1-s1.json": {
+      "bytes": 2161,
+      "sha256": "01fd127a817573a1c278704a1fc6916d4208fa672beca52de3f2f954210efa26"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o2-s0.json": {
+      "bytes": 2478,
+      "sha256": "122bf937e896c0a6d487564d13e2aa0d001054af1eda0b0184521ca95b81d70b"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o2-s1.json": {
+      "bytes": 2857,
+      "sha256": "a49a753bd3decdaca68cecdbaf94169d87c3872641bc2737e8bc45e423e9d9d7"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o3-s0.json": {
+      "bytes": 2492,
+      "sha256": "ca2cbc3fa41d6d3184febd1cda38260e2287585acd123f1e5b8641c4b3628927"
+    },
+    "raw/selection-conventional-useful-2x-g5-c3-k3-o3-s1.json": {
+      "bytes": 2835,
+      "sha256": "4b17c8ad20c182c0be07633e87158e767050195efdc933b268774f4cd89785cf"
+    }
+  }
+}

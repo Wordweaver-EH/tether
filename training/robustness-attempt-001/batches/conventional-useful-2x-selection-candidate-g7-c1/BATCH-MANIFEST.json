@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-2x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-2x-g7-c1-k0-o0-s0",
+    "selection-conventional-useful-2x-g7-c1-k0-o0-s1",
+    "selection-conventional-useful-2x-g7-c1-k0-o1-s0",
+    "selection-conventional-useful-2x-g7-c1-k0-o1-s1",
+    "selection-conventional-useful-2x-g7-c1-k0-o2-s0",
+    "selection-conventional-useful-2x-g7-c1-k0-o2-s1",
+    "selection-conventional-useful-2x-g7-c1-k0-o3-s0",
+    "selection-conventional-useful-2x-g7-c1-k0-o3-s1",
+    "selection-conventional-useful-2x-g7-c1-k1-o0-s0",
+    "selection-conventional-useful-2x-g7-c1-k1-o0-s1",
+    "selection-conventional-useful-2x-g7-c1-k1-o1-s0",
+    "selection-conventional-useful-2x-g7-c1-k1-o1-s1",
+    "selection-conventional-useful-2x-g7-c1-k1-o2-s0",
+    "selection-conventional-useful-2x-g7-c1-k1-o2-s1",
+    "selection-conventional-useful-2x-g7-c1-k1-o3-s0",
+    "selection-conventional-useful-2x-g7-c1-k1-o3-s1",
+    "selection-conventional-useful-2x-g7-c1-k2-o0-s0",
+    "selection-conventional-useful-2x-g7-c1-k2-o0-s1",
+    "selection-conventional-useful-2x-g7-c1-k2-o1-s0",
+    "selection-conventional-useful-2x-g7-c1-k2-o1-s1",
+    "selection-conventional-useful-2x-g7-c1-k2-o2-s0",
+    "selection-conventional-useful-2x-g7-c1-k2-o2-s1",
+    "selection-conventional-useful-2x-g7-c1-k2-o3-s0",
+    "selection-conventional-useful-2x-g7-c1-k2-o3-s1",
+    "selection-conventional-useful-2x-g7-c1-k3-o0-s0",
+    "selection-conventional-useful-2x-g7-c1-k3-o0-s1",
+    "selection-conventional-useful-2x-g7-c1-k3-o1-s0",
+    "selection-conventional-useful-2x-g7-c1-k3-o1-s1",
+    "selection-conventional-useful-2x-g7-c1-k3-o2-s0",
+    "selection-conventional-useful-2x-g7-c1-k3-o2-s1",
+    "selection-conventional-useful-2x-g7-c1-k3-o3-s0",
+    "selection-conventional-useful-2x-g7-c1-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 691,
+      "sha256": "2c2a50256dc7278f2ec3ad9cce653ffae17c27629dbdd1af35073a915c624689"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o0-s0.json": {
+      "bytes": 2114,
+      "sha256": "32f76e0a53899ffd36925b42f852d246b9abd948e2e3f048d75e284d45db1580"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o0-s1.json": {
+      "bytes": 2116,
+      "sha256": "39d3f5bcf297bfed521d6fbfb385987b57230f0d52627bba81b3e114dca58a24"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o1-s0.json": {
+      "bytes": 2120,
+      "sha256": "93931ad841ec6c2f638fc41e83cffcd737d4b32e84ef882c6cdbdb0b668e989e"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o1-s1.json": {
+      "bytes": 2117,
+      "sha256": "d92c2559d8d7e9438ea6ec419869b3b4fcb24d44311d6d142697c69d292f5e1e"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o2-s0.json": {
+      "bytes": 5634,
+      "sha256": "9b8002daa34479023c74b061fb57175b864b9786b80109e4d8b9f475e61a09fa"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o2-s1.json": {
+      "bytes": 2452,
+      "sha256": "ce3a60af137cd857442fec10c903266828767d0b1f4a5a1b23b76255a35d20e9"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o3-s0.json": {
+      "bytes": 2106,
+      "sha256": "5e05cc8e70ca5bb0d04a6c62500b050abc3b89d97c34f19803609607e56dc21a"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k0-o3-s1.json": {
+      "bytes": 3827,
+      "sha256": "4ef9a556f4a02c90faedc2bfc26df6ea3a0d8889502d6efceedefb71f2459ed0"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o0-s0.json": {
+      "bytes": 2456,
+      "sha256": "ad397c50505ca0d10e1f79214b5d184e8ed6d060cb22969e5c4bcfe97755033e"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o0-s1.json": {
+      "bytes": 2116,
+      "sha256": "e238df3ef389cba3235036ff348a2b84dc8c68dde9373043420b1ad8094f6549"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o1-s0.json": {
+      "bytes": 2462,
+      "sha256": "29c31d774d8c83dca3d1833ec9ef92d14be26a40fe283b8e4da481f0d7813aba"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o1-s1.json": {
+      "bytes": 2121,
+      "sha256": "9ea07ebad3ee860eecc5ca90923e59f8e60f7c26e924f8f2c89fb74a59befa8d"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o2-s0.json": {
+      "bytes": 8774,
+      "sha256": "11ed8931e114c1571bd4f8d5c83370610ee827e47d367fc48050106af078902f"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o2-s1.json": {
+      "bytes": 8051,
+      "sha256": "037b9eff365ac33b082bdf63e794d1ff0d32323b384188ce26af270052aef835"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o3-s0.json": {
+      "bytes": 6932,
+      "sha256": "367be86e750013c4184760ff5a163d75b369f8563d51b02954b07c8d010879df"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k1-o3-s1.json": {
+      "bytes": 2114,
+      "sha256": "d38899435e09e77c190003b54bc1c67acdb4e650cb407b677efe650e6a417168"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o0-s0.json": {
+      "bytes": 2115,
+      "sha256": "431aeae1c097b90f3598fce4ebc43b866a4b3cad529791b2f183d5362a555e2f"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o0-s1.json": {
+      "bytes": 2114,
+      "sha256": "da75b0ac5f3943128857cec1222440cc5cd2eea37c10091c972e9dd8d5aa958b"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o1-s0.json": {
+      "bytes": 2461,
+      "sha256": "603ec1908180971d20c95832514fc00554ffaa7d1f29de1772d6c72fb91217cd"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o1-s1.json": {
+      "bytes": 2120,
+      "sha256": "ab2aaa2f7049f80b4c2378248a9612714e8369070de6d0a3e394dba7fb84d092"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o2-s0.json": {
+      "bytes": 16328,
+      "sha256": "fbf12a76ca4ecca78269fd34ffe4f761767f7346feec70e6dbd8081a8212237a"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o2-s1.json": {
+      "bytes": 6346,
+      "sha256": "f3bab02bbf427729e7eeddb0b08287b0835d377679d63e7a3ec4894751b98ee3"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o3-s0.json": {
+      "bytes": 2795,
+      "sha256": "7aee1d5bb172cddad0c8481a419a95a62c674e111a160e32752319ce74dce1c7"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k2-o3-s1.json": {
+      "bytes": 3148,
+      "sha256": "3ba58e245d9a46d69a6061a6963ff366c50ce00853e232c41e5a3130f4be76f8"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o0-s0.json": {
+      "bytes": 2455,
+      "sha256": "c2ff0263dee8d4ef4a7e2e7273e692fcfc32d5338e03ef2a05fe957d8acca3b7"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o0-s1.json": {
+      "bytes": 2455,
+      "sha256": "bcdd2875b1f361074ae27e1edcde9d7b70b770d5bed87e70be074bbe818e09ec"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o1-s0.json": {
+      "bytes": 2460,
+      "sha256": "00ebfcb1b01c605d01f1fe7b20ce5427ce3eb7c59d221132504b31712a35123d"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o1-s1.json": {
+      "bytes": 2118,
+      "sha256": "79b33c416f2cffbfac11382b86496803547bd8214f5d37f7d3d1cfe4c92afd5a"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o2-s0.json": {
+      "bytes": 17331,
+      "sha256": "72ef47a419dccff439f6179589944430d8862c361528ebea376063f9129c5b9c"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o2-s1.json": {
+      "bytes": 14097,
+      "sha256": "8832f586837cd00ddd58cac8a4a80f0ce1ebe73747a55e65e66e70a72e95d772"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o3-s0.json": {
+      "bytes": 3498,
+      "sha256": "3e6e221d9833412a3f888013fb2f6c54c97a0a3e5238a62b18ccd8151a95ed8f"
+    },
+    "raw/selection-conventional-useful-2x-g7-c1-k3-o3-s1.json": {
+      "bytes": 4528,
+      "sha256": "1c824243f81b27ff3a026d58b37d38f42876b9450526fce105537facefff4e6c"
+    }
+  }
+}

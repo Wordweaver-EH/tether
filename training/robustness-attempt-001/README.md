@@ -1,6 +1,6 @@
 # Robustness training attempt 001: immutable completed batches
 
-Training is still in progress. CHECKPOINT-INDEX.json lists only fully completed, stable task batches already archived here. No final training success, baseline freeze, held-out study result or gameplay superiority is claimed.
+The sole training execution completed all 4,224 tasks with process exit 0 on 2026-10-03 at 02:51:45 UTC. Independent data-integrity review passed and a qualified actual-output freeze was accepted. CHECKPOINT-INDEX.json lists only fully completed, stable task batches already archived here. The exact final result, three selected parameter vectors/levels and twelve final memory snapshots are preserved under final-artifacts/ with their original byte hashes. The exact outputs are qualified by a disclosed tie-ranking deviation in 14 of 24 generations and missing deterministic completion/reduction order. No clean protocol-compliance, seed-only exact-search reproduction or held-out success claim is made.
 
 Each generation archive contains all 128 screening-task JSON files, exact candidate vectors and completed ranking marker. The original conventional selection archive contains all 256 task files and the selection ranking. Later selections can be checkpointed incrementally in complete 32-task finalist blocks, explicitly labeled selection-in-progress; their final ranking is added separately with references to those immutable blocks. Raw rows are never duplicated when finalizing a selection. Mind-wave archives, when present, contain all twelve complete task rows for one sequential training-bout index; later waves are not implied complete.
 
@@ -11,3 +11,5 @@ In a batch directory, run `node reassemble.mjs`. It checks transport-part and wh
 Source and training protocol: code b9134f6a6859032ae37fce8f266f848c483db467; combined fingerprint cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e. Audited calibration: data01a6ea6cc23c44233a37dad5a9ed07fe8d455c7a. EXECUTION-INDEX.json includes selected levels, workers, execution scope and exact lock/review/publication receipt hashes. No shifted condition, new-style opponent search or final evaluation belongs to this attempt.
 
 Prepared by dot, the OpenAI assistant. No merge or deployment.
+
+The qualified freeze, audit and explicit acceptance are in final-artifacts/. Source, recorded rankings and trained outputs are unchanged; no rerun, retuning or retroactive repair occurred. The final evaluated candidate sets and rankings agree with exact reranking of actual candidates, without establishing a counterfactual corrected search.

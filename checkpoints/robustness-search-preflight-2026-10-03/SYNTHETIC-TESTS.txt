@@ -1,0 +1,23 @@
+✔ task commitments required, complete and correctly scoped (2.913636ms)
+✔ ordered proof commitments change when original digest order changes (0.832163ms)
+✔ block stream verifies complete members, rows, hashes and rejects tampering/trailing/truncation (18.783986ms)
+✔ block cap abort retains partial status and cannot claim completion (2.853205ms)
+✔ pure 8 by 16 schedule, seed cycles, parameter hashes and fixed four-seat grid (8.417691ms)
+✔ integer reduction completion-order invariant and candidate seat inversion (0.617089ms)
+✔ numeric lexicographic then ASCII ID ties (0.320312ms)
+✔ eligibility excludes initial vectors and stops without fallback (0.599392ms)
+✔ runner and worker imports inert; CLI default plan only (128.170402ms)
+✔ release exactness, verified evidence, one-use gate; no worker launched (14.7286ms)
+✔ synthetic live accounting ceilings include in-flight raw and parent CPU (0.500162ms)
+✔ search worker wiring uses approved block stream and complete proof reducer on synthetic records (16.352615ms)
+✔ freeze schema binds exact candidate vector, result, saved-data review and Git receipt (5.852194ms)
+✔ late final sampler failure blocks success after supervisor drain (2.195895ms)
+✔ final resource check occurs after verification and manifest serialization (0.37235ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 264.989344

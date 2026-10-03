@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "search-source-preregistration.tar.gz",
+      "bytes": 138933,
+      "sha256": "08bf17b430746cd9a88e9faa9288f7921016c61af753ace13d7242e154854a64",
+      "parts": [
+        {
+          "filename": "search-source-preregistration.tar.gz.part01",
+          "bytes": 138933,
+          "sha256": "08bf17b430746cd9a88e9faa9288f7921016c61af753ace13d7242e154854a64"
+        }
+      ]
+    }
+  ]
+}

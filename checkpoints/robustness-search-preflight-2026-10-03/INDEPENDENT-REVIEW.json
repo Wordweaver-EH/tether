@@ -1,0 +1,30 @@
+{
+  "approved": true,
+  "phase": "opponent-search",
+  "scope": "SOURCE_REVIEW_FOR_SINGLE_PREREGISTERED_SEARCH_ATTEMPT",
+  "lockSha256": "3ea79c1c6c4aeb74d71fcd27c67e43bf15174fec158c7e3d55560ddc0985ef8e",
+  "sourceManifestSha256": "1113a32c18fa27a74bfe90c392517b51282e5fd8af01a68b9faca7c3d9ec2f48",
+  "sourceFilesVerified": 70,
+  "closedInputsVerified": 123,
+  "independentSyntheticTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "checks": [
+    "Exact128 candidates/512 trials, prescribed mutation seeds/vector arithmetic, fixed default300s MODE_B and two targets/two seats",
+    "Integer score reduction in fixed task order; descending integer total then numeric21D lexicographic vector and ASCII id; eligibility against all8 frozen references",
+    "Fresh accepted snapshot0 each target-mind task; no target memory output persisted/reused; candidate and target use same frozen wrapper/public physics",
+    "Final block logger and prospectivev2 exact pins; no heldout trials/outcomes used for candidate ranking",
+    "Source/receipt/Git/exclusive release gates; no automatic retry; no eligible candidate stops without rescue",
+    "Supervisor drained; source/manifest preparation stays wall-guarded; final parent-inclusiveCPU/raw/elapsed-wall checks before and after synchronous result persistence",
+    "Winner cannot become REVIEWED_FROZEN without separate exact saved-data review and verifiedGit result/manifest receipts"
+  ],
+  "limits": [
+    "No search execution performed by reviewer",
+    "Root single-use release and exact-lock verifiedGit publication still required",
+    "Saved-data audit and immutable one-style freeze required after search",
+    "No full evaluation execution approval"
+  ],
+  "executionAuthorized": false,
+  "evaluationApproved": false
+}

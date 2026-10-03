@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Read-only archival acceptance; not ranking or whole-phase CPU audit",
+  "generation": 2,
+  "tasks": 64,
+  "members": 130,
+  "selectorSha256": "0eb543bfada7a94d0c343793b64d1cba5ffb75a2317ba43e5fbea136f5252bb9",
+  "lockSha256": "3ea79c1c6c4aeb74d71fcd27c67e43bf15174fec158c7e3d55560ddc0985ef8e",
+  "rawBlockProofAndTerminalEqualityVerified": true,
+  "parentCompletionMarker": "generations/g2-results.json",
+  "sourceHashesStable": true,
+  "targetMemoryNotPersisted": true
+}

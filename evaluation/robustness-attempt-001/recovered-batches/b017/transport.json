@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "evaluation-union-961-1024.tar.gz",
+      "bytes": 189069127,
+      "sha256": "bfa727307e3bcd9e6e866d21fa68ca517ba852c1ebbb315dce2c4277065c8c65",
+      "parts": [
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0001",
+          "bytes": 8000000,
+          "sha256": "ef21df1840ed7b03bb1e03476e3a2de8afa7fb0c389155a0e918aae921a1d7b2",
+          "gitBlobSha": "b491487c87aa009eb8d5a20d52ed2b9265816952"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0002",
+          "bytes": 8000000,
+          "sha256": "502137b7c13695db5aed0a9d9fa6983612026d84d29fb1af955b826a2688720a",
+          "gitBlobSha": "cbeee4b52a0248a60d0119666d6967e87622e8ef"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0003",
+          "bytes": 8000000,
+          "sha256": "8cbab43ad2c0c51c9317a5f4d89dbbd4cd993cf2901ebec61da2a995d5aaea2e",
+          "gitBlobSha": "9c06e53c1726193860f0b5c73cbe6174685d32fc"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0004",
+          "bytes": 8000000,
+          "sha256": "f403a506b87d09871342edeb89bbb4ca6cf4a82d56f2f6fd717a7a045dd352b3",
+          "gitBlobSha": "4ef82de70aa9b8001a724e9fddee1ba0df2fe153"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0005",
+          "bytes": 8000000,
+          "sha256": "0984a1a33d2e77169c1c4d782d39afba0cb6c034e0118eb484c9cd79383d0523",
+          "gitBlobSha": "696d4e028f323f4038b153601a3af2f73e7aeec7"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0006",
+          "bytes": 8000000,
+          "sha256": "24fb326a0c0feffd9841deaac77c1a0ad746abcd0275177910058e3007f9009c",
+          "gitBlobSha": "7e64813e5e20a0f928f292e623da10264b183caf"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0007",
+          "bytes": 8000000,
+          "sha256": "fb764317fd416a22b1731e0a9500f5ec80f38844c17bf58f742c7409324a7b1d",
+          "gitBlobSha": "271cd13d68a419955dddab78ca80b1cd2baa0064"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0008",
+          "bytes": 8000000,
+          "sha256": "c8415c7531bf1357528e65a814a12011b88b9f5e59d48f6b951abb908cd488bf",
+          "gitBlobSha": "ecfc6ef01bf9cc5ae34b8b35a3f7e5c50a4d516b"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0009",
+          "bytes": 8000000,
+          "sha256": "88a557949d58b455d8a43f8c3f905ed4d44365a53200fdc170bfd7e7ede3d9bb",
+          "gitBlobSha": "15fb0c60983c8b01bdb51c46a9fb62cba036ae8d"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0010",
+          "bytes": 8000000,
+          "sha256": "d270656df4a0a09290bb9a9f603f47dc5e859b694a0b7290f2851fac36951279",
+          "gitBlobSha": "2cb033f0bf5e12cf9aef295704cc44e420596ae5"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0011",
+          "bytes": 8000000,
+          "sha256": "c4777ca3bca27c5a9e9251e1269e03dd1f90d3b401958657c8351e56c8101d61",
+          "gitBlobSha": "dd7c845e2dd389acff6ed8a03b16dc678977f471"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0012",
+          "bytes": 8000000,
+          "sha256": "8a12ecc81d433445551fd13ce993e64571d4e854e3f2e4e967aa101bc5b641d5",
+          "gitBlobSha": "15dfc03d658c4dad92d0e3208309a0ba48c64c17"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0013",
+          "bytes": 8000000,
+          "sha256": "16f00d60f122e4930273502d32d1ae20ff6d3346103b0d98c7f52e4f41d841fd",
+          "gitBlobSha": "92cbdfc734e0c3531d37603c599b44548e088cc1"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0014",
+          "bytes": 8000000,
+          "sha256": "b0b4a6df1a34b3b28ccc256366240822113e0a44c78be49f467681850c57a692",
+          "gitBlobSha": "4227fc22133d90e035b9b5b5069b33142d38a5de"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0015",
+          "bytes": 8000000,
+          "sha256": "c4a2c85cc39d8442776d833375b0565758d9103cc0595f733ceca46db95bd630",
+          "gitBlobSha": "57878727fff5fb2d2ca3e3d6d68ce7fdd1c42d2e"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0016",
+          "bytes": 8000000,
+          "sha256": "082b934181db36a20d2074baa1027e081bf4ccaa1284ada5c64df521b6bb213a",
+          "gitBlobSha": "d448175a9ef2c611c609e0562ece9df39714e3a6"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0017",
+          "bytes": 8000000,
+          "sha256": "4047ccd4a7e23ba07506a6df95248fa12b7026dd867eb9577ca3f831c2b064c3",
+          "gitBlobSha": "c2f79fdc192d3e6623a8c637fd5f00c89e7db6b2"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0018",
+          "bytes": 8000000,
+          "sha256": "a928f42e34d80781a757ebb104f9f83e4c807773a5397c25fab52d5572794977",
+          "gitBlobSha": "ef8efad6a91bfe840807d449d477a51e0c1b018b"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0019",
+          "bytes": 8000000,
+          "sha256": "59048bcfc7e5567dde1bc42bf6b0b5ab9f3148e2a394d21b016f4da16d879c94",
+          "gitBlobSha": "2e80bb4dd0d79a6fea336d062ef24c52517ba5aa"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0020",
+          "bytes": 8000000,
+          "sha256": "77e9c68e85062aeacaa241a40e218fdfdb0fd14ad202f3dcddd4e065c739ddc0",
+          "gitBlobSha": "bea8ec0ae0f4fb7b0e042f040a906a6e751539dc"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0021",
+          "bytes": 8000000,
+          "sha256": "f93436aa0034c068875fc0271eb5d3eacffb99fe1f81a5058a4409834d3f79f3",
+          "gitBlobSha": "e86ea8355373213ba63959f6e3634ad7ac252923"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0022",
+          "bytes": 8000000,
+          "sha256": "4aa23a4b0677774d79a61b38f55315c2ca0050c1b94e60bba97fe7640ac1eeda",
+          "gitBlobSha": "b98bfe38c51f9f421adee1ee4f2eea54019b9669"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0023",
+          "bytes": 8000000,
+          "sha256": "7109e2b8dacbc4c74f654499c1f3e8c4748752e83c5f96ff792ac7094823567f",
+          "gitBlobSha": "d4ed0c4c3e3f10de4fe773e7c6435ed31d17c32b"
+        },
+        {
+          "filename": "evaluation-union-961-1024.tar.gz.part0024",
+          "bytes": 5069127,
+          "sha256": "76715fddd79a00254211b66a2b653701df0cdc581a12453e2c80a14e73cd65c0",
+          "gitBlobSha": "fdef76dbb11ac9b6202b7f06ccb72bc53ee86b1c"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "status": "RAW_PUBLICATION_IN_PROGRESS",
   "sourceCheckpoint": "291026df7effde2b24c8d36a1273b65295a41245",
   "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
-  "checkpointedTasks": 1088,
+  "checkpointedTasks": 1152,
   "plannedTasks": 4224,
   "batches": [
     {
@@ -197,6 +197,18 @@
       "remainingRange": [
         897,
         960
+      ]
+    },
+    {
+      "batch": 17,
+      "path": "evaluation/robustness-attempt-001/recovered-batches/b017/",
+      "tasks": 64,
+      "taskIdsSha256": "d72b4a4965c3016c9ed76aed0205636038191ef66ee7b2e5b10be94a7cf49a22",
+      "archiveSha256": "bfa727307e3bcd9e6e866d21fa68ca517ba852c1ebbb315dce2c4277065c8c65",
+      "origin": "qualified-terminal-union",
+      "remainingRange": [
+        961,
+        1024
       ]
     }
   ],

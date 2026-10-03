@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-03T10:50:33.390Z",
+  "status": "COMPLETE_NEEDS_INDEPENDENT_ANALYSIS",
+  "error": null,
+  "resources": {
+    "cpuSeconds": 128579.67,
+    "measuredCpuSeconds": 104880.44662999999,
+    "capacityReservationSeconds": 128579.67,
+    "rawBytes": 13365018228,
+    "parentCpuSeconds": 1727.93063,
+    "reapedChildrenCpuSeconds": 68224.74,
+    "liveChildrenCpuSeconds": 0,
+    "live": [],
+    "parentResourceUsage": {
+      "userCPUTime": 1116375369,
+      "systemCPUTime": 611555261,
+      "maxRSS": 376632,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 19236399,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 327640,
+      "fsWrite": 456648,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 180050,
+      "involuntaryContextSwitches": 835410
+    },
+    "historicalCpuUpperBoundSeconds": 34859.376,
+    "originalRawBytes": 2607024256,
+    "spawned": 3419,
+    "completedResume": 3419
+  },
+  "completed": 4224,
+  "total": 4224,
+  "accounting": "CPU enforcement is max(conditional 9 CPU whole-runtime elapsed reservation from original launch, historical reservation plus measured resumed parent and child CPU with tick margin). These two bounds are not added. Kernel reaped and live child CPU counted once. Hidden original worker extinction and global 8-worker/exactly-once-partial execution cannot be certified. Raw includes original partials and all resume raw. Terminal excludes final receipt/event/fsync and process exit overhead."
+}

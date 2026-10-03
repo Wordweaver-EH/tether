@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "approved": true,
+  "status": "FULL_UNION_INTEGRITY_APPROVED_FOR_SEPARATELY_RELEASED_QUALIFIED_ANALYSIS",
+  "reviewedAt": "2026-10-03T11:07:03.965Z",
+  "acceptedOriginal": 805,
+  "acceptedResume": 3419,
+  "acceptedUnion": 4224,
+  "completeSha256": "7f5843e0184b1fbcff1e5428131a41cea8fdaa62bbfb0e31f9e295bfc4cefd96",
+  "unionSha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c",
+  "originalManifestSha256": "d2b893529e153ef6a2479f0d53c947153b1ff399c76a76747f1661c70217d8fd",
+  "recoveryReleaseSha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "terminalExitAudit": {
+    "path": "/workspace/scratch/75679def3745/tether-evaluation-recovery/TERMINAL-EXIT-AUDIT-001.json",
+    "sha256": "8ba0693ac8a2d9b4a099d94310265081a1b3db5fa994f3e7d211a1d4a9d33f55"
+  },
+  "supervisorLogSha256": "ef079adcbeb3c840512b8689fb4a306d6a680387733ef0f01d8166db986c3933",
+  "auditSourceHashScope": "Scanner source created and finalized before shard launch; current source hash bound at finalization. No separate prelaunch source-hash receipt was written; tool history records source creation. Finalizer source prepared during raw audit before aggregation; no metrics called.",
+  "auditSources": [
+    {
+      "path": "audit-shard.mjs",
+      "sha256": "62a7c6ec48956d58bb8619191ee59fde2ee9a585c355daac9fc3c9e12cb26acd"
+    },
+    {
+      "path": "finalize-audit.mjs",
+      "sha256": "0d235e49fda02eeeae73eaf8a23a7e6d59064eea410af46a2eb83f831736a9e4"
+    }
+  ],
+  "shards": [
+    {
+      "path": "SHARD-0.json",
+      "sha256": "17fff21782aa7c727956e498553008fe31ef5bcde0c276aa984165ee40a80281",
+      "accepted": 1056,
+      "errors": 0
+    },
+    {
+      "path": "SHARD-1.json",
+      "sha256": "89fdf2f8447f66c76af678b54a3114ba9f3afd70cd81b7b7b10e31825cd13c81",
+      "accepted": 1056,
+      "errors": 0
+    },
+    {
+      "path": "SHARD-2.json",
+      "sha256": "2e187231b6832f16f2487a6d17d16a4935fee3e87d3f3b8a7026964a49497643",
+      "accepted": 1056,
+      "errors": 0
+    },
+    {
+      "path": "SHARD-3.json",
+      "sha256": "d7bda7bd62898ec988284ee257c58c955bc4515cec445893c266e80e3bae4271",
+      "accepted": 1056,
+      "errors": 0
+    }
+  ],
+  "checks": {
+    "rawPhysicalAndLogicalHashes": 4224,
+    "blockAndRecordSequenceProofs": 4224,
+    "frozenProofStructureChecks": 4224,
+    "exactTaskArmConfigProvenance": 4224,
+    "rawTerminalReceiptConsistency": 4224,
+    "outputMemoryHashes": 2640,
+    "allFrozenInputAndCrossOriginMemoryLinks": "PASS",
+    "genuineResumedIpcExitAndStartChecks": 3419,
+    "originalFullInventoryFiles": 2131,
+    "originalImmutable": "PASS",
+    "resumedInventoryMetadataStable": "PASS",
+    "sourceLockInputs": 150,
+    "acceptedRawBytes": 13357437454,
+    "excludedOriginalPartialBytes": 7580774,
+    "cumulativeRawBytes": 13365018228,
+    "aggregateMetricFunctionsCalled": false,
+    "controllersRun": false
+  },
+  "runtimeMetadata": {
+    "byOrigin": {
+      "original": [
+        {
+          "runtime": {
+            "node": "v24.19.0",
+            "platform": "linux",
+            "arch": "x64",
+            "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+            "logicalCpuCount": 9,
+            "execArgv": []
+          },
+          "count": 805
+        }
+      ],
+      "resume": [
+        {
+          "runtime": {
+            "node": "v24.19.0",
+            "platform": "linux",
+            "arch": "x64",
+            "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+            "logicalCpuCount": 9,
+            "execArgv": []
+          },
+          "count": 3419
+        }
+      ]
+    },
+    "recordedMetadataIdenticalAcrossOrigins": true,
+    "interpretation": "No difference detected in recorded Node/platform/architecture/CPU metadata. This does not certify identical physical allocation, contention, scheduling or cross-namespace capacity; interrupted/resumed execution remains a timing/compute-comparability qualification."
+  },
+  "excludedOriginalPartials": [
+    {
+      "taskId": "evaluation-c2-arena-new-obstacles-conventional-useful-2x-s0-b1",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "scientificSampleIncluded": false
+    },
+    {
+      "taskId": "evaluation-c2-arena-new-obstacles-conventional-useful-2x-s1-b0",
+      "sha256": "ca478b9a0b07badbdc06342bf68403f679ec1f9c6c0d96df2819d7ffe3c83997",
+      "bytes": 1413132,
+      "scientificSampleIncluded": false
+    },
+    {
+      "taskId": "evaluation-c2-arena-new-obstacles-conventional-useful-4x-s0-b0",
+      "sha256": "22bc2d0eaf3cd87baf2fe1670c7c0161c1ba1dc439a0e09806641ed04c748cba",
+      "bytes": 848440,
+      "scientificSampleIncluded": false
+    },
+    {
+      "taskId": "evaluation-c2-arena-new-obstacles-conventional-useful-4x-s1-b0",
+      "sha256": "677095932ce2de822647a786b8964e5f682125d6be9cb42b0dc69298cb5194ff",
+      "bytes": 841517,
+      "scientificSampleIncluded": false
+    },
+    {
+      "taskId": "evaluation-c2-spear-minus25-mind-fixed-metacog-s0-b1",
+      "sha256": "842e8c75e115405760aa82bef9842bfe255478f605d0ddfc93eacf35ad939312",
+      "bytes": 3473480,
+      "scientificSampleIncluded": false
+    },
+    {
+      "taskId": "evaluation-c2-spear-minus25-mind-learning-frozen-s0-b1",
+      "sha256": "8e777205188ee6893f018bed42bcec4c09ada4f99d53d0b0ce5bb25245b06ce9",
+      "bytes": 778641,
+      "scientificSampleIncluded": false
+    },
+    {
+      "taskId": "evaluation-c2-spear-minus25-mind-learning-frozen-s1-b1",
+      "sha256": "23cc0f4b56e3dc7836be5086cf2ed7f9ad251bdbcc1743187e969daeea300ad1",
+      "bytes": 225564,
+      "scientificSampleIncluded": false
+    }
+  ],
+  "qualifications": [
+    "Original attempt interruption is preserved; no original COMPLETE/finalization fabricated",
+    "Original805 terminal child IPC, parent terminal CPU and partial-worker total CPU remain unavailable, not zero; conditional capacity allowance is not measured actual CPU",
+    "Original process extinction and global eight-worker/exactly-once-partial execution remain unproven",
+    "Nine-CPU shared aggregate capacity assumption and finite watchdog latency remain as reviewed; no resource equivalence claim is made",
+    "Frozen compact proof verification establishes retained structure and integrity, not replayed physics or reconstruction of omitted individual comparison digests",
+    "This validates integrity/provenance/proof/memory/terminal evidence only, not aggregate scientific results; qualified adapter must still decode/extract frozen scientific diagnostics and receive explicit root release"
+  ]
+}

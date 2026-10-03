@@ -1,0 +1,58 @@
+{
+  "status": "GENUINE_RECOVERY_TERMINAL_EVIDENCE_NOT_SCIENTIFIC_VALIDATION",
+  "acceptedOriginal": 805,
+  "acceptedResume": 3419,
+  "acceptedUnion": 4224,
+  "files": [
+    {
+      "path": "tether-evaluation-recovery/TERMINAL-EXIT-AUDIT-001.json",
+      "bytes": 1391,
+      "sha256": "8ba0693ac8a2d9b4a099d94310265081a1b3db5fa994f3e7d211a1d4a9d33f55"
+    },
+    {
+      "path": "tether-evaluation-recovery/resume-attempt-001/COMPLETE.json",
+      "bytes": 1587,
+      "sha256": "7f5843e0184b1fbcff1e5428131a41cea8fdaa62bbfb0e31f9e295bfc4cefd96"
+    },
+    {
+      "path": "tether-evaluation-recovery/resume-attempt-001/UNION.json",
+      "bytes": 5424192,
+      "sha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c"
+    },
+    {
+      "path": "tether-evaluation-recovery/resume-attempt-001/SUPERVISOR.jsonl",
+      "bytes": 58379736,
+      "sha256": "ef079adcbeb3c840512b8689fb4a306d6a680387733ef0f01d8166db986c3933"
+    },
+    {
+      "path": "tether-evaluation-recovery/RECOVERY-RELEASE-001.json",
+      "bytes": 206113,
+      "sha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc"
+    },
+    {
+      "path": "tether-evaluation-recovery/RECOVERY-RELEASE-001.json.consumed.json",
+      "bytes": 309,
+      "sha256": "09c926b88f93b8bdfc961c3dff38bb44d18222701e6a02ef7ccb06d7e7bd4ec3"
+    },
+    {
+      "path": "tether-evaluation-recovery/LAUNCH-RECEIPT-001.json",
+      "bytes": 706,
+      "sha256": "b3fd3d4667bf04287ed584cd306b7f434fb63e3d510995cff3e85651bd8a5b79"
+    },
+    {
+      "path": "tether-evaluation-recovery/supervisor.mjs",
+      "bytes": 22054,
+      "sha256": "7e1250703ab1f2059cebe15806485682c0828b00464569aedf84112d2a45a1c5"
+    }
+  ],
+  "scope": "Hashes only for large union, supervisor log and release; raw records excluded. Genuine separate recovery COMPLETE preserved. Original interrupted execution has no fabricated completion.",
+  "qualification": "Shared aggregate capacity <=9 CPUs assumed, original process extinction/global8-worker/exactly-once partial execution uncertified; historical exact full-phase CPU unavailable; independent audit and frozen analysis required.",
+  "rawGitBacklog": {
+    "originalEvaluationPublished": 128,
+    "originalEvaluationAccepted": 805,
+    "resumedEvaluationPublished": 0,
+    "resumedEvaluationAccepted": 3419,
+    "searchPublished": 448,
+    "searchAccepted": 512
+  }
+}

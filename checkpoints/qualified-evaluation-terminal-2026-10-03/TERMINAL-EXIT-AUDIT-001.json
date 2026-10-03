@@ -1,0 +1,35 @@
+{
+  "status": "VERIFIED_SUCCESSFUL_PROCESS_EXIT",
+  "exitCode": 0,
+  "signal": null,
+  "signalInterpretation": "Successful exit_code=0 returned by execution tool; no signal termination reported. Raw tool response preserved below.",
+  "observationSource": "execution-tool-terminal-response",
+  "sessionId": 27671,
+  "observedAt": "2026-10-03T10:51:08.913386+00:00",
+  "toolCall": {
+    "name": "exec_command.write_stdin",
+    "arguments": {
+      "session_id": 27671,
+      "chars": "",
+      "yield_time_ms": 20000,
+      "max_output_tokens": 3000
+    }
+  },
+  "toolResponse": {
+    "chunk_id": "6e2f43",
+    "wall_time_seconds": 8.954085606,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completeSha256": "7f5843e0184b1fbcff1e5428131a41cea8fdaa62bbfb0e31f9e295bfc4cefd96",
+  "unionSha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c",
+  "supervisorLogSha256": "ef079adcbeb3c840512b8689fb4a306d6a680387733ef0f01d8166db986c3933",
+  "recoveryReleaseSha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc",
+  "resume": "/workspace/scratch/75679def3745/tether-evaluation-recovery/resume-attempt-001",
+  "executionCompletedAt": "2026-10-03T10:50:33.390Z",
+  "acceptedOriginal": 805,
+  "acceptedResume": 3419,
+  "acceptedUnion": 4224,
+  "scientificValidationStatus": "INDEPENDENT_UNION_AUDIT_AND_FROZEN_ANALYSIS_REQUIRED"
+}

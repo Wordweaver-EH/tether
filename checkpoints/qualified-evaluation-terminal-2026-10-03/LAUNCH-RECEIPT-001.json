@@ -1,0 +1,20 @@
+{
+  "sessionId": 27671,
+  "observedAt": "2026-10-03T08:22:46.091236+00:00",
+  "releaseSha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc",
+  "supervisorSha256": "7e1250703ab1f2059cebe15806485682c0828b00464569aedf84112d2a45a1c5",
+  "output": "/workspace/scratch/75679def3745/tether-evaluation-recovery/resume-attempt-001",
+  "startEvents": [
+    {
+      "at": "2026-10-03T08:22:32.361Z",
+      "type": "start",
+      "pid": 2,
+      "total": 4224,
+      "acceptedOriginal": 805,
+      "unfinished": 3419,
+      "deadline": "2026-10-03T14:52:26.760Z",
+      "capacityDeadline": "2026-10-03T10:52:26.760Z"
+    }
+  ],
+  "status": "LAUNCH_REQUESTED_PREFLIGHT_OR_EXECUTION_IN_PROGRESS"
+}

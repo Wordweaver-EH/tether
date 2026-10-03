@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-4x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-4x-g0-c8-k0-o0-s0",
+    "selection-conventional-useful-4x-g0-c8-k0-o0-s1",
+    "selection-conventional-useful-4x-g0-c8-k0-o1-s0",
+    "selection-conventional-useful-4x-g0-c8-k0-o1-s1",
+    "selection-conventional-useful-4x-g0-c8-k0-o2-s0",
+    "selection-conventional-useful-4x-g0-c8-k0-o2-s1",
+    "selection-conventional-useful-4x-g0-c8-k0-o3-s0",
+    "selection-conventional-useful-4x-g0-c8-k0-o3-s1",
+    "selection-conventional-useful-4x-g0-c8-k1-o0-s0",
+    "selection-conventional-useful-4x-g0-c8-k1-o0-s1",
+    "selection-conventional-useful-4x-g0-c8-k1-o1-s0",
+    "selection-conventional-useful-4x-g0-c8-k1-o1-s1",
+    "selection-conventional-useful-4x-g0-c8-k1-o2-s0",
+    "selection-conventional-useful-4x-g0-c8-k1-o2-s1",
+    "selection-conventional-useful-4x-g0-c8-k1-o3-s0",
+    "selection-conventional-useful-4x-g0-c8-k1-o3-s1",
+    "selection-conventional-useful-4x-g0-c8-k2-o0-s0",
+    "selection-conventional-useful-4x-g0-c8-k2-o0-s1",
+    "selection-conventional-useful-4x-g0-c8-k2-o1-s0",
+    "selection-conventional-useful-4x-g0-c8-k2-o1-s1",
+    "selection-conventional-useful-4x-g0-c8-k2-o2-s0",
+    "selection-conventional-useful-4x-g0-c8-k2-o2-s1",
+    "selection-conventional-useful-4x-g0-c8-k2-o3-s0",
+    "selection-conventional-useful-4x-g0-c8-k2-o3-s1",
+    "selection-conventional-useful-4x-g0-c8-k3-o0-s0",
+    "selection-conventional-useful-4x-g0-c8-k3-o0-s1",
+    "selection-conventional-useful-4x-g0-c8-k3-o1-s0",
+    "selection-conventional-useful-4x-g0-c8-k3-o1-s1",
+    "selection-conventional-useful-4x-g0-c8-k3-o2-s0",
+    "selection-conventional-useful-4x-g0-c8-k3-o2-s1",
+    "selection-conventional-useful-4x-g0-c8-k3-o3-s0",
+    "selection-conventional-useful-4x-g0-c8-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 741,
+      "sha256": "3e4a763f9dc2173e68dfaf97b437ac2a2cbcf295eaace4c6e73507c52f58f700"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o0-s0.json": {
+      "bytes": 2166,
+      "sha256": "6c9ac0a0744318d96f40997bc49e2828055364aab4efeb110ece0896f539a352"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o0-s1.json": {
+      "bytes": 2168,
+      "sha256": "e6c42c455e0f2165f1d39fe32a7527d7e370d51cbe81bb8140f86abe8f690e03"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o1-s0.json": {
+      "bytes": 2169,
+      "sha256": "9ce504b42012d0a97ec5f2c1a3c285f89f7abc1320c1a18fb8b430eaab1a2fdd"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o1-s1.json": {
+      "bytes": 2165,
+      "sha256": "fcc3321dea489adae1db062a5e301cbc6b6ef9e151a6ffd5a7c1258b845d0293"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o2-s0.json": {
+      "bytes": 4967,
+      "sha256": "89716cea439b0bec17a55026a83ee3997c3fb0dc360095ccc24da482c2415b26"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o2-s1.json": {
+      "bytes": 5690,
+      "sha256": "96316d32a49561ff3d61232640ddd1367e81329bc9b30dd0012296c679bd8c80"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o3-s0.json": {
+      "bytes": 2164,
+      "sha256": "60b28678bbd0b55f98cc666c8aa66c4917daa64aad3a3a35b963aafe08304c80"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k0-o3-s1.json": {
+      "bytes": 2163,
+      "sha256": "23ed277b475457548f0d37c7f6814465a7e68eb543adcc3e4b8f0b202dd46e58"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o0-s0.json": {
+      "bytes": 2847,
+      "sha256": "cb640e32b55c5c2f163b4efe269666348eb49bba23760b01c512b6d808192bd9"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o0-s1.json": {
+      "bytes": 2167,
+      "sha256": "dbd635d982a5684cda47e23d3ef3ae22a8999ea2835d93130ca72534bcee6fac"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o1-s0.json": {
+      "bytes": 2169,
+      "sha256": "6ed50dd42a360afffbb83825c276124101516765518f744558703fc06a666afb"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o1-s1.json": {
+      "bytes": 2169,
+      "sha256": "defc02014513acf096ca386c3e7991dac3d3c15b1fe74538e9ecd919e4008cfa"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o2-s0.json": {
+      "bytes": 5668,
+      "sha256": "e02a305472f161ba11e6b5afc397f736b3781ed05d996654718d86fcedc8d898"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o2-s1.json": {
+      "bytes": 6762,
+      "sha256": "d76b31483315ee8a5d038c4b819821221efee7291783fe27dc94d78b392e7f40"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o3-s0.json": {
+      "bytes": 2505,
+      "sha256": "78a42332ca992bd18d477a81ead042f13aa62342c4a960ccd6b9b8b4cb3c74b0"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k1-o3-s1.json": {
+      "bytes": 2164,
+      "sha256": "9ca630875d2e062d5c1c336ca22cb01d7ff8db80c7451b4c7ea91452e425c537"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o0-s0.json": {
+      "bytes": 2163,
+      "sha256": "c1fa1966a295bc51c1659bcbb7ae4b7db148bf9cb0af48c5452ee85491b4e766"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o0-s1.json": {
+      "bytes": 2162,
+      "sha256": "8064ca6e6ee4ea845a8811903efaa44fc1b221c49ff2e70bf124c22ffd156a9c"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o1-s0.json": {
+      "bytes": 2510,
+      "sha256": "2941e8f6aee7295b683f05ac21b1855524941a606df5daacc62337f0cdb36810"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o1-s1.json": {
+      "bytes": 2170,
+      "sha256": "f61cbb4340446dd9af670754f53f6baf5d41c91927ae7e9f61a7bd3f02169263"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o2-s0.json": {
+      "bytes": 9468,
+      "sha256": "e53fc700f90def42db70133d29b46745614e9a3eabf89a386d120d68ac1aadd0"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o2-s1.json": {
+      "bytes": 4969,
+      "sha256": "df2bbf5868d7c28a8685e14c13af404bd1f589d46a9c7e59fe82b94285a98ea6"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o3-s0.json": {
+      "bytes": 3205,
+      "sha256": "864068613eeb58fc56991ffe8ff9778d5fba7777fe886d94daaa268bb1915c5e"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k2-o3-s1.json": {
+      "bytes": 2503,
+      "sha256": "61e7426fe95ca6d59b95adf36bc7edadf4241ce1d280043cf8aa437749aabdcd"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o0-s0.json": {
+      "bytes": 2508,
+      "sha256": "e236b527b310c5fbffcdb0b6d158a35fff4d7bee72a74b701a84aeb5800f025f"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o0-s1.json": {
+      "bytes": 2505,
+      "sha256": "e70e4922a2f878edd18e1ef3e54b841d18ed21cb3640d97dc205151a47938946"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o1-s0.json": {
+      "bytes": 2513,
+      "sha256": "8bb69a48cb0f6e6a16d8e48ecdb79f8f93dff10cc83bfe28c410750d4b775ac1"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o1-s1.json": {
+      "bytes": 2168,
+      "sha256": "fdc3f10969d41bfa0e5e0e4ec0551fcf3301120ef9b5a9b59280a85f32c733a0"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o2-s0.json": {
+      "bytes": 6035,
+      "sha256": "8412ee739c82a6500c264d02b41495310277843231cc093aa086031b1589f19b"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o2-s1.json": {
+      "bytes": 11992,
+      "sha256": "71367ea59d8293cdd8ab52fa17eb035184bb7509d8817f5402872a0fbac3450d"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o3-s0.json": {
+      "bytes": 2507,
+      "sha256": "9ae0c4440d561c1c417834846737f4e6bc0f91d02db94b59ccef6b3b585a135d"
+    },
+    "raw/selection-conventional-useful-4x-g0-c8-k3-o3-s1.json": {
+      "bytes": 2859,
+      "sha256": "ed2ffa796d67b71fb53d54d8be2a2d49cd5bee50113c965ef1de780289cdbe05"
+    }
+  }
+}

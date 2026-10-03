@@ -1,0 +1,7 @@
+{
+  "archive": "synthetic-feasibility-complete.tar.gz",
+  "bytes": 64856,
+  "sha256": "bc2f8771d4b7ab11fddd4536d7c5258e4346c80e5ae3d1281af3304bae99df08",
+  "plannerSha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0",
+  "status": "One completed synthetic feasibility pass; independent static source/evidence review passed; not gameplay or target-ratio calibration"
+}

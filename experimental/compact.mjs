@@ -6,7 +6,7 @@ export function createCompactor({initialSupport=null}={}){
  const pendingId=p=>sha256([task.id,task.seat,p.key,p.tactic,p.time,Math.round(p.time*120)]);
  return {transform(record){
   const rows=[],definitions=[];
-  const ref=(kind,value)=>{if(value===undefined)return undefined;if(value===null)return null;const contentHash=sha256([kind,value]);if(!dictionaries.has(contentHash)){const id=dictionaries.size;dictionaries.set(contentHash,id);definitions.push({id,kind,contentHash,value});}return dictionaries.get(contentHash);};
+  const ref=(kind,value)=>{if(value===undefined)return undefined;if(value===null)return null;const identity=serialize([kind,value]);if(!dictionaries.has(identity)){const id=dictionaries.size,contentHash=sha256(identity);dictionaries.set(identity,id);definitions.push({id,kind,contentHash,value});}return dictionaries.get(identity);};
   if(record.type==='task-start'){task=record.task;if(record.initialLearningSupport)support=structuredClone(record.initialLearningSupport);return [{...record,schemaVersion:2,initialLearningSupport:support,retention:'compact-v2; full environment reconstructible from both-seat actual commands; internal rollout trajectories omitted'}];}
   if(record.type!=='decision')return [record];
   if(!task)throw new Error('task-start required before decisions');

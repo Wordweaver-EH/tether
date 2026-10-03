@@ -1,0 +1,13 @@
+{
+  "status": "STOPPED_BEFORE_RELEASE_CONSUMPTION_AND_TASK_DECODING",
+  "observedAt": "2026-10-03T11:08:51.930926+00:00",
+  "sessionId": 88893,
+  "exitCode": 1,
+  "releaseSha256": "df95973eabfce2cb5fd56c2c7e4f18c084313cd843856980fafa436a23c6beca",
+  "adapterManifestSha256": "87108163a3845c8f3b0dcc1d07408ad8e1bc13fd2a2d582acdf21eaf112e39ed",
+  "logSha256": "c10fe96372c2849f1eaecd731aff7eddef6cd3be2f86c6375820c8845b2c1327",
+  "releaseConsumed": false,
+  "outputDirectoryExists": false,
+  "error": "training snapshot hash mismatch",
+  "diagnosis": "Inherited frozen top-level guard selects lexical conventional task with null snapshot for each cluster. All 220 mind-arm tasks per cluster match frozen reference hashes in all 12 clusters. No metrics computed."
+}

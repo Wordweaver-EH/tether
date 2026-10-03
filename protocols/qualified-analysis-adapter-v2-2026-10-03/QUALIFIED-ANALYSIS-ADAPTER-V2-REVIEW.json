@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "approved": true,
+  "approvalScope": "Narrow startup-reference guard correction plus prior unchanged qualified-adapter controls. Infrastructure approval only; fresh root release and Git verification required before rerun.",
+  "status": "QUALIFIED_ADAPTER_V2_NARROW_FIX_APPROVED",
+  "reviewedAt": "2026-10-03T11:11:11.541143+00:00",
+  "adapterManifestSha256": "016816f7077804e78c1b640bd414734729d4bb40427e3533a85d2b46056a0ae6",
+  "frozenAnalysisManifestSha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "predecessorAdapterManifestSha256": "87108163a3845c8f3b0dcc1d07408ad8e1bc13fd2a2d582acdf21eaf112e39ed",
+  "predecessorReview": {
+    "path": "/workspace/scratch/75679def3745/tether-evaluation-recovery-review/QUALIFIED-ANALYSIS-ADAPTER-REVIEW.json",
+    "sha256": "14be9f20bb001f3f74b49aa54d5882ac96e6c540941b266df4dac1a7c4cbf23a"
+  },
+  "startupFailureEvidence": {
+    "stopPath": "/workspace/scratch/75679def3745/tether-qualified-analysis/ANALYSIS-STOP-001.json",
+    "stopSha256": "b07e6796072676be3d8ab3bd85a9ec809ccbdbd6393dfa71c0ee5f791c681057",
+    "logSha256": "c10fe96372c2849f1eaecd731aff7eddef6cd3be2f86c6375820c8845b2c1327",
+    "failure": "training snapshot hash mismatch at pre-consumption reference guard",
+    "releaseConsumed": false,
+    "outputDirectoryExists": false,
+    "taskDecodingPerformed": false,
+    "scientificMetricsComputed": false,
+    "scope": "Preflight had read infrastructure/terminal/source metadata and hashed input files. Stack and unchanged code order establish failure before task decoding, score extraction or aggregation."
+  },
+  "narrowChange": {
+    "oldGuard": "First lexical task per cluster snapshot equality; selects conventional task whose snapshot is intentionally null",
+    "newGuard": "Every mind task in each referenced cluster must match frozen training snapshot hash; conventional snapshots must be null; every training cluster must have a mind task",
+    "unchanged": [
+      "scientific modules",
+      "task set/order",
+      "training reference values",
+      "bootstrap seed/draws/order",
+      "statistical weights/corrections/endpoints",
+      "score/calibration/native formulas",
+      "raw/proof/memory validation",
+      "qualified resource null accounting",
+      "terminal/source/union release gates"
+    ],
+    "sourceDelta": [
+      "gate.mjs adds validateTrainingSnapshots only",
+      "analyze-qualified.mjs imports/calls new guard and removes flawed first-task guard",
+      "adapter.test.mjs adds metadata-only positive/negative regression",
+      "README/template/manifest/test-results reflect separate v2 directory"
+    ]
+  },
+  "independentTests": [
+    {
+      "command": "node --test tether-qualified-analysis-v2/adapter.test.mjs",
+      "passed": 32,
+      "failed": 0
+    },
+    {
+      "command": "node --test tether-robustness-shifts/repo-evaluation/experimental/analysis/*.test.mjs",
+      "passed": 23,
+      "failed": 0
+    }
+  ],
+  "sourceIntegrity": {
+    "v1ManifestAndAllBoundFilesUnchanged": true,
+    "v2AllManifestHashesVerified": true,
+    "frozenScientificManifestAndAllFilesUnchanged": true
+  },
+  "qualifications": [
+    "No real task decoding or aggregate analysis performed to review this correction",
+    "Old v1 evidence and stopped release remain preserved; v2 requires new source-bound review/release",
+    "All original interruption, missing historical CPU, conditional shared-capacity and runtime-comparability qualifications continue unchanged"
+  ],
+  "outstandingTechnicalBlockers": []
+}

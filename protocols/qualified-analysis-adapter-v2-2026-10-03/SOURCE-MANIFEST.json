@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "status": "INFRASTRUCTURE_ONLY_AWAITING_RENEWED_REVIEW_AND_ROOT_RELEASE",
+  "executionAuthority": false,
+  "studyOutcomesAccessed": false,
+  "predecessorAdapterManifestSha256": "87108163a3845c8f3b0dcc1d07408ad8e1bc13fd2a2d582acdf21eaf112e39ed",
+  "frozenAnalysisManifestSha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632",
+  "change": "Reference guard checks every mind snapshot and requires conventional snapshots null; no scientific changes",
+  "tests": {
+    "synthetic": 32,
+    "passed": 32,
+    "failed": 0
+  },
+  "files": [
+    {
+      "path": "ANALYSIS-RELEASE-TEMPLATE.json",
+      "bytes": 1010,
+      "sha256": "5933e86c44b32e0f39ff43b60afb6ed734a1a6f8f27f7e40f47ac7438b4864d5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6592,
+      "sha256": "560b2d5bfc855d2741477cd5efd2a93e6359e0a3c442d2ceaec2652af6e8d665"
+    },
+    {
+      "path": "SYNTHETIC-TEST-RESULTS.txt",
+      "bytes": 2044,
+      "sha256": "7e80e5e35257f05e67a2119bca570361e50dbd4e7afe253f74ace0dd9e52fc7b"
+    },
+    {
+      "path": "adapter.test.mjs",
+      "bytes": 13588,
+      "sha256": "1c97f3786e90a1e938d476b8a2277c3b31fd55a92d82907755d6b9fbac007e5f"
+    },
+    {
+      "path": "analyze-qualified.mjs",
+      "bytes": 13628,
+      "sha256": "f8feda3f9d6ed6b49b754069c2583a39f3b2e1687c01464cc17acb0987bc7b78"
+    },
+    {
+      "path": "gate.mjs",
+      "bytes": 17188,
+      "sha256": "2cabc87020c2dbde6540d36fd7b4b03fba7ff8b6e4dce9e954c5fbaac8931f55"
+    },
+    {
+      "path": "interface-resources.mjs",
+      "bytes": 1334,
+      "sha256": "010af7b72bdd9e7db6b9a2d79e2327a3af2a8201886c2bdbea62ac803c4ba706"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+file:///workspace/scratch/75679def3745/tether-qualified-analysis/gate.mjs:14
+export const assert=(ok,message)=>{if(!ok)throw Error(message);};
+                                                ^
+
+Error: training snapshot hash mismatch
+    at assert (file:///workspace/scratch/75679def3745/tether-qualified-analysis/gate.mjs:14:49)
+    at runQualifiedAnalysis (file:///workspace/scratch/75679def3745/tether-qualified-analysis/analyze-qualified.mjs:39:237)
+    at async file:///workspace/scratch/75679def3745/tether-qualified-analysis/analyze-qualified.mjs:98:29
+
+Node.js v24.19.0

@@ -1,0 +1,40 @@
+✔ partition rejects duplicate (1.139716ms)
+✔ partition rejects unknown (0.182815ms)
+✔ partition rejects missing (0.136485ms)
+✔ partition rejects substitution (0.120502ms)
+✔ partition rejects overlap (0.124988ms)
+✔ partition rejects unknown origin (0.127231ms)
+✔ exact partition succeeds (0.251679ms)
+✔ genuine terminal and process exit required (0.211478ms)
+✔ terminal rejects failure (0.17936ms)
+✔ terminal rejects uncertain (0.189025ms)
+✔ terminal rejects nonzero exit (0.160682ms)
+✔ terminal rejects missing exit (0.153902ms)
+✔ terminal rejects terminal mismatch (0.111487ms)
+✔ terminal rejects missing COMPLETE (0.075594ms)
+✔ historical terminal unavailable remains null through frozen JSON serializer (0.262786ms)
+✔ historical invented CPU rejected (0.136636ms)
+✔ genuine resumed terminal IPC retained (0.35912ms)
+✔ resumed resource rejects missing terminal (0.21246ms)
+✔ resumed resource rejects receipt substitution (0.108013ms)
+✔ resumed resource rejects failed child (0.093942ms)
+✔ resumed resource rejects stale exit (0.087462ms)
+✔ resumed resource rejects wrong PID (0.085379ms)
+✔ resumed resource rejects altered union resource (0.183627ms)
+✔ cross-origin bout linkage succeeds and is session-specific (0.199921ms)
+✔ memory predecessor, initial snapshot and frozen invariants cannot be weakened (0.137007ms)
+✔ artifact path escapes, source substitution and symlinks fail (0.765603ms)
+✔ tampered evidence hash fails (1.098584ms)
+✔ absent explicit root release blocks before attempt access (0.714385ms)
+✔ frozen interface resource expression byte-identical (0.477509ms)
+✔ resource separation has no fake combined total or partial CPU (0.453303ms)
+✔ recovery metadata and null historical resource cannot change frozen scientific outputs (393.201028ms)
+✔ training reference validates every mind task despite conventional-first lexical order (30.799052ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 568.850762

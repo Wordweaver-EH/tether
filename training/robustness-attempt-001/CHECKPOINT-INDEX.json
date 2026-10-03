@@ -104,7 +104,67 @@
       "archiveSha256": "4d5fdb82e56b7727e1f687ebc9431478cd6f92eb42f62ff10a6b7e9cce745c53",
       "archiveBytes": 55170,
       "path": "batches/conventional-useful-2x-generation-0"
+    },
+    {
+      "id": "conventional-useful-2x-generation-1",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 1,
+      "tasks": 128,
+      "archiveSha256": "b89ba67700e3e5b88231de7fe6c5057749ab3905823978dedd125f2afbbdf7e5",
+      "archiveBytes": 58579,
+      "path": "batches/conventional-useful-2x-generation-1"
+    },
+    {
+      "id": "conventional-useful-2x-generation-2",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 2,
+      "tasks": 128,
+      "archiveSha256": "0cf5d151288d3e580f12677b626cd1baddf4ec4d4263a2e227d1e8612fa32295",
+      "archiveBytes": 66965,
+      "path": "batches/conventional-useful-2x-generation-2"
+    },
+    {
+      "id": "conventional-useful-2x-generation-3",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 3,
+      "tasks": 128,
+      "archiveSha256": "3bd841935e8596cb0162376136bbbacd4304df774d1a1b83016f2fe6a21579bf",
+      "archiveBytes": 65434,
+      "path": "batches/conventional-useful-2x-generation-3"
+    },
+    {
+      "id": "conventional-useful-2x-generation-4",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 4,
+      "tasks": 128,
+      "archiveSha256": "5d1f010a5ca8f09ae26c52c055b6b5986e8be4ed73c2916e96b54f3c6abde01f",
+      "archiveBytes": 51128,
+      "path": "batches/conventional-useful-2x-generation-4"
+    },
+    {
+      "id": "conventional-useful-2x-generation-5",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 5,
+      "tasks": 128,
+      "archiveSha256": "0140f90b22309446f95fb89332d58919601a2fb72e6c97272558d3b4ceb40143",
+      "archiveBytes": 50045,
+      "path": "batches/conventional-useful-2x-generation-5"
+    },
+    {
+      "id": "conventional-useful-2x-generation-6",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 6,
+      "tasks": 128,
+      "archiveSha256": "158166aadb1b92e79f78fdc4ec8602fc74429ac9d98801e5e5896b89b9aa78c2",
+      "archiveBytes": 56355,
+      "path": "batches/conventional-useful-2x-generation-6"
     }
   ],
-  "completedTaskRowsArchived": 1408
+  "completedTaskRowsArchived": 2176
 }

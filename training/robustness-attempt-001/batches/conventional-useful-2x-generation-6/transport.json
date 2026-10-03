@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "task-results.tar.gz",
+      "bytes": 56355,
+      "sha256": "158166aadb1b92e79f78fdc4ec8602fc74429ac9d98801e5e5896b89b9aa78c2",
+      "parts": [
+        {
+          "filename": "task-results.tar.gz.part01",
+          "bytes": 56355,
+          "sha256": "158166aadb1b92e79f78fdc4ec8602fc74429ac9d98801e5e5896b89b9aa78c2"
+        }
+      ]
+    }
+  ]
+}

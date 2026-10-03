@@ -1,0 +1,2394 @@
+{
+  "format": 1,
+  "status": "IMMUTABLE_TERMINAL_UNION_TASK_BATCH",
+  "archiveName": "evaluation-union-321-384.tar.gz",
+  "phase": "evaluation",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "fullUnionReviewSha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c",
+  "unionSha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c",
+  "remoteExclusionReceiptSha256": "0c6ace790469b9cac38b516013045c1a3f1c3d526c92b40ef280ca04d42f1ae9",
+  "fixedOrder": "frozen EVALUATION-TASKS.json order, excluding remote128 IDs",
+  "remainingTaskIdsSha256": "b54a310372e1e9a3a4015b1b374b65e5be927a893436c2afb873fe03cb3f8d63",
+  "remainingRange": [
+    321,
+    384
+  ],
+  "taskIds": [
+    "evaluation-c1-spear-minus25-mind-full-s0-b0",
+    "evaluation-c1-spear-minus25-mind-full-s0-b1",
+    "evaluation-c1-spear-minus25-mind-full-s1-b0",
+    "evaluation-c1-spear-minus25-mind-full-s1-b1",
+    "evaluation-c1-spear-minus25-mind-no-novelty-s0-b0",
+    "evaluation-c1-spear-minus25-mind-no-novelty-s0-b1",
+    "evaluation-c1-spear-minus25-mind-no-novelty-s1-b0",
+    "evaluation-c1-spear-minus25-mind-no-novelty-s1-b1",
+    "evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0",
+    "evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1",
+    "evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0",
+    "evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1",
+    "evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0",
+    "evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1",
+    "evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0",
+    "evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1",
+    "evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0",
+    "evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1",
+    "evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0",
+    "evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1",
+    "evaluation-c1-spear-minus25-conventional-s0-b0",
+    "evaluation-c1-spear-minus25-conventional-s0-b1",
+    "evaluation-c1-spear-minus25-conventional-s1-b0",
+    "evaluation-c1-spear-minus25-conventional-s1-b1",
+    "evaluation-c1-spear-minus25-conventional-useful-2x-s0-b0",
+    "evaluation-c1-spear-minus25-conventional-useful-2x-s0-b1",
+    "evaluation-c1-spear-minus25-conventional-useful-2x-s1-b0",
+    "evaluation-c1-spear-minus25-conventional-useful-2x-s1-b1",
+    "evaluation-c1-spear-minus25-conventional-useful-4x-s0-b0",
+    "evaluation-c1-spear-minus25-conventional-useful-4x-s0-b1",
+    "evaluation-c1-spear-minus25-conventional-useful-4x-s1-b0",
+    "evaluation-c1-spear-minus25-conventional-useful-4x-s1-b1",
+    "evaluation-c1-spear-plus25-mind-full-s0-b0",
+    "evaluation-c1-spear-plus25-mind-full-s0-b1",
+    "evaluation-c1-spear-plus25-mind-full-s1-b0",
+    "evaluation-c1-spear-plus25-mind-full-s1-b1",
+    "evaluation-c1-spear-plus25-mind-no-novelty-s0-b0",
+    "evaluation-c1-spear-plus25-mind-no-novelty-s0-b1",
+    "evaluation-c1-spear-plus25-mind-no-novelty-s1-b0",
+    "evaluation-c1-spear-plus25-mind-no-novelty-s1-b1",
+    "evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0",
+    "evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1",
+    "evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0",
+    "evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1",
+    "evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0",
+    "evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1",
+    "evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0",
+    "evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1",
+    "evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0",
+    "evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1",
+    "evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0",
+    "evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1",
+    "evaluation-c1-spear-plus25-conventional-s0-b0",
+    "evaluation-c1-spear-plus25-conventional-s0-b1",
+    "evaluation-c1-spear-plus25-conventional-s1-b0",
+    "evaluation-c1-spear-plus25-conventional-s1-b1",
+    "evaluation-c1-spear-plus25-conventional-useful-2x-s0-b0",
+    "evaluation-c1-spear-plus25-conventional-useful-2x-s0-b1",
+    "evaluation-c1-spear-plus25-conventional-useful-2x-s1-b0",
+    "evaluation-c1-spear-plus25-conventional-useful-2x-s1-b1",
+    "evaluation-c1-spear-plus25-conventional-useful-4x-s0-b0",
+    "evaluation-c1-spear-plus25-conventional-useful-4x-s0-b1",
+    "evaluation-c1-spear-plus25-conventional-useful-4x-s1-b0",
+    "evaluation-c1-spear-plus25-conventional-useful-4x-s1-b1"
+  ],
+  "taskCount": 64,
+  "wholePhaseCpuClaim": false,
+  "evaluationSuccessClaim": false,
+  "validation": "Every included byte hashed; selected raw/result/memory hashes bind the independently approved full proof audit. No proof replay, controllers, or metrics executed.",
+  "memoryReassembly": "Input and output memory member paths are explicit per task; dependencies are repeated across batches as needed, deduplicated by member path within a batch. closure/ restores original workspace-relative locked inputs. Original/resume scientific files retain distinct namespaces.",
+  "taskBindings": [
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-full-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-full-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-full-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-full-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "d9d005c13fb7e969eae69740b59af6e5f04b0806d7379065a0d1dbbb8197e1ec"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-full-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-full-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-full-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-full-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-full-s0-b0.json",
+      "inputMemoryObjectSha256": "d9d005c13fb7e969eae69740b59af6e5f04b0806d7379065a0d1dbbb8197e1ec",
+      "outputMemoryObjectSha256": "4621a6deb647b8f28092cc0a002177b0f916c44a7f614f8beac5fc34adced013"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-full-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-full-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-full-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-full-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "41423253a8f67dc3e568c1367d0ab15e7c263b665573e069e5cd6c59ed8ae957"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-full-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-full-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-full-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-full-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-full-s1-b0.json",
+      "inputMemoryObjectSha256": "41423253a8f67dc3e568c1367d0ab15e7c263b665573e069e5cd6c59ed8ae957",
+      "outputMemoryObjectSha256": "9d5b31ce8a2f8c5a7ace958487e4ef7bda3ac45dc3c40ec31ff319a175ed9c12"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-no-novelty-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "d9d005c13fb7e969eae69740b59af6e5f04b0806d7379065a0d1dbbb8197e1ec"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-no-novelty-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.json",
+      "inputMemoryObjectSha256": "d9d005c13fb7e969eae69740b59af6e5f04b0806d7379065a0d1dbbb8197e1ec",
+      "outputMemoryObjectSha256": "4621a6deb647b8f28092cc0a002177b0f916c44a7f614f8beac5fc34adced013"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-no-novelty-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "41423253a8f67dc3e568c1367d0ab15e7c263b665573e069e5cd6c59ed8ae957"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-no-novelty-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.json",
+      "inputMemoryObjectSha256": "41423253a8f67dc3e568c1367d0ab15e7c263b665573e069e5cd6c59ed8ae957",
+      "outputMemoryObjectSha256": "a39b3565866dbac518feca58d7f3633dbb4a9d63d9a13d8829ef0a4b87bf169b"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "ae734eb843d762bdb7feb84959c9cc2b00fe08e0de1c19b0e99932616090863e"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "inputMemoryObjectSha256": "ae734eb843d762bdb7feb84959c9cc2b00fe08e0de1c19b0e99932616090863e",
+      "outputMemoryObjectSha256": "72a967f0852c0cabb3274370edc1a15e1358192e2790917fa1a5a176d252c940"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "6f1a9d04afa0484fd8b5ff14a84a3907e1bf93e798afc265e57228b5b833762e"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "inputMemoryObjectSha256": "6f1a9d04afa0484fd8b5ff14a84a3907e1bf93e798afc265e57228b5b833762e",
+      "outputMemoryObjectSha256": "a62f366ca1cbb17eeb9dc512b9b86c8f2e20de1933d7212ea1dbc12af47250ec"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "2ccd277d1ef03dd99ad82b5b0740a79af608e1a9c573eaa623b82e6ecdb78b04"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "inputMemoryObjectSha256": "2ccd277d1ef03dd99ad82b5b0740a79af608e1a9c573eaa623b82e6ecdb78b04",
+      "outputMemoryObjectSha256": "9cbeb34ccda345608618f956eec2309fc35e772345915b0711164379287d7bc9"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "41423253a8f67dc3e568c1367d0ab15e7c263b665573e069e5cd6c59ed8ae957"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "inputMemoryObjectSha256": "41423253a8f67dc3e568c1367d0ab15e7c263b665573e069e5cd6c59ed8ae957",
+      "outputMemoryObjectSha256": "d2599b72caf06db9b2dcf8ef877ceaf56247544c676859228f9282d3caf028c8"
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-2x-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-2x-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-2x-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-2x-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-4x-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-4x-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-4x-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-minus25-conventional-useful-4x-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-full-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-full-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-full-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-full-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "484ae03f6d4ee0152ceebe80e80b85253f46fd5d2e9041c005d2d9b0b8b880b3"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-full-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-full-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-full-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-full-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-full-s0-b0.json",
+      "inputMemoryObjectSha256": "484ae03f6d4ee0152ceebe80e80b85253f46fd5d2e9041c005d2d9b0b8b880b3",
+      "outputMemoryObjectSha256": "4e44109bfc84ae2a56f68923cdbdbca287b07f7549f08cb7d7c86cbeca152b8b"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-full-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-full-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-full-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-full-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "a5390538fe23ceca49de363e4df94249985658ba1046726e1cfe1f865e885296"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-full-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-full-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-full-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-full-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-full-s1-b0.json",
+      "inputMemoryObjectSha256": "a5390538fe23ceca49de363e4df94249985658ba1046726e1cfe1f865e885296",
+      "outputMemoryObjectSha256": "eff1653b71de98969941e5aee00d0f6ad0c8cdc1686916f29c8080084ca180ac"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-no-novelty-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "484ae03f6d4ee0152ceebe80e80b85253f46fd5d2e9041c005d2d9b0b8b880b3"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-no-novelty-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.json",
+      "inputMemoryObjectSha256": "484ae03f6d4ee0152ceebe80e80b85253f46fd5d2e9041c005d2d9b0b8b880b3",
+      "outputMemoryObjectSha256": "4e44109bfc84ae2a56f68923cdbdbca287b07f7549f08cb7d7c86cbeca152b8b"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-no-novelty-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "a5390538fe23ceca49de363e4df94249985658ba1046726e1cfe1f865e885296"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-no-novelty-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.json",
+      "inputMemoryObjectSha256": "a5390538fe23ceca49de363e4df94249985658ba1046726e1cfe1f865e885296",
+      "outputMemoryObjectSha256": "eff1653b71de98969941e5aee00d0f6ad0c8cdc1686916f29c8080084ca180ac"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "f1d59f4b4a89a87fc892dd516eeba11d7137bf0f60ca34934639e1beb94903e9"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.json",
+      "inputMemoryObjectSha256": "f1d59f4b4a89a87fc892dd516eeba11d7137bf0f60ca34934639e1beb94903e9",
+      "outputMemoryObjectSha256": "27d88c6557567d13afe9163fbd597b06028bd47b9209ad522f09a71eb73d678c"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "e9a07da114b7b715b66a3c5ae80d2dfea4311451ae171152501bafe8f045d426"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.json",
+      "inputMemoryObjectSha256": "e9a07da114b7b715b66a3c5ae80d2dfea4311451ae171152501bafe8f045d426",
+      "outputMemoryObjectSha256": "7466ca1a051a0a358c17125c0bdc7973da1b244f64fc8afebb38d9349da8db46"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "79528c3cf975fd5ab7e9f1d5a858bcd28e6856bb3e7bc225a32cedfcb466a96f"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.json",
+      "inputMemoryObjectSha256": "79528c3cf975fd5ab7e9f1d5a858bcd28e6856bb3e7bc225a32cedfcb466a96f",
+      "outputMemoryObjectSha256": "453bf8c0c7119824d32a4d84e1444097552d7e07b9a8fd13c531d49fc370961f"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "inputMemoryObjectSha256": "7d6a8c6772683c5809ed2c1fa07353e29564dce7475f67517e6dd9734463f094",
+      "outputMemoryObjectSha256": "80ebe844c194321cf5b5b919caee366e12b4561ef9c04afa1386ac18ab8e7720"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "outputMemory": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1.json",
+      "inputMemory": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.json",
+      "inputMemoryObjectSha256": "80ebe844c194321cf5b5b919caee366e12b4561ef9c04afa1386ac18ab8e7720",
+      "outputMemoryObjectSha256": "4cdb1021ffc217e1c0c165b9b92aca0305ef4139d3f4ae722809cc52a014a82c"
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-2x-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-2x-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-2x-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-2x-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-4x-s0-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-4x-s0-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-4x-s1-b0",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b0.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c1-spear-plus25-conventional-useful-4x-s1-b1",
+      "origin": "original",
+      "result": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b1.json",
+      "raw": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    }
+  ],
+  "qualifications": [
+    "Original attempt interruption is preserved; no original COMPLETE/finalization fabricated",
+    "Original805 terminal child IPC, parent terminal CPU and partial-worker total CPU remain unavailable, not zero; conditional capacity allowance is not measured actual CPU",
+    "Original process extinction and global eight-worker/exactly-once-partial execution remain unproven",
+    "Nine-CPU shared aggregate capacity assumption and finite watchdog latency remain as reviewed; no resource equivalence claim is made",
+    "Frozen compact proof verification establishes retained structure and integrity, not replayed physics or reconstruction of omitted individual comparison digests",
+    "This validates integrity/provenance/proof/memory/terminal evidence only, not aggregate scientific results; qualified adapter must still decode/extract frozen scientific diagnostics and receive explicit root release"
+  ],
+  "files": [
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/LOCK-COPY.json",
+      "bytes": 11969,
+      "sha256": "15547657adbdeaaf76153d2c3103ace74c9c0d74d7eef98398d5a83f2aba5ec2"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/PARAMETER-SNAPSHOT-MANIFEST.json",
+      "bytes": 4621,
+      "sha256": "8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/PROCESS-EXIT.json",
+      "bytes": 51,
+      "sha256": "f2591ec95e391dc27cfbac70a57bba9e14028c9e65cda022f4ff36f822452de8"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/QUALIFIED-FREEZE-ACCEPTANCE.json",
+      "bytes": 1255,
+      "sha256": "fead101f4dcc60e767c780a237e86e86a19f9f43cdbb31a5895ae9b1c6bf96a6"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/README.md",
+      "bytes": 1458,
+      "sha256": "58ea8d3281f32bfe5f75e7cc5f12614281f5112eb77e8cdc87d609c8bd994dde"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/TRAINING-RESULT.json",
+      "bytes": 3381,
+      "sha256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/AUDIT-DETAILS.json",
+      "bytes": 21049,
+      "sha256": "39be7a6a725f6bb746d4cdf1a160100f14e8c58923e3be6bb4a52ddfaa583d16"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/FREEZE-ELIGIBILITY.json",
+      "bytes": 1329,
+      "sha256": "5391a266a889dfe77a3c927102f703f979e9d46753e08028c96a6ec203c9b5d5"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/IEEE-SCORE-AUDIT.json",
+      "bytes": 1118,
+      "sha256": "ec71cfa3388186ce44d94f148d04f760a442fa414e18104002046c70fa3360dc"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/INDEPENDENT-TRAINING-AUDIT.md",
+      "bytes": 7275,
+      "sha256": "4518b433f2918dac0b8e8cf7b78e7bf8384df70189163a5ee4e18627f35cc0ed"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/audit-saved-training.mjs",
+      "bytes": 6835,
+      "sha256": "3c67799d5f2169e3e7a451550c20a68530cc9d6bdb8def89531510138afaa291"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-10.json",
+      "bytes": 60072,
+      "sha256": "05d495e808f32a4b92b5d837668b0cd969bb8d17306812af8515a0e8173ee1c0"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-11.json",
+      "bytes": 59620,
+      "sha256": "eb3d81c5aac7738405d657fbb849531493974e7984b699b030fbeef72cb43c7a"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-3.json",
+      "bytes": 60034,
+      "sha256": "886d9337666165aefc418dac6cc5a0b960aa100cc75db30210c3de3db26ebe9f"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-4.json",
+      "bytes": 60726,
+      "sha256": "6288e1d8fd26609a04c0320a1d51c65c285be31872df57e8f073302d146b3865"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-5.json",
+      "bytes": 61450,
+      "sha256": "972581e9059f29a5fe753ef84ed118687823cdf0a5be9a0680787cbe7855d7c9"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-6.json",
+      "bytes": 60378,
+      "sha256": "99f8e059f58bcce5c2853254ac506df698315f8644f3e5860b88071797bc6d2d"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-7.json",
+      "bytes": 59335,
+      "sha256": "daa5aa85f21d2fb8a6f9870afd6dce930d5e6448b8f0d181393a316747dc4f56"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-8.json",
+      "bytes": 61075,
+      "sha256": "a81500f2cb2a26d64a30986d7e739889bfd9a05a500aa1e6468054506c9eafa3"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-9.json",
+      "bytes": 61018,
+      "sha256": "c403e5a366e1cf30d8015129e0542554387f93bd79fd029c7ec3e495d02f9ce7"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/DESIGN-FILE-MANIFEST.json",
+      "bytes": 5098,
+      "sha256": "36fa4a77caf612b6e1de43771e26c5ad7060612777d11ff7347e1f1f3a986f86"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/DESIGN.json",
+      "bytes": 20569,
+      "sha256": "3b386551b680aaf05c48fdd88304ac9d6ce943844b5b4af5c9627998c5fd4ac6"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/EVALUATION-TASKS.json",
+      "bytes": 2760719,
+      "sha256": "2d9f694c7b7419b050240c1551c625c26050c8c729894fc5531b38155c79bca9"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/METRIC-CONTRACT.json",
+      "bytes": 6020,
+      "sha256": "b2a4d06cfa565d6c41e902ca528a377a14ec6f30ec500b344c20f83127942d62"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/OPPONENT-SEARCH.json",
+      "bytes": 2433,
+      "sha256": "7295040474165257128d83359215fe72460c2420f7fdccc95f9a9564bf4f3829"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PILOT-DESIGN-READY.json",
+      "bytes": 813,
+      "sha256": "f1c8d2872231815410da63fa7095732aed0956538ea406433dc76b4ec63976e7"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PILOT-TASKS.json",
+      "bytes": 124407,
+      "sha256": "e5b9e71b75505732984102d129dca209050dc1c1af2d48b6b75cf1028340b470"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PREREGISTRATION.md",
+      "bytes": 23243,
+      "sha256": "9c84e04f94d15d6de510bb0b5bad6948da8919cf73de0cbf9e59e0abe927c28e"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PROOF-GRANULARITY-AMENDMENT.md",
+      "bytes": 2189,
+      "sha256": "533f87aaec27b725cf7e77dfea988731c1e7a31ba5439bb307c6983a262275d0"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PROOF-GRANULARITY-METRIC-REVIEW.json",
+      "bytes": 686,
+      "sha256": "2e4d6bfc10d85cb85a8a68d57290972fa9a8a6d6425ce69e389e02d3d4157458"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/RUNTIME-AMENDMENT.json",
+      "bytes": 1792,
+      "sha256": "6b437abc1e654aa2c6e7462814823371217fe0a9e07ad8220476a458d377f0ed"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/RUNTIME-AMENDMENT.md",
+      "bytes": 1291,
+      "sha256": "048b61d0a0d66c9ed7125807848684aead4b61c44fc30eec80d00e571b1d31ee"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/RUNTIME-LIMITS.json",
+      "bytes": 2449,
+      "sha256": "a391be60e6d7664b1eebf272d36e395e2ce38c67b52380902dc5fe704602391e"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/STATIC-VALIDATION.json",
+      "bytes": 1226,
+      "sha256": "ef4a8120126cc3c0ef84704bb5c2bcbfa7c0b17a1437329e55ae120856b0872e"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/TRAINING-FAILURE-REFERENCE.json",
+      "bytes": 3633,
+      "sha256": "ecba3f3a0e1ecc02a4a410cad8131c7a9ed8e11b8410c77092ac3af74fb9cbc5"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/add-second-layout.mjs",
+      "bytes": 4319,
+      "sha256": "09d564de7782de90dba998eb7cacfdad1760539fe5b9264758b7157b7470b630"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/build-design.mjs",
+      "bytes": 8880,
+      "sha256": "96d6b576184f074c6a72c124aaef216cc226c63825ad5fd2ad3c5c28d6305e80"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/arena-mirror-x.json",
+      "bytes": 1389,
+      "sha256": "f6d0fae5eab3765b2fee4af247460f7f1450979e4e3d5234435fe6548c6d725b"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/arena-new-obstacles-2.json",
+      "bytes": 1745,
+      "sha256": "34f6cb1d65d6e0a5d055afea274d7ea3fc5e32e75af32ba49fa2502d649b2e3c"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/arena-new-obstacles.json",
+      "bytes": 1744,
+      "sha256": "815cdd988df997f0e838a4923d24da36fbd7b5a1564a21fcbbffb70054fcd9b2"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/default.json",
+      "bytes": 1384,
+      "sha256": "57443feb57ee309ba33287ce8a04df44506b40e00c8f9deeff4807fe744f06e4"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/fov-minus20.json",
+      "bytes": 1384,
+      "sha256": "15a0de0b85d707ff6d3b7be3ebfcf07d43d76559a4c4570c5b0146652d1896f5"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/fov-plus20.json",
+      "bytes": 1383,
+      "sha256": "60c69c898f781633ac0bfef698014e6109e05903c3c0dd718908280cdc6991b1"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/searched-style-1.json",
+      "bytes": 1390,
+      "sha256": "225dfbd2c967f66d072b0bb05e6ab3ddc0834e311f9444cfdbef421f5c8ca668"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/spear-minus25.json",
+      "bytes": 1386,
+      "sha256": "a132449af873a2a441476c4317d5c85afc15a969b94039b25515bc46c3f580be"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/spear-plus25.json",
+      "bytes": 1387,
+      "sha256": "d0c82cb38d69010199984c4e8a4ce12a7a0f6bfa69ca0c02f75d433009e560e8"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/turn-minus25.json",
+      "bytes": 1385,
+      "sha256": "35b7d4632c68bf83f5a456f251234c8e1a709e03ba52ec6aff71a44726751bf2"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/turn-plus25.json",
+      "bytes": 1385,
+      "sha256": "0f794447908baadf6123765bf125669e065dffc0233dca5403f70572f68ec690"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/initial-vectors.json",
+      "bytes": 2952,
+      "sha256": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/pre-execution-history/arena-mirror-x-initial-full-reflection.json",
+      "bytes": 1389,
+      "sha256": "08d09352231462f95b88d22fcbfc9b0f22c2619fabb090917a0b8d92853c0d0d"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/pre-execution-history/searched-style-2-removed-before-lock.json",
+      "bytes": 1390,
+      "sha256": "ecdb83cfd8724c67bbd6892f0ac65149dd0d938b5c05842a01b9effff1eb55df"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/validate-design.mjs",
+      "bytes": 4205,
+      "sha256": "ff05cd6c308aacdec9b4735fbdb9a5bc27da932a3dd3e65ff92415d981635f06"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/REVIEWED-OPPONENT-FREEZE.json",
+      "bytes": 2045,
+      "sha256": "2619d3623dab1a809b54e56a07e2084e524deceeddc96f73cbac94421ab1507e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/README.md",
+      "bytes": 5839,
+      "sha256": "46ebaf62e4800ba0cdf888ccb67d821a05dc3ff5f4f879460168d74b0c97fcb4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/interface.mjs",
+      "bytes": 9118,
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/interface.test.mjs",
+      "bytes": 11840,
+      "sha256": "c6a9cd21fe1afb7d656384bee6c8792dd7036b13a5f93492cee11ead2fa12ece"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/robust-baseline.test.mjs",
+      "bytes": 3584,
+      "sha256": "ebd926dd6f0e286df181f3aea023787e843476f6d2c793d0e23a2a10b65b9af2"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/README.md",
+      "bytes": 10085,
+      "sha256": "4dbd669b4422cd28f897ae3a68b0763c9106b1e6a53e850aa9fc70e495c9127d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/ANALYSIS-LOCK.json",
+      "bytes": 6479,
+      "sha256": "08873a4bdd582fa97441a4cb28a2938773883e654ee27c8188f6c5fabff3ed83"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/README.md",
+      "bytes": 7328,
+      "sha256": "dddbabb5e998db99aacf961afe239403dca4eb809715af13f69d4739b79f0393"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/REPORT-SCHEMA.json",
+      "bytes": 1260,
+      "sha256": "e2bd20e3f6d867b6f0d3fea39b14fef7b134e006d7ffeb237a98ffcd1d6985d7"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/SOURCE-MANIFEST.json",
+      "bytes": 5245,
+      "sha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/SYNTHETIC-TEST-RESULTS.txt",
+      "bytes": 2188,
+      "sha256": "899e9352b7394810e20fac8eb956f7fd132d80d018356f71ed96ed7866ea45c4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/analysis.test.mjs",
+      "bytes": 12301,
+      "sha256": "9d6cced781ded0903f76c66e8901a6a6aa0f922e50d7ff42723eafaed5db330d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/analyze.mjs",
+      "bytes": 15060,
+      "sha256": "4fe857f78dc8f3ba9d687a894b0f7d792c2f19927ad893b7a73665811109ac67"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/build-lock.mjs",
+      "bytes": 3921,
+      "sha256": "02cb389b7fd18923d164142ab83d0b9bf966622877f67e6c258f3670b8306806"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/diagnostics.mjs",
+      "bytes": 17467,
+      "sha256": "a800216eee9747584ab1207c24b0a4923dc0899e9929888f262719b27ef8234b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/diagnostics.test.mjs",
+      "bytes": 7194,
+      "sha256": "1a8674561216e0af02c0d3a80197de4c64a361d4bda74097cec3205a7ed2ded1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/DESIGN.json",
+      "bytes": 20569,
+      "sha256": "3b386551b680aaf05c48fdd88304ac9d6ce943844b5b4af5c9627998c5fd4ac6"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/EVALUATION-TASKS.json",
+      "bytes": 2760719,
+      "sha256": "2d9f694c7b7419b050240c1551c625c26050c8c729894fc5531b38155c79bca9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/METRIC-CONTRACT.json",
+      "bytes": 6020,
+      "sha256": "b2a4d06cfa565d6c41e902ca528a377a14ec6f30ec500b344c20f83127942d62"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/PREREGISTRATION.md",
+      "bytes": 23243,
+      "sha256": "9c84e04f94d15d6de510bb0b5bad6948da8919cf73de0cbf9e59e0abe927c28e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/PROOF-GRANULARITY-AMENDMENT.md",
+      "bytes": 2189,
+      "sha256": "533f87aaec27b725cf7e77dfea988731c1e7a31ba5439bb307c6983a262275d0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/TRAINING-FAILURE-REFERENCE.json",
+      "bytes": 3633,
+      "sha256": "ecba3f3a0e1ecc02a4a410cad8131c7a9ed8e11b8410c77092ac3af74fb9cbc5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/arena-mirror-x.json",
+      "bytes": 1389,
+      "sha256": "f6d0fae5eab3765b2fee4af247460f7f1450979e4e3d5234435fe6548c6d725b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/arena-new-obstacles-2.json",
+      "bytes": 1745,
+      "sha256": "34f6cb1d65d6e0a5d055afea274d7ea3fc5e32e75af32ba49fa2502d649b2e3c"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/arena-new-obstacles.json",
+      "bytes": 1744,
+      "sha256": "815cdd988df997f0e838a4923d24da36fbd7b5a1564a21fcbbffb70054fcd9b2"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/default.json",
+      "bytes": 1384,
+      "sha256": "57443feb57ee309ba33287ce8a04df44506b40e00c8f9deeff4807fe744f06e4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/fov-minus20.json",
+      "bytes": 1384,
+      "sha256": "15a0de0b85d707ff6d3b7be3ebfcf07d43d76559a4c4570c5b0146652d1896f5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/fov-plus20.json",
+      "bytes": 1383,
+      "sha256": "60c69c898f781633ac0bfef698014e6109e05903c3c0dd718908280cdc6991b1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/searched-style-1.json",
+      "bytes": 1390,
+      "sha256": "225dfbd2c967f66d072b0bb05e6ab3ddc0834e311f9444cfdbef421f5c8ca668"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/spear-minus25.json",
+      "bytes": 1386,
+      "sha256": "a132449af873a2a441476c4317d5c85afc15a969b94039b25515bc46c3f580be"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/spear-plus25.json",
+      "bytes": 1387,
+      "sha256": "d0c82cb38d69010199984c4e8a4ce12a7a0f6bfa69ca0c02f75d433009e560e8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/turn-minus25.json",
+      "bytes": 1385,
+      "sha256": "35b7d4632c68bf83f5a456f251234c8e1a709e03ba52ec6aff71a44726751bf2"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/turn-plus25.json",
+      "bytes": 1385,
+      "sha256": "0f794447908baadf6123765bf125669e065dffc0233dca5403f70572f68ec690"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/scores.mjs",
+      "bytes": 6806,
+      "sha256": "5999c7ea05f6e32b3e06ec04d77780b81d7cbe6b7dd18ddd599659244605e941"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/statistics.mjs",
+      "bytes": 3163,
+      "sha256": "8105495ac9d4ab3a89c239caf78d5366135e1bb1aa7727e841e96b1eac8107a4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/vendor/block-stream.mjs",
+      "bytes": 4570,
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/vendor/proof-representation.mjs",
+      "bytes": 5375,
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/vendor/raw-stream.mjs",
+      "bytes": 2951,
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/block-stream.mjs",
+      "bytes": 4570,
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/compact.mjs",
+      "bytes": 6181,
+      "sha256": "55f11316ea91640fa833963d18f9fa52acc4022d9995f49f5d0f4d70a1bbd9ec"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/compact.test.mjs",
+      "bytes": 2583,
+      "sha256": "34ee76199c474ed15a4bb78fd137bc8396c26a689accae0afba4606552654172"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-DESIGN-INDEPENDENT-REVIEW.json",
+      "bytes": 1263,
+      "sha256": "670df2eee7b93c1ee0521fe7e56f69856b7967939d192329336b9304eda4e5f6"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-LOGGING-PROPOSAL.md",
+      "bytes": 7115,
+      "sha256": "1c1296cb78d26bbba3b3b27832d8a1d44746be1e5b0d0db7f5a19b860004c2cd"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-METRIC-MAP.md",
+      "bytes": 12289,
+      "sha256": "4b0dd0ffe400b78f9067e78e76f21733c9b10b3dbf8951a0053d3563eb7acdee"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-METRIC-OWNER-REVIEW.json",
+      "bytes": 2240,
+      "sha256": "76643d02fe06ad899cda02bcca3ee1ee03ffc7603ff850d7b09fd31ae046a4da"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-REPRESENTATION-v2.md",
+      "bytes": 2172,
+      "sha256": "6d0ff642f8efc5300bd6eeaace0b2644e474df5999a00ca205b5ef8938f0a627"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/REPRESENTATION-AMENDMENT-PROOF-MAP.md",
+      "bytes": 7038,
+      "sha256": "8de26e2b1fc45e574ade551d1b0d29cae71074de0059abe033f472434c2e1ec0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/execution.mjs",
+      "bytes": 2501,
+      "sha256": "0491dd47feb1de077ba978c504f68a165451851841a9c97d8669c32af65f04e5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/execution.test.mjs",
+      "bytes": 3433,
+      "sha256": "c8e0e8c1bd9ddded4efd6e51d31c311f010b70cf1391ad4efd8e44ac3b139935"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/faithfulness.mjs",
+      "bytes": 3360,
+      "sha256": "f2570d86c10f882b9f0e69f36602c3d48a31addf8000b818fbcbdb234b502266"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/faithfulness.test.mjs",
+      "bytes": 2374,
+      "sha256": "2133a8771dcc900d8f69e636519c1e2af79ffd2f73e909cbd7a029678a79d070"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/finalize-phase.mjs",
+      "bytes": 560,
+      "sha256": "76b3e241aeb95602d9f263797e01e0c66986d847bc6be4ce854eb1c34d3f5335"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/finalize-phase.test.mjs",
+      "bytes": 1787,
+      "sha256": "a34cd3a2fa0047e6fbddd7ff94569d37ecef78fa55909060a854452350ea33b1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/guard.test.mjs",
+      "bytes": 6139,
+      "sha256": "7fc8de839990b0363d107a1da23d157e5b90b31d0d9555f285c19ae2b4b77d92"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/lock.mjs",
+      "bytes": 3377,
+      "sha256": "41d530fbdcae47bcc9dd187d8d742e03546145d1c9ce4c56c37367f36960cdb5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/observer-proxy.mjs",
+      "bytes": 725,
+      "sha256": "ceac30aead8356026f94b4bbca0bbe9dc70bddf52c4f6376e6234398d4b9627e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/observer-proxy.test.mjs",
+      "bytes": 1782,
+      "sha256": "c1e207bdf0915ad3d9d55b6d56a8d6814582f29b45dab945adcfbcdd05f2dde3"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/perception.mjs",
+      "bytes": 3221,
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/plan-validation.mjs",
+      "bytes": 6748,
+      "sha256": "fd3d2838e9e414b3c74c31b4d4c2ff1d8d3b6d04abee4e7400a6018398915151"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/proof-representation.mjs",
+      "bytes": 5375,
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/proof-representation.test.mjs",
+      "bytes": 3856,
+      "sha256": "52a9149411485d9b3903a94e1c1a724965d765390858bfeff61a757ee7321fd8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/raw-stream.mjs",
+      "bytes": 2951,
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/runner.mjs",
+      "bytes": 9677,
+      "sha256": "300279e365c7eeabc75952af9e674f6a756630388e73f541aa541181de375ebb"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/task.mjs",
+      "bytes": 8886,
+      "sha256": "6f5c052698ed7de05ba98413f727e818024948d8680e9602bf6a5353d1fbc3f9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/worker.mjs",
+      "bytes": 1308,
+      "sha256": "8be9cc12dee58b20d5ac46da47f46547d7d0c4f2fb2c95234c768c0c5b290924"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/world.mjs",
+      "bytes": 4262,
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/world.test.mjs",
+      "bytes": 3667,
+      "sha256": "6e24d444958166b215b3c083fa3ea368629e221d1f212b80f009f11ae50a819c"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/package.json",
+      "bytes": 70,
+      "sha256": "6bb0ae63bd538f17da6bc4102895b1cdaa821fa0bc5865037186aa2f219e67fa"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/basic.mjs",
+      "bytes": 1578,
+      "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/dodger.mjs",
+      "bytes": 4257,
+      "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/param.mjs",
+      "bytes": 9267,
+      "sha256": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/robust-baseline-agent.mjs",
+      "bytes": 1472,
+      "sha256": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/robust-baseline.mjs",
+      "bytes": 10222,
+      "sha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/spear-memory.mjs",
+      "bytes": 4203,
+      "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/strategies.mjs",
+      "bytes": 6081,
+      "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/deterministic-math.js",
+      "bytes": 1614,
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/headless.mjs",
+      "bytes": 2664,
+      "sha256": "7b67c3483a2636fe953d82afa178150dda1f2a464fc6f564d25c954847e8cc26"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/log.js",
+      "bytes": 9498,
+      "sha256": "fc82e01484e7f059381fc3291f8b85da6db02fc77b6709c42ed4b1d50bea9ce6"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/belief.mjs",
+      "bytes": 7208,
+      "sha256": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/cognition.mjs",
+      "bytes": 11662,
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/components.mjs",
+      "bytes": 9841,
+      "sha256": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/content-broadcast.mjs",
+      "bytes": 6807,
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/coordination.mjs",
+      "bytes": 11805,
+      "sha256": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/index.mjs",
+      "bytes": 22058,
+      "sha256": "559f9de723a0af18e55b06ff5ee6fb8f1b495280ebf9d75e53ec67339cfd0900"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/math.mjs",
+      "bytes": 2065,
+      "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/novelty.mjs",
+      "bytes": 6668,
+      "sha256": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/own-spear.mjs",
+      "bytes": 3905,
+      "sha256": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/percept-contact.mjs",
+      "bytes": 1641,
+      "sha256": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/prediction-monitor.mjs",
+      "bytes": 11071,
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/rollout-completion.mjs",
+      "bytes": 1607,
+      "sha256": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/specialists.mjs",
+      "bytes": 8245,
+      "sha256": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/target-memory.mjs",
+      "bytes": 6093,
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/workspace.mjs",
+      "bytes": 2998,
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/perception.js",
+      "bytes": 2827,
+      "sha256": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/sim.js",
+      "bytes": 18076,
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "member": "evidence/COMPLETE.json",
+      "bytes": 1587,
+      "sha256": "7f5843e0184b1fbcff1e5428131a41cea8fdaa62bbfb0e31f9e295bfc4cefd96"
+    },
+    {
+      "member": "evidence/FULL-UNION-INDEPENDENT-REVIEW.json",
+      "bytes": 6664,
+      "sha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c"
+    },
+    {
+      "member": "evidence/LOCK.json",
+      "bytes": 33315,
+      "sha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033"
+    },
+    {
+      "member": "evidence/ORIGINAL-RELEASE.json",
+      "bytes": 1078,
+      "sha256": "3bc4503e96010b50d779d51963dd57a4548ec5da5e29d58f93a6913bffb06307"
+    },
+    {
+      "member": "evidence/RECOVERY-RELEASE-001.json",
+      "bytes": 206113,
+      "sha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc"
+    },
+    {
+      "member": "evidence/REMOTE-EXCLUSIONS.json",
+      "bytes": 8730,
+      "sha256": "0c6ace790469b9cac38b516013045c1a3f1c3d526c92b40ef280ca04d42f1ae9"
+    },
+    {
+      "member": "evidence/RESUME-RELEASE.json",
+      "bytes": 206113,
+      "sha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc"
+    },
+    {
+      "member": "evidence/SHARD-0.json",
+      "bytes": 997559,
+      "sha256": "17fff21782aa7c727956e498553008fe31ef5bcde0c276aa984165ee40a80281"
+    },
+    {
+      "member": "evidence/SHARD-1.json",
+      "bytes": 997566,
+      "sha256": "89fdf2f8447f66c76af678b54a3114ba9f3afd70cd81b7b7b10e31825cd13c81"
+    },
+    {
+      "member": "evidence/SHARD-2.json",
+      "bytes": 997577,
+      "sha256": "2e187231b6832f16f2487a6d17d16a4935fee3e87d3f3b8a7026964a49497643"
+    },
+    {
+      "member": "evidence/SHARD-3.json",
+      "bytes": 997558,
+      "sha256": "d7bda7bd62898ec988284ee257c58c955bc4515cec445893c266e80e3bae4271"
+    },
+    {
+      "member": "evidence/TERMINAL-EXIT-AUDIT.json",
+      "bytes": 1391,
+      "sha256": "8ba0693ac8a2d9b4a099d94310265081a1b3db5fa994f3e7d211a1d4a9d33f55"
+    },
+    {
+      "member": "evidence/UNION.json",
+      "bytes": 5424192,
+      "sha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "bytes": 59913,
+      "sha256": "c91a39eb714414f9a49d9449d5e69f491014447d7f3c428744390163264b2272"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1.json",
+      "bytes": 60225,
+      "sha256": "69ff6e6370a1f078f67d785987a661d4540f04508f9464863a7f112cc51db58c"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "bytes": 60335,
+      "sha256": "b0e06b270831805eb42f395b12bc572098c3c428c7d99379ddfefcb35929dd4d"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1.json",
+      "bytes": 60085,
+      "sha256": "4fbeff13bfa7f612aef7fdebf5eccb7b32b7d2bf25897e47d61efb9b88a87827"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "bytes": 61145,
+      "sha256": "636efb6011ab7a00e037f89d6a42b59834ae46a3a56accca73be540cd2724498"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1.json",
+      "bytes": 62182,
+      "sha256": "1bdc10e42e20b181157dcde6f088cb889125100c9861bf8c626008a170b4481b"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "bytes": 60859,
+      "sha256": "d6d853c3d1ab461fa61e202fe45abcb87bed92ac7c134a8a255c14f3dc927cf1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1.json",
+      "bytes": 60728,
+      "sha256": "a9961cea1831be2622e0d2016b1b2f45fd8e8179942d6d57cbc882fce77804ad"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-full-s0-b0.json",
+      "bytes": 60010,
+      "sha256": "1927c1771c50379be626d5d26eb5b10252eb4926d1b1ed81ff57be37a87391f7"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-full-s0-b1.json",
+      "bytes": 59919,
+      "sha256": "9bba0f78eb31cd7b43d8318da9d8a75795f2ca49b754d25fd0202b7271658f0c"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-full-s1-b0.json",
+      "bytes": 60335,
+      "sha256": "b0e06b270831805eb42f395b12bc572098c3c428c7d99379ddfefcb35929dd4d"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-full-s1-b1.json",
+      "bytes": 60329,
+      "sha256": "c5d91daf27a5c5532309fa987b22942152a82230431136b35886c96906a3f240"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.json",
+      "bytes": 60010,
+      "sha256": "1927c1771c50379be626d5d26eb5b10252eb4926d1b1ed81ff57be37a87391f7"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s0-b1.json",
+      "bytes": 59919,
+      "sha256": "9bba0f78eb31cd7b43d8318da9d8a75795f2ca49b754d25fd0202b7271658f0c"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.json",
+      "bytes": 60335,
+      "sha256": "b0e06b270831805eb42f395b12bc572098c3c428c7d99379ddfefcb35929dd4d"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-minus25-mind-no-novelty-s1-b1.json",
+      "bytes": 59922,
+      "sha256": "11362047fa7a448a4d27a2540c9568358e89121e83972123690b9c2c708eee0f"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.json",
+      "bytes": 60103,
+      "sha256": "050276e8f3be9c9d7b1b5a7cbce112ed6ca5be1e8ae5800daee7cd929867c7ad"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1.json",
+      "bytes": 60093,
+      "sha256": "37871ca78791f968792f20456ae163d72133ee11bccc1cb7a1517c8123c30c73"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.json",
+      "bytes": 59871,
+      "sha256": "93e6cad765f017efcb0c76f22acc1b763eeaa5354bd8cdd0e6c0c31ce4aaa095"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1.json",
+      "bytes": 59806,
+      "sha256": "da2443a33244a5b076445b024ac707de23c8f88b83cf9c2d6940b115695ed5ad"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.json",
+      "bytes": 60484,
+      "sha256": "c6d17a2c131bbf44261b94cd6d380a5178a44b2bec6bf35ee00fad90d977b6b3"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1.json",
+      "bytes": 61076,
+      "sha256": "18d8c2768c14e66b0661b0e473cd2072418e01ddcce0b419081fdf4c32ebef9a"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.json",
+      "bytes": 60102,
+      "sha256": "b2b163943577e6083cff89b6c8a80bc6d07414ebb2c169c7f32fc889374f2334"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1.json",
+      "bytes": 60711,
+      "sha256": "026f483b3b9440ff76dbfc378209039ac24bbe49838b564aa5b46f0c9fd0c31f"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-full-s0-b0.json",
+      "bytes": 60082,
+      "sha256": "31ebb2962bf33c717a53aeaa18161b3653afc7a76deb5b519aaf40d628e4764b"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-full-s0-b1.json",
+      "bytes": 60124,
+      "sha256": "e9e98c2001bb8f22a855dadd73cfa312645c405242ab2324312fb5d1f31f478e"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-full-s1-b0.json",
+      "bytes": 60252,
+      "sha256": "5de2c67b6ec1e7ec796e1629e92d9a8abdd8a0ac86329e8b65463899c3ad2332"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-full-s1-b1.json",
+      "bytes": 60071,
+      "sha256": "49d069a36751ee64c07a68e0c8abf7f108baf5fcddf52ab69c376a9c9339f26e"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.json",
+      "bytes": 60082,
+      "sha256": "31ebb2962bf33c717a53aeaa18161b3653afc7a76deb5b519aaf40d628e4764b"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s0-b1.json",
+      "bytes": 60124,
+      "sha256": "e9e98c2001bb8f22a855dadd73cfa312645c405242ab2324312fb5d1f31f478e"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.json",
+      "bytes": 60252,
+      "sha256": "5de2c67b6ec1e7ec796e1629e92d9a8abdd8a0ac86329e8b65463899c3ad2332"
+    },
+    {
+      "member": "original/memory/evaluation-c1-spear-plus25-mind-no-novelty-s1-b1.json",
+      "bytes": 60071,
+      "sha256": "49d069a36751ee64c07a68e0c8abf7f108baf5fcddf52ab69c376a9c9339f26e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-s0-b0.jsonl.gz",
+      "bytes": 1793839,
+      "sha256": "f60b4310f63e84acc3ce924bad5b1a886c42b206c158ed28b5ffe3521793fd5e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-s0-b1.jsonl.gz",
+      "bytes": 1931498,
+      "sha256": "ae59c7cb2660d45ff98edea1143e5361ba02c7ea33bf68781e9e8da7494d31a6"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-s1-b0.jsonl.gz",
+      "bytes": 1918951,
+      "sha256": "27b99cbabf0514e7bf8df9a0d2bcb4ef825fa124ed1a58556f58d7c9152f32c8"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-s1-b1.jsonl.gz",
+      "bytes": 1872165,
+      "sha256": "48afbdaa9a034a7fd00f7e467f502d9a94e54f7a4bb54d9e62e86399c1a72c6e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1226554,
+      "sha256": "2cf129aa54ba17320b7723e49f6e3fcc2c168845fada4230f8ce175f2bc8ecc5"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1222448,
+      "sha256": "b22501d378282528d92d02495b2b48a5aa8d989632810c1c9026d4a411f71c46"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1219824,
+      "sha256": "eacdf8e5de54554d2f06efd126972963e3acff6b67e40701e5489f00a7e772ae"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1220537,
+      "sha256": "a65cd2bee16d39e008c08bf0109463817c4bb591ef1c94bf2966b9f6c0c27b22"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1233893,
+      "sha256": "65fa0aa5386f686bcd8ac97d0d72039dec8db37e686bb694157da34915cde831"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 1231719,
+      "sha256": "11ce3dc118bd85dbe238fe47224310d4e9706f1756bd3d041a3777258f7cc26b"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1227474,
+      "sha256": "16abc38c04f2f690ac12784d8218d37d334b0956e85cdf4c3ce98d087b8d6796"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 1229387,
+      "sha256": "1fcc6caf125324a47377abcd41b5ff9bb0ec3b756d88c40a2c9acb68d769b39e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 4448760,
+      "sha256": "79811c0cd6c8a9ea3596e69ff83082e2a6f40e30df377d7e88ebfb0a35aef16b"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 3270269,
+      "sha256": "6833c4c65d349e88a63e6a6aa10d4b8d73e4f199181da0f70b9b0d92423ccc89"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 3584107,
+      "sha256": "19cd0d48cdf777df1c524693f06d3c94288457781d05dd455edff296930b0271"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4100307,
+      "sha256": "81957dc1ca9f13302d1863b96b65bbfb6185a7ab4aae312c52fbe521a0b54c37"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4328435,
+      "sha256": "5f4a9dfcadbe4363c1ab1a7ba75e26eeaa14e91658cee25d722c94b815a74a55"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4419811,
+      "sha256": "934ff0a450a02d10dedaab7e0e6b311cf9c6512f6f3e3fd3fda79251a73f4e5f"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4420585,
+      "sha256": "b6a82c24bc31714e008e6ae7524dc8a635400bb4193a1b750a8b16ebd8d1abbd"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 3955975,
+      "sha256": "8eb193ebeef440384b5ccc61a88adb12a3073596d18143337a8be9efb00d4a2e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4515791,
+      "sha256": "f236e280679193e0cbc5cdec0e2e7a66b9f06c59a1f0092883caea311d581970"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4405050,
+      "sha256": "657b6474f10d99a538eb3e771976750566997a1e20b59c66624c993b416236fb"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-full-s1-b0.jsonl.gz",
+      "bytes": 3729449,
+      "sha256": "220b89d0abf55c7d92045d67b582594aca7aec8280acdbb6314dda850843b589"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-full-s1-b1.jsonl.gz",
+      "bytes": 4531992,
+      "sha256": "a22b1bfea8eb6830699b2f93304871fce9bf128924ae9abec4dd2e2196459463"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4457559,
+      "sha256": "8683a087bc318c7cef084e3ca14fb88c533e9e994b3bd575ad3341ac300f49eb"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4506954,
+      "sha256": "3fe97c1d133160049fcb8f147e9a104e17cd982b35057383198d61985f954a54"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 3701156,
+      "sha256": "917e8da2fb06a5169fd16d014457e537753dab690fba674e85ee56498c38edd3"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 4106410,
+      "sha256": "a1df729854451dd1ef04f6238deb691df69615f6e186b050ee092fbb77c1f558"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4514425,
+      "sha256": "c2ddc9c225acae0012d5749dbc7d1e9fad171ef53ebc762f0a6e03aa1e267f97"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4403681,
+      "sha256": "c3e7c9d6db843e14803788f12c2cedb8261b39ce6f751d0436b98c16b349ec5e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 3730080,
+      "sha256": "0e97aa5707035512438f942cf7fb1e2bf3305301790d94291dc764ecda6614cf"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-minus25-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 3983525,
+      "sha256": "a842023f0816ff027cc052eecec0d5ac4a5ebf28f0a13a12de5bcdea3b220f88"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-s0-b0.jsonl.gz",
+      "bytes": 1986523,
+      "sha256": "43ae6d1b5b2f06d894dbc7e1f08a6cb2b45e4896d68e4d9e21fd9dbea454ec94"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-s0-b1.jsonl.gz",
+      "bytes": 1977038,
+      "sha256": "9f71dccb8889f9f4feb18f0d6e477b700132458f908bc0ab83fd876a19b8f9b7"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-s1-b0.jsonl.gz",
+      "bytes": 1979264,
+      "sha256": "3ad3b717781dc7e3ad3e780ebe761af9e32045adb1b9e526c3508282bd868db5"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-s1-b1.jsonl.gz",
+      "bytes": 1979172,
+      "sha256": "68f18c701cc18f765829f90f718b07ef9e370443e5968215ce47e0276f3c84ed"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1226703,
+      "sha256": "fec286437f78e5991de0724573c99c0b951dcc8a642880528cbd747326e35943"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1223875,
+      "sha256": "5a451a6744cf511ff3687967201a99ff55c9995c05aca0498074b1acd62f0fc1"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1221810,
+      "sha256": "6fd85f42a642055a4f3814cc439c23e5dd3978340c20e5a5dd0238925b0dc26c"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1225898,
+      "sha256": "1b355ce2200a7bfe7c95f8368f72cb66d411e471fa6391c476bcf21db2ba3545"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1238720,
+      "sha256": "62a7988baa431d3be1625dbd12c54455c3796b72be48fca47b3c8d8bf1c044c6"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 1236735,
+      "sha256": "60924ea3a7eebfaff4c4b4fa2b2d056ed7b05c67d046a14762f5678738b45e4d"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1233466,
+      "sha256": "ab0876791fa35bce76f305946efb8e45706c23e5e9da8b2584f543f2ef1a4688"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 1235681,
+      "sha256": "a1cda3eabf5558c78d5d4a73bcab453beb02e32573b62a9771fe9df7e6e4161b"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 3984410,
+      "sha256": "13333e1b7a1a54a1368c00747df3067507310c34fd0589ff751a481b7da090ae"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 3793725,
+      "sha256": "15fff4c9dddb095fa14b1f1a485469b966384ed51103e9447b6757d2fedcd7e4"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 4294599,
+      "sha256": "03187b6893b29df3e93ddb4eafbd07dc873324d3da824ae82c0cd00fc84e9b6b"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 3563257,
+      "sha256": "53282cf145315f8ef8e1c5712eca5d3da9cc8b7c0e49ce3fdf30f25371baba25"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4596004,
+      "sha256": "66e23c7f312038515656fd1663c463f82ccc9d0da4a24d9e6d565f90d6f7e033"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4493590,
+      "sha256": "bee49f3e46ce871218339b0127b0bda1c58faabaaf1ef04af5c863652bac6a45"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4593154,
+      "sha256": "c03f34f064cbd45e25aeabc6654282f688180955bcfc8d8bbde33e50f3e9656a"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4559451,
+      "sha256": "6dca1179e82b6b2de11b760a51d85af4248ad79963fd0a828d62b0a83c268ebe"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4223546,
+      "sha256": "6c9e8136a5cdcb4f6788209281675a9b06441619e4323dd54b6d9b7f8b0fa3f4"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4148985,
+      "sha256": "35e70cc6ec01218a620b33c24bbc67a6fdc0d36e36dd866d056011208bbdb2a5"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4609582,
+      "sha256": "697d4f3ec4ed765e480945680874fd9d4912b891dd74c6aaf768f540e3115de4"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-full-s1-b1.jsonl.gz",
+      "bytes": 3758266,
+      "sha256": "0bca0f510e4f68a1c1d1312c98320013a5da9c104b98372af821468e3b8af494"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4334604,
+      "sha256": "cc92a4b147cc2af27ddba3f39f01175b32b2629880491c84afbe2eade03ccb4b"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 3793703,
+      "sha256": "1228d7fb922a4b111b9a8eb7d69f463c5260927ddd8909a7dee71f82767b95c1"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4473722,
+      "sha256": "459b321d418ba5aa20222bd5afd5f82505d8bbd329f7df1dc3ebcb9c97bd97c2"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 3830373,
+      "sha256": "6dfaf16330dac57dcee78d4203a479853628a4710440c99e59fe920a5c19019e"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4221757,
+      "sha256": "514a984cf23f8a1e2ddd78d473c49421f28a30629c4176c66f224d0b5a2496ba"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4148329,
+      "sha256": "6721ab653723361d3a69fdb64aef82c00ac97440b5d6cd8759b63e702588d406"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4608998,
+      "sha256": "a6b6adf85992dbcfd035ad1cd082b44e5168aef9533e3d4425525a802a9ec6b3"
+    },
+    {
+      "member": "original/raw/evaluation-c1-spear-plus25-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 3758019,
+      "sha256": "0632770d92e23bdde9114c8ddc36cfce6daddb1eefc812f2d7f291df70151f18"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-s0-b0.json",
+      "bytes": 3663,
+      "sha256": "194eac14e8ca5bd23168d669c803391fd1999e56830ccbb5730e6d086ab01bdf"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-s0-b1.json",
+      "bytes": 3664,
+      "sha256": "31063158d3ef22f21ce37af1c08072dd6bd603cedd66b72e4c147ad101eec441"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-s1-b0.json",
+      "bytes": 3665,
+      "sha256": "8b011eacc46f06e4a04a6b202a05ef257bf660be7462b84967a1c2595e314279"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-s1-b1.json",
+      "bytes": 3664,
+      "sha256": "636da494df1101a0d58d523a0785f43abbf22b7d40081108fe23dae8da4988ab"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b0.json",
+      "bytes": 3788,
+      "sha256": "7cdb922bfd92717af4f777be7e6b6b7d794e26d501b6217dd8665ec516e366fc"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s0-b1.json",
+      "bytes": 3792,
+      "sha256": "c67760686f9d7d0efa15d6fd3c310cf25bd0e5187c5299b73254f07035f3c883"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b0.json",
+      "bytes": 3793,
+      "sha256": "491caa9e41eb558c7fd3d58a47c61b53ced1d40b83a70e101e03308b0f877500"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-2x-s1-b1.json",
+      "bytes": 3787,
+      "sha256": "9ef83f67b4f5741f8a885d5fde48e55498ee59d813d0bec1c62c8115ceae5332"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b0.json",
+      "bytes": 3785,
+      "sha256": "3d13e9e0197b3af952747459d217468ad4a528de9b4e2e94e0ba1e9b5bad7356"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s0-b1.json",
+      "bytes": 3790,
+      "sha256": "905c4a346f449e841a4f344a91488a2ae0c410f78700844d82dee0a87c99d9fb"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b0.json",
+      "bytes": 3784,
+      "sha256": "6906370d6ab39b1df9f9b114d4e31231a1231f31c341631792166942cdd068b7"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-conventional-useful-4x-s1-b1.json",
+      "bytes": 3786,
+      "sha256": "874dbd5cda585bb6dc50488a578d554aed7c55d1146f1c99f894619952512be6"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "bytes": 14194,
+      "sha256": "58d0935c9b831578e536e3675e714073def534fb9a415742d0170ab84fd2fb42"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s0-b1.json",
+      "bytes": 11845,
+      "sha256": "22ce33a5ed95202920d5566bed17165e7b9f3a739981d4c654ccb727e62e018b"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13202,
+      "sha256": "431182aba4f363e2c48c50f01333ce674f52d4d6caf3424f371ec9ac0161ac81"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-broadcast-cut-s1-b1.json",
+      "bytes": 12751,
+      "sha256": "f8d70c05fdd5b90f6b51f3868f6ac761c569372ef8dec645518b30ac1be5038f"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "bytes": 30230,
+      "sha256": "5abb1a2bea87b7843ac8c86284651348cde73ef889efb225a38bda0af1d9d257"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s0-b1.json",
+      "bytes": 30288,
+      "sha256": "dc7b3960bd9c117ea69cb3f9af220e69535f56308201b10ed1d13eb979934b74"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "bytes": 30879,
+      "sha256": "c9e63b8e4ae034fd856f3034681608d82c65a83687515116cc0af01fc99e6c58"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-fixed-metacog-s1-b1.json",
+      "bytes": 30058,
+      "sha256": "f7269ced5bdc93c6f28104dae0dba7b568ed1c9090f1e611023dde56353da879"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-full-s0-b0.json",
+      "bytes": 29853,
+      "sha256": "71b5f6dc9118bbac67229421dcd62d4858e95e8b0198d741f922f48b8fd0a673"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-full-s0-b1.json",
+      "bytes": 30661,
+      "sha256": "7b7aa06325755109758f887c89e45777972b8b84ea1c6f39fa413dd46bd1c10e"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-full-s1-b0.json",
+      "bytes": 29779,
+      "sha256": "12f4dd9b13bcebf7648efea3706e0562626a2f690a6c595fd32f8dacd7e715b0"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-full-s1-b1.json",
+      "bytes": 30018,
+      "sha256": "3aa65f8b393f3971d10ab9c94cd16362e4b4d6c7844d20bbd41ce0441f48ac0d"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "bytes": 15794,
+      "sha256": "5927d12ee8f76e3ddf9fc1acc01ee232cfcd6180ba24c22bdc3658dee4997ddd"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s0-b1.json",
+      "bytes": 15581,
+      "sha256": "0c8869e77380d3cd4350d7df29f0758b075a1b47d1eaf092d11cff62571f6562"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "bytes": 14691,
+      "sha256": "5a8604df0df2b6ecc5cf7cbac111a00650d0dd9bee3729ca58f611ff9c94237e"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-learning-frozen-s1-b1.json",
+      "bytes": 14653,
+      "sha256": "a8a1927d2f2fd6b1410328414e38a5a98fc8333e3decbaa6bbc1f751a1e4a94f"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s0-b0.json",
+      "bytes": 29857,
+      "sha256": "9aa3f89a46d81305691fe569c57035130890c97fb684626c8427385cad097484"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s0-b1.json",
+      "bytes": 30666,
+      "sha256": "ab5301fb0e3df40b4996f87bee3bd3555efd6e7ef65cd4b2af9441f044ad5d95"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s1-b0.json",
+      "bytes": 29791,
+      "sha256": "f255dc6a10fafdc7fafbcad5cbb88916fa51a7e2d4757b51e47df9b6aedd4c37"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-minus25-mind-no-novelty-s1-b1.json",
+      "bytes": 30422,
+      "sha256": "a9ccbdd8cfc0c1cb7020e7f8aef3cbfa85208c5087e16aea83d06e4e4b6b8044"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-s0-b0.json",
+      "bytes": 3666,
+      "sha256": "30894e4c652e9d1365e4b54adb1309ce26dc75801d30957b8fa0ee1c3fc2d5d0"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-s0-b1.json",
+      "bytes": 3667,
+      "sha256": "2de2ede0a16fdfbc67d9a8e529b50648e1b97f0f51ba30e1f1992f1c03e6fd56"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-s1-b0.json",
+      "bytes": 3665,
+      "sha256": "60826eefd978a7584e7dcfc15d683969a3f35f512697cbd3edf6a7176481343f"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-s1-b1.json",
+      "bytes": 3665,
+      "sha256": "492b5583225491e5d2d0098f45ae0ffe7e57b4cf198a652087bedb4f9f387b39"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b0.json",
+      "bytes": 3787,
+      "sha256": "7250959b7ca5cc0e023b0cb42b4541497bf32cb3495fa3da0c70a221fa08bef0"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s0-b1.json",
+      "bytes": 3792,
+      "sha256": "1e968c88e931171b30f55490ba429a5dd1ac7d6b20ce93e9809aa985f54d9601"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b0.json",
+      "bytes": 3794,
+      "sha256": "f916fa08b0792390ab936f94468074b63e4487f35344aebff3f080e3858ac3cf"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-2x-s1-b1.json",
+      "bytes": 3789,
+      "sha256": "df5216984edd422e3447e0e15921dfb43cb439a97dd662e502480a13218408e9"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b0.json",
+      "bytes": 3785,
+      "sha256": "fd58555ce8008c5d69c67501468bcafacf1b66ac3fd156024ce2639442468fd1"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s0-b1.json",
+      "bytes": 3787,
+      "sha256": "1790404ac8f2c18585d7b222ecaf6e318aca86ed14652930ae035c8d6d77ca77"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b0.json",
+      "bytes": 3784,
+      "sha256": "0290ce7cc557ec126f0e28fa473f367b11cb9f27d9abc441d789ac618fd36474"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-conventional-useful-4x-s1-b1.json",
+      "bytes": 3793,
+      "sha256": "418e7b9697aeb365067baadc6c8458724d49e049a9b732c7e213fe6bdb3ce06d"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b0.json",
+      "bytes": 13798,
+      "sha256": "cdd57eba73a54a9742f6ecd945eca3ab844072f2aa929c93c540b016f44dd276"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s0-b1.json",
+      "bytes": 13576,
+      "sha256": "0c64c65875988160b76e8a121be26b2458093aa40b7fb1ac7da9f1dc56ae1e2d"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13328,
+      "sha256": "09881eec097fc7f1f00a707f981ac6fca32d7ca3323a1510604f7d7f0ebbb60c"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-broadcast-cut-s1-b1.json",
+      "bytes": 12504,
+      "sha256": "5953084e26ea245713914ab26a15dfdc9ab4f147c2534a03fa0dce2bbe29f437"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b0.json",
+      "bytes": 29814,
+      "sha256": "a217b33cb6bf607f20b7a2a7665759ea85ced8e8d929ef36ef97d95c20256fd1"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s0-b1.json",
+      "bytes": 29649,
+      "sha256": "a1e9250cf9679a8961518b410c1ccf006f8121ae8162ef323911e111484eb7af"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b0.json",
+      "bytes": 29489,
+      "sha256": "dd882ce90351f5b5ebb8708a02bc593e55e637b07c07392c4f108486f3eab38b"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-fixed-metacog-s1-b1.json",
+      "bytes": 29618,
+      "sha256": "ac61eae6828bd5e89bb2f041093c563b8f8e412ae86eeaca25c81308cfbe7a73"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-full-s0-b0.json",
+      "bytes": 30327,
+      "sha256": "b674d5e5169db06aa123d2ddb02d139da904bcf72ef1d01ecf50da3f23adc8eb"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-full-s0-b1.json",
+      "bytes": 30071,
+      "sha256": "66e6fd7efa1169694000a0e41d8f6d06252d699bf11f95f919b88e8f7bd508ff"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-full-s1-b0.json",
+      "bytes": 30204,
+      "sha256": "5c19aded029a985cb35803798d8bbe7ab389b04248363afe04361eddddf99e77"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-full-s1-b1.json",
+      "bytes": 28958,
+      "sha256": "5a085425f321f5c730b0159e974b6b4872f02a29ebba8018eb18bb54dd629abe"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b0.json",
+      "bytes": 15301,
+      "sha256": "271fe3417b1c2f0616c913120e1a74645a8899ac18847e786fbd98b96fcc68f1"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s0-b1.json",
+      "bytes": 14684,
+      "sha256": "f48c6b307d98aab96e44c05a5a2d708562383f229d6f99c4dd4fbd3766ea726a"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b0.json",
+      "bytes": 15057,
+      "sha256": "915bdd7a9b407f7c10a16cf41b2c5ff9037173f57506b72e75e980611735f8f7"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-learning-frozen-s1-b1.json",
+      "bytes": 13998,
+      "sha256": "632986116d913856a7d6d832d09c7ac0010961f7f8604df872994bc498ffcfe2"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s0-b0.json",
+      "bytes": 30334,
+      "sha256": "1bf4d6050e11d2b5e8bde589703a5fc9fe8d31a043649dc276c65fdf8e0c1c02"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s0-b1.json",
+      "bytes": 30076,
+      "sha256": "c1136dca6997b1c0c45e47ff8022c651ed7b181e1c84b7a41edf21d3a7fcc85a"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s1-b0.json",
+      "bytes": 30221,
+      "sha256": "9084f96a47ce5256ff3487c68fbf1ef88f2850952dfe8dba93133c38d5f06477"
+    },
+    {
+      "member": "original/results/evaluation-c1-spear-plus25-mind-no-novelty-s1-b1.json",
+      "bytes": 28962,
+      "sha256": "8212dde528999a340a413e6dd308c58b18771d849dab2c4ee3759fec84e66c99"
+    }
+  ]
+}

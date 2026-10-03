@@ -1,3 +1,5 @@
+> Completed-result update: the sole 16-case attempt and independent saved-row audit are now preserved here. See RESULTS.md and RESULTS-MANIFEST.json. Exact gzip bytes decompress to the manifested raw files. The pre-run description below records the earlier checkpoint, not a second run. No historical 40-case or comparative-speed criterion was demonstrated.
+
 # NEW development-fixture diagnostic: reviewed pre-run checkpoint
 
 No outcomes or execution release exist in this checkpoint. Independent preflight review passed the exact manifest `6b0515b94a293ed12bcb81babf2a0fd5956e45c3b6afbb5dc9d85d4eef250ea4`; six synthetic/preflight checks passed. All 36 manifested files are bound, including 25 original controller source files and package.json. The eleven diagnostic files here retain their exact reviewed bytes.

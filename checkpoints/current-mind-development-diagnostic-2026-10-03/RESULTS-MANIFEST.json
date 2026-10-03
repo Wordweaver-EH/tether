@@ -1,0 +1,45 @@
+{
+  "schema": "new-current-mind-development-diagnostic-results-v1",
+  "sourceManifestSha256": "6b0515b94a293ed12bcb81babf2a0fd5956e45c3b6afbb5dc9d85d4eef250ea4",
+  "preOutcomeGitCommit": "b46606c697459275f5fb652434cbfb93c6eb01b0",
+  "status": "complete",
+  "cases": 16,
+  "oneAttempt": true,
+  "files": [
+    {
+      "path": "attempt/raw.jsonl",
+      "bytes": 4165981,
+      "sha256": "99390d1609ff09e1e76781a1e9c87f4b04bf1072f956ce75b8712f64078f1528"
+    },
+    {
+      "path": "attempt/raw.jsonl.gz",
+      "bytes": 205034,
+      "sha256": "ec836cde836e8bafdac141a7142cc66f7f5fa8fbd6a45bde1691d5ad8d2ad8e8"
+    },
+    {
+      "path": "attempt/results.json",
+      "bytes": 661991,
+      "sha256": "f6e07d147be07ee7f9f343a266456ef065155b896ae3aeb44c937fa7966ce6c9"
+    },
+    {
+      "path": "attempt/results.json.gz",
+      "bytes": 81846,
+      "sha256": "279459c742fc6f7c9d17d2f8b02de98d28b08d22f1e07731d0c8a0e30b3dbaa8"
+    },
+    {
+      "path": "attempt/summary.json",
+      "bytes": 2067,
+      "sha256": "0e501f2a728d63511cea519d186f8abb5d8d91bea1f77c9fda0b93a671a579ea"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 5712,
+      "sha256": "da65376e2f133d60223eaf4d335d78e8c0c8c8db8302e8e5c4370e408b2a1794"
+    },
+    {
+      "path": "INDEPENDENT-RESULT-REVIEW.md",
+      "bytes": 1901,
+      "sha256": "05fc3118694b05286c53afa81dfc96170c70d7d06cb774f9e6f51749dfe8a540"
+    }
+  ]
+}

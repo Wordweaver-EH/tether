@@ -1,0 +1,14 @@
+{
+  "status": "STATIC_SOURCE_REVIEW_PASS",
+  "selectorSha256": "0eb543bfada7a94d0c343793b64d1cba5ffb75a2317ba43e5fbea136f5252bb9",
+  "scope": "Archival completed-generation selection only; actual saved-generation validation receipt required before publication",
+  "checks": [
+    "Exact closed lock/release/run binding",
+    "64 distinct parent-accepted results and generation/task provenance",
+    "Block/proof/raw/terminal equality and absent persisted target memory",
+    "Source member hashes rechecked before freezing archival list"
+  ],
+  "rankingCertified": false,
+  "wholePhaseCpuCertified": false,
+  "executionAuthorized": false
+}

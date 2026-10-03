@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "phase": "opponent-search",
+  "lockSha256": "3ea79c1c6c4aeb74d71fcd27c67e43bf15174fec158c7e3d55560ddc0985ef8e",
+  "output": "/workspace/scratch/75679def3745/tether-robustness-search-runs/attempt-001",
+  "workers": 8,
+  "independentReview": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-search-final-review/INDEPENDENT-REVIEW.json",
+    "sha256": "9419b0cd8a35a422beebd7e7c72d3868fd30ac251bee9dd94557a22121c99a69"
+  },
+  "gitCheckpoint": {
+    "path": "/workspace/scratch/75679def3745/tether-github-update/search-checkpoint-publication-receipt.json",
+    "sha256": "d7d8d794366b02b0aac9903b455f4d1f657622288a18283349ec3f1b0e0c8319"
+  },
+  "authorization": "Root explicit one fixed post-freeze opponent search approval2026-10-03T06:18:27Z, contingent exact Git now verified.128 candidates/512default300-second trials, integer fixed selection, no frozen baseline/mind updates or evaluation."
+}

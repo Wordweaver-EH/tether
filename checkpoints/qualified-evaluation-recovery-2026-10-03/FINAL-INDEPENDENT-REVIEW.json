@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "approved": true,
+  "approvalScope": "Independent technical approval of qualified recovery infrastructure only; not execution authorization. Root single-use release and verified Git gate remain mandatory.",
+  "status": "QUALIFIED_RECOVERY_INFRASTRUCTURE_APPROVED",
+  "reviewedAt": "2026-10-03T08:03:38.687683+00:00",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "supervisorSha256": "7e1250703ab1f2059cebe15806485682c0828b00464569aedf84112d2a45a1c5",
+  "auditSha256": "e2d49fb2ad59d46711d2dc93d137b05b1e4eb996319c8460ecd95846da024918",
+  "partitionSha256": "c3dd977c0cad1ce964af3c94afea70c94135217fd4eba59a50203f82c69b4963",
+  "originalManifestSha256": "d2b893529e153ef6a2479f0d53c947153b1ff399c76a76747f1661c70217d8fd",
+  "stabilityObservationSha256": "e4a848b7378bdf78bda5e0679f3c870c1fa662f5c4d8d4d8a09003ea974575c9",
+  "headerValidationSha256": "d7856f69578961c0af3ff573ebe23bcc4d9243d3fc750fa96ce05eb2bb2b7255",
+  "supervisorTestsSha256": "081d9b9da0a728db416527d5f9c54e65e7c3327f969f82d515e9e6629f8e7943",
+  "tests": {
+    "command": "node --test tether-evaluation-recovery/supervisor.test.mjs",
+    "passed": 21,
+    "failed": 0,
+    "scope": "Synthetic infrastructure tests only; no gameplay"
+  },
+  "historicalAudit": {
+    "accepted": 805,
+    "rejected": 0,
+    "requiredMemoryHashes": 512,
+    "independentlyCheckedNonemptyRawHeaders": 811,
+    "sourceLockInputs": 150,
+    "sourceManifestEntries": 94,
+    "originalInventoryFiles": 2131,
+    "remainingOriginalIds": 3419,
+    "completedTaskSetSha256": "c259feb1846f8eb98ceb10c18c715253f6b750e85bb909701d43a7ee547b735c"
+  },
+  "verifiedControls": [
+    "Source and original evidence remain immutable; fresh separate resumed output",
+    "Exact validated partition; accepted805 IDs never dispatched; original seven raw-only files preserved",
+    "Frozen task objects, seeds, policies, worker and ordered memory dependencies unchanged",
+    "New memory hashes checked against results before descendant execution",
+    "Exclusive single-use release consumption and fresh output",
+    "Original metadata/inventory before each dispatch and every250ms; bounded16MiB/128file rolling hashes; full hashes preflight/final",
+    "Continuous capacity reservation from original launch plus alternative historical-reservation/measured accounting; enforce maximum, never sum alternative bounds",
+    "Original14:52:26.760Z wall deadline retained; stricter10:52:26.760Z capacity deadline",
+    "All4224 unique original IDs and3419 resumed accepted IDs required before atomic guarded completion",
+    "COMMIT-UNCERTAIN marker overrides COMPLETE if post-link durability fails; independent audit required"
+  ],
+  "qualifications": [
+    "Shared aggregate capacity at most9 logical CPUs across original and resumed executions is an explicit operational assumption, not independently proven cross-namespace quota or exact historical CPU measurement",
+    "Unknown original process extinction: global eight-worker concurrency and no simultaneous original/resumed execution of partial IDs cannot be certified; never claim global exactly-once execution",
+    "Watchdog has finite sampling, scheduling and full content sweep latency; tiny final commit/receipt/fsync/exit overhead excluded from terminal measurement",
+    "Full independent validation of resumed raw chains, provenance, memory links and frozen analysis required before final scientific report; infrastructure success is not scientific completion",
+    "No interim policy comparisons, retuning, new study, original evidence edits or gameplay were performed in this review"
+  ],
+  "resolvedReviewFindings": [
+    "Failed spawn without PID now rejects/cleans up",
+    "Missing exact final union count now guarded",
+    "New memory/result hash checks added",
+    "Final completion moved to fsynced pending file and synchronous checked exclusive link",
+    "Post-link durability uncertainty explicitly recorded",
+    "Exit timestamp/code/signal now persisted even if bounds or mutation check throws; stale resource snapshot explicitly labeled"
+  ],
+  "outstandingTechnicalBlockers": []
+}

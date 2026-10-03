@@ -1,0 +1,108 @@
+{
+  "archiveSha256": "7ae522723a422e13c9408fd5ad06c363ae9706ef8e041472cd3cd43f569572a2",
+  "archiveBytes": 330074,
+  "parts": [
+    {
+      "file": "recovery-preflight.tar.gz.part001",
+      "bytes": 90000,
+      "sha256": "09ab652e92a84a9fef0b15c3b1820d6f216131fe3aa69381b2f669052e2f70e9"
+    },
+    {
+      "file": "recovery-preflight.tar.gz.part002",
+      "bytes": 90000,
+      "sha256": "73417d7e2d1f96835b211f60298a2166a5a8b0b222653402ae7b841c2e7d6412"
+    },
+    {
+      "file": "recovery-preflight.tar.gz.part003",
+      "bytes": 90000,
+      "sha256": "0be09eeee74ee52f2bf036520166ac17734bbb6c138131ac6d5844ba5db9d013"
+    },
+    {
+      "file": "recovery-preflight.tar.gz.part004",
+      "bytes": 60074,
+      "sha256": "02b4b08b410f0cd80952042de518c59fd83b3ebd8d94d0d56340cac8d2b56f3b"
+    }
+  ],
+  "files": [
+    {
+      "path": "tether-evaluation-recovery/README.md",
+      "bytes": 4837,
+      "sha256": "f6e8f42418194d50dea03a248321dcae01f6adb4031af00ca55a830754315dde"
+    },
+    {
+      "path": "tether-evaluation-recovery/RELEASE-TEMPLATE.json",
+      "bytes": 205378,
+      "sha256": "e61ceeab60c4ee3767d20f562242b3d83595d43f786403d93b679fb8658c0fbe"
+    },
+    {
+      "path": "tether-evaluation-recovery/supervisor.mjs",
+      "bytes": 22054,
+      "sha256": "7e1250703ab1f2059cebe15806485682c0828b00464569aedf84112d2a45a1c5"
+    },
+    {
+      "path": "tether-evaluation-recovery/supervisor.test.mjs",
+      "bytes": 5204,
+      "sha256": "081d9b9da0a728db416527d5f9c54e65e7c3327f969f82d515e9e6629f8e7943"
+    },
+    {
+      "path": "tether-evaluation-recovery/synthetic-tests.log",
+      "bytes": 1400,
+      "sha256": "dd7f586ea46ce163b733190938dc060d694e755fcc8d020bcff69b49fbd52f5f"
+    },
+    {
+      "path": "tether-evaluation-recovery-review/FINAL-INDEPENDENT-REVIEW.json",
+      "bytes": 4144,
+      "sha256": "5533ffc8b29b43b80400db785e44e13c3484dcdef017b5b79d204ed7af0bdaea"
+    },
+    {
+      "path": "tether-robustness-recovery/HEADER-VALIDATION.json",
+      "bytes": 47789,
+      "sha256": "d7856f69578961c0af3ff573ebe23bcc4d9243d3fc750fa96ce05eb2bb2b7255"
+    },
+    {
+      "path": "tether-robustness-recovery/ORIGINAL-FILE-MANIFEST.json",
+      "bytes": 482198,
+      "sha256": "d2b893529e153ef6a2479f0d53c947153b1ff399c76a76747f1661c70217d8fd"
+    },
+    {
+      "path": "tether-robustness-recovery/PARTITION.json",
+      "bytes": 760017,
+      "sha256": "c3dd977c0cad1ce964af3c94afea70c94135217fd4eba59a50203f82c69b4963"
+    },
+    {
+      "path": "tether-robustness-recovery/RECOVERY-PLAN.md",
+      "bytes": 4964,
+      "sha256": "13b4557f83bb7cb966567f61df7616e5fb8088be589c0f768ae657f2a6bac47f"
+    },
+    {
+      "path": "tether-robustness-recovery/RUNTIME-HEADERS.json",
+      "bytes": 223103,
+      "sha256": "52cd0bcc398f6e5d96d802ee548191348a06af251d96ed14949f372f020fa492"
+    },
+    {
+      "path": "tether-robustness-recovery/STABILITY-OBSERVATION.json",
+      "bytes": 347,
+      "sha256": "e4a848b7378bdf78bda5e0679f3c870c1fa662f5c4d8d4d8a09003ea974575c9"
+    },
+    {
+      "path": "tether-robustness-recovery/VALIDATION.json",
+      "bytes": 497118,
+      "sha256": "e2d49fb2ad59d46711d2dc93d137b05b1e4eb996319c8460ecd95846da024918"
+    },
+    {
+      "path": "tether-robustness-recovery/prepare-partition.py",
+      "bytes": 2866,
+      "sha256": "2f1af5ed6636271b6ffa48f552d4239a55e4af30860908f4ed5e00f347168d51"
+    },
+    {
+      "path": "tether-robustness-recovery/verify-existing.mjs",
+      "bytes": 4325,
+      "sha256": "dd1a159cfbf83cbeb9843b9b1485fc8d2fef0e7962152a54bbe7513693283734"
+    },
+    {
+      "path": "tether-robustness-recovery/verify-headers.mjs",
+      "bytes": 1913,
+      "sha256": "ed6439313dd0b5bab0c4d68aa29b7e819402ff3bd27db7540c88e4106a067515"
+    }
+  ]
+}

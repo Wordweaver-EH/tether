@@ -1,0 +1,29 @@
+✔ accepted predecessor retained, unfinished ordered exactly once (5.975655ms)
+✔ fully accepted groups skipped (0.306762ms)
+✔ reject unknown (0.288655ms)
+✔ reject duplicate (0.096155ms)
+✔ reject overlap (0.105389ms)
+✔ reject gap (0.121653ms)
+✔ reject invalid ancestry (0.156165ms)
+✔ capacity bound not added to measured bound (0.191969ms)
+✔ earlier capacity deadline and original caps retained (0.244628ms)
+✔ proc parser respects parentheses (0.350948ms)
+✔ live and reaped CPU charged once (0.389476ms)
+✔ accounting retries reap transition (3.63753ms)
+✔ missing exited pid tolerated but permissions denied fail (0.265039ms)
+✔ durable one-use file, tree metadata and rolling hashes (2.46432ms)
+✔ missing release authorization fails without importing or launching worker (0.880075ms)
+✔ release rejects worker count before importing worker (1.576513ms)
+✔ release rejects original deadline before importing worker (1.353097ms)
+✔ release rejects missing historical bound before importing worker (1.910576ms)
+✔ release rejects shared capacity missing before importing worker (1.005273ms)
+✔ release rejects orphan uncertainty undispositioned before importing worker (1.111223ms)
+✔ release rejects outside output before importing worker (1.739749ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.516849

@@ -41,3 +41,7 @@ Earlier data-branch documents retain historical unpublished warnings from the or
 ## Completed C1/C2 evidence
 
 [Immutable data commit d8b8887](https://github.com/Wordweaver-EH/tether/tree/d8b8887bdf6218d64759f2e150a505fae92196ee/checkpoints/c1c2-evidence-2026-10-03) contains both result archives, transport manifest and checksum reassembler. C2 archive SHA-256: `457bd9a46b162b76e0a19786b865d9f79c9a29e2518be429783e2627ebf32631` (12,347,423 bytes). C1 gap archive SHA-256: `4f340e117baf21b410c38d29dced6ab4cd6cf6745b0722bb839577032f600162` (4,860,760 bytes). No raw archives are added to the code PR.
+
+## Completed rebuilt N/S measurement
+
+[Immutable data commit 36c0399](https://github.com/Wordweaver-EH/tether/tree/36c039924dc76c69f924e56ee411d264ad34fdce/checkpoints/rebuilt-ns-evidence-2026-10-03) contains the exact final released source/protocol ZIP (SHA-256 `1a5740856158555fde4b4ec8cf26a9926bc1fa9c79fffd3015485d299636304f`), separately preserved pre-act startup failure (`0651936e06c55ccb262f2ea5d7ab01a2c7906d271220aae9a009b8dc4f89bfce`), and complete successful raw results (`da118327238a92485a90864547b50fdef7320bd7902bd9409703449ea7587b39`). The final audited report is separate from the historical preliminary report inside the unchanged raw ZIP. All 643 manifested members verified. These new rebuilt N/S sources predate C1/C2 and are distinct from the lost earlier candidate.

@@ -18,6 +18,8 @@ The default controller now includes the reviewed novelty/completion rebuild and 
 
 Both completed C1/C2 result archives are preserved losslessly at [data commit d8b8887](https://github.com/Wordweaver-EH/tether/tree/d8b8887bdf6218d64759f2e150a505fae92196ee/checkpoints/c1c2-evidence-2026-10-03). Each retains its frozen runner/protocol, raw arms, manifests and scientific reviews. The checksum reassembler verifies all parts and reconstructed archives. Source backup remains at [data commit 06c0a81](https://github.com/Wordweaver-EH/tether/tree/06c0a813c1990ee313e702c9a00d64a3ca9205b0/checkpoints/c1c2-2026-10-02).
 
+The completed rebuilt N/S comparison has its [final frozen sources, protocol, failed startup and full successful raw run](https://github.com/Wordweaver-EH/tether/tree/36c039924dc76c69f924e56ee411d264ad34fdce/checkpoints/rebuilt-ns-evidence-2026-10-03) publicly preserved separately at data commit `36c0399`. All 643 archive member hashes and original ZIP checksums were verified. The final audited N/S summary is included without relabeling those older sources as the current C1/C2 controller.
+
 ## Reproduce current software checks
 
 Using Node v24.19.0 from the repository root:

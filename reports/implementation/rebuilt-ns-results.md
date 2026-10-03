@@ -2,7 +2,7 @@
 
 # Tether measurement: no demonstrated gameplay gain from the stricter planner
 
-**The bounded measurement is complete.** The stricter controller produced the same primary actions and hit totals, while its median within-pair decision-time ratio was **1.1134: about 11.3% slower**. This does not complete the broader cognitive milestone. The stricter candidate remains outside the published PR.
+**The bounded measurement is complete.** The stricter controller produced the same primary actions and hit totals, while its median within-pair decision-time ratio was **1.1134: about 11.3% slower**. This does not complete the broader cognitive milestone. At the time of the measurement the stricter candidate remained outside the published PR. Its reviewed implementation is now integrated into the later experimental C1/C2 checkpoint; these results still evaluate the frozen N/S sources only.
 
 The sources are **new rebuilds**, N (novelty-only) and S (stricter completion/contact handling). They are distinct from the lost unpublished candidate; earlier A results and its historical test counts are not evidence for these revisions.
 
@@ -56,3 +56,7 @@ Fresh full suites passed N 175/175 and S 185/185; corrected runner/configuration
 - S commit: `a514c0f7f95f6df1bb987bee315830261b5c6188`
 - S source SHA256: `fb1ac97f638637e91467b9eef699d1c50933e7b81adee9aee4bd88422de3d223`
 - Released measurement manifest SHA256: `3d3029e2ec1f4bf03b44d65ed50f8b296677e9e46126260e969b2060b95ae596`
+
+## Public raw evidence and frozen sources
+
+[Data commit 36c0399](https://github.com/Wordweaver-EH/tether/tree/36c039924dc76c69f924e56ee411d264ad34fdce/checkpoints/rebuilt-ns-evidence-2026-10-03) preserves the final released source/protocol ZIP, the zero-exposure startup-failure ZIP, the complete successful-run ZIP, and the exact audited final report. All 643 manifested members and original ZIP SHA-256 identities verified; transport parts are at most 8 MB. Run the checksum reassembler in that directory to reconstruct the archives. The raw ZIP retains its historical preliminary report; the adjacent FINAL-RESULTS.md is the audited interpretation. No lost-workspace raw or later C1/C2 results are included in these archives.

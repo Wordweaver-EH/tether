@@ -1,3 +1,5 @@
+> Pilot harness update: the reviewed isolated experimental runner is included, with 312 passing integrated tests and a verified [pilot-only source/preregistration checkpoint](https://github.com/Wordweaver-EH/tether/tree/1ef4165377f7c7300db30714363f0789c9a0d58b/checkpoints/robustness-pilot-preflight-2026-10-03). No pilot or final-study outcome is asserted here; see benchmark/STATUS.md for exact scope.
+
 > Pretraining update (2026-10-03): reviewed benchmark-only I/O hooks and conventional baseline plus reviewed training-only code are now saved. [Benchmark status](benchmark/STATUS.md) distinguishes the 294 passing software tests from the completed training-only attempt and its qualified actual-output freeze; pilot/held-out execution remains gated. Default game action/state parity is tested; the source bytes now have a separate [hook manifest](reports/provenance/robustness-hook-source-manifest.json). The earlier C1/C2 checkpoint description below remains version-specific.
 
 # Current experimental checkpoint: rebuilt N/S plus C1/C2

@@ -1,0 +1,47 @@
+✔ default source actions, diagnostics and state retain exact equivalence on synthetic percept streams (405.877617ms)
+✔ sensor contract retains original legal percept, drops extra top-level truth, detached copy (0.561715ms)
+✔ paired queues and cadence: exactly 150 ms old at 30 Hz; pulses do not repeat, continuous held (3.732018ms)
+✔ stateless sample address and noise law have no branch-consumption privilege (0.442627ms)
+✔ native hooks have one cycle per call with no second latency or scheduler (6.58989ms)
+✔ baseline vector is copied, fixed and episode state resets (1.658917ms)
+✔ diagnostic capture does not affect wrapped actions or learned state (44.679187ms)
+✔ calibration mirrors native single-pending sparse-credit rule and censors unresolved terminal (0.587785ms)
+✔ external frozen calibration is diagnostic only and no injected nested truth crosses (39.648665ms)
+✔ deferred command memory commits actual externally noised motor at receipt time (59.677875ms)
+✔ native primary calibration copies exact issued pending and keyed outcomes (133.144878ms)
+✔ bypassing motor noise preserves shared cognitive RNG draw sequence (840.262056ms)
+✔ fixed teacher removes uncertainty control but preserves scheduled learning opportunities (17.724421ms)
+✔ broadcast delivery cuts retain coordination packet/projection work (3.949795ms)
+✔ configuration rejects invalid levels, rules, and utilities (1.076591ms)
+✔ synthetic percept yields deterministic finite commands without mutating inputs (4.638903ms)
+✔ larger useful grids complete more evaluated trajectories (1.644876ms)
+✔ no opponent evidence uses incumbent without fictional trajectories (0.176696ms)
+✔ score reset clears stale opponent evidence before planning (0.374324ms)
+✔ embedded spear considers recall schedules without learning from outcomes (1.11612ms)
+✔ nominal-only composite refuses shifted physics and exposes final-command commit (3.308931ms)
+✔ mock child timeout terminates and rejects without game imports (67.83526ms)
+✔ explicit cancellation terminates active mock child (38.949552ms)
+✔ disjoint completed/live totals include parent CPU and raw ceilings (1.773069ms)
+✔ faithfulness retains actual report mismatches and separates motor noise (4.127153ms)
+✔ raw stream is exclusive, independently verifiable and detects tampering (15.293502ms)
+✔ resolved config validates nominal fields and default byte parity (1.502772ms)
+✔ release needs exact review, checkpoint, root phase and is consumed only once (24.900639ms)
+✔ nonfinite native fields survive tagged serialization (0.51813ms)
+✔ closure handles opponent freeze already within locked directory (4.072069ms)
+✔ exact pilot grid rejects substituted, missing, and duplicate logical cells (3.855384ms)
+✔ raw byte ceiling preserves partial stream and forbids success (2.707416ms)
+✔ compressed member streams preserve every row and physical digest (20.93884ms)
+✔ nominal world and percept have exact regression parity under synthetic commands (95.271937ms)
+✔ mirror geometry is involutive and physically/publicly consistent (0.682317ms)
+✔ physics scales both projectile directions and player turn, FOV uses total angle (1.078504ms)
+✔ shift serialization retains geometry and rule identity (0.847536ms)
+✔ reject unknown metadata and invalid geometry (0.332771ms)
+✔ actual turning and recall displacement follow shifted physics (0.499422ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1671.681772

@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "pilot-source-preregistration.tar.gz",
+      "bytes": 101825,
+      "sha256": "4bdf7c8e5687fb96c4759bedb06a487c9c860b2cf879d6112e64cca331264ad5",
+      "parts": [
+        {
+          "filename": "pilot-source-preregistration.tar.gz.part01",
+          "bytes": 101825,
+          "sha256": "4bdf7c8e5687fb96c4759bedb06a487c9c860b2cf879d6112e64cca331264ad5"
+        }
+      ]
+    }
+  ]
+}

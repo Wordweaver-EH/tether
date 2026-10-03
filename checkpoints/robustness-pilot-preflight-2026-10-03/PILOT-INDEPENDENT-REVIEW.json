@@ -1,0 +1,27 @@
+{
+  "approved": true,
+  "scope": "PILOT_ONLY",
+  "phase": "pilot",
+  "lockSha256": "0aa5e25d83226a1962ee8830bc1fa684302d3e90248b7defbb8aa4c1427ba717",
+  "sourceManifestSha256": "50691f33e692661f7857edc456a26bc6c7cce1c3e1f4cbd1151c4da51f4a7f6a",
+  "preregManifestSha256": "641451f026935735c797ed96c33dcdc6a8d1d87156adad5669cd0586a50ccb81",
+  "verifiedLockedInputs": 98,
+  "pilotTasks": 192,
+  "syntheticTests": {
+    "passed": 39,
+    "failed": 0,
+    "skipped": 0
+  },
+  "snapshotConstructorChecks": 60,
+  "controllerGameBoutsExecutedByReview": 0,
+  "acceptedInitialNormalization": "Existing native loader adds a missing zero awareness key in snapshots4 and11; allfive mind arms accept identical state, original files unchanged",
+  "qualifiedFreezeCommit": "36398123d89881576443145b0b7826c8cf2203c9",
+  "evaluationApproved": false,
+  "opponentSearchApproved": false,
+  "executionAuthorized": false,
+  "remainingExecutionGates": [
+    "publisher VERIFIED receipt for this exact lock",
+    "explicit single-use root pilot release binding phase/output/workers"
+  ],
+  "reviewReport": "INDEPENDENT-PILOT-SOURCE-REVIEW.md"
+}

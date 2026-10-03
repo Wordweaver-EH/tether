@@ -1,5 +1,7 @@
+import {linkSync,unlinkSync} from 'node:fs';
+import {finalizePhase} from './finalize-phase.mjs';
 import {active,cancelActive,execute,resourceTotals,readLiveProcess} from './execution.mjs';
-import {execFileSync} from 'node:child_process';import {mkdir,readFile,writeFile,stat} from 'node:fs/promises';import {resolve,dirname} from 'node:path';import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';import {mkdir,readFile,writeFile,stat,open} from 'node:fs/promises';import {resolve,dirname} from 'node:path';import {fileURLToPath} from 'node:url';
 import {validatePlan,validateTasks} from './plan-validation.mjs';
 import {json,consumeRelease,verifyLock} from './lock.mjs';import {sha256,parse} from './raw-stream.mjs';
 const here=dirname(fileURLToPath(import.meta.url));
@@ -12,6 +14,7 @@ function validateLimits(limits,workers){
 }
 if(!opts.run)console.log(JSON.stringify({status:'PLAN_ONLY_NO_EXECUTION',requires:'--run --phase=pilot|evaluation --lock=... --release=... --out=fresh-directory --workers=1..8'}));
 else {
+ const phaseStarted=performance.now();
  if(!['pilot','evaluation'].includes(opts.phase)||!opts.lock||!opts.release||!opts.out)throw new Error('explicit supported phase, lock, release, fresh out required');
  const out=resolve(opts.out),workers=Number(opts.workers??1);const {lock,release}=await consumeRelease(resolve(opts.release),resolve(opts.lock),opts.phase,out,workers);
  await mkdir(out);for(const dir of ['raw','results','memory'])await mkdir(resolve(out,dir));
@@ -40,7 +43,9 @@ else {
   }
   resourceTotals({completedCpuSeconds:completedCpuAtSampleStart,liveCpuSeconds:liveCpu,parentUsage:process.resourceUsage(),completedRawBytes:completedRawAtSampleStart,liveRawBytes},limits);
  }catch(error){failure??=error;cancelActive();}finally{supervising=false;}},250);
- const timer=setTimeout(()=>{failure=new Error('phase wall ceiling exceeded');cancelActive();},limits.maxPhaseWallSeconds*1000);
+ const checkBounds=()=>{resourceTotals({completedCpuSeconds:totalCpuSeconds,parentUsage:process.resourceUsage(),completedRawBytes:totalRawBytes},limits);if((performance.now()-phaseStarted)/1000>limits.maxPhaseWallSeconds)throw new Error('phase wall ceiling exceeded during finalization');};
+ checkBounds();
+ const timer=setTimeout(()=>{failure=new Error('phase wall ceiling exceeded');cancelActive();},Math.max(0,limits.maxPhaseWallSeconds*1000-(performance.now()-phaseStarted)));
  const stop=()=>{failure=new Error('external stop signal');cancelActive();};process.on('SIGTERM',stop);process.on('SIGINT',stop);
  const loop=async()=>{while(!failure&&cursor<entries.length){const group=entries[cursor++];let memory=null;
   for(const task of group){if(failure)return;try{
@@ -52,8 +57,19 @@ else {
    if(response.memoryPath)memory=await json(response.memoryPath);response.result.terminalResourceUsage=response.terminalResourceUsage;results.push(response.result);completed++;totalRawBytes+=response.result.raw.bytes;if(totalRawBytes>limits.maxPhaseRawBytes)throw new Error('phase raw-byte ceiling exceeded');totalCpuSeconds+=(response.terminalResourceUsage.userCPUTime+response.terminalResourceUsage.systemCPUTime)/1e6;if(totalCpuSeconds>limits.maxPhaseCpuSeconds)throw new Error('phase aggregate completed-task CPU ceiling exceeded');console.log(JSON.stringify({type:'progress',phase:opts.phase,completed,total:tasks.length,taskId:task.id}));
   }catch(error){failure??=error;cancelActive();return;}}
  }};
- await Promise.all(Array.from({length:workers},loop));clearTimeout(timer);clearInterval(supervisor);while(supervising)await new Promise(resolveWait=>setTimeout(resolveWait,10));process.off('SIGTERM',stop);process.off('SIGINT',stop);
- if(!failure)try{await verifyLock(lock);resourceTotals({completedCpuSeconds:totalCpuSeconds,parentUsage:process.resourceUsage(),completedRawBytes:totalRawBytes},limits);}catch(error){failure=error;}
- if(failure){await writeFile(resolve(out,'FAILURE.json'),JSON.stringify({status:'FAILED_STOPPED_NO_AUTOMATIC_RETRY',completed,total:tasks.length,completedRawBytes:totalRawBytes,completedChildrenLifetimeCpuSeconds:totalCpuSeconds,parentResourceUsage:process.resourceUsage(),error:failure.stack,partialRaw:failure.partialRaw??null})+'\n',{flag:'wx'});throw failure;}
- await writeFile(resolve(out,'COMPLETE.json'),JSON.stringify({status:'COMPLETE_NEEDS_INDEPENDENT_ANALYSIS',phase:opts.phase,completed,total:tasks.length,lockSha256:release.lockSha256,resources:{completedRawBytes:totalRawBytes,completedChildrenLifetimeCpuSeconds:totalCpuSeconds,parentResourceUsage:process.resourceUsage(),scope:'isolated child lifetime through final IPC receipt plus parent own process; final child IPC/exit micro-overhead excluded',liveEnforcementSamplingMs:250},results},null,2)+'\n',{flag:'wx',mode:0o444});
+ await Promise.all(Array.from({length:workers},loop));
+ const stopSupervisor=()=>clearInterval(supervisor),drainSupervisor=async()=>{while(supervising)await new Promise(r=>setTimeout(r,10));};
+ const successPath=resolve(out,'COMPLETE.json'),pendingPath=resolve(out,'.COMPLETE.pending.json');
+ if(!failure)try{
+  await finalizePhase({verifySource:()=>verifyLock(lock),
+   preparePending:async()=>{
+    const result={status:'COMPLETE_NEEDS_INDEPENDENT_ANALYSIS',phase:opts.phase,completed,total:tasks.length,lockSha256:release.lockSha256,resources:{completedRawBytes:totalRawBytes,completedChildrenLifetimeCpuSeconds:totalCpuSeconds,parentResourceUsage:process.resourceUsage(),scope:'isolated child lifetime through final IPC receipt plus parent through result construction; finalization accounting is separate',liveEnforcementSamplingMs:250},results};
+    const serialized=JSON.stringify(result,null,2)+'\n';await writeFile(pendingPath,serialized,{flag:'wx',mode:0o444});const handle=await open(pendingPath,'r');try{await handle.sync();}finally{await handle.close();}
+    const terminal={status:'FINALIZATION_GUARD_PENDING_ATOMIC_COMMIT',phase:opts.phase,phaseWallSeconds:(performance.now()-phaseStarted)/1000,completedChildrenLifetimeCpuSeconds:totalCpuSeconds,parentResourceUsage:process.resourceUsage(),completedRawBytes:totalRawBytes,scope:'includes source verification, result serialization and pending-file fsync; excludes this small receipt write, final synchronous exclusive link/unlink and process exit'};
+    await writeFile(resolve(out,'FINALIZATION-RECEIPT.json'),JSON.stringify(terminal,null,2)+'\n',{flag:'wx',mode:0o444});return pendingPath;
+   },stopSupervisor,drainSupervisor,getFailure:()=>failure,checkBounds,
+   commitPending:path=>{linkSync(path,successPath);unlinkSync(path);}});
+ }catch(error){failure??=error;}
+ stopSupervisor();await drainSupervisor();clearTimeout(timer);process.off('SIGTERM',stop);process.off('SIGINT',stop);
+ if(failure){await writeFile(resolve(out,'FAILURE.json'),JSON.stringify({status:'FAILED_STOPPED_NO_AUTOMATIC_RETRY',completed,total:tasks.length,completedRawBytes:totalRawBytes,completedChildrenLifetimeCpuSeconds:totalCpuSeconds,parentResourceUsage:process.resourceUsage(),phaseWallSeconds:(performance.now()-phaseStarted)/1000,error:failure.stack,partialRaw:failure.partialRaw??null})+'\n',{flag:'wx'});throw failure;}
 }

@@ -1,4 +1,16 @@
-# Robustness benchmark checkpoint: reviewed interface and training-only plan
+# Robustness benchmark checkpoint: full evaluation started
+
+The separately released full evaluation started **2026-10-03 at 06:52:26 UTC** from its immutable reviewed source. The exact source/review/publication gate was verified before launch. This update makes no completion, endpoint, comparative-performance or robustness claim; live evaluation outcomes were not accessed for this code/documentation update.
+
+[Exact evaluation checkpoint 291026d](https://github.com/Wordweaver-EH/tether/tree/291026df7effde2b24c8d36a1273b65295a41245/checkpoints/robustness-evaluation-preflight-2026-10-03) binds all **150 inputs / 94 source files** and the unchanged **4,224-task** matrix (12 clusters × 11 conditions × 8 arms × 2 seats × 2 bouts, 300 seconds each). Lock SHA-256: `fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033`; independent review SHA-256: `13b7a8df609136a267b512e17804e7dc296ccd3bafdd2fc2c2d62014c5044818`. Limits remain at most eight workers, 36 CPU-hours, eight wall-hours and 16 GiB raw, with hard stops and no automatic retry/resume. Pilot workload estimates are not upper bounds.
+
+The single opponent search completed **512 tasks**, and its independent saved-data integrity audit passed. [Immutable result/manifest/audit 1682e7a](https://github.com/Wordweaver-EH/tether/tree/1682e7acd5e55612a8c194156026544e2bc5b3ab/search/robustness-attempt-001/final-artifacts) fixes the actual reviewed style parameter hash `b99346d36cda4d46047cea54db1dac5e9fbebe915a60526171138546491426bf`. The search's raw-data upload backlog is still in progress; this does not assert that all raw search bytes are on Git. Search selection scores are not held-out robustness results.
+
+This slim PR integrates only the exact reviewed evaluation runner/finalization guard and concise status/materialization support. Existing reviewed search code, canonical controllers and the shared interface remain unchanged. The analyzer and complete frozen grid stay in the pinned data checkpoint; [portable materialization and read-only verification](../experimental/ANALYSIS-PACKAGE.md) require the exact analyzer manifest and fail clearly when data is absent. The package passed 23 prospective synthetic tests; the complete evaluation preflight review passed 76 synthetic checks. The updated slim source suite passes **343/343 tests, zero skips** (334 existing, three exact guard checks and six synthetic package-verifier checks); the separately materialized analyzer also passes **23/23**.
+
+The qualified actual-output baseline caveat remains: 14 of 24 training-generation rankings had floating-tie deviations, realized final selection is unchanged, and the counterfactual optimizer trajectory is unknown. Individual report/comparison proof digests are not all reconstructible; the retained task commitments provide deliberately weaker proof inspectability. Neither qualification is repaired or redefined by this launch. The PR remains draft, with no merge or deployment.
+
+## Historical checkpoints (status as recorded at each stage)
 
 The sole default-condition training attempt completed all 4,224 tasks. Its actual selected parameters and twelve memory snapshots are now frozen with an explicit protocol qualification. Data integrity passed independent audit; this is not a clean protocol-compliance pass, and its qualifications remain attached to the subsequent development pilots.
 

@@ -1,0 +1,16 @@
+{
+  "startedAt": "2026-10-03T06:21:48.014288+00:00",
+  "finishedAt": "2026-10-03T06:30:03.881874+00:00",
+  "wallSeconds": 495.86759890300164,
+  "exitCode": 0,
+  "command": [
+    "node",
+    "experimental/search-runner.mjs",
+    "--run",
+    "--lock=/workspace/scratch/75679def3745/tether-robustness-search-final-review/SEARCH-LOCK.json",
+    "--release=/workspace/scratch/75679def3745/tether-robustness-search-final-review/SEARCH-RELEASE-001.json",
+    "--out=/workspace/scratch/75679def3745/tether-robustness-search-runs/attempt-001",
+    "--workers=8"
+  ],
+  "scope": "whole search Node runner invocation, including preflight, workers, serialization and final guards"
+}

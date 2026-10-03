@@ -1,0 +1,52 @@
+{
+  "status": "PASS_INDEPENDENT_INTEGER_RANKING_AND_PLAN_RECONSTRUCTION",
+  "generations": 8,
+  "candidates": 128,
+  "tasks": 512,
+  "eligibleCandidates": 114,
+  "generationIntegerTieGroups": 13,
+  "selectedCandidate": "search-g7-c11",
+  "selectedParameterSha256": "b99346d36cda4d46047cea54db1dac5e9fbebe915a60526171138546491426bf",
+  "selectedEligibleRank": 1,
+  "selectedTopIntegerTieCount": 1,
+  "selectedDistances": [
+    {
+      "reference": "direct",
+      "meanSquaredDistance": 0.09104989671106052
+    },
+    {
+      "reference": "anchor",
+      "meanSquaredDistance": 0.17677638306548868
+    },
+    {
+      "reference": "es-74",
+      "meanSquaredDistance": 0.12062385904026206
+    },
+    {
+      "reference": "es-43",
+      "meanSquaredDistance": 0.1045865126050811
+    },
+    {
+      "reference": "es-18",
+      "meanSquaredDistance": 0.07285088194423708
+    },
+    {
+      "reference": "conventional",
+      "meanSquaredDistance": 0.15096271113241613
+    },
+    {
+      "reference": "conventional-useful-2x",
+      "meanSquaredDistance": 0.09711045730566269
+    },
+    {
+      "reference": "conventional-useful-4x",
+      "meanSquaredDistance": 0.10898039132978735
+    }
+  ],
+  "sourceInputsVerified": 123,
+  "heldoutSearchSeedIntersection": 0,
+  "noExtraTrials": true,
+  "noControllerCalls": true,
+  "resultSha256": "a37bc591b044b092be7280c55358171639cd1fea8270f181728564d865ebb651",
+  "manifestSha256": "57c72f2d08b976cee01ac5d4e51cf5340dd0ddfdb09baf162eb3eca02ab29530"
+}

@@ -1,0 +1,22 @@
+{
+  "approved": true,
+  "phase": "opponent-search-saved-data",
+  "status": "PASS_ELIGIBLE_FOR_EXACT_ONE_STYLE_FREEZE",
+  "resultSha256": "a37bc591b044b092be7280c55358171639cd1fea8270f181728564d865ebb651",
+  "manifestSha256": "57c72f2d08b976cee01ac5d4e51cf5340dd0ddfdb09baf162eb3eca02ab29530",
+  "lockSha256": "3ea79c1c6c4aeb74d71fcd27c67e43bf15174fec158c7e3d55560ddc0985ef8e",
+  "selectedCandidate": "search-g7-c11",
+  "selectedParameterSha256": "b99346d36cda4d46047cea54db1dac5e9fbebe915a60526171138546491426bf",
+  "candidatesVerified": 128,
+  "tasksVerified": 512,
+  "eligibleCandidates": 114,
+  "rawAuditSha256": "689174b332ae050614504e9303a901f16c566175bbcab1a725ce8387a21934e4",
+  "rankingAuditSha256": "253df10b8b6dbe273530c073baf1a20e79e8899470705a65e9e4ef29ff65cae8",
+  "reportSha256": "293b4537b4326ea1fe44b786502b66fd13fe9e4e3825cedc9e50e5ddefcec714",
+  "controllerReruns": 0,
+  "evaluationExecutionApproved": false,
+  "remainingGates": [
+    "Exact verifiedGit publication before reviewed opponent freeze",
+    "Final source/style/analyzer lock and explicit root evaluation release"
+  ]
+}

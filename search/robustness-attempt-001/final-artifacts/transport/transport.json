@@ -1,0 +1,18 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "search-final-manifest.tar.gz",
+      "bytes": 2520006,
+      "sha256": "89e7f51b1b23d10933755e3364812457492f4091ef33f49e3d604ba39eafeab6",
+      "parts": [
+        {
+          "filename": "search-final-manifest.tar.gz.part0001",
+          "bytes": 2520006,
+          "sha256": "89e7f51b1b23d10933755e3364812457492f4091ef33f49e3d604ba39eafeab6",
+          "gitBlobSha": "57c53b5aadd25ec2cfc7a3111c321bb9b2abdaa9"
+        }
+      ]
+    }
+  ]
+}

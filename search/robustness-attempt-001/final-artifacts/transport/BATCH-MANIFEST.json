@@ -1,0 +1,11 @@
+{
+  "archiveName": "search-final-manifest.tar.gz",
+  "scope": "Exact final search manifest; raw batch upload status tracked separately",
+  "files": [
+    {
+      "member": "SEARCH-MANIFEST.json",
+      "bytes": 16122188,
+      "sha256": "57c72f2d08b976cee01ac5d4e51cf5340dd0ddfdb09baf162eb3eca02ab29530"
+    }
+  ]
+}

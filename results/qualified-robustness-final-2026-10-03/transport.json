@@ -1,0 +1,18 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "qualified-final-results.tar.gz",
+      "bytes": 3408531,
+      "sha256": "8dcc1919487440156a44a5c55bfa4f069c7d14835cd9c8a5c59eb014e935f019",
+      "parts": [
+        {
+          "filename": "qualified-final-results.tar.gz.part0001",
+          "bytes": 3408531,
+          "sha256": "8dcc1919487440156a44a5c55bfa4f069c7d14835cd9c8a5c59eb014e935f019",
+          "gitBlobSha": "bae4c504bf3520d183b5a31000e966c41c63817c"
+        }
+      ]
+    }
+  ]
+}

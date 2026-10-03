@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "archiveName": "qualified-final-results.tar.gz",
+  "status": "REVIEWED_FINAL_RESULTS_EXCLUDING_REPRODUCIBLE_PER_TASK_CACHE",
+  "bundleManifestSha256": "6823c9439fc15ea029afd7079d3735d29453c56a4124eb4abac32400adb4b72b",
+  "files": [
+    {
+      "member": "TETHER-ROBUSTNESS-REPORT.txt",
+      "bytes": 9787,
+      "sha256": "5796e3ed4dcc1560694a068bde0be0d656c8c39e0c9bbe97ba0ebbc23d33d78c"
+    },
+    {
+      "member": "analysis-provenance/ANALYSIS-EXECUTION-001.log",
+      "bytes": 138,
+      "sha256": "ab8c1ec0fc19ee096b315589ff21d1c929a80a8c6e0c54aaa259c5a6419973ba"
+    },
+    {
+      "member": "analysis-provenance/ANALYSIS-OUTPUT-MANIFEST-001.json",
+      "bytes": 872127,
+      "sha256": "4346e0432d6373097946078ffe44af49f1b4c88572e69cc1196858e07d9ef3b6"
+    },
+    {
+      "member": "analysis-provenance/ANALYSIS-TERMINAL-EXIT-001.json",
+      "bytes": 722,
+      "sha256": "372784a5e87a4916470cb504d892312ff6afa9094ba3ec408acc2ad52abf159d"
+    },
+    {
+      "member": "analysis-provenance/PRESERVED-V1-STARTUP-FAILURE.json",
+      "bytes": 763,
+      "sha256": "b07e6796072676be3d8ab3bd85a9ec809ccbdbd6393dfa71c0ee5f791c681057"
+    },
+    {
+      "member": "analysis-provenance/QUALIFIED-ANALYSIS-ADAPTER-V2-REVIEW.json",
+      "bytes": 3636,
+      "sha256": "8e0eee1f2e98b5c32edefe9c9e415cf26e98c6522bcc811ec3fea6ba7d7d0acf"
+    },
+    {
+      "member": "analysis-provenance/ROOT-ANALYSIS-RELEASE-001.json",
+      "bytes": 2411,
+      "sha256": "0b83ceba01651f93c297688073114dd9575b771f6b33e8334d3e24e61dfdcd64"
+    },
+    {
+      "member": "analysis-provenance/ROOT-ANALYSIS-RELEASE-001.json.consumed.json",
+      "bytes": 301,
+      "sha256": "51e6044d66bc1055faea1b9ffe8fc749a814cd259a0e5f2f7ffe1c30fd20d757"
+    },
+    {
+      "member": "analysis-provenance/SOURCE-MANIFEST.json",
+      "bytes": 1667,
+      "sha256": "016816f7077804e78c1b640bd414734729d4bb40427e3533a85d2b46056a0ae6"
+    },
+    {
+      "member": "frozen-analysis/ANALYSIS-LOCK.json",
+      "bytes": 6479,
+      "sha256": "08873a4bdd582fa97441a4cb28a2938773883e654ee27c8188f6c5fabff3ed83"
+    },
+    {
+      "member": "frozen-analysis/SOURCE-MANIFEST.json",
+      "bytes": 5245,
+      "sha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632"
+    },
+    {
+      "member": "independent-review/DIAGNOSTIC-AGGREGATE-REVIEW.json",
+      "bytes": 956,
+      "sha256": "14abff65bf15cccc74f7acecf1e7642249f133b5dc9b433e8278553728275ef3"
+    },
+    {
+      "member": "independent-review/DIAGNOSTIC-SAMPLE-CHECK.json",
+      "bytes": 1123,
+      "sha256": "8317771257ea36d61de45b425ba8a38571351331e72ff6f070e5d441f01c20c7"
+    },
+    {
+      "member": "independent-review/FINAL-RESULT-INDEPENDENT-REVIEW.json",
+      "bytes": 11775,
+      "sha256": "b670a51c9fe0c276c3bcc4350c657eca8ccace208bc3c6d3d66a16673e315c65"
+    },
+    {
+      "member": "independent-review/HUMAN-REPORT-REVIEW.json",
+      "bytes": 975,
+      "sha256": "4864f830513dbe49e1a63f8558cf9239aeb44f605c2381dbc10f9d4c8bb5e785"
+    },
+    {
+      "member": "independent-review/PERFORMANCE-REVIEW.json",
+      "bytes": 1287,
+      "sha256": "257a20ff4824b4143952a671777902360a662b89cc3659ce06d3574844480b6e"
+    },
+    {
+      "member": "independent-review/REVIEW-TOOLS-MANIFEST.json",
+      "bytes": 1680,
+      "sha256": "297fc85c8107307a961c2ce205afcdbddf9ab976066e9f620879a48c7bcfddb7"
+    },
+    {
+      "member": "recovery/FULL-UNION-INDEPENDENT-REVIEW.json",
+      "bytes": 6664,
+      "sha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c"
+    },
+    {
+      "member": "recovery/TERMINAL-EXIT-AUDIT-001.json",
+      "bytes": 1391,
+      "sha256": "8ba0693ac8a2d9b4a099d94310265081a1b3db5fa994f3e7d211a1d4a9d33f55"
+    },
+    {
+      "member": "results/calibration.json",
+      "bytes": 2169747,
+      "sha256": "e90ab33d1bd9de8e844c77df7af34e2039b9b33b1321e5b17dccf33d206f10f4"
+    },
+    {
+      "member": "results/completeness.json",
+      "bytes": 99,
+      "sha256": "81483406afb6fe62056e42db6f1f198cc4017fbf40600214f1d87e2ec7386108"
+    },
+    {
+      "member": "results/excluded-original-partials.json",
+      "bytes": 2789,
+      "sha256": "9dcd10742d16784df8bec5d45ce075aea65de8ffb95d3894a4f94e41d60d76ca"
+    },
+    {
+      "member": "results/novelty-teacher.json",
+      "bytes": 856853,
+      "sha256": "26737ccaef69586927923295af991709dccb855118722691eddbde848dddae86"
+    },
+    {
+      "member": "results/performance.json",
+      "bytes": 646129,
+      "sha256": "4031f2c16095b799967ba269e0e4977b344b95e46f253c482ddc16c6e2c9d0d4"
+    },
+    {
+      "member": "results/qualification.json",
+      "bytes": 4669,
+      "sha256": "4d56d479941ad4efad3c5411f59794e6b1ee42a39d7d5e9a103a378663fef525"
+    },
+    {
+      "member": "results/raw-inventory.json",
+      "bytes": 9345189,
+      "sha256": "4d2f4f670ba57939ee1a7137beea4434b606e1807ea76b61c45e2ba30b1b4aab"
+    },
+    {
+      "member": "results/recovery-audit.json",
+      "bytes": 845134,
+      "sha256": "73fd3b6924a46de205c1b32d521392d9bcc6746fdd222da856b63e535b51a7cd"
+    },
+    {
+      "member": "results/report.json",
+      "bytes": 15942,
+      "sha256": "0beae12c0f132fd87e43af3164ae487b1453d9df55a1b7bf377e0e24c659532e"
+    },
+    {
+      "member": "results/resources.json",
+      "bytes": 8851,
+      "sha256": "e52d0d304425f2151375e554941577c177f3aeee7692a9770c33f08f4f30988e"
+    },
+    {
+      "member": "results/scores.json",
+      "bytes": 4362836,
+      "sha256": "8e6b7705b9743418d714871bccdaf3330c8d92b1c2855f915b57dc69293f8b58"
+    }
+  ]
+}

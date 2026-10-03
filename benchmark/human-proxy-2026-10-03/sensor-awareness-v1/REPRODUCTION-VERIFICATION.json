@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "finalResults": "results/run-003/RESULTS.json",
+  "reproducedResults": "results/run-004-reproduction/RESULTS.json",
+  "sha256": "d3fe54b02082952ae84bf0054b0fd3c4bb08e173c78325850c382b87380c9c7c",
+  "byteIdentical": true,
+  "nodeVersion": "v24.19.0",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "sourceHashes": {
+    "awareness.mjs": "bb78bce500b06697b3ab6c9320c55ce52691b43f4714dce224fad9cc3f409250",
+    "fixtures.mjs": "ca78c261affe38102eb91f58e362a37f40b63c061dfae90af92d030671166d24",
+    "awareness.test.mjs": "ece0d000b35dd755dd04d2a5335b75c4aaa5a6fdfdb2cf86056ce1c531d5bc1c",
+    "PREDECLARATION.md": "6e32dd93d272a25a7918e3bd9e9e4d3e73136600b4a9a78cdcbb6d5b18a1cf71"
+  }
+}

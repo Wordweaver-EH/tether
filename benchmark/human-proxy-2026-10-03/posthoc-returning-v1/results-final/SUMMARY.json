@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "posthoc descriptive analysis of saved events, commands, samples, and frozen source only; no matches, controller execution, rule or mind edits",
+  "checks": {
+    "rawFiles": 64,
+    "frozenFiles": 51,
+    "eventFacingComparisons": 49031,
+    "eventFacingMaxError": 0,
+    "recallSpearPositionComparisons": 22981,
+    "recallSpearPositionMaxError": 0,
+    "hitSpearDirectionComparisons": 1377,
+    "hitSpearDirectionMaxError": 7.311995215902536e-12,
+    "returnThreatChecks": 181876,
+    "returnThreatMismatches": 0,
+    "returnVisibleChecks": 100899,
+    "returnThreatTrueChecks": 0,
+    "returnHitLineageChecks": 1685,
+    "timingMaxErrorSec": 6.117328865684613e-14,
+    "sampleCadenceChecks": 576000,
+    "decisionCadenceAgeChecks": 1151296,
+    "resetEventsApplied": 3705
+  },
+  "originalStudyClassification": "inconclusive; unchanged",
+  "timingConvention": "Recall at tick start; impact uses stored within-tick fraction. A sensor sampled on recall tick is pre-recall. First possible RETURNING sample is next multiple-of-four tick strictly after recall. Commands act at tick start, hence receiptTick <= impactTick counts as available.",
+  "provenance": {
+    "freezeSha256": "c79bcbd5dbf1f672b52f9c973c1c57c6c2432ed8c5df28ceaaad7177c71eda49",
+    "rawManifestSha256": "428a4e96d7813ffa3604e28cff4230b799406b78a6f0c9e52c81e51d3fc48ce0",
+    "reportSha256": "3d87e2149d521791c303014e77d5884b1dfc2c2543192705cc79d5915f9c781d",
+    "scriptSha256": "64779a854e7276326e975757191d49a5a228d5e593441e142ea2be17481b3a9f",
+    "analysisMathSha256": "ac40d0be552910d7ad651f9c54d7c3edec22662c001dd0fa9ec1fa9b15436cdb"
+  },
+  "byAttacker": {
+    "ordinary": {
+      "returningHits": 1178,
+      "recalls": 14105,
+      "returningHitPerRecall": 0.08351648351648351,
+      "recallToHitSec": {
+        "count": 1178,
+        "min": 0.007245095072960339,
+        "p10": 0.46152630661177907,
+        "q1": 0.6609380594159902,
+        "median": 0.7455731165788002,
+        "q3": 0.8301986487863005,
+        "p90": 0.8524693210292469,
+        "max": 0.8916666666666799
+      },
+      "recallOriginToVictimDistance": {
+        "count": 1178,
+        "min": 0.3591121225894637,
+        "p10": 4.840005567148964,
+        "q1": 7.606679106427725,
+        "median": 8.462084753997619,
+        "q3": 9.804582656173594,
+        "p90": 10.359704665394998,
+        "max": 11.074097636672358
+      },
+      "before250ms": 44,
+      "before150ms": 32,
+      "beforeVictimLatency": 44,
+      "beforeAnyPostRecallPacket": 48,
+      "noVisibleReturningPacketReceived": 1178,
+      "hasVisibleReturningPacketReceived": 0,
+      "everVisibleInSampleBeforeImpact": 0,
+      "visibleOnlyTooLate": 0,
+      "visibleReturnPacketsReceived": 0,
+      "spearInvisibleAtRecallStart": 1178,
+      "arrivalFromBehindFacing": 1178,
+      "victimSpearStateAtRecall": {
+        "EMBEDDED": 120,
+        "HELD": 764,
+        "RETURNING": 247,
+        "OUTBOUND": 47
+      },
+      "victimSpearStateAtImpact": {
+        "HELD": 1094,
+        "RETURNING": 61,
+        "EMBEDDED": 9,
+        "OUTBOUND": 14
+      },
+      "anyReturningThreatBeforeHit": 0,
+      "activeThreatAtHit": 0,
+      "supportedAwayAtHit": 25,
+      "attackCommandAtHit": 0,
+      "counterAttackDuringEnemyThrow": 736,
+      "counterAttackDuringReturn": 0,
+      "noVisibleReturnDespiteEligiblePacket": 1130,
+      "visibleButNoThreat": 0,
+      "visiblePacketRejectionAlong": 0,
+      "visiblePacketRejectionSide": 0
+    },
+    "counter": {
+      "returningHits": 507,
+      "recalls": 8876,
+      "returningHitPerRecall": 0.0571203244704822,
+      "recallToHitSec": {
+        "count": 507,
+        "min": 0.0000019000694919668604,
+        "p10": 0.004007539815182782,
+        "q1": 0.017892953002260015,
+        "median": 0.04276160289686004,
+        "q3": 0.07578720700918495,
+        "p90": 0.12712561674086392,
+        "max": 0.21062349450170537
+      },
+      "recallOriginToVictimDistance": {
+        "count": 507,
+        "min": 0.35002223135152816,
+        "p10": 0.3912056914086034,
+        "q1": 0.5084895489934105,
+        "median": 0.9320544324841318,
+        "q3": 1.369598629227616,
+        "p90": 1.9199657167418829,
+        "max": 3.177616979099017
+      },
+      "before250ms": 507,
+      "before150ms": 470,
+      "beforeVictimLatency": 470,
+      "beforeAnyPostRecallPacket": 481,
+      "noVisibleReturningPacketReceived": 507,
+      "hasVisibleReturningPacketReceived": 0,
+      "everVisibleInSampleBeforeImpact": 0,
+      "visibleOnlyTooLate": 0,
+      "visibleReturnPacketsReceived": 0,
+      "spearInvisibleAtRecallStart": 507,
+      "arrivalFromBehindFacing": 507,
+      "victimSpearStateAtRecall": {
+        "HELD": 109,
+        "OUTBOUND": 131,
+        "RETURNING": 211,
+        "EMBEDDED": 56
+      },
+      "victimSpearStateAtImpact": {
+        "HELD": 100,
+        "OUTBOUND": 147,
+        "RETURNING": 223,
+        "EMBEDDED": 37
+      }
+    }
+  },
+  "counterDecisionExposure": {
+    "allTicks": 2304000,
+    "supportedAwayTicks": 754742,
+    "threatTicks": 121162,
+    "attacks": 10735,
+    "totalSec": 19200,
+    "supportedAwaySec": 6289.516666666666,
+    "threatSec": 1009.6833333333333
+  },
+  "recallLandmarkAssociations": {
+    "spearVisibleBeforeRecall": {
+      "false": {
+        "recalls": 6717,
+        "returningHits": 1178,
+        "returningHitFraction": 0.1753759118654161
+      },
+      "true": {
+        "recalls": 7388,
+        "returningHits": 0,
+        "returningHitFraction": 0
+      }
+    },
+    "victimSpearStateBeforeActions": {
+      "RETURNING": {
+        "recalls": 1800,
+        "returningHits": 247,
+        "returningHitFraction": 0.13722222222222222
+      },
+      "EMBEDDED": {
+        "recalls": 1991,
+        "returningHits": 120,
+        "returningHitFraction": 0.06027122049221497
+      },
+      "HELD": {
+        "recalls": 6712,
+        "returningHits": 764,
+        "returningHitFraction": 0.11382598331346841
+      },
+      "OUTBOUND": {
+        "recalls": 3602,
+        "returningHits": 47,
+        "returningHitFraction": 0.013048306496390895
+      }
+    },
+    "counterAttackedBeforeRecallInSameEnemyThrow": {
+      "true": {
+        "recalls": 6360,
+        "returningHits": 736,
+        "returningHitFraction": 0.11572327044025157
+      },
+      "false": {
+        "recalls": 7745,
+        "returningHits": 442,
+        "returningHitFraction": 0.05706907682375726
+      }
+    },
+    "attackByRecallVisibility": {
+      "attackBeforeRecall=true;visibleAtRecall=false": {
+        "recalls": 4408,
+        "returningHits": 736,
+        "returningHitFraction": 0.16696914700544466
+      },
+      "attackBeforeRecall=true;visibleAtRecall=true": {
+        "recalls": 1952,
+        "returningHits": 0,
+        "returningHitFraction": 0
+      },
+      "attackBeforeRecall=false;visibleAtRecall=true": {
+        "recalls": 5436,
+        "returningHits": 0,
+        "returningHitFraction": 0
+      },
+      "attackBeforeRecall=false;visibleAtRecall=false": {
+        "recalls": 2309,
+        "returningHits": 442,
+        "returningHitFraction": 0.19142485924642702
+      }
+    }
+  },
+  "limits": [
+    "Received percept packets were not logged. Visibility is reconstructed from saved sampled positions, saved issued aims plus frozen facing arithmetic, and event-derived spear trajectories; it is not a directly logged percept field.",
+    "Returning threat gate reconstruction uses logged counter estimatedPosition and checks against its saved threat diagnostic. It does not rerun the controller or reproduce its memory.",
+    "Observed associations are endogenous. There is no attack-suppression, latency-matched, or alternate-defence intervention here, so no causal claim about attack or rule failure follows.",
+    "250 ms is the counter sensor lag, not a guaranteed dodge window; decision alignment, visibility, projection, available lateral movement, and advance warning matter.",
+    "Hit-conditioned descriptions are not whole-strategy performance estimates, and recall-level groups are not randomized.",
+    "No game preflight tests or matches were rerun; only the analysis program, its assertions, and separate analysis-only unit checks execute."
+  ]
+}

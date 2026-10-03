@@ -1,0 +1,77 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "mind-wave",
+  "arm": null,
+  "index": 30,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 12,
+  "taskIds": [
+    "mind-c0-b30",
+    "mind-c1-b30",
+    "mind-c10-b30",
+    "mind-c11-b30",
+    "mind-c2-b30",
+    "mind-c3-b30",
+    "mind-c4-b30",
+    "mind-c5-b30",
+    "mind-c6-b30",
+    "mind-c7-b30",
+    "mind-c8-b30",
+    "mind-c9-b30"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "raw/mind-c0-b30.json": {
+      "bytes": 70361,
+      "sha256": "daa4a16aff3fc7e550d068adc43ab65c874e9bd91310618f20642cbb58e74472"
+    },
+    "raw/mind-c1-b30.json": {
+      "bytes": 62265,
+      "sha256": "e1491fee77e5b4d562a684788e0a9ae2c68bc32778eeb156daf494e0b9b901b9"
+    },
+    "raw/mind-c10-b30.json": {
+      "bytes": 77821,
+      "sha256": "b942b5ce09f18374e6f5846d206bcc8cb8b25b53c3085dbebeab26127468894c"
+    },
+    "raw/mind-c11-b30.json": {
+      "bytes": 61605,
+      "sha256": "9067385f34acd508e47ddcfc819dadcb1740b46694fa1f63b3d310828dc19898"
+    },
+    "raw/mind-c2-b30.json": {
+      "bytes": 62681,
+      "sha256": "7b0af7f58f7ac4ee225751b4e9d8210dc1a7faa7ee1434bd9818b5d98e35405d"
+    },
+    "raw/mind-c3-b30.json": {
+      "bytes": 61752,
+      "sha256": "843a822c0a4b04581702e7f20da7a7e6427875767ad9c2fec6b942695439c487"
+    },
+    "raw/mind-c4-b30.json": {
+      "bytes": 68821,
+      "sha256": "3a5b7cba3f91ed8cdce364c54aef56fdbef45587928d033b683b01179ca84d77"
+    },
+    "raw/mind-c5-b30.json": {
+      "bytes": 67703,
+      "sha256": "b6a316ebd83d1dc95e517e4d92e1c77f242f4f8b6619e00322c320e637e45b4d"
+    },
+    "raw/mind-c6-b30.json": {
+      "bytes": 65352,
+      "sha256": "1b78591329f0d19f2778a344bbdf5c47e54fd0b35b7d63e01bd9c3f8aeb5a45f"
+    },
+    "raw/mind-c7-b30.json": {
+      "bytes": 61825,
+      "sha256": "3a9444854f62c8e469c69f13961d12783f0e156019c880cf6ca25e9ce1cc3ac7"
+    },
+    "raw/mind-c8-b30.json": {
+      "bytes": 68635,
+      "sha256": "53ca396a795441679f0f8f7ccefb21914ece5bc19c4663270ebaa7d3ac18d590"
+    },
+    "raw/mind-c9-b30.json": {
+      "bytes": 63381,
+      "sha256": "2e6abc89e70ceef2417bdfbfeedbbec71ed23702465e4ccc73de891c72ce7316"
+    }
+  }
+}

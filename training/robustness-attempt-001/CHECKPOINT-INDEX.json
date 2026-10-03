@@ -694,8 +694,68 @@
       "archiveSha256": "2d0dbb36946a10dc729dc30b3d443c3e28aaf4cbb936d7612985e44f6ded7c2c",
       "archiveBytes": 74904,
       "path": "batches/mind-wave-25"
+    },
+    {
+      "id": "mind-wave-26",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 26,
+      "tasks": 12,
+      "archiveSha256": "2bc4b263d99ccc024868dcc40b4c1cc6f45824d4855c8c6ec0e9229619c0915a",
+      "archiveBytes": 79379,
+      "path": "batches/mind-wave-26"
+    },
+    {
+      "id": "mind-wave-27",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 27,
+      "tasks": 12,
+      "archiveSha256": "e1dca2214bcc6e50957c49e7e95102f38b60af4a04584cc47851e94e72231005",
+      "archiveBytes": 77517,
+      "path": "batches/mind-wave-27"
+    },
+    {
+      "id": "mind-wave-28",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 28,
+      "tasks": 12,
+      "archiveSha256": "235127e0a282ba62a4753728c7a316b0377f3fa491d72763a3a122d59b208e35",
+      "archiveBytes": 75899,
+      "path": "batches/mind-wave-28"
+    },
+    {
+      "id": "mind-wave-29",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 29,
+      "tasks": 12,
+      "archiveSha256": "e8c6399c7cd1660d24024f0c24697987575fe1f1df46f47b798b97d80d4a53b4",
+      "archiveBytes": 79145,
+      "path": "batches/mind-wave-29"
+    },
+    {
+      "id": "mind-wave-30",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 30,
+      "tasks": 12,
+      "archiveSha256": "9260f546eaea96c2e295472673b2cd2bbb1b5b0349b7678c5c813248cb7a9b51",
+      "archiveBytes": 78446,
+      "path": "batches/mind-wave-30"
+    },
+    {
+      "id": "mind-wave-31",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 31,
+      "tasks": 12,
+      "archiveSha256": "d9eaf39ee0bee73ec90e9c2059df0bfa633da1b0b6288f581c32ff379f37fa13",
+      "archiveBytes": 76955,
+      "path": "batches/mind-wave-31"
     }
   ],
-  "completedTaskRowsArchived": 4152,
-  "uniqueArchivedTaskIdsVerified": 4152
+  "completedTaskRowsArchived": 4224,
+  "uniqueArchivedTaskIdsVerified": 4224
 }

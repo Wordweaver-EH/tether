@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "compact-pilot-source-preregistration.tar.gz",
+      "bytes": 116303,
+      "sha256": "ebe8df29434f97f57b3dda8cfdb0e1dba1f31e7d24eb0edb68de0213b398aeba",
+      "parts": [
+        {
+          "filename": "compact-pilot-source-preregistration.tar.gz.part01",
+          "bytes": 116303,
+          "sha256": "ebe8df29434f97f57b3dda8cfdb0e1dba1f31e7d24eb0edb68de0213b398aeba"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+✔ frozen sources and pure sensor projection match original (1.34904ms)
+✔ physical digest corruption is rejected before replay (0.788216ms)
+✔ logical digest corruption is rejected before replay (8.804881ms)
+✔ chain tail corruption is rejected before replay (121.48015ms)
+✔ receipt truth corruption is rejected (31.366753ms)
+✔ delayed packet hash corruption is rejected (27.867892ms)
+✔ delayed truth corruption is rejected (27.696375ms)
+✔ event time corruption is rejected (28.278932ms)
+✔ missing event corruption is rejected (24.871923ms)
+✔ decision tick corruption is rejected (37.620782ms)
+✔ terminal hash corruption is rejected (189.348599ms)
+✔ complete replay checkpoints and terminal state (159.368698ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 871.998085

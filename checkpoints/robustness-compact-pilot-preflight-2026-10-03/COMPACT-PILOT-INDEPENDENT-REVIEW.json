@@ -1,0 +1,44 @@
+{
+  "approved": true,
+  "scope": "PILOT_ONLY",
+  "phase": "pilot",
+  "lockSha256": "8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584",
+  "sourceManifestSha256": "058bb56bad3cd00f8052a00881d1a56b356e0a5680242cc16d1cbec429b01a3f",
+  "closedInputsVerified": 107,
+  "sourceFilesVerified": 56,
+  "syntheticTests": {
+    "passed": 46,
+    "failed": 0
+  },
+  "pilotTasksPreflighted": 192,
+  "offlineEvidence": {
+    "completedTasks": 181,
+    "decisions": 162176,
+    "nativeIssues": 640,
+    "nativeOutcomes": 614,
+    "calibrationRows": 788,
+    "events": 34424,
+    "fieldChecks": 1386112,
+    "dictionaryReferences": 1058268,
+    "reportSha256": "dffbf4e1fb8af88a3a1681c2870f45b8064917685a908ca3c9a900810c90e2e4",
+    "validatorSha256": "c83c2dcb3714bc3e5f0d5620bc1bb6973dc1813561aec647b0c6bd869043e28a",
+    "controllerCalls": 0
+  },
+  "findings": [
+    "Exit-race handling confined to procfs ESRCH/ENOENT and explicit terminal states; unrelated failures still stop",
+    "Actual commitTime uses exact tick/120 comparator; independent exact18-tick delay and world-clock epsilon checks retained",
+    "Unchanged src and benchmark bytes, task/config/seed/frozen state inputs; timed native calls preserved by proxy regression",
+    "Required fields, native support ordering, full-content dictionary identity, complete mismatch witnesses and physical replay retained",
+    "Terminal observer timing explicitly separated; per-task and isolated-child resource scopes labeled",
+    "Legacy missing commitTime remains absent and original mismatch evidence preserved"
+  ],
+  "limits": [
+    "Pilot001 remains failed and immutable",
+    "Offline volume and CPU do not certify replacement runtime or full-study feasibility",
+    "All192 replacement pilot tasks still need one explicit root release and verified exact-lock Git publication",
+    "Full evaluation and opponent search remain separately gated"
+  ],
+  "evaluationApproved": false,
+  "opponentSearchApproved": false,
+  "executionAuthorized": false
+}

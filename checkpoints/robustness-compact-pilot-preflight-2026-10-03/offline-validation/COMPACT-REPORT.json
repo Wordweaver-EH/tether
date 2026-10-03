@@ -1,0 +1,931 @@
+{
+  "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+  "totals": {
+    "tasks": 181,
+    "decisions": 162176,
+    "nativeFields": 1386112,
+    "dictionaryReferences": 1058268,
+    "nativePendingIssues": 640,
+    "nativeOutcomes": 614,
+    "calibrationRows": 788,
+    "events": 34424,
+    "legacyObservedCommitTimes": 14661,
+    "legacyMissingCommitTimes": 147515,
+    "originalCompressedBytes": 131751581,
+    "compactCompressedBytes": 112318782,
+    "compactUncompressedBytes": 1080370898
+  },
+  "wallMs": 187829.994339,
+  "cpuUserUs": 201039091,
+  "cpuSystemUs": 1584860,
+  "transformSourceSha256": "cb84eee6f862b35c488aa8e9cd39e85d1d8067c9b0d1f25250c85a54d06e068f",
+  "controllerCalls": 0,
+  "newGameplayDecisions": 0,
+  "tasks": [
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 363391
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 358883
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 358697
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 358126
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 306133
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 305948
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 302073
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 314574
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 341071
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 342698
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 326228
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 342005
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 764429
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 765417
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 768944
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 751155
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 785914
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 770437
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 769203
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 777228
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 769783
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 784736
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 759219
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 786318
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 768173
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 786235
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 762384
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 783064
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 770033
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 784711
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 793097
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 749769
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 365067
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 364332
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 364316
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 363810
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 306078
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 306000
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 304371
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 304670
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 336159
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 316545
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 315268
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 314645
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 767428
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 759607
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 762155
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 766837
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 787808
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 772908
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 798918
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 790831
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 787146
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 778484
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 776326
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 785654
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 792043
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 761537
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 806559
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 798914
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 786853
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 778317
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 783167
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 785687
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 360789
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 361294
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 362989
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 362416
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 312136
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 343602
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 338527
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 334937
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 343342
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 347002
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 330994
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 336537
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 774434
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 777308
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 759066
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 761519
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 788416
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 794525
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 782926
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 792022
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 792804
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 796113
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 794005
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 779531
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 796263
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 787046
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 777576
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 784428
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 791014
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 796106
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 793621
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 779621
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 362865
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 365700
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 361371
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 364805
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 307569
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 319340
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 312606
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 313101
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 325168
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 328003
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 321851
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 322889
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 785799
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 774568
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 776527
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 762297
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 750020
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 795890
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 763575
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 791959
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 805293
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 793644
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 774401
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 783259
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 798335
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 791231
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 786897
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 760587
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 804952
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 793631
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 774350
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 782666
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-conventional-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 341863
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-conventional-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 342159
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-conventional-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 342293
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 730094
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 736249
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 730610
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 755275
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 758006
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 744811
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 750518
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 756158
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 722266
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 754702
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 751408
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 741098
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 736230
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 727319
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 722295
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 756055
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 758730
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 754694
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 751144
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 345714
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 345728
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 345614
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 345761
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 319238
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 319175
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 318343
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 315577
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-4x-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 330138
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-4x-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 325305
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-4x-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 329203
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 734672
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 740404
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 740926
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 733668
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 751847
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 757060
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 745475
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 760333
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 752453
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 758677
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 758999
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 744959
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 746278
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 737335
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 746932
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 746483
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s0-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 752240
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s0-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 758631
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s1-b0",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 759020
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s1-b1",
+      "status": "PASS_OFFLINE_FIELD_EQUIVALENCE",
+      "compressedBytes": 742043
+    }
+  ]
+}

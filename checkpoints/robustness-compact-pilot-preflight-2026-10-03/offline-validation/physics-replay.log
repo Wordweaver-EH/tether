@@ -1,0 +1,229 @@
+1/181 PASS pilot-cdev-a-arena-mirror-x-conventional-s0-b0 events=284
+2/181 PASS pilot-cdev-a-arena-mirror-x-conventional-s0-b1 events=234
+3/181 PASS pilot-cdev-a-arena-mirror-x-conventional-s1-b0 events=224
+4/181 PASS pilot-cdev-a-arena-mirror-x-conventional-s1-b1 events=214
+5/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b0 events=285
+6/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b1 events=280
+7/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b0 events=294
+8/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b1 events=253
+9/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b0 events=260
+10/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b1 events=198
+11/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b0 events=296
+12/181 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b1 events=247
+13/181 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b0 events=206
+14/181 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b1 events=190
+15/181 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b0 events=277
+16/181 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b1 events=156
+17/181 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b0 events=192
+18/181 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b1 events=153
+19/181 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b0 events=237
+20/181 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b1 events=171
+21/181 PASS pilot-cdev-a-arena-mirror-x-mind-full-s0-b0 events=167
+22/181 PASS pilot-cdev-a-arena-mirror-x-mind-full-s0-b1 events=190
+23/181 PASS pilot-cdev-a-arena-mirror-x-mind-full-s1-b0 events=164
+24/181 PASS pilot-cdev-a-arena-mirror-x-mind-full-s1-b1 events=183
+25/181 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b0 events=184
+26/181 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b1 events=218
+27/181 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b0 events=169
+28/181 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b1 events=221
+29/181 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b0 events=167
+30/181 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b1 events=190
+31/181 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b0 events=198
+32/181 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b1 events=278
+33/181 PASS pilot-cdev-a-default-conventional-s0-b0 events=276
+34/181 PASS pilot-cdev-a-default-conventional-s0-b1 events=260
+35/181 PASS pilot-cdev-a-default-conventional-s1-b0 events=264
+36/181 PASS pilot-cdev-a-default-conventional-s1-b1 events=265
+37/181 PASS pilot-cdev-a-default-conventional-useful-2x-s0-b0 events=299
+38/181 PASS pilot-cdev-a-default-conventional-useful-2x-s0-b1 events=298
+39/181 PASS pilot-cdev-a-default-conventional-useful-2x-s1-b0 events=306
+40/181 PASS pilot-cdev-a-default-conventional-useful-2x-s1-b1 events=308
+41/181 PASS pilot-cdev-a-default-conventional-useful-4x-s0-b0 events=269
+42/181 PASS pilot-cdev-a-default-conventional-useful-4x-s0-b1 events=300
+43/181 PASS pilot-cdev-a-default-conventional-useful-4x-s1-b0 events=310
+44/181 PASS pilot-cdev-a-default-conventional-useful-4x-s1-b1 events=310
+45/181 PASS pilot-cdev-a-default-mind-broadcast-cut-s0-b0 events=318
+46/181 PASS pilot-cdev-a-default-mind-broadcast-cut-s0-b1 events=173
+47/181 PASS pilot-cdev-a-default-mind-broadcast-cut-s1-b0 events=165
+48/181 PASS pilot-cdev-a-default-mind-broadcast-cut-s1-b1 events=210
+49/181 PASS pilot-cdev-a-default-mind-fixed-metacog-s0-b0 events=222
+50/181 PASS pilot-cdev-a-default-mind-fixed-metacog-s0-b1 events=197
+51/181 PASS pilot-cdev-a-default-mind-fixed-metacog-s1-b0 events=308
+52/181 PASS pilot-cdev-a-default-mind-fixed-metacog-s1-b1 events=217
+53/181 PASS pilot-cdev-a-default-mind-full-s0-b0 events=318
+54/181 PASS pilot-cdev-a-default-mind-full-s0-b1 events=173
+55/181 PASS pilot-cdev-a-default-mind-full-s1-b0 events=179
+56/181 PASS pilot-cdev-a-default-mind-full-s1-b1 events=210
+57/181 PASS pilot-cdev-a-default-mind-learning-frozen-s0-b0 events=318
+58/181 PASS pilot-cdev-a-default-mind-learning-frozen-s0-b1 events=129
+59/181 PASS pilot-cdev-a-default-mind-learning-frozen-s1-b0 events=308
+60/181 PASS pilot-cdev-a-default-mind-learning-frozen-s1-b1 events=268
+61/181 PASS pilot-cdev-a-default-mind-no-novelty-s0-b0 events=318
+62/181 PASS pilot-cdev-a-default-mind-no-novelty-s0-b1 events=173
+63/181 PASS pilot-cdev-a-default-mind-no-novelty-s1-b0 events=163
+64/181 PASS pilot-cdev-a-default-mind-no-novelty-s1-b1 events=224
+65/181 PASS pilot-cdev-b-arena-mirror-x-conventional-s0-b0 events=264
+66/181 PASS pilot-cdev-b-arena-mirror-x-conventional-s0-b1 events=256
+67/181 PASS pilot-cdev-b-arena-mirror-x-conventional-s1-b0 events=279
+68/181 PASS pilot-cdev-b-arena-mirror-x-conventional-s1-b1 events=273
+69/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b0 events=280
+70/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b1 events=265
+71/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b0 events=266
+72/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b1 events=272
+73/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b0 events=276
+74/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b1 events=193
+75/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b0 events=308
+76/181 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b1 events=304
+77/181 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b0 events=235
+78/181 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b1 events=233
+79/181 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b0 events=182
+80/181 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b1 events=183
+81/181 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b0 events=205
+82/181 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b1 events=232
+83/181 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b0 events=199
+84/181 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b1 events=213
+85/181 PASS pilot-cdev-b-arena-mirror-x-mind-full-s0-b0 events=235
+86/181 PASS pilot-cdev-b-arena-mirror-x-mind-full-s0-b1 events=233
+87/181 PASS pilot-cdev-b-arena-mirror-x-mind-full-s1-b0 events=222
+88/181 PASS pilot-cdev-b-arena-mirror-x-mind-full-s1-b1 events=183
+89/181 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b0 events=292
+90/181 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b1 events=271
+91/181 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b0 events=186
+92/181 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b1 events=223
+93/181 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b0 events=235
+94/181 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b1 events=233
+95/181 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b0 events=222
+96/181 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b1 events=183
+97/181 PASS pilot-cdev-b-default-conventional-s0-b0 events=255
+98/181 PASS pilot-cdev-b-default-conventional-s0-b1 events=279
+99/181 PASS pilot-cdev-b-default-conventional-s1-b0 events=244
+100/181 PASS pilot-cdev-b-default-conventional-s1-b1 events=269
+101/181 PASS pilot-cdev-b-default-conventional-useful-2x-s0-b0 events=318
+102/181 PASS pilot-cdev-b-default-conventional-useful-2x-s0-b1 events=294
+103/181 PASS pilot-cdev-b-default-conventional-useful-2x-s1-b0 events=310
+104/181 PASS pilot-cdev-b-default-conventional-useful-2x-s1-b1 events=306
+105/181 PASS pilot-cdev-b-default-conventional-useful-4x-s0-b0 events=318
+106/181 PASS pilot-cdev-b-default-conventional-useful-4x-s0-b1 events=294
+107/181 PASS pilot-cdev-b-default-conventional-useful-4x-s1-b0 events=310
+108/181 PASS pilot-cdev-b-default-conventional-useful-4x-s1-b1 events=306
+109/181 PASS pilot-cdev-b-default-mind-broadcast-cut-s0-b0 events=326
+110/181 PASS pilot-cdev-b-default-mind-broadcast-cut-s0-b1 events=250
+111/181 PASS pilot-cdev-b-default-mind-broadcast-cut-s1-b0 events=275
+112/181 PASS pilot-cdev-b-default-mind-broadcast-cut-s1-b1 events=197
+113/181 PASS pilot-cdev-b-default-mind-fixed-metacog-s0-b0 events=328
+114/181 PASS pilot-cdev-b-default-mind-fixed-metacog-s0-b1 events=231
+115/181 PASS pilot-cdev-b-default-mind-fixed-metacog-s1-b0 events=175
+116/181 PASS pilot-cdev-b-default-mind-fixed-metacog-s1-b1 events=236
+117/181 PASS pilot-cdev-b-default-mind-full-s0-b0 events=326
+118/181 PASS pilot-cdev-b-default-mind-full-s0-b1 events=250
+119/181 PASS pilot-cdev-b-default-mind-full-s1-b0 events=277
+120/181 PASS pilot-cdev-b-default-mind-full-s1-b1 events=216
+121/181 PASS pilot-cdev-b-default-mind-learning-frozen-s0-b0 events=326
+122/181 PASS pilot-cdev-b-default-mind-learning-frozen-s0-b1 events=294
+123/181 PASS pilot-cdev-b-default-mind-learning-frozen-s1-b0 events=275
+124/181 PASS pilot-cdev-b-default-mind-learning-frozen-s1-b1 events=218
+125/181 PASS pilot-cdev-b-default-mind-no-novelty-s0-b0 events=326
+126/181 PASS pilot-cdev-b-default-mind-no-novelty-s0-b1 events=250
+127/181 PASS pilot-cdev-b-default-mind-no-novelty-s1-b0 events=277
+128/181 PASS pilot-cdev-b-default-mind-no-novelty-s1-b1 events=243
+129/181 PASS pilot-cdev-c-arena-mirror-x-conventional-s0-b0 events=120
+130/181 PASS pilot-cdev-c-arena-mirror-x-conventional-s0-b1 events=125
+131/181 PASS pilot-cdev-c-arena-mirror-x-conventional-s1-b0 events=123
+132/181 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b0 events=39
+133/181 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b1 events=35
+134/181 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b0 events=35
+135/181 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b0 events=30
+136/181 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b1 events=38
+137/181 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b0 events=36
+138/181 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b1 events=36
+139/181 PASS pilot-cdev-c-arena-mirror-x-mind-full-s0-b0 events=32
+140/181 PASS pilot-cdev-c-arena-mirror-x-mind-full-s0-b1 events=32
+141/181 PASS pilot-cdev-c-arena-mirror-x-mind-full-s1-b0 events=39
+142/181 PASS pilot-cdev-c-arena-mirror-x-mind-full-s1-b1 events=39
+143/181 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b0 events=35
+144/181 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b1 events=38
+145/181 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b0 events=36
+146/181 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b1 events=36
+147/181 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b0 events=32
+148/181 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b1 events=39
+149/181 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b0 events=39
+150/181 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b1 events=39
+151/181 PASS pilot-cdev-c-default-conventional-s0-b0 events=190
+152/181 PASS pilot-cdev-c-default-conventional-s0-b1 events=189
+153/181 PASS pilot-cdev-c-default-conventional-s1-b0 events=187
+154/181 PASS pilot-cdev-c-default-conventional-s1-b1 events=188
+155/181 PASS pilot-cdev-c-default-conventional-useful-2x-s0-b0 events=52
+156/181 PASS pilot-cdev-c-default-conventional-useful-2x-s0-b1 events=82
+157/181 PASS pilot-cdev-c-default-conventional-useful-2x-s1-b0 events=45
+158/181 PASS pilot-cdev-c-default-conventional-useful-2x-s1-b1 events=50
+159/181 PASS pilot-cdev-c-default-conventional-useful-4x-s0-b0 events=76
+160/181 PASS pilot-cdev-c-default-conventional-useful-4x-s1-b0 events=58
+161/181 PASS pilot-cdev-c-default-conventional-useful-4x-s1-b1 events=82
+162/181 PASS pilot-cdev-c-default-mind-broadcast-cut-s0-b0 events=29
+163/181 PASS pilot-cdev-c-default-mind-broadcast-cut-s0-b1 events=37
+164/181 PASS pilot-cdev-c-default-mind-broadcast-cut-s1-b0 events=32
+165/181 PASS pilot-cdev-c-default-mind-broadcast-cut-s1-b1 events=40
+166/181 PASS pilot-cdev-c-default-mind-fixed-metacog-s0-b0 events=33
+167/181 PASS pilot-cdev-c-default-mind-fixed-metacog-s0-b1 events=41
+168/181 PASS pilot-cdev-c-default-mind-fixed-metacog-s1-b0 events=45
+169/181 PASS pilot-cdev-c-default-mind-fixed-metacog-s1-b1 events=54
+170/181 PASS pilot-cdev-c-default-mind-full-s0-b0 events=29
+171/181 PASS pilot-cdev-c-default-mind-full-s0-b1 events=37
+172/181 PASS pilot-cdev-c-default-mind-full-s1-b0 events=32
+173/181 PASS pilot-cdev-c-default-mind-full-s1-b1 events=32
+174/181 PASS pilot-cdev-c-default-mind-learning-frozen-s0-b0 events=30
+175/181 PASS pilot-cdev-c-default-mind-learning-frozen-s0-b1 events=30
+176/181 PASS pilot-cdev-c-default-mind-learning-frozen-s1-b0 events=29
+177/181 PASS pilot-cdev-c-default-mind-learning-frozen-s1-b1 events=30
+178/181 PASS pilot-cdev-c-default-mind-no-novelty-s0-b0 events=29
+179/181 PASS pilot-cdev-c-default-mind-no-novelty-s0-b1 events=37
+180/181 PASS pilot-cdev-c-default-mind-no-novelty-s1-b0 events=32
+181/181 PASS pilot-cdev-c-default-mind-no-novelty-s1-b1 events=43
+{
+  "schemaVersion": 1,
+  "purpose": "Runtime-only independent offline saved-control physics validation. No controllers, training, selection, new gameplay, or policy conclusions.",
+  "status": "PASS",
+  "begun": "2026-10-03T04:53:51.545Z",
+  "completed": "2026-10-03T04:55:24.888Z",
+  "sourceFiles": [
+    {
+      "path": "src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "path": "experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "path": "experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "path": "experimental/task.mjs",
+      "sha256": "53ae72240043fa8c0609dcda2b8de6a1b43278544dbb2dea22bca048e3a4d8ce"
+    },
+    {
+      "path": "benchmark/interface.mjs",
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    }
+  ],
+  "verifierSha256": "01bc1a9a25081238f4c332c2b7608160137ed5c27b9c7711f542717f22a4979f",
+  "expectedCompletedTasks": 181,
+  "passed": 181,
+  "failed": 0,
+  "totalTicks": 651600,
+  "decisionsChecked": 162176,
+  "receiptTruthChecked": 162176,
+  "delayedTruthChecked": 162176,
+  "perceptHashesChecked": 324352,
+  "eventsChecked": 34424,
+  "checkpoints": 5611,
+  "controllerCalls": 0,
+  "newGameplayDecisions": 0,
+  "checkpointSchedule": "tick 0 and every 120 ticks through terminal tick 3600, inclusive (31/task)",
+  "comparison": "Exact structural numeric equality; no tolerance. Each hash chain and both raw byte digests verified before replay. Exact event order, tick and elapsed time. Scores and finalHash checked against raw completion and external result."
+}

@@ -1,0 +1,2403 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Runtime-only independent offline saved-control physics validation. No controllers, training, selection, new gameplay, or policy conclusions.",
+  "status": "PASS",
+  "begun": "2026-10-03T04:53:51.545Z",
+  "completed": "2026-10-03T04:55:24.888Z",
+  "sourceFiles": [
+    {
+      "path": "src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "path": "experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "path": "experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "path": "experimental/task.mjs",
+      "sha256": "53ae72240043fa8c0609dcda2b8de6a1b43278544dbb2dea22bca048e3a4d8ce"
+    },
+    {
+      "path": "benchmark/interface.mjs",
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    }
+  ],
+  "verifierSha256": "01bc1a9a25081238f4c332c2b7608160137ed5c27b9c7711f542717f22a4979f",
+  "expectedCompletedTasks": 181,
+  "passed": 181,
+  "failed": 0,
+  "totalTicks": 651600,
+  "decisionsChecked": 162176,
+  "receiptTruthChecked": 162176,
+  "delayedTruthChecked": 162176,
+  "perceptHashesChecked": 324352,
+  "eventsChecked": 34424,
+  "checkpoints": 5611,
+  "controllerCalls": 0,
+  "newGameplayDecisions": 0,
+  "checkpointSchedule": "tick 0 and every 120 ticks through terminal tick 3600, inclusive (31/task)",
+  "comparison": "Exact structural numeric equality; no tolerance. Each hash chain and both raw byte digests verified before replay. Exact event order, tick and elapsed time. Scores and finalHash checked against raw completion and external result.",
+  "tasks": [
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 284,
+      "terminal": {
+        "score": [
+          10,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f64bbd1ac62e5fd5"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 234,
+      "terminal": {
+        "score": [
+          10,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c1f5ed4fc528a10d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 224,
+      "terminal": {
+        "score": [
+          1,
+          9
+        ],
+        "elapsedSec": 30,
+        "finalHash": "96e4d05988fa2840"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 214,
+      "terminal": {
+        "score": [
+          0,
+          9
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9ab6a246210e601a"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 285,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "edfb13badcdad002"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 280,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "0f3006053ec85442"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 294,
+      "terminal": {
+        "score": [
+          0,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "81b54d166b952c84"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 253,
+      "terminal": {
+        "score": [
+          1,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8a9b73e739469c73"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 260,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "20d2d41f513dcb92"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 198,
+      "terminal": {
+        "score": [
+          2,
+          5
+        ],
+        "elapsedSec": 30,
+        "finalHash": "070aaaeea9cb59b3"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 296,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3ca31972cda8a22b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 247,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "e4a9ef4c63cb2794"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 206,
+      "terminal": {
+        "score": [
+          2,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "00006ed6ea7eb607"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 190,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4fc8200b721941af"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 277,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "33821544daecb89d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 156,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9d94474b2dd08a7b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 192,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "50a993c852ea4c85"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 153,
+      "terminal": {
+        "score": [
+          1,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "31f5a915570891aa"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 237,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3967e818ea8f76a8"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 171,
+      "terminal": {
+        "score": [
+          4,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "1a08aeb2f118b64d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 167,
+      "terminal": {
+        "score": [
+          0,
+          5
+        ],
+        "elapsedSec": 30,
+        "finalHash": "0d9e5c5a33e474eb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 190,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4fc8200b721941af"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 164,
+      "terminal": {
+        "score": [
+          5,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "29158814306418f1"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-full-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 183,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "64b0e3fee8fc513a"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 184,
+      "terminal": {
+        "score": [
+          2,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c4097f928e9804cf"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 218,
+      "terminal": {
+        "score": [
+          2,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "5bb54605ada86dca"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 169,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "ea66f60e4029727b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 221,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "64e75582bab3c0a9"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 167,
+      "terminal": {
+        "score": [
+          0,
+          5
+        ],
+        "elapsedSec": 30,
+        "finalHash": "0d9e5c5a33e474eb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 190,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4113a069ec989afd"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 198,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "126e625a067fafc0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 278,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4e4788990e13b3fc"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 276,
+      "terminal": {
+        "score": [
+          11,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "574d768b510fa3ae"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 260,
+      "terminal": {
+        "score": [
+          12,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "ca97b5672fb2120f"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 264,
+      "terminal": {
+        "score": [
+          2,
+          7
+        ],
+        "elapsedSec": 30,
+        "finalHash": "b3f77321c155c9fa"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 265,
+      "terminal": {
+        "score": [
+          2,
+          9
+        ],
+        "elapsedSec": 30,
+        "finalHash": "a03c3d8915654f5d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 299,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "2b7d92b30d074956"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 298,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "057fc754564980a0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 306,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "2b14f9fa7f8bc832"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-2x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 308,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "366989df65b06522"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 269,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "24b778901f029deb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 300,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "2921ff181800b6d1"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 310,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "25c8038eb0291ebb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-conventional-useful-4x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 310,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "48f9fd789e7dae9c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 318,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "dfcab1417e92f2f4"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 173,
+      "terminal": {
+        "score": [
+          0,
+          5
+        ],
+        "elapsedSec": 30,
+        "finalHash": "94f2c2b1a4b75e1c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 165,
+      "terminal": {
+        "score": [
+          5,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3bc66cf48ec27456"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-broadcast-cut-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 210,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4f3e92a4c38a475b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 222,
+      "terminal": {
+        "score": [
+          2,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "67cec787fc04a389"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 197,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d251e110a271ef91"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 308,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "58bd2fe2b8036d9b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-fixed-metacog-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 217,
+      "terminal": {
+        "score": [
+          3,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "a136828a6f5c40cd"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 318,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "dfcab1417e92f2f4"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 173,
+      "terminal": {
+        "score": [
+          0,
+          5
+        ],
+        "elapsedSec": 30,
+        "finalHash": "94f2c2b1a4b75e1c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 179,
+      "terminal": {
+        "score": [
+          4,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3f76b1ed3343f091"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-full-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 210,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4f3e92a4c38a475b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 318,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "14645a56ebb2ec2e"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 129,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "29c5c27ae3c28ef7"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 308,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9b9ea4cb9d0614b7"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-learning-frozen-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 268,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "b4f490682af51798"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 318,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "dfcab1417e92f2f4"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 173,
+      "terminal": {
+        "score": [
+          0,
+          5
+        ],
+        "elapsedSec": 30,
+        "finalHash": "94f2c2b1a4b75e1c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 163,
+      "terminal": {
+        "score": [
+          6,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "1a9c5a7af488f179"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-a-default-mind-no-novelty-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 224,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "365e7b8f301462f3"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 264,
+      "terminal": {
+        "score": [
+          7,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "65cadd49b877e873"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 256,
+      "terminal": {
+        "score": [
+          7,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4a64ce93ec436b46"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 279,
+      "terminal": {
+        "score": [
+          1,
+          9
+        ],
+        "elapsedSec": 30,
+        "finalHash": "93ad89b9b2d86084"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 273,
+      "terminal": {
+        "score": [
+          1,
+          8
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f86d2d93b5b7d43b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 280,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "ebba6b5b051ca609"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 265,
+      "terminal": {
+        "score": [
+          5,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "55c71e84b23f8a9b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 266,
+      "terminal": {
+        "score": [
+          0,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "775755dad5bfe0fc"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 272,
+      "terminal": {
+        "score": [
+          1,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "eb520dafd8bbcd46"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 276,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "613eabeb208d0d34"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 193,
+      "terminal": {
+        "score": [
+          6,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "53de70c9b4b99256"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 308,
+      "terminal": {
+        "score": [
+          0,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "bb3056de3897f090"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 304,
+      "terminal": {
+        "score": [
+          0,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8e975d912aa6f2f2"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 235,
+      "terminal": {
+        "score": [
+          1,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8a77a44a428c8cd5"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 233,
+      "terminal": {
+        "score": [
+          1,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f2d717a618581ecb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 182,
+      "terminal": {
+        "score": [
+          5,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "511bd55c008a513a"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 183,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "81f3678fc825e33b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 205,
+      "terminal": {
+        "score": [
+          2,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "0e6eba05ee719259"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 232,
+      "terminal": {
+        "score": [
+          3,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "59c2c6ddcab91823"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 199,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "72181ba73047335f"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 213,
+      "terminal": {
+        "score": [
+          2,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "2ee8e8176b59623c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 235,
+      "terminal": {
+        "score": [
+          1,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "26edf1b94dd33570"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 233,
+      "terminal": {
+        "score": [
+          1,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f2d717a618581ecb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 222,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c934003f55be9ae0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-full-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 183,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "81f3678fc825e33b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 292,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "67d7e3ae0052e353"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 271,
+      "terminal": {
+        "score": [
+          0,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3b3c63604f58b3e7"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 186,
+      "terminal": {
+        "score": [
+          3,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "40cf92bc58f17355"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 223,
+      "terminal": {
+        "score": [
+          5,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "41c7293e0d1aff69"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 235,
+      "terminal": {
+        "score": [
+          1,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "10b78417de809c05"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 233,
+      "terminal": {
+        "score": [
+          1,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d5778bd217be83dd"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 222,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c934003f55be9ae0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 183,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "81f3678fc825e33b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 255,
+      "terminal": {
+        "score": [
+          4,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "df78b3451246bfbb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 279,
+      "terminal": {
+        "score": [
+          9,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "55643b3d70aeef29"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 244,
+      "terminal": {
+        "score": [
+          1,
+          8
+        ],
+        "elapsedSec": 30,
+        "finalHash": "92eeb00053f6cc94"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 269,
+      "terminal": {
+        "score": [
+          3,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "7a11bac6e31275d8"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 318,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "eb7f195af09ce418"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 294,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f15a3366111ea0bf"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 310,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "48a6e73919ca6c4d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-2x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 306,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "a1cbf8db303c10a7"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 318,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "ad0397c90535ff17"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 294,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3841d98b1210fc23"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 310,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "da223e2d9efe443b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-conventional-useful-4x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 306,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8fd7f408c6e6227e"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 326,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9cb418f37f4b62d0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 250,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "254610a6a0e66761"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 275,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "915667102a68658e"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-broadcast-cut-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 197,
+      "terminal": {
+        "score": [
+          3,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9bbdbde31ab36812"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 328,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "e84d623e0f5cc15d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 231,
+      "terminal": {
+        "score": [
+          3,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "6267b5ee6ebd258c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 175,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "bbcfff8ec6b0db43"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-fixed-metacog-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 236,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "882095708dd1e5e1"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 326,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9cb418f37f4b62d0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 250,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "254610a6a0e66761"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 277,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d489aebcb61658b6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-full-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 216,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "487ef86bbf78d4eb"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 326,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "36ef50be5f771852"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 294,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3744759ecdbbf670"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 275,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "915667102a68658e"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-learning-frozen-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 218,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "58467a6aa93528e6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 326,
+      "terminal": {
+        "score": [
+          0,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9cb418f37f4b62d0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 250,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "254610a6a0e66761"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 277,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d489aebcb61658b6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-b-default-mind-no-novelty-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 243,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "b5895398e093981a"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-conventional-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 120,
+      "terminal": {
+        "score": [
+          8,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f2520ea21754c969"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-conventional-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 125,
+      "terminal": {
+        "score": [
+          8,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "eb0b82c281b55eb9"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-conventional-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 123,
+      "terminal": {
+        "score": [
+          0,
+          8
+        ],
+        "elapsedSec": 30,
+        "finalHash": "7eef24995b5c04c0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 39,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "2648b1ebd6b26443"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 35,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9b930854a0cc6f5c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 35,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "e563e6c6683f09f5"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 30,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "0f0933658e62ebb3"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 38,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "5a8ae1cfa29d8ac0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 36,
+      "terminal": {
+        "score": [
+          0,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "623408cc67c04820"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 36,
+      "terminal": {
+        "score": [
+          1,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4418c853287918a6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3c0b8c3f1c342c40"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "239b8e923b2575c6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 39,
+      "terminal": {
+        "score": [
+          0,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "ef6bf03b43b50177"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-full-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 39,
+      "terminal": {
+        "score": [
+          0,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "51e8175751e3f673"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 35,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8af6c4edafc843b2"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 38,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "9495f62e02f65a72"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 36,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "66ac1b682576133d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 36,
+      "terminal": {
+        "score": [
+          1,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "931dd3e84c0e2f4b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "3c0b8c3f1c342c40"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 39,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c36b08f8fc560a88"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 39,
+      "terminal": {
+        "score": [
+          0,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "ef6bf03b43b50177"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 39,
+      "terminal": {
+        "score": [
+          0,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "51e8175751e3f673"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 190,
+      "terminal": {
+        "score": [
+          15,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8d21b99687905f7c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 189,
+      "terminal": {
+        "score": [
+          15,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "345410027627128c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 187,
+      "terminal": {
+        "score": [
+          0,
+          14
+        ],
+        "elapsedSec": 30,
+        "finalHash": "cc49cdafeead9a0c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 188,
+      "terminal": {
+        "score": [
+          0,
+          14
+        ],
+        "elapsedSec": 30,
+        "finalHash": "5a6863c2f368b37d"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 52,
+      "terminal": {
+        "score": [
+          6,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "a1b9dcf42ee6503c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 82,
+      "terminal": {
+        "score": [
+          14,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c110f49652e2f8bf"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 45,
+      "terminal": {
+        "score": [
+          1,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "a418c49c9134dbc3"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-2x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 50,
+      "terminal": {
+        "score": [
+          0,
+          6
+        ],
+        "elapsedSec": 30,
+        "finalHash": "8688b96b85ccc9b3"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-4x-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 76,
+      "terminal": {
+        "score": [
+          11,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c5732acbee4cbff0"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-4x-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 58,
+      "terminal": {
+        "score": [
+          0,
+          8
+        ],
+        "elapsedSec": 30,
+        "finalHash": "759723a4de90c0ef"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-conventional-useful-4x-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 82,
+      "terminal": {
+        "score": [
+          0,
+          11
+        ],
+        "elapsedSec": 30,
+        "finalHash": "6fed5dea30c82016"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 29,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "75aa42d67df4a08b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 37,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d425bb204ce641d6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          0,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c10e1c9bc2c3a3ea"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-broadcast-cut-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 40,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "1e28d161436c8d39"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 33,
+      "terminal": {
+        "score": [
+          1,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "b2b2525985f8e62f"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 41,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "4fcfc9784d5efc0a"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 45,
+      "terminal": {
+        "score": [
+          0,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c2d5057cc4b27122"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-fixed-metacog-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 54,
+      "terminal": {
+        "score": [
+          0,
+          4
+        ],
+        "elapsedSec": 30,
+        "finalHash": "56ca361066043d9b"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 29,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "625722bb882a9da2"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 37,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d425bb204ce641d6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          0,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c10e1c9bc2c3a3ea"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-full-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          1,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "0b3e767bfd494377"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 30,
+      "terminal": {
+        "score": [
+          3,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "64158d63a0b9ac2c"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 30,
+      "terminal": {
+        "score": [
+          2,
+          1
+        ],
+        "elapsedSec": 30,
+        "finalHash": "f7d04c1a1469db0e"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 29,
+      "terminal": {
+        "score": [
+          0,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "6312a586645f222e"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-learning-frozen-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 30,
+      "terminal": {
+        "score": [
+          0,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d3960ee315787d67"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s0-b0",
+      "status": "PASS",
+      "eventsChecked": 29,
+      "terminal": {
+        "score": [
+          2,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "625722bb882a9da2"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s0-b1",
+      "status": "PASS",
+      "eventsChecked": 37,
+      "terminal": {
+        "score": [
+          4,
+          0
+        ],
+        "elapsedSec": 30,
+        "finalHash": "d425bb204ce641d6"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s1-b0",
+      "status": "PASS",
+      "eventsChecked": 32,
+      "terminal": {
+        "score": [
+          0,
+          2
+        ],
+        "elapsedSec": 30,
+        "finalHash": "c10e1c9bc2c3a3ea"
+      }
+    },
+    {
+      "taskId": "pilot-cdev-c-default-mind-no-novelty-s1-b1",
+      "status": "PASS",
+      "eventsChecked": 43,
+      "terminal": {
+        "score": [
+          1,
+          3
+        ],
+        "elapsedSec": 30,
+        "finalHash": "6d84e58991f37ce6"
+      }
+    }
+  ]
+}

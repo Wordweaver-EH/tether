@@ -1,3 +1,5 @@
+> Search source update: the independently reviewed fixed opponent-search harness is integrated with 334 passing tests and an exact pre-run Git lock. Search execution and winner acceptance have separate gates; see benchmark/STATUS.md.
+
 > Final representation update: reviewed isolated code passes 323 integrated tests. The prospective v2 runtime/proof-inspectability amendment is saved with exact pilot-only lock; pilot003 completed all 192 tasks and passed independent integrity audit, with conditional engineering feasibility under the prospective caps. Full-study/search execution remains separately gated. See benchmark/STATUS.md for the explicit technical-proof limitation and preserved earlier attempts.
 
 > Compact pilot update: the reviewed isolated replacement source is included with 319 passing integrated tests. Pilot 001 remains failed/incomplete and fully archived; pilot002 completed all 192 tasks and passed independent integrity audit. Full-study feasibility is blocked under the original raw/CPU caps. See benchmark/STATUS.md for immutable evidence and exact lock identities.

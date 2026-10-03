@@ -1,0 +1,2394 @@
+{
+  "format": 1,
+  "status": "IMMUTABLE_TERMINAL_UNION_TASK_BATCH",
+  "archiveName": "evaluation-union-833-896.tar.gz",
+  "phase": "evaluation",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "fullUnionReviewSha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c",
+  "unionSha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c",
+  "remoteExclusionReceiptSha256": "0c6ace790469b9cac38b516013045c1a3f1c3d526c92b40ef280ca04d42f1ae9",
+  "fixedOrder": "frozen EVALUATION-TASKS.json order, excluding remote128 IDs",
+  "remainingTaskIdsSha256": "b54a310372e1e9a3a4015b1b374b65e5be927a893436c2afb873fe03cb3f8d63",
+  "remainingRange": [
+    833,
+    896
+  ],
+  "taskIds": [
+    "evaluation-c2-fov-plus20-mind-full-s0-b0",
+    "evaluation-c2-fov-plus20-mind-full-s0-b1",
+    "evaluation-c2-fov-plus20-mind-full-s1-b0",
+    "evaluation-c2-fov-plus20-mind-full-s1-b1",
+    "evaluation-c2-fov-plus20-mind-no-novelty-s0-b0",
+    "evaluation-c2-fov-plus20-mind-no-novelty-s0-b1",
+    "evaluation-c2-fov-plus20-mind-no-novelty-s1-b0",
+    "evaluation-c2-fov-plus20-mind-no-novelty-s1-b1",
+    "evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0",
+    "evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1",
+    "evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0",
+    "evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1",
+    "evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0",
+    "evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1",
+    "evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0",
+    "evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1",
+    "evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0",
+    "evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1",
+    "evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0",
+    "evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1",
+    "evaluation-c2-fov-plus20-conventional-s0-b0",
+    "evaluation-c2-fov-plus20-conventional-s0-b1",
+    "evaluation-c2-fov-plus20-conventional-s1-b0",
+    "evaluation-c2-fov-plus20-conventional-s1-b1",
+    "evaluation-c2-fov-plus20-conventional-useful-2x-s0-b0",
+    "evaluation-c2-fov-plus20-conventional-useful-2x-s0-b1",
+    "evaluation-c2-fov-plus20-conventional-useful-2x-s1-b0",
+    "evaluation-c2-fov-plus20-conventional-useful-2x-s1-b1",
+    "evaluation-c2-fov-plus20-conventional-useful-4x-s0-b0",
+    "evaluation-c2-fov-plus20-conventional-useful-4x-s0-b1",
+    "evaluation-c2-fov-plus20-conventional-useful-4x-s1-b0",
+    "evaluation-c2-fov-plus20-conventional-useful-4x-s1-b1",
+    "evaluation-c2-searched-style-1-mind-full-s0-b0",
+    "evaluation-c2-searched-style-1-mind-full-s0-b1",
+    "evaluation-c2-searched-style-1-mind-full-s1-b0",
+    "evaluation-c2-searched-style-1-mind-full-s1-b1",
+    "evaluation-c2-searched-style-1-mind-no-novelty-s0-b0",
+    "evaluation-c2-searched-style-1-mind-no-novelty-s0-b1",
+    "evaluation-c2-searched-style-1-mind-no-novelty-s1-b0",
+    "evaluation-c2-searched-style-1-mind-no-novelty-s1-b1",
+    "evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0",
+    "evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1",
+    "evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0",
+    "evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1",
+    "evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0",
+    "evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1",
+    "evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0",
+    "evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1",
+    "evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0",
+    "evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1",
+    "evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0",
+    "evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1",
+    "evaluation-c2-searched-style-1-conventional-s0-b0",
+    "evaluation-c2-searched-style-1-conventional-s0-b1",
+    "evaluation-c2-searched-style-1-conventional-s1-b0",
+    "evaluation-c2-searched-style-1-conventional-s1-b1",
+    "evaluation-c2-searched-style-1-conventional-useful-2x-s0-b0",
+    "evaluation-c2-searched-style-1-conventional-useful-2x-s0-b1",
+    "evaluation-c2-searched-style-1-conventional-useful-2x-s1-b0",
+    "evaluation-c2-searched-style-1-conventional-useful-2x-s1-b1",
+    "evaluation-c2-searched-style-1-conventional-useful-4x-s0-b0",
+    "evaluation-c2-searched-style-1-conventional-useful-4x-s0-b1",
+    "evaluation-c2-searched-style-1-conventional-useful-4x-s1-b0",
+    "evaluation-c2-searched-style-1-conventional-useful-4x-s1-b1"
+  ],
+  "taskCount": 64,
+  "wholePhaseCpuClaim": false,
+  "evaluationSuccessClaim": false,
+  "validation": "Every included byte hashed; selected raw/result/memory hashes bind the independently approved full proof audit. No proof replay, controllers, or metrics executed.",
+  "memoryReassembly": "Input and output memory member paths are explicit per task; dependencies are repeated across batches as needed, deduplicated by member path within a batch. closure/ restores original workspace-relative locked inputs. Original/resume scientific files retain distinct namespaces.",
+  "taskBindings": [
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-full-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-full-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-full-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-full-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "bd385e5212532a3668ae30ba25ee07a28af2a8a0fd3fab9228a53bf526854163"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-full-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-full-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-full-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-full-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-full-s0-b0.json",
+      "inputMemoryObjectSha256": "bd385e5212532a3668ae30ba25ee07a28af2a8a0fd3fab9228a53bf526854163",
+      "outputMemoryObjectSha256": "65e554035be37b6b2dab18949483c40480725edfa2cbbb30ab27b52d1e95c51a"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-full-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-full-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-full-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-full-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5e2aac141061f970d00ff6ae3c744efddd8ef614fdd9114b8c0b8c11b6bbeab2"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-full-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-full-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-full-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-full-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-full-s1-b0.json",
+      "inputMemoryObjectSha256": "5e2aac141061f970d00ff6ae3c744efddd8ef614fdd9114b8c0b8c11b6bbeab2",
+      "outputMemoryObjectSha256": "cb4a9a45f6ed2b158eee70530619014546e0cd4cb6fbc47c82795e64869fc6be"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-no-novelty-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "fa5d60824a76a44b11900e20edbbf346583f0753fcae2e58aee7291f9da7f48a"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-no-novelty-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.json",
+      "inputMemoryObjectSha256": "fa5d60824a76a44b11900e20edbbf346583f0753fcae2e58aee7291f9da7f48a",
+      "outputMemoryObjectSha256": "baa9322be149479bd28e2b15bd45824664f91b28768428e099991c0c1534bd16"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-no-novelty-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "c85c5520ec78a4ba2ff0939f5a041554e22c6f4143f01cce716b59ee719ed9df"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-no-novelty-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.json",
+      "inputMemoryObjectSha256": "c85c5520ec78a4ba2ff0939f5a041554e22c6f4143f01cce716b59ee719ed9df",
+      "outputMemoryObjectSha256": "53abdf479df34192761edcbe824be514574b3bfb3d0c20a432798dc276251f91"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "c0e368b8ccf77f06715efd492dc2446150fd791f7d2accee685f92daac86a698"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.json",
+      "inputMemoryObjectSha256": "c0e368b8ccf77f06715efd492dc2446150fd791f7d2accee685f92daac86a698",
+      "outputMemoryObjectSha256": "0392de406ed68c0d22f0ea26fb2bc83f27f2087fa3d54ebad348a4bb91548556"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "654d6e40a2249df5df284b4126d039aa199d3e3afa24313a0c58a576fabfb74d"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.json",
+      "inputMemoryObjectSha256": "654d6e40a2249df5df284b4126d039aa199d3e3afa24313a0c58a576fabfb74d",
+      "outputMemoryObjectSha256": "ec2d3822a5b1adaf5924cb021cd0840d32570f0e7358ae3adab387e90eaef771"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "3ac5d2945fbca99843983fee81bf72b5d11c02a1ea2e3201f6ba942a56c01a35"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.json",
+      "inputMemoryObjectSha256": "3ac5d2945fbca99843983fee81bf72b5d11c02a1ea2e3201f6ba942a56c01a35",
+      "outputMemoryObjectSha256": "d590ed71f7b03359b0dd55febced110b10fc717f1cac1748bb33847cd3bfac06"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "9e89311181686c626dbb897b98b6ca8a26c3af3de282f7de739263af6ba65874"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.json",
+      "inputMemoryObjectSha256": "9e89311181686c626dbb897b98b6ca8a26c3af3de282f7de739263af6ba65874",
+      "outputMemoryObjectSha256": "92f3b903275af467c237cf6545e6f3d1c8635ea75957951a9407d5040f693de1"
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-2x-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-2x-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-2x-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-2x-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-4x-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-4x-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-4x-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-fov-plus20-conventional-useful-4x-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-full-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-full-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-full-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-full-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "00fc98df3545c3b3588c9c2fbdb0cb8e4f30afdb0e57c9872705762b7b73f426"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-full-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-full-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-full-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-full-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-full-s0-b0.json",
+      "inputMemoryObjectSha256": "00fc98df3545c3b3588c9c2fbdb0cb8e4f30afdb0e57c9872705762b7b73f426",
+      "outputMemoryObjectSha256": "9335e41627899a2f84f93dc28493e0171f260f466b46bb35f3a75bf0fcd30b2d"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-full-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-full-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-full-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-full-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "13e27cb144a310e3cfe2b6cdcd5aedfa885113c51e0ed5bde49d5d173b13a023"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-full-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-full-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-full-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-full-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-full-s1-b0.json",
+      "inputMemoryObjectSha256": "13e27cb144a310e3cfe2b6cdcd5aedfa885113c51e0ed5bde49d5d173b13a023",
+      "outputMemoryObjectSha256": "b1d5496dbbd14bec3a6e07d4bfea9ff7a9c6332ba5d7dda438dff1e345ca362c"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-no-novelty-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "7c8da84a1ba70628d6524703ea160ca3170dc47c88bca97d7afadd34e1b7bd1a"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-no-novelty-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.json",
+      "inputMemoryObjectSha256": "7c8da84a1ba70628d6524703ea160ca3170dc47c88bca97d7afadd34e1b7bd1a",
+      "outputMemoryObjectSha256": "553b049411f246d450dd8de45aeebc80797e764e0629d0a681aed0b2fa6aecc2"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-no-novelty-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "2d83df86d5b2382201e5574b7d88ec7f6e45608ac0e2217370b1ba37264e4ee0"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-no-novelty-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.json",
+      "inputMemoryObjectSha256": "2d83df86d5b2382201e5574b7d88ec7f6e45608ac0e2217370b1ba37264e4ee0",
+      "outputMemoryObjectSha256": "87f52b0bee0785964f45a954a287bbbecad4ca2013731af0c0bb8392e5734c86"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "140cd3b088b696ef7be631d4bbd6e9dcc6bb80b86ff55184fc5639a12c9e0a08"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.json",
+      "inputMemoryObjectSha256": "140cd3b088b696ef7be631d4bbd6e9dcc6bb80b86ff55184fc5639a12c9e0a08",
+      "outputMemoryObjectSha256": "4718e73258d417df6b7352a84aa8979e9aa6a5399d8708a364e11b93fa08c253"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "d53e7383de566a5bfcb00a12410d6b0cb2e25245cc682d3011e3ac0c1d69b80d"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.json",
+      "inputMemoryObjectSha256": "d53e7383de566a5bfcb00a12410d6b0cb2e25245cc682d3011e3ac0c1d69b80d",
+      "outputMemoryObjectSha256": "4915daef51c661e9793475bd5b37bc5ce9874f666f64fe8c09fa86bad1448b09"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "3448c4561c603b7667f4ee535d30e8b6edaf17820b522cd807bdf9aebe3a4b43"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.json",
+      "inputMemoryObjectSha256": "3448c4561c603b7667f4ee535d30e8b6edaf17820b522cd807bdf9aebe3a4b43",
+      "outputMemoryObjectSha256": "1274bcdeeb15c5c4ecb0fa0845136fefeebca1015976b91743073643a9f69867"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.json",
+      "inputMemory": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "inputMemoryObjectSha256": "5a9b4e5ab0b882476fbe93b2f9f529eb90487108ea58b0ef6d2ddfc1c1227050",
+      "outputMemoryObjectSha256": "13e27cb144a310e3cfe2b6cdcd5aedfa885113c51e0ed5bde49d5d173b13a023"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "outputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1.json",
+      "inputMemory": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.json",
+      "inputMemoryObjectSha256": "13e27cb144a310e3cfe2b6cdcd5aedfa885113c51e0ed5bde49d5d173b13a023",
+      "outputMemoryObjectSha256": "b1d5496dbbd14bec3a6e07d4bfea9ff7a9c6332ba5d7dda438dff1e345ca362c"
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-2x-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-2x-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-2x-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-2x-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-4x-s0-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-4x-s0-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-4x-s1-b0",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b0.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b0.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    },
+    {
+      "taskId": "evaluation-c2-searched-style-1-conventional-useful-4x-s1-b1",
+      "origin": "resume",
+      "result": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b1.json",
+      "raw": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b1.jsonl.gz",
+      "outputMemory": null,
+      "inputMemory": null,
+      "inputMemoryObjectSha256": null,
+      "outputMemoryObjectSha256": null
+    }
+  ],
+  "qualifications": [
+    "Original attempt interruption is preserved; no original COMPLETE/finalization fabricated",
+    "Original805 terminal child IPC, parent terminal CPU and partial-worker total CPU remain unavailable, not zero; conditional capacity allowance is not measured actual CPU",
+    "Original process extinction and global eight-worker/exactly-once-partial execution remain unproven",
+    "Nine-CPU shared aggregate capacity assumption and finite watchdog latency remain as reviewed; no resource equivalence claim is made",
+    "Frozen compact proof verification establishes retained structure and integrity, not replayed physics or reconstruction of omitted individual comparison digests",
+    "This validates integrity/provenance/proof/memory/terminal evidence only, not aggregate scientific results; qualified adapter must still decode/extract frozen scientific diagnostics and receive explicit root release"
+  ],
+  "files": [
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/LOCK-COPY.json",
+      "bytes": 11969,
+      "sha256": "15547657adbdeaaf76153d2c3103ace74c9c0d74d7eef98398d5a83f2aba5ec2"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/PARAMETER-SNAPSHOT-MANIFEST.json",
+      "bytes": 4621,
+      "sha256": "8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/PROCESS-EXIT.json",
+      "bytes": 51,
+      "sha256": "f2591ec95e391dc27cfbac70a57bba9e14028c9e65cda022f4ff36f822452de8"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/QUALIFIED-FREEZE-ACCEPTANCE.json",
+      "bytes": 1255,
+      "sha256": "fead101f4dcc60e767c780a237e86e86a19f9f43cdbb31a5895ae9b1c6bf96a6"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/README.md",
+      "bytes": 1458,
+      "sha256": "58ea8d3281f32bfe5f75e7cc5f12614281f5112eb77e8cdc87d609c8bd994dde"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/TRAINING-RESULT.json",
+      "bytes": 3381,
+      "sha256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/AUDIT-DETAILS.json",
+      "bytes": 21049,
+      "sha256": "39be7a6a725f6bb746d4cdf1a160100f14e8c58923e3be6bb4a52ddfaa583d16"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/FREEZE-ELIGIBILITY.json",
+      "bytes": 1329,
+      "sha256": "5391a266a889dfe77a3c927102f703f979e9d46753e08028c96a6ec203c9b5d5"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/IEEE-SCORE-AUDIT.json",
+      "bytes": 1118,
+      "sha256": "ec71cfa3388186ce44d94f148d04f760a442fa414e18104002046c70fa3360dc"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/INDEPENDENT-TRAINING-AUDIT.md",
+      "bytes": 7275,
+      "sha256": "4518b433f2918dac0b8e8cf7b78e7bf8384df70189163a5ee4e18627f35cc0ed"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/independent-audit/audit-saved-training.mjs",
+      "bytes": 6835,
+      "sha256": "3c67799d5f2169e3e7a451550c20a68530cc9d6bdb8def89531510138afaa291"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-10.json",
+      "bytes": 60072,
+      "sha256": "05d495e808f32a4b92b5d837668b0cd969bb8d17306812af8515a0e8173ee1c0"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-11.json",
+      "bytes": 59620,
+      "sha256": "eb3d81c5aac7738405d657fbb849531493974e7984b699b030fbeef72cb43c7a"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-3.json",
+      "bytes": 60034,
+      "sha256": "886d9337666165aefc418dac6cc5a0b960aa100cc75db30210c3de3db26ebe9f"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-4.json",
+      "bytes": 60726,
+      "sha256": "6288e1d8fd26609a04c0320a1d51c65c285be31872df57e8f073302d146b3865"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-5.json",
+      "bytes": 61450,
+      "sha256": "972581e9059f29a5fe753ef84ed118687823cdf0a5be9a0680787cbe7855d7c9"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-6.json",
+      "bytes": 60378,
+      "sha256": "99f8e059f58bcce5c2853254ac506df698315f8644f3e5860b88071797bc6d2d"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-7.json",
+      "bytes": 59335,
+      "sha256": "daa5aa85f21d2fb8a6f9870afd6dce930d5e6448b8f0d181393a316747dc4f56"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-8.json",
+      "bytes": 61075,
+      "sha256": "a81500f2cb2a26d64a30986d7e739889bfd9a05a500aa1e6468054506c9eafa3"
+    },
+    {
+      "member": "closure/tether-github-update/training-final-artifacts/snapshots/mind-9.json",
+      "bytes": 61018,
+      "sha256": "c403e5a366e1cf30d8015129e0542554387f93bd79fd029c7ec3e495d02f9ce7"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/DESIGN-FILE-MANIFEST.json",
+      "bytes": 5098,
+      "sha256": "36fa4a77caf612b6e1de43771e26c5ad7060612777d11ff7347e1f1f3a986f86"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/DESIGN.json",
+      "bytes": 20569,
+      "sha256": "3b386551b680aaf05c48fdd88304ac9d6ce943844b5b4af5c9627998c5fd4ac6"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/EVALUATION-TASKS.json",
+      "bytes": 2760719,
+      "sha256": "2d9f694c7b7419b050240c1551c625c26050c8c729894fc5531b38155c79bca9"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/METRIC-CONTRACT.json",
+      "bytes": 6020,
+      "sha256": "b2a4d06cfa565d6c41e902ca528a377a14ec6f30ec500b344c20f83127942d62"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/OPPONENT-SEARCH.json",
+      "bytes": 2433,
+      "sha256": "7295040474165257128d83359215fe72460c2420f7fdccc95f9a9564bf4f3829"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PILOT-DESIGN-READY.json",
+      "bytes": 813,
+      "sha256": "f1c8d2872231815410da63fa7095732aed0956538ea406433dc76b4ec63976e7"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PILOT-TASKS.json",
+      "bytes": 124407,
+      "sha256": "e5b9e71b75505732984102d129dca209050dc1c1af2d48b6b75cf1028340b470"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PREREGISTRATION.md",
+      "bytes": 23243,
+      "sha256": "9c84e04f94d15d6de510bb0b5bad6948da8919cf73de0cbf9e59e0abe927c28e"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PROOF-GRANULARITY-AMENDMENT.md",
+      "bytes": 2189,
+      "sha256": "533f87aaec27b725cf7e77dfea988731c1e7a31ba5439bb307c6983a262275d0"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/PROOF-GRANULARITY-METRIC-REVIEW.json",
+      "bytes": 686,
+      "sha256": "2e4d6bfc10d85cb85a8a68d57290972fa9a8a6d6425ce69e389e02d3d4157458"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/RUNTIME-AMENDMENT.json",
+      "bytes": 1792,
+      "sha256": "6b437abc1e654aa2c6e7462814823371217fe0a9e07ad8220476a458d377f0ed"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/RUNTIME-AMENDMENT.md",
+      "bytes": 1291,
+      "sha256": "048b61d0a0d66c9ed7125807848684aead4b61c44fc30eec80d00e571b1d31ee"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/RUNTIME-LIMITS.json",
+      "bytes": 2449,
+      "sha256": "a391be60e6d7664b1eebf272d36e395e2ce38c67b52380902dc5fe704602391e"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/STATIC-VALIDATION.json",
+      "bytes": 1226,
+      "sha256": "ef4a8120126cc3c0ef84704bb5c2bcbfa7c0b17a1437329e55ae120856b0872e"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/TRAINING-FAILURE-REFERENCE.json",
+      "bytes": 3633,
+      "sha256": "ecba3f3a0e1ecc02a4a410cad8131c7a9ed8e11b8410c77092ac3af74fb9cbc5"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/add-second-layout.mjs",
+      "bytes": 4319,
+      "sha256": "09d564de7782de90dba998eb7cacfdad1760539fe5b9264758b7157b7470b630"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/build-design.mjs",
+      "bytes": 8880,
+      "sha256": "96d6b576184f074c6a72c124aaef216cc226c63825ad5fd2ad3c5c28d6305e80"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/arena-mirror-x.json",
+      "bytes": 1389,
+      "sha256": "f6d0fae5eab3765b2fee4af247460f7f1450979e4e3d5234435fe6548c6d725b"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/arena-new-obstacles-2.json",
+      "bytes": 1745,
+      "sha256": "34f6cb1d65d6e0a5d055afea274d7ea3fc5e32e75af32ba49fa2502d649b2e3c"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/arena-new-obstacles.json",
+      "bytes": 1744,
+      "sha256": "815cdd988df997f0e838a4923d24da36fbd7b5a1564a21fcbbffb70054fcd9b2"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/default.json",
+      "bytes": 1384,
+      "sha256": "57443feb57ee309ba33287ce8a04df44506b40e00c8f9deeff4807fe744f06e4"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/fov-minus20.json",
+      "bytes": 1384,
+      "sha256": "15a0de0b85d707ff6d3b7be3ebfcf07d43d76559a4c4570c5b0146652d1896f5"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/fov-plus20.json",
+      "bytes": 1383,
+      "sha256": "60c69c898f781633ac0bfef698014e6109e05903c3c0dd718908280cdc6991b1"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/searched-style-1.json",
+      "bytes": 1390,
+      "sha256": "225dfbd2c967f66d072b0bb05e6ab3ddc0834e311f9444cfdbef421f5c8ca668"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/spear-minus25.json",
+      "bytes": 1386,
+      "sha256": "a132449af873a2a441476c4317d5c85afc15a969b94039b25515bc46c3f580be"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/spear-plus25.json",
+      "bytes": 1387,
+      "sha256": "d0c82cb38d69010199984c4e8a4ce12a7a0f6bfa69ca0c02f75d433009e560e8"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/turn-minus25.json",
+      "bytes": 1385,
+      "sha256": "35b7d4632c68bf83f5a456f251234c8e1a709e03ba52ec6aff71a44726751bf2"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/configs/turn-plus25.json",
+      "bytes": 1385,
+      "sha256": "0f794447908baadf6123765bf125669e065dffc0233dca5403f70572f68ec690"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/initial-vectors.json",
+      "bytes": 2952,
+      "sha256": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/pre-execution-history/arena-mirror-x-initial-full-reflection.json",
+      "bytes": 1389,
+      "sha256": "08d09352231462f95b88d22fcbfc9b0f22c2619fabb090917a0b8d92853c0d0d"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/pre-execution-history/searched-style-2-removed-before-lock.json",
+      "bytes": 1390,
+      "sha256": "ecdb83cfd8724c67bbd6892f0ac65149dd0d938b5c05842a01b9effff1eb55df"
+    },
+    {
+      "member": "closure/tether-heldout-preregistration-v2-runtime/validate-design.mjs",
+      "bytes": 4205,
+      "sha256": "ff05cd6c308aacdec9b4735fbdb9a5bc27da932a3dd3e65ff92415d981635f06"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/REVIEWED-OPPONENT-FREEZE.json",
+      "bytes": 2045,
+      "sha256": "2619d3623dab1a809b54e56a07e2084e524deceeddc96f73cbac94421ab1507e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/README.md",
+      "bytes": 5839,
+      "sha256": "46ebaf62e4800ba0cdf888ccb67d821a05dc3ff5f4f879460168d74b0c97fcb4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/interface.mjs",
+      "bytes": 9118,
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/interface.test.mjs",
+      "bytes": 11840,
+      "sha256": "c6a9cd21fe1afb7d656384bee6c8792dd7036b13a5f93492cee11ead2fa12ece"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/benchmark/robust-baseline.test.mjs",
+      "bytes": 3584,
+      "sha256": "ebd926dd6f0e286df181f3aea023787e843476f6d2c793d0e23a2a10b65b9af2"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/README.md",
+      "bytes": 10085,
+      "sha256": "4dbd669b4422cd28f897ae3a68b0763c9106b1e6a53e850aa9fc70e495c9127d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/ANALYSIS-LOCK.json",
+      "bytes": 6479,
+      "sha256": "08873a4bdd582fa97441a4cb28a2938773883e654ee27c8188f6c5fabff3ed83"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/README.md",
+      "bytes": 7328,
+      "sha256": "dddbabb5e998db99aacf961afe239403dca4eb809715af13f69d4739b79f0393"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/REPORT-SCHEMA.json",
+      "bytes": 1260,
+      "sha256": "e2bd20e3f6d867b6f0d3fea39b14fef7b134e006d7ffeb237a98ffcd1d6985d7"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/SOURCE-MANIFEST.json",
+      "bytes": 5245,
+      "sha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/SYNTHETIC-TEST-RESULTS.txt",
+      "bytes": 2188,
+      "sha256": "899e9352b7394810e20fac8eb956f7fd132d80d018356f71ed96ed7866ea45c4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/analysis.test.mjs",
+      "bytes": 12301,
+      "sha256": "9d6cced781ded0903f76c66e8901a6a6aa0f922e50d7ff42723eafaed5db330d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/analyze.mjs",
+      "bytes": 15060,
+      "sha256": "4fe857f78dc8f3ba9d687a894b0f7d792c2f19927ad893b7a73665811109ac67"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/build-lock.mjs",
+      "bytes": 3921,
+      "sha256": "02cb389b7fd18923d164142ab83d0b9bf966622877f67e6c258f3670b8306806"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/diagnostics.mjs",
+      "bytes": 17467,
+      "sha256": "a800216eee9747584ab1207c24b0a4923dc0899e9929888f262719b27ef8234b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/diagnostics.test.mjs",
+      "bytes": 7194,
+      "sha256": "1a8674561216e0af02c0d3a80197de4c64a361d4bda74097cec3205a7ed2ded1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/DESIGN.json",
+      "bytes": 20569,
+      "sha256": "3b386551b680aaf05c48fdd88304ac9d6ce943844b5b4af5c9627998c5fd4ac6"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/EVALUATION-TASKS.json",
+      "bytes": 2760719,
+      "sha256": "2d9f694c7b7419b050240c1551c625c26050c8c729894fc5531b38155c79bca9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/METRIC-CONTRACT.json",
+      "bytes": 6020,
+      "sha256": "b2a4d06cfa565d6c41e902ca528a377a14ec6f30ec500b344c20f83127942d62"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/PREREGISTRATION.md",
+      "bytes": 23243,
+      "sha256": "9c84e04f94d15d6de510bb0b5bad6948da8919cf73de0cbf9e59e0abe927c28e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/PROOF-GRANULARITY-AMENDMENT.md",
+      "bytes": 2189,
+      "sha256": "533f87aaec27b725cf7e77dfea988731c1e7a31ba5439bb307c6983a262275d0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/TRAINING-FAILURE-REFERENCE.json",
+      "bytes": 3633,
+      "sha256": "ecba3f3a0e1ecc02a4a410cad8131c7a9ed8e11b8410c77092ac3af74fb9cbc5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/arena-mirror-x.json",
+      "bytes": 1389,
+      "sha256": "f6d0fae5eab3765b2fee4af247460f7f1450979e4e3d5234435fe6548c6d725b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/arena-new-obstacles-2.json",
+      "bytes": 1745,
+      "sha256": "34f6cb1d65d6e0a5d055afea274d7ea3fc5e32e75af32ba49fa2502d649b2e3c"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/arena-new-obstacles.json",
+      "bytes": 1744,
+      "sha256": "815cdd988df997f0e838a4923d24da36fbd7b5a1564a21fcbbffb70054fcd9b2"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/default.json",
+      "bytes": 1384,
+      "sha256": "57443feb57ee309ba33287ce8a04df44506b40e00c8f9deeff4807fe744f06e4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/fov-minus20.json",
+      "bytes": 1384,
+      "sha256": "15a0de0b85d707ff6d3b7be3ebfcf07d43d76559a4c4570c5b0146652d1896f5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/fov-plus20.json",
+      "bytes": 1383,
+      "sha256": "60c69c898f781633ac0bfef698014e6109e05903c3c0dd718908280cdc6991b1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/searched-style-1.json",
+      "bytes": 1390,
+      "sha256": "225dfbd2c967f66d072b0bb05e6ab3ddc0834e311f9444cfdbef421f5c8ca668"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/spear-minus25.json",
+      "bytes": 1386,
+      "sha256": "a132449af873a2a441476c4317d5c85afc15a969b94039b25515bc46c3f580be"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/spear-plus25.json",
+      "bytes": 1387,
+      "sha256": "d0c82cb38d69010199984c4e8a4ce12a7a0f6bfa69ca0c02f75d433009e560e8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/turn-minus25.json",
+      "bytes": 1385,
+      "sha256": "35b7d4632c68bf83f5a456f251234c8e1a709e03ba52ec6aff71a44726751bf2"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/frozen/configs/turn-plus25.json",
+      "bytes": 1385,
+      "sha256": "0f794447908baadf6123765bf125669e065dffc0233dca5403f70572f68ec690"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/scores.mjs",
+      "bytes": 6806,
+      "sha256": "5999c7ea05f6e32b3e06ec04d77780b81d7cbe6b7dd18ddd599659244605e941"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/statistics.mjs",
+      "bytes": 3163,
+      "sha256": "8105495ac9d4ab3a89c239caf78d5366135e1bb1aa7727e841e96b1eac8107a4"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/vendor/block-stream.mjs",
+      "bytes": 4570,
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/vendor/proof-representation.mjs",
+      "bytes": 5375,
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/analysis/vendor/raw-stream.mjs",
+      "bytes": 2951,
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/block-stream.mjs",
+      "bytes": 4570,
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/compact.mjs",
+      "bytes": 6181,
+      "sha256": "55f11316ea91640fa833963d18f9fa52acc4022d9995f49f5d0f4d70a1bbd9ec"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/compact.test.mjs",
+      "bytes": 2583,
+      "sha256": "34ee76199c474ed15a4bb78fd137bc8396c26a689accae0afba4606552654172"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-DESIGN-INDEPENDENT-REVIEW.json",
+      "bytes": 1263,
+      "sha256": "670df2eee7b93c1ee0521fe7e56f69856b7967939d192329336b9304eda4e5f6"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-LOGGING-PROPOSAL.md",
+      "bytes": 7115,
+      "sha256": "1c1296cb78d26bbba3b3b27832d8a1d44746be1e5b0d0db7f5a19b860004c2cd"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-METRIC-MAP.md",
+      "bytes": 12289,
+      "sha256": "4b0dd0ffe400b78f9067e78e76f21733c9b10b3dbf8951a0053d3563eb7acdee"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-METRIC-OWNER-REVIEW.json",
+      "bytes": 2240,
+      "sha256": "76643d02fe06ad899cda02bcca3ee1ee03ffc7603ff850d7b09fd31ae046a4da"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/COMPACT-REPRESENTATION-v2.md",
+      "bytes": 2172,
+      "sha256": "6d0ff642f8efc5300bd6eeaace0b2644e474df5999a00ca205b5ef8938f0a627"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/docs/REPRESENTATION-AMENDMENT-PROOF-MAP.md",
+      "bytes": 7038,
+      "sha256": "8de26e2b1fc45e574ade551d1b0d29cae71074de0059abe033f472434c2e1ec0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/execution.mjs",
+      "bytes": 2501,
+      "sha256": "0491dd47feb1de077ba978c504f68a165451851841a9c97d8669c32af65f04e5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/execution.test.mjs",
+      "bytes": 3433,
+      "sha256": "c8e0e8c1bd9ddded4efd6e51d31c311f010b70cf1391ad4efd8e44ac3b139935"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/faithfulness.mjs",
+      "bytes": 3360,
+      "sha256": "f2570d86c10f882b9f0e69f36602c3d48a31addf8000b818fbcbdb234b502266"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/faithfulness.test.mjs",
+      "bytes": 2374,
+      "sha256": "2133a8771dcc900d8f69e636519c1e2af79ffd2f73e909cbd7a029678a79d070"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/finalize-phase.mjs",
+      "bytes": 560,
+      "sha256": "76b3e241aeb95602d9f263797e01e0c66986d847bc6be4ce854eb1c34d3f5335"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/finalize-phase.test.mjs",
+      "bytes": 1787,
+      "sha256": "a34cd3a2fa0047e6fbddd7ff94569d37ecef78fa55909060a854452350ea33b1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/guard.test.mjs",
+      "bytes": 6139,
+      "sha256": "7fc8de839990b0363d107a1da23d157e5b90b31d0d9555f285c19ae2b4b77d92"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/lock.mjs",
+      "bytes": 3377,
+      "sha256": "41d530fbdcae47bcc9dd187d8d742e03546145d1c9ce4c56c37367f36960cdb5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/observer-proxy.mjs",
+      "bytes": 725,
+      "sha256": "ceac30aead8356026f94b4bbca0bbe9dc70bddf52c4f6376e6234398d4b9627e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/observer-proxy.test.mjs",
+      "bytes": 1782,
+      "sha256": "c1e207bdf0915ad3d9d55b6d56a8d6814582f29b45dab945adcfbcdd05f2dde3"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/perception.mjs",
+      "bytes": 3221,
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/plan-validation.mjs",
+      "bytes": 6748,
+      "sha256": "fd3d2838e9e414b3c74c31b4d4c2ff1d8d3b6d04abee4e7400a6018398915151"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/proof-representation.mjs",
+      "bytes": 5375,
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/proof-representation.test.mjs",
+      "bytes": 3856,
+      "sha256": "52a9149411485d9b3903a94e1c1a724965d765390858bfeff61a757ee7321fd8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/raw-stream.mjs",
+      "bytes": 2951,
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/runner.mjs",
+      "bytes": 9677,
+      "sha256": "300279e365c7eeabc75952af9e674f6a756630388e73f541aa541181de375ebb"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/task.mjs",
+      "bytes": 8886,
+      "sha256": "6f5c052698ed7de05ba98413f727e818024948d8680e9602bf6a5353d1fbc3f9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/worker.mjs",
+      "bytes": 1308,
+      "sha256": "8be9cc12dee58b20d5ac46da47f46547d7d0c4f2fb2c95234c768c0c5b290924"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/world.mjs",
+      "bytes": 4262,
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/experimental/world.test.mjs",
+      "bytes": 3667,
+      "sha256": "6e24d444958166b215b3c083fa3ea368629e221d1f212b80f009f11ae50a819c"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/package.json",
+      "bytes": 70,
+      "sha256": "6bb0ae63bd538f17da6bc4102895b1cdaa821fa0bc5865037186aa2f219e67fa"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/basic.mjs",
+      "bytes": 1578,
+      "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/dodger.mjs",
+      "bytes": 4257,
+      "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/param.mjs",
+      "bytes": 9267,
+      "sha256": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/robust-baseline-agent.mjs",
+      "bytes": 1472,
+      "sha256": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/robust-baseline.mjs",
+      "bytes": 10222,
+      "sha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/spear-memory.mjs",
+      "bytes": 4203,
+      "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/agents/strategies.mjs",
+      "bytes": 6081,
+      "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/deterministic-math.js",
+      "bytes": 1614,
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/headless.mjs",
+      "bytes": 2664,
+      "sha256": "7b67c3483a2636fe953d82afa178150dda1f2a464fc6f564d25c954847e8cc26"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/log.js",
+      "bytes": 9498,
+      "sha256": "fc82e01484e7f059381fc3291f8b85da6db02fc77b6709c42ed4b1d50bea9ce6"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/belief.mjs",
+      "bytes": 7208,
+      "sha256": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/cognition.mjs",
+      "bytes": 11662,
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/components.mjs",
+      "bytes": 9841,
+      "sha256": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/content-broadcast.mjs",
+      "bytes": 6807,
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/coordination.mjs",
+      "bytes": 11805,
+      "sha256": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/index.mjs",
+      "bytes": 22058,
+      "sha256": "559f9de723a0af18e55b06ff5ee6fb8f1b495280ebf9d75e53ec67339cfd0900"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/math.mjs",
+      "bytes": 2065,
+      "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/novelty.mjs",
+      "bytes": 6668,
+      "sha256": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/own-spear.mjs",
+      "bytes": 3905,
+      "sha256": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/percept-contact.mjs",
+      "bytes": 1641,
+      "sha256": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/prediction-monitor.mjs",
+      "bytes": 11071,
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/rollout-completion.mjs",
+      "bytes": 1607,
+      "sha256": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/specialists.mjs",
+      "bytes": 8245,
+      "sha256": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/target-memory.mjs",
+      "bytes": 6093,
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/mind/workspace.mjs",
+      "bytes": 2998,
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/perception.js",
+      "bytes": 2827,
+      "sha256": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9"
+    },
+    {
+      "member": "closure/tether-robustness-shifts/repo-evaluation/src/sim.js",
+      "bytes": 18076,
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "member": "evidence/COMPLETE.json",
+      "bytes": 1587,
+      "sha256": "7f5843e0184b1fbcff1e5428131a41cea8fdaa62bbfb0e31f9e295bfc4cefd96"
+    },
+    {
+      "member": "evidence/FULL-UNION-INDEPENDENT-REVIEW.json",
+      "bytes": 6664,
+      "sha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c"
+    },
+    {
+      "member": "evidence/LOCK.json",
+      "bytes": 33315,
+      "sha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033"
+    },
+    {
+      "member": "evidence/ORIGINAL-RELEASE.json",
+      "bytes": 1078,
+      "sha256": "3bc4503e96010b50d779d51963dd57a4548ec5da5e29d58f93a6913bffb06307"
+    },
+    {
+      "member": "evidence/RECOVERY-RELEASE-001.json",
+      "bytes": 206113,
+      "sha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc"
+    },
+    {
+      "member": "evidence/REMOTE-EXCLUSIONS.json",
+      "bytes": 8730,
+      "sha256": "0c6ace790469b9cac38b516013045c1a3f1c3d526c92b40ef280ca04d42f1ae9"
+    },
+    {
+      "member": "evidence/RESUME-RELEASE.json",
+      "bytes": 206113,
+      "sha256": "a41cf4914193a4e2c52752cc45b74f1fc9d98169db6f0832a98bd972aac93fdc"
+    },
+    {
+      "member": "evidence/SHARD-0.json",
+      "bytes": 997559,
+      "sha256": "17fff21782aa7c727956e498553008fe31ef5bcde0c276aa984165ee40a80281"
+    },
+    {
+      "member": "evidence/SHARD-1.json",
+      "bytes": 997566,
+      "sha256": "89fdf2f8447f66c76af678b54a3114ba9f3afd70cd81b7b7b10e31825cd13c81"
+    },
+    {
+      "member": "evidence/SHARD-2.json",
+      "bytes": 997577,
+      "sha256": "2e187231b6832f16f2487a6d17d16a4935fee3e87d3f3b8a7026964a49497643"
+    },
+    {
+      "member": "evidence/SHARD-3.json",
+      "bytes": 997558,
+      "sha256": "d7bda7bd62898ec988284ee257c58c955bc4515cec445893c266e80e3bae4271"
+    },
+    {
+      "member": "evidence/TERMINAL-EXIT-AUDIT.json",
+      "bytes": 1391,
+      "sha256": "8ba0693ac8a2d9b4a099d94310265081a1b3db5fa994f3e7d211a1d4a9d33f55"
+    },
+    {
+      "member": "evidence/UNION.json",
+      "bytes": 5424192,
+      "sha256": "e7deaa11d50181390fe6289029ef46513cb4b80b485ef04a0bde4319f6e3159c"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.json",
+      "bytes": 62001,
+      "sha256": "50b31d903bcd981310d4246b3a3d2c0e5e82ee6247359da207df49e33fbab24b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1.json",
+      "bytes": 62747,
+      "sha256": "b893ea078ab3448cb74ecb148822a20ee3581e65bf7870cd938c95fc1e74841b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.json",
+      "bytes": 61746,
+      "sha256": "5180b98756cca6467b5c066f8f13b386eb90895b63f2eceacdcfd431d6f790f4"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1.json",
+      "bytes": 62402,
+      "sha256": "7468be8bde59e20189c05955e643a91835ba97f40aff2f9a87f5190c0075a596"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.json",
+      "bytes": 62714,
+      "sha256": "3e4d36d5dac7864338521d187de09179ecb9d7185f68a5891a8622861137e36a"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1.json",
+      "bytes": 63564,
+      "sha256": "bfab5c59bf953473440d0279454428549d5e2f85a64a31ae76b90c3533d535e0"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.json",
+      "bytes": 62734,
+      "sha256": "0f72b1745f0c73836ec26be2ba818aad45a552a787db81a9c89b21da8cc91675"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1.json",
+      "bytes": 63631,
+      "sha256": "c937d37ee449bfcd9f67c62f53078cdee9a83f2e66f38c91ac1bcc27a0402bc3"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-full-s0-b0.json",
+      "bytes": 62067,
+      "sha256": "1a626dd6873c2a0d2db96b1317099664efc4e420ee6358e2e74136b75aedf05c"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-full-s0-b1.json",
+      "bytes": 62904,
+      "sha256": "54fb8c9d48d6c7ce9113e9a15fa166d79fa0a0a8d3d37faf7d086fed2ca26b93"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-full-s1-b0.json",
+      "bytes": 61841,
+      "sha256": "51155f15eee7d93df3f8819b590bf7cae7681845681cff0bd75fe09fbb518305"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-full-s1-b1.json",
+      "bytes": 63057,
+      "sha256": "2831ad217630b66af9c9ae5eeca6592d7c7079a19f49fcdbcb24719fa0b0cbe6"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.json",
+      "bytes": 62597,
+      "sha256": "509b07070e12a0ee35bad0f0ec32279aa4dce8b6d6bfb202995ae27180d270f8"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s0-b1.json",
+      "bytes": 63309,
+      "sha256": "33b2c872b2031f5cd3b434d3a800cef0ae4bc0d0545258836f0f92a30d55ceb9"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.json",
+      "bytes": 62285,
+      "sha256": "276244efd75c0c703e290fa878aa863114253c5b2b98cc6168244bcbd91dfa6d"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-fov-plus20-mind-no-novelty-s1-b1.json",
+      "bytes": 63178,
+      "sha256": "973a33c2a3335fb5a2698bbf7841007e590117c87e3527c0985d577cedf3ba76"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.json",
+      "bytes": 63130,
+      "sha256": "c5721069aa56de6b64216d6138852b5946ce5f948ca1bede6d793ce0c1791219"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1.json",
+      "bytes": 64441,
+      "sha256": "ff64a7046b4181136f68e13c25412a757d9d7ec9092c2907ee391f8f2685ee38"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.json",
+      "bytes": 62699,
+      "sha256": "8225be7b041c11cfe501c452635ced8ce938b44a1420d2f465de32e1edfae6cf"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1.json",
+      "bytes": 63792,
+      "sha256": "e0a84098445760eedfd7cf4c671888860af294c048bd32163f04f7815e664f7b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.json",
+      "bytes": 63270,
+      "sha256": "adcba14b3c4064f0689ccd303d8f87de9d1a090574e26b5370b6ccd342351582"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1.json",
+      "bytes": 64484,
+      "sha256": "8b3ccca77ae292e98765b9ddb43693ef3d1ac72e17eb53e8bcc41e61761038c9"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.json",
+      "bytes": 63158,
+      "sha256": "52eaaaa8021d2884444ed4f5bcc459a84d1524556cd9bc15a404efb6152370bd"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1.json",
+      "bytes": 64173,
+      "sha256": "5559ff0b0e21cff040fda31664689a0409cab4c695be5e770c87223494eed664"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-full-s0-b0.json",
+      "bytes": 63216,
+      "sha256": "19e698364956c81cf57982a3adfebd5c971bc154d740ceefd1b84ddb84bf6675"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-full-s0-b1.json",
+      "bytes": 64582,
+      "sha256": "3a8a18e891cb7f2ff19181d8b72bf69f372f94a110c8640f463fbb0abddec1dc"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-full-s1-b0.json",
+      "bytes": 62699,
+      "sha256": "8225be7b041c11cfe501c452635ced8ce938b44a1420d2f465de32e1edfae6cf"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-full-s1-b1.json",
+      "bytes": 63792,
+      "sha256": "e0a84098445760eedfd7cf4c671888860af294c048bd32163f04f7815e664f7b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.json",
+      "bytes": 62623,
+      "sha256": "56bdd85affbbb89f891aea28a05375582a0af2fdd891ad21040fe5ad43f88659"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s0-b1.json",
+      "bytes": 64062,
+      "sha256": "6b149d0d32ec57d023b3ada63df0bf44edfce14fa3d5fc89ab1f6dde3b1c7768"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.json",
+      "bytes": 62703,
+      "sha256": "c6ffa07808788e5617cbb04a86e5e239b1291c5850fd5b557f6bbe04aa17e37d"
+    },
+    {
+      "member": "resume/memory/evaluation-c2-searched-style-1-mind-no-novelty-s1-b1.json",
+      "bytes": 64207,
+      "sha256": "0ee9219a0a12f129ccbbdb8830263a4f882785dc416f223e649e22e941c5d0eb"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-s0-b0.jsonl.gz",
+      "bytes": 1804162,
+      "sha256": "7da8660438cb4f4a1ee92ec72d66f46cfe1fca44d41d8d8c8e2d08cf36ef047a"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-s0-b1.jsonl.gz",
+      "bytes": 1806432,
+      "sha256": "21ff57dc4f89525fd25200384629b43ec3e2c5006d15a5e790c9a4a86734fc80"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-s1-b0.jsonl.gz",
+      "bytes": 1805590,
+      "sha256": "77eb0ca7d226286844ab3854c9d5d981e72784e631518dc6b0d7a2d6ebdec635"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-s1-b1.jsonl.gz",
+      "bytes": 1806074,
+      "sha256": "8634d3bbc843e5d48f25a3ddb009256af5a683754f5149254b16c758337341b7"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1509664,
+      "sha256": "9d405c3738f0bda41ff1b8351ebf3bbe3de0e8953611670b633b1245a742c6cb"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1514648,
+      "sha256": "0710630ec9ae41ba7a8094ae2e5ca38c7777e3c4b792e024815fe7ca85af9483"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1488180,
+      "sha256": "7d4a5f6c68e873ae3ba8f02e3cef229f6516c82faca7881f4c0e9bcb113625ab"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1545866,
+      "sha256": "4130b9ce003f598a0a4f8ce5d5c21e4f98b08657f1e52edcb4a1bb81bae2e356"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1604156,
+      "sha256": "7cf367e40011fd0a4ec33786b00de34cabc42710a09a8b5bc4e04cf34ce5ca93"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 1500186,
+      "sha256": "92e733dcd03d370edaf85d4ef08b1f5e3fba2817e110d8f15f0a7161db4bf63b"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1586692,
+      "sha256": "20ba8b9330d69c6639a7baca532ed8cf0cb118a0f7f7faa8eb291c0b6177c115"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 1555805,
+      "sha256": "7e3b4d9d239e41b0fb80644181bcabf4841f7398d90adccee261f0fbd22e799c"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 4225216,
+      "sha256": "518580c84b00c63e8e21258bd3dd56ead850454baccf202afb266ae86dc59d93"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 4232076,
+      "sha256": "3b503c18a878f9d7d15dc8e131e8c4533f1b1b07f4bf70e47f99a172c578bfec"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 4228288,
+      "sha256": "6206922a11c2872990ff1dda47c531081338cee2900069de125a1503dc15fd1c"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4213708,
+      "sha256": "a7b8f12045e32b4c8db28f479f02ea0a1fc451089cec45877420a254f62085db"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4292066,
+      "sha256": "fc4705ed15ec9de0e8f65e783f4162c06570d64ec1a409a1982ccb01ca66085b"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4296925,
+      "sha256": "a9170926e15747ecfc2a7b1a52812b2ef6c5b7797a865800c93a48dc8569e570"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4266552,
+      "sha256": "d71bda69db478e1985ed6560d7ee74e7d06534063722a0ee09a12e746f662926"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4300093,
+      "sha256": "312895115c7d0ef63d4a258306d508456e527b1111388d16e77a67972c936375"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4278114,
+      "sha256": "08110ca7280f47b4bbb5b59bc72860dc1d9173bfd69a3730f1a7bcd92d75bbc2"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4311578,
+      "sha256": "096a37b0f3e2231723daa22b0fe45b0e3dccd696933235482fc95f61ab998ebe"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4316159,
+      "sha256": "aa0494ba972a3de9cf2d8ec882dfca280dc9f943dd4af04353ff0881db9d5a41"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-full-s1-b1.jsonl.gz",
+      "bytes": 4329697,
+      "sha256": "6c87f23649c2c1d35df7378e09f367b0d932c06984d3c4f559a48a7a952eeb60"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4176733,
+      "sha256": "ce95fef1b8139ee5a78b154d2b513db930e150ad5f85e43a7db95610243e0e3c"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4225786,
+      "sha256": "269cbc759bcb393c98d7c93c27bcf2e6bd79505eaeb8320feececb266e6fb671"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4235177,
+      "sha256": "c4500546ba2e7c232a2735e129c891e1ae69575b0a3444a94bbd8530a66efc9c"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 4223431,
+      "sha256": "95d7cb2212609abd002e35e5646a4a89b0127907efedaae582ea8c1c545c568e"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4312930,
+      "sha256": "ff4659e03175919d98e5efd64230c3866f7d65a904202aaedfc1e2c3218dd11a"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4360180,
+      "sha256": "e75374df092d783d009dce74295c0246d71e578610d87af68d661fcd504db222"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4344129,
+      "sha256": "f95b38eb1535ae54f327208d06aad43099358da742d7116e5b4f2b5679266d4f"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-fov-plus20-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 4350770,
+      "sha256": "c84516be1e1c3a694e8417273cf3931a4a8b2265350a12e259f39f36c02a5a33"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-s0-b0.jsonl.gz",
+      "bytes": 1923819,
+      "sha256": "a30eb847a331502e74dbc3b952d35a8ec4f4f9a6307e916dac27671907265540"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-s0-b1.jsonl.gz",
+      "bytes": 1925077,
+      "sha256": "ff8124cbf843cdaeb56ddec19eb497ef3ec266a9296538bfe17819e87f28c9df"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-s1-b0.jsonl.gz",
+      "bytes": 1921205,
+      "sha256": "070788ab110be1b5c27b5e4e10f008b02d64fc883b6d14b5a509484a2861f944"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-s1-b1.jsonl.gz",
+      "bytes": 1922987,
+      "sha256": "c9300f041834c5d07846b075f2805ba9c1146786c5a1d2ea8c0d42fc2b102797"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1175619,
+      "sha256": "130581f9515356bdf099a7d6915be76d9c86aef1e3a03bbf76e03c5d3a471b93"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1184143,
+      "sha256": "72286f54a98b6822c62fe2739d987828e6b46b4cce45a06a7a1986cf78b5193c"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1165973,
+      "sha256": "d0c6e266e735063ad1a833e057759936f6e18f7ef97044f366ffbc365b60163f"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1166171,
+      "sha256": "ad95e1e0c6bf1d6f87b7bb0b94987b19da6951d5fd77da010fb13167ca5c8ddf"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1178730,
+      "sha256": "450adbd7049f83afbc25a8ac4ac4562fff1576bbaca7a005e71372c03bbc99c1"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 1178583,
+      "sha256": "3119cf769201d4a364787a21a09b4b08a10d7fff16ac6b1121257edc74e1d481"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1168514,
+      "sha256": "33199997b3bf2514b038279ba9e2d7af1bfbe74544b1651fcf7198e46792a2e3"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 1168581,
+      "sha256": "c12aeb832522da027172de41aa160234542b00d31c0f9c0fd7d21240ed9b71df"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 4317744,
+      "sha256": "4f0199b6f70e118becc05867ee6cbed65653cd548f4a7bf125089585be653eaa"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 4302726,
+      "sha256": "cdc601ab7c971acecf5e6a0c9cd486a115f7ac3bd406deffc49fa42d2dcfe0f7"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 4283876,
+      "sha256": "c5560b41467e571452c7af749a1258946b3cc3c955cac3a14fbe8a3f86bfdcba"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4311186,
+      "sha256": "6576fc52bde2a5ffb6cabd85e0c6808c8cd580c5ae9580c360fe3edc60a079cb"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4385762,
+      "sha256": "f617a8ec0218e6a3e7282efc34456a4bfc0a1c8e458442d896aba208840ff30e"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4345414,
+      "sha256": "433ed59f059eb60da65b147675b3b9223599fc2be4fabd028a97c5669a47c836"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4371947,
+      "sha256": "048a0e7c46dfd63b8cc57e2cd6c39752cf10e106dc4556266aaefc1720b60c24"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4369562,
+      "sha256": "e605f778c5f6d0d5fbaa26eb6535feb683146b41ab1c6a4250434c1e4092a31f"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4433373,
+      "sha256": "8d8373daffc689de7392880186f9516816fe4e33a865be3d1437172f48f91a0b"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4411008,
+      "sha256": "edaf57a480f5f1543f79dd91738e6834865c06d82f1fd463fa501e7ca50da586"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4405685,
+      "sha256": "b8f3f822eb4c61c3bef37e99d5ea2b4748a9ba7646081220f68e096158c4a579"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-full-s1-b1.jsonl.gz",
+      "bytes": 4434332,
+      "sha256": "ccefa81c4e09430a932462290259bb9bbc02008845e00c477dd85d0b300f0b4e"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4382942,
+      "sha256": "68a4f46cb815accc7994300ccc43320ac20bf4042db7348ed126e7430aba7fd0"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4377708,
+      "sha256": "9cbdeede87088fbc35f724ba256c67e4ae67bac3ee5c510a7dc22050da2aaf77"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4362726,
+      "sha256": "064c3b25678351e900d8fb5751f827b849d616fdeb9b9a91670dd3478ccf8f50"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 4384397,
+      "sha256": "3338c5b05df9c3a1a00f030ef1615b117649f136377653de2dbe54acfa13d8ba"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4441446,
+      "sha256": "577acd44df56cd88beff9698c78619ed8dc46992ed9198946af373acf72107ce"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4421725,
+      "sha256": "32e7b21ffb1117a8ee37a43b625a19bae95a4aa52de10b02c26d6ce400793376"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4433337,
+      "sha256": "778c9f87c5aaff2af81d8840ab460de4740ab25a72ee7200ba51adc8325ff225"
+    },
+    {
+      "member": "resume/raw/evaluation-c2-searched-style-1-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 4479204,
+      "sha256": "07d202ac1d77ef3830498955fd2f9dcfef4414aa4b2f5291cecfd4af7760143c"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-s0-b0.json",
+      "bytes": 3665,
+      "sha256": "be871b4a313a2a209e605b945d9c9efed85cd68625299fd4e6095dc5dd8b5326"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-s0-b1.json",
+      "bytes": 3662,
+      "sha256": "738e4a8143925ed1cc79e2f4e2298474d5eb130719f1d29203c05275d836adec"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-s1-b0.json",
+      "bytes": 3664,
+      "sha256": "bf1c18e8cb48fb733246e47f3d81bb5d08f67f19cd18cd2377b77e9f5be8a987"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-s1-b1.json",
+      "bytes": 3662,
+      "sha256": "650fc3cdfc047ad3550e0ac846533f4e7dded7393d98fb0e068400d58a1a7474"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b0.json",
+      "bytes": 3787,
+      "sha256": "88f8dc5e3af38561534c78c5e88377ab3f60ad0020a3c93de4f7e75b3b1bcde3"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s0-b1.json",
+      "bytes": 3786,
+      "sha256": "538aab190f35fa6d8c4b488f400c3b22a3427158e183d354661223c2ecbafa49"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b0.json",
+      "bytes": 3790,
+      "sha256": "3d4fd72e56e7a6d2619b3ae9bc3449b87fba2f5ccedf78dd23d6270c2dd0c212"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-2x-s1-b1.json",
+      "bytes": 3785,
+      "sha256": "228b47d66b13f4c8ca741f51deb5d3918112e301e1c4fa63fb16288c20ea6fae"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b0.json",
+      "bytes": 3787,
+      "sha256": "a83a08b8df6297bb750e9214312de96293f3ae2a8134e2bfd3facec01a10fbc5"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s0-b1.json",
+      "bytes": 3785,
+      "sha256": "ce4ab10074076f132202c33106c251bcc783bcf86e947d1811ec22b5e558fc57"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b0.json",
+      "bytes": 3785,
+      "sha256": "74721146ea3da19d561dc361f28bc65e0582974cbe303b2529019e6edc3139b4"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-conventional-useful-4x-s1-b1.json",
+      "bytes": 3787,
+      "sha256": "dbf5abf36b870c6db63dc9bbdad08adc1ea0165db685cd3d30ae0681d30d1e58"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b0.json",
+      "bytes": 13689,
+      "sha256": "af8ecf1575a8c176b63a1fb6ff3b6728b22627658309f7a253679817c90f9025"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s0-b1.json",
+      "bytes": 13360,
+      "sha256": "718af3da847f5381a18f95807d58ce6cfa0ce6cb2c8386a74c850ad23c68e570"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13329,
+      "sha256": "a696c29ea936c25ad1e366e1889f9c0863ce63ee38a7258ca607ec4d4cbbb3ba"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-broadcast-cut-s1-b1.json",
+      "bytes": 13436,
+      "sha256": "a4cd427d6466eddf2f3ca6dd31c2f873207064219e8e6cd52b69f7a876b8da19"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b0.json",
+      "bytes": 29449,
+      "sha256": "6f87c7408580e513b80a6d9728794fdb067b1e7cbba52928fd56bf2ff43c4cf0"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s0-b1.json",
+      "bytes": 30709,
+      "sha256": "5dc78b808457ddca1252e0df6587e7166105682f3c5ed7dd57c78329b5bd2a90"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b0.json",
+      "bytes": 30738,
+      "sha256": "70780d2f7b66e4255f77d557a3eb0db1b360a2368ca6c4eff6ac3402fbef9eb4"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-fixed-metacog-s1-b1.json",
+      "bytes": 29196,
+      "sha256": "35ef391dab12cfdbe0632460e13d507d74e7cab4edd1454bb5e0687d190bd99a"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-full-s0-b0.json",
+      "bytes": 29927,
+      "sha256": "46598f12fb16ece3439a6158fed75dd0dc34c7a7866d3ac493d4f4500fc19616"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-full-s0-b1.json",
+      "bytes": 29637,
+      "sha256": "60a84f71d428a06003efab5804a7175448fe737021c06113229d5b3b9461853b"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-full-s1-b0.json",
+      "bytes": 29697,
+      "sha256": "f19115efc591f6bf48affdaddff9cc397cdd0129e7770df489f4c6a6cb8b88f9"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-full-s1-b1.json",
+      "bytes": 30392,
+      "sha256": "aa3b5707c6c60b26c490ce1e05e21adb0d094858a722c956547e54e6562acb1c"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b0.json",
+      "bytes": 15476,
+      "sha256": "d87a190925066b8020efc233836439cd9ab4dd6af24aa2a654131450e6f9691c"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s0-b1.json",
+      "bytes": 11470,
+      "sha256": "35801c0da32cc58acc80a2b65d467c5cc8b85b108256d30a91941d3fe9328b57"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b0.json",
+      "bytes": 15188,
+      "sha256": "5bcfb32cf3a3bc3ae739c6d9c7f7a5a4197e82861bee6dc2ceb8d2f0eec4e5a0"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-learning-frozen-s1-b1.json",
+      "bytes": 15025,
+      "sha256": "45056e7bc97a0f00e093d4f3b40594b0ef6fb090b051053001395d63699902f6"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s0-b0.json",
+      "bytes": 30338,
+      "sha256": "cde93f8009267e46bf99b4c60b74188bc6465021844c2f7552bd8ea28f086f63"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s0-b1.json",
+      "bytes": 29729,
+      "sha256": "c9f9e82c42c5629605cd5ec83e9c4c7ad500dd9995c4cfe97e09962ab1fd3ed0"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s1-b0.json",
+      "bytes": 26636,
+      "sha256": "69a0db8064d0dcd796b7a6ea1e2bb3bafa8a7011173d8e486781628169d6994b"
+    },
+    {
+      "member": "resume/results/evaluation-c2-fov-plus20-mind-no-novelty-s1-b1.json",
+      "bytes": 29645,
+      "sha256": "45c9c4028ea6a4133617d07f554ea6ecee98c3120478bef8897b0d56020f8e6a"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-s0-b0.json",
+      "bytes": 3666,
+      "sha256": "eda961130b94d9ab415ee4ec775ce4863eb55b3ea39029d2c2e497676c0d048f"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-s0-b1.json",
+      "bytes": 3669,
+      "sha256": "2b146b63beaf47bcfb5325b80b9ce57a959ac588a1967c02f41bb5ee8464c6cd"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-s1-b0.json",
+      "bytes": 3675,
+      "sha256": "e854fa94e8c22f6b53a5043a70291a779212877cd1995503fafd2a8bfd7bfbe1"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-s1-b1.json",
+      "bytes": 3668,
+      "sha256": "d8d4bdc865b96d8fb4726649fbbb692822fdf47b59790f2276efd428e57039a0"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b0.json",
+      "bytes": 3792,
+      "sha256": "64a21df63e83cb8c2e74cbf78e47536c62fd4e306cee1d7fbbdcedd4808a8cfc"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s0-b1.json",
+      "bytes": 3794,
+      "sha256": "39337acc367d669343493bb88b99558e31c1a243e9a7adea8d5c1b5094a8d3b2"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b0.json",
+      "bytes": 3792,
+      "sha256": "891719cf5294d2458e942520c977ed1ed0ad85b5d15b3862c795ef9c29a1520f"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-2x-s1-b1.json",
+      "bytes": 3788,
+      "sha256": "008ece471788c03d799a04cf54ff23980482ff74f349b988b0bf2a7b24d3dd04"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b0.json",
+      "bytes": 3791,
+      "sha256": "faa7d039e8629f7cc6c94a97c1417071bedc57e13053a2801cbc5a64c0d30df0"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s0-b1.json",
+      "bytes": 3790,
+      "sha256": "6c31c4503a8cfcbe64997f9c2e505c71682fedd691791c953884abc5da90d1a4"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b0.json",
+      "bytes": 3788,
+      "sha256": "90e2bdfc1c60b7ea61425d2082f29a08c12c7061a1c5e9bd94551cfe391d1f63"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-conventional-useful-4x-s1-b1.json",
+      "bytes": 3788,
+      "sha256": "4c948dd9bffd8026fad3491805a5e0fd62efb48e557795d81e6282984e4c9ddb"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b0.json",
+      "bytes": 10569,
+      "sha256": "49a31b7b1db4323d4ff240c6e029d8b819abf93d09a2c6e0d5a4cd3220837053"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s0-b1.json",
+      "bytes": 12654,
+      "sha256": "402f2b9698503415a00fce49030189f0bd4f4c6e6759ad9dc25241adec9f2889"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b0.json",
+      "bytes": 10941,
+      "sha256": "a7178b6d37a3699d310e616702d8d1726cc53b17eedeebe507d2d334b41e257e"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-broadcast-cut-s1-b1.json",
+      "bytes": 12901,
+      "sha256": "dfda362ee6e0f42da506765cdc5ae647c61e9edec68ba0d0f131b5c26cc9d44d"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b0.json",
+      "bytes": 28350,
+      "sha256": "fda1c8d8a771fb0726c34e35d3e15428a6702358661fec703e226f01215e9417"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s0-b1.json",
+      "bytes": 28844,
+      "sha256": "029aacd04b2a16e7030a1a1e2b4e8530c29fb8bb6371a0f15efdc0c652c2ee09"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b0.json",
+      "bytes": 24649,
+      "sha256": "0a088fcbd01a1cbb80724801dbdaec2857afa9e5b762a93e577ec28062151173"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-fixed-metacog-s1-b1.json",
+      "bytes": 29033,
+      "sha256": "765640fa9fb95d64011a6d788658000db70ede2c140a901eace99c84097f5b6a"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-full-s0-b0.json",
+      "bytes": 30397,
+      "sha256": "0f05008acb267f3dc8ef064d30e1b49349f0bd1b838c80734a812a72b786123c"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-full-s0-b1.json",
+      "bytes": 29054,
+      "sha256": "264f48a28991955055c57b107098113ef8f8a67b31b5844823d26c32312883bc"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-full-s1-b0.json",
+      "bytes": 25899,
+      "sha256": "49ab6564fb227280034b025e21d6b359c9916d998e3ab76033e1e6c555af89a0"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-full-s1-b1.json",
+      "bytes": 29233,
+      "sha256": "cea64b9c518071aa7b4e51e4591dc7e9ea16d20a4bc9581d4399befe212d59c7"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b0.json",
+      "bytes": 10476,
+      "sha256": "879ecefc621d687ef4fc3439f5f1d9ffca2ecca149a0bc476f556e06ceb88e76"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s0-b1.json",
+      "bytes": 13977,
+      "sha256": "99963201cfea493adcf2c82ed7178fefbf64bb5147e29489ec22188b0a17def3"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b0.json",
+      "bytes": 11606,
+      "sha256": "fff96e761c653d6f7b0e1df99d0ed5c16a4ddefd4f7502bb6886ad986bf159e3"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-learning-frozen-s1-b1.json",
+      "bytes": 15008,
+      "sha256": "1aa79d936598bb25b8532f4cfd91ff62d888c8a632e39e0807c9290015becb05"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s0-b0.json",
+      "bytes": 28856,
+      "sha256": "750f07e079636974efc93a43d0a9a37bb581a1173b80d132a19dfca11934c541"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s0-b1.json",
+      "bytes": 26531,
+      "sha256": "8b860f1b1dc1d208b10e8800ae8946443bdc06e24e559c8875368f3cc0aacbf1"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s1-b0.json",
+      "bytes": 29247,
+      "sha256": "b5fc63288435b2dcf68564fee1123898b044548cf7fcea20cea41ee596430b2a"
+    },
+    {
+      "member": "resume/results/evaluation-c2-searched-style-1-mind-no-novelty-s1-b1.json",
+      "bytes": 26911,
+      "sha256": "4d9e5eae0dbb038315118fe63c8dee3e761267b2cd5cdacfcab98c3875e51f1c"
+    }
+  ]
+}

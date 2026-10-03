@@ -1,3 +1,5 @@
+> Pretraining update (2026-10-03): reviewed benchmark-only I/O hooks and conventional baseline plus reviewed training-only code are now saved. [Benchmark status](benchmark/STATUS.md) distinguishes the 294 passing software tests from unexecuted training and held-out work, which still require timing and release gates. Default game action/state parity is tested; the source bytes now have a separate [hook manifest](reports/provenance/robustness-hook-source-manifest.json). The earlier C1/C2 checkpoint description below remains version-specific.
+
 # Current experimental checkpoint: rebuilt N/S plus C1/C2
 
 The default controller now includes the reviewed novelty/completion rebuild and bounded C1/C2 content sharing and prediction-error monitoring. It is an **experimental functional checkpoint**, not a completed cognitive milestone or demonstrated competitive improvement. Historical original-v2 and affect-repair performance must not be attributed to this revision.

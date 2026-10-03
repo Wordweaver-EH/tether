@@ -33,15 +33,7 @@ function settings(difficulty) {
 }
 
 export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
-  benchmarkInterface = false, deferCommand = false, fixedTeacherSchedule = null, captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
-  if (deferCommand && !benchmarkInterface) throw new Error('deferCommand requires benchmark interface');
-  if (typeof benchmarkInterface !== 'boolean') throw new TypeError('benchmarkInterface must be boolean');
-  if (benchmarkInterface && difficulty !== 'normal') throw new Error('benchmark interface requires normal difficulty');
-  if (fixedTeacherSchedule !== null && (!benchmarkInterface || !ablations.noMetacog || coordinationControls.monitorControl !== false ||
-      !Number.isInteger(fixedTeacherSchedule.every) || fixedTeacherSchedule.every < 1 || fixedTeacherSchedule.every > 1000 ||
-      !Number.isInteger(fixedTeacherSchedule.phase) || fixedTeacherSchedule.phase < 0 || fixedTeacherSchedule.phase >= fixedTeacherSchedule.every))
-    throw new Error('fixed teacher requires benchmark noMetacog, disabled monitor control, and valid every/phase');
-  fixedTeacherSchedule = fixedTeacherSchedule === null ? null : { ...fixedTeacherSchedule };
+  captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
   if (policy !== 'tuned' && policy !== 'baseline')
     throw new RangeError('policy must be tuned or baseline');
   for (const key of Object.keys(ablations)) {
@@ -157,8 +149,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const monitorForced = !!coordinationStart.request?.replan && !flinch && !ablations.noDeliberation;
     const invalidatedRecallPlan = monitorForced && recallPlan ? {...recallPlan} : null;
     if (monitorForced) recallPlan = null;
-    const fixedTeacherDue = fixedTeacherSchedule !== null && totals.cycles % fixedTeacherSchedule.every === fixedTeacherSchedule.phase;
-    const escalate = fixedTeacherSchedule !== null ? fixedTeacherDue && !flinch && !ablations.noDeliberation : monitorForced || noveltyForced || !flinch && !ablations.noDeliberation && !ablations.noMetacog &&
+    const escalate = monitorForced || noveltyForced || !flinch && !ablations.noDeliberation && !ablations.noMetacog &&
       (!habit.automatic || habit.aware) && (conflict || b.confidence < 0.6 || b.surprise > 5 || habit.aware);
     let tactic = ablations.noIntuition ? 'direct' : habit.automatic ? habit.tactic : 'lead';
     if (!ablations.noIntuition && !habit.automatic && opponentModel.enabled && opponentModel.samples >= 3)
@@ -204,7 +195,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
       if (opponentModel.enabled && opponentModel.neutralization > 0.7 && model.embedAge > 2) chosen.outputs.recall = true;
     }
     const input = EMPTY();
-    const gaze = planGaze(view, chosen.outputs.gaze, schedule, now, model, random, ablations, benchmarkInterface);
+    const gaze = planGaze(view, chosen.outputs.gaze, schedule, now, model, random, ablations);
     input.aimX = gaze.x; input.aimY = gaze.y;
     const move = planMove(view.own.position, chosen.outputs.move, view.arena);
     input.moveX = move.x; input.moveY = move.y;
@@ -214,7 +205,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const proposedInput = { ...input };
     const handoffBlocked = (noveltyForced || monitorForced) && (!selectedBranch || selectedBranch.tactic !== tactic);
     if (handoffBlocked) { input.throw = false; input.recall = false; }
-    if (!deferCommand) ownSpearMemory.command(input, view, now + config.latencySec);
+    ownSpearMemory.command(input, view, now + config.latencySec);
     const counterfactualNote = !ablations.noCounterfactual && (input.recall ||
       (chosen.ignition && chosen.focus === 'Anchor')) ?
       reflection.considerRecall({ time: now, spear: view.own.spear,
@@ -230,8 +221,6 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const cognition = { budget: budget.report(), tier, situation: key, tactic, automatic: habit.automatic,
       predictedFailure: habit.predictedFailure, habit: { ...habit }, novelty, noveltyRequested, noveltyForced, monitorForced, handoffBlocked, planStatus, selectedBranch, issuedLearningTier, completedBranches: branches.filter(b=>b.completion.complete).length, supportUpdate, proposedInput, outcome, adaptation: opponentModel, branches,
       decisionLatencySec: config.latencySec };
-    if (fixedTeacherSchedule !== null) cognition.fixedTeacher = { due:fixedTeacherDue, opportunity:fixedTeacherDue && !flinch && !ablations.noDeliberation,
-      attempted:tier===2, completed:!!selectedBranch, issuedTeachingAction:issuedLearningTier===2 && (input.throw || input.recall), ...fixedTeacherSchedule };
     cognition.coordination = coordination.finish({chosen,cognition,input,now,pendingRecallPlan:recallPlan,invalidatedRecallPlan});
     totals.cycles++;
     if (captureDiagnostics) lastDecision = { serial: totals.cycles, time: now, input: { ...input }, focus: chosen.focus, cognition,
@@ -269,14 +258,11 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
   }
 
   return {
-    ...(deferCommand ? { commitCommand(input, view, commandTime) { ownSpearMemory.command(input, view, commandTime); } } : {}),
     act(view, dt) {
       if (!view || !view.own || !view.arena || !view.cone) {
         throw new TypeError('act requires a percept');
       }
       if (!Number.isFinite(dt) || dt <= 0) throw new RangeError('dt must be positive');
-      // Benchmark wrapper owns sensor delay, cadence and motor noise.
-      if (benchmarkInterface) return cycle(view);
       queue.push(view);
       const latencyTicks = Math.round(config.latencySec / dt);
       if (queue.length <= latencyTicks) { tick++; return EMPTY(); }

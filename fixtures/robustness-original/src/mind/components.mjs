@@ -194,7 +194,7 @@ export function planMove(origin, rawTarget, arena) {
   return distance(origin, waypoint) < 0.25 ? point(0, 0) : unit(delta);
 }
 
-export function planGaze(view, desired, schedule, now, model, random, ablations, externalMotorNoise = false) {
+export function planGaze(view, desired, schedule, now, model, random, ablations) {
   let target = desired;
   if (ablations.noAttentionSchema) {
     const theta = now * Math.PI * 0.9;
@@ -209,8 +209,6 @@ export function planGaze(view, desired, schedule, now, model, random, ablations,
   const angularSpeed = Math.abs(angleDiff(desiredAngle, model.previousGazeAngle)) * 30;
   model.previousGazeAngle = desiredAngle;
   const sigma = model.baseAimNoise + model.speedAimNoise * angularSpeed;
-  // Preserve shared cognitive RNG advancement when the wrapper owns motor noise.
-  const motorSample = normal(random);
-  const noisy = desiredAngle + (externalMotorNoise ? 0 : motorSample) * Math.min(0.18, sigma);
+  const noisy = desiredAngle + normal(random) * Math.min(0.18, sigma);
   return point(Math.cos(noisy), Math.sin(noisy));
 }

@@ -50,10 +50,7 @@ export const POLICY_SEEDS = Object.freeze({
 });
 
 export function createParamAgent(vector, { latencySec = 0.15, seed = 1,
-  outboundSpeed = 12, returnSpeed = 12, benchmarkInterface = false, deferCommand = false } = {}) {
-  if (deferCommand && !benchmarkInterface) throw new Error('deferCommand requires benchmark interface');
-  if (typeof benchmarkInterface !== 'boolean') throw new TypeError('benchmarkInterface must be boolean');
-  if (benchmarkInterface && latencySec !== 0.15) throw new Error('benchmark interface requires 150 ms timestamp compensation');
+  outboundSpeed = 12, returnSpeed = 12 } = {}) {
   const p = decodePolicy(vector), queue = [], ownSpear = createSpearMemory({
     outboundSpeed, returnSpeed });
   let rngState = (seed >>> 0) || 1;
@@ -65,14 +62,11 @@ export function createParamAgent(vector, { latencySec = 0.15, seed = 1,
   let lastOpponent = null, lastEnemySpear = null, embeddedAt = null;
   let previousState = null, lastThrow = -Infinity, previousScore = null;
   return {
-    ...(deferCommand ? { commitCommand(input, view, commandTime) { ownSpear.command(input, view, commandTime); if (input.throw) lastThrow = view.time.elapsedSec; } } : {}),
     settings: () => ({ latencySec, policy: p }),
     act(view, dt) {
-      if (!benchmarkInterface) {
-        queue.push(view);
-        if (queue.length <= Math.round(latencySec / dt)) return {};
-      }
-      const v = benchmarkInterface ? view : queue.shift(), now = v.time.elapsedSec, me = v.own.position;
+      queue.push(view);
+      if (queue.length <= Math.round(latencySec / dt)) return {};
+      const v = queue.shift(), now = v.time.elapsedSec, me = v.own.position;
       const input = { moveX: 0, moveY: 0, aimX: 0, aimY: 0,
         throw: false, recall: false };
       const spear = ownSpear.observe(v);
@@ -111,15 +105,14 @@ export function createParamAgent(vector, { latencySec = 0.15, seed = 1,
       const target = useEmbed ? embedTarget : shotTarget;
       if (target) {
         const rawAim = norm(sub(target, me));
-        const motorSample = random();
-        const noise = (benchmarkInterface ? 0 : motorSample - 0.5) * 0.018 * (1 + Math.hypot(ev.x, ev.y) / 4);
+        const noise = (random() - 0.5) * 0.018 * (1 + Math.hypot(ev.x, ev.y) / 4);
         const aim = { x: rawAim.x * Math.cos(noise) - rawAim.y * Math.sin(noise),
           y: rawAim.x * Math.sin(noise) + rawAim.y * Math.cos(noise) };
         input.aimX = aim.x; input.aimY = aim.y;
         if (spear.state === 'HELD' && distance <= p.throwRange &&
             now - lastThrow >= p.throwInterval &&
             dot(v.own.facing, aim) >= Math.cos(p.throwAlignment)) {
-          input.throw = true; if (!deferCommand) lastThrow = now;
+          input.throw = true; lastThrow = now;
         }
       } else {
         const base = lastOpponent ? sub(lastOpponent.position, me) :
@@ -168,7 +161,7 @@ export function createParamAgent(vector, { latencySec = 0.15, seed = 1,
       if (Math.hypot(move.x, move.y) > 0.1) {
         input.moveX = m.x; input.moveY = m.y;
       }
-      if (!deferCommand) ownSpear.command(input, v, now + latencySec);
+      ownSpear.command(input, v, now + latencySec);
       return input;
     },
   };

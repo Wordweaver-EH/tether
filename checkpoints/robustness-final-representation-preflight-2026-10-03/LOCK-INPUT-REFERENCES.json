@@ -1,0 +1,878 @@
+{
+  "scope": "PILOT_ONLY final representation and prospective v2 runtime/proof amendment",
+  "lockSha256": "e3d86cb6949fc952525a93224b7d3c61477d37e47342ace76e25bf9fbd9afb37",
+  "inputs": [
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/LOCK-COPY.json",
+      "sha256": "15547657adbdeaaf76153d2c3103ace74c9c0d74d7eef98398d5a83f2aba5ec2",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/LOCK-COPY.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/PARAMETER-SNAPSHOT-MANIFEST.json",
+      "sha256": "8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/PARAMETER-SNAPSHOT-MANIFEST.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/PROCESS-EXIT.json",
+      "sha256": "f2591ec95e391dc27cfbac70a57bba9e14028c9e65cda022f4ff36f822452de8",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/PROCESS-EXIT.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/QUALIFIED-FREEZE-ACCEPTANCE.json",
+      "sha256": "fead101f4dcc60e767c780a237e86e86a19f9f43cdbb31a5895ae9b1c6bf96a6",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/QUALIFIED-FREEZE-ACCEPTANCE.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/README.md",
+      "sha256": "58ea8d3281f32bfe5f75e7cc5f12614281f5112eb77e8cdc87d609c8bd994dde",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/README.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/TRAINING-RESULT.json",
+      "sha256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/TRAINING-RESULT.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/independent-audit/AUDIT-DETAILS.json",
+      "sha256": "39be7a6a725f6bb746d4cdf1a160100f14e8c58923e3be6bb4a52ddfaa583d16",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/independent-audit/AUDIT-DETAILS.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/independent-audit/FREEZE-ELIGIBILITY.json",
+      "sha256": "5391a266a889dfe77a3c927102f703f979e9d46753e08028c96a6ec203c9b5d5",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/independent-audit/FREEZE-ELIGIBILITY.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/independent-audit/IEEE-SCORE-AUDIT.json",
+      "sha256": "ec71cfa3388186ce44d94f148d04f760a442fa414e18104002046c70fa3360dc",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/independent-audit/IEEE-SCORE-AUDIT.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/independent-audit/INDEPENDENT-TRAINING-AUDIT.md",
+      "sha256": "4518b433f2918dac0b8e8cf7b78e7bf8384df70189163a5ee4e18627f35cc0ed",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/independent-audit/INDEPENDENT-TRAINING-AUDIT.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/independent-audit/audit-saved-training.mjs",
+      "sha256": "3c67799d5f2169e3e7a451550c20a68530cc9d6bdb8def89531510138afaa291",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/independent-audit/audit-saved-training.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-0.json",
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-0.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-1.json",
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-1.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-10.json",
+      "sha256": "05d495e808f32a4b92b5d837668b0cd969bb8d17306812af8515a0e8173ee1c0",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-10.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-11.json",
+      "sha256": "eb3d81c5aac7738405d657fbb849531493974e7984b699b030fbeef72cb43c7a",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-11.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-2.json",
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-2.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-3.json",
+      "sha256": "886d9337666165aefc418dac6cc5a0b960aa100cc75db30210c3de3db26ebe9f",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-3.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-4.json",
+      "sha256": "6288e1d8fd26609a04c0320a1d51c65c285be31872df57e8f073302d146b3865",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-4.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-5.json",
+      "sha256": "972581e9059f29a5fe753ef84ed118687823cdf0a5be9a0680787cbe7855d7c9",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-5.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-6.json",
+      "sha256": "99f8e059f58bcce5c2853254ac506df698315f8644f3e5860b88071797bc6d2d",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-6.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-7.json",
+      "sha256": "daa5aa85f21d2fb8a6f9870afd6dce930d5e6448b8f0d181393a316747dc4f56",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-7.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-8.json",
+      "sha256": "a81500f2cb2a26d64a30986d7e739889bfd9a05a500aa1e6468054506c9eafa3",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-8.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-github-update/training-final-artifacts/snapshots/mind-9.json",
+      "sha256": "c403e5a366e1cf30d8015129e0542554387f93bd79fd029c7ec3e495d02f9ce7",
+      "commit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "path": "training/robustness-attempt-001/final-artifacts/snapshots/mind-9.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/DESIGN-FILE-MANIFEST.json",
+      "sha256": "36fa4a77caf612b6e1de43771e26c5ad7060612777d11ff7347e1f1f3a986f86",
+      "archiveMember": "prereg/DESIGN-FILE-MANIFEST.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/DESIGN.json",
+      "sha256": "3b386551b680aaf05c48fdd88304ac9d6ce943844b5b4af5c9627998c5fd4ac6",
+      "archiveMember": "prereg/DESIGN.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/EVALUATION-TASKS.json",
+      "sha256": "2d9f694c7b7419b050240c1551c625c26050c8c729894fc5531b38155c79bca9",
+      "archiveMember": "prereg/EVALUATION-TASKS.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/METRIC-CONTRACT.json",
+      "sha256": "b2a4d06cfa565d6c41e902ca528a377a14ec6f30ec500b344c20f83127942d62",
+      "archiveMember": "prereg/METRIC-CONTRACT.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/OPPONENT-SEARCH.json",
+      "sha256": "7295040474165257128d83359215fe72460c2420f7fdccc95f9a9564bf4f3829",
+      "archiveMember": "prereg/OPPONENT-SEARCH.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/PILOT-DESIGN-READY.json",
+      "sha256": "f1c8d2872231815410da63fa7095732aed0956538ea406433dc76b4ec63976e7",
+      "archiveMember": "prereg/PILOT-DESIGN-READY.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/PILOT-TASKS.json",
+      "sha256": "e5b9e71b75505732984102d129dca209050dc1c1af2d48b6b75cf1028340b470",
+      "archiveMember": "prereg/PILOT-TASKS.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/PREREGISTRATION.md",
+      "sha256": "9c84e04f94d15d6de510bb0b5bad6948da8919cf73de0cbf9e59e0abe927c28e",
+      "archiveMember": "prereg/PREREGISTRATION.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/PROOF-GRANULARITY-AMENDMENT.md",
+      "sha256": "533f87aaec27b725cf7e77dfea988731c1e7a31ba5439bb307c6983a262275d0",
+      "archiveMember": "prereg/PROOF-GRANULARITY-AMENDMENT.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/PROOF-GRANULARITY-METRIC-REVIEW.json",
+      "sha256": "2e4d6bfc10d85cb85a8a68d57290972fa9a8a6d6425ce69e389e02d3d4157458",
+      "archiveMember": "prereg/PROOF-GRANULARITY-METRIC-REVIEW.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/RUNTIME-AMENDMENT.json",
+      "sha256": "6b437abc1e654aa2c6e7462814823371217fe0a9e07ad8220476a458d377f0ed",
+      "archiveMember": "prereg/RUNTIME-AMENDMENT.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/RUNTIME-AMENDMENT.md",
+      "sha256": "048b61d0a0d66c9ed7125807848684aead4b61c44fc30eec80d00e571b1d31ee",
+      "archiveMember": "prereg/RUNTIME-AMENDMENT.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/RUNTIME-LIMITS.json",
+      "sha256": "a391be60e6d7664b1eebf272d36e395e2ce38c67b52380902dc5fe704602391e",
+      "archiveMember": "prereg/RUNTIME-LIMITS.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/STATIC-VALIDATION.json",
+      "sha256": "ef4a8120126cc3c0ef84704bb5c2bcbfa7c0b17a1437329e55ae120856b0872e",
+      "archiveMember": "prereg/STATIC-VALIDATION.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/TRAINING-FAILURE-REFERENCE.json",
+      "sha256": "ecba3f3a0e1ecc02a4a410cad8131c7a9ed8e11b8410c77092ac3af74fb9cbc5",
+      "archiveMember": "prereg/TRAINING-FAILURE-REFERENCE.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/add-second-layout.mjs",
+      "sha256": "09d564de7782de90dba998eb7cacfdad1760539fe5b9264758b7157b7470b630",
+      "archiveMember": "prereg/add-second-layout.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/build-design.mjs",
+      "sha256": "96d6b576184f074c6a72c124aaef216cc226c63825ad5fd2ad3c5c28d6305e80",
+      "archiveMember": "prereg/build-design.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/arena-mirror-x.json",
+      "sha256": "f6d0fae5eab3765b2fee4af247460f7f1450979e4e3d5234435fe6548c6d725b",
+      "archiveMember": "prereg/configs/arena-mirror-x.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/arena-new-obstacles-2.json",
+      "sha256": "34f6cb1d65d6e0a5d055afea274d7ea3fc5e32e75af32ba49fa2502d649b2e3c",
+      "archiveMember": "prereg/configs/arena-new-obstacles-2.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/arena-new-obstacles.json",
+      "sha256": "815cdd988df997f0e838a4923d24da36fbd7b5a1564a21fcbbffb70054fcd9b2",
+      "archiveMember": "prereg/configs/arena-new-obstacles.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/default.json",
+      "sha256": "57443feb57ee309ba33287ce8a04df44506b40e00c8f9deeff4807fe744f06e4",
+      "archiveMember": "prereg/configs/default.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/fov-minus20.json",
+      "sha256": "15a0de0b85d707ff6d3b7be3ebfcf07d43d76559a4c4570c5b0146652d1896f5",
+      "archiveMember": "prereg/configs/fov-minus20.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/fov-plus20.json",
+      "sha256": "60c69c898f781633ac0bfef698014e6109e05903c3c0dd718908280cdc6991b1",
+      "archiveMember": "prereg/configs/fov-plus20.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/searched-style-1.json",
+      "sha256": "225dfbd2c967f66d072b0bb05e6ab3ddc0834e311f9444cfdbef421f5c8ca668",
+      "archiveMember": "prereg/configs/searched-style-1.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/spear-minus25.json",
+      "sha256": "a132449af873a2a441476c4317d5c85afc15a969b94039b25515bc46c3f580be",
+      "archiveMember": "prereg/configs/spear-minus25.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/spear-plus25.json",
+      "sha256": "d0c82cb38d69010199984c4e8a4ce12a7a0f6bfa69ca0c02f75d433009e560e8",
+      "archiveMember": "prereg/configs/spear-plus25.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/turn-minus25.json",
+      "sha256": "35b7d4632c68bf83f5a456f251234c8e1a709e03ba52ec6aff71a44726751bf2",
+      "archiveMember": "prereg/configs/turn-minus25.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/configs/turn-plus25.json",
+      "sha256": "0f794447908baadf6123765bf125669e065dffc0233dca5403f70572f68ec690",
+      "archiveMember": "prereg/configs/turn-plus25.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/initial-vectors.json",
+      "sha256": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68",
+      "archiveMember": "prereg/initial-vectors.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/pre-execution-history/arena-mirror-x-initial-full-reflection.json",
+      "sha256": "08d09352231462f95b88d22fcbfc9b0f22c2619fabb090917a0b8d92853c0d0d",
+      "archiveMember": "prereg/pre-execution-history/arena-mirror-x-initial-full-reflection.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/pre-execution-history/searched-style-2-removed-before-lock.json",
+      "sha256": "ecdb83cfd8724c67bbd6892f0ac65149dd0d938b5c05842a01b9effff1eb55df",
+      "archiveMember": "prereg/pre-execution-history/searched-style-2-removed-before-lock.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-heldout-preregistration-v2-runtime/validate-design.mjs",
+      "sha256": "ff05cd6c308aacdec9b4735fbdb9a5bc27da932a3dd3e65ff92415d981635f06",
+      "archiveMember": "prereg/validate-design.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/benchmark/README.md",
+      "sha256": "46ebaf62e4800ba0cdf888ccb67d821a05dc3ff5f4f879460168d74b0c97fcb4",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "benchmark/README.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/benchmark/interface.mjs",
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "benchmark/interface.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/benchmark/interface.test.mjs",
+      "sha256": "c6a9cd21fe1afb7d656384bee6c8792dd7036b13a5f93492cee11ead2fa12ece",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "benchmark/interface.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/benchmark/robust-baseline.test.mjs",
+      "sha256": "ebd926dd6f0e286df181f3aea023787e843476f6d2c793d0e23a2a10b65b9af2",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "benchmark/robust-baseline.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/README.md",
+      "sha256": "4dbd669b4422cd28f897ae3a68b0763c9106b1e6a53e850aa9fc70e495c9127d",
+      "archiveMember": "repo/experimental/README.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/block-stream.mjs",
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d",
+      "archiveMember": "repo/experimental/block-stream.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/compact.mjs",
+      "sha256": "55f11316ea91640fa833963d18f9fa52acc4022d9995f49f5d0f4d70a1bbd9ec",
+      "archiveMember": "repo/experimental/compact.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/compact.test.mjs",
+      "sha256": "34ee76199c474ed15a4bb78fd137bc8396c26a689accae0afba4606552654172",
+      "archiveMember": "repo/experimental/compact.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/docs/COMPACT-DESIGN-INDEPENDENT-REVIEW.json",
+      "sha256": "670df2eee7b93c1ee0521fe7e56f69856b7967939d192329336b9304eda4e5f6",
+      "archiveMember": "repo/experimental/docs/COMPACT-DESIGN-INDEPENDENT-REVIEW.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/docs/COMPACT-LOGGING-PROPOSAL.md",
+      "sha256": "1c1296cb78d26bbba3b3b27832d8a1d44746be1e5b0d0db7f5a19b860004c2cd",
+      "archiveMember": "repo/experimental/docs/COMPACT-LOGGING-PROPOSAL.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/docs/COMPACT-METRIC-MAP.md",
+      "sha256": "4b0dd0ffe400b78f9067e78e76f21733c9b10b3dbf8951a0053d3563eb7acdee",
+      "archiveMember": "repo/experimental/docs/COMPACT-METRIC-MAP.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/docs/COMPACT-METRIC-OWNER-REVIEW.json",
+      "sha256": "76643d02fe06ad899cda02bcca3ee1ee03ffc7603ff850d7b09fd31ae046a4da",
+      "archiveMember": "repo/experimental/docs/COMPACT-METRIC-OWNER-REVIEW.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/docs/COMPACT-REPRESENTATION-v2.md",
+      "sha256": "6d0ff642f8efc5300bd6eeaace0b2644e474df5999a00ca205b5ef8938f0a627",
+      "archiveMember": "repo/experimental/docs/COMPACT-REPRESENTATION-v2.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/docs/REPRESENTATION-AMENDMENT-PROOF-MAP.md",
+      "sha256": "8de26e2b1fc45e574ade551d1b0d29cae71074de0059abe033f472434c2e1ec0",
+      "archiveMember": "repo/experimental/docs/REPRESENTATION-AMENDMENT-PROOF-MAP.md"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/execution.mjs",
+      "sha256": "0491dd47feb1de077ba978c504f68a165451851841a9c97d8669c32af65f04e5",
+      "archiveMember": "repo/experimental/execution.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/execution.test.mjs",
+      "sha256": "c8e0e8c1bd9ddded4efd6e51d31c311f010b70cf1391ad4efd8e44ac3b139935",
+      "archiveMember": "repo/experimental/execution.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/faithfulness.mjs",
+      "sha256": "f2570d86c10f882b9f0e69f36602c3d48a31addf8000b818fbcbdb234b502266",
+      "archiveMember": "repo/experimental/faithfulness.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/faithfulness.test.mjs",
+      "sha256": "2133a8771dcc900d8f69e636519c1e2af79ffd2f73e909cbd7a029678a79d070",
+      "archiveMember": "repo/experimental/faithfulness.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/guard.test.mjs",
+      "sha256": "7fc8de839990b0363d107a1da23d157e5b90b31d0d9555f285c19ae2b4b77d92",
+      "archiveMember": "repo/experimental/guard.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/lock.mjs",
+      "sha256": "41d530fbdcae47bcc9dd187d8d742e03546145d1c9ce4c56c37367f36960cdb5",
+      "archiveMember": "repo/experimental/lock.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/observer-proxy.mjs",
+      "sha256": "ceac30aead8356026f94b4bbca0bbe9dc70bddf52c4f6376e6234398d4b9627e",
+      "archiveMember": "repo/experimental/observer-proxy.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/observer-proxy.test.mjs",
+      "sha256": "c1e207bdf0915ad3d9d55b6d56a8d6814582f29b45dab945adcfbcdd05f2dde3",
+      "archiveMember": "repo/experimental/observer-proxy.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42",
+      "archiveMember": "repo/experimental/perception.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/plan-validation.mjs",
+      "sha256": "fd3d2838e9e414b3c74c31b4d4c2ff1d8d3b6d04abee4e7400a6018398915151",
+      "archiveMember": "repo/experimental/plan-validation.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/proof-representation.mjs",
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a",
+      "archiveMember": "repo/experimental/proof-representation.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/proof-representation.test.mjs",
+      "sha256": "52a9149411485d9b3903a94e1c1a724965d765390858bfeff61a757ee7321fd8",
+      "archiveMember": "repo/experimental/proof-representation.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/raw-stream.mjs",
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041",
+      "archiveMember": "repo/experimental/raw-stream.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/runner.mjs",
+      "sha256": "2d5a8003b0283df99ede30244a4b26e35ec6f34593ab066dff927b3f6bd4caa1",
+      "archiveMember": "repo/experimental/runner.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/task.mjs",
+      "sha256": "6f5c052698ed7de05ba98413f727e818024948d8680e9602bf6a5353d1fbc3f9",
+      "archiveMember": "repo/experimental/task.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/worker.mjs",
+      "sha256": "8be9cc12dee58b20d5ac46da47f46547d7d0c4f2fb2c95234c768c0c5b290924",
+      "archiveMember": "repo/experimental/worker.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f",
+      "archiveMember": "repo/experimental/world.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/experimental/world.test.mjs",
+      "sha256": "6e24d444958166b215b3c083fa3ea368629e221d1f212b80f009f11ae50a819c",
+      "archiveMember": "repo/experimental/world.test.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/package.json",
+      "sha256": "6bb0ae63bd538f17da6bc4102895b1cdaa821fa0bc5865037186aa2f219e67fa",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "package.json"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/basic.mjs",
+      "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/basic.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/dodger.mjs",
+      "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/dodger.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/param.mjs",
+      "sha256": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/param.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/robust-baseline-agent.mjs",
+      "sha256": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/robust-baseline-agent.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/robust-baseline.mjs",
+      "sha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/robust-baseline.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/spear-memory.mjs",
+      "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/spear-memory.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/agents/strategies.mjs",
+      "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/agents/strategies.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/deterministic-math.js"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/headless.mjs",
+      "sha256": "7b67c3483a2636fe953d82afa178150dda1f2a464fc6f564d25c954847e8cc26",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/headless.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/log.js",
+      "sha256": "fc82e01484e7f059381fc3291f8b85da6db02fc77b6709c42ed4b1d50bea9ce6",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/log.js"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/belief.mjs",
+      "sha256": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/belief.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/cognition.mjs",
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/cognition.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/components.mjs",
+      "sha256": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/components.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/content-broadcast.mjs",
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/content-broadcast.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/coordination.mjs",
+      "sha256": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/coordination.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/index.mjs",
+      "sha256": "559f9de723a0af18e55b06ff5ee6fb8f1b495280ebf9d75e53ec67339cfd0900",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/index.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/math.mjs",
+      "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/math.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/novelty.mjs",
+      "sha256": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/novelty.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/own-spear.mjs",
+      "sha256": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/own-spear.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/percept-contact.mjs",
+      "sha256": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/percept-contact.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/prediction-monitor.mjs",
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/prediction-monitor.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/rollout-completion.mjs",
+      "sha256": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/rollout-completion.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/specialists.mjs",
+      "sha256": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/specialists.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/target-memory.mjs",
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/target-memory.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/mind/workspace.mjs",
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/mind/workspace.mjs"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/perception.js",
+      "sha256": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/perception.js"
+    },
+    {
+      "originalPath": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-final/src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d",
+      "commit": "b9134f6a6859032ae37fce8f266f848c483db467",
+      "path": "src/sim.js"
+    }
+  ],
+  "archiveMembers": {
+    "prereg/DESIGN-FILE-MANIFEST.json": {
+      "bytes": 5098,
+      "sha256": "36fa4a77caf612b6e1de43771e26c5ad7060612777d11ff7347e1f1f3a986f86"
+    },
+    "prereg/DESIGN.json": {
+      "bytes": 20569,
+      "sha256": "3b386551b680aaf05c48fdd88304ac9d6ce943844b5b4af5c9627998c5fd4ac6"
+    },
+    "prereg/EVALUATION-TASKS.json": {
+      "bytes": 2760719,
+      "sha256": "2d9f694c7b7419b050240c1551c625c26050c8c729894fc5531b38155c79bca9"
+    },
+    "prereg/METRIC-CONTRACT.json": {
+      "bytes": 6020,
+      "sha256": "b2a4d06cfa565d6c41e902ca528a377a14ec6f30ec500b344c20f83127942d62"
+    },
+    "prereg/OPPONENT-SEARCH.json": {
+      "bytes": 2433,
+      "sha256": "7295040474165257128d83359215fe72460c2420f7fdccc95f9a9564bf4f3829"
+    },
+    "prereg/PILOT-DESIGN-READY.json": {
+      "bytes": 813,
+      "sha256": "f1c8d2872231815410da63fa7095732aed0956538ea406433dc76b4ec63976e7"
+    },
+    "prereg/PILOT-TASKS.json": {
+      "bytes": 124407,
+      "sha256": "e5b9e71b75505732984102d129dca209050dc1c1af2d48b6b75cf1028340b470"
+    },
+    "prereg/PREREGISTRATION.md": {
+      "bytes": 23243,
+      "sha256": "9c84e04f94d15d6de510bb0b5bad6948da8919cf73de0cbf9e59e0abe927c28e"
+    },
+    "prereg/PROOF-GRANULARITY-AMENDMENT.md": {
+      "bytes": 2189,
+      "sha256": "533f87aaec27b725cf7e77dfea988731c1e7a31ba5439bb307c6983a262275d0"
+    },
+    "prereg/PROOF-GRANULARITY-METRIC-REVIEW.json": {
+      "bytes": 686,
+      "sha256": "2e4d6bfc10d85cb85a8a68d57290972fa9a8a6d6425ce69e389e02d3d4157458"
+    },
+    "prereg/RUNTIME-AMENDMENT.json": {
+      "bytes": 1792,
+      "sha256": "6b437abc1e654aa2c6e7462814823371217fe0a9e07ad8220476a458d377f0ed"
+    },
+    "prereg/RUNTIME-AMENDMENT.md": {
+      "bytes": 1291,
+      "sha256": "048b61d0a0d66c9ed7125807848684aead4b61c44fc30eec80d00e571b1d31ee"
+    },
+    "prereg/RUNTIME-LIMITS.json": {
+      "bytes": 2449,
+      "sha256": "a391be60e6d7664b1eebf272d36e395e2ce38c67b52380902dc5fe704602391e"
+    },
+    "prereg/STATIC-VALIDATION.json": {
+      "bytes": 1226,
+      "sha256": "ef4a8120126cc3c0ef84704bb5c2bcbfa7c0b17a1437329e55ae120856b0872e"
+    },
+    "prereg/TRAINING-FAILURE-REFERENCE.json": {
+      "bytes": 3633,
+      "sha256": "ecba3f3a0e1ecc02a4a410cad8131c7a9ed8e11b8410c77092ac3af74fb9cbc5"
+    },
+    "prereg/add-second-layout.mjs": {
+      "bytes": 4319,
+      "sha256": "09d564de7782de90dba998eb7cacfdad1760539fe5b9264758b7157b7470b630"
+    },
+    "prereg/build-design.mjs": {
+      "bytes": 8880,
+      "sha256": "96d6b576184f074c6a72c124aaef216cc226c63825ad5fd2ad3c5c28d6305e80"
+    },
+    "prereg/configs/arena-mirror-x.json": {
+      "bytes": 1389,
+      "sha256": "f6d0fae5eab3765b2fee4af247460f7f1450979e4e3d5234435fe6548c6d725b"
+    },
+    "prereg/configs/arena-new-obstacles-2.json": {
+      "bytes": 1745,
+      "sha256": "34f6cb1d65d6e0a5d055afea274d7ea3fc5e32e75af32ba49fa2502d649b2e3c"
+    },
+    "prereg/configs/arena-new-obstacles.json": {
+      "bytes": 1744,
+      "sha256": "815cdd988df997f0e838a4923d24da36fbd7b5a1564a21fcbbffb70054fcd9b2"
+    },
+    "prereg/configs/default.json": {
+      "bytes": 1384,
+      "sha256": "57443feb57ee309ba33287ce8a04df44506b40e00c8f9deeff4807fe744f06e4"
+    },
+    "prereg/configs/fov-minus20.json": {
+      "bytes": 1384,
+      "sha256": "15a0de0b85d707ff6d3b7be3ebfcf07d43d76559a4c4570c5b0146652d1896f5"
+    },
+    "prereg/configs/fov-plus20.json": {
+      "bytes": 1383,
+      "sha256": "60c69c898f781633ac0bfef698014e6109e05903c3c0dd718908280cdc6991b1"
+    },
+    "prereg/configs/searched-style-1.json": {
+      "bytes": 1390,
+      "sha256": "225dfbd2c967f66d072b0bb05e6ab3ddc0834e311f9444cfdbef421f5c8ca668"
+    },
+    "prereg/configs/spear-minus25.json": {
+      "bytes": 1386,
+      "sha256": "a132449af873a2a441476c4317d5c85afc15a969b94039b25515bc46c3f580be"
+    },
+    "prereg/configs/spear-plus25.json": {
+      "bytes": 1387,
+      "sha256": "d0c82cb38d69010199984c4e8a4ce12a7a0f6bfa69ca0c02f75d433009e560e8"
+    },
+    "prereg/configs/turn-minus25.json": {
+      "bytes": 1385,
+      "sha256": "35b7d4632c68bf83f5a456f251234c8e1a709e03ba52ec6aff71a44726751bf2"
+    },
+    "prereg/configs/turn-plus25.json": {
+      "bytes": 1385,
+      "sha256": "0f794447908baadf6123765bf125669e065dffc0233dca5403f70572f68ec690"
+    },
+    "prereg/initial-vectors.json": {
+      "bytes": 2952,
+      "sha256": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68"
+    },
+    "prereg/pre-execution-history/arena-mirror-x-initial-full-reflection.json": {
+      "bytes": 1389,
+      "sha256": "08d09352231462f95b88d22fcbfc9b0f22c2619fabb090917a0b8d92853c0d0d"
+    },
+    "prereg/pre-execution-history/searched-style-2-removed-before-lock.json": {
+      "bytes": 1390,
+      "sha256": "ecdb83cfd8724c67bbd6892f0ac65149dd0d938b5c05842a01b9effff1eb55df"
+    },
+    "prereg/validate-design.mjs": {
+      "bytes": 4205,
+      "sha256": "ff05cd6c308aacdec9b4735fbdb9a5bc27da932a3dd3e65ff92415d981635f06"
+    },
+    "repo/experimental/README.md": {
+      "bytes": 10085,
+      "sha256": "4dbd669b4422cd28f897ae3a68b0763c9106b1e6a53e850aa9fc70e495c9127d"
+    },
+    "repo/experimental/block-stream.mjs": {
+      "bytes": 4570,
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    "repo/experimental/compact.mjs": {
+      "bytes": 6181,
+      "sha256": "55f11316ea91640fa833963d18f9fa52acc4022d9995f49f5d0f4d70a1bbd9ec"
+    },
+    "repo/experimental/compact.test.mjs": {
+      "bytes": 2583,
+      "sha256": "34ee76199c474ed15a4bb78fd137bc8396c26a689accae0afba4606552654172"
+    },
+    "repo/experimental/docs/COMPACT-DESIGN-INDEPENDENT-REVIEW.json": {
+      "bytes": 1263,
+      "sha256": "670df2eee7b93c1ee0521fe7e56f69856b7967939d192329336b9304eda4e5f6"
+    },
+    "repo/experimental/docs/COMPACT-LOGGING-PROPOSAL.md": {
+      "bytes": 7115,
+      "sha256": "1c1296cb78d26bbba3b3b27832d8a1d44746be1e5b0d0db7f5a19b860004c2cd"
+    },
+    "repo/experimental/docs/COMPACT-METRIC-MAP.md": {
+      "bytes": 12289,
+      "sha256": "4b0dd0ffe400b78f9067e78e76f21733c9b10b3dbf8951a0053d3563eb7acdee"
+    },
+    "repo/experimental/docs/COMPACT-METRIC-OWNER-REVIEW.json": {
+      "bytes": 2240,
+      "sha256": "76643d02fe06ad899cda02bcca3ee1ee03ffc7603ff850d7b09fd31ae046a4da"
+    },
+    "repo/experimental/docs/COMPACT-REPRESENTATION-v2.md": {
+      "bytes": 2172,
+      "sha256": "6d0ff642f8efc5300bd6eeaace0b2644e474df5999a00ca205b5ef8938f0a627"
+    },
+    "repo/experimental/docs/REPRESENTATION-AMENDMENT-PROOF-MAP.md": {
+      "bytes": 7038,
+      "sha256": "8de26e2b1fc45e574ade551d1b0d29cae71074de0059abe033f472434c2e1ec0"
+    },
+    "repo/experimental/execution.mjs": {
+      "bytes": 2501,
+      "sha256": "0491dd47feb1de077ba978c504f68a165451851841a9c97d8669c32af65f04e5"
+    },
+    "repo/experimental/execution.test.mjs": {
+      "bytes": 3433,
+      "sha256": "c8e0e8c1bd9ddded4efd6e51d31c311f010b70cf1391ad4efd8e44ac3b139935"
+    },
+    "repo/experimental/faithfulness.mjs": {
+      "bytes": 3360,
+      "sha256": "f2570d86c10f882b9f0e69f36602c3d48a31addf8000b818fbcbdb234b502266"
+    },
+    "repo/experimental/faithfulness.test.mjs": {
+      "bytes": 2374,
+      "sha256": "2133a8771dcc900d8f69e636519c1e2af79ffd2f73e909cbd7a029678a79d070"
+    },
+    "repo/experimental/guard.test.mjs": {
+      "bytes": 6139,
+      "sha256": "7fc8de839990b0363d107a1da23d157e5b90b31d0d9555f285c19ae2b4b77d92"
+    },
+    "repo/experimental/lock.mjs": {
+      "bytes": 3377,
+      "sha256": "41d530fbdcae47bcc9dd187d8d742e03546145d1c9ce4c56c37367f36960cdb5"
+    },
+    "repo/experimental/observer-proxy.mjs": {
+      "bytes": 725,
+      "sha256": "ceac30aead8356026f94b4bbca0bbe9dc70bddf52c4f6376e6234398d4b9627e"
+    },
+    "repo/experimental/observer-proxy.test.mjs": {
+      "bytes": 1782,
+      "sha256": "c1e207bdf0915ad3d9d55b6d56a8d6814582f29b45dab945adcfbcdd05f2dde3"
+    },
+    "repo/experimental/perception.mjs": {
+      "bytes": 3221,
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    "repo/experimental/plan-validation.mjs": {
+      "bytes": 6748,
+      "sha256": "fd3d2838e9e414b3c74c31b4d4c2ff1d8d3b6d04abee4e7400a6018398915151"
+    },
+    "repo/experimental/proof-representation.mjs": {
+      "bytes": 5375,
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    "repo/experimental/proof-representation.test.mjs": {
+      "bytes": 3856,
+      "sha256": "52a9149411485d9b3903a94e1c1a724965d765390858bfeff61a757ee7321fd8"
+    },
+    "repo/experimental/raw-stream.mjs": {
+      "bytes": 2951,
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    },
+    "repo/experimental/runner.mjs": {
+      "bytes": 8137,
+      "sha256": "2d5a8003b0283df99ede30244a4b26e35ec6f34593ab066dff927b3f6bd4caa1"
+    },
+    "repo/experimental/task.mjs": {
+      "bytes": 8886,
+      "sha256": "6f5c052698ed7de05ba98413f727e818024948d8680e9602bf6a5353d1fbc3f9"
+    },
+    "repo/experimental/worker.mjs": {
+      "bytes": 1308,
+      "sha256": "8be9cc12dee58b20d5ac46da47f46547d7d0c4f2fb2c95234c768c0c5b290924"
+    },
+    "repo/experimental/world.mjs": {
+      "bytes": 4262,
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    "repo/experimental/world.test.mjs": {
+      "bytes": 3667,
+      "sha256": "6e24d444958166b215b3c083fa3ea368629e221d1f212b80f009f11ae50a819c"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "approved": true,
+  "scope": "PILOT_ONLY",
+  "phase": "pilot",
+  "lockSha256": "e3d86cb6949fc952525a93224b7d3c61477d37e47342ace76e25bf9fbd9afb37",
+  "sourceManifestSha256": "f3a3fcb26e592c889b8b09a3b9b894d5ec824b5daa4c903a5262ec5f1dcc9c07",
+  "closedInputsVerified": 115,
+  "sourceFilesVerified": 60,
+  "pilotTasksPreflighted": 192,
+  "independentSyntheticTests": {
+    "passed": 50,
+    "failed": 0
+  },
+  "offlineEvidence": {
+    "reportSha256": "c8cbaee4aa325c4010bfa995a8ce08a9ca1d415c11efe194ccda61e8c4a73586",
+    "tasks": 192,
+    "scientificRows": 215165,
+    "decisions": 172032,
+    "perceptHashesReplayed": 344064,
+    "events": 34812,
+    "checkpoints": 5760,
+    "dictionaryDefinitions": 172559,
+    "dictionaryReferences": 946795,
+    "storedBytes": 65726382,
+    "controllerCalls": 0,
+    "negativeCasesSourceAndReceiptsReviewed": 35
+  },
+  "checks": [
+    "All final source, closed inputs,192 output file hashes and acceptance-source hashes independently verified",
+    "All scientific fields/order compare exactly after only the five approved technical-proof changes",
+    "Ordered task proof identities, dictionary exact-content identities, versioned chained256-record blocks and corruption rejection reviewed",
+    "Native src, benchmark wrapper and task timing code unchanged from compact pilot002",
+    "Prospective v2 changes evaluationCPU24to36h only; pilot caps,8wallh,16GiB,12clusters,4224tasks and scientific/statistical inputs preserved"
+  ],
+  "proofCaveat": "Individual report/comparison digests are not reconstructible from task commitments; this explicitly approved proof-inspectability reduction is not lossless metadata encoding. Scientific fields/checks/witnesses retained; percept and dictionary identities reconstruct exactly.",
+  "limits": [
+    "Offline storage reduction is not runtime feasibility certification",
+    "A final separately released runtime pilot is required before full feasibility disposition",
+    "Exact-lock verified Git publication and explicit single-use root release still required"
+  ],
+  "evaluationApproved": false,
+  "opponentSearchApproved": false,
+  "executionAuthorized": false
+}

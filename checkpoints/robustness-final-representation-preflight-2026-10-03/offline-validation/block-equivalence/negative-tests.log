@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "fixture": "pilot-cdev-a-arena-mirror-x-mind-full-s0-b0",
+  "tests": 25,
+  "results": [
+    {
+      "name": "receipt-fileSha256",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-sha256",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-recordSequenceSha256",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-chainTail",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-rows",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-blocks",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-bytes",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-uncompressedBytes",
+      "status": "REJECTED"
+    },
+    {
+      "name": "receipt-format",
+      "status": "REJECTED"
+    },
+    {
+      "name": "proof-seat",
+      "status": "REJECTED"
+    },
+    {
+      "name": "proof-task",
+      "status": "REJECTED"
+    },
+    {
+      "name": "proof-count",
+      "status": "REJECTED"
+    },
+    {
+      "name": "proof-sequence-count",
+      "status": "REJECTED"
+    },
+    {
+      "name": "definition-alias",
+      "status": "REJECTED"
+    },
+    {
+      "name": "forward-reference",
+      "status": "REJECTED"
+    },
+    {
+      "name": "duplicate-definition-content",
+      "status": "REJECTED"
+    },
+    {
+      "name": "decision-order",
+      "status": "REJECTED"
+    },
+    {
+      "name": "retained-redundant-proof",
+      "status": "REJECTED"
+    },
+    {
+      "name": "commitment-entry-order",
+      "status": "DIFFERENT"
+    },
+    {
+      "name": "commitment-task-identity",
+      "status": "DIFFERENT"
+    },
+    {
+      "name": "commitment-seat-identity",
+      "status": "DIFFERENT"
+    },
+    {
+      "name": "commitment-presence-marker",
+      "status": "DIFFERENT"
+    },
+    {
+      "name": "commitment-sequence-name",
+      "status": "DIFFERENT"
+    },
+    {
+      "name": "commitment-entry-deletion",
+      "status": "DIFFERENT"
+    },
+    {
+      "name": "commitment-entry-insertion",
+      "status": "DIFFERENT"
+    }
+  ],
+  "verifierSha256": "6d380200e3af2698a227d55d54346d6d38fc4e25fcfb125f2534a99d4ae2a316",
+  "scope": "Offline corruption, framing, definition alias/reference and independently constructed commitment identity/order/presence negative tests. No controllers or new bouts."
+}

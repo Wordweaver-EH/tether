@@ -1,0 +1,303 @@
+1/192 PASS pilot-cdev-a-arena-mirror-x-conventional-s0-b0
+2/192 PASS pilot-cdev-a-arena-mirror-x-conventional-s0-b1
+3/192 PASS pilot-cdev-a-arena-mirror-x-conventional-s1-b0
+4/192 PASS pilot-cdev-a-arena-mirror-x-conventional-s1-b1
+5/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b0
+6/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b1
+7/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b0
+8/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b1
+9/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b0
+10/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b1
+11/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b0
+12/192 PASS pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b1
+13/192 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b0
+14/192 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b1
+15/192 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b0
+16/192 PASS pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b1
+17/192 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b0
+18/192 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b1
+19/192 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b0
+20/192 PASS pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b1
+21/192 PASS pilot-cdev-a-arena-mirror-x-mind-full-s0-b0
+22/192 PASS pilot-cdev-a-arena-mirror-x-mind-full-s0-b1
+23/192 PASS pilot-cdev-a-arena-mirror-x-mind-full-s1-b0
+24/192 PASS pilot-cdev-a-arena-mirror-x-mind-full-s1-b1
+25/192 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b0
+26/192 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b1
+27/192 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b0
+28/192 PASS pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b1
+29/192 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b0
+30/192 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b1
+31/192 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b0
+32/192 PASS pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b1
+33/192 PASS pilot-cdev-a-default-conventional-s0-b0
+34/192 PASS pilot-cdev-a-default-conventional-s0-b1
+35/192 PASS pilot-cdev-a-default-conventional-s1-b0
+36/192 PASS pilot-cdev-a-default-conventional-s1-b1
+37/192 PASS pilot-cdev-a-default-conventional-useful-2x-s0-b0
+38/192 PASS pilot-cdev-a-default-conventional-useful-2x-s0-b1
+39/192 PASS pilot-cdev-a-default-conventional-useful-2x-s1-b0
+40/192 PASS pilot-cdev-a-default-conventional-useful-2x-s1-b1
+41/192 PASS pilot-cdev-a-default-conventional-useful-4x-s0-b0
+42/192 PASS pilot-cdev-a-default-conventional-useful-4x-s0-b1
+43/192 PASS pilot-cdev-a-default-conventional-useful-4x-s1-b0
+44/192 PASS pilot-cdev-a-default-conventional-useful-4x-s1-b1
+45/192 PASS pilot-cdev-a-default-mind-broadcast-cut-s0-b0
+46/192 PASS pilot-cdev-a-default-mind-broadcast-cut-s0-b1
+47/192 PASS pilot-cdev-a-default-mind-broadcast-cut-s1-b0
+48/192 PASS pilot-cdev-a-default-mind-broadcast-cut-s1-b1
+49/192 PASS pilot-cdev-a-default-mind-fixed-metacog-s0-b0
+50/192 PASS pilot-cdev-a-default-mind-fixed-metacog-s0-b1
+51/192 PASS pilot-cdev-a-default-mind-fixed-metacog-s1-b0
+52/192 PASS pilot-cdev-a-default-mind-fixed-metacog-s1-b1
+53/192 PASS pilot-cdev-a-default-mind-full-s0-b0
+54/192 PASS pilot-cdev-a-default-mind-full-s0-b1
+55/192 PASS pilot-cdev-a-default-mind-full-s1-b0
+56/192 PASS pilot-cdev-a-default-mind-full-s1-b1
+57/192 PASS pilot-cdev-a-default-mind-learning-frozen-s0-b0
+58/192 PASS pilot-cdev-a-default-mind-learning-frozen-s0-b1
+59/192 PASS pilot-cdev-a-default-mind-learning-frozen-s1-b0
+60/192 PASS pilot-cdev-a-default-mind-learning-frozen-s1-b1
+61/192 PASS pilot-cdev-a-default-mind-no-novelty-s0-b0
+62/192 PASS pilot-cdev-a-default-mind-no-novelty-s0-b1
+63/192 PASS pilot-cdev-a-default-mind-no-novelty-s1-b0
+64/192 PASS pilot-cdev-a-default-mind-no-novelty-s1-b1
+65/192 PASS pilot-cdev-b-arena-mirror-x-conventional-s0-b0
+66/192 PASS pilot-cdev-b-arena-mirror-x-conventional-s0-b1
+67/192 PASS pilot-cdev-b-arena-mirror-x-conventional-s1-b0
+68/192 PASS pilot-cdev-b-arena-mirror-x-conventional-s1-b1
+69/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b0
+70/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b1
+71/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b0
+72/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b1
+73/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b0
+74/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b1
+75/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b0
+76/192 PASS pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b1
+77/192 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b0
+78/192 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b1
+79/192 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b0
+80/192 PASS pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b1
+81/192 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b0
+82/192 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b1
+83/192 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b0
+84/192 PASS pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b1
+85/192 PASS pilot-cdev-b-arena-mirror-x-mind-full-s0-b0
+86/192 PASS pilot-cdev-b-arena-mirror-x-mind-full-s0-b1
+87/192 PASS pilot-cdev-b-arena-mirror-x-mind-full-s1-b0
+88/192 PASS pilot-cdev-b-arena-mirror-x-mind-full-s1-b1
+89/192 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b0
+90/192 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b1
+91/192 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b0
+92/192 PASS pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b1
+93/192 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b0
+94/192 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b1
+95/192 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b0
+96/192 PASS pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b1
+97/192 PASS pilot-cdev-b-default-conventional-s0-b0
+98/192 PASS pilot-cdev-b-default-conventional-s0-b1
+99/192 PASS pilot-cdev-b-default-conventional-s1-b0
+100/192 PASS pilot-cdev-b-default-conventional-s1-b1
+101/192 PASS pilot-cdev-b-default-conventional-useful-2x-s0-b0
+102/192 PASS pilot-cdev-b-default-conventional-useful-2x-s0-b1
+103/192 PASS pilot-cdev-b-default-conventional-useful-2x-s1-b0
+104/192 PASS pilot-cdev-b-default-conventional-useful-2x-s1-b1
+105/192 PASS pilot-cdev-b-default-conventional-useful-4x-s0-b0
+106/192 PASS pilot-cdev-b-default-conventional-useful-4x-s0-b1
+107/192 PASS pilot-cdev-b-default-conventional-useful-4x-s1-b0
+108/192 PASS pilot-cdev-b-default-conventional-useful-4x-s1-b1
+109/192 PASS pilot-cdev-b-default-mind-broadcast-cut-s0-b0
+110/192 PASS pilot-cdev-b-default-mind-broadcast-cut-s0-b1
+111/192 PASS pilot-cdev-b-default-mind-broadcast-cut-s1-b0
+112/192 PASS pilot-cdev-b-default-mind-broadcast-cut-s1-b1
+113/192 PASS pilot-cdev-b-default-mind-fixed-metacog-s0-b0
+114/192 PASS pilot-cdev-b-default-mind-fixed-metacog-s0-b1
+115/192 PASS pilot-cdev-b-default-mind-fixed-metacog-s1-b0
+116/192 PASS pilot-cdev-b-default-mind-fixed-metacog-s1-b1
+117/192 PASS pilot-cdev-b-default-mind-full-s0-b0
+118/192 PASS pilot-cdev-b-default-mind-full-s0-b1
+119/192 PASS pilot-cdev-b-default-mind-full-s1-b0
+120/192 PASS pilot-cdev-b-default-mind-full-s1-b1
+121/192 PASS pilot-cdev-b-default-mind-learning-frozen-s0-b0
+122/192 PASS pilot-cdev-b-default-mind-learning-frozen-s0-b1
+123/192 PASS pilot-cdev-b-default-mind-learning-frozen-s1-b0
+124/192 PASS pilot-cdev-b-default-mind-learning-frozen-s1-b1
+125/192 PASS pilot-cdev-b-default-mind-no-novelty-s0-b0
+126/192 PASS pilot-cdev-b-default-mind-no-novelty-s0-b1
+127/192 PASS pilot-cdev-b-default-mind-no-novelty-s1-b0
+128/192 PASS pilot-cdev-b-default-mind-no-novelty-s1-b1
+129/192 PASS pilot-cdev-c-arena-mirror-x-conventional-s0-b0
+130/192 PASS pilot-cdev-c-arena-mirror-x-conventional-s0-b1
+131/192 PASS pilot-cdev-c-arena-mirror-x-conventional-s1-b0
+132/192 PASS pilot-cdev-c-arena-mirror-x-conventional-s1-b1
+133/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b0
+134/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b1
+135/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b0
+136/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b1
+137/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b0
+138/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b1
+139/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b0
+140/192 PASS pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b1
+141/192 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b0
+142/192 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b1
+143/192 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b0
+144/192 PASS pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b1
+145/192 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b0
+146/192 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b1
+147/192 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b0
+148/192 PASS pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b1
+149/192 PASS pilot-cdev-c-arena-mirror-x-mind-full-s0-b0
+150/192 PASS pilot-cdev-c-arena-mirror-x-mind-full-s0-b1
+151/192 PASS pilot-cdev-c-arena-mirror-x-mind-full-s1-b0
+152/192 PASS pilot-cdev-c-arena-mirror-x-mind-full-s1-b1
+153/192 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b0
+154/192 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b1
+155/192 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b0
+156/192 PASS pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b1
+157/192 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b0
+158/192 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b1
+159/192 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b0
+160/192 PASS pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b1
+161/192 PASS pilot-cdev-c-default-conventional-s0-b0
+162/192 PASS pilot-cdev-c-default-conventional-s0-b1
+163/192 PASS pilot-cdev-c-default-conventional-s1-b0
+164/192 PASS pilot-cdev-c-default-conventional-s1-b1
+165/192 PASS pilot-cdev-c-default-conventional-useful-2x-s0-b0
+166/192 PASS pilot-cdev-c-default-conventional-useful-2x-s0-b1
+167/192 PASS pilot-cdev-c-default-conventional-useful-2x-s1-b0
+168/192 PASS pilot-cdev-c-default-conventional-useful-2x-s1-b1
+169/192 PASS pilot-cdev-c-default-conventional-useful-4x-s0-b0
+170/192 PASS pilot-cdev-c-default-conventional-useful-4x-s0-b1
+171/192 PASS pilot-cdev-c-default-conventional-useful-4x-s1-b0
+172/192 PASS pilot-cdev-c-default-conventional-useful-4x-s1-b1
+173/192 PASS pilot-cdev-c-default-mind-broadcast-cut-s0-b0
+174/192 PASS pilot-cdev-c-default-mind-broadcast-cut-s0-b1
+175/192 PASS pilot-cdev-c-default-mind-broadcast-cut-s1-b0
+176/192 PASS pilot-cdev-c-default-mind-broadcast-cut-s1-b1
+177/192 PASS pilot-cdev-c-default-mind-fixed-metacog-s0-b0
+178/192 PASS pilot-cdev-c-default-mind-fixed-metacog-s0-b1
+179/192 PASS pilot-cdev-c-default-mind-fixed-metacog-s1-b0
+180/192 PASS pilot-cdev-c-default-mind-fixed-metacog-s1-b1
+181/192 PASS pilot-cdev-c-default-mind-full-s0-b0
+182/192 PASS pilot-cdev-c-default-mind-full-s0-b1
+183/192 PASS pilot-cdev-c-default-mind-full-s1-b0
+184/192 PASS pilot-cdev-c-default-mind-full-s1-b1
+185/192 PASS pilot-cdev-c-default-mind-learning-frozen-s0-b0
+186/192 PASS pilot-cdev-c-default-mind-learning-frozen-s0-b1
+187/192 PASS pilot-cdev-c-default-mind-learning-frozen-s1-b0
+188/192 PASS pilot-cdev-c-default-mind-learning-frozen-s1-b1
+189/192 PASS pilot-cdev-c-default-mind-no-novelty-s0-b0
+190/192 PASS pilot-cdev-c-default-mind-no-novelty-s0-b1
+191/192 PASS pilot-cdev-c-default-mind-no-novelty-s1-b0
+192/192 PASS pilot-cdev-c-default-mind-no-novelty-s1-b1
+{
+  "status": "PASS",
+  "sourceManifestNote": "Actual pilot002 source repo-compact verified against COMPACT-SOURCE-MANIFEST; saved pilot002 raw/results validated against immutable PILOT002-FILE-MANIFEST. Frozen physics verified against original PILOT-SOURCE-MANIFEST. Unexecuted repo-pilot002 reference is outside acceptance scope.",
+  "scope": "All192 saved pilot002 tasks; offline representation conversion and frozen recorded-control replay only. No controllers, new bouts, selection, training, or evaluation release.",
+  "metadataLoss": "Individual actual-report and native-compared-field proof digests cannot be reconstructed from sequence commitments. Every scientific field is exact; definition hashes reconstruct exactly; every legal percept digest is independently reconstructed. No claim of lossless retention of all proof bytes.",
+  "begun": "2026-10-03T05:46:33.961Z",
+  "completed": "2026-10-03T05:48:52.976Z",
+  "tasks": 192,
+  "totals": {
+    "ticks": 691200,
+    "decisions": 172032,
+    "perceptHashes": 344064,
+    "events": 34812,
+    "checkpoints": 5760,
+    "scientificRows": 215165,
+    "definitions": 172559,
+    "dictionaryReferences": 946795,
+    "originalBytes": 108234050,
+    "amendedBytes": 65726382
+  },
+  "mutationTests": [
+    "physical-corruption",
+    "truncation",
+    "member-reorder-rehashed-physical",
+    "bad-crc-rehashed-physical",
+    "row-reorder-rehashed-physical",
+    "row-delete-rehashed-physical",
+    "row-insert-rehashed-physical",
+    "row-change-rehashed-physical",
+    "missing-final-observer-proof",
+    "misplaced-final-observer-proof"
+  ],
+  "preservedBefore": {
+    "pilotFiles": 507,
+    "pilotSourceFiles": 56
+  },
+  "preservedAfter": {
+    "pilotFiles": 507,
+    "pilotSourceFiles": 56
+  },
+  "sources": [
+    {
+      "path": "REPRESENTATION-AMENDMENT-PROOF-MAP.md",
+      "sha256": "8de26e2b1fc45e574ade551d1b0d29cae71074de0059abe033f472434c2e1ec0"
+    },
+    {
+      "path": "PILOT002-FILE-MANIFEST.json",
+      "sha256": "af4c522ebbf24e070e64099cfeaa1b3b50c602399f142c1ab312b78ac7823854"
+    },
+    {
+      "path": "COMPACT-SOURCE-MANIFEST.json",
+      "sha256": "058bb56bad3cd00f8052a00881d1a56b356e0a5680242cc16d1cbec429b01a3f"
+    },
+    {
+      "path": "COMPACT-PILOT-LOCK.json",
+      "sha256": "8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584"
+    },
+    {
+      "path": "offline-validation/physics-replay.mjs",
+      "sha256": "01bc1a9a25081238f4c332c2b7608160137ed5c27b9c7711f542717f22a4979f"
+    },
+    {
+      "path": "offline-validation/block-equivalence/acceptance.mjs",
+      "sha256": "f1abfef0beb96e7dbabe2bfc2ec9b087f3dede4c7c390883d3f94b450b422ce5"
+    },
+    {
+      "path": "repo-final/experimental/proof-representation.mjs",
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "path": "repo-final/experimental/block-stream.mjs",
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "path": "repo-final/experimental/raw-stream.mjs",
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    }
+  ],
+  "frozenPhysics": [
+    {
+      "path": "src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "path": "experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "path": "experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "path": "experimental/task.mjs",
+      "sha256": "53ae72240043fa8c0609dcda2b8de6a1b43278544dbb2dea22bca048e3a4d8ce"
+    },
+    {
+      "path": "benchmark/interface.mjs",
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    }
+  ],
+  "controllerCalls": 0,
+  "newGameplayDecisions": 0,
+  "wallMs": 139014.559547,
+  "cpuUserUs": 148949514,
+  "cpuSystemUs": 3285826,
+  "prospectiveCeiling": "36 CPU-hours applies only to separately released later evaluation; this receipt confers no runtime-pilot or full-evaluation release."
+}

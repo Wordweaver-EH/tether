@@ -1,0 +1,10 @@
+file:///workspace/scratch/75679def3745/tether-robustness-shifts/offline-validation/block-equivalence/acceptance.mjs:10
+const eq=(a,b,l)=>{if(!isDeepStrictEqual(a,b))throw new Error(l+' mismatch: '+serialize(a).slice(0,400)+' vs '+serialize(b).slice(0,400));};
+                                                    ^
+
+Error: sensor time mismatch: 0.7666666666666666 vs 0.7666666666666667
+    at eq (file:///workspace/scratch/75679def3745/tether-robustness-shifts/offline-validation/block-equivalence/acceptance.mjs:10:53)
+    at replay (file:///workspace/scratch/75679def3745/tether-robustness-shifts/offline-validation/block-equivalence/acceptance.mjs:21:1144)
+    at file:///workspace/scratch/75679def3745/tether-robustness-shifts/offline-validation/block-equivalence/acceptance.mjs:26:699
+
+Node.js v24.19.0

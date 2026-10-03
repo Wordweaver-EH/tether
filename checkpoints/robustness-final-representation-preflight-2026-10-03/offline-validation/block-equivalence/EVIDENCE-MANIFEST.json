@@ -1,0 +1,1985 @@
+{
+  "status": "OFFLINE_ACCEPTANCE_PASS",
+  "files": [
+    {
+      "path": "NEGATIVE-TESTS.json",
+      "bytes": 2318,
+      "sha256": "07d1be9fe6ae315d591bad7bfe3cbe6bac938ad8f8d530d9b39e54f90c6f9bb9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3981,
+      "sha256": "30d949145b978926816a527ff3b5559bb3e9151b1dc885631fc27905852ef713"
+    },
+    {
+      "path": "REPORT.json",
+      "bytes": 4255,
+      "sha256": "c8cbaee4aa325c4010bfa995a8ce08a9ca1d415c11efe194ccda61e8c4a73586"
+    },
+    {
+      "path": "SOURCE-AUDIT.json",
+      "bytes": 4057,
+      "sha256": "5bbd55fcad64bb73fcd5adb3a55fef99d456927ebdba3cb2137f3771e3071a84"
+    },
+    {
+      "path": "acceptance.mjs",
+      "bytes": 13565,
+      "sha256": "f1abfef0beb96e7dbabe2bfc2ec9b087f3dede4c7c390883d3f94b450b422ce5"
+    },
+    {
+      "path": "negative-tests.log",
+      "bytes": 2318,
+      "sha256": "07d1be9fe6ae315d591bad7bfe3cbe6bac938ad8f8d530d9b39e54f90c6f9bb9"
+    },
+    {
+      "path": "negative-tests.mjs",
+      "bytes": 3690,
+      "sha256": "6d380200e3af2698a227d55d54346d6d38fc4e25fcfb125f2534a99d4ae2a316"
+    },
+    {
+      "path": "preflight-raw/pilot-cdev-a-arena-mirror-x-conventional-s0-b0.jsonl.gz",
+      "bytes": 196081,
+      "sha256": "f2faa5eab03543374dc1fcead718c8b37f4350b93f68881ddf8fb575269a2068"
+    },
+    {
+      "path": "preflight-sensor-clock.log",
+      "bytes": 807,
+      "sha256": "9aacd82d5faf73a3db241c5db683b4d95b4077979135986311a9e80d964ce9fe"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-s0-b0.jsonl.gz",
+      "bytes": 196081,
+      "sha256": "f2faa5eab03543374dc1fcead718c8b37f4350b93f68881ddf8fb575269a2068"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-s0-b1.jsonl.gz",
+      "bytes": 193707,
+      "sha256": "a299dfd73fc50d1b937a64c6c36b06032a1e0cf4e623ea687ef967f4881395de"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-s1-b0.jsonl.gz",
+      "bytes": 193824,
+      "sha256": "dc8589967609a0e8961ea2ef216eb265cc070edd8cce711ab15eaa9ba43fd7ad"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-s1-b1.jsonl.gz",
+      "bytes": 193133,
+      "sha256": "e96d2fdc85e22090c9af6c96d01007710c42e69e6e5bf0362ed4f37dfbc9401c"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 142355,
+      "sha256": "85665b4f3b3912fa815e1626c1090bd042560d0627cccf1e26df4d2e439b770b"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 142791,
+      "sha256": "7ebac53994f109d7adb407b0c7822ba9292f76f072706c2a81a99ef00288ca3c"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 138033,
+      "sha256": "2d715f94988eff4631662d2c594a7975c5c4959923b0ab80935f13fad5604d3c"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 151544,
+      "sha256": "a1e210d8d574e6de03d5e00b9ca6aa2485b0af01831ac72f0fc79e592cc3c8c1"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 176322,
+      "sha256": "1c640d46bd58eb5314b1d0fd5d8f4a85aaf6efa239422a188cb569b4687d2177"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 180354,
+      "sha256": "28b8be8fb8cf4e50cf4bcded04675999f92a2469fd87d408f5129ae08847ed7d"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 160694,
+      "sha256": "3196991e5d313e9a0907bc9684829ab8a105ca9d181eba9b0503a2540ab496bd"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 177979,
+      "sha256": "097762693c567435608cfdae7b63d396d843bdf3d8d93e08ba24ca30b3ae56e0"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 445443,
+      "sha256": "f9c579df9dbd172620e052a72fa70aecf59f6ddfa724588d5a571b84e885eb18"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 445397,
+      "sha256": "718b4276ab81a655a5cfd0c72502c07d0579723bef04ddc77ebf2dcae3a1f705"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 442877,
+      "sha256": "d396f2bcd1fc1b22da3afbf80ad7e64d595032bcd8daf97858cf9890a5de8d74"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 435314,
+      "sha256": "8900758153779c884567aed27b39bbdb0c69b0e6128225e64e54ce2a4d5e7817"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 460086,
+      "sha256": "de01fdeed4e4737f8b98ceef114dfdb0c5607dcfdddd5ee4f753f48f3835a663"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 450141,
+      "sha256": "0e6afd0a990b715189356984e1d1f6b1ab04cf0837bf5e0f6c928fb8d143a634"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 442066,
+      "sha256": "e837bc03e5aa41f0a15015396e5f38b0ac2b0ad568a6ae8945550975a9976c23"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 456148,
+      "sha256": "0595ed9f396a76b1dbac1599ce09bc525f62fb559dcfb8d08f83fcd7f2fb121d"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-full-s0-b0.jsonl.gz",
+      "bytes": 451175,
+      "sha256": "e85168a0356b66c8af6438bd563f433ea04e8b3c7ececd9d143dccf67186ef1b"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-full-s0-b1.jsonl.gz",
+      "bytes": 461140,
+      "sha256": "81028a437e728d4512f3153dc016647c8c581eb689b251a62801a4acdbd8651b"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-full-s1-b0.jsonl.gz",
+      "bytes": 443704,
+      "sha256": "ce6fd7bfba735a84b97177d53c2414a13fb83016f1506d5d4664a3c7738b851f"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-full-s1-b1.jsonl.gz",
+      "bytes": 462077,
+      "sha256": "9a6c184cc767dfdf4b3cdfc7f3c5826e7eba8563e01fc74822f4936d7b4c1f7f"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 451022,
+      "sha256": "e7d9b30de43755970414f12492c2977cf1e46f7e2dda984f173093d38305c986"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 463786,
+      "sha256": "6abe1c1c88550f0ceac47926ca6719b62e9a9b0f4799a6a8d1bd6f410fa17ea8"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 446358,
+      "sha256": "af7d2a4bf90dc1115139926631e2905bbf6d9ad4b265cf5202df77781b3fffd4"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 460120,
+      "sha256": "e2b836b8ee6f68a2a14f4f94e58ce866719dd7381afa40b78d40cccf03a324f3"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 451035,
+      "sha256": "071e8d122fb57ad48c411341a444961481cc3216ce599ad7aa0eac2a98e1124c"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 461182,
+      "sha256": "a059acd814f99592791472657ef15bbd86dbe8db29fbbe762db581f844d8cd56"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 465600,
+      "sha256": "78af39553d45adbdfb74ee6b4bc49df36b85708e4704e30f612bbca739d4802f"
+    },
+    {
+      "path": "raw/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 416537,
+      "sha256": "b0a1c8bae527a3bd5602ca15e99a34beb2dc78133d0cd78f284fa9de031790ba"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-s0-b0.jsonl.gz",
+      "bytes": 197825,
+      "sha256": "54064b0b73ec53d38f3286587d220df698528097a03b55432d270bc9a65dee79"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-s0-b1.jsonl.gz",
+      "bytes": 197343,
+      "sha256": "c8c02aa5fd6c4eaba7858c6ea75dd7ad8d33ae7bece0bb6e428f4f2948ddda28"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-s1-b0.jsonl.gz",
+      "bytes": 197130,
+      "sha256": "7a86113866263f4d6c03197e472050d72584c0d2a03ee782ec8e3ecb730c810c"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-s1-b1.jsonl.gz",
+      "bytes": 197007,
+      "sha256": "e7eb4c5b45fee07b77c1e70ec4d3adf4febe0519fe4937b136c718a3980799ab"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 141763,
+      "sha256": "0b000743553067e4aa3357b61949ab7007901a6f458e5c841fae6e7efb48a37a"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 141289,
+      "sha256": "17dc487e48e13f70f5a0df01b4776858b6e65e134ccf9f418cdcb69e84f686ac"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 138989,
+      "sha256": "001ef9d892de56846fcb3b5c12022c3ce6d8c1a140da6d1f6a0aee4d57302db9"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 138985,
+      "sha256": "f8dab7efcec1926defedbb66dfb2891ff1d0cd0ebcdeae4d3684dfea58ba183c"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 170987,
+      "sha256": "4a175e3dac1a3df9b0c1cbe884d641370c71d9faa40255085594143c2375add8"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 151585,
+      "sha256": "b1a1c09cec1f4954a1e963bb10957a59b9bbbb5e92de3b4e29031ffa4b262b1e"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 149102,
+      "sha256": "7d8601aa648a38060d9a507d82224cfb622bf33751b8e42d141e95996a139fbd"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 148612,
+      "sha256": "3b3305810d4a04ac2fccbba0bdef9210ff5bf347d3db8f930f0b1e068f4869e7"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 434565,
+      "sha256": "029433a60db9248565bf704f83e93e8b01e2b30a63789b6fee4b75a4158b7d56"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 441993,
+      "sha256": "2a67690b5378bc0d50121fae6faeef9dc08f7c3d73d34fd21e0a33c631c45c6a"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 443800,
+      "sha256": "5ab5a86b938d1a78b04572164a9fc10cb27aa641730ca8515bfc78a34bcf3106"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 445219,
+      "sha256": "b5e41f9a4d3808325bda3b05b61bb482cc7ccddcc3ebd519273536d43da4688e"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 459826,
+      "sha256": "15cebc370939254e959037aeadcff229cfcaaeed7d963dd5685ed40225d0030b"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 450651,
+      "sha256": "9c997c57c14b3d9b2978dac3f14fab70965029ad4b48317a3f98218f882a5f4a"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 463133,
+      "sha256": "1c28808e1aeea181b65f28a986a3d2668ebd48cc771d2eff7549853579b817e8"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 463261,
+      "sha256": "cfd3265d303c43ef7309d0ccc57e9ad76dd969ebe1a9fa57f737d63ce96ea03f"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-full-s0-b0.jsonl.gz",
+      "bytes": 450668,
+      "sha256": "8ee7c54d4351a35ec6dce05f771f75d849d2b7db58d3efaeb696b556686deba6"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-full-s0-b1.jsonl.gz",
+      "bytes": 457108,
+      "sha256": "277a716e83689934a20fe0eb45c9abaec8b0c49194f0a857f262e19e7377877a"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-full-s1-b0.jsonl.gz",
+      "bytes": 456344,
+      "sha256": "063758825cc23bef935f1a7a9fb7aa7dab7ab4c5d3c7961d8fa3eb1eb42e8dcc"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-full-s1-b1.jsonl.gz",
+      "bytes": 460691,
+      "sha256": "543997394f92194a344af14369316315fb8ba775645b6815dc8b5cf7ad4ae2f5"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 455415,
+      "sha256": "eeb7ef06957ff0c143174209260d8d847bc91a01a412427dcb8c48cb79ebb1f6"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 449905,
+      "sha256": "5a06e773d27618cec40c03263b1c1153a54e4c6cb1f7bc13309c580e406a24cf"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 471580,
+      "sha256": "01988d6e27608540c8405d811cfdf0f8b2855ec1e29e95094f2a21ed40f93a44"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 470702,
+      "sha256": "37937b4a74d4d7ce4591d5423c56be6900e5db9badf4ca5001da5a070ef45b57"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 450227,
+      "sha256": "f03e4c3b9895fdab43201cacae2aff442751465b3df62f1436be501dcf898cb9"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 457083,
+      "sha256": "a6f09704565ee0d6ba8c440badb36df5a67b426b1a313ae2c827c3636171e3f3"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 462505,
+      "sha256": "818aaa971468beec23821311dd2e5b35efa01bf499368242926b233c29e6621a"
+    },
+    {
+      "path": "raw/pilot-cdev-a-default-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 460928,
+      "sha256": "01e2a0bed28fcb33fceab738a705ab44b1603638ba522e2f849e04179c545ddb"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-s0-b0.jsonl.gz",
+      "bytes": 194444,
+      "sha256": "ebcc73cf9b5c9aa0fd802719adb9099c8e6f34f8891f334c6590987c67d8c5a5"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-s0-b1.jsonl.gz",
+      "bytes": 194765,
+      "sha256": "656350635c651ac5910031567177828fcb36c6f530201869f001ca94c6bf3d64"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-s1-b0.jsonl.gz",
+      "bytes": 195526,
+      "sha256": "23f5c714197a1a407b2029d8fa90db7b1cde8689d8b295810874d186a5e2de6a"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-s1-b1.jsonl.gz",
+      "bytes": 195410,
+      "sha256": "a94bc7ef0466cb39f890acb9f1e544cf1ca0180587d977e1794e32b185e297cc"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 148575,
+      "sha256": "1dd37c678f1458fd167711397b04eb3bff0d90b5c0639af01493da600bdcbdae"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 178436,
+      "sha256": "aa586f2282f9f26bb02b38ddcfb532e45b852dacb3c2f1f85330b25a77532b50"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 173779,
+      "sha256": "8f7ffac61f473e98338d5517aafe6c87826092c3427067281898c8b07bcfec55"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 170083,
+      "sha256": "6a2ecd58f315844225e014da20058d47cddee2daf157a641f7675504a4537fbd"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 178057,
+      "sha256": "a77fc258e3846fecd0c48d7168deae679fb00720008b0d4a097f7656bf92f97b"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 185053,
+      "sha256": "2294b87eca5e5096c8ed42d624fb771952f0ee4ca6b7e32efe8a3cf9c93637a5"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 164547,
+      "sha256": "f020d4bea402f80884bb02038fde15b29111dbcc790bbb002b61921cdddaddd1"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 170510,
+      "sha256": "6d0aa2ebdb74ac0d30e933330ec8342ece359d44bc866251365abdb32351aca7"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 449249,
+      "sha256": "9d37dff67a8c308a03b30fdd2a2b02e514988fb6951cb2a611e1ee9b687f7e95"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 451680,
+      "sha256": "23c2197e14601fae6950a9ce4355a2dc36439754a41edc69a35705bc616522b4"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 440593,
+      "sha256": "0a6777a3e9179bcd4188a4def7955e8a7c137426be9f3b4c2032bf5090125752"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 442059,
+      "sha256": "8ee818b9332d69777cd944b89e9bfd84b15f5a113b218f6a19539d2148eed830"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 463536,
+      "sha256": "c5748f0dacc88bdea06bd534236877a46295937610408f57d48145b0b4a55f2a"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 465337,
+      "sha256": "85de04ccc73a9f28e60a6a78879a427ed8ad2305dfe24b77b61d55bc58127699"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 458110,
+      "sha256": "fd0607bacb7adcb0c2689a0cac13a89fd19120b803795408979df07d2950d52b"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 465130,
+      "sha256": "405ef96ea1cc768f7cb7cbd31f2b7da8fa295f67ba0eae37e28da2988923f6dd"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-full-s0-b0.jsonl.gz",
+      "bytes": 464095,
+      "sha256": "e7a42926aafa2df306f0c3ef5c001a50f0262701143260a6d8962d3f4356b646"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-full-s0-b1.jsonl.gz",
+      "bytes": 467137,
+      "sha256": "dd5615f5f5e03102cd5d185466d0ebf33765053836c49d83933f991f673cb195"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-full-s1-b0.jsonl.gz",
+      "bytes": 463104,
+      "sha256": "1943310eafeb6d6ac40c5ee3992588fc60958649ef6dac29168cfea89ce98bab"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-full-s1-b1.jsonl.gz",
+      "bytes": 457058,
+      "sha256": "77a26b1fd5d9b3b0e6c2c27db5c8d6bb75bc9633ceb3fab3cd3ba1d18a2491b2"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 459144,
+      "sha256": "bb4dad6f9cf4cead809c20541e722ba080e479ccaad5cc6ac2ee00c5fe892f95"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 455935,
+      "sha256": "ecb42d778bbe93b5602014749670bbf82c103d3aff045a003cd5a6a2cadf1d93"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 452863,
+      "sha256": "f4b48e9a6a71dd7e604ec09ef2816c36e9ff643d84ba3a03de98dd07d0fccb3c"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 456430,
+      "sha256": "59628545e33d86b9438c9f51be9534adcaac9a8f96697ae78d5991b6fad31b9e"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 462871,
+      "sha256": "dd4f8337beb18ea809653b34d6a99d712aeb144829d6e33ff55992b82adab624"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 467346,
+      "sha256": "ea383d1bee5f5dfd927204630d77e2a4b78fae937fef2d29f4b3b5c33c2df18b"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 462937,
+      "sha256": "8242a78dae4d33fa4b2d569244eef92711fe1f557e725d5909c9d4628ae9753c"
+    },
+    {
+      "path": "raw/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 457217,
+      "sha256": "c1151cb77be187af73db85ae4ecdea98739b3a43d108b2f7b834f174c59dde1f"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-s0-b0.jsonl.gz",
+      "bytes": 196558,
+      "sha256": "03028546e983c7fb6b057a3950f876b8209223e4c89e5f9934c6b031cbf91a95"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-s0-b1.jsonl.gz",
+      "bytes": 198051,
+      "sha256": "837396558d658b6f2d96aef0db11191d2ca716343e9bfab0776a382e77d56843"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-s1-b0.jsonl.gz",
+      "bytes": 195446,
+      "sha256": "14e0e678f15cf2b7a578661143d960253fa6097b7d229479c11d3e1e91122a7c"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-s1-b1.jsonl.gz",
+      "bytes": 197217,
+      "sha256": "92df4bcf9a955fa1871cb69cf4c0440e12a9db64dcfb7be4f9dac9bdccae9208"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 143341,
+      "sha256": "4c18932c403911b3bb88e6c31b98e433fc4ad9a90554c7826670742ecb161fe0"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 155147,
+      "sha256": "04766a8eb75cb7f938736a9e1f79b7f50376ae5bb4df34b6f1d34fd8f5f61c43"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 147337,
+      "sha256": "3ab21e878b757881e298aed7e0af1977687b9c30ee54e12c221c82966d7e9f00"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 148152,
+      "sha256": "7094cc2b83c2807e4abfdb6139aef74dd99e83d3d9c3de246cab77f658ffe0a0"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 159343,
+      "sha256": "234063785e2e3b4fc9a3bb10fced2079919ae2611a1e41214273ba7f34dcd4f2"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 162909,
+      "sha256": "cde12aef842619bf011c15889044bb07684d71a85b7564f0419480feda7c6416"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 156236,
+      "sha256": "e23402abfef9e5c69bdc96792703a7fe2bd628776ecd32dadd926d756e899fb3"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 157228,
+      "sha256": "b273e5571db9eb93e044bfbcf9a844c63654bef2c3f186a6bca1317227cd866f"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 452252,
+      "sha256": "52752314347013ed388fe7c364d6a20ead3b87b4be30f25c743eee7329011b37"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 448365,
+      "sha256": "02977d0efde09ae0526ea8c0d22ba76425a711acf1fa910c8eefbc6173e5522d"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 450320,
+      "sha256": "466009f498015a790f8758125661cca471ef97f5631e438ba232c1b62cbdf1ba"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 441879,
+      "sha256": "b61962dc30d4f6f3b1a4ea156bab36a1adcecaf0c8a9e5917678af5f649eca34"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 415310,
+      "sha256": "1ffe0b934aa782a69b0f660e9be550a9e41b4d086125671ec51ed7b5c234b6b2"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 468183,
+      "sha256": "fe60053ca452e0432d3c2b4bbeb78d29b118d884ee1282069f2c545308fc2be2"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 444631,
+      "sha256": "3213fc44d0d0fcdce8561a66ed3ac505eb560b4c3ef2d458d3b74ec88a7962a1"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 462786,
+      "sha256": "d097825e03ca5e558122c16229d47b65230a2ab51351224926a4bf42f9553e4d"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-full-s0-b0.jsonl.gz",
+      "bytes": 468683,
+      "sha256": "339281a5ce269f3031afff10e28dd58c1e1b64931dbf2e70c3aa8a738c3f4097"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-full-s0-b1.jsonl.gz",
+      "bytes": 463973,
+      "sha256": "b622867f21ad648568f946301235641cf069d96eecebbb29f044284b50bd1eb3"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-full-s1-b0.jsonl.gz",
+      "bytes": 443935,
+      "sha256": "7249667a928e080d800ed3070631be12d4e7afe6e874d06605e8f23663867340"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-full-s1-b1.jsonl.gz",
+      "bytes": 459264,
+      "sha256": "293eef2e302a606a06ffbf2b7243fe18e7b2117f6c1919b1fe4d1eb225325277"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 461973,
+      "sha256": "a6ff4024e49f442e0e568f13ba4c58772abde59161ff6b28c2f8708f663da30f"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 457921,
+      "sha256": "8c9e03e302cefa9b34c38e98f673a03401e5a721e87a4fecf3ac7be3f58f4c46"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 457933,
+      "sha256": "1467fd05ba8960bb8134fb4e7a5c17f865a3d5aae1657ca52b3e10030d48c53d"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 437610,
+      "sha256": "d48fce42512b333716f5408f597c894945825c15daf0bd0f1273dfc8c58de0cb"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 468253,
+      "sha256": "ce778062f0befc318265d8655ac10310b559318c4e8efd9a3dc5125ad9ae388b"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 463803,
+      "sha256": "b2a231e555020c9aa7162eaa45a3b28b5cfdb99e0c95d51f33d4a556c737f6a7"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 443936,
+      "sha256": "0285302da52f5c6f6ae3620e7594d429ec006dfe5b0f06b5e3dbd1b66d35f3bb"
+    },
+    {
+      "path": "raw/pilot-cdev-b-default-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 457703,
+      "sha256": "aba6b76f3e37dbc81492685d30ae49bc2cc8bf9b6b81f17f68abeb709ea17ee2"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-s0-b0.jsonl.gz",
+      "bytes": 182829,
+      "sha256": "996c49f474200d36bebb9e984bde371bfc4a75220ffe0bdc570991d32b53fbec"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-s0-b1.jsonl.gz",
+      "bytes": 182902,
+      "sha256": "8c3d5f838fa1002a4f3e021e407b5eeec69cfe91de402cc675aaddff82cf8017"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-s1-b0.jsonl.gz",
+      "bytes": 182939,
+      "sha256": "92f462e6a01f08ac353aabebd9dbce42eba54af3815238e0ab5eeaa57f3d8356"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-s1-b1.jsonl.gz",
+      "bytes": 182542,
+      "sha256": "be6ce45493222ea58e678753c3287b14af9c05d4ad747654821eac7f2783b24d"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 155617,
+      "sha256": "8b71abaca99adedf70d3d332e7c4b112bc3b85a11aba8280ad357330621b2dd6"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 153531,
+      "sha256": "f4b493423f6b63484e2ca8cd1c14d6747d81ed2f4821df14890e987a3e42d82f"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 153073,
+      "sha256": "d237b07d78da92559599aa062f8e532ef539c9e9f811adf7967d50dcf0d36071"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 152988,
+      "sha256": "d14a4c1959885d1f0c5b7d7b9e7f6641980e69aaa41b5ca2a790c3e9a9d3460d"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 153096,
+      "sha256": "9af360888de837ea90e230cdcc2b4c04f80087d0112a71c6e0011a3d42acd73b"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 152614,
+      "sha256": "a8a0f5bddaad01252b6ad9cb747fd917fba2c0974d5bca68868dac17b9ebddeb"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 151330,
+      "sha256": "de36f251d15922a7afcabaaca352908abea597b457c263e00dc8baa631fe6c25"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 152725,
+      "sha256": "80513368c6a197b9e69f0916f1587190c26c5b5ff4ed92bb6fbd351457068c18"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 418974,
+      "sha256": "947496e2748902b51ce0c48de715c1dc4f93f4d62e5b5fb9e880d7bfc9bcc444"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 424837,
+      "sha256": "2d69242f1b286e65f8912792e9a275036f3eabdcb4a4ad726e4a709a57da23e5"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 418528,
+      "sha256": "5857f20cb074db363b8a35da3990e60dc3a7defe1599fe29ee335b62d499c86f"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 418936,
+      "sha256": "18cb63ad9d21fbb99ac1b8618d5d5476fba2d7c760d7307e230c28a885ad45d9"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 435597,
+      "sha256": "0f5411b81aa1e107b7acd2a2604ab62b6caa90e3bd7ebff85ca4bb930ac24569"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 437566,
+      "sha256": "d7ee170478840268f95a3a34956d63d41f4a68d16dbc59143fcb30cd159b8d3c"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 429049,
+      "sha256": "e8d5d0ca7b9a1684fc9304fe13c9e424ff96f2c7ee620004a90c95e6693d3b08"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 432659,
+      "sha256": "52b942f1dcc63dcdb420af0446a8ff37c4b1918a4d283a4924e8f4b75132dc05"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-full-s0-b0.jsonl.gz",
+      "bytes": 439295,
+      "sha256": "fadbaf7a3559cf1a2f2614bf379d3267f502e4b86a588243fe1a36c0a20f40ba"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-full-s0-b1.jsonl.gz",
+      "bytes": 413873,
+      "sha256": "ad0031b5a2df0c9db397c8538c153a654019bfd42ade50f6141e6d23d4298313"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-full-s1-b0.jsonl.gz",
+      "bytes": 439042,
+      "sha256": "b7f6079d5a7a79e3109ac0363e3516459550bf383cba208a2e7caf355db7ea77"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-full-s1-b1.jsonl.gz",
+      "bytes": 437193,
+      "sha256": "e1b18e5d94374c5618f001e0b962b1a892cf18bcebecf1a1f4c68a214d963227"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 424458,
+      "sha256": "4396a2832e185573db81db8e5a322dc41c04f2f476189555908ed56c673667eb"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 420099,
+      "sha256": "fd0c8e243df218a7d908721320c4d6ebf15288ed904c61aa3c75cb3cc128fffe"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 413599,
+      "sha256": "24c408621878c3d7227c447fe22343d098070cea470f1e81f965db83e5135e74"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 410386,
+      "sha256": "2aaa36b98b1b0cb449a4bbd662ed0a8c7cf6d36fd6bd32bb5feb3f25c50882a4"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 439308,
+      "sha256": "4f0021796b3d92b8e0ef4d046fb2b998299c2776b951c0c30c6b1f373342df49"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 443641,
+      "sha256": "8e32a0caefe51333a3d0392703bafc0cddd5326c96e0752448627fca29e73444"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 439006,
+      "sha256": "bc50ffc36b3ad7f3c6b04546973a390587cb5a86ab51766202cbf87f4922c883"
+    },
+    {
+      "path": "raw/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 437045,
+      "sha256": "32e5be95a60d37a0a5068afbff3b19b26ed24aa0ba0e20dc20b6226cf81b1685"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-s0-b0.jsonl.gz",
+      "bytes": 181834,
+      "sha256": "279fce2d4149ae441e424a54b8662ad0efb91057f3b426a2d13cbb24ca5fc73d"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-s0-b1.jsonl.gz",
+      "bytes": 181954,
+      "sha256": "6ad91221760fb43101d76c3cb84592a7e0e0606f58ae7b855b23999ae00ac4bd"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-s1-b0.jsonl.gz",
+      "bytes": 181808,
+      "sha256": "1e8a1fb547341bebda184f1c4f20594a7e1eb91972d8f871fa97034cf220c3bb"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-s1-b1.jsonl.gz",
+      "bytes": 181910,
+      "sha256": "910abed35890298f09eaee44a1dda28e188e7e140af52aba8ee4c80f00ba6add"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 164543,
+      "sha256": "bb0cb592d02864c1f841e91ea5c9ab41d0a251f4741d905ece78b690ffd308b4"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 162979,
+      "sha256": "5901d4eb869c58632320a75bc50d3808eefa41c8ec82742d0e9c8b622e4a03d3"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 163723,
+      "sha256": "364f2b063f2c5395f015fe2ee21736bb20a3019f23aec419b2611f3ae43c9a80"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 160812,
+      "sha256": "b5400c1ae50c1a13e9c97f271087872edfa5e007ca8d45f2fe1919b46c6f1c2b"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 173360,
+      "sha256": "597ecc1d0b6152be8cc83bb65356c74b4b35cd23e310abb406c4309be60b7225"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 174332,
+      "sha256": "6cd0d85c447fbc62296d551aa750ca5dba53d8d22c75c9d2c8dd9a7fdbcd4352"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 170136,
+      "sha256": "524a847f9099d7afab8da457111882a42845cf6dc35ac507e75285c90ce17729"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 172134,
+      "sha256": "221190a6c4974572626d2bf7e2c767fa39f9a42d7d130b4c2c0a9ff1aa3f4f67"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 419823,
+      "sha256": "11d9a33777a039b0094eb55c9232df98d027492704e49a228ec7aedbf1e5b867"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 422366,
+      "sha256": "866c5cd11d9f9c98588d295756f42569769a311e202938116c497f71f09bf2f1"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 424198,
+      "sha256": "43983127410b03b0fd10ed33c14595109d13ac0d053a4a20522c851da54fd9eb"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 420138,
+      "sha256": "016506b0252b7e92decae21b8e86dd8a52295ad5daf1966dc9f2a2542e847181"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 433100,
+      "sha256": "b6c92a47d52a624ce6e4100895f957c3c6f86ac87fbb5c1da372cd2033638864"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 436130,
+      "sha256": "661fcbe60a4b4be74972dd024f8b15e3b6bd61a6890791f18496d931a6eae6f6"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 427956,
+      "sha256": "33fd035c6076d65e6860e4b49bb631bcdd379b173fb32eda668de117256b416a"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 438282,
+      "sha256": "a96cd1f1daf0b9c1eb04c29ac6eccef81996fe5db4ced584eb43f046be8d4733"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-full-s0-b0.jsonl.gz",
+      "bytes": 433989,
+      "sha256": "33a6d47bb1b188233ac26a6bd77a44da6f78a12fb937a281553c411043164c75"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-full-s0-b1.jsonl.gz",
+      "bytes": 437374,
+      "sha256": "e167c95147561bb501c022cafad7d0380e490ba0eacdc78dc567b1e2d754f315"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-full-s1-b0.jsonl.gz",
+      "bytes": 438805,
+      "sha256": "3912aec953955ed15ea8de9983fc983e93b341c848e406cf852b3b5e62c66123"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-full-s1-b1.jsonl.gz",
+      "bytes": 428282,
+      "sha256": "db7ae184cd76596f524eb73ce54085013c85e61bc0f8821291c3cc3e1f3ff360"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 426288,
+      "sha256": "a0d4fa374ffb55ac53bc774c23974a4e788e44206b4eddc5d0d2a9425314706e"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 420118,
+      "sha256": "fcb69fb6574caebfc29889739a78595c3c7359bb67daf2bdb6e07feb1bbfc5f5"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 426007,
+      "sha256": "e5596b61b6cd37c314b9d6204080b65eef73a970fc29909cff9b3f9d4b3f6718"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 425789,
+      "sha256": "083f4768f34a5a2a6ab0e058b13f864a2337d6408792a6ef0f9ef258aba4d0dd"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 433873,
+      "sha256": "fb4368efe9640acbf179f60f572c07e149ca5636d42ac880315eface0b7e8d7b"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 437389,
+      "sha256": "5c56a97f9967026bb68e42bd3bd36c3b17225c04eaa37454dbd235bd5a3defe9"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 438529,
+      "sha256": "097b0bed3d5e30c4ac7e569462cbdead3cda80003ee2c0f545dea3c53c074ebb"
+    },
+    {
+      "path": "raw/pilot-cdev-c-default-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 428204,
+      "sha256": "04b1911e2b135533ad98f6a433d594b1557f28f57574a54a98240b6c0fd415da"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-s0-b0.json",
+      "bytes": 2192,
+      "sha256": "29a888dbb447476e2f13fe0aa08180b508b1a55a32cf55d97cc801542979b97b"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-s0-b1.json",
+      "bytes": 2192,
+      "sha256": "963a69bc1fbe6fce5f3f83160de0d7643d8c6e7e389395d002d9ff218298bd55"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-s1-b0.json",
+      "bytes": 2191,
+      "sha256": "616596208305992815d165258cc66903e2143aef274639ed6fa7ebde314746a1"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-s1-b1.json",
+      "bytes": 2191,
+      "sha256": "794590c6ed7f5f706d612984bde69377e18034e0e9193e3de1e5f2157f4f8da8"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b0.json",
+      "bytes": 2211,
+      "sha256": "54b11380a2f6e24658c2039b917f059fad5466ba5d53aa0aed5aa2754829d8a5"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s0-b1.json",
+      "bytes": 2211,
+      "sha256": "6957007a31f84938a7d88556d01a8fead604eaaa8a3ec76d191d5bc3dc3712d1"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b0.json",
+      "bytes": 2211,
+      "sha256": "65c126c6a91b2f55ec0e6d4fcf59977fa60523127f06f80677c3f85bd3e834f4"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-2x-s1-b1.json",
+      "bytes": 2211,
+      "sha256": "2ce7c5980b4256a9b223b27af44f68f61d10ad99ab56ed08f80428a66213b286"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b0.json",
+      "bytes": 2211,
+      "sha256": "0a8be01cf1d4b3d12128940ad007a4ba065bc6aca36efd0544aaa3ce4b52aca4"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s0-b1.json",
+      "bytes": 2211,
+      "sha256": "015c7cf650c14c282ec07cd80762eb9151bdd83c727c74860f8b8a540a31cc4a"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b0.json",
+      "bytes": 2211,
+      "sha256": "1427d6a96b5836017ada26c3188e39ac1682ebe1dacae8099284fa2376ecf00c"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-conventional-useful-4x-s1-b1.json",
+      "bytes": 2211,
+      "sha256": "1cc08390e973f2b2b35b4dbbb86962fba72dbbb2d46a6632562e355c09335675"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b0.json",
+      "bytes": 2212,
+      "sha256": "10e5e4b7b9d90f80bcd7869f5559eff90f96935faf9a483bdff495cdd134de44"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s0-b1.json",
+      "bytes": 2212,
+      "sha256": "9a62f65f21ac26bedf6d87e37297399ffbb9e43e9c36a80e4938d327f8f5eed5"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b0.json",
+      "bytes": 2212,
+      "sha256": "fef08c65ca8f62e522b44da015d586a8cd1061022051b48df0086a539749ab38"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-broadcast-cut-s1-b1.json",
+      "bytes": 2212,
+      "sha256": "7dcc3549c86ee9cc60ea8c850e7680cb9de996014835716af0fa442968bbecd8"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b0.json",
+      "bytes": 2212,
+      "sha256": "85aa6c6d8127d59d1c91f78c2958c259aa14ea93d1c6fa0a7888b40e4dc77633"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s0-b1.json",
+      "bytes": 2212,
+      "sha256": "8a40d25b5f806e024941b16b20eaf4c8c23f854afeb5cf7d68afc658e1804bda"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b0.json",
+      "bytes": 2212,
+      "sha256": "a1eacf0c0d50471f56610eb78b4760566007f75da94f0dd8dcad0293cfcef0bd"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-fixed-metacog-s1-b1.json",
+      "bytes": 2212,
+      "sha256": "3e68887fda36db0289a0d5ca2d9f7f61b99a8c366981c073f0d451792ccad31a"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-full-s0-b0.json",
+      "bytes": 2194,
+      "sha256": "4990772e957eab806abb337951fd5a15e2ef6889cdb6d4cf3b993767882dfe5c"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-full-s0-b1.json",
+      "bytes": 2194,
+      "sha256": "065ceefd742471a0d535dc0e9c5dc3ec9f35564a6812bac85539863617a6d863"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-full-s1-b0.json",
+      "bytes": 2194,
+      "sha256": "82feeb2b2b8802f52193e86619435a8c11b313f3fda93ed84a50d50e6374274b"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-full-s1-b1.json",
+      "bytes": 2194,
+      "sha256": "88add8505776f193c81a65ca2df17a2578436bfda6ab05ec1dbb37fce0cbbd23"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b0.json",
+      "bytes": 2216,
+      "sha256": "867452f576b081adde04dfc0e12be03c212d66a1660d898b784776a4fb5aaa56"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s0-b1.json",
+      "bytes": 2216,
+      "sha256": "294e13bd105a0f388515018b38862b12115b15b22870f9818189313db990d052"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b0.json",
+      "bytes": 2216,
+      "sha256": "d30636e2c5ad111240194332228cf5d32f1bc81e1c03cfcf76311557d1547bbe"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-learning-frozen-s1-b1.json",
+      "bytes": 2216,
+      "sha256": "43e10c11ac6ebe3e58001e1b1edcb5550bb2cefeecb29d3b089a1580de003c23"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b0.json",
+      "bytes": 2206,
+      "sha256": "63730b382d5f0f926cc3c1af3ad9cee91664783d390436ea54e25e0c1c2e2a2c"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s0-b1.json",
+      "bytes": 2206,
+      "sha256": "804b865452e5baac0c642bf408b1af3d4db0155d5b2a6eb0e68146028b692e98"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b0.json",
+      "bytes": 2206,
+      "sha256": "1befbeb733d0c05a87c2f1e68c41278739a5255169951748211c9498b1b12612"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-arena-mirror-x-mind-no-novelty-s1-b1.json",
+      "bytes": 2206,
+      "sha256": "ee0dee4b7885da11391b84a18bb4a60e33b0087912f8d6ae831f0275f377561d"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-s0-b0.json",
+      "bytes": 2178,
+      "sha256": "61e8559434574bab6f2369cf1421922d3acbf23a53d6045d5ae0b27e28fb05a5"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-s0-b1.json",
+      "bytes": 2178,
+      "sha256": "dc427bf2f64fe7073290a9f4f35f52dea4f9d4f0488bc055f4dbd59c027e181b"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-s1-b0.json",
+      "bytes": 2177,
+      "sha256": "2ab1a9ed8cc159d419a645262950ab7ee48a97a3669062c149497002b6961029"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-s1-b1.json",
+      "bytes": 2177,
+      "sha256": "4a69c70001029f9014a21e9295cde789105e6a2b3efdaf83b85ec186f05a6b1c"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-2x-s0-b0.json",
+      "bytes": 2197,
+      "sha256": "74e1eae0db58d5cba56f56c7c87e7a729591a70b7be6137f0f282b48d037c2d0"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-2x-s0-b1.json",
+      "bytes": 2197,
+      "sha256": "0ce31ea9408309717054a29666ffe4e11916ab8f52940439f5eeb1e26cd8ebdc"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-2x-s1-b0.json",
+      "bytes": 2197,
+      "sha256": "5c122b2df2aaa6db86ccb4a316d49927061333c6c1703e318c9a1595baf3f19c"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-2x-s1-b1.json",
+      "bytes": 2197,
+      "sha256": "7eef8653b3bd6c229c2fd142159cc8d9efdcad68e940e54187def4735eed5ad7"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-4x-s0-b0.json",
+      "bytes": 2197,
+      "sha256": "c98fa5b95fe84878061afe6f14a70730ab60caf1a129af89797f2951682f06d0"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-4x-s0-b1.json",
+      "bytes": 2197,
+      "sha256": "4d34223adc55e9cf476df3cebf3b3a5ec92da9a9b227c00f6db2f432a87e27e0"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-4x-s1-b0.json",
+      "bytes": 2197,
+      "sha256": "fc4515aa11f9ab1e1ac8f9aa86ae63c4332400495dd43f2a9e5926a1eb9a37ca"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-conventional-useful-4x-s1-b1.json",
+      "bytes": 2197,
+      "sha256": "c3ed4b8f1ae86c55ace5cb804bb21d13009cd27346bdd52274e27a2b079c6c9b"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-broadcast-cut-s0-b0.json",
+      "bytes": 2198,
+      "sha256": "e0cc950556c6df9206da7af4271764542a8f62a80233dcc6b4c897e417c84ddd"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-broadcast-cut-s0-b1.json",
+      "bytes": 2198,
+      "sha256": "3eec18d7d44954f39479fbb7678466692b7570871606326d2e856d470e594025"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-broadcast-cut-s1-b0.json",
+      "bytes": 2198,
+      "sha256": "1ec976e4c98deebbaf66a5b59749553c2b1c51f4db30beee1d3a1431329353ec"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-broadcast-cut-s1-b1.json",
+      "bytes": 2198,
+      "sha256": "1a35863b585fe96f38a0790c2b95d92f331c192d9e81cca3692ba6d3cb3d04de"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-fixed-metacog-s0-b0.json",
+      "bytes": 2198,
+      "sha256": "567b5b6ae69701e684f0729d0a0010e8a1b8073b39ad6d7daf5ee57ecf0127f8"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-fixed-metacog-s0-b1.json",
+      "bytes": 2198,
+      "sha256": "35772b2a707dba10abd979b0c40e3c8316e5c207c7cada7f8d98ea6d2ea0c70a"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-fixed-metacog-s1-b0.json",
+      "bytes": 2198,
+      "sha256": "968994c5ae8ec7d1986afa698e76ae87a0590bb1fe2abc6e11a5331067bae53e"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-fixed-metacog-s1-b1.json",
+      "bytes": 2198,
+      "sha256": "fd05a6d2a70ba7c1d085df4956c4cc7fbf280c8e74754ee4d5c6a1963b57a851"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-full-s0-b0.json",
+      "bytes": 2180,
+      "sha256": "8b67d0ccc60da1ec4838d4a24da0c2a86c81346e8a10b5313d21c1f52a0eceae"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-full-s0-b1.json",
+      "bytes": 2180,
+      "sha256": "a5669aa2adb36f56c20c5a410c6b49983f4a910f036bd5bf8a70aada1f9b859c"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-full-s1-b0.json",
+      "bytes": 2180,
+      "sha256": "49036f35cea9ca399412154e25b68586254494237750419bda4fda0166295011"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-full-s1-b1.json",
+      "bytes": 2180,
+      "sha256": "f6c6f2a83656f82aed36fc9da0b5710a52e8b5fd874605f8d3998fcf7a9bf0f5"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-learning-frozen-s0-b0.json",
+      "bytes": 2202,
+      "sha256": "1bb057df22e107263644925dff170d42718822ebbae6e18d9fec45aad2b77159"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-learning-frozen-s0-b1.json",
+      "bytes": 2202,
+      "sha256": "fd1a2e028911bcc0945973949724fd656e7e5eb0f823010a0300a83fe0207953"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-learning-frozen-s1-b0.json",
+      "bytes": 2202,
+      "sha256": "c70b371e90dae5d077ad72b99667d197f01da241ccf7abb6abbb04134ae95b74"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-learning-frozen-s1-b1.json",
+      "bytes": 2202,
+      "sha256": "ff2e30e88ac90a51ee92dac49ad0bdd36c00078b09185d9d8cf6f3fba50237fd"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-no-novelty-s0-b0.json",
+      "bytes": 2192,
+      "sha256": "4dafffecaf74e1ac98372d708f397617bfb9e6fa40434f783057315008ae858a"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-no-novelty-s0-b1.json",
+      "bytes": 2192,
+      "sha256": "269f15f08ec87f11908b8965b8bf8725f3a1d86cd327567dec8c020539c56c04"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-no-novelty-s1-b0.json",
+      "bytes": 2192,
+      "sha256": "5ae3c97f7fe6c93fe893d3262189fc385f7e33b7d211b9802b2fcdaf7e520b22"
+    },
+    {
+      "path": "receipts/pilot-cdev-a-default-mind-no-novelty-s1-b1.json",
+      "bytes": 2192,
+      "sha256": "758aa9650b490ac82ca1502803e1790a150bb9f598e7c8eeba3946ded9e9f9c9"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-s0-b0.json",
+      "bytes": 2191,
+      "sha256": "0896207cefb3dcc0ff0bf4da55a03d4aa3925e63bd23d84c745285bc239aeb0f"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-s0-b1.json",
+      "bytes": 2191,
+      "sha256": "c418130027adde7bbf08817f9ddcb4b44335b09457d9bcb71c5c261bebd09124"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-s1-b0.json",
+      "bytes": 2191,
+      "sha256": "f798c27b4025bbe7c452c80fe0c158d7d69acfd6b0df5134d247e594dc2158ce"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-s1-b1.json",
+      "bytes": 2191,
+      "sha256": "07b89b74684df3ec7c129cc877e2d7a357cdc9b0c404943e19fd8e8d16460185"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b0.json",
+      "bytes": 2211,
+      "sha256": "c8e6db7299c45b9ae9a4bbf82662260772012cce4cc2e5a820c387a99b47ec4e"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s0-b1.json",
+      "bytes": 2211,
+      "sha256": "fd66441e52d001b29a17ab4bcb5abd9da004e86279541d9153fb46d46250d226"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b0.json",
+      "bytes": 2211,
+      "sha256": "ba823db3a1d93e9acd36f8d1d46437ff7e39518e54bc6848a8b887d973ec188f"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-2x-s1-b1.json",
+      "bytes": 2211,
+      "sha256": "111099d88fbfed6be9182a3ae631086742d6e00797b39aaa246537432fc8c840"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b0.json",
+      "bytes": 2211,
+      "sha256": "497ba9fbc02c8bc6d21450045ed0f65f08484e96c05518f1ff58c8bd4a72052a"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s0-b1.json",
+      "bytes": 2211,
+      "sha256": "8c00cbab62517211970ffdc9d5b06454abb445298c5d0a55bf1a0a02ebf8e659"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b0.json",
+      "bytes": 2211,
+      "sha256": "afa78ad908db60ec0a3e11b23be909157f65eaf26f234f4020b6ceab2ac2e11a"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-conventional-useful-4x-s1-b1.json",
+      "bytes": 2211,
+      "sha256": "f433dd2c041bea729e7497fd2eb9745a10ffbdf2f4566d0cc651d9826b95262f"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b0.json",
+      "bytes": 2212,
+      "sha256": "eeca615385fe8e0bfbd8199617d627a2a56e1b290ddc69d633961cd1447a6787"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s0-b1.json",
+      "bytes": 2212,
+      "sha256": "f67858fb6046a15f5267e5c5788921035c3628082fb88333d6a08a3afa412e09"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b0.json",
+      "bytes": 2212,
+      "sha256": "8bc50b195835eca92657da1e64b2acf8abb01d1324e5d6ad87a441e3445cf8e2"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-broadcast-cut-s1-b1.json",
+      "bytes": 2212,
+      "sha256": "f94abb131c98b49721dfcf9735d6bd2706e5a23a8763bcc5a301181abc94ed85"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b0.json",
+      "bytes": 2212,
+      "sha256": "b965db2400f6e6378c1ec03d56c7995ebba5baf032f5c41e2e2277c0fd4268c5"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s0-b1.json",
+      "bytes": 2212,
+      "sha256": "834e803a055e82a33e63a421f606d3b1e50ecb2f6eb0bbd926219bc63519a072"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b0.json",
+      "bytes": 2212,
+      "sha256": "e8ab8d1c1623a0c34209b9fdb1a601159fd33036f1dadcc087d7f1dc0d4b8e5a"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-fixed-metacog-s1-b1.json",
+      "bytes": 2212,
+      "sha256": "369902fd5c312d21566b855bf689f22be09e5442bcaa9abda6fd45fa3377e5f9"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-full-s0-b0.json",
+      "bytes": 2194,
+      "sha256": "8fc2282df48424086b3ce5000e9aacd98b56b452f6d3e0b0f2a52df4978c55a8"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-full-s0-b1.json",
+      "bytes": 2194,
+      "sha256": "2039b6e96ad7a0519aff79ab7844fcef44e2e1dacd32464bfc1ac4bc61239fc7"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-full-s1-b0.json",
+      "bytes": 2194,
+      "sha256": "767f69d50cc145b04fa3ceb8b49def31944391c28079d65ba429d4bd7d4335e3"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-full-s1-b1.json",
+      "bytes": 2194,
+      "sha256": "1a5de7cc56a098d24feb7d0bb30854a252f99b6cb658c35441bdf79c9ff0cc24"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b0.json",
+      "bytes": 2216,
+      "sha256": "d711ca46135c1dd5cd38f411d098deaad730946e4d6a68790c822476f86f07f8"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s0-b1.json",
+      "bytes": 2216,
+      "sha256": "239aad0ad3857b243e00dc3671944e4a4ff2abd1755f27e12712c260b341f22b"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b0.json",
+      "bytes": 2216,
+      "sha256": "6de1d6ea5b5f4cde05dacea399c7f18cc6b2870cbe1298b45df1829c79cd908d"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-learning-frozen-s1-b1.json",
+      "bytes": 2216,
+      "sha256": "31f9f1f2cd107429e2c6ddc19eeef6847be092a5dab375f6fc7e8ea962b07882"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b0.json",
+      "bytes": 2206,
+      "sha256": "fbba170d97d49eeb1d6cd72d37365a312b465b4b16190738799c6e9d56793a06"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s0-b1.json",
+      "bytes": 2206,
+      "sha256": "433c5b643e2f53234e115abacf874660cfcc3a1161e814fd030662a4c7acf109"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b0.json",
+      "bytes": 2206,
+      "sha256": "917d54b3ff231c72742bec03fa736413f11d61316cdb8315b4bd3cee7146998b"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-arena-mirror-x-mind-no-novelty-s1-b1.json",
+      "bytes": 2206,
+      "sha256": "e49a06166ba15ebde58df6267844ff7a0342848f1dfa083306e18afcb4b8ba85"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-s0-b0.json",
+      "bytes": 2177,
+      "sha256": "05f22a9ffee5eec8ac61243997a32ea61f840dcdce73f57b9c0bc1afc08fd2f6"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-s0-b1.json",
+      "bytes": 2177,
+      "sha256": "872d63ec07c52e9d505e3a0d8d32d53f1378fe46d4d68b35f30c472946f7349b"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-s1-b0.json",
+      "bytes": 2177,
+      "sha256": "54c395ed63d34aabb363ca16ed12422f1181bff649e3c95aebdbbbf64f040279"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-s1-b1.json",
+      "bytes": 2177,
+      "sha256": "9f1d882fad41704bd0875eab62e87c656305e81a67ca1b082dfa7ee9f3e76688"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-2x-s0-b0.json",
+      "bytes": 2197,
+      "sha256": "f33901de666e3aeb90011546500e4cabdb7e202e9ccbfcc29e005c7cd043bdbe"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-2x-s0-b1.json",
+      "bytes": 2197,
+      "sha256": "34ddf9e4721a97da6ed07e0a1b3dd5476067e7fb591fbe76bb928ddc36e223b8"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-2x-s1-b0.json",
+      "bytes": 2197,
+      "sha256": "8385264cb6fc6eeaf4169ab2c783676ec185fb53add437d65499fb5e531f1ea8"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-2x-s1-b1.json",
+      "bytes": 2197,
+      "sha256": "0f49a5181d8ef9739cd9f3f63015a794a962f319159954a9b77d129765a312d4"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-4x-s0-b0.json",
+      "bytes": 2197,
+      "sha256": "864898b4efdf37e0e4fa7f4de12baa7b87a21715aec9d9a83af0bd1d9a73ce38"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-4x-s0-b1.json",
+      "bytes": 2197,
+      "sha256": "76970f7f8401a8b0bfa04c9ceff762f83c75204591250d9c29568636856975b6"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-4x-s1-b0.json",
+      "bytes": 2197,
+      "sha256": "d89df3098393f329f2fb2eee30866b1a780d8e079f408a3b090a474e67e79bad"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-conventional-useful-4x-s1-b1.json",
+      "bytes": 2197,
+      "sha256": "01d2caecd7ec874965c29eaf307eb20ce7cbe98fe5bfa71dbbc6bd1998d32434"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-broadcast-cut-s0-b0.json",
+      "bytes": 2198,
+      "sha256": "0de33506196563a107a9ed133f0b9a9a6bf25b395d6fad41f4c64fe9920e9cf6"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-broadcast-cut-s0-b1.json",
+      "bytes": 2198,
+      "sha256": "b4d6c8652338d3821419b78b6e79b6d7e897c95ff45532b808ce60a2a5a4afdb"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-broadcast-cut-s1-b0.json",
+      "bytes": 2198,
+      "sha256": "76b09792a5ea93a6003181ac4a54c2ccafd66a17d0f626d00c69142f622d3110"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-broadcast-cut-s1-b1.json",
+      "bytes": 2198,
+      "sha256": "01dba8134b735c1b422c21f8d491887828e2b7087684965889552c97c89f67a6"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-fixed-metacog-s0-b0.json",
+      "bytes": 2198,
+      "sha256": "7603c1031aa724be799dadb369f0a759f76643e8f47176ecc72d5e41fc9a0238"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-fixed-metacog-s0-b1.json",
+      "bytes": 2198,
+      "sha256": "b01a80dd8f063488b92ec806ee62a705fcf6b639cbb638694f56154e8090dbbc"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-fixed-metacog-s1-b0.json",
+      "bytes": 2198,
+      "sha256": "43155b82397e030eaf11ef1846a5b5b36c93282bcb28cb6245a48b1232a87f3b"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-fixed-metacog-s1-b1.json",
+      "bytes": 2198,
+      "sha256": "89208be0ad0114a540b8167615cb0472d1213d557511bd68b00640f9fec4feaf"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-full-s0-b0.json",
+      "bytes": 2180,
+      "sha256": "35d75bbb00b0eda62318e416a0b01d940729349044224c826bec955cecc3eaa6"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-full-s0-b1.json",
+      "bytes": 2180,
+      "sha256": "4fa1b883b6abb76897ea6f51897f7160a1863961617baa5582bfc1df6daa2b38"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-full-s1-b0.json",
+      "bytes": 2180,
+      "sha256": "ffb26be204525a1ae26566df806b4391fbd26501d64d6991eccaf0675d0c86ed"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-full-s1-b1.json",
+      "bytes": 2180,
+      "sha256": "7122fc7f9d5d42e3256dea4be6fbbffacd0912b95f552a10023da4e2660c6117"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-learning-frozen-s0-b0.json",
+      "bytes": 2202,
+      "sha256": "c1ab02d1e11a10682d86df98a5e67ba2e380f0b3196d7304c6a69c98ecfbe7ec"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-learning-frozen-s0-b1.json",
+      "bytes": 2202,
+      "sha256": "8f6c25bd77fcb33de95d68b51cc1892874f417cc6d25ba5f1827131283b8a7bc"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-learning-frozen-s1-b0.json",
+      "bytes": 2202,
+      "sha256": "7482ea75f88613c8b285285b012f22014daddbc6920655629cfa084281963294"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-learning-frozen-s1-b1.json",
+      "bytes": 2202,
+      "sha256": "fdae3b7027996ca57e19100f8d31ef9fee0c3031735ed1fa60034e3b0e925014"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-no-novelty-s0-b0.json",
+      "bytes": 2192,
+      "sha256": "ed3316344ddd5ad794a0b8197e4f7fe07dde05374404c2865dcd387b30a7ed6d"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-no-novelty-s0-b1.json",
+      "bytes": 2192,
+      "sha256": "5bd13a8a2ca9e1254b6e0aec1ac7b8367a41ac631031ef5bd458a0836dbe25f1"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-no-novelty-s1-b0.json",
+      "bytes": 2192,
+      "sha256": "0a6b421b24e58d1f3bfc76ad5d44be7b37f2b735c802dc563925f3c64b2e29db"
+    },
+    {
+      "path": "receipts/pilot-cdev-b-default-mind-no-novelty-s1-b1.json",
+      "bytes": 2192,
+      "sha256": "695f723094d051aea7d7ed7727f46bf93d1f4791912e33135576a878b1f60e18"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-s0-b0.json",
+      "bytes": 2191,
+      "sha256": "84ce88afa77e29b2c9c88bc521be6a8d526b9ae534059149a1951cf9826371ba"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-s0-b1.json",
+      "bytes": 2191,
+      "sha256": "747aea4532f8cf86247d4f656fe20cfcb84e04f74936ff099fc63bd4fa5d177e"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-s1-b0.json",
+      "bytes": 2191,
+      "sha256": "3ea0394cbf7e8cd3f87af53a63598b01e7e363e44fca52882937540691516b02"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-s1-b1.json",
+      "bytes": 2191,
+      "sha256": "d1a049c3c51dd159b6b3c017e925b99611ccf85c9bdcaeb5894735ae80adebe2"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b0.json",
+      "bytes": 2207,
+      "sha256": "cfd37c566ce65fcf972b999aafed2af8a63358fdd5f87bdc8a8d7f3bc3f5791e"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b1.json",
+      "bytes": 2207,
+      "sha256": "4a98856d7b05ba7d131d804c96091556cf651d42a28cdc7f9e84fcad825ec13c"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b0.json",
+      "bytes": 2207,
+      "sha256": "526ef4f516f02df0f02b739f664f67f298e4a7182e52dbac62ebf1bdc40b3781"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b1.json",
+      "bytes": 2207,
+      "sha256": "d8d079a5750edec9eb4f3c0f33c6a9482e8e20c600957bc61a2d816333ca287b"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b0.json",
+      "bytes": 2207,
+      "sha256": "5f1c03b35c9ad4b01f204eb8927b839b2aac6ac445ec3e202fc795c78e2142c9"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b1.json",
+      "bytes": 2207,
+      "sha256": "e519c168868f05742253e9c88bae9e97348c21e333f294f6c992d7bd40d8949b"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b0.json",
+      "bytes": 2207,
+      "sha256": "87413347ed9ca8b18bcaefd3aad1c2120599b3bde586e88c32f32c000f5bf996"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b1.json",
+      "bytes": 2207,
+      "sha256": "0851fcd6805c66c4e89bcefaab4f3f0f759856545a767787715c1585048d281d"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b0.json",
+      "bytes": 2208,
+      "sha256": "8fe37b23e2174409f9cba8c53cac193527f816fbdddcd4b1e0e0dde18ab320a6"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s0-b1.json",
+      "bytes": 2208,
+      "sha256": "7053ca6595e843770704ae46c91f764aeabad9271a02249d1ecd9f316eb7c031"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b0.json",
+      "bytes": 2208,
+      "sha256": "39088e42ce99505a18ff444b95c8358af4f458368696cf910c2143af2f14bdd6"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b1.json",
+      "bytes": 2208,
+      "sha256": "9c6e0ac02fa051285f0a3676016c17b4642ea44504f65e2473df0065a69f9161"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b0.json",
+      "bytes": 2208,
+      "sha256": "422964c8e566add9e5513fa68112c5589d520d289c096e788db1d7e19e3b4b5e"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s0-b1.json",
+      "bytes": 2208,
+      "sha256": "321bd3ef132c55af148957a213888b6f52a280e633c29a81d095e94b0bab4d24"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b0.json",
+      "bytes": 2208,
+      "sha256": "82ac426634e7ecc46727c19086537401be012ded585f2b41bcfb454470df04ba"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-fixed-metacog-s1-b1.json",
+      "bytes": 2208,
+      "sha256": "09f81f56cb3d29817c545e5293bb31247f9d61da0e81df52dfad4b140954383a"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-full-s0-b0.json",
+      "bytes": 2190,
+      "sha256": "43e9e9eb97dde15618986078d6ce4f4d59255c45b0c53059ccd2e7bc1e80b0b1"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-full-s0-b1.json",
+      "bytes": 2190,
+      "sha256": "b28a967a49f7ae507c425fe548b8f4891de2165108a19257fe48212ce82566bb"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-full-s1-b0.json",
+      "bytes": 2190,
+      "sha256": "d98c18527894879dc4f119c1c7ebef799abb1a44c51b6592f2bd82059c548f5b"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-full-s1-b1.json",
+      "bytes": 2190,
+      "sha256": "dbefee6dd518b1d5184968c361a788226b5081cdf20bd86ed114873df173620f"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b0.json",
+      "bytes": 2212,
+      "sha256": "976dccb05e6bff4c7e41870d47e2a965fc8c023c82866bb578888e82da0a422c"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s0-b1.json",
+      "bytes": 2212,
+      "sha256": "dd4886545722e291324a33f15d5f77728685721c0a890416adacf71ea7ab5367"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b0.json",
+      "bytes": 2212,
+      "sha256": "3665c62ea0790c9791a286291aae1e7986258912c61eed1ed799efbebd416370"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-learning-frozen-s1-b1.json",
+      "bytes": 2212,
+      "sha256": "22cf0e6099a0ecf702a7bdc26257ed2a007451b350966cd22b30b80354d8bc23"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b0.json",
+      "bytes": 2202,
+      "sha256": "b01744be04597047e188302c12c69267eb4b21ecaf23be693f540e1eb2f04b4e"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s0-b1.json",
+      "bytes": 2202,
+      "sha256": "6c61645b836a3b1812309133929a883b393351a9e566e4785cda3873faa1266c"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b0.json",
+      "bytes": 2202,
+      "sha256": "aa8e22eb8be43bacc0756bf586a26cb55937240f29d7382c1bd74d7d7e21b2e5"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-arena-mirror-x-mind-no-novelty-s1-b1.json",
+      "bytes": 2202,
+      "sha256": "7351c5db59e3444af82c3e59763d5cead97f6acab27a0ab4d780db8551aa95ca"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-s0-b0.json",
+      "bytes": 2178,
+      "sha256": "7a7d84e303dff645f524309b18c220587729ec47d890034ccefcd8fa2f02cae5"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-s0-b1.json",
+      "bytes": 2178,
+      "sha256": "541b944561d5ba155a277834cdfaed18f712aeefee3ba156066ab66f0b4eeb4a"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-s1-b0.json",
+      "bytes": 2178,
+      "sha256": "f7a2637bbb610e371253e30e87e0a82dbd40a21b6f2afc0e8cdf3bb4bb77fd6b"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-s1-b1.json",
+      "bytes": 2178,
+      "sha256": "06f393b7a3c07218335c12ce7f5e439b36fc328f8cacc5b5b943b8dfb5ac9c65"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-2x-s0-b0.json",
+      "bytes": 2193,
+      "sha256": "821597d8554db08e980e965706bb889e30d45366f7621c4b8de23b71e1c4aaa6"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-2x-s0-b1.json",
+      "bytes": 2197,
+      "sha256": "ef30250db17c5e3a41938104ef3d17e59ee758cd8c60be918cc7cfb08b2e5268"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-2x-s1-b0.json",
+      "bytes": 2193,
+      "sha256": "8ac3f4bf2f78731216252b9f3f01a247b5f2c620155eaa0ff3f4d426f014e619"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-2x-s1-b1.json",
+      "bytes": 2193,
+      "sha256": "5e8bb6519f5deb40d9fb2d68fa520bdf66b8c374307cb880939ab19e7ebfcd68"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-4x-s0-b0.json",
+      "bytes": 2197,
+      "sha256": "f8189448d7208115da0ccf85756db73b46b171c3e613912ec848880e087b2c53"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-4x-s0-b1.json",
+      "bytes": 2193,
+      "sha256": "b78ba55a68eff65890bf6146001b53dd3be7f6ac8cea435b8f620dc68704ae26"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-4x-s1-b0.json",
+      "bytes": 2193,
+      "sha256": "ffffef43664a27f225939504131cc7efc3657d59bb2d742e8eb0963a4cb56af1"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-conventional-useful-4x-s1-b1.json",
+      "bytes": 2197,
+      "sha256": "9ee5666eff253334506e2cb0e92cf2862a61aed2a386931fc70199a159504bb5"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-broadcast-cut-s0-b0.json",
+      "bytes": 2194,
+      "sha256": "ab2e323dfa74abfa3a640f6e40d6abaf727655e00a2e8451d76a13964b4a3cea"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-broadcast-cut-s0-b1.json",
+      "bytes": 2194,
+      "sha256": "f95b0740d93b280744d1131b5be758fbd8d1965341df8c94f56c8b625aa06d66"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-broadcast-cut-s1-b0.json",
+      "bytes": 2194,
+      "sha256": "e1eb9b9174d1f8185dadc4a29b7346c19da795cc4b7f9a6dfe4eac6e56ed412e"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-broadcast-cut-s1-b1.json",
+      "bytes": 2194,
+      "sha256": "59c181ea00db34badb3920838f9dceb78efd1c71faac03e5985c07ac956d0826"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-fixed-metacog-s0-b0.json",
+      "bytes": 2194,
+      "sha256": "0023d0308c442491200269403a03b4ce7379e882ddf7879f4afdbb2ae96042c5"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-fixed-metacog-s0-b1.json",
+      "bytes": 2194,
+      "sha256": "5d11aa25119e03c3dfc6aac9204724ab7a478fd722b226bf4897239ee347408a"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-fixed-metacog-s1-b0.json",
+      "bytes": 2194,
+      "sha256": "336c155f939675fcd7496812f23a77ff7ff2acf2f51cafb5938eb9d322539f35"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-fixed-metacog-s1-b1.json",
+      "bytes": 2197,
+      "sha256": "56d6a33fbc6bfeccb90186eeb4e94b04d11ad3e61a86b96cabca8a8f8ad69515"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-full-s0-b0.json",
+      "bytes": 2176,
+      "sha256": "4a164f528bcc9cb343f697c7501411ea79e4c379be798c257e1dc6b22487f2ab"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-full-s0-b1.json",
+      "bytes": 2176,
+      "sha256": "3806cedfa90b3d3707824e9e2b4899a6eb99b357bede88d59ae326bd9f8bb9b5"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-full-s1-b0.json",
+      "bytes": 2176,
+      "sha256": "ca1b689c9c6df62af6ad0fe787f46c03e4adeb1de07d6c76766267a7b8ed4f51"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-full-s1-b1.json",
+      "bytes": 2176,
+      "sha256": "1e52467781d8890d159babc899870556cda3d9aa438483c113d03e38759b6879"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-learning-frozen-s0-b0.json",
+      "bytes": 2198,
+      "sha256": "66e6a5d29e925ce3267d6ae9e830e47a7e4722e5dd2b6e0eb67eaa33668357fa"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-learning-frozen-s0-b1.json",
+      "bytes": 2198,
+      "sha256": "b5caae647dde031e1e6ad015a3dfb49933d163d92ff6165417b892c6df037e77"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-learning-frozen-s1-b0.json",
+      "bytes": 2198,
+      "sha256": "e059f50f4253a5321c1f634205ff67a67105e7d6ad8918a5d0b80aab42931551"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-learning-frozen-s1-b1.json",
+      "bytes": 2198,
+      "sha256": "3bf434cde8e38af05e49631386ece7c51b8765c705875c62ef041a3ebca89df0"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-no-novelty-s0-b0.json",
+      "bytes": 2188,
+      "sha256": "32248568d65c65f783f2de8e16724c227eaff59033e9d4248e79da41baaaf20f"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-no-novelty-s0-b1.json",
+      "bytes": 2188,
+      "sha256": "36124983cc2f0d554948fda89e69e84f09487f33ca185467671215f215c4d51d"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-no-novelty-s1-b0.json",
+      "bytes": 2188,
+      "sha256": "7bb10bd7b9cddcd0262b744b4cb529280c244f9a496064a827c23a45df3b3b3a"
+    },
+    {
+      "path": "receipts/pilot-cdev-c-default-mind-no-novelty-s1-b1.json",
+      "bytes": 2188,
+      "sha256": "adc50031a04e0587eda27f6287d75d1d6053c4f0b58de641f4470ce3dc6d18bd"
+    },
+    {
+      "path": "run.log",
+      "bytes": 15955,
+      "sha256": "c01a79f5a68ab78db6e4ee67831f3b3bfd00ff5ff536022f15201d09a40242fd"
+    },
+    {
+      "path": "source-audit.log",
+      "bytes": 4057,
+      "sha256": "5bbd55fcad64bb73fcd5adb3a55fef99d456927ebdba3cb2137f3771e3071a84"
+    },
+    {
+      "path": "source-audit.mjs",
+      "bytes": 3133,
+      "sha256": "64ee31b8185207a418cbc683e420ba7ce5f6ecb08145ea43809ac75327e9db19"
+    }
+  ]
+}

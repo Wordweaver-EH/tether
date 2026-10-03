@@ -1,0 +1,29 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "final-pilot-source-preregistration.tar.gz",
+      "bytes": 126225,
+      "sha256": "06be18034d9832702a801834051dc90ee8860770bc25da36a0624bbb96ecd7f8",
+      "parts": [
+        {
+          "filename": "final-pilot-source-preregistration.tar.gz.part01",
+          "bytes": 126225,
+          "sha256": "06be18034d9832702a801834051dc90ee8860770bc25da36a0624bbb96ecd7f8"
+        }
+      ]
+    },
+    {
+      "filename": "offline-task-receipts.tar.gz",
+      "bytes": 104236,
+      "sha256": "3dc23b0388fff3a5562be19529234a6b7048e3b2961cc150b37e44f17042a3e4",
+      "parts": [
+        {
+          "filename": "offline-task-receipts.tar.gz.part01",
+          "bytes": 104236,
+          "sha256": "3dc23b0388fff3a5562be19529234a6b7048e3b2961cc150b37e44f17042a3e4"
+        }
+      ]
+    }
+  ]
+}

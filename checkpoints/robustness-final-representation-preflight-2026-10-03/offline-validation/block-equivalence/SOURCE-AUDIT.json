@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "purpose": "Read-only source provenance and no-controller import-closure audit for offline acceptance",
+  "lockSha256": "8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584",
+  "sourceRepo": "/workspace/scratch/75679def3745/tether-robustness-shifts/repo-compact",
+  "sourceManifest": "COMPACT-SOURCE-MANIFEST.json",
+  "sourceManifestSha256": "058bb56bad3cd00f8052a00881d1a56b356e0a5680242cc16d1cbec429b01a3f",
+  "importClosure": [
+    {
+      "path": "offline-validation/block-equivalence/acceptance.mjs",
+      "sha256": "f1abfef0beb96e7dbabe2bfc2ec9b087f3dede4c7c390883d3f94b450b422ce5"
+    },
+    {
+      "path": "repo-final/experimental/block-stream.mjs",
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "path": "repo-final/experimental/raw-stream.mjs",
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    },
+    {
+      "path": "repo-final/experimental/proof-representation.mjs",
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "path": "repo/experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "path": "repo/experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "path": "repo/src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "repo/src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "path": "offline-validation/physics-replay.mjs",
+      "sha256": "01bc1a9a25081238f4c332c2b7608160137ed5c27b9c7711f542717f22a4979f"
+    }
+  ],
+  "edges": [
+    {
+      "from": "offline-validation/block-equivalence/acceptance.mjs",
+      "to": "offline-validation/physics-replay.mjs"
+    },
+    {
+      "from": "offline-validation/block-equivalence/acceptance.mjs",
+      "to": "repo/experimental/world.mjs"
+    },
+    {
+      "from": "offline-validation/block-equivalence/acceptance.mjs",
+      "to": "repo-final/experimental/proof-representation.mjs"
+    },
+    {
+      "from": "offline-validation/block-equivalence/acceptance.mjs",
+      "to": "repo-final/experimental/block-stream.mjs"
+    },
+    {
+      "from": "repo-final/experimental/block-stream.mjs",
+      "to": "repo-final/experimental/raw-stream.mjs"
+    },
+    {
+      "from": "repo-final/experimental/proof-representation.mjs",
+      "to": "repo-final/experimental/raw-stream.mjs"
+    },
+    {
+      "from": "repo/experimental/world.mjs",
+      "to": "repo/src/sim.js"
+    },
+    {
+      "from": "repo/experimental/world.mjs",
+      "to": "repo/experimental/perception.mjs"
+    },
+    {
+      "from": "repo/experimental/perception.mjs",
+      "to": "repo/src/sim.js"
+    },
+    {
+      "from": "repo/src/sim.js",
+      "to": "repo/src/deterministic-math.js"
+    },
+    {
+      "from": "offline-validation/physics-replay.mjs",
+      "to": "repo/experimental/world.mjs"
+    }
+  ],
+  "physicsIdenticalAcrossOriginalActualPilotAndFinal": [
+    {
+      "path": "experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "path": "experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "path": "src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    }
+  ],
+  "assertion": "Acceptance import closure contains only offline verifier, pure proof/raw representation modules and frozen physics. No controller modules are loaded; recorded actual commands drive replay. Native call/timing-boundary and wider synthetic-test review are separate acceptance gates.",
+  "controllerCalls": 0,
+  "newBouts": 0
+}

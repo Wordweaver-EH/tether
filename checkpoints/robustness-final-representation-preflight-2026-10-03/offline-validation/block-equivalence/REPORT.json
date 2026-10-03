@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "sourceManifestNote": "Actual pilot002 source repo-compact verified against COMPACT-SOURCE-MANIFEST; saved pilot002 raw/results validated against immutable PILOT002-FILE-MANIFEST. Frozen physics verified against original PILOT-SOURCE-MANIFEST. Unexecuted repo-pilot002 reference is outside acceptance scope.",
+  "scope": "All192 saved pilot002 tasks; offline representation conversion and frozen recorded-control replay only. No controllers, new bouts, selection, training, or evaluation release.",
+  "metadataLoss": "Individual actual-report and native-compared-field proof digests cannot be reconstructed from sequence commitments. Every scientific field is exact; definition hashes reconstruct exactly; every legal percept digest is independently reconstructed. No claim of lossless retention of all proof bytes.",
+  "begun": "2026-10-03T05:46:33.961Z",
+  "completed": "2026-10-03T05:48:52.976Z",
+  "tasks": 192,
+  "totals": {
+    "ticks": 691200,
+    "decisions": 172032,
+    "perceptHashes": 344064,
+    "events": 34812,
+    "checkpoints": 5760,
+    "scientificRows": 215165,
+    "definitions": 172559,
+    "dictionaryReferences": 946795,
+    "originalBytes": 108234050,
+    "amendedBytes": 65726382
+  },
+  "mutationTests": [
+    "physical-corruption",
+    "truncation",
+    "member-reorder-rehashed-physical",
+    "bad-crc-rehashed-physical",
+    "row-reorder-rehashed-physical",
+    "row-delete-rehashed-physical",
+    "row-insert-rehashed-physical",
+    "row-change-rehashed-physical",
+    "missing-final-observer-proof",
+    "misplaced-final-observer-proof"
+  ],
+  "preservedBefore": {
+    "pilotFiles": 507,
+    "pilotSourceFiles": 56
+  },
+  "preservedAfter": {
+    "pilotFiles": 507,
+    "pilotSourceFiles": 56
+  },
+  "sources": [
+    {
+      "path": "REPRESENTATION-AMENDMENT-PROOF-MAP.md",
+      "sha256": "8de26e2b1fc45e574ade551d1b0d29cae71074de0059abe033f472434c2e1ec0"
+    },
+    {
+      "path": "PILOT002-FILE-MANIFEST.json",
+      "sha256": "af4c522ebbf24e070e64099cfeaa1b3b50c602399f142c1ab312b78ac7823854"
+    },
+    {
+      "path": "COMPACT-SOURCE-MANIFEST.json",
+      "sha256": "058bb56bad3cd00f8052a00881d1a56b356e0a5680242cc16d1cbec429b01a3f"
+    },
+    {
+      "path": "COMPACT-PILOT-LOCK.json",
+      "sha256": "8c38ff5d70726fe8177fc2e4beeae7095544a750a8699f221b772120d71a9584"
+    },
+    {
+      "path": "offline-validation/physics-replay.mjs",
+      "sha256": "01bc1a9a25081238f4c332c2b7608160137ed5c27b9c7711f542717f22a4979f"
+    },
+    {
+      "path": "offline-validation/block-equivalence/acceptance.mjs",
+      "sha256": "f1abfef0beb96e7dbabe2bfc2ec9b087f3dede4c7c390883d3f94b450b422ce5"
+    },
+    {
+      "path": "repo-final/experimental/proof-representation.mjs",
+      "sha256": "7cedf1fe6ec31031be96b95ec692ac6cb119908082c7b1a86388be904b21618a"
+    },
+    {
+      "path": "repo-final/experimental/block-stream.mjs",
+      "sha256": "21bf72629ea845f6bfa308a2e0ed3ab36c481c552fa227dbed6bad4d81258f8d"
+    },
+    {
+      "path": "repo-final/experimental/raw-stream.mjs",
+      "sha256": "7a05dc15b2cffe6380dff2e8bc000801187a4896b2e8e5faa8b7ce3c1be5d041"
+    }
+  ],
+  "frozenPhysics": [
+    {
+      "path": "src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "path": "experimental/world.mjs",
+      "sha256": "597429f2a85d4385a25b080e4c8221a8d40c7c16bed0365a0f9c53ca02f0b43f"
+    },
+    {
+      "path": "experimental/perception.mjs",
+      "sha256": "e7624ee1dd3cd6bd7048c2525dc6fcdc754af9bfbf6e87944c7dad2c38104f42"
+    },
+    {
+      "path": "experimental/task.mjs",
+      "sha256": "53ae72240043fa8c0609dcda2b8de6a1b43278544dbb2dea22bca048e3a4d8ce"
+    },
+    {
+      "path": "benchmark/interface.mjs",
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    }
+  ],
+  "controllerCalls": 0,
+  "newGameplayDecisions": 0,
+  "wallMs": 139014.559547,
+  "cpuUserUs": 148949514,
+  "cpuSystemUs": 3285826,
+  "prospectiveCeiling": "36 CPU-hours applies only to separately released later evaluation; this receipt confers no runtime-pilot or full-evaluation release."
+}

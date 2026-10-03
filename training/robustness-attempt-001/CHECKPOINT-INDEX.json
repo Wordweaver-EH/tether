@@ -164,7 +164,17 @@
       "archiveSha256": "158166aadb1b92e79f78fdc4ec8602fc74429ac9d98801e5e5896b89b9aa78c2",
       "archiveBytes": 56355,
       "path": "batches/conventional-useful-2x-generation-6"
+    },
+    {
+      "id": "conventional-useful-2x-generation-7",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 7,
+      "tasks": 128,
+      "archiveSha256": "7255be82dffa81bf780efc81352ca22388da05370951f492e60ea9fa1280d4db",
+      "archiveBytes": 57150,
+      "path": "batches/conventional-useful-2x-generation-7"
     }
   ],
-  "completedTaskRowsArchived": 2176
+  "completedTaskRowsArchived": 2304
 }

@@ -1,0 +1,18 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "prospective-analysis-source.tar.gz",
+      "bytes": 156426,
+      "sha256": "ffa91575824bbed2269297163da716cb0091806e8cc6c819770170c602cd7d84",
+      "parts": [
+        {
+          "filename": "prospective-analysis-source.tar.gz.part0001",
+          "bytes": 156426,
+          "sha256": "ffa91575824bbed2269297163da716cb0091806e8cc6c819770170c602cd7d84",
+          "gitBlobSha": "dc66b206bda9f7c331d1a8066639de2e722b748e"
+        }
+      ]
+    }
+  ]
+}

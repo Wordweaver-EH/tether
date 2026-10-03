@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "scope": "Completed rebuilt N/S measurement, not the lost historical candidate or later C1/C2 controller",
+  "archives": [
+    {
+      "filename": "tether-rebuilt-policy-source-protocol-v2-2026-10-02.zip",
+      "bytes": 1328282,
+      "sha256": "1a5740856158555fde4b4ec8cf26a9926bc1fa9c79fffd3015485d299636304f",
+      "verifiedArchiveMembers": 313,
+      "parts": [
+        {
+          "filename": "tether-rebuilt-policy-source-protocol-v2-2026-10-02.zip.part01",
+          "bytes": 1328282,
+          "sha256": "1a5740856158555fde4b4ec8cf26a9926bc1fa9c79fffd3015485d299636304f"
+        }
+      ]
+    },
+    {
+      "filename": "tether-rebuilt-policy-failed-startup-2026-10-02.zip",
+      "bytes": 26852,
+      "sha256": "0651936e06c55ccb262f2ea5d7ab01a2c7906d271220aae9a009b8dc4f89bfce",
+      "verifiedArchiveMembers": 15,
+      "parts": [
+        {
+          "filename": "tether-rebuilt-policy-failed-startup-2026-10-02.zip.part01",
+          "bytes": 26852,
+          "sha256": "0651936e06c55ccb262f2ea5d7ab01a2c7906d271220aae9a009b8dc4f89bfce"
+        }
+      ]
+    },
+    {
+      "filename": "tether-rebuilt-policy-measurement-results-2026-10-02.zip",
+      "bytes": 17363663,
+      "sha256": "da118327238a92485a90864547b50fdef7320bd7902bd9409703449ea7587b39",
+      "verifiedArchiveMembers": 315,
+      "parts": [
+        {
+          "filename": "tether-rebuilt-policy-measurement-results-2026-10-02.zip.part01",
+          "bytes": 8000000,
+          "sha256": "99d0adce312bc947323afee517c9cb187cf7a371a197dfaf3d6d945366b22092"
+        },
+        {
+          "filename": "tether-rebuilt-policy-measurement-results-2026-10-02.zip.part02",
+          "bytes": 8000000,
+          "sha256": "9c230c3161be45a6771711dd7bae86268e50c312ec0df7cd7029a73dc5ec1de8"
+        },
+        {
+          "filename": "tether-rebuilt-policy-measurement-results-2026-10-02.zip.part03",
+          "bytes": 1363663,
+          "sha256": "fda4e1e3e0f58121f266e8e75f5e55c11c15c45db9e4641f99e1bfcc1ab4967f"
+        }
+      ]
+    }
+  ],
+  "finalReport": {
+    "filename": "FINAL-RESULTS.md",
+    "sha256": "e42e34604ca1f4280a63af720d2b552bbdacdaf29fd82427952e9171021863a8"
+  }
+}

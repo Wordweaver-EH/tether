@@ -1,0 +1,89 @@
+{
+  "results": 181,
+  "rawFiles": 188,
+  "completedRows": 197866,
+  "decisions": 162176,
+  "events": 34424,
+  "calibration": 788,
+  "calibrationOrigins": {
+    "native-pending": 640,
+    "evaluator-derived-shadow": 148
+  },
+  "mismatches": {
+    "actual-motor-transform": 0,
+    "actual-command-commit": 0,
+    "commit-timestamp": 14661,
+    "actual-report-present": 0,
+    "workspace-focus": 0,
+    "delivered-content": 0,
+    "evidence-age-text": 0,
+    "native-novelty": 0,
+    "native-prediction": 0,
+    "native-completion": 0,
+    "pre-motor-report-command": 0,
+    "pre-motor-diagnostic-command": 0
+  },
+  "maxTimestampDelta": 3.552713678800501e-15,
+  "rawBytes": 131751581,
+  "uncompressedBytes": 1877173017,
+  "maxRss": 148234240,
+  "wallMs": 411549.4402,
+  "decisionMs": 275030.63965699996,
+  "observerMs": 74706.48849800004,
+  "freezeChecks": 24,
+  "partial": [
+    {
+      "id": "pilot-cdev-c-arena-mirror-x-conventional-s1-b1",
+      "bytes": 223974,
+      "validRows": 512,
+      "decisions": 451,
+      "complete": false
+    },
+    {
+      "id": "pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s0-b0",
+      "bytes": 0,
+      "error": "Z_BUF_ERROR"
+    },
+    {
+      "id": "pilot-cdev-c-arena-mirror-x-conventional-useful-2x-s1-b0",
+      "bytes": 0,
+      "error": "Z_BUF_ERROR"
+    },
+    {
+      "id": "pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s0-b0",
+      "bytes": 0,
+      "error": "Z_BUF_ERROR"
+    },
+    {
+      "id": "pilot-cdev-c-arena-mirror-x-conventional-useful-4x-s1-b0",
+      "bytes": 0,
+      "error": "Z_BUF_ERROR"
+    },
+    {
+      "id": "pilot-cdev-c-arena-mirror-x-mind-broadcast-cut-s1-b1",
+      "bytes": 441451,
+      "validRows": 512,
+      "decisions": 483,
+      "complete": false
+    },
+    {
+      "id": "pilot-cdev-c-default-conventional-useful-4x-s0-b1",
+      "bytes": 326275,
+      "validRows": 768,
+      "decisions": 713,
+      "complete": false
+    }
+  ],
+  "sourceChanged": [],
+  "memoryLinks": 60,
+  "lockKeys": [
+    "schema",
+    "phase",
+    "status",
+    "repo",
+    "prereg",
+    "freeze",
+    "opponentFreeze",
+    "inputs"
+  ]
+}

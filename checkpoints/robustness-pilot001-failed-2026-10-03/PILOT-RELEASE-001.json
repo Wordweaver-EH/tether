@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "phase": "pilot",
+  "lockSha256": "0aa5e25d83226a1962ee8830bc1fa684302d3e90248b7defbb8aa4c1427ba717",
+  "output": "/workspace/scratch/75679def3745/tether-robustness-shifts/pilot-attempt-001",
+  "workers": 8,
+  "independentReview": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-shifts/PILOT-INDEPENDENT-REVIEW.json",
+    "sha256": "6bf0297bdbd49765a2808a342eca3f3d9f5fb33f8e8ddbd6ba4b4bc466a38651"
+  },
+  "gitCheckpoint": {
+    "path": "/workspace/scratch/75679def3745/tether-github-update/pilot-checkpoint-publication-receipt.json",
+    "sha256": "97d1d7ce24a13a55813713c911ddce7a1527b849e72481de4fcc935242cb96ea"
+  },
+  "authorization": "Root explicit pilot-only approval 2026-10-03T04:28:13Z, contingent Git now verified. Exactly192 developmental30-second bouts; no search/evaluation; one attempt only."
+}

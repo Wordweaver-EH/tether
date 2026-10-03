@@ -1,0 +1,168 @@
+{
+  "status": "INCOMPLETE_PILOT_INFRASTRUCTURE_ONLY_NOT_EVALUATION",
+  "completed": 181,
+  "planned": 192,
+  "launch": {
+    "startedAt": "2026-10-03T04:34:54.305441+00:00",
+    "finishedAt": "2026-10-03T04:35:50.191078+00:00",
+    "wallSeconds": 55.88569277799979,
+    "exitCode": 1,
+    "command": [
+      "node",
+      "experimental/runner.mjs",
+      "--run",
+      "--phase=pilot",
+      "--lock=/workspace/scratch/75679def3745/tether-robustness-shifts/PILOT-LOCK.json",
+      "--release=/workspace/scratch/75679def3745/tether-robustness-shifts/PILOT-RELEASE-001.json",
+      "--out=/workspace/scratch/75679def3745/tether-robustness-shifts/pilot-attempt-001",
+      "--workers=8"
+    ],
+    "scope": "whole Node runner invocation, including preflight, worker launches, serialization and final source recheck"
+  },
+  "failure": {
+    "status": "FAILED_STOPPED_NO_AUTOMATIC_RETRY",
+    "completed": 181,
+    "total": 192,
+    "completedRawBytes": 131751581,
+    "completedChildrenLifetimeCpuSeconds": 415.823475,
+    "parentResourceUsage": {
+      "userCPUTime": 1392054,
+      "systemCPUTime": 621703,
+      "maxRSS": 88528,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 88492,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 168,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 44106,
+      "involuntaryContextSwitches": 14139
+    },
+    "error": "Error: ESRCH: no such process, read\n    at async readFileHandle (node:internal/fs/promises:613:24)\n    at async Timeout.<anonymous> (file:///workspace/scratch/75679def3745/tether-robustness-shifts/repo/experimental/runner.mjs:37:22)",
+    "partialRaw": null
+  },
+  "arms": {
+    "conventional": {
+      "completedTasks": 23,
+      "taskWallMedianMs": 490.109233,
+      "decisionMeanMsAcrossTasks": 0.03379459816576069,
+      "decisionMedianMsAcrossTasks": 0.015794000000028063,
+      "decisionP95MsMedianAcrossTasks": 0.04795199999995248,
+      "peakProcessRssHighWaterKB": 78936,
+      "compressedRawBytes": 11206411,
+      "uncompressedRawBytes": 67000222,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1863
+      },
+      "frozenMemoryFailures": 0
+    },
+    "conventional-useful-2x": {
+      "completedTasks": 20,
+      "taskWallMedianMs": 4000.3720915000004,
+      "decisionMeanMsAcrossTasks": 4.013737521261162,
+      "decisionMedianMsAcrossTasks": 3.328856999999914,
+      "decisionP95MsMedianAcrossTasks": 8.079845499999976,
+      "peakProcessRssHighWaterKB": 138900,
+      "compressedRawBytes": 7047384,
+      "uncompressedRawBytes": 57254405,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1620
+      },
+      "frozenMemoryFailures": 0
+    },
+    "conventional-useful-4x": {
+      "completedTasks": 19,
+      "taskWallMedianMs": 6333.447957,
+      "decisionMeanMsAcrossTasks": 6.368204617363725,
+      "decisionMedianMsAcrossTasks": 5.702739999999949,
+      "decisionP95MsMedianAcrossTasks": 12.772993000000042,
+      "peakProcessRssHighWaterKB": 145528,
+      "compressedRawBytes": 7290147,
+      "uncompressedRawBytes": 54989643,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1539
+      },
+      "frozenMemoryFailures": 0
+    },
+    "mind-broadcast-cut": {
+      "completedTasks": 23,
+      "taskWallMedianMs": 1392.788301,
+      "decisionMeanMsAcrossTasks": 0.6237506886160717,
+      "decisionMedianMsAcrossTasks": 0.4148040000000037,
+      "decisionP95MsMedianAcrossTasks": 1.284091999999987,
+      "peakProcessRssHighWaterKB": 116944,
+      "compressedRawBytes": 19988756,
+      "uncompressedRawBytes": 307346361,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1863
+      },
+      "frozenMemoryFailures": 0
+    },
+    "mind-fixed-metacog": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1807.2463295,
+      "decisionMeanMsAcrossTasks": 1.0129067020554314,
+      "decisionMedianMsAcrossTasks": 0.7306294999999636,
+      "decisionP95MsMedianAcrossTasks": 1.910839999999972,
+      "peakProcessRssHighWaterKB": 121204,
+      "compressedRawBytes": 21740638,
+      "uncompressedRawBytes": 348795436,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1944
+      },
+      "frozenMemoryFailures": 0
+    },
+    "mind-full": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1739.6917235,
+      "decisionMeanMsAcrossTasks": 1.0681068855561764,
+      "decisionMedianMsAcrossTasks": 0.7275825000000395,
+      "decisionP95MsMedianAcrossTasks": 1.808200499999998,
+      "peakProcessRssHighWaterKB": 126316,
+      "compressedRawBytes": 21649001,
+      "uncompressedRawBytes": 347651280,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1944
+      },
+      "frozenMemoryFailures": 0
+    },
+    "mind-learning-frozen": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1412.2314744999999,
+      "decisionMeanMsAcrossTasks": 0.5915463461681548,
+      "decisionMedianMsAcrossTasks": 0.39187600000002476,
+      "decisionP95MsMedianAcrossTasks": 1.2230800000000102,
+      "peakProcessRssHighWaterKB": 120344,
+      "compressedRawBytes": 21231832,
+      "uncompressedRawBytes": 345126642,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1944
+      },
+      "frozenMemoryFailures": 0
+    },
+    "mind-no-novelty": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1777.5881545,
+      "decisionMeanMsAcrossTasks": 1.1007591975446427,
+      "decisionMedianMsAcrossTasks": 0.7413054999999531,
+      "decisionP95MsMedianAcrossTasks": 1.900278499999942,
+      "peakProcessRssHighWaterKB": 123200,
+      "compressedRawBytes": 21597412,
+      "uncompressedRawBytes": 349009028,
+      "faithfulnessMismatchKinds": {
+        "commit-timestamp": 1944
+      },
+      "frozenMemoryFailures": 0
+    }
+  },
+  "rawCompressedBytes": 131751581,
+  "rawUncompressedBytes": 1877173017,
+  "balancedFullRawPointProjectionBytes": 30015882412.018307,
+  "balancedFullCpuPointProjectionSeconds": 101678.1279061968,
+  "projectionCaveat": "Incomplete short development pilot; linear300s projection is not an upper bound, excludes unseen-condition costs and state growth. Only infrastructure estimates; no outcome/policy comparisons."
+}

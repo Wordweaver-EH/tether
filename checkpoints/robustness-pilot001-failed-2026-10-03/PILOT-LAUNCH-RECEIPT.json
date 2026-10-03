@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-03T04:34:54.305441+00:00",
+  "finishedAt": "2026-10-03T04:35:50.191078+00:00",
+  "wallSeconds": 55.88569277799979,
+  "exitCode": 1,
+  "command": [
+    "node",
+    "experimental/runner.mjs",
+    "--run",
+    "--phase=pilot",
+    "--lock=/workspace/scratch/75679def3745/tether-robustness-shifts/PILOT-LOCK.json",
+    "--release=/workspace/scratch/75679def3745/tether-robustness-shifts/PILOT-RELEASE-001.json",
+    "--out=/workspace/scratch/75679def3745/tether-robustness-shifts/pilot-attempt-001",
+    "--workers=8"
+  ],
+  "scope": "whole Node runner invocation, including preflight, worker launches, serialization and final source recheck"
+}

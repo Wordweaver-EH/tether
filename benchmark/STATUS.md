@@ -1,6 +1,6 @@
 # Robustness benchmark checkpoint: reviewed interface and training-only plan
 
-One reviewed default-condition training-only attempt is now running with eight workers. Training has not completed, selected baseline parameters are not yet frozen, and no pilot, shifted-condition evaluation or final robustness result is claimed. The measured calibration and completed training batches are linked below.
+The sole default-condition training attempt completed all 4,224 tasks. Its actual selected parameters and twelve memory snapshots are now frozen with an explicit protocol qualification. Data integrity passed independent audit; this is not a clean protocol-compliance pass, and no pilot or held-out result is claimed.
 
 ## Reviewed and tested
 
@@ -28,10 +28,18 @@ The independently reviewed amendment now uses six finer useful-work levels, and 
 
 The [completed NEW development diagnostic](DEVELOPMENT-DIAGNOSTIC.md) establishes selective recruitment on reused geometry, with nulls and full denominators retained. It does not reproduce the unavailable historical 40-case assay.
 
-## Running training and verified checkpoints
+## Completed execution and verified checkpoints
 
 The sole attempt started 2026-10-03 at 01:35 UTC. Scope: 4,224 default-condition training bouts, up to eight workers, selected useful levels 4/5, monitored 24-CPU-hour and eight-wall-hour ceilings. It includes finite conventional searches and twelve separate mind-memory histories. No source tuning or held-out configurations are added during the attempt.
 
 [Audited calibration](https://github.com/Wordweaver-EH/tether/tree/01a6ea6cc23c44233a37dad5a9ed07fe8d455c7a/checkpoints/calibration-results-2026-10-03) completed all40 controller/trial runs. Selected levels4/5 achieved mean decision-wall ratios3.2065×/5.2156× on that yoked synthetic workload. Overshoot, hardware scope and limited coverage are explicit; gameplay timing ratios and strength remain unestablished. Fixed planning allowances are20.994 CPU-hours and5.748 wall-hours, not measured full-training cost.
 
 [Initial immutable batch checkpoint bc99a0b](https://github.com/Wordweaver-EH/tether/tree/bc99a0b14eb15dd8e983503d33dcaf6761688026/training/robustness-attempt-001) preserves1408 complete task-level raw rows: all1280 ordinary-conventional screening/selection tasks and128 useful-2x generation0 tasks. Every file and reconstructed archive hash was verified. [The live checkpoint index](https://github.com/Wordweaver-EH/tether/blob/data/tether-evidence-2026-10-02/training/robustness-attempt-001/CHECKPOINT-INDEX.json) lists later completed batches as they are added. Partial batches are never presented as complete. No full-training-success claim is implied by a checkpoint.
+
+## Qualified actual-output freeze
+
+[Immutable freeze 3639812](https://github.com/Wordweaver-EH/tether/tree/36398123d89881576443145b0b7826c8cf2203c9/training/robustness-attempt-001/final-artifacts) preserves the three selected vectors/levels, twelve exact snapshots, result, lock, independent audit and qualified acceptance. Parameter/snapshot manifest SHA-256: `8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98`. All 4,224 unique raw task rows are preserved in the adjacent immutable batches.
+
+Floating-point summation in asynchronous completion order affected 14 of 24 generation rankings, including three parent-set changes and two additional consequential parent-order changes. Completion/reduction order was not logged. The actual evaluated finalist sets and full final-selection rankings are unchanged under exact reranking, but that does not establish a counterfactual tie-corrected search. Seed-only exact optimizer reproduction is not certified. No output, source, winner or earlier protocol was repaired or redefined; no rerun or retuning occurred.
+
+The qualified freeze was committed and its exact bytes verified before new held-out configuration design. Pilot and held-out execution still require their separate reviewed protocols and authorization. Training selection scores are not unseen-condition strength or generalization results. Aggregate process CPU cannot be reconstructed by summing overlapping per-task intervals; the missing final whole-run accounting receipt is disclosed in the audit.

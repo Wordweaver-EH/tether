@@ -186,6 +186,16 @@
       "path": "batches/conventional-useful-2x-selection-candidate-g0-c0"
     },
     {
+      "id": "conventional-useful-2x-selection-candidate-g0-c8",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "34a3432c33b5d079959037e632c1c8dc2543752439bf59bca48950f6a42d12e2",
+      "archiveBytes": 20940,
+      "path": "batches/conventional-useful-2x-selection-candidate-g0-c8"
+    },
+    {
       "id": "conventional-useful-2x-selection-candidate-g1-c5",
       "kind": "selection-candidate",
       "arm": "conventional-useful-2x",
@@ -216,6 +226,16 @@
       "path": "batches/conventional-useful-2x-selection-candidate-g3-c14"
     },
     {
+      "id": "conventional-useful-2x-selection-candidate-g4-c6",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "cfa56bdf604c0674558519b6007c25992027262ab84c722ac174019e9fe6456a",
+      "archiveBytes": 17492,
+      "path": "batches/conventional-useful-2x-selection-candidate-g4-c6"
+    },
+    {
       "id": "conventional-useful-2x-selection-candidate-g5-c3",
       "kind": "selection-candidate",
       "arm": "conventional-useful-2x",
@@ -234,8 +254,18 @@
       "archiveSha256": "167c8a3fc816058c2727ee68203698fea70cb3caa09f0059d7863a9e7f8c71e8",
       "archiveBytes": 26906,
       "path": "batches/conventional-useful-2x-selection-candidate-g7-c1"
+    },
+    {
+      "id": "conventional-useful-2x-selection-completed",
+      "kind": "selection-finalization",
+      "arm": "conventional-useful-2x",
+      "index": null,
+      "tasks": 0,
+      "archiveSha256": "4bf4e43ce0f40734d95d16b950f37e1c671cb4ac51a6ba53591d065c37d38ad7",
+      "archiveBytes": 4470,
+      "path": "batches/conventional-useful-2x-selection-completed"
     }
   ],
-  "completedTaskRowsArchived": 2496,
-  "uniqueArchivedTaskIdsVerified": 2496
+  "completedTaskRowsArchived": 2560,
+  "uniqueArchivedTaskIdsVerified": 2560
 }

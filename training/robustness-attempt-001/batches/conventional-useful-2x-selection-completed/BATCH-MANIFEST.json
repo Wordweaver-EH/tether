@@ -1,0 +1,26 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-finalization",
+  "arm": "conventional-useful-2x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 0,
+  "taskIds": [],
+  "completionMarkers": [
+    "conventional-useful-2x-selection-ranked.json"
+  ],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-REFERENCES.json": {
+      "bytes": 18164,
+      "sha256": "90df679784c6e6a0893ce7fe215a2c75e8b10995a62265fd62e19a857ef6fe9f"
+    },
+    "conventional-useful-2x-selection-ranked.json": {
+      "bytes": 6135,
+      "sha256": "392f54963b40b6f4619f8e2ef7b7c485a05aaf6255fcffa6725fb6c234ae7291"
+    }
+  }
+}

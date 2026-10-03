@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-4x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-4x-g6-c6-k0-o0-s0",
+    "selection-conventional-useful-4x-g6-c6-k0-o0-s1",
+    "selection-conventional-useful-4x-g6-c6-k0-o1-s0",
+    "selection-conventional-useful-4x-g6-c6-k0-o1-s1",
+    "selection-conventional-useful-4x-g6-c6-k0-o2-s0",
+    "selection-conventional-useful-4x-g6-c6-k0-o2-s1",
+    "selection-conventional-useful-4x-g6-c6-k0-o3-s0",
+    "selection-conventional-useful-4x-g6-c6-k0-o3-s1",
+    "selection-conventional-useful-4x-g6-c6-k1-o0-s0",
+    "selection-conventional-useful-4x-g6-c6-k1-o0-s1",
+    "selection-conventional-useful-4x-g6-c6-k1-o1-s0",
+    "selection-conventional-useful-4x-g6-c6-k1-o1-s1",
+    "selection-conventional-useful-4x-g6-c6-k1-o2-s0",
+    "selection-conventional-useful-4x-g6-c6-k1-o2-s1",
+    "selection-conventional-useful-4x-g6-c6-k1-o3-s0",
+    "selection-conventional-useful-4x-g6-c6-k1-o3-s1",
+    "selection-conventional-useful-4x-g6-c6-k2-o0-s0",
+    "selection-conventional-useful-4x-g6-c6-k2-o0-s1",
+    "selection-conventional-useful-4x-g6-c6-k2-o1-s0",
+    "selection-conventional-useful-4x-g6-c6-k2-o1-s1",
+    "selection-conventional-useful-4x-g6-c6-k2-o2-s0",
+    "selection-conventional-useful-4x-g6-c6-k2-o2-s1",
+    "selection-conventional-useful-4x-g6-c6-k2-o3-s0",
+    "selection-conventional-useful-4x-g6-c6-k2-o3-s1",
+    "selection-conventional-useful-4x-g6-c6-k3-o0-s0",
+    "selection-conventional-useful-4x-g6-c6-k3-o0-s1",
+    "selection-conventional-useful-4x-g6-c6-k3-o1-s0",
+    "selection-conventional-useful-4x-g6-c6-k3-o1-s1",
+    "selection-conventional-useful-4x-g6-c6-k3-o2-s0",
+    "selection-conventional-useful-4x-g6-c6-k3-o2-s1",
+    "selection-conventional-useful-4x-g6-c6-k3-o3-s0",
+    "selection-conventional-useful-4x-g6-c6-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 681,
+      "sha256": "e23f2adb77d799a15d200d66f8aed78123e59d54fe3cc175f8d10c68d777eda9"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o0-s0.json": {
+      "bytes": 2102,
+      "sha256": "fb7c4cd8cccac28cc183071c787369bcc0707617b3b97a7d4ea5d32d3efda95c"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o0-s1.json": {
+      "bytes": 2105,
+      "sha256": "031f8d364713a3456e069c9bdf0c4ec546c62c7aa5535e18af76eed592709b63"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o1-s0.json": {
+      "bytes": 2108,
+      "sha256": "e2ca77db1f4ebb64a75bd8f151d2510a54feedb09592d6c46edb28414a830d0b"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o1-s1.json": {
+      "bytes": 2105,
+      "sha256": "69156320efcf11aaee6d3cb8c479422bd15aaccfd192df7d3b4157c9a48a6567"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o2-s0.json": {
+      "bytes": 7048,
+      "sha256": "2ff4a872de1e6ae9232d3988797940119fa4489d86c8caa0635a130a73d2366e"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o2-s1.json": {
+      "bytes": 12318,
+      "sha256": "dc8677fce2a614ef9d22cc8a4fbee8d5fa47e6244e9f628f81cbaffb7e61cf04"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o3-s0.json": {
+      "bytes": 2100,
+      "sha256": "032b2a2be870a8f45ccc77668a4f5bc4bb43a5aef592b019ec01a95a66490924"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k0-o3-s1.json": {
+      "bytes": 2103,
+      "sha256": "3428ddbfbf2a766da54dfcd58e2db47251c8fa4f4b3d8e847e1b6592fcca925f"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o0-s0.json": {
+      "bytes": 2450,
+      "sha256": "4278fb4afe38dd68f938d2f08df3a834c8449274450c960ff89f8d18df525d6f"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o0-s1.json": {
+      "bytes": 2108,
+      "sha256": "9fbaf4d6a7927e4d14fb174e15de6b3aa36d2a1fa3ecacf98c73c87fa625745d"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o1-s0.json": {
+      "bytes": 2109,
+      "sha256": "a327d69d3991044b2886ec2858a2ff054dbfc39f607ca0303983e7bff084d662"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o1-s1.json": {
+      "bytes": 2109,
+      "sha256": "ec37644976f439757973f88dd0acb47e30cf689b587fe8486d8cc8905adae7b2"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o2-s0.json": {
+      "bytes": 8409,
+      "sha256": "e27f6acba6a797e6d6ceccb2b6ca45610b2d6d0a3f759b75a33ea769e0f3d4f1"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o2-s1.json": {
+      "bytes": 10197,
+      "sha256": "2aed294d04de922aaca2bb4da985329b593fc505a6f3e01096e764ad23a85fe7"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o3-s0.json": {
+      "bytes": 2446,
+      "sha256": "a6894bfc821503622a8d267d96d1de1a7c91050f21912789f5ffdf6797a0769a"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k1-o3-s1.json": {
+      "bytes": 2103,
+      "sha256": "c62c2330f97a703ed85606e9529c705d846d55fae08c14ea4fb2316e0a766bcd"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o0-s0.json": {
+      "bytes": 2104,
+      "sha256": "9490577f74c7ad26008f07708ce40f8b3ee9892d408d272ca3fa2cecd5340a10"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o0-s1.json": {
+      "bytes": 2104,
+      "sha256": "d67d80a59e338a3bb8a6dd124f142180016e6ac3ba7beb5ea0014cc0b0cd4df7"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o1-s0.json": {
+      "bytes": 2448,
+      "sha256": "78f07b98beac8cef44fdeabee1016b23b3f1af775daca07bbc9cd47032e0078b"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o1-s1.json": {
+      "bytes": 2108,
+      "sha256": "b696aedf8ddff2a9ec052b8b05c6e354e80efc5bb9a5d09f81f7f331cdbe69eb"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o2-s0.json": {
+      "bytes": 4940,
+      "sha256": "5ebc6c1b6996c0e0cf51bcefd3aea4f4253c82db20985eb4b8e1738a99c52445"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o2-s1.json": {
+      "bytes": 2793,
+      "sha256": "f4c3c0f91e6108b99200135b3952310cad5a86c9b477186f6060a54fee2ffa23"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o3-s0.json": {
+      "bytes": 2794,
+      "sha256": "fb18f1d208f95a9b4a6c0b9c304d8cbd3f610ae1b7a45dbd8045bd9f0f046b1f"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k2-o3-s1.json": {
+      "bytes": 2448,
+      "sha256": "656770a4569d83ea5c160f69f2d19ff297ab0cee5f30ef96af938e7cbc97f98d"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o0-s0.json": {
+      "bytes": 2447,
+      "sha256": "0cc73e95140e0c6a783b2804b9053d6bad3acfa3fab5863e0ddd16279d7128c3"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o0-s1.json": {
+      "bytes": 2447,
+      "sha256": "847934d5eea9ac2eef8e94ccff0d2bb3f9c17882f6ad7c62f83cbd2db6e43d83"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o1-s0.json": {
+      "bytes": 2452,
+      "sha256": "d3bb749f2d00fb79ffe8345a94599a84749c76dcf573f90d05196ccdaab0f1f3"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o1-s1.json": {
+      "bytes": 2109,
+      "sha256": "d7ee3be967ee6de63827bb9728a28d4940dd1ccc138520b2127ebc8992daed87"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o2-s0.json": {
+      "bytes": 5941,
+      "sha256": "2626d308fe82877b29cae6fb0327df7bb8dff53d062d2d287a3da734e786b434"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o2-s1.json": {
+      "bytes": 5946,
+      "sha256": "e811c76e8c9bd4e2cac2fd43e97dacadc1072933b1e078498a7b0a0f8338bf13"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o3-s0.json": {
+      "bytes": 2446,
+      "sha256": "d8fbdb6166136901c79319eb466cd214f56eaf8749b11706df212173b5d5eab7"
+    },
+    "raw/selection-conventional-useful-4x-g6-c6-k3-o3-s1.json": {
+      "bytes": 2447,
+      "sha256": "5f9e3c1ecf7b3373088e54480ec6f0ffe914b8b2dfe5b0bfbb88cce36ec7b914"
+    }
+  }
+}

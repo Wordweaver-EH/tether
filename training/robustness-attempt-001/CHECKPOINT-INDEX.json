@@ -1,5 +1,5 @@
 {
-  "status": "TRAINING_IN_PROGRESS_INTERMEDIATE_BATCHES_ONLY",
+  "status": "TRAINING_COMPLETE_QUALIFIED_ACTUAL_OUTPUT_FREEZE",
   "attempt": "robustness-attempt-001",
   "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
   "codeCommit": "b9134f6a6859032ae37fce8f266f848c483db467",
@@ -757,5 +757,11 @@
     }
   ],
   "completedTaskRowsArchived": 4224,
-  "uniqueArchivedTaskIdsVerified": 4224
+  "uniqueArchivedTaskIdsVerified": 4224,
+  "finalArtifacts": {
+    "path": "final-artifacts",
+    "parameterSnapshotManifestSha256": "8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98",
+    "acceptance": "QUALIFIED-FREEZE-ACCEPTANCE.json",
+    "protocolCompliance": "QUALIFIED_NOT_CLEAN"
+  }
 }

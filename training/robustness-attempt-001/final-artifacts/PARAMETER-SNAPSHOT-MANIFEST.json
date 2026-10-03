@@ -1,0 +1,167 @@
+{
+  "status": "PREPARED_FOR_INDEPENDENT_AUDIT_AND_GIT_FREEZE",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "codeCommit": "b9134f6a6859032ae37fce8f266f848c483db467",
+  "attempt": "attempt-001",
+  "plannedAndCompletedTaskRows": 4224,
+  "files": [
+    {
+      "path": "TRAINING-RESULT.json",
+      "bytes": 3381,
+      "sha256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4"
+    },
+    {
+      "path": "LOCK-COPY.json",
+      "bytes": 11969,
+      "sha256": "15547657adbdeaaf76153d2c3103ace74c9c0d74d7eef98398d5a83f2aba5ec2"
+    },
+    {
+      "path": "snapshots/mind-0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "path": "snapshots/mind-1.json",
+      "bytes": 60428,
+      "sha256": "7c0218fb4354490fb1d6c1d4da96a89780c4f7121898ac515b540e056b743df1"
+    },
+    {
+      "path": "snapshots/mind-10.json",
+      "bytes": 60072,
+      "sha256": "05d495e808f32a4b92b5d837668b0cd969bb8d17306812af8515a0e8173ee1c0"
+    },
+    {
+      "path": "snapshots/mind-11.json",
+      "bytes": 59620,
+      "sha256": "eb3d81c5aac7738405d657fbb849531493974e7984b699b030fbeef72cb43c7a"
+    },
+    {
+      "path": "snapshots/mind-2.json",
+      "bytes": 60742,
+      "sha256": "1a2892864ccd33910bb1a40dc0309c7ce4b900129a5097a813fda35b6488857b"
+    },
+    {
+      "path": "snapshots/mind-3.json",
+      "bytes": 60034,
+      "sha256": "886d9337666165aefc418dac6cc5a0b960aa100cc75db30210c3de3db26ebe9f"
+    },
+    {
+      "path": "snapshots/mind-4.json",
+      "bytes": 60726,
+      "sha256": "6288e1d8fd26609a04c0320a1d51c65c285be31872df57e8f073302d146b3865"
+    },
+    {
+      "path": "snapshots/mind-5.json",
+      "bytes": 61450,
+      "sha256": "972581e9059f29a5fe753ef84ed118687823cdf0a5be9a0680787cbe7855d7c9"
+    },
+    {
+      "path": "snapshots/mind-6.json",
+      "bytes": 60378,
+      "sha256": "99f8e059f58bcce5c2853254ac506df698315f8644f3e5860b88071797bc6d2d"
+    },
+    {
+      "path": "snapshots/mind-7.json",
+      "bytes": 59335,
+      "sha256": "daa5aa85f21d2fb8a6f9870afd6dce930d5e6448b8f0d181393a316747dc4f56"
+    },
+    {
+      "path": "snapshots/mind-8.json",
+      "bytes": 61075,
+      "sha256": "a81500f2cb2a26d64a30986d7e739889bfd9a05a500aa1e6468054506c9eafa3"
+    },
+    {
+      "path": "snapshots/mind-9.json",
+      "bytes": 61018,
+      "sha256": "c403e5a366e1cf30d8015129e0542554387f93bd79fd029c7ec3e495d02f9ce7"
+    }
+  ],
+  "selected": [
+    {
+      "arm": "conventional",
+      "id": "conventional-g5-c0",
+      "level": null,
+      "vector": [
+        0.2232754042251036,
+        0.5398771175894266,
+        0.733876585025197,
+        0.4906195347057983,
+        0.3885911001889035,
+        0.3062100098254158,
+        1,
+        0.07266486261039973,
+        0.11554968237876893,
+        0.3807369380090385,
+        0.3889320341843683,
+        0.7746265225203877,
+        0.40983384828362623,
+        0.9752428147941827,
+        0.894988076557095,
+        0.4378310157796368,
+        1,
+        0.11297092713415623,
+        0,
+        0,
+        0.33838236861862225
+      ]
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "id": "conventional-useful-2x-g7-c1",
+      "level": 4,
+      "vector": [
+        0,
+        0.18019777992119385,
+        0.9979696066620258,
+        0.4754833488297045,
+        0,
+        0.864083916656673,
+        0.6999739839509129,
+        0.05188049338757992,
+        0.08671830240637066,
+        0.30196530491113666,
+        0.175046340344617,
+        0.30215804083442144,
+        0.760973932594061,
+        0.7125426130369306,
+        0.8346302962924043,
+        0.8664329746365548,
+        0.6785782298445702,
+        0,
+        0.4733584721013904,
+        0.3126130532778122,
+        1
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "id": "conventional-useful-4x-g0-c5",
+      "level": 5,
+      "vector": [
+        0.030355820246040822,
+        0.2384674693395694,
+        0.815432965488961,
+        0.32028274157460324,
+        0.07318196068207422,
+        0.5360306527093053,
+        0.5359574246034026,
+        0.004256077893078327,
+        0.02713815912604332,
+        0.3248705430328846,
+        0,
+        0.4661879601160233,
+        0.4155025033652783,
+        1,
+        0.6041242921228209,
+        0.7466960285604,
+        0.770533645041287,
+        0,
+        0.156119393967092,
+        0.09020744766362687,
+        1
+      ]
+    }
+  ],
+  "fixedTeacherEvery": 1,
+  "scope": "Frozen choices from current-condition training only; not permission to run pilot or held-out evaluation"
+}

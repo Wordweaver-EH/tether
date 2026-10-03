@@ -1,0 +1,27 @@
+{
+  "status": "ELIGIBLE_FOR_QUALIFIED_FREEZE",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "trainingResultSha256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4",
+  "parameterSnapshotManifestSha256": "8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98",
+  "tasksVerified": 4224,
+  "rankDisposition": "Recorded outputs preserved; mathematical tie-policy deviation must be disclosed; no clean deterministic-protocol pass",
+  "rankingDeviation": {
+    "affectedGenerations": 14,
+    "topFourMembershipChanges": 3,
+    "additionalParentOrderChangesWithNextGeneration": 2,
+    "finalistSetsUnchanged": true,
+    "fullFinalSelectionRankingsUnchanged": true,
+    "completionOrderNotRecorded": true
+  },
+  "dataIntegrity": "PASS",
+  "memoryHistoriesVerified": 12,
+  "seedOnlyOptimizerReplayCertified": false,
+  "cpuTotal": "Unavailable; overlapping per-task process CPU not summed",
+  "controllerReruns": 0,
+  "eligibilityConditions": [
+    "Commit exact trained parameter/snapshot manifest and explicit deviation report before held-out condition design",
+    "Do not redefine earlier protocol or silently repair recorded outputs",
+    "Retain original outcomes and all rankings",
+    "Separate later pilot/study review and authorization required"
+  ]
+}

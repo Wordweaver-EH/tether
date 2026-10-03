@@ -1,0 +1,26 @@
+{
+  "status": "QUALIFIED_ACTUAL_OUTPUT_FREEZE_ACCEPTED",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "parameterSnapshotManifestSha256": "8d90d0e94f0d448f3d62eab8f1596e6380f090c3b692de13f83497f80d6d8e98",
+  "trainingResultSha256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4",
+  "auditSha256": "4518b433f2918dac0b8e8cf7b78e7bf8384df70189163a5ee4e18627f35cc0ed",
+  "tasksVerified": 4224,
+  "dataIntegrity": "PASS",
+  "protocolCompliance": "QUALIFIED_NOT_CLEAN",
+  "affectedGenerationRankings": 14,
+  "generationRankingsTotal": 24,
+  "parentMembershipChanges": 3,
+  "additionalConsequentialParentOrderChanges": 2,
+  "actualFinalistSetsAndFinalRankingsUnchangedByExactReranking": true,
+  "deterministicCompletionReductionOrderRecorded": false,
+  "seedOnlyExactSearchReproductionCertified": false,
+  "outputsChanged": false,
+  "reruns": 0,
+  "retuning": false,
+  "conditions": [
+    "Preserve actual source, outputs and rankings without retroactive repair",
+    "No clean-protocol compliance or seed-only exact-search reproduction claim",
+    "Commit and verify this exact qualified freeze before held-out design",
+    "No pilot or held-out execution authorization from this record"
+  ]
+}

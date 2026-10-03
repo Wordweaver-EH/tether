@@ -1,0 +1,52 @@
+{
+  "all384ScreenScoresReachableUnderIEEEOrder": true,
+  "unreachable": [],
+  "fixedTaskOrderRankDifferences": [
+    {
+      "arm": "conventional",
+      "generation": 2,
+      "firstFourDifferent": true
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 3,
+      "firstFourDifferent": true
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 4,
+      "firstFourDifferent": false
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 7,
+      "firstFourDifferent": false
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 0,
+      "firstFourDifferent": true
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 1,
+      "firstFourDifferent": true
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 3,
+      "firstFourDifferent": false
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 4,
+      "firstFourDifferent": true
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 6,
+      "firstFourDifferent": true
+    }
+  ],
+  "completionOrderRecorded": false
+}

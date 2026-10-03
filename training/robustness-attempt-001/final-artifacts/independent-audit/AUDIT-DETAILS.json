@@ -1,0 +1,905 @@
+{
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "tasksChecked": 4224,
+  "selected": [
+    {
+      "arm": "conventional",
+      "id": "conventional-g5-c0",
+      "level": null,
+      "score": 18.331250000000004,
+      "vectorSHA256": "eaa8c3a9b3dc539f13e8c9aae59b4160009b0ed351f1bf1a847dbc0eba29806a"
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "id": "conventional-useful-2x-g7-c1",
+      "level": 4,
+      "score": 1.2562499999999996,
+      "vectorSHA256": "5ddb4d7f80c4074baca2d5a4fe11d3d4dfb0a1d16a5223b18b97bf28369ffc30"
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "id": "conventional-useful-4x-g0-c5",
+      "level": 5,
+      "score": 1.9812500000000004,
+      "vectorSHA256": "a5c4659ad56f2b7681e09d6d2e184fadc9b3d1b6fa378d2ddc477e6abff8f284"
+    }
+  ],
+  "teaching": {
+    "cycles": 3454464,
+    "tier2": 3374232,
+    "nonreflex": 3437124
+  },
+  "fixedTeacherEvery": 1,
+  "rankingIssues": [
+    {
+      "arm": "conventional",
+      "generation": 2,
+      "topFourChanged": true,
+      "savedTopFour": [
+        [
+          "conventional-g2-c6",
+          14.5
+        ],
+        [
+          "conventional-g2-c8",
+          13.666666666666668
+        ],
+        [
+          "conventional-g2-c0",
+          13.166666666666668
+        ],
+        [
+          "conventional-g2-c4",
+          13.166666666666666
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-g2-c6",
+          87
+        ],
+        [
+          "conventional-g2-c8",
+          82
+        ],
+        [
+          "conventional-g2-c4",
+          79
+        ],
+        [
+          "conventional-g2-c0",
+          79
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 2,
+          "saved": "conventional-g2-c0",
+          "exact": "conventional-g2-c4"
+        },
+        {
+          "position": 3,
+          "saved": "conventional-g2-c4",
+          "exact": "conventional-g2-c0"
+        }
+      ]
+    },
+    {
+      "arm": "conventional",
+      "generation": 3,
+      "topFourChanged": true,
+      "savedTopFour": [
+        [
+          "conventional-g3-c6",
+          17.833333333333336
+        ],
+        [
+          "conventional-g3-c2",
+          15.166666666666668
+        ],
+        [
+          "conventional-g3-c14",
+          14
+        ],
+        [
+          "conventional-g3-c13",
+          12.5
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-g3-c6",
+          107
+        ],
+        [
+          "conventional-g3-c2",
+          91
+        ],
+        [
+          "conventional-g3-c14",
+          84
+        ],
+        [
+          "conventional-g3-c11",
+          75
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 3,
+          "saved": "conventional-g3-c13",
+          "exact": "conventional-g3-c11"
+        },
+        {
+          "position": 4,
+          "saved": "conventional-g3-c11",
+          "exact": "conventional-g3-c13"
+        },
+        {
+          "position": 8,
+          "saved": "conventional-g3-c9",
+          "exact": "conventional-g3-c10"
+        },
+        {
+          "position": 9,
+          "saved": "conventional-g3-c10",
+          "exact": "conventional-g3-c9"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 0,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-2x-g0-c0",
+          4.666666666666667
+        ],
+        [
+          "conventional-useful-2x-g0-c8",
+          4.5
+        ],
+        [
+          "conventional-useful-2x-g0-c14",
+          4
+        ],
+        [
+          "conventional-useful-2x-g0-c2",
+          3.9999999999999996
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-2x-g0-c0",
+          28
+        ],
+        [
+          "conventional-useful-2x-g0-c8",
+          27
+        ],
+        [
+          "conventional-useful-2x-g0-c14",
+          24
+        ],
+        [
+          "conventional-useful-2x-g0-c2",
+          24
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 5,
+          "saved": "conventional-useful-2x-g0-c15",
+          "exact": "conventional-useful-2x-g0-c13"
+        },
+        {
+          "position": 6,
+          "saved": "conventional-useful-2x-g0-c13",
+          "exact": "conventional-useful-2x-g0-c15"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 1,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-2x-g1-c5",
+          4.666666666666666
+        ],
+        [
+          "conventional-useful-2x-g1-c13",
+          4.333333333333333
+        ],
+        [
+          "conventional-useful-2x-g1-c7",
+          4.166666666666667
+        ],
+        [
+          "conventional-useful-2x-g1-c4",
+          3.8333333333333335
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-2x-g1-c5",
+          28
+        ],
+        [
+          "conventional-useful-2x-g1-c13",
+          26
+        ],
+        [
+          "conventional-useful-2x-g1-c7",
+          25
+        ],
+        [
+          "conventional-useful-2x-g1-c4",
+          23
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 9,
+          "saved": "conventional-useful-2x-g1-c10",
+          "exact": "conventional-useful-2x-g1-c8"
+        },
+        {
+          "position": 10,
+          "saved": "conventional-useful-2x-g1-c8",
+          "exact": "conventional-useful-2x-g1-c10"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 4,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-2x-g4-c6",
+          4.333333333333334
+        ],
+        [
+          "conventional-useful-2x-g4-c4",
+          3.5
+        ],
+        [
+          "conventional-useful-2x-g4-c12",
+          3.166666666666667
+        ],
+        [
+          "conventional-useful-2x-g4-c2",
+          2.333333333333333
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-2x-g4-c6",
+          26
+        ],
+        [
+          "conventional-useful-2x-g4-c4",
+          21
+        ],
+        [
+          "conventional-useful-2x-g4-c12",
+          19
+        ],
+        [
+          "conventional-useful-2x-g4-c2",
+          14
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 9,
+          "saved": "conventional-useful-2x-g4-c13",
+          "exact": "conventional-useful-2x-g4-c9"
+        },
+        {
+          "position": 10,
+          "saved": "conventional-useful-2x-g4-c8",
+          "exact": "conventional-useful-2x-g4-c5"
+        },
+        {
+          "position": 11,
+          "saved": "conventional-useful-2x-g4-c9",
+          "exact": "conventional-useful-2x-g4-c13"
+        },
+        {
+          "position": 12,
+          "saved": "conventional-useful-2x-g4-c5",
+          "exact": "conventional-useful-2x-g4-c8"
+        },
+        {
+          "position": 14,
+          "saved": "conventional-useful-2x-g4-c0",
+          "exact": "conventional-useful-2x-g4-c15"
+        },
+        {
+          "position": 15,
+          "saved": "conventional-useful-2x-g4-c15",
+          "exact": "conventional-useful-2x-g4-c0"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-2x",
+      "generation": 7,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-2x-g7-c1",
+          5.666666666666667
+        ],
+        [
+          "conventional-useful-2x-g7-c3",
+          4.166666666666666
+        ],
+        [
+          "conventional-useful-2x-g7-c7",
+          3.9999999999999996
+        ],
+        [
+          "conventional-useful-2x-g7-c8",
+          3.166666666666667
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-2x-g7-c1",
+          34
+        ],
+        [
+          "conventional-useful-2x-g7-c3",
+          25
+        ],
+        [
+          "conventional-useful-2x-g7-c7",
+          24
+        ],
+        [
+          "conventional-useful-2x-g7-c8",
+          19
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 14,
+          "saved": "conventional-useful-2x-g7-c14",
+          "exact": "conventional-useful-2x-g7-c5"
+        },
+        {
+          "position": 15,
+          "saved": "conventional-useful-2x-g7-c5",
+          "exact": "conventional-useful-2x-g7-c14"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 0,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g0-c0",
+          5.333333333333334
+        ],
+        [
+          "conventional-useful-4x-g0-c8",
+          5.333333333333334
+        ],
+        [
+          "conventional-useful-4x-g0-c5",
+          4.666666666666667
+        ],
+        [
+          "conventional-useful-4x-g0-c10",
+          3.833333333333333
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g0-c0",
+          32
+        ],
+        [
+          "conventional-useful-4x-g0-c8",
+          32
+        ],
+        [
+          "conventional-useful-4x-g0-c5",
+          28
+        ],
+        [
+          "conventional-useful-4x-g0-c10",
+          23
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 11,
+          "saved": "conventional-useful-4x-g0-c12",
+          "exact": "conventional-useful-4x-g0-c15"
+        },
+        {
+          "position": 12,
+          "saved": "conventional-useful-4x-g0-c15",
+          "exact": "conventional-useful-4x-g0-c12"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 1,
+      "topFourChanged": true,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g1-c8",
+          3.833333333333333
+        ],
+        [
+          "conventional-useful-4x-g1-c2",
+          3.5
+        ],
+        [
+          "conventional-useful-4x-g1-c6",
+          3.4999999999999996
+        ],
+        [
+          "conventional-useful-4x-g1-c5",
+          3.4999999999999996
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g1-c8",
+          23
+        ],
+        [
+          "conventional-useful-4x-g1-c6",
+          21
+        ],
+        [
+          "conventional-useful-4x-g1-c2",
+          21
+        ],
+        [
+          "conventional-useful-4x-g1-c5",
+          21
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 1,
+          "saved": "conventional-useful-4x-g1-c2",
+          "exact": "conventional-useful-4x-g1-c6"
+        },
+        {
+          "position": 2,
+          "saved": "conventional-useful-4x-g1-c6",
+          "exact": "conventional-useful-4x-g1-c2"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 2,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g2-c0",
+          3.8333333333333335
+        ],
+        [
+          "conventional-useful-4x-g2-c12",
+          3.8333333333333335
+        ],
+        [
+          "conventional-useful-4x-g2-c6",
+          3.5
+        ],
+        [
+          "conventional-useful-4x-g2-c13",
+          3.1666666666666665
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g2-c0",
+          23
+        ],
+        [
+          "conventional-useful-4x-g2-c12",
+          23
+        ],
+        [
+          "conventional-useful-4x-g2-c6",
+          21
+        ],
+        [
+          "conventional-useful-4x-g2-c13",
+          19
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 6,
+          "saved": "conventional-useful-4x-g2-c9",
+          "exact": "conventional-useful-4x-g2-c8"
+        },
+        {
+          "position": 7,
+          "saved": "conventional-useful-4x-g2-c15",
+          "exact": "conventional-useful-4x-g2-c9"
+        },
+        {
+          "position": 8,
+          "saved": "conventional-useful-4x-g2-c8",
+          "exact": "conventional-useful-4x-g2-c15"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 3,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g3-c2",
+          4.333333333333333
+        ],
+        [
+          "conventional-useful-4x-g3-c8",
+          4.166666666666666
+        ],
+        [
+          "conventional-useful-4x-g3-c5",
+          3.999999999999999
+        ],
+        [
+          "conventional-useful-4x-g3-c6",
+          3.666666666666667
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g3-c2",
+          26
+        ],
+        [
+          "conventional-useful-4x-g3-c8",
+          25
+        ],
+        [
+          "conventional-useful-4x-g3-c5",
+          24
+        ],
+        [
+          "conventional-useful-4x-g3-c6",
+          22
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 10,
+          "saved": "conventional-useful-4x-g3-c11",
+          "exact": "conventional-useful-4x-g3-c3"
+        },
+        {
+          "position": 11,
+          "saved": "conventional-useful-4x-g3-c3",
+          "exact": "conventional-useful-4x-g3-c11"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 4,
+      "topFourChanged": true,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g4-c14",
+          4.500000000000001
+        ],
+        [
+          "conventional-useful-4x-g4-c9",
+          4.333333333333333
+        ],
+        [
+          "conventional-useful-4x-g4-c11",
+          3.833333333333333
+        ],
+        [
+          "conventional-useful-4x-g4-c2",
+          3.5
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g4-c14",
+          27
+        ],
+        [
+          "conventional-useful-4x-g4-c9",
+          26
+        ],
+        [
+          "conventional-useful-4x-g4-c11",
+          23
+        ],
+        [
+          "conventional-useful-4x-g4-c1",
+          21
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 3,
+          "saved": "conventional-useful-4x-g4-c2",
+          "exact": "conventional-useful-4x-g4-c1"
+        },
+        {
+          "position": 4,
+          "saved": "conventional-useful-4x-g4-c1",
+          "exact": "conventional-useful-4x-g4-c2"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 5,
+      "topFourChanged": false,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g5-c13",
+          3.6666666666666665
+        ],
+        [
+          "conventional-useful-4x-g5-c12",
+          3.6666666666666665
+        ],
+        [
+          "conventional-useful-4x-g5-c9",
+          3.333333333333333
+        ],
+        [
+          "conventional-useful-4x-g5-c2",
+          2.6666666666666665
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g5-c13",
+          22
+        ],
+        [
+          "conventional-useful-4x-g5-c12",
+          22
+        ],
+        [
+          "conventional-useful-4x-g5-c9",
+          20
+        ],
+        [
+          "conventional-useful-4x-g5-c2",
+          16
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 9,
+          "saved": "conventional-useful-4x-g5-c5",
+          "exact": "conventional-useful-4x-g5-c10"
+        },
+        {
+          "position": 10,
+          "saved": "conventional-useful-4x-g5-c14",
+          "exact": "conventional-useful-4x-g5-c5"
+        },
+        {
+          "position": 11,
+          "saved": "conventional-useful-4x-g5-c1",
+          "exact": "conventional-useful-4x-g5-c0"
+        },
+        {
+          "position": 12,
+          "saved": "conventional-useful-4x-g5-c10",
+          "exact": "conventional-useful-4x-g5-c14"
+        },
+        {
+          "position": 13,
+          "saved": "conventional-useful-4x-g5-c0",
+          "exact": "conventional-useful-4x-g5-c1"
+        },
+        {
+          "position": 14,
+          "saved": "conventional-useful-4x-g5-c3",
+          "exact": "conventional-useful-4x-g5-c4"
+        },
+        {
+          "position": 15,
+          "saved": "conventional-useful-4x-g5-c4",
+          "exact": "conventional-useful-4x-g5-c3"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 6,
+      "topFourChanged": true,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g6-c9",
+          4.5
+        ],
+        [
+          "conventional-useful-4x-g6-c6",
+          4.499999999999999
+        ],
+        [
+          "conventional-useful-4x-g6-c7",
+          4.166666666666667
+        ],
+        [
+          "conventional-useful-4x-g6-c10",
+          4.166666666666667
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g6-c9",
+          27
+        ],
+        [
+          "conventional-useful-4x-g6-c6",
+          27
+        ],
+        [
+          "conventional-useful-4x-g6-c3",
+          25
+        ],
+        [
+          "conventional-useful-4x-g6-c14",
+          25
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 2,
+          "saved": "conventional-useful-4x-g6-c7",
+          "exact": "conventional-useful-4x-g6-c3"
+        },
+        {
+          "position": 3,
+          "saved": "conventional-useful-4x-g6-c10",
+          "exact": "conventional-useful-4x-g6-c14"
+        },
+        {
+          "position": 4,
+          "saved": "conventional-useful-4x-g6-c3",
+          "exact": "conventional-useful-4x-g6-c7"
+        },
+        {
+          "position": 5,
+          "saved": "conventional-useful-4x-g6-c14",
+          "exact": "conventional-useful-4x-g6-c10"
+        },
+        {
+          "position": 11,
+          "saved": "conventional-useful-4x-g6-c8",
+          "exact": "conventional-useful-4x-g6-c0"
+        },
+        {
+          "position": 12,
+          "saved": "conventional-useful-4x-g6-c2",
+          "exact": "conventional-useful-4x-g6-c8"
+        },
+        {
+          "position": 13,
+          "saved": "conventional-useful-4x-g6-c0",
+          "exact": "conventional-useful-4x-g6-c2"
+        }
+      ]
+    },
+    {
+      "arm": "conventional-useful-4x",
+      "generation": 7,
+      "topFourChanged": true,
+      "savedTopFour": [
+        [
+          "conventional-useful-4x-g7-c9",
+          4.333333333333333
+        ],
+        [
+          "conventional-useful-4x-g7-c1",
+          3.8333333333333335
+        ],
+        [
+          "conventional-useful-4x-g7-c5",
+          3.833333333333333
+        ],
+        [
+          "conventional-useful-4x-g7-c10",
+          3.5
+        ]
+      ],
+      "exactTopFour": [
+        [
+          "conventional-useful-4x-g7-c9",
+          26
+        ],
+        [
+          "conventional-useful-4x-g7-c5",
+          23
+        ],
+        [
+          "conventional-useful-4x-g7-c1",
+          23
+        ],
+        [
+          "conventional-useful-4x-g7-c10",
+          21
+        ]
+      ],
+      "allOrderDifferences": [
+        {
+          "position": 1,
+          "saved": "conventional-useful-4x-g7-c1",
+          "exact": "conventional-useful-4x-g7-c5"
+        },
+        {
+          "position": 2,
+          "saved": "conventional-useful-4x-g7-c5",
+          "exact": "conventional-useful-4x-g7-c1"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "conventional": {
+      "tasks": 1280,
+      "decisions": 3681280,
+      "decisionWallSumMs": 40321.704314997536,
+      "decisionWeightedMeanMs": 0.010953175068182136,
+      "taskWallSumMsOverlapping": 195229.16868899995,
+      "maxSampledProcessRssBytes": 1563435008,
+      "processLifetimeHighwaterKB": 1526792,
+      "processCPUNotSummed": true
+    },
+    "conventional-useful-2x": {
+      "tasks": 1280,
+      "decisions": 3681280,
+      "decisionWallSumMs": 11978068.06739312,
+      "decisionWeightedMeanMs": 3.2537780520343795,
+      "taskWallSumMsOverlapping": 12220559.993736994,
+      "maxSampledProcessRssBytes": 1583792128,
+      "processLifetimeHighwaterKB": 1546832,
+      "processCPUNotSummed": true
+    },
+    "conventional-useful-4x": {
+      "tasks": 1280,
+      "decisions": 3681280,
+      "decisionWallSumMs": 19817392.730965458,
+      "decisionWeightedMeanMs": 5.3832886199814896,
+      "taskWallSumMsOverlapping": 20090992.567504022,
+      "maxSampledProcessRssBytes": 1501110272,
+      "processLifetimeHighwaterKB": 1546832,
+      "processCPUNotSummed": true
+    },
+    "mind": {
+      "tasks": 384,
+      "decisions": 3454464,
+      "decisionWallSumMs": 2060334.6802564026,
+      "decisionWeightedMeanMs": 0.596426733715101,
+      "taskWallSumMsOverlapping": 2407670.2421900076,
+      "maxSampledProcessRssBytes": 1606619136,
+      "processLifetimeHighwaterKB": 1568964,
+      "processCPUNotSummed": true
+    }
+  },
+  "trainingResultSHA256": "22e55df015fd05f6f10ce60c61a8e938becf92b6c461e0b71b9cfbf6eb1cece4"
+}

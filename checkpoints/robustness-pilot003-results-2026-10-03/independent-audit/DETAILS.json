@@ -1,0 +1,86 @@
+{
+  "tasks": 192,
+  "rows": 215357,
+  "decisions": 172032,
+  "events": 34812,
+  "calibration": 794,
+  "nativeIssues": 646,
+  "nativeOutcomes": 620,
+  "nativeCensored": 26,
+  "shadow": 148,
+  "freeze": 24,
+  "memoryLinks": 60,
+  "exactPreviousWorldMemory": 192,
+  "exactPreviousDecisionSemantics": 172032,
+  "exactPreviousProofCommitments": 192,
+  "rawBytes": 65721547,
+  "logicalBytes": 868373991,
+  "cpuSeconds": 419.0110989999998,
+  "parentCpuSeconds": 1.993708,
+  "maxRss": 156479488,
+  "maxWallMs": 6962.431296,
+  "checks": {
+    "actual-motor-transform": {
+      "pass": 172032
+    },
+    "actual-command-commit": {
+      "pass": 172032
+    },
+    "commit-timestamp": {
+      "pass": 172032
+    },
+    "exact-sensor-delay-ticks": {
+      "pass": 172032
+    },
+    "receipt-clock-roundoff-only": {
+      "pass": 172032
+    },
+    "actual-report-present": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "workspace-focus": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "delivered-content": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "evidence-age-text": {
+      "pass": 95706,
+      "notApplicable": 76326
+    },
+    "native-novelty": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "native-prediction": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "native-completion": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "pre-motor-report-command": {
+      "pass": 107520,
+      "notApplicable": 64512
+    },
+    "pre-motor-diagnostic-command": {
+      "pass": 107520,
+      "notApplicable": 64512
+    }
+  },
+  "projection": {
+    "factor": 220,
+    "rawGiB": 13.46575127914548,
+    "cpuHours": 25.728071538888877,
+    "wallHours": 3.5965145825891844
+  },
+  "margin": {
+    "rawGiB": 2.534248720854521,
+    "cpuHours": 10.271928461111123,
+    "wallHours": 4.403485417410815
+  }
+}

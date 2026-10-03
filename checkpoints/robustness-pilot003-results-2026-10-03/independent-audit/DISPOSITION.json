@@ -1,0 +1,33 @@
+{
+  "status": "PILOT_INTEGRITY_PASS_CONDITIONAL_ENGINEERING_FEASIBILITY",
+  "pilotIntegrityApproved": true,
+  "fullStudyExecutionApproved": false,
+  "searchExecutionApproved": false,
+  "controllerReruns": 0,
+  "lockSha256": "e3d86cb6949fc952525a93224b7d3c61477d37e47342ace76e25bf9fbd9afb37",
+  "completedTasks": 192,
+  "sourceInputsVerified": 115,
+  "exactPreviousDecisionSemantics": 172032,
+  "exactPreviousWorldMemory": 192,
+  "exactPreviousTaskCommitments": 192,
+  "exactDictionaryDefinitions": 172559,
+  "projection": {
+    "factor": 220,
+    "rawGiB": 13.46575127914548,
+    "accountedCpuHours": 25.728071538888877,
+    "wallHours": 3.5965145825891844,
+    "caps": {
+      "rawGiB": 16,
+      "cpuHours": 36,
+      "wallHours": 8
+    },
+    "scope": "workload-specific point projections, not upper bounds"
+  },
+  "remainingGates": [
+    "Reviewed frozen searched opponent",
+    "Complete analyzer review",
+    "Exact final phase source/publication locks",
+    "Explicit root release; runtime hard stops retained"
+  ],
+  "reportSha256": "acb4e063be36c798170ad48f3cb07f7216bf8d3ba7d0f8570ff3ecd5302023dd"
+}

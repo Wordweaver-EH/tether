@@ -1,0 +1,195 @@
+{
+  "status": "FINAL_RUNTIME_PILOT_COMPLETE_NEEDS_INDEPENDENT_AUDIT_NOT_FULL_RELEASE",
+  "completed": 192,
+  "planned": 192,
+  "launch": {
+    "startedAt": "2026-10-03T05:59:37.836425+00:00",
+    "finishedAt": "2026-10-03T06:00:36.688472+00:00",
+    "wallSeconds": 58.85205680600484,
+    "exitCode": 0,
+    "command": [
+      "node",
+      "experimental/runner.mjs",
+      "--run",
+      "--phase=pilot",
+      "--lock=/workspace/scratch/75679def3745/tether-robustness-shifts/FINAL-REPRESENTATION-PILOT-LOCK.json",
+      "--release=/workspace/scratch/75679def3745/tether-robustness-shifts/FINAL-PILOT-RELEASE-003.json",
+      "--out=/workspace/scratch/75679def3745/tether-robustness-shifts/pilot-attempt-003",
+      "--workers=8"
+    ],
+    "scope": "whole Node runner invocation including preflight, workers, serialization and final source recheck"
+  },
+  "phaseResources": {
+    "completedRawBytes": 65721547,
+    "completedChildrenLifetimeCpuSeconds": 419.0110989999998,
+    "parentResourceUsage": {
+      "userCPUTime": 1481609,
+      "systemCPUTime": 512099,
+      "maxRSS": 90264,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 88468,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 168,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 44652,
+      "involuntaryContextSwitches": 15488
+    },
+    "scope": "isolated child lifetime through final IPC receipt plus parent own process; final child IPC/exit micro-overhead excluded",
+    "liveEnforcementSamplingMs": 250
+  },
+  "arms": {
+    "conventional": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 295.345591,
+      "decisionMeanMsAcrossTasks": 0.039366011951264754,
+      "decisionMedianMsAcrossTasks": 0.015904000000006135,
+      "decisionP95MsMedianAcrossTasks": 0.053145000000000664,
+      "peakProcessRssHighWaterKB": 79196,
+      "compressedRawBytes": 4592050,
+      "uncompressedRawBytes": 44740387,
+      "meanInterfaceWallMs": 50.21261649999955,
+      "meanObserverWallMs": 86.91038150000004,
+      "meanTerminalObserverWallMs": 0.9520270833333294,
+      "faithfulnessMismatchKinds": {}
+    },
+    "conventional-useful-2x": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 3742.4628965,
+      "decisionMeanMsAcrossTasks": 3.7987632468377974,
+      "decisionMedianMsAcrossTasks": 3.344269499999939,
+      "decisionP95MsMedianAcrossTasks": 7.642025999999987,
+      "peakProcessRssHighWaterKB": 139824,
+      "compressedRawBytes": 3667443,
+      "uncompressedRawBytes": 45447392,
+      "meanInterfaceWallMs": 3414.517116500002,
+      "meanObserverWallMs": 113.44153020833356,
+      "meanTerminalObserverWallMs": 0.3990029583332368,
+      "faithfulnessMismatchKinds": {}
+    },
+    "conventional-useful-4x": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 5860.810097,
+      "decisionMeanMsAcrossTasks": 6.085262323614212,
+      "decisionMedianMsAcrossTasks": 5.6001684999998815,
+      "decisionP95MsMedianAcrossTasks": 12.675866999999926,
+      "peakProcessRssHighWaterKB": 143196,
+      "compressedRawBytes": 3949440,
+      "uncompressedRawBytes": 45748907,
+      "meanInterfaceWallMs": 5463.393487833329,
+      "meanObserverWallMs": 126.89507654166597,
+      "meanTerminalObserverWallMs": 0.5436207083334542,
+      "faithfulnessMismatchKinds": {}
+    },
+    "mind-broadcast-cut": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1103.219006,
+      "decisionMeanMsAcrossTasks": 0.6284955445498522,
+      "decisionMedianMsAcrossTasks": 0.4243990000000508,
+      "decisionP95MsMedianAcrossTasks": 1.3133719999999869,
+      "peakProcessRssHighWaterKB": 153324,
+      "compressedRawBytes": 10477805,
+      "uncompressedRawBytes": 145896663,
+      "meanInterfaceWallMs": 576.7182633333339,
+      "meanObserverWallMs": 369.61929216666704,
+      "meanTerminalObserverWallMs": 1.4359827083333367,
+      "faithfulnessMismatchKinds": {}
+    },
+    "mind-fixed-metacog": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1488.201043,
+      "decisionMeanMsAcrossTasks": 1.0557386455543158,
+      "decisionMedianMsAcrossTasks": 0.7410955000000286,
+      "decisionP95MsMedianAcrossTasks": 2.018042500000007,
+      "peakProcessRssHighWaterKB": 152492,
+      "compressedRawBytes": 10757856,
+      "uncompressedRawBytes": 147746765,
+      "meanInterfaceWallMs": 957.4622378333335,
+      "meanObserverWallMs": 386.2950096250005,
+      "meanTerminalObserverWallMs": 2.016273291666655,
+      "faithfulnessMismatchKinds": {}
+    },
+    "mind-full": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1484.143758,
+      "decisionMeanMsAcrossTasks": 1.0670427788783488,
+      "decisionMedianMsAcrossTasks": 0.750314000000003,
+      "decisionP95MsMedianAcrossTasks": 1.9384575000000268,
+      "peakProcessRssHighWaterKB": 152428,
+      "compressedRawBytes": 10797791,
+      "uncompressedRawBytes": 146516349,
+      "meanInterfaceWallMs": 968.4710708749998,
+      "meanObserverWallMs": 390.12957170833283,
+      "meanTerminalObserverWallMs": 2.065475916666647,
+      "faithfulnessMismatchKinds": {}
+    },
+    "mind-learning-frozen": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1087.766226,
+      "decisionMeanMsAcrossTasks": 0.5939327856212797,
+      "decisionMedianMsAcrossTasks": 0.3862514999999007,
+      "decisionP95MsMedianAcrossTasks": 1.2784090000000106,
+      "peakProcessRssHighWaterKB": 153892,
+      "compressedRawBytes": 10673712,
+      "uncompressedRawBytes": 145341008,
+      "meanInterfaceWallMs": 545.2722064583338,
+      "meanObserverWallMs": 386.72456070833294,
+      "meanTerminalObserverWallMs": 2.609008749999996,
+      "faithfulnessMismatchKinds": {}
+    },
+    "mind-no-novelty": {
+      "completedTasks": 24,
+      "taskWallMedianMs": 1423.770713,
+      "decisionMeanMsAcrossTasks": 1.0102818133835558,
+      "decisionMedianMsAcrossTasks": 0.7262079999999855,
+      "decisionP95MsMedianAcrossTasks": 1.853174000000081,
+      "peakProcessRssHighWaterKB": 151448,
+      "compressedRawBytes": 10805450,
+      "uncompressedRawBytes": 146936520,
+      "meanInterfaceWallMs": 917.1646353750001,
+      "meanObserverWallMs": 371.6230563750004,
+      "meanTerminalObserverWallMs": 1.9915389583333176,
+      "faithfulnessMismatchKinds": {}
+    }
+  },
+  "rawCompressedBytes": 65721547,
+  "rawUncompressedBytes": 868373991,
+  "accountedPilotCpuSeconds": 421.0048069999998,
+  "linearProjection": {
+    "rawGiB": 13.46575127914548,
+    "cpuHours": 25.728071538888877,
+    "wallHours": 3.5965145825891844,
+    "scale": 220
+  },
+  "decisionRatioAdjustedProjection": {
+    "rawGiB": 13.51985474410633,
+    "cpuHours": 25.831443254893344,
+    "note": "Scales fixed18tick startup correctly for decision counts, still not a true upper bound; over-scales per-task setup/header costs."
+  },
+  "clusterRawBytes": {
+    "dev-b": 22395256,
+    "dev-a": 22133427,
+    "dev-c": 21192864
+  },
+  "maxObservedClusterRawPointGiB": 13.76575693488121,
+  "caps": {
+    "cpuHours": 36,
+    "wallHours": 8,
+    "rawGiB": 16
+  },
+  "headroomFactors": {
+    "cpuHours": 1.3992498406102745,
+    "wallHours": 2.2243757994832545,
+    "rawGiB": 1.1881995789406368
+  },
+  "uncertainty": "Pilot remains30s/default+mirror/3developmentclusters.300s state growth and new layouts/FOV/physics/style may cost more. Headroom factors are explicit, not confidence limits. Raw volume is the tightest margin. Runtime guards must stop if any cap is crossed; incomplete full study cannot be treated as a complete efficacy evaluation.",
+  "overlapWithPilot002": {
+    "completed": 192,
+    "exactWorldAndMemoryHashes": 192
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "compact-pilot-attempt-003.tar.gz",
+      "bytes": 67723577,
+      "sha256": "34e7404049ae4082800495ff83061af2f2aefa700e383e67e0df03995d187fd1",
+      "parts": [
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part01",
+          "bytes": 8000000,
+          "sha256": "185093842fba1142c90f96872705a222523f772cdb9f72943908f05e9746facb"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part02",
+          "bytes": 8000000,
+          "sha256": "7cf6b59edc57d962539c562c4cf8c1ec137987645d86dc312a2f1edbfdef99b7"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part03",
+          "bytes": 8000000,
+          "sha256": "022388750df17c6ad7e27b8fedc50122cf69a9cb026c833ec3a86cb9c64f1ec8"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part04",
+          "bytes": 8000000,
+          "sha256": "70bd1ef2abdfbc7962895d40134785179d0052f622c897bc253116fdca08530d"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part05",
+          "bytes": 8000000,
+          "sha256": "c402659bfd487161c7d791da4f19e102b045a072384f177f4bc816020868c922"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part06",
+          "bytes": 8000000,
+          "sha256": "f5131b89d3842053b40649d70228c60e40f69ce75a2db315e6fbf6ec8a499875"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part07",
+          "bytes": 8000000,
+          "sha256": "f0f6791cd0432f9fac1b14d25b8b03c0981a38cad7d81b7fae382d5f24b4063c"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part08",
+          "bytes": 8000000,
+          "sha256": "a377034371c767b89d8283f52d6c6282cd477afbdcf57cb72b80e7dde88c7137"
+        },
+        {
+          "filename": "compact-pilot-attempt-003.tar.gz.part09",
+          "bytes": 3723577,
+          "sha256": "3db37f1ff77afefe58e334c066a7cde15908e15cb74900c2161298747df1d8a9"
+        }
+      ]
+    }
+  ]
+}

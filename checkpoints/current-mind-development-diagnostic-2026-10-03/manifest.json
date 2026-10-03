@@ -1,0 +1,188 @@
+{
+  "schema": "new-knowncase-diagnostic-manifest-v1",
+  "files": [
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "0b2d0486a875fd1e9d717b0205bff13ddb44c17c1469dc3f4ccc090666cd0011",
+      "bytes": 3746
+    },
+    {
+      "path": "assigned.json",
+      "sha256": "fd791ee9ba0ee0e3a88ec9c7033c797e824a22a19668c823c3afca9bca8dec14",
+      "bytes": 1293
+    },
+    {
+      "path": "common-memory.json",
+      "sha256": "9e6d791f9cb34a073ea738c01726e530be1e5a5a0fe8c4bc3cd244c6660155a7",
+      "bytes": 28883
+    },
+    {
+      "path": "core.mjs",
+      "sha256": "8ff95f1e453cc5cc4bfdcdbccb48be9b03cbb98ea5ebe57fdd20c41713847acf",
+      "bytes": 18193
+    },
+    {
+      "path": "fixtures.mjs",
+      "sha256": "3bc350a3fb9490329b1e21bb866ae3fd968129ca78d7287fca68ecfdb3f5105a",
+      "bytes": 6550
+    },
+    {
+      "path": "preflight-first.log",
+      "sha256": "b920c163f65f9ac6ecd0cfa9935c0f0bc00988d04e945856b2fcfbedc3159fc5",
+      "bytes": 1439
+    },
+    {
+      "path": "preflight.log",
+      "sha256": "6c3ad2cea3829e7a71f32514cee663c7077e3f8bfb4fb044153dd17168004a34",
+      "bytes": 559
+    },
+    {
+      "path": "preflight.test.mjs",
+      "sha256": "840ce8b159501b727494b2961ccfa3e3803cf3e54699fb7eef271903850a6067",
+      "bytes": 2836
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "4c21e2d186360590102450094f1e44967bb77986d312e32667f6397d57de73e9",
+      "bytes": 868
+    },
+    {
+      "path": "run.mjs",
+      "sha256": "809bce3f7db1b20e46e87b5939b01ad8d58f07130ac67594eb974dc4d4fae778",
+      "bytes": 3072
+    },
+    {
+      "path": "source/package.json",
+      "sha256": "6bb0ae63bd538f17da6bc4102895b1cdaa821fa0bc5865037186aa2f219e67fa",
+      "bytes": 70
+    },
+    {
+      "path": "source/src/agents/basic.mjs",
+      "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
+      "bytes": 1578
+    },
+    {
+      "path": "source/src/agents/dodger.mjs",
+      "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
+      "bytes": 4257
+    },
+    {
+      "path": "source/src/agents/param.mjs",
+      "sha256": "2bdaad30ec1e6320f56ae2ad0c5f8d5bde8760b71364d4740cf61f36ec7eef90",
+      "bytes": 8528
+    },
+    {
+      "path": "source/src/agents/spear-memory.mjs",
+      "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
+      "bytes": 4203
+    },
+    {
+      "path": "source/src/agents/strategies.mjs",
+      "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
+      "bytes": 6081
+    },
+    {
+      "path": "source/src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",
+      "bytes": 1614
+    },
+    {
+      "path": "source/src/headless.mjs",
+      "sha256": "7b67c3483a2636fe953d82afa178150dda1f2a464fc6f564d25c954847e8cc26",
+      "bytes": 2664
+    },
+    {
+      "path": "source/src/log.js",
+      "sha256": "fc82e01484e7f059381fc3291f8b85da6db02fc77b6709c42ed4b1d50bea9ce6",
+      "bytes": 9498
+    },
+    {
+      "path": "source/src/mind/belief.mjs",
+      "sha256": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8",
+      "bytes": 7208
+    },
+    {
+      "path": "source/src/mind/cognition.mjs",
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+      "bytes": 11662
+    },
+    {
+      "path": "source/src/mind/components.mjs",
+      "sha256": "79091c38a2c9553d3e94652822dc1c04c1f64ef69b8ac30593450054257fa050",
+      "bytes": 9669
+    },
+    {
+      "path": "source/src/mind/content-broadcast.mjs",
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+      "bytes": 6807
+    },
+    {
+      "path": "source/src/mind/coordination.mjs",
+      "sha256": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf",
+      "bytes": 11805
+    },
+    {
+      "path": "source/src/mind/index.mjs",
+      "sha256": "250ccdf4cfe9036435ee3e56a93cd878466ec109f5ee8d56f0fbc61dac3e0b8d",
+      "bytes": 20200
+    },
+    {
+      "path": "source/src/mind/math.mjs",
+      "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+      "bytes": 2065
+    },
+    {
+      "path": "source/src/mind/novelty.mjs",
+      "sha256": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468",
+      "bytes": 6668
+    },
+    {
+      "path": "source/src/mind/own-spear.mjs",
+      "sha256": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+      "bytes": 3905
+    },
+    {
+      "path": "source/src/mind/percept-contact.mjs",
+      "sha256": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+      "bytes": 1641
+    },
+    {
+      "path": "source/src/mind/prediction-monitor.mjs",
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+      "bytes": 11071
+    },
+    {
+      "path": "source/src/mind/rollout-completion.mjs",
+      "sha256": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+      "bytes": 1607
+    },
+    {
+      "path": "source/src/mind/specialists.mjs",
+      "sha256": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0",
+      "bytes": 8245
+    },
+    {
+      "path": "source/src/mind/target-memory.mjs",
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+      "bytes": 6093
+    },
+    {
+      "path": "source/src/mind/workspace.mjs",
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+      "bytes": 2998
+    },
+    {
+      "path": "source/src/perception.js",
+      "sha256": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9",
+      "bytes": 2827
+    },
+    {
+      "path": "source/src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d",
+      "bytes": 18076
+    }
+  ],
+  "nodePath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+  "nodeSha256": "bc17c508ffeed0ec622934f9b7fa72f8e78da65350e63c3eceb56fa688aa5e12",
+  "nodeVersion": "v24.19.0"
+}

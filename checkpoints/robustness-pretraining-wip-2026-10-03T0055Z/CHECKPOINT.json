@@ -1,0 +1,24 @@
+{
+  "status": "WIP safety save; reviewed interface; unapproved training plan/runner; no execution release or final held-out preregistration",
+  "interfaceAggregate": "d8d29e608d6a315ede6f9186b229bc89254c71aa36a86ec548e5f673952ad6ee",
+  "sourceFingerprint": "9f324e6ac3b86768cb86a7ec5d14c6c49c7a9785c7c1d83e9fb5ea2096c362c3",
+  "files": {
+    "interface-preflight-source-tests.tar.gz": {
+      "bytes": 125650,
+      "sha256": "24154302232ecf0b42f57afd362bd41ef5f01c51231babb6f3fecb8ff2b3506d"
+    },
+    "training-plan-runner-WIP.tar.gz": {
+      "bytes": 35126,
+      "sha256": "c16eb0b3d217375373467c5255a62613efaf52ab8012fa49a577d86257b6768b"
+    }
+  },
+  "trainingFiles": {
+    "training/TRAINING-PROTOCOL.md": "cb9731ea08e08b3af66aac31132078ac98869b36f9afc0b227043f7b6b49884f",
+    "training/TRAINING-SEEDS.json": "c67d51df764c01b0f9755ef46527de1bfa3ea1bda4a51e47df99f420d963895d",
+    "training/initial-vectors.json": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68",
+    "training/training-plan.mjs": "424a5ae995445dd201a1d249920ccabe4c9cd14614cdb305908c31d8954ee3ed",
+    "training/training-plan.test.mjs": "4ba905731590775d50657cb886270a33d1847d5acdf28eda31a3fd66c53e5c65",
+    "training/training-runner.mjs": "60f94a5cfa59604cc5033958535969f20e2b35636923a165334b65490778fa04",
+    "training/training-worker.mjs": "94ccd241e3fdf2cdb286dc17a65bade43036ed82c39a4e4dafca2bdbec23f06e"
+  }
+}

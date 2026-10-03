@@ -1,0 +1,14 @@
+✔ exactly eight existing fixtures and two fixed development seeds (1.153358ms)
+✔ current source accepts preserved ordinary snapshot without acting (3.360053ms)
+✔ unchanged legal scripts and passive prefill satisfy geometry (20.691342ms)
+✔ summary requires completed-cycle identity and real trial evidence (1.110112ms)
+✔ non-emission is not a physical miss (0.415846ms)
+✔ raw serialization retains nonfinite diagnostics (0.204859ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.287394

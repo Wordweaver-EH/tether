@@ -1,0 +1,28 @@
+{
+  "mode": "MODE_B",
+  "mindOptions": {
+    "difficulty": "normal",
+    "captureTrace": false,
+    "captureDiagnostics": true,
+    "cognitionBudget": 192
+  },
+  "prefillTicks": 20,
+  "decisionPerceptPrefillIndex": 2,
+  "deliveryTicks": 4,
+  "neutralContinuationTicks": 360,
+  "simulationHz": 120,
+  "cognitionHz": 30,
+  "sensorLatencySeconds": 0.15,
+  "schema": "new-knowncase-diagnostic-v1",
+  "source": "current C1/C2 copied unchanged",
+  "cases": 16,
+  "seeds": [
+    9220001,
+    9220002
+  ],
+  "warmups": 0,
+  "training": 0,
+  "scope": "NEW diagnostic; not original 40-case assay; historical N/S development fixtures intentionally reused",
+  "execution": "single current-controller arm; one fresh controller per case; descriptive latency only, no comparative speed claim",
+  "failurePolicy": "stop and retain first failed attempt; no rerun without new review"
+}

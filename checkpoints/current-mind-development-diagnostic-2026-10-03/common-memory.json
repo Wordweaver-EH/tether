@@ -1,0 +1,1178 @@
+{
+  "version": 2,
+  "episodes": [
+    {
+      "kind": "workspace",
+      "time": 1.6916666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.9583333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.8249999999999997,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.191666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.791666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.658333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.058333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.391666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.691666666666666,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.925,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.5416666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.8083333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.0083333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.1083333333333334,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.808333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.408333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.541666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.025,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.8583333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.225,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.825,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.725,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.125,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.458333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.791666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.025,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.31666666666666665,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.15,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.5166666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.1166666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.9833333333333334,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.383333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.716666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.016666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.25,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.6166666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.65,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.95,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.35,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.883333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.183333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.9916666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.3583333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.8583333333333334,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.558333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.275,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.3083333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.375,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.2083333333333335,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.6,
+      "focus": "Anchor",
+      "content": "Use my embedded spear as an anchor",
+      "innerSpeech": "The anchor may pay off."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.633333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.833333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 7.7,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 8.066666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 8.633333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 9.5,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 9.9,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 10.266666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 10.566666666666666,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 10.8,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.6916666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.9583333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.8249999999999997,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.191666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.791666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.691666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.091666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.425,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.758333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 7.0249999999999995,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.5416666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.8083333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.975,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.075,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.808333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.575,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.7749999999999995,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.025,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.8583333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.225,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 2.825,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.6916666666666664,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.091666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.425,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.758333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 4.991666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.31666666666666665,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.5833333333333333,
+      "focus": "Anchor",
+      "content": "Use my embedded spear as an anchor",
+      "innerSpeech": "The anchor may pay off."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.6166666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.0833333333333335,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.6166666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.65,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.95,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.35,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.85,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.15,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.9916666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.3583333333333334,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.8916666666666666,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.525,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 6.725,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 0.275,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.3083333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 1.375,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 3.2083333333333335,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.6,
+      "focus": "Anchor",
+      "content": "Use my embedded spear as an anchor",
+      "innerSpeech": "The anchor may pay off."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.633333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 5.833333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 7.033333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 7.133333333333333,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 7.766666666666667,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 8.7,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 9.133333333333333,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 9.466666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    },
+    {
+      "kind": "workspace",
+      "time": 9.766666666666666,
+      "focus": "Threat",
+      "content": "Avoid a spear line",
+      "innerSpeech": "A spear line. Move."
+    },
+    {
+      "kind": "workspace",
+      "time": 9.966666666666667,
+      "focus": "Hunt",
+      "content": "Track and intercept the opponent",
+      "innerSpeech": "I can take a shot."
+    }
+  ],
+  "playerModel": {
+    "embedToRecallDelays": [],
+    "neutralizations": 0,
+    "favoriteSurfaces": {},
+    "scanReversals": 0
+  },
+  "learning": {
+    "table": {
+      "HELD:seen:near": {
+        "lead": {
+          "n": 4,
+          "value": 1,
+          "successes": 4,
+          "modelN": 4,
+          "teacherSuccesses": 4,
+          "modelValue": 1
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 4,
+          "teacherSuccesses": 0,
+          "modelValue": 1
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 4,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 4,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "OUTBOUND:seen:near": {
+        "lead": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "HELD:seen:far": {
+        "lead": {
+          "n": 21,
+          "value": 0.23985187433485033,
+          "successes": 6,
+          "modelN": 26,
+          "teacherSuccesses": 6,
+          "modelValue": 0.11277454936128259
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 26,
+          "teacherSuccesses": 0,
+          "modelValue": 0.11277454936128259
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 26,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 26,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "OUTBOUND:seen:far": {
+        "lead": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 1,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 1,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 1,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 1,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "EMBEDDED:seen:far": {
+        "lead": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 79,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 79,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "EMBEDDED:seen:near": {
+        "lead": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 2,
+          "teacherSuccesses": 0,
+          "modelValue": 1
+        },
+        "direct": {
+          "n": 2,
+          "value": 1,
+          "successes": 2,
+          "modelN": 2,
+          "teacherSuccesses": 2,
+          "modelValue": 1
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "RETURNING:seen:near": {
+        "lead": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      },
+      "RETURNING:seen:far": {
+        "lead": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "direct": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "left": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        },
+        "right": {
+          "n": 0,
+          "value": 0,
+          "successes": 0,
+          "modelN": 0,
+          "teacherSuccesses": 0,
+          "modelValue": 0
+        }
+      }
+    },
+    "awareness": {
+      "HELD:seen:near": 0,
+      "OUTBOUND:seen:near": 0,
+      "HELD:seen:far": 0.9177841016198727,
+      "OUTBOUND:seen:far": 0,
+      "EMBEDDED:seen:far": 0,
+      "EMBEDDED:seen:near": 0,
+      "RETURNING:seen:near": 0,
+      "RETURNING:seen:far": 0
+    }
+  },
+  "adaptation": {
+    "side": {
+      "a": 1,
+      "b": 1
+    },
+    "drift": {
+      "x": 0,
+      "y": 0,
+      "n": 438
+    },
+    "recall": {
+      "mean": 0,
+      "n": 0
+    },
+    "scan": {
+      "mean": 0,
+      "n": 422
+    },
+    "neutralize": {
+      "a": 1,
+      "b": 34.33257517925983
+    },
+    "reversals": 0
+  },
+  "novelty": {
+    "version": 1,
+    "cells": [
+      {
+        "family": "HELD:seen:near:lead",
+        "cell": "1:0:0",
+        "count": 4
+      },
+      {
+        "family": "HELD:seen:far:lead",
+        "cell": "5:0:0",
+        "count": 9
+      },
+      {
+        "family": "HELD:seen:far:lead",
+        "cell": "5:-2:1",
+        "count": 6
+      },
+      {
+        "family": "HELD:seen:far:lead",
+        "cell": "5:-1:2",
+        "count": 1
+      },
+      {
+        "family": "HELD:seen:far:lead",
+        "cell": "4:0:0",
+        "count": 2
+      },
+      {
+        "family": "EMBEDDED:seen:near:direct",
+        "cell": "0:0:0",
+        "count": 2
+      },
+      {
+        "family": "HELD:seen:far:lead",
+        "cell": "5:1:1",
+        "count": 2
+      },
+      {
+        "family": "HELD:seen:far:lead",
+        "cell": "3:0:-2",
+        "count": 1
+      }
+    ]
+  }
+}

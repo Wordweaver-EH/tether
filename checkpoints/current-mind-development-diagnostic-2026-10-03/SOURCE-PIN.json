@@ -1,0 +1,14 @@
+{
+  "repository": "Wordweaver-EH/tether",
+  "commit": "0a810b6c1edd291417a9c9f3d42984264445110e",
+  "tree": "9cf869135c5d819804ca3ff2d32dc11ce180c2d1",
+  "materialize": {
+    "destination": "source/",
+    "paths": [
+      "src/",
+      "package.json"
+    ]
+  },
+  "allSrcFingerprint": "d490afd30119c0d6bfe03373055aeb21a797c6138f1ee744961988238b8948e7",
+  "diagnosticManifestSha256": "6b0515b94a293ed12bcb81babf2a0fd5956e45c3b6afbb5dc9d85d4eef250ea4"
+}

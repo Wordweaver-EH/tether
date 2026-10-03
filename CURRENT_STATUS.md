@@ -1,4 +1,4 @@
-> Pretraining update (2026-10-03): reviewed benchmark-only I/O hooks and conventional baseline plus reviewed training-only code are now saved. [Benchmark status](benchmark/STATUS.md) distinguishes the 294 passing software tests from unexecuted training and held-out work, which still require timing and release gates. Default game action/state parity is tested; the source bytes now have a separate [hook manifest](reports/provenance/robustness-hook-source-manifest.json). The earlier C1/C2 checkpoint description below remains version-specific.
+> Pretraining update (2026-10-03): reviewed benchmark-only I/O hooks and conventional baseline plus reviewed training-only code are now saved. [Benchmark status](benchmark/STATUS.md) distinguishes the 294 passing software tests from the separately released training-only attempt now in progress; held-out work remains gated. Default game action/state parity is tested; the source bytes now have a separate [hook manifest](reports/provenance/robustness-hook-source-manifest.json). The earlier C1/C2 checkpoint description below remains version-specific.
 
 # Current experimental checkpoint: rebuilt N/S plus C1/C2
 

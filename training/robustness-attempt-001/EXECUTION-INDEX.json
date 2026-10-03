@@ -1,0 +1,37 @@
+{
+  "status": "ONE_DEFAULT_TRAINING_ATTEMPT_RUNNING",
+  "planId": "tether-default-training-v1",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "codeCommit": "b9134f6a6859032ae37fce8f266f848c483db467",
+  "workers": 8,
+  "levels": {
+    "conventional-useful-2x": 4,
+    "conventional-useful-4x": 5
+  },
+  "scope": "default-condition training only; no pilot, shifted conditions, new-style search or evaluation",
+  "originalLockSha256": "15547657adbdeaaf76153d2c3103ace74c9c0d74d7eef98398d5a83f2aba5ec2",
+  "originalLaunchReceiptSha256": "0ae7fce343cfc02f3c52f38dd764a862ba73349141476c50a80a9ed8bc56a9e3",
+  "precheckCreatedAt": "2026-10-03T01:35:20.826Z",
+  "receipts": {
+    "reviewReceipt": {
+      "sha256": "0e845f68ef171ee260bd286a77f11907f9df45a7b783ef591f773beb3268c8ba"
+    },
+    "timingReceipt": {
+      "sha256": "64a703786c094b21bcc9842dd23edd5a82694dbe9bc46c2ad95971d5333f17fa"
+    },
+    "publicationReceipt": {
+      "sha256": "0e34387d35ceb982db0caa84dcee44279b11d003fb5e8e4a479915665f0df268"
+    },
+    "calibrationAuditReceipt": {
+      "sha256": "cfaa876022640db03202d16b3bc7ef862cb721fb481c9c921b1dd4389f04ccf2"
+    },
+    "calibrationEvidencePublicationReceipt": {
+      "sha256": "b911c26761c8527ed93752d00fac0bf54951bccfe6cec08b9634655e8b7191ed"
+    },
+    "calibrationPrecheckReceipt": {
+      "sha256": "7b7441d531db626d8ed9e24984a82842f67c9b0dc97f605af9628df6e9d784e2"
+    }
+  },
+  "calibrationDataCommit": "01a6ea6cc23c44233a37dad5a9ed07fe8d455c7a",
+  "note": "Public execution facts and exact original lock/receipt hashes. Internal local receipt paths are omitted. No pilot or held-out work authorized by this checkpoint."
+}

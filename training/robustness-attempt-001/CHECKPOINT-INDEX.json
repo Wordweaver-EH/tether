@@ -1,0 +1,110 @@
+{
+  "status": "TRAINING_IN_PROGRESS_INTERMEDIATE_BATCHES_ONLY",
+  "attempt": "robustness-attempt-001",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "codeCommit": "b9134f6a6859032ae37fce8f266f848c483db467",
+  "calibrationDataCommit": "01a6ea6cc23c44233a37dad5a9ed07fe8d455c7a",
+  "batches": [
+    {
+      "id": "conventional-generation-0",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 0,
+      "tasks": 128,
+      "archiveSha256": "35674716b9f41f77cfb7134ccfed30160aea4050d39be200529d339ef5e37b56",
+      "archiveBytes": 117557,
+      "path": "batches/conventional-generation-0"
+    },
+    {
+      "id": "conventional-generation-1",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 1,
+      "tasks": 128,
+      "archiveSha256": "20c8136af4a87b13869e46f3ad570067e0fc283c3e398f11ad3d2b6a8efc1075",
+      "archiveBytes": 133728,
+      "path": "batches/conventional-generation-1"
+    },
+    {
+      "id": "conventional-generation-2",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 2,
+      "tasks": 128,
+      "archiveSha256": "0bae9d99ff4db64cbad5cd45e74cfd9d919ce588510fe110d207ea788e78c885",
+      "archiveBytes": 131867,
+      "path": "batches/conventional-generation-2"
+    },
+    {
+      "id": "conventional-generation-3",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 3,
+      "tasks": 128,
+      "archiveSha256": "b0e271b05d847b64263d690c1a9bd9e2f15044014d871272a27351c44e67c013",
+      "archiveBytes": 140949,
+      "path": "batches/conventional-generation-3"
+    },
+    {
+      "id": "conventional-generation-4",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 4,
+      "tasks": 128,
+      "archiveSha256": "9a46d1d6bd7f203c303573240ca7720be3eca3aeda659f887afe6d7d76a7b852",
+      "archiveBytes": 157916,
+      "path": "batches/conventional-generation-4"
+    },
+    {
+      "id": "conventional-generation-5",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 5,
+      "tasks": 128,
+      "archiveSha256": "a1ff90fed81fc2621aebbdb9b7aa0ea20745104fa4f4affbb9e23c7ed0fe2be0",
+      "archiveBytes": 160354,
+      "path": "batches/conventional-generation-5"
+    },
+    {
+      "id": "conventional-generation-6",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 6,
+      "tasks": 128,
+      "archiveSha256": "d8d2fb166781424d27ecc65bce27fbe2f2b727620ff16809a6846d05a9204923",
+      "archiveBytes": 159664,
+      "path": "batches/conventional-generation-6"
+    },
+    {
+      "id": "conventional-generation-7",
+      "kind": "generation",
+      "arm": "conventional",
+      "index": 7,
+      "tasks": 128,
+      "archiveSha256": "a3d2a67788874c3f025076de371b45c83a4da2dd236c6695abc1e79e723b1277",
+      "archiveBytes": 150785,
+      "path": "batches/conventional-generation-7"
+    },
+    {
+      "id": "conventional-selection",
+      "kind": "selection",
+      "arm": "conventional",
+      "index": null,
+      "tasks": 256,
+      "archiveSha256": "50c935bf294c2009b738db22ed42ff40abc2ee5c18ccf418fbdd7e2751d9d70e",
+      "archiveBytes": 2136932,
+      "path": "batches/conventional-selection"
+    },
+    {
+      "id": "conventional-useful-2x-generation-0",
+      "kind": "generation",
+      "arm": "conventional-useful-2x",
+      "index": 0,
+      "tasks": 128,
+      "archiveSha256": "4d5fdb82e56b7727e1f687ebc9431478cd6f92eb42f62ff10a6b7e9cce745c53",
+      "archiveBytes": 55170,
+      "path": "batches/conventional-useful-2x-generation-0"
+    }
+  ],
+  "completedTaskRowsArchived": 1408
+}

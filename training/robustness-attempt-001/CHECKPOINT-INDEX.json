@@ -356,6 +356,16 @@
       "path": "batches/conventional-useful-4x-selection-candidate-g0-c0"
     },
     {
+      "id": "conventional-useful-4x-selection-candidate-g0-c5",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-4x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "6732d7703304be3f97fba2d38eed54f6fd7eb82c5aef7dd322a8138750dda1e9",
+      "archiveBytes": 35657,
+      "path": "batches/conventional-useful-4x-selection-candidate-g0-c5"
+    },
+    {
       "id": "conventional-useful-4x-selection-candidate-g0-c8",
       "kind": "selection-candidate",
       "arm": "conventional-useful-4x",
@@ -364,8 +374,18 @@
       "archiveSha256": "bf1f4da2f75099078e85d32695a6ba7bfacbbad7d46f749810d37b1cc62947e5",
       "archiveBytes": 19512,
       "path": "batches/conventional-useful-4x-selection-candidate-g0-c8"
+    },
+    {
+      "id": "conventional-useful-4x-selection-candidate-g4-c14",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-4x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "794de4f5ad8c8695cf13cdf27c209704876b0732943b4ba23154e61c08d8949b",
+      "archiveBytes": 30647,
+      "path": "batches/conventional-useful-4x-selection-candidate-g4-c14"
     }
   ],
-  "completedTaskRowsArchived": 3648,
-  "uniqueArchivedTaskIdsVerified": 3648
+  "completedTaskRowsArchived": 3712,
+  "uniqueArchivedTaskIdsVerified": 3712
 }

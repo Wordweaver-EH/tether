@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-4x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-4x-g4-c14-k0-o0-s0",
+    "selection-conventional-useful-4x-g4-c14-k0-o0-s1",
+    "selection-conventional-useful-4x-g4-c14-k0-o1-s0",
+    "selection-conventional-useful-4x-g4-c14-k0-o1-s1",
+    "selection-conventional-useful-4x-g4-c14-k0-o2-s0",
+    "selection-conventional-useful-4x-g4-c14-k0-o2-s1",
+    "selection-conventional-useful-4x-g4-c14-k0-o3-s0",
+    "selection-conventional-useful-4x-g4-c14-k0-o3-s1",
+    "selection-conventional-useful-4x-g4-c14-k1-o0-s0",
+    "selection-conventional-useful-4x-g4-c14-k1-o0-s1",
+    "selection-conventional-useful-4x-g4-c14-k1-o1-s0",
+    "selection-conventional-useful-4x-g4-c14-k1-o1-s1",
+    "selection-conventional-useful-4x-g4-c14-k1-o2-s0",
+    "selection-conventional-useful-4x-g4-c14-k1-o2-s1",
+    "selection-conventional-useful-4x-g4-c14-k1-o3-s0",
+    "selection-conventional-useful-4x-g4-c14-k1-o3-s1",
+    "selection-conventional-useful-4x-g4-c14-k2-o0-s0",
+    "selection-conventional-useful-4x-g4-c14-k2-o0-s1",
+    "selection-conventional-useful-4x-g4-c14-k2-o1-s0",
+    "selection-conventional-useful-4x-g4-c14-k2-o1-s1",
+    "selection-conventional-useful-4x-g4-c14-k2-o2-s0",
+    "selection-conventional-useful-4x-g4-c14-k2-o2-s1",
+    "selection-conventional-useful-4x-g4-c14-k2-o3-s0",
+    "selection-conventional-useful-4x-g4-c14-k2-o3-s1",
+    "selection-conventional-useful-4x-g4-c14-k3-o0-s0",
+    "selection-conventional-useful-4x-g4-c14-k3-o0-s1",
+    "selection-conventional-useful-4x-g4-c14-k3-o1-s0",
+    "selection-conventional-useful-4x-g4-c14-k3-o1-s1",
+    "selection-conventional-useful-4x-g4-c14-k3-o2-s0",
+    "selection-conventional-useful-4x-g4-c14-k3-o2-s1",
+    "selection-conventional-useful-4x-g4-c14-k3-o3-s0",
+    "selection-conventional-useful-4x-g4-c14-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 698,
+      "sha256": "69fe3d38d11235bbb5ef9404afbba1f5749f7f369840a216d181e0539e81d4db"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o0-s0.json": {
+      "bytes": 2120,
+      "sha256": "c21c963c256cef85e18588b550e86b448f6127be689bcccb07917d1fb3daba7d"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o0-s1.json": {
+      "bytes": 2124,
+      "sha256": "81d4d67bceab88ea63a08d391da77fd5838a1c9782fb9d9adc20df830f42258f"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o1-s0.json": {
+      "bytes": 2128,
+      "sha256": "7f2edb5f5cc89ccb5e38e68063c5c07519561f56cf434f5e2f2a590aab3d3d58"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o1-s1.json": {
+      "bytes": 2126,
+      "sha256": "42eb0105ddbaa15e5accdcbde89dfa7bdbd4051d7eabb7ce5fdd84fc7ae959b3"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o2-s0.json": {
+      "bytes": 27085,
+      "sha256": "903d1611b695daeaa7a67e0a969b5a7414a0e0aa1aeb76d5d8a90c3ec33120fc"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o2-s1.json": {
+      "bytes": 10947,
+      "sha256": "a9c6058bfdb9380dcc16fe46b589a8d59092969a428a858586e9141c2b995df5"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o3-s0.json": {
+      "bytes": 2122,
+      "sha256": "9a37782246d924beec94a3b95d5dc29923f65d22c17aa769a5b0d91394e14f28"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k0-o3-s1.json": {
+      "bytes": 2120,
+      "sha256": "6fff9cb5bfe89250ba5b3d4a8bceb3ac02dec5b56b0cfbf646b5ae854cb05134"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o0-s0.json": {
+      "bytes": 2468,
+      "sha256": "39db0dd59d19330f25c0c64870c7851b6094c0233212e5bf1a491981c45be1eb"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o0-s1.json": {
+      "bytes": 2126,
+      "sha256": "a2cfeaa9fe4ff823c2b39fd2376079053ac967a529013ad5c04cd548ab39ef64"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o1-s0.json": {
+      "bytes": 2128,
+      "sha256": "3099b8209f2007e84c640530e51746d3fb8ec373d05828887d348a1472f67f65"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o1-s1.json": {
+      "bytes": 2125,
+      "sha256": "350bdd050208cd570a39dfb52aa85eed485f49c64ace6f14f8ec0832157fd928"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o2-s0.json": {
+      "bytes": 6355,
+      "sha256": "7ffaea436370997939b6e61002856ab89bf6796338064fd713d04857babb77c9"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o2-s1.json": {
+      "bytes": 16910,
+      "sha256": "bae201dbea37625f5ef08bf362001cce7a6d68e48974db769f744ba91c30c1c1"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o3-s0.json": {
+      "bytes": 2466,
+      "sha256": "6d2f6cf4d759b32ea34fb81960b4f0d73db78ba11d844330aab2ba5c23db6392"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k1-o3-s1.json": {
+      "bytes": 2122,
+      "sha256": "d17c7313133520328f7ebed8cc0c954fae3bd6f3dc776155db82117282625e68"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o0-s0.json": {
+      "bytes": 2122,
+      "sha256": "0c94dffed3533dad43194a804a5412057e69b76e90ef567d02dc93d67c4346cb"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o0-s1.json": {
+      "bytes": 2120,
+      "sha256": "9a9cfd8cc74d385d912764db768c28a22d202145cb9d6b6bdbf6f006eb637e59"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o1-s0.json": {
+      "bytes": 2465,
+      "sha256": "fe1c26c068b9296e4bb9387de485ddc5f8a92c87b2a3f9a7164e883d454b0aa8"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o1-s1.json": {
+      "bytes": 2127,
+      "sha256": "cfbf63e2b2cb5ec78bc3f7429a5385e618f0aa70bac79a879bb3c4c65eb032ff"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o2-s0.json": {
+      "bytes": 7107,
+      "sha256": "b97008d482299574cd821ec0b2fc2f027dac922d73753c9a2e4b963be956d55f"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o2-s1.json": {
+      "bytes": 15561,
+      "sha256": "d2d83f7657c5f0495010cda63943fb8fce91bd82a86dae15b9361cb59d430db2"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o3-s0.json": {
+      "bytes": 2806,
+      "sha256": "755fb6c8c89b62bf15ef53b7d9ce32730c44d82e662fb6cbd1deaaecbe97ed4f"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k2-o3-s1.json": {
+      "bytes": 3144,
+      "sha256": "0160a205fee8eb6a6b5e2f53feb64c7ab796e7e5a24a245a7b37ad9392702b78"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o0-s0.json": {
+      "bytes": 2465,
+      "sha256": "af3da97b84905b34c3bb626cec3878ad829736ac290262de9f952f61d49f028c"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o0-s1.json": {
+      "bytes": 2463,
+      "sha256": "feaa8ae313126c3ddb6b8bafdcfb5f06f065d2ddcb2cc960623532e08e0aa195"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o1-s0.json": {
+      "bytes": 2468,
+      "sha256": "cfff4a8bbe5bff18c0601f5548e898e0ed73b3007d5d733b9d42630278c0e24b"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o1-s1.json": {
+      "bytes": 2128,
+      "sha256": "7f76a64b3f1927802ec16f1592ff247d51c0535a9ba3f40de350622841224809"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o2-s0.json": {
+      "bytes": 11017,
+      "sha256": "f579d3785ce9b78088f0466762f688f10f7d8bda43df410afb429dbcf058ec3e"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o2-s1.json": {
+      "bytes": 9533,
+      "sha256": "d9adf209abab167f467bda387a1f68496ef1ccf0f86864af2662c0b873a97c56"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o3-s0.json": {
+      "bytes": 2464,
+      "sha256": "89e1fe7a6568ec4dd24dd01d70b0f0d2d1a44f973c50cb468aa022dfeddffb33"
+    },
+    "raw/selection-conventional-useful-4x-g4-c14-k3-o3-s1.json": {
+      "bytes": 2804,
+      "sha256": "253ed61fd4b0ff4adaaa60aaf845f2a5d8c1eacb121519c828f04935711ed3a6"
+    }
+  }
+}

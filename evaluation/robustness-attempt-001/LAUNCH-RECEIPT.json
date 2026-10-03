@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-03T06:52:26.760Z",
+  "phase": "evaluation",
+  "out": "/workspace/scratch/75679def3745/tether-robustness-shifts/evaluation-attempt-001",
+  "workers": 8,
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "status": "STARTED",
+  "executionSessionId": 66368,
+  "log": "/workspace/scratch/75679def3745/tether-robustness-shifts/EVALUATION-EXECUTION-001.log",
+  "gitCommit": "291026df7effde2b24c8d36a1273b65295a41245"
+}

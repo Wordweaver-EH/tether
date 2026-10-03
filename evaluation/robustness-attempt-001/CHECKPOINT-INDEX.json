@@ -1,0 +1,18 @@
+{
+  "status": "RAW_PUBLICATION_IN_PROGRESS",
+  "sourceCheckpoint": "291026df7effde2b24c8d36a1273b65295a41245",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "checkpointedTasks": 64,
+  "plannedTasks": 4224,
+  "batches": [
+    {
+      "batch": 0,
+      "path": "evaluation/robustness-attempt-001/batches/b000/",
+      "taskIdsSha256": "43b98f2c618759f7fef8a2c144e02b87f9c0a40524e8f05f25c2a2288f4177c5",
+      "tasks": 64,
+      "archiveSha256": "1fd159d98778391d3cc4dd47af928885b958b34760bf196cbb442b804688ae43"
+    }
+  ],
+  "wholePhaseCpuClaim": false,
+  "evaluationSuccessClaim": false
+}

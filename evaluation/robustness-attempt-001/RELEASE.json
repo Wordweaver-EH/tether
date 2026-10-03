@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "phase": "evaluation",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "output": "/workspace/scratch/75679def3745/tether-robustness-shifts/evaluation-attempt-001",
+  "workers": 8,
+  "independentReview": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-shifts/EVALUATION-INDEPENDENT-REVIEW.json",
+    "sha256": "13b7a8df609136a267b512e17804e7dc296ccd3bafdd2fc2c2d62014c5044818"
+  },
+  "gitCheckpoint": {
+    "path": "/workspace/scratch/75679def3745/tether-github-update/evaluation-checkpoint-publication-receipt.json",
+    "sha256": "08236b048e8f5564505c5c26271dd8b2573377ff647d090899a3f7da70bccca3"
+  },
+  "authorization": "Root explicit single-use full evaluation approval received 2026-10-03T06:49:34Z, contingent exact Git now verified. Exactly4224 fixedtasks,12clusters,11conditions,8arms,2seats,2x300s;36CPUh/8wallh/16GiB caps. Preserve partial/failure; no automatic retry, retune, scope change or cap increase. Frozen analysis only after complete, independent review, then stop milestone."
+}

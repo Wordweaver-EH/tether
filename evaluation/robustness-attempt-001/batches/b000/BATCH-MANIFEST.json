@@ -1,0 +1,963 @@
+{
+  "format": 1,
+  "status": "IMMUTABLE_COMPLETED_TASK_BATCH",
+  "archiveName": "evaluation-1-64.tar.gz",
+  "phase": "evaluation",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "releaseSha256": "3bc4503e96010b50d779d51963dd57a4548ec5da5e29d58f93a6913bffb06307",
+  "sourceInputManifestSha256": "987b0d80cc70b8947a96a7ef3de5921469933a2649d0cdb1b722e9c86c987c91",
+  "completedProgressRange": [
+    1,
+    64
+  ],
+  "taskIds": [
+    "evaluation-c0-default-mind-learning-frozen-s0-b0",
+    "evaluation-c0-default-mind-learning-frozen-s1-b0",
+    "evaluation-c0-default-mind-full-s0-b0",
+    "evaluation-c0-default-mind-full-s1-b0",
+    "evaluation-c0-default-mind-fixed-metacog-s1-b0",
+    "evaluation-c0-default-mind-no-novelty-s1-b0",
+    "evaluation-c0-default-mind-no-novelty-s0-b0",
+    "evaluation-c0-default-mind-fixed-metacog-s0-b0",
+    "evaluation-c0-default-mind-learning-frozen-s0-b1",
+    "evaluation-c0-default-mind-learning-frozen-s1-b1",
+    "evaluation-c0-default-mind-fixed-metacog-s1-b1",
+    "evaluation-c0-default-mind-full-s1-b1",
+    "evaluation-c0-default-mind-no-novelty-s0-b1",
+    "evaluation-c0-default-mind-broadcast-cut-s0-b0",
+    "evaluation-c0-default-mind-no-novelty-s1-b1",
+    "evaluation-c0-default-mind-full-s0-b1",
+    "evaluation-c0-default-mind-fixed-metacog-s0-b1",
+    "evaluation-c0-default-conventional-s0-b0",
+    "evaluation-c0-default-mind-broadcast-cut-s1-b0",
+    "evaluation-c0-default-conventional-s1-b0",
+    "evaluation-c0-default-conventional-s0-b1",
+    "evaluation-c0-default-conventional-s1-b1",
+    "evaluation-c0-default-mind-broadcast-cut-s0-b1",
+    "evaluation-c0-default-mind-broadcast-cut-s1-b1",
+    "evaluation-c0-arena-mirror-x-mind-full-s0-b0",
+    "evaluation-c0-arena-mirror-x-mind-full-s1-b0",
+    "evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b0",
+    "evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b0",
+    "evaluation-c0-arena-mirror-x-mind-full-s0-b1",
+    "evaluation-c0-arena-mirror-x-mind-full-s1-b1",
+    "evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b1",
+    "evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b1",
+    "evaluation-c0-default-conventional-useful-2x-s1-b0",
+    "evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b0",
+    "evaluation-c0-default-conventional-useful-2x-s0-b0",
+    "evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b0",
+    "evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b0",
+    "evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b0",
+    "evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b1",
+    "evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b1",
+    "evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b1",
+    "evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b1",
+    "evaluation-c0-arena-mirror-x-conventional-s1-b0",
+    "evaluation-c0-arena-mirror-x-conventional-s0-b0",
+    "evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b0",
+    "evaluation-c0-arena-mirror-x-conventional-s0-b1",
+    "evaluation-c0-arena-mirror-x-conventional-s1-b1",
+    "evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b0",
+    "evaluation-c0-default-conventional-useful-4x-s1-b0",
+    "evaluation-c0-default-conventional-useful-4x-s0-b0",
+    "evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b1",
+    "evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b1",
+    "evaluation-c0-default-conventional-useful-2x-s1-b1",
+    "evaluation-c0-default-conventional-useful-2x-s0-b1",
+    "evaluation-c0-arena-new-obstacles-mind-full-s0-b0",
+    "evaluation-c0-arena-new-obstacles-mind-full-s1-b0",
+    "evaluation-c0-arena-mirror-x-conventional-useful-2x-s0-b0",
+    "evaluation-c0-arena-mirror-x-conventional-useful-2x-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-full-s0-b1",
+    "evaluation-c0-arena-new-obstacles-mind-full-s1-b1",
+    "evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b0",
+    "evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b1",
+    "evaluation-c0-default-conventional-useful-4x-s1-b1"
+  ],
+  "taskCount": 64,
+  "wholePhaseCpuClaim": false,
+  "files": [
+    {
+      "member": "ACCEPTED-PROGRESS.jsonl",
+      "bytes": 8248,
+      "sha256": "8780917e509d2e99247dc630b6cdf2870f408b367ea659d3a727611dad15b14d"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b0.json",
+      "bytes": 60364,
+      "sha256": "5be10a89f846accdc7c69709b504c01776386f090243b0b885327b3c9c2456fa"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b1.json",
+      "bytes": 60495,
+      "sha256": "2dfaa67dd367ec5f03c37e383f8e15f9ce0c1874bfd675aea28658e4e5eda491"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b0.json",
+      "bytes": 60557,
+      "sha256": "6bc63cb61c230b0607a5cd162792a0212916dc9cc2d7f5c57ab61589c641631b"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b1.json",
+      "bytes": 61086,
+      "sha256": "da813854ae33fa1bf3f869fb11665362d374793e770e037b43bfa9700f06d160"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b0.json",
+      "bytes": 61609,
+      "sha256": "b1e2a443572087b559ab50fcd65fe8dfc40b896b2fa29cb08c47dad6fc1a95e8"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b1.json",
+      "bytes": 62642,
+      "sha256": "b98f8dd546df396ff7a333c2a164e9f3cfc6e636306d17a6a3374a4d17d30276"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b0.json",
+      "bytes": 61660,
+      "sha256": "ffba7212767c198b0fee683c9abb69b85c49b5b86663443579a1b1236e9b51dd"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b1.json",
+      "bytes": 62879,
+      "sha256": "bfa4113a0b0304a1d7152b457f3b21cb68b0ee6c855e98a160bfc569c4d1b2f7"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-full-s0-b0.json",
+      "bytes": 60364,
+      "sha256": "5aa0b92df786a9ae25035ea16a936fb919b5a47e2ccfa03cda09a047342c8ec9"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-full-s0-b1.json",
+      "bytes": 60495,
+      "sha256": "2dfaa67dd367ec5f03c37e383f8e15f9ce0c1874bfd675aea28658e4e5eda491"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-full-s1-b0.json",
+      "bytes": 60807,
+      "sha256": "23887da625b0c87704ea9d0fa9e80dd0d8e0e8d6c356689a64a2672268fd2699"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-full-s1-b1.json",
+      "bytes": 61321,
+      "sha256": "e7739b01a2dab78c3fe5c91cb0fa8697bff5c1be61223551f879a0e69af5568e"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b0.json",
+      "bytes": 60936,
+      "sha256": "cf395d94414311302bd7bf22be24f5c53ddacacb9407c06ab0ea16ce8811e31e"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b1.json",
+      "bytes": 60922,
+      "sha256": "4fc31bd582f00d03c97b776d371284d7e556d0e0e51bb0899dcaa527404be6b1"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b0.json",
+      "bytes": 61341,
+      "sha256": "a6b241d05f43d73fdddfa2a1ae657a8d4612205dac3799c592834f3abf9c125c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b1.json",
+      "bytes": 61645,
+      "sha256": "a94aef7ec5868f57e489ee8be559c70c254f5299cd9e45d086faa2b212ee14ee"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-full-s0-b0.json",
+      "bytes": 60678,
+      "sha256": "cb7984fd987990fad9e63c6b2d7b9efc340c6b2a1ba2521a42cfba44f5b9ea76"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-full-s0-b1.json",
+      "bytes": 61090,
+      "sha256": "1c87362b12eea6880eba58381bd78ff080647e1434b43bc155cf61ef68294907"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-full-s1-b0.json",
+      "bytes": 60317,
+      "sha256": "c9762603d1f68e4784f6a1b491723359294e6d7b8298df20899d8e90a9729097"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-full-s1-b1.json",
+      "bytes": 60260,
+      "sha256": "393e6649c7b8bb1f5c761dc5b0e9afa32fb68e70d1f22052f7b1417a4f65a76c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b0.json",
+      "bytes": 60678,
+      "sha256": "cb7984fd987990fad9e63c6b2d7b9efc340c6b2a1ba2521a42cfba44f5b9ea76"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b1.json",
+      "bytes": 61090,
+      "sha256": "1c87362b12eea6880eba58381bd78ff080647e1434b43bc155cf61ef68294907"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b0.json",
+      "bytes": 60317,
+      "sha256": "c9762603d1f68e4784f6a1b491723359294e6d7b8298df20899d8e90a9729097"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-broadcast-cut-s0-b0.json",
+      "bytes": 59854,
+      "sha256": "80d76e6d58a5c54c3ad87312bc398885e193266ff4df4b7cac998867af5272fa"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-broadcast-cut-s0-b1.json",
+      "bytes": 60250,
+      "sha256": "07b96580851bbc9bbdb3ba4b806210b58ff719a77117c83ac624914dad64a383"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-broadcast-cut-s1-b0.json",
+      "bytes": 60236,
+      "sha256": "9de8f0701f469d66f307d36b24aa265171478c5dd60c19b57e3f3fc9ca999398"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-broadcast-cut-s1-b1.json",
+      "bytes": 60908,
+      "sha256": "57e5f67a3a7b73201719f2facb08877daf972a034f1d5c5653e2b62f036ac06d"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-fixed-metacog-s0-b0.json",
+      "bytes": 61236,
+      "sha256": "9ab2b2030f6edf451477136dd2ec19f2964b7438a978639b0c4115c8bfdf87cf"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-fixed-metacog-s0-b1.json",
+      "bytes": 61730,
+      "sha256": "c0eb2c51db7296c192fbec572d44b7d40b9e9c8ba5b300450b10f29ec7bcfb83"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-fixed-metacog-s1-b0.json",
+      "bytes": 61429,
+      "sha256": "6426e9f898eefb23f16829801202a38a3e512194ffdc603c0b60a97fa1196ed7"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-fixed-metacog-s1-b1.json",
+      "bytes": 62311,
+      "sha256": "73e3650b57cffcbbb709766739271c770e12390e33bf54e0d765ec869d161005"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-full-s0-b0.json",
+      "bytes": 59841,
+      "sha256": "bbda970e12dabb8650f0606405463c394dab9e41eee11f526b95f8607341e49b"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-full-s0-b1.json",
+      "bytes": 60351,
+      "sha256": "033a92beb0b8304123cc50dd9af496a218c8945bed3d67e43d5deabe0003cf10"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-full-s1-b0.json",
+      "bytes": 60295,
+      "sha256": "3c90c384cf80b962dd14d7c7a2a6b0598c242604698b4a3d86ef784a5f9de3e6"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-full-s1-b1.json",
+      "bytes": 60457,
+      "sha256": "a5272fc6c99574bf6fbd4b239dd45feeb275fd0547076c2993b5c5484ac486b9"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-learning-frozen-s0-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-learning-frozen-s0-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-learning-frozen-s1-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-learning-frozen-s1-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-no-novelty-s0-b0.json",
+      "bytes": 59841,
+      "sha256": "bbda970e12dabb8650f0606405463c394dab9e41eee11f526b95f8607341e49b"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-no-novelty-s0-b1.json",
+      "bytes": 60351,
+      "sha256": "033a92beb0b8304123cc50dd9af496a218c8945bed3d67e43d5deabe0003cf10"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-no-novelty-s1-b0.json",
+      "bytes": 60295,
+      "sha256": "3c90c384cf80b962dd14d7c7a2a6b0598c242604698b4a3d86ef784a5f9de3e6"
+    },
+    {
+      "member": "memory/evaluation-c0-default-mind-no-novelty-s1-b1.json",
+      "bytes": 60457,
+      "sha256": "a5272fc6c99574bf6fbd4b239dd45feeb275fd0547076c2993b5c5484ac486b9"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-s0-b0.jsonl.gz",
+      "bytes": 1932803,
+      "sha256": "c63ad8417f25e30227c8e53f9541a926d354544cc769658f7fde98ac16d2e6f4"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-s0-b1.jsonl.gz",
+      "bytes": 1929590,
+      "sha256": "0b0eacace2b819244bc9341925feca9389821b05cfe2526892c81efe7af3b53f"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-s1-b0.jsonl.gz",
+      "bytes": 1927836,
+      "sha256": "3ae74ebc8a08b66a6edae426236fd85afe9565e7ef378f29a8051f6f03dcf90f"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-s1-b1.jsonl.gz",
+      "bytes": 1921840,
+      "sha256": "717aa01819c1e224cce37d59cc904e435d8a250c963843c61d854b4ea49a98c2"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1266873,
+      "sha256": "96ad166266b62b24fa631df4a5ebe2a2df587323ba5a0f264eee032a42f2951d"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1198700,
+      "sha256": "2adf23da6625d7d715262bc4f7bb786965f03f9427f81af212eefa005f4ecafd"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 4514916,
+      "sha256": "81055b5eb356e6658aa9421a102a4b661793cf6e66ba7c2bb00f7da5d80b0677"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 4479623,
+      "sha256": "e93bb6db5e13ddb48eda4ddeb817b517c42fa6888ebb6c04aad576cc7e187cbf"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 4429222,
+      "sha256": "7812c3feb282b15a21821b10f00c649cc8fa0c0c4261b57889d13d81a03df473"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4443109,
+      "sha256": "83e3b6ce60c7aafe05cb89ced30df4ff871a4877a4592b1d6bc0549533c96720"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4513319,
+      "sha256": "479184765678a84b0d616e4bbcd4440619bb87e684744fd85d2816f982e5fdf4"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4436218,
+      "sha256": "952d5ac3d6bab0c0b4cd385467f6fcb437f917b092bca41a8acd355934e0c744"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4534771,
+      "sha256": "5da70c6fac9970df10d1569e2dcb2e42ef801f8e206ee4d1750d70e6bcb105c8"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4541270,
+      "sha256": "6bcdab6a98f6dbe7c4e24a1aaddf56528a363ba80dbe1c78efde1551181c32df"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4653960,
+      "sha256": "537a44180184e4f223d0f5c6212cb74a935e5b3403c856b80f4a928884f02e95"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4615225,
+      "sha256": "b6d56801e27208fe370b297a7e64c37123ddc13cd6fba550a825644820f7dcdc"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4542009,
+      "sha256": "d8c6b680d8a4a8f2019f4f528366364c75aa0d940e838ebee3ea2e705e765f78"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-full-s1-b1.jsonl.gz",
+      "bytes": 4559565,
+      "sha256": "7c20b1a44b24b48657026d1d9360e9ccb9acc2799a196d0bdfcad82e521a9869"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4624571,
+      "sha256": "1524e14550cb1409947e657fd0873377427993bb1f34718204d929ab2ab50186"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4605514,
+      "sha256": "d6a794df876cca7b4f04c36dac330054c082be04ca8f97de466119f42fe94ae1"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4598888,
+      "sha256": "c9b79c6f3cbc42d1c53795ab898060349bc631a5a3a0ccfd03c93acd4276b285"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 3824284,
+      "sha256": "94282f8f2f918954ca4a4115548c4c121c10e99eaddc8d5c9e76291e05c9c911"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4564422,
+      "sha256": "5183e476ba0f020d0891a141e07f8fa9bf4634520ec3f831866c171cae3da873"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 3377216,
+      "sha256": "1ac7553278dc81c9c21eed9436acf60f10cee65b0c6983b608d61b312c9f851b"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4561569,
+      "sha256": "7fb298228ced4595dbd1cb0f41640c9ca1b92bb105ef2662a34c38f440d02b11"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 3739107,
+      "sha256": "640f5f490af9c0b134ef9b1004edb9555227698dae2986b5d2cc3536cb977fea"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4571588,
+      "sha256": "aa96da35edec2578989eaf9389143c4e27c4dff1958cf347d58d7cd9f10770e9"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4560197,
+      "sha256": "fd92436e09da98f9bd50cc644d9ea8805755bd898619827f8e9be85d06434a8e"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4122791,
+      "sha256": "49d81670e259772a4f422f5088d9f8ae562598dc55e48f4f4f62d51736b0f62a"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-full-s1-b1.jsonl.gz",
+      "bytes": 3767489,
+      "sha256": "bc388ab04530cb4679e9df8389904ec601af5e92d3419b79f131e09b39a5c264"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4569780,
+      "sha256": "8541e3215a84a4028b23cf492d30acf46494d6cebf63b404e22f861f47a6e3e7"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4558900,
+      "sha256": "44852d80bf9066d7c4e1dbc0e1f922be8b63b986780a75abbbc3c7b9aed35a2f"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4121930,
+      "sha256": "7cc5b6cd525f7a5a7d300581d3bad0fb5800b1067d1c8281ade33ea641d352b2"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-s0-b0.jsonl.gz",
+      "bytes": 1962093,
+      "sha256": "357a58e666839cc55058f2dea1fc870474a846691a6e637c17db0bd6b86cf91b"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-s0-b1.jsonl.gz",
+      "bytes": 1959102,
+      "sha256": "b2f1a1572feca8bd0f296a0051b5a0685864fc21483f9df31280b917333d05e7"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-s1-b0.jsonl.gz",
+      "bytes": 1955708,
+      "sha256": "5dd49c5c57703c85b9d485779f2de19e5d6107b1946a59c2500fbbf6feaa398b"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-s1-b1.jsonl.gz",
+      "bytes": 1962121,
+      "sha256": "dd8b84a43128845e07ddc3ed682e14c25e392c1efd4a26cb7d3b5a84dd2672c6"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1210060,
+      "sha256": "b5c42dc44a8e1b7460bf3759fa7c5086468bcbe0ef8f123e0b45faf4f20181f9"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1209038,
+      "sha256": "3a5870b39158e5db0a6bfca6cb2f5a315a54a7f2a5e29b1530b90f59311e5527"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1205100,
+      "sha256": "5042feb1c4106323630564ddbae488d2b56f47eeaa30ef6275dd449b66978d81"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1206781,
+      "sha256": "c2b5f035af18a7128bb98fe23b14e3255efebdb4226b493a3d91efd8c846fe47"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1220647,
+      "sha256": "1db144f57a5bd58973d79d582a7ebc3f4d0801118dbc77f95064d7f64aeab94b"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1235738,
+      "sha256": "d4ce56188a631dd314e829860bee60acd1d38143217ff8030f7f20603cbe827f"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 1215372,
+      "sha256": "b498fdcdd7f7a72b2430cb6413b4f7bf0097f793f62c095b94d0b076ebabeedd"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 4048994,
+      "sha256": "a36195ba6a9508d6626bde2504ddd1ae5542f29e1af588cbfa2909bc87bc0f1d"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 4022024,
+      "sha256": "cd6ee00aec75394a8882a7efa208a67dc6d70f8f4e1b939ec5ec083f0d5639d3"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 4035614,
+      "sha256": "d82fb0b4a463897e61fbbcc3800e983e184de09d0e5224c84775d30d86ecc392"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4372848,
+      "sha256": "4a5b9303b9198886ef6822180cef5cb1f64635d4e167aebe19df8160c74a43b9"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4576013,
+      "sha256": "09ef552d6312f81c23495e13ae621957613789a4ba510cf817a4f43504534fd5"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4541930,
+      "sha256": "4ff76d69ce5f754aeeb5fe872b317b3a7c18bd5d1356882a6fd02fe47d8e4f31"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4556602,
+      "sha256": "1feae2605dea06d63f1b2d329fb98f85e71932e7a03c8a062d9111916884446a"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4529890,
+      "sha256": "c02aa3ca030734b9ab640bc08f15311381299ca0809c4f1857e973e02e31d3f3"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-full-s0-b0.jsonl.gz",
+      "bytes": 4175555,
+      "sha256": "5e26071976ad9d046530f689d3cb78c347bd2e25175593e1f0928154dc07c410"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4338949,
+      "sha256": "e392c496badda5371648d44a42b564e3d569555ee3b002ea1236f04eb094ff67"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4228184,
+      "sha256": "a3d396470113ae2bfa368cd163c60f5a8c858725101eb28890f39d3ea4c8e862"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-full-s1-b1.jsonl.gz",
+      "bytes": 4013837,
+      "sha256": "dbef55889661c178e42fb5bb194d8a4d76cd7696dbb377c4928cb974ce7bdc1a"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4577891,
+      "sha256": "89a90e42a5f0fdd360d12560dc7ceca4628d7f7c2576015049e2029c97497ec1"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4585540,
+      "sha256": "163868c4e237a0e7a45fedbb5907e4c61a08da32ca717c5fe3178d0b397bdcca"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4573262,
+      "sha256": "0a609cae3c1541f6e8afe199d65b8597784d5ded48af184ebb805dee496438ae"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 4553394,
+      "sha256": "74fb0fb6da52acff08f5a22d373b256dbe9c9ad9d2e6075eff88c31596f0da5a"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4176052,
+      "sha256": "17fe898dd80b126055d544aacdd4037e8fe448add1d66244b1e1b931e476b2c0"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4337061,
+      "sha256": "ac7e941fe8295f4cb755afafc58a945de5a249ff6a44855f8c6e73c80e8c076c"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4227919,
+      "sha256": "a57c0130bef39c4cae2548e3adcb952c95acf3bd9536c866dd3931a134aea2db"
+    },
+    {
+      "member": "raw/evaluation-c0-default-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 4013550,
+      "sha256": "f1745cab823e413966ffb4656b78b286c6f018d93706b969af6097288e72c7c0"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-s0-b0.json",
+      "bytes": 3668,
+      "sha256": "a1465e2ba6aeef46d48bdcef545bd8499f5f25d63764f7c83e7f3f0de2a301d2"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-s0-b1.json",
+      "bytes": 3673,
+      "sha256": "cfdf78a8a7c9c6f046ab84f590425cad7ae2c1587596903328fabef74ff198f1"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-s1-b0.json",
+      "bytes": 3673,
+      "sha256": "a87c140e47466900f985b355289e3f6cc938dafff5d36eef9dd781168d4db9c7"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-s1-b1.json",
+      "bytes": 3672,
+      "sha256": "ace850feec103070d58cd0dae2e6a7b1dd7f033a914e0aa7d8519245c2f152a0"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-2x-s0-b0.json",
+      "bytes": 3788,
+      "sha256": "27ab69cff48d7b95c26d2b996a84cae4d838b8f58f961f2886511030c511bb0f"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-2x-s1-b0.json",
+      "bytes": 3788,
+      "sha256": "8b52bebb4f52f587c1acd0c82f5c15e88e49a6ced32ec7fe91ff71188b71b38c"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b0.json",
+      "bytes": 11487,
+      "sha256": "e46d968a78251708b1fcfe2976b3c092fab547482a1fe8b2ae0adbf90cb871bb"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s0-b1.json",
+      "bytes": 13040,
+      "sha256": "38d1ed825c208fac6241e6e09f434a88861d887d46973a8a9c3bd9baf9c05603"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13117,
+      "sha256": "0a921ed260d14e7670a6e6822ca9bff75fc52db61467d910f82e7916e55de7bf"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-broadcast-cut-s1-b1.json",
+      "bytes": 13571,
+      "sha256": "918a3963669286947a52c2b48c530797b0548525af79585e0189408eb854f33d"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b0.json",
+      "bytes": 25780,
+      "sha256": "14e1be97c17a6b7d8beb6449bd00e528517661d277b7236347dbcf969b80eff8"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s0-b1.json",
+      "bytes": 30064,
+      "sha256": "d16b9bbcab2d9d84d940b1f836e8f101e01e6b99b57dd8a5b24d6228096ce7b7"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b0.json",
+      "bytes": 30104,
+      "sha256": "a2a224d5ab3f43b963e26496b31d71a428314e62d9b48945e2345b0ea603967d"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-fixed-metacog-s1-b1.json",
+      "bytes": 29978,
+      "sha256": "8821b30036fb64b5b84abf8c072582e86f22e58909599eeec539065adb4b3914"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-full-s0-b0.json",
+      "bytes": 26516,
+      "sha256": "3d76a6c6197419e1940bfa38b110c3d55bfc17cfa3b57624899eee44045abe28"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-full-s0-b1.json",
+      "bytes": 29481,
+      "sha256": "702ef514050c195644d63aa41796281fb51b58bc5e3686dc50f275db61fac8d3"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-full-s1-b0.json",
+      "bytes": 29997,
+      "sha256": "8bcdd907cc2d7030e997df68e780c12da248f0b2cadc2499b274b2cce83fdb9f"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-full-s1-b1.json",
+      "bytes": 29731,
+      "sha256": "a7354d9c7a24850239a3924fed190818ce799b8c1e49fb44640b908bc0b0864f"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b0.json",
+      "bytes": 12217,
+      "sha256": "bb71e235b07d7818cd31c3a2056ebcec2709394de74cc387c985e03c7a608bb8"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-learning-frozen-s0-b1.json",
+      "bytes": 15320,
+      "sha256": "3aa58b7467a92e2b6d132c174124462795ab2bb84dd288634f1100809ccecf3f"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b0.json",
+      "bytes": 15218,
+      "sha256": "4181f7454f0740a218ba778fcdc074eed9cf8830a97a59a9e5e8673ea44aadff"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-learning-frozen-s1-b1.json",
+      "bytes": 15240,
+      "sha256": "3edb36454f28a2ea7132e0e45aa422dc3d0429333b116a524d16d2cb12f49078"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b0.json",
+      "bytes": 28912,
+      "sha256": "fcc1fcf9bb13dd580bad04dd9a873f32a6915faa126fde1fcf06f24f974848d0"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-no-novelty-s0-b1.json",
+      "bytes": 25883,
+      "sha256": "c8e96ae4868eecfe610fbac3c0a9d0ef16256fbf82019b680b0395d9f9e139c7"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b0.json",
+      "bytes": 29312,
+      "sha256": "2b649aae0c1cc0abfbf4c8b82b0fd3d38a0dd88cdcda99d98fa03a5673fa9644"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-mind-no-novelty-s1-b1.json",
+      "bytes": 25985,
+      "sha256": "49a3ba25dc3e68451507d611a3c60838ced628d48c58279b5c886a30fae270ac"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-full-s0-b0.json",
+      "bytes": 26145,
+      "sha256": "62d14d9bf8e2e8d2a44718b78128d5b860289c123eca528e0c593d01d94ab457"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-full-s0-b1.json",
+      "bytes": 30232,
+      "sha256": "70080684dc60a8436130bb1a91c683ce4420659594d25637f7c29ea622e089d3"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-full-s1-b0.json",
+      "bytes": 29842,
+      "sha256": "3ac02b3f5650294930433276ed0b944251c8e2b9fe62ad53a9d7efcbcde7cd70"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-full-s1-b1.json",
+      "bytes": 28957,
+      "sha256": "59a4326f3c898dc1cddbbeb8fcd62fd5eb0f703f58455bf0c291dd6197f346e9"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b0.json",
+      "bytes": 26150,
+      "sha256": "27a5e1dc080f0b1534040ed11992f9e11c7dc4646e52d611d7cc3957765b0558"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-no-novelty-s0-b1.json",
+      "bytes": 30240,
+      "sha256": "1b720f035abecfda380b310359b8666a715c0397a1544fcb0dea57b1e1a96e2f"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b0.json",
+      "bytes": 29854,
+      "sha256": "c9e81475c1c66112dff3958ceb3cc3b4369ca01c8b3dbc8c46f14f823d5b3d2b"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-s0-b0.json",
+      "bytes": 3659,
+      "sha256": "d9f967179aa95d8595bd9a68174f8b17cdd0a2ffee992bd27ae0d8bdb147434b"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-s0-b1.json",
+      "bytes": 3661,
+      "sha256": "e05b9f92dc3ee1c4f8896734696d0d5ae532bbe4d292e7011f608bbf5a78eb91"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-s1-b0.json",
+      "bytes": 3669,
+      "sha256": "696a0a0bf737f7c75e386879fef2cf18a38a0446dab14724f2a8be6a41e10964"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-s1-b1.json",
+      "bytes": 3660,
+      "sha256": "f895532cec5655f09deb1a25099a09e1b2c63bed0559b5528e99f60f6eef2a07"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-2x-s0-b0.json",
+      "bytes": 3783,
+      "sha256": "36be1ad51e0b43269ea18c48f504024a7c2927d2d24f5bfb038b2b453ea9a119"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-2x-s0-b1.json",
+      "bytes": 3787,
+      "sha256": "649c50eb03312654e1497d87c63893498ab7c78c8986f1661ba0ecba72ba16a3"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-2x-s1-b0.json",
+      "bytes": 3785,
+      "sha256": "b2b260745e0e2b07915e1a98e4af0fb12af9436afc2831d65cda6a0bbe2a094d"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-2x-s1-b1.json",
+      "bytes": 3784,
+      "sha256": "b6976cf1a0581220f301e6417b6f651c87df8c841ee185ea51850d7203525ed3"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-4x-s0-b0.json",
+      "bytes": 3783,
+      "sha256": "30f4dcbc8dc0087416737312b58e0dabc4f0c7ae637352fbbe4b3e7957d631d8"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-4x-s1-b0.json",
+      "bytes": 3779,
+      "sha256": "1079b89c364c448c051530c6b1e7ea875ed94f5612935a4b24f659d46324a347"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-4x-s1-b1.json",
+      "bytes": 3778,
+      "sha256": "d508ae946a38e4f45beae5e99b57af242a5f787fefe75032905566f3f73ea9d8"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-broadcast-cut-s0-b0.json",
+      "bytes": 13236,
+      "sha256": "594f4ea602cd2f7f8a4eb0e51a88dd226342c863e56dfddd2efa20905f587557"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-broadcast-cut-s0-b1.json",
+      "bytes": 13432,
+      "sha256": "736412d6ec239dc66c3250595e69edb1d93d75da2fc505d198ed8a4323cb3cf3"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13456,
+      "sha256": "4236f1c8c4e8c5a1ec6762d46656b48f5760fc5f8f7c7bfee7de43c80912ff86"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-broadcast-cut-s1-b1.json",
+      "bytes": 13581,
+      "sha256": "b2faf62c8d895fb052efc1cbad3bed769361ce4a831bf60e0248407e816fc5e2"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-fixed-metacog-s0-b0.json",
+      "bytes": 30003,
+      "sha256": "0f71a3f154863b2b113eb5485c73c718b6beb5f67421af9d509b61ecc2ecf3d8"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-fixed-metacog-s0-b1.json",
+      "bytes": 29963,
+      "sha256": "2d0ec709df4f42871f8dddca61096a59eb2c7af88fbfb7fcf5564d7efff91798"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-fixed-metacog-s1-b0.json",
+      "bytes": 30451,
+      "sha256": "04bf3a5f4d3cc8ef9e7dd34f303de4bdefc99eae0271b6d9111b5eb08dd345b6"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-fixed-metacog-s1-b1.json",
+      "bytes": 29806,
+      "sha256": "7e1d16888420d69a7e0774df4bbee40c556b1a2a32c90175b5e43491fa55643b"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-full-s0-b0.json",
+      "bytes": 28574,
+      "sha256": "a078f3fdb96523d75e417bb714a400f111bac9404a05e23345443134c26a73c0"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-full-s0-b1.json",
+      "bytes": 28581,
+      "sha256": "5d217fb245ad60a8bb97316c1c9f59e9173303dce0f83585eab0a726cc895747"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-full-s1-b0.json",
+      "bytes": 28721,
+      "sha256": "4f711b785f60dd26a98bc38276bba618d4a1c65ac5d53d789db454349d44b300"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-full-s1-b1.json",
+      "bytes": 28015,
+      "sha256": "d9b03c3c4e72e89679e690954e538aa98ddeeacc50b7bb1c21ee4438d7c99803"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-learning-frozen-s0-b0.json",
+      "bytes": 15040,
+      "sha256": "01072c862a4476e9b5a11262cffdb202f5b050fbece47b759966a3ea5c76c670"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-learning-frozen-s0-b1.json",
+      "bytes": 14985,
+      "sha256": "184574369c8ecc5e082dfc7c90c5182bc82607c4b4f41efa9073c4e728b4000a"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-learning-frozen-s1-b0.json",
+      "bytes": 15473,
+      "sha256": "846ab12733d16b870cd33cb6c2b0c486508f3ef817305d35fa89d8d8dac7535f"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-learning-frozen-s1-b1.json",
+      "bytes": 14867,
+      "sha256": "d6b777b16f54784dcb88b72fb5a20eff5a42bf89ac38ee45a941d132ef4ce963"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-no-novelty-s0-b0.json",
+      "bytes": 28573,
+      "sha256": "ca4647838a79545f3f26106f95af376970a5f5582702d783334376159aa4822d"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-no-novelty-s0-b1.json",
+      "bytes": 28585,
+      "sha256": "3a9501f803128345744235a3b71ccc606623252dddd9ea312f9e1ac3fa04a773"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-no-novelty-s1-b0.json",
+      "bytes": 28734,
+      "sha256": "a0a9c93dfad23b211d2c928053a3f4b901d4a6aa43e4eadff2e0ef3d97e02c50"
+    },
+    {
+      "member": "results/evaluation-c0-default-mind-no-novelty-s1-b1.json",
+      "bytes": 28026,
+      "sha256": "b341f313e7b65ef2ca4bacc0e4ebe6f38ce438fa7ae0b83de5c4312dbd97b4dc"
+    }
+  ]
+}

@@ -1,0 +1,913 @@
+{
+  "format": 1,
+  "status": "IMMUTABLE_COMPLETED_TASK_BATCH",
+  "archiveName": "evaluation-65-128.tar.gz",
+  "phase": "evaluation",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "releaseSha256": "3bc4503e96010b50d779d51963dd57a4548ec5da5e29d58f93a6913bffb06307",
+  "sourceInputManifestSha256": "987b0d80cc70b8947a96a7ef3de5921469933a2649d0cdb1b722e9c86c987c91",
+  "completedProgressRange": [
+    65,
+    128
+  ],
+  "taskIds": [
+    "evaluation-c0-arena-mirror-x-conventional-useful-4x-s0-b0",
+    "evaluation-c0-default-conventional-useful-4x-s0-b1",
+    "evaluation-c0-arena-mirror-x-conventional-useful-2x-s1-b1",
+    "evaluation-c0-arena-mirror-x-conventional-useful-4x-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b1",
+    "evaluation-c0-arena-mirror-x-conventional-useful-2x-s0-b1",
+    "evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b0",
+    "evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b0",
+    "evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b0",
+    "evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b1",
+    "evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b1",
+    "evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b1",
+    "evaluation-c0-arena-new-obstacles-conventional-s0-b0",
+    "evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b1",
+    "evaluation-c0-arena-new-obstacles-conventional-s1-b0",
+    "evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b1",
+    "evaluation-c0-arena-new-obstacles-conventional-s0-b1",
+    "evaluation-c0-arena-new-obstacles-conventional-s1-b1",
+    "evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b1",
+    "evaluation-c0-spear-minus25-mind-full-s0-b0",
+    "evaluation-c0-spear-minus25-mind-full-s1-b0",
+    "evaluation-c0-spear-minus25-mind-full-s1-b1",
+    "evaluation-c0-spear-minus25-mind-full-s0-b1",
+    "evaluation-c0-arena-mirror-x-conventional-useful-4x-s0-b1",
+    "evaluation-c0-spear-minus25-mind-no-novelty-s0-b0",
+    "evaluation-c0-spear-minus25-mind-no-novelty-s1-b0",
+    "evaluation-c0-arena-mirror-x-conventional-useful-4x-s1-b1",
+    "evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b0",
+    "evaluation-c0-spear-minus25-mind-no-novelty-s0-b1",
+    "evaluation-c0-spear-minus25-mind-no-novelty-s1-b1",
+    "evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b0",
+    "evaluation-c0-spear-minus25-mind-learning-frozen-s0-b0",
+    "evaluation-c0-spear-minus25-mind-learning-frozen-s1-b0",
+    "evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b1",
+    "evaluation-c0-spear-minus25-mind-learning-frozen-s0-b1",
+    "evaluation-c0-spear-minus25-mind-learning-frozen-s1-b1",
+    "evaluation-c0-arena-new-obstacles-conventional-useful-2x-s0-b0",
+    "evaluation-c0-spear-minus25-conventional-s0-b0",
+    "evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b1",
+    "evaluation-c0-spear-minus25-conventional-s0-b1",
+    "evaluation-c0-spear-minus25-conventional-s1-b0",
+    "evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b0",
+    "evaluation-c0-spear-minus25-conventional-s1-b1",
+    "evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b0",
+    "evaluation-c0-arena-new-obstacles-conventional-useful-2x-s1-b0",
+    "evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b1",
+    "evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b1",
+    "evaluation-c0-spear-minus25-conventional-useful-2x-s0-b0",
+    "evaluation-c0-spear-minus25-conventional-useful-2x-s1-b0",
+    "evaluation-c0-arena-new-obstacles-conventional-useful-4x-s1-b0",
+    "evaluation-c0-arena-new-obstacles-conventional-useful-4x-s0-b0",
+    "evaluation-c0-arena-new-obstacles-conventional-useful-2x-s0-b1",
+    "evaluation-c0-spear-plus25-mind-full-s0-b0",
+    "evaluation-c0-spear-minus25-conventional-useful-4x-s0-b0",
+    "evaluation-c0-spear-minus25-conventional-useful-2x-s0-b1",
+    "evaluation-c0-arena-new-obstacles-conventional-useful-2x-s1-b1",
+    "evaluation-c0-spear-minus25-conventional-useful-4x-s1-b0",
+    "evaluation-c0-spear-plus25-mind-full-s0-b1",
+    "evaluation-c0-spear-minus25-conventional-useful-2x-s1-b1",
+    "evaluation-c0-spear-plus25-mind-full-s1-b0",
+    "evaluation-c0-spear-plus25-mind-no-novelty-s0-b0"
+  ],
+  "taskCount": 64,
+  "wholePhaseCpuClaim": false,
+  "files": [
+    {
+      "member": "ACCEPTED-PROGRESS.jsonl",
+      "bytes": 8638,
+      "sha256": "ca4aea7761f9d55275edb72dffea225f5bea186bd9e3f94dad648fa4f61d6e3d"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b0.json",
+      "bytes": 60678,
+      "sha256": "cb7984fd987990fad9e63c6b2d7b9efc340c6b2a1ba2521a42cfba44f5b9ea76"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b1.json",
+      "bytes": 61074,
+      "sha256": "1096b7dbe122eed8efb377d0f278ee4292b5c1ba5b49b95ba17a96bf2cd20295"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b0.json",
+      "bytes": 59825,
+      "sha256": "aea7c28147a744f3d7ae79e3fe0dfae2506c0cefdba90ae6cc058f3021c991c8"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b1.json",
+      "bytes": 60715,
+      "sha256": "a208491058e13a663f94bb2af00fe72c915acaf17bae0e5dbea07df05b0005f3"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b0.json",
+      "bytes": 61216,
+      "sha256": "57f8d722dda391b85b9724b5196e6ba330c6dfa74864a888b3ab33da92e97c40"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b1.json",
+      "bytes": 61826,
+      "sha256": "175f520b2aea9834ce50263d8be3fe7f32725470d21e17dc783b34e00b30a683"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b0.json",
+      "bytes": 61600,
+      "sha256": "ef85a3fb6f02ecfa91e18aa0d07275b99ca65944afb134d2eceff5e97c8f84c2"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b1.json",
+      "bytes": 62705,
+      "sha256": "1b8ed81500c31c9349491515bad4b0dd928f5e7a79ef5ef814e369bbe8411d35"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b1.json",
+      "bytes": 60260,
+      "sha256": "393e6649c7b8bb1f5c761dc5b0e9afa32fb68e70d1f22052f7b1417a4f65a76c"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "bytes": 59954,
+      "sha256": "8feee24d690587d29326d94d45e4e5cd142562896e7bf724c35261786b1ba486"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b1.json",
+      "bytes": 60729,
+      "sha256": "d626a1af1b73351724bdda7321f42568873fab556751f0faf0acfa28dbd7ac44"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "bytes": 60513,
+      "sha256": "5faff083a2e955968d637161cd0fd21a73f4a770349278b072fbb3c35ab6c897"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b1.json",
+      "bytes": 60483,
+      "sha256": "68a966c382bf2d5ca000fdc7757b35efff8b8990755357fde39def7ac2d42872"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "bytes": 61444,
+      "sha256": "81bbed9c028a70d2e3daafc16cea22645a370278929b6d6e19be094b66d0db83"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b1.json",
+      "bytes": 62546,
+      "sha256": "0d41c1a8ef245382d6259ac887c88524f3d1162271b6017d7a70ed2a7ead882a"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "bytes": 60676,
+      "sha256": "a96ae36d0828d7f5f47461af9560a692bb3b1dfbf64207da5d3f1f178b389b02"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b1.json",
+      "bytes": 61746,
+      "sha256": "bbcc7b85742246bbe0d5bcdbf330270329b9f97c87fd4e0bf4c7d502e20df2c7"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-full-s0-b0.json",
+      "bytes": 59954,
+      "sha256": "8feee24d690587d29326d94d45e4e5cd142562896e7bf724c35261786b1ba486"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-full-s0-b1.json",
+      "bytes": 60108,
+      "sha256": "82a18365a66a4af55bdb34b89b7e34cf71510a5d63b305cec27f6bf43db7da36"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-full-s1-b0.json",
+      "bytes": 60118,
+      "sha256": "9cc882f9b09fdc5aac8f19d643b833bf7a147b48001573af635b1f0ef5d4e3ef"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-full-s1-b1.json",
+      "bytes": 61030,
+      "sha256": "6043010e2a172cb3a324f223244e6b5e784a20d6f998222bd637a81e52d5543a"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-learning-frozen-s0-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-learning-frozen-s1-b1.json",
+      "bytes": 61089,
+      "sha256": "346b5fe734ccc3342f2d7406edf5c3bf2cdbbce3853f7de45861c0bd02d98e7c"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-no-novelty-s0-b0.json",
+      "bytes": 59726,
+      "sha256": "02748a4ae8caf61ebadb6e314ad4dd21cba00be54ad8d25ab0d70785bb845180"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-no-novelty-s0-b1.json",
+      "bytes": 60379,
+      "sha256": "683b2525b3a65c1874ecbc352dca4a43816ac1af57bf4da9b7f9d6a43038dfd9"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-no-novelty-s1-b0.json",
+      "bytes": 60463,
+      "sha256": "27e19140ad76a730f7ec7eb5c029e2c53dcad55ed1773b280360fde003884d01"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-minus25-mind-no-novelty-s1-b1.json",
+      "bytes": 60841,
+      "sha256": "0f18de65d5bee8b76d6ecba815ce0a19524c98161185b91f0770295fd04c67d0"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-plus25-mind-full-s0-b0.json",
+      "bytes": 59989,
+      "sha256": "3e72ca7112e26207ddd9680cb30963dd92fd8b68f84c5bdb37a83f02979c6c35"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-plus25-mind-full-s0-b1.json",
+      "bytes": 59838,
+      "sha256": "438ad6f174995dee308075b62208b14387e16591839036cb6cfdcefdcc42539f"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-plus25-mind-full-s1-b0.json",
+      "bytes": 60325,
+      "sha256": "10f17f9354fe4a5d000ea6e7ac1c1832e79c9057eb1e9c5dd0525bbf933dcd70"
+    },
+    {
+      "member": "memory/evaluation-c0-spear-plus25-mind-no-novelty-s0-b0.json",
+      "bytes": 59989,
+      "sha256": "3e72ca7112e26207ddd9680cb30963dd92fd8b68f84c5bdb37a83f02979c6c35"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1199365,
+      "sha256": "feff213c5357ba14e3064026c74eb0a46b27cf3991ecbe11b975ef38a839646d"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1199362,
+      "sha256": "0085029106d011bfb44e920c40b7aa58630223bd959de1847abeb188a4837239"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1244996,
+      "sha256": "d26ed278ce6654c6218d0405282a51d27eeb98dfbb993f9bd2a1c13f7e1d6e5b"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 1268176,
+      "sha256": "8b711f6bed50477033fb9f23e730d3a904edfdfc2012751221e7e913e60c5ac9"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1274598,
+      "sha256": "e4a7b60b287cb17bd5ab4747cce1b09fcc8286692e9f35884e06c8c1f59aaa17"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-mirror-x-conventional-useful-4x-s1-b1.jsonl.gz",
+      "bytes": 1241120,
+      "sha256": "1da1f6b904c9b0e682f7e44ff5daff9154c37b79e62684f15dd7d3751c989645"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-s0-b0.jsonl.gz",
+      "bytes": 1967156,
+      "sha256": "1ea652046bffd9265a01cd30777ed58b5ff1694c891a33664d57e6a4b67256b5"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-s0-b1.jsonl.gz",
+      "bytes": 1964755,
+      "sha256": "70253f984d596cc85a7f5703eb9a723172861acb715922744ad0a7b1fdf0c16b"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-s1-b0.jsonl.gz",
+      "bytes": 1952850,
+      "sha256": "0cb91e2c27af350fdf5e3ac2fabdcd306ab9f1754cf938e35a4ae67f2547ed61"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-s1-b1.jsonl.gz",
+      "bytes": 1956905,
+      "sha256": "8c9e06de5bb525aba6cb29ec60cfe71d2822f92af12c8a307ab921a956618070"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1213912,
+      "sha256": "3328cbb32688966b6c22b826b482b9fe518b68fbeee195b4721752f7512249f7"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1210742,
+      "sha256": "d0ff77a6c6ea30882d8bd73fb87c3f84fb4c7d4675e9b2a90108f8e92104fc98"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1223599,
+      "sha256": "bcbaace2516e589a33ada78096967292b239465ab6c698cfc21252576177d123"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1226699,
+      "sha256": "43b44d110a5fa38a9cc958c068aba499ad6dcc7f528f868f696ce537f4067f60"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1242048,
+      "sha256": "33df2e26124598be5ba591fa6d96aaee14feaabb9170bb11d077a5db0cc9e8ce"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1218193,
+      "sha256": "bd3aebf816c4a226d6c2136c8a82db2648e9fc48c005e9ffdfe8bf16cd55b384"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 4441505,
+      "sha256": "eb6ebd39740d2f6dfbad2d6bb16f4a48944de303c9cc709c82d901d085d7a5d8"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 4432254,
+      "sha256": "e3bce959824d78c3f7544a690f9596fcfdc1db68e7870a7cfb1c847477497752"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 4484725,
+      "sha256": "de7be8cae8555e51b50ed55373e84a78136e9e7372812b2de770fdef99062094"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4117236,
+      "sha256": "fe88d0fc3ff3240096dae934739693db7f4a2abcf0aecdd1f28192b1b7b6dbb2"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4541174,
+      "sha256": "430c1f6943728d5a8e07b352de55b240364488c4ae350d9bbe40413d5bb96b66"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4560910,
+      "sha256": "5c31137321a21e8c1e7f803e9b515227997f506037d414e047a62b40e93b6a31"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4533989,
+      "sha256": "19f2deaba099e390f7b72db15c95eb47b69fbabd0abc34a3b79f379302f6144a"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4526219,
+      "sha256": "5438395e4f635eb417fa42df83b4ee01edc48014ca046f0294ef879ae9ec3ee8"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4631847,
+      "sha256": "9ca300fcfad635b1954000e9623a6d30581274695bf3786c7a49f7ad94e2a153"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4613746,
+      "sha256": "16eacd3c8586d3d991871a18b9aa19d109344bfb76f5358623c9060f845b6f2a"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4563955,
+      "sha256": "5cbe1b107095e8e5ef944fc3435836c76c6165f07e911b7b013ee9d6056acfdb"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 4587699,
+      "sha256": "70c46b4bc24571af36caebc3414d9ab55db0f9a76983ca0ad927b28b1d7f8ec4"
+    },
+    {
+      "member": "raw/evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 3766943,
+      "sha256": "c2290a4a1f2ad631e033d96e944b6234a0532303c8ce3f3067692a40ca2f5cc9"
+    },
+    {
+      "member": "raw/evaluation-c0-default-conventional-useful-4x-s0-b1.jsonl.gz",
+      "bytes": 1219371,
+      "sha256": "68c4f5a165a2d3bda1c9242841cc5563f084b798528d6a9ec0e31f8f4803ecbd"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-s0-b0.jsonl.gz",
+      "bytes": 1924078,
+      "sha256": "de0e4364e3962c8c5f970053558aac931303d46d3eaf028b48b1bba044f5394e"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-s0-b1.jsonl.gz",
+      "bytes": 1921717,
+      "sha256": "ef69fc34a622afe56d3a35e331b207aa9f03bd65348f63b9269476712d52d2c0"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-s1-b0.jsonl.gz",
+      "bytes": 1927788,
+      "sha256": "090a764706d21a673f9face03bca2a14bed01ac0850fec2597b5bb1e161bc972"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-s1-b1.jsonl.gz",
+      "bytes": 1925612,
+      "sha256": "d985ba2b36e5fd891ce2b46854a8e23e144f44ddd5bcff726696f90e0afda1b6"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-useful-2x-s0-b0.jsonl.gz",
+      "bytes": 1210652,
+      "sha256": "2325c7b07a7abe2f2c6db5a7098844d9f6643a9f120923b2171e0b15f69c3787"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-useful-2x-s0-b1.jsonl.gz",
+      "bytes": 1212446,
+      "sha256": "9a34cf72cd565eda47269326b8f60e72dd15a3819e8fcef57c4582f5ddb86823"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-useful-2x-s1-b0.jsonl.gz",
+      "bytes": 1210119,
+      "sha256": "72985f0307fb0b9fce05c4638521d6e1cd246881b481c7d2c491b776729cc878"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-useful-2x-s1-b1.jsonl.gz",
+      "bytes": 1210884,
+      "sha256": "d0e19140073c3757219bc033e62289f9c0d0131d509142e9b667105b5658fde4"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-useful-4x-s0-b0.jsonl.gz",
+      "bytes": 1219580,
+      "sha256": "6c4dd8a73fde33ad00ae0223ee4a385733a4920da54789ae67c489f9e51a3a0b"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-conventional-useful-4x-s1-b0.jsonl.gz",
+      "bytes": 1218152,
+      "sha256": "50371be106dfcba951e2464218b07afa8f11ac291f42fc76e5ef3cfcd78b12c7"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b0.jsonl.gz",
+      "bytes": 3825061,
+      "sha256": "aaed2d9c2632d35e32b021e693ab100d7554f0c893afce6ce5b6d9289fa833cb"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b1.jsonl.gz",
+      "bytes": 4319730,
+      "sha256": "c7e47b935a3547c0169c326640fee0b862e5551df1bb85fdcb875752435fc3a6"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b0.jsonl.gz",
+      "bytes": 3931937,
+      "sha256": "0ef7f5ea62477c0ae6c9077b1f039f9c53191c69113c2da88938acf1e1653d6c"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b1.jsonl.gz",
+      "bytes": 4225487,
+      "sha256": "acf9be4d5860476d7cb217f6d74b9ec6bd1dee6a7eba6220fc8468c56407127f"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b0.jsonl.gz",
+      "bytes": 4442380,
+      "sha256": "29bfe8fe07574021060864b1c6b6f633f7bd8e693d06f5ce5e9f921182a8363b"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b1.jsonl.gz",
+      "bytes": 4444507,
+      "sha256": "4368e52144b1491a88f917bf230656d87e6de4723a1c87a20ff10ab52756733b"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b0.jsonl.gz",
+      "bytes": 4043124,
+      "sha256": "9cdf6b45cda68fd04985520d5d2cc6ea8b963a61b7090953c2924229ed875a01"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b1.jsonl.gz",
+      "bytes": 4161073,
+      "sha256": "ef99bf54945e7251f9fd5e01ddacb669f0ee76dd737c138a1f19117578db15f2"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-full-s0-b0.jsonl.gz",
+      "bytes": 3961071,
+      "sha256": "b859d6d899282a2a28050640fc322141108fa21a90a210bff05eb72e435bd65d"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-full-s0-b1.jsonl.gz",
+      "bytes": 3905933,
+      "sha256": "2e616d1fc60a62dae2c5b57795cf68d900e088a6ae3f098f595fa1fb5425e4d7"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4208434,
+      "sha256": "a278573017f51463c7067a7f456b9cd1d4df6864925ad949712b186fa1902882"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-full-s1-b1.jsonl.gz",
+      "bytes": 4347748,
+      "sha256": "6f08b4b86443093aa7882ee8ad00e99e7927512f3625067558170d582409915c"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-learning-frozen-s0-b0.jsonl.gz",
+      "bytes": 4176957,
+      "sha256": "6239bc67f7cdd1d7e9b39114f9edb0d74bde134b043bb934be648b62926ae415"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-learning-frozen-s0-b1.jsonl.gz",
+      "bytes": 4467290,
+      "sha256": "4dbd5385e6a008dc8209377b1b3f68b74cbf6b72f67007832ba1e6b0153a5329"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-learning-frozen-s1-b0.jsonl.gz",
+      "bytes": 4435625,
+      "sha256": "f4ac87ae5354a85828af8a09290620aab9ac983c8cd02f299793f4746b35e8f7"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-learning-frozen-s1-b1.jsonl.gz",
+      "bytes": 3965967,
+      "sha256": "6b457816de5b908c15ab41578d3cc659b7ca8bed27b9ef125eb081966fec2513"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 4204480,
+      "sha256": "196d167d17badc23d54787d504853430510e1de35c734064e848d5f21f569c8c"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-no-novelty-s0-b1.jsonl.gz",
+      "bytes": 4114517,
+      "sha256": "9ad1b9eafaa9bf9cbb489b38f277f6851372577100de6f0ecdabfe4064eec3e6"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-no-novelty-s1-b0.jsonl.gz",
+      "bytes": 4074682,
+      "sha256": "ee5d799e1c54744708496ece81100b1b706dd2389b47c584ac3d0782e2dd7e47"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-minus25-mind-no-novelty-s1-b1.jsonl.gz",
+      "bytes": 4345235,
+      "sha256": "443d55aa04519dbd2ad1978e33a3b6b03863848581d271f513f45c975977a30e"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-plus25-mind-full-s0-b0.jsonl.gz",
+      "bytes": 3964003,
+      "sha256": "4e9438452915dfc01f7dd89fd98ca92543f4b9a94ca2c3bf1971cecb3c41a085"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-plus25-mind-full-s0-b1.jsonl.gz",
+      "bytes": 4033102,
+      "sha256": "6bc15417d6a46f10c6c3641bcae0118a8c71cbd574f8cb8381c3773637f81e0c"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-plus25-mind-full-s1-b0.jsonl.gz",
+      "bytes": 4590170,
+      "sha256": "b7ab599f1d607779162af527388d13f4e1a748228970e49e25b1063de6d9f8d3"
+    },
+    {
+      "member": "raw/evaluation-c0-spear-plus25-mind-no-novelty-s0-b0.jsonl.gz",
+      "bytes": 3963072,
+      "sha256": "9aa5c12ebf528bdd6954d93491b9eb7b92563c10208efe092cbfdde370ca9299"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-2x-s0-b1.json",
+      "bytes": 3792,
+      "sha256": "0ed5ebcf2ff64a7863f5483237bddc8529871c3768247ba6927fdc4baaef9432"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-2x-s1-b1.json",
+      "bytes": 3789,
+      "sha256": "b3f706a9363c8ed21d9d6a22fd01c3fa6e7cf9a4f982ed7fd4c7a9d1ea6b30e9"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-4x-s0-b0.json",
+      "bytes": 3788,
+      "sha256": "9c45727f73741b878aea02bc0dfc20a13e8f5c5f7554d2423db32581daf4faa3"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-4x-s0-b1.json",
+      "bytes": 3785,
+      "sha256": "f3957ecf249714d43ec99bf895aed4d0908c48219b45fb6bc4d0e4753f3c9908"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-4x-s1-b0.json",
+      "bytes": 3797,
+      "sha256": "30824f24291d913986538319288afef15b47432c41a6b56d9f85726312fb6735"
+    },
+    {
+      "member": "results/evaluation-c0-arena-mirror-x-conventional-useful-4x-s1-b1.json",
+      "bytes": 3789,
+      "sha256": "f95b06b17a3f395f9650c88db8dace394719d9c25b00ee599c32276f4bbda8b9"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-s0-b0.json",
+      "bytes": 3669,
+      "sha256": "a77807fb57fec24100cd3464e98b095137071881d4ceaeb039d25bb7e06e2764"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-s0-b1.json",
+      "bytes": 3671,
+      "sha256": "327fa8a8c5ebfecf5a5beab14244f779e226a2624d23ef66469a3d3231bc0144"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-s1-b0.json",
+      "bytes": 3671,
+      "sha256": "fe139ceeccae5d58d057db2524b589a84fffe6e9b2ea49a59b49bcb230957c5a"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-s1-b1.json",
+      "bytes": 3676,
+      "sha256": "f4eb05c782bc930ea17885f8d6c3be17d164657d43994b34887645c7f3657ecf"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s0-b0.json",
+      "bytes": 3799,
+      "sha256": "1a3cd9438f6221d9ba47438baeabb50070bebeae8a2ecb31d206423206fec4dd"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s0-b1.json",
+      "bytes": 3792,
+      "sha256": "19604289d43043eb46fb01a83dc52b75b205bb4209ecb0641b399f6ba914e28e"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s1-b0.json",
+      "bytes": 3789,
+      "sha256": "e896b206c27e611d2bd4250d1e7ff0d2db76f406abd9acb76fdcb26618adf408"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-useful-2x-s1-b1.json",
+      "bytes": 3794,
+      "sha256": "0a32ad05a9d1b314e8f368d3ca356b2c19cef6e21e4e1f37ec97d6630740d817"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-useful-4x-s0-b0.json",
+      "bytes": 3803,
+      "sha256": "37a770c20c66b1c7dcbd95373eccf013ef81c03742651142a84e5a2cdc9e15e0"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-conventional-useful-4x-s1-b0.json",
+      "bytes": 3802,
+      "sha256": "43d39b8783f630f38caea41ccd8c64061ef6af6c0061b0db420337c3d997aa5d"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b0.json",
+      "bytes": 11164,
+      "sha256": "9c4fb31e6e9833e83b4279b84228a702220fd0859dce4eb5a59d5b0c5b52f572"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s0-b1.json",
+      "bytes": 12063,
+      "sha256": "38ec4e2448ac4fb1d7d10d2bc6e4fe8b8096166d291e43dc135cada739a8f65b"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13590,
+      "sha256": "a6235eccadb42791d4b90bcc23273c29ca059699bd37e52d7ecb1b2511f9f5da"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-broadcast-cut-s1-b1.json",
+      "bytes": 13385,
+      "sha256": "e0cf3cb3c399a8cba5ba67629b93ddeda6809ed64f6227a2b37c7203044670ca"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b0.json",
+      "bytes": 26708,
+      "sha256": "59b153e896e17dd15081989e18cd330e873b7afb62cd720d3799b526a81c0ccf"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s0-b1.json",
+      "bytes": 29657,
+      "sha256": "1715497aba2a02200c224cc405bf81d24f4641291044672139b518d80beef700"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b0.json",
+      "bytes": 30240,
+      "sha256": "b9cd482e0eb5e9674caeb256d34b4eae0bbdf78817def9c7b165fd352deff27b"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-fixed-metacog-s1-b1.json",
+      "bytes": 30618,
+      "sha256": "8da86bef314209b45532d33422420b17acace5d9da896354813a69ade0fa7778"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b0.json",
+      "bytes": 14924,
+      "sha256": "81c23dc7969c350128d992f174cda7a34b573075dc66ca7e82b5d2e08caf74bc"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s0-b1.json",
+      "bytes": 15347,
+      "sha256": "41f1bc495a2adb6f933d457cefc10670730ef66f4f5cec0c56bcc8d3b3ec5afb"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b0.json",
+      "bytes": 12533,
+      "sha256": "718a16722b543ca6e77a47422fc11b1f4dcf241c620d8890cbf617e4b17738ef"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-learning-frozen-s1-b1.json",
+      "bytes": 15024,
+      "sha256": "f7cc09d0275235d928ab64d1fb9ec11563c1075355c80c80e34b15538eceb8c3"
+    },
+    {
+      "member": "results/evaluation-c0-arena-new-obstacles-mind-no-novelty-s1-b1.json",
+      "bytes": 28958,
+      "sha256": "6c6fa18fbe1bcf855b47eaf7b2fa9dd7128cdc9098edf3d4e4a5606c032825a2"
+    },
+    {
+      "member": "results/evaluation-c0-default-conventional-useful-4x-s0-b1.json",
+      "bytes": 3780,
+      "sha256": "5705ac46bc1b10491350072ea7485804c87db6ea26ea7730b6c05c15547795b4"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-s0-b0.json",
+      "bytes": 3667,
+      "sha256": "a57dc426b2b4f0117ff24191d49af5942bbe3c2039d46161be361748ede110b3"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-s0-b1.json",
+      "bytes": 3670,
+      "sha256": "ca1f38fdd65c70b5e47182d2b9cd4aff7bb706bc1e13bf196cbeccc689c95fcf"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-s1-b0.json",
+      "bytes": 3664,
+      "sha256": "6620f74ba93c41bbcea910d9074adeac53db783b1b6ed8e778da12c34167f4b3"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-s1-b1.json",
+      "bytes": 3665,
+      "sha256": "ffc2aa822e6e3041bddbae7374ec2ee9f9df5b0898d63a38bf3fca111e5b8b0b"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-useful-2x-s0-b0.json",
+      "bytes": 3785,
+      "sha256": "dde06de0dd8ad70bbfc5272c7d961c57c6092cfd165c32eba46210aa67a04f66"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-useful-2x-s0-b1.json",
+      "bytes": 3792,
+      "sha256": "e0b92f26dfe9f3161f1aa25b8a9d3e186e787b14d1f3506f3e8679f0b60aa410"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-useful-2x-s1-b0.json",
+      "bytes": 3787,
+      "sha256": "79a36c640abe6274228f6e75a3eae95b41e410ddabf879aa72ff470abef9acf1"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-useful-2x-s1-b1.json",
+      "bytes": 3786,
+      "sha256": "72e07bb12d2b8d450ee598b5125a79e4c78828f0683fe33e80f8890d40eec2db"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-useful-4x-s0-b0.json",
+      "bytes": 3786,
+      "sha256": "9ac402f0df6909720e65e301c1182941552bc3e35f5416f37300d5775893a0dd"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-conventional-useful-4x-s1-b0.json",
+      "bytes": 3790,
+      "sha256": "722d35f987ba30550b8bce4e00fad543ec0365d628b7741dd6db2a68af94d3f9"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b0.json",
+      "bytes": 13610,
+      "sha256": "63d91d926b059655c69bbbc81d7ded40aac08861c178bbbffbef27d2c5d9d052"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-broadcast-cut-s0-b1.json",
+      "bytes": 13573,
+      "sha256": "fede314530f4fe7aec7a0973255c409d9f2529cdce500e8f623f7e8a212e72b3"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b0.json",
+      "bytes": 13051,
+      "sha256": "3ce216faa8ec0abc15ac058049a50e93e7f303bceed4702a04a0b4a307c5e078"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-broadcast-cut-s1-b1.json",
+      "bytes": 13442,
+      "sha256": "9e38929c4bf265eb4334ad969fca6970fd390f2e052a00d0ea7c720a1a32e8c1"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b0.json",
+      "bytes": 31268,
+      "sha256": "13e520019dab34666d4784e18ed70a56f4dd82c3f17584f00a412b79bc5857f0"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-fixed-metacog-s0-b1.json",
+      "bytes": 29865,
+      "sha256": "da7aafdfa9673a3508f3e8791dcd90d82564a5409e49a687e6c98b3cb735acfd"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b0.json",
+      "bytes": 29113,
+      "sha256": "3a04e8ec5019a97d8e564c5b3024024c022123f2a79f7faa126ef678c40020bb"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-fixed-metacog-s1-b1.json",
+      "bytes": 30818,
+      "sha256": "f1dc9969a8fc91c1f8210eda65ff3ed42479da97e70d15c3494061594b0e4335"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-full-s0-b0.json",
+      "bytes": 30069,
+      "sha256": "c393da9c5c94f2a2d17cef48a02072050f70316422be73e4b58cbfb4458cca40"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-full-s0-b1.json",
+      "bytes": 29915,
+      "sha256": "be99b069f0aa397f6cded58f2a75892d43834d322510dcf8ac04d09a92dc0aa5"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-full-s1-b0.json",
+      "bytes": 29051,
+      "sha256": "f54829a183e943ff8c69f43b492742bf26da0719240569f27d85aa3ba18291f1"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-full-s1-b1.json",
+      "bytes": 29311,
+      "sha256": "5fc15caf9a79ce804079f7f2b486cf51537d28a8708be36df651d266715f20f9"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-learning-frozen-s0-b0.json",
+      "bytes": 15050,
+      "sha256": "357dd52b4d94270363a32220be45b0ca5341d468a945091488b60046157d5009"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-learning-frozen-s0-b1.json",
+      "bytes": 15632,
+      "sha256": "41d5ded39c10ea540b412195eac69621a9f9f8d4d76df875c8016cbe16f36be4"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-learning-frozen-s1-b0.json",
+      "bytes": 15896,
+      "sha256": "e182620328a167b7c2302e60a224a779f6378df044be2a9b6d72e4ba6b8ec649"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-learning-frozen-s1-b1.json",
+      "bytes": 14561,
+      "sha256": "91ab79717b298a5ff16c05827274d11c023426eac908d3f492a3a79725477698"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-no-novelty-s0-b0.json",
+      "bytes": 28562,
+      "sha256": "91a7195aee3b99d482c3b51ffeb7ba822e236959224433fcf4f13049e9ac99f3"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-no-novelty-s0-b1.json",
+      "bytes": 29872,
+      "sha256": "6660455b8e66ed3917bf9c095ac4d86591808dd8cbe26ac88ec6d919c5a1d7e7"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-no-novelty-s1-b0.json",
+      "bytes": 28239,
+      "sha256": "af84832f246fbc2de57667c396da3540f67d3fd3c26eed1e47dd38d00f813dad"
+    },
+    {
+      "member": "results/evaluation-c0-spear-minus25-mind-no-novelty-s1-b1.json",
+      "bytes": 29307,
+      "sha256": "a22cd3789a19a6c7581cf41a5794dea4981dc8b961be524912436ad206db54d7"
+    },
+    {
+      "member": "results/evaluation-c0-spear-plus25-mind-full-s0-b0.json",
+      "bytes": 29653,
+      "sha256": "91a8efeeecdbbee80eedabc1204c80520528c5f9e455cdf17606583b7dd06358"
+    },
+    {
+      "member": "results/evaluation-c0-spear-plus25-mind-full-s0-b1.json",
+      "bytes": 27708,
+      "sha256": "203ef10935dd749be7e1d05026058bdb4e7124cd6229ada4734ca285056f05b3"
+    },
+    {
+      "member": "results/evaluation-c0-spear-plus25-mind-full-s1-b0.json",
+      "bytes": 29597,
+      "sha256": "9f6f75f544bb6d5c0539ad6b43f2fd045a31749c65c082e6804c6cb4c55beb20"
+    },
+    {
+      "member": "results/evaluation-c0-spear-plus25-mind-no-novelty-s0-b0.json",
+      "bytes": 29657,
+      "sha256": "cb258321e232412dcf8641d642821fe30650dfa04f0eb736a24b0468b6b56cfb"
+    }
+  ]
+}

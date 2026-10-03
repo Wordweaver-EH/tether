@@ -2,15 +2,22 @@
   "status": "RAW_PUBLICATION_IN_PROGRESS",
   "sourceCheckpoint": "291026df7effde2b24c8d36a1273b65295a41245",
   "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
-  "checkpointedTasks": 64,
+  "checkpointedTasks": 128,
   "plannedTasks": 4224,
   "batches": [
     {
       "batch": 0,
+      "commit": "0f810268a4ed98575f1285f6d9af565adb913203",
       "path": "evaluation/robustness-attempt-001/batches/b000/",
       "taskIdsSha256": "43b98f2c618759f7fef8a2c144e02b87f9c0a40524e8f05f25c2a2288f4177c5",
+      "tasks": 64
+    },
+    {
+      "batch": 1,
+      "path": "evaluation/robustness-attempt-001/batches/b001/",
+      "taskIdsSha256": "450f03e6787b8cb4d75d1fef5708f2b4a12c057f2b269786248d233f6b75d7eb",
       "tasks": 64,
-      "archiveSha256": "1fd159d98778391d3cc4dd47af928885b958b34760bf196cbb442b804688ae43"
+      "archiveSha256": "676c997437308e4af7d7ee5ad6da40d7d1f1a540ee627161545278f6f09bc665"
     }
   ],
   "wholePhaseCpuClaim": false,

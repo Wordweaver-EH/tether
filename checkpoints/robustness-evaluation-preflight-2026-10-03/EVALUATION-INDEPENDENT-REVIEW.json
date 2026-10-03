@@ -1,0 +1,42 @@
+{
+  "approved": true,
+  "phase": "evaluation",
+  "scope": "FINAL_SOURCE_STYLE_ANALYZER_AND_PROTOCOL_REVIEW",
+  "lockSha256": "fbf3a3d825e71fea60dec040c67899bf3ff2da78b1ff334a5cbe38f5b1771033",
+  "sourceManifestSha256": "7f1f3e856f4e928390288aabd3717f5b509e3ceac36f1703bbcf361d693263f9",
+  "opponentFreezeSha256": "2619d3623dab1a809b54e56a07e2084e524deceeddc96f73cbac94421ab1507e",
+  "analyzerManifestSha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632",
+  "closedInputsVerified": 150,
+  "sourceFilesVerified": 94,
+  "taskMatrixPreflighted": 4224,
+  "independentSyntheticTests": {
+    "passed": 76,
+    "failed": 0
+  },
+  "checks": [
+    "Exact 12 clusters \u00d7 11 conditions \u00d7 8 arms \u00d7 2 seats \u00d7 2 bouts; 300 seconds each; default plus 10 variants",
+    "All native src and benchmark wrapper bytes unchanged; frozen conventional vectors/levels and 12 acquired snapshots validated against qualified baseline",
+    "Reviewed one-style winner b99346d36cda4d46047cea54db1dac5e9fbebe915a60526171138546491426bf; exact result/manifest/review/Git reference hashes valid; Git commit 1682e7acd5e55612a8c194156026544e2bc5b3ab VERIFIED",
+    "Vendored analyzer 31 files plus manifest byte-identical to prospective approved package; no evaluation outcomes accessed",
+    "Evaluation seeds disjoint from pilot and search; paired task seeds/configs and same-session-only memory carry verified",
+    "Common 30 Hz / 18-tick sensor delay/indexed motor interface and nominal public physics retained; fixed teacher schedule every 1 decision and declared partial broadcast/freeze options unchanged",
+    "Versioned block integrity, ordered task commitments and explicit individual-proof inspectability caveat retained",
+    "Finalization wall watchdog, source verification, supervisor drain, parent-inclusive resource check and exclusive success commit reviewed",
+    "Evaluation caps: 8 workers, 36 CPU-hours, 8 wall-hours, 16 GiB raw, 1 GiB task RSS, 256 MiB task raw, 1800 seconds task wall verified"
+  ],
+  "pilotFeasibility": {
+    "receiptSha256": "9c143b4acf0f68487959edd1020172bb748840da4d7cdb2007384f3619bd42a5",
+    "status": "CONDITIONAL_ENGINEERING_FEASIBILITY",
+    "projectedRawGiB": 13.46575127914548,
+    "projectedCpuHours": 25.728071538888877,
+    "projectedWallHours": 3.5965145825891844,
+    "limits": "Development-workload point estimates, not bounds for unseen shifts/longer sessions; hard stops retained"
+  },
+  "qualifiedBaselineCaveat": "Actual-output freeze accepted with 14 of 24 training-generation floating-tie deviations; final realized selection ranking unchanged, counterfactual optimizer trajectory unknown. No retune or retrospective repair.",
+  "remainingGates": [
+    "Verified Git publication attesting this exact evaluation lock",
+    "Explicit root single-use evaluation release matching phase/output/workers"
+  ],
+  "executionAuthorized": false,
+  "outcomesRead": false
+}

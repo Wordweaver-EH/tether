@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "status": "REVIEWED_FROZEN",
+  "qualifiedBaselineCommit": "36398123d89881576443145b0b7826c8cf2203c9",
+  "styles": [
+    {
+      "id": "searched-style-1",
+      "vector": [
+        0,
+        0.6791419097383817,
+        1,
+        0.9964730904018833,
+        0.2206980906799436,
+        0.992495839856565,
+        0.12784517534077167,
+        0.4120738880336285,
+        0.03309902422130108,
+        0.1961797249773518,
+        0.4378079058967102,
+        0.8056367265805602,
+        0.7737826168052853,
+        0.5928465934842825,
+        0.3203593036343033,
+        0.8427187173115089,
+        0.753191805899143,
+        0.2219101244583726,
+        0,
+        0.552615629253655,
+        0.7900881858915091
+      ],
+      "candidateId": "search-g7-c11",
+      "parameterSha256": "b99346d36cda4d46047cea54db1dac5e9fbebe915a60526171138546491426bf",
+      "totalIntegerNet": 122
+    }
+  ],
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "seedSha256": "af9aa2cc42cd0fb34904816f1cf5493adb156e15754b0a5408a3095e904f4f05",
+  "lockSha256": "3ea79c1c6c4aeb74d71fcd27c67e43bf15174fec158c7e3d55560ddc0985ef8e",
+  "manifest": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-search-runs/attempt-001/SEARCH-MANIFEST.json",
+    "sha256": "57c72f2d08b976cee01ac5d4e51cf5340dd0ddfdb09baf162eb3eca02ab29530"
+  },
+  "searchResult": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-search-runs/attempt-001/SEARCH-RESULT.json",
+    "sha256": "a37bc591b044b092be7280c55358171639cd1fea8270f181728564d865ebb651"
+  },
+  "independentReview": {
+    "path": "/workspace/scratch/75679def3745/tether-robustness-search-runs/independent-audit/INDEPENDENT-REVIEW.json",
+    "sha256": "a418d2e1f9b729e421c955a4ed44ea54a0adb5c43ebe665fbff91de9af6379c1"
+  },
+  "gitPublicationReceipt": {
+    "path": "/workspace/scratch/75679def3745/tether-github-update/search-results-publication-receipt.json",
+    "sha256": "c0665ea15681a299730bfb96439ca53a910cbbdeeb983a440dc315b1c771d9a3"
+  }
+}

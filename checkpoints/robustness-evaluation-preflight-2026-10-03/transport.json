@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "archives": [
+    {
+      "filename": "evaluation-source-protocol-style.tar.gz",
+      "bytes": 229058,
+      "sha256": "b6e5bf53d6ab95a5d6eec14f7a882bfe896fe8e42a263d080755f4edd789c6dd",
+      "parts": [
+        {
+          "filename": "evaluation-source-protocol-style.tar.gz.part01",
+          "bytes": 229058,
+          "sha256": "b6e5bf53d6ab95a5d6eec14f7a882bfe896fe8e42a263d080755f4edd789c6dd"
+        }
+      ]
+    }
+  ]
+}

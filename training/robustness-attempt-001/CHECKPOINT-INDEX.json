@@ -396,6 +396,16 @@
       "path": "batches/conventional-useful-4x-selection-candidate-g4-c14"
     },
     {
+      "id": "conventional-useful-4x-selection-candidate-g4-c9",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-4x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "6975ff61b84ab621360959f57c246d8a56bfeab937f179fa038f24d0657cfcb3",
+      "archiveBytes": 29063,
+      "path": "batches/conventional-useful-4x-selection-candidate-g4-c9"
+    },
+    {
       "id": "conventional-useful-4x-selection-candidate-g6-c6",
       "kind": "selection-candidate",
       "arm": "conventional-useful-4x",
@@ -414,8 +424,278 @@
       "archiveSha256": "f71e768b8e6df7842b246f3914f2dce4fde3024c54dffeb65fc3bfeafd20ec96",
       "archiveBytes": 19180,
       "path": "batches/conventional-useful-4x-selection-candidate-g6-c9"
+    },
+    {
+      "id": "conventional-useful-4x-selection-completed",
+      "kind": "selection-finalization",
+      "arm": "conventional-useful-4x",
+      "index": null,
+      "tasks": 0,
+      "archiveSha256": "e6669783800e8673d12ff5608d32eb0e2115ee872ec023e25f7f131a71c2317c",
+      "archiveBytes": 4415,
+      "path": "batches/conventional-useful-4x-selection-completed"
+    },
+    {
+      "id": "mind-wave-00",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 0,
+      "tasks": 12,
+      "archiveSha256": "b02cf255ab13cbd77ed7b3e8b83bf632fa50f3469c631faed9c1d88a97ce8b93",
+      "archiveBytes": 48261,
+      "path": "batches/mind-wave-00"
+    },
+    {
+      "id": "mind-wave-01",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 1,
+      "tasks": 12,
+      "archiveSha256": "4d71d4a41bc17fa42e255a8bf588b530fe7a3e8fc87100b95f66416f7a6f451c",
+      "archiveBytes": 56301,
+      "path": "batches/mind-wave-01"
+    },
+    {
+      "id": "mind-wave-02",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 2,
+      "tasks": 12,
+      "archiveSha256": "271a3ee4f7b13415d8d922dd5043c281fd60f96e037236ed078e7f205d127a32",
+      "archiveBytes": 63484,
+      "path": "batches/mind-wave-02"
+    },
+    {
+      "id": "mind-wave-03",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 3,
+      "tasks": 12,
+      "archiveSha256": "cb51f90f28a15b9e53a493756ec6ac1c869592e19a3efa7752d2ac71447fc332",
+      "archiveBytes": 60962,
+      "path": "batches/mind-wave-03"
+    },
+    {
+      "id": "mind-wave-04",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 4,
+      "tasks": 12,
+      "archiveSha256": "64e80560e26c68058cb395e5191a615005fccaf36ec989b391dc1de51044bb87",
+      "archiveBytes": 67674,
+      "path": "batches/mind-wave-04"
+    },
+    {
+      "id": "mind-wave-05",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 5,
+      "tasks": 12,
+      "archiveSha256": "93aa1a10e3f9d68161ec62e339d5f77df42050bf5f62e13fe3f075ddce63bc10",
+      "archiveBytes": 66651,
+      "path": "batches/mind-wave-05"
+    },
+    {
+      "id": "mind-wave-06",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 6,
+      "tasks": 12,
+      "archiveSha256": "c09f955ff267f2c6e7847c1ecaa31e73e6384a73cf157ed3f9d1db6af162c0e7",
+      "archiveBytes": 67715,
+      "path": "batches/mind-wave-06"
+    },
+    {
+      "id": "mind-wave-07",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 7,
+      "tasks": 12,
+      "archiveSha256": "f1e50ac45ee0b36275bc67e7a6ffc1f63eafbc51067726c75369314495502c82",
+      "archiveBytes": 68884,
+      "path": "batches/mind-wave-07"
+    },
+    {
+      "id": "mind-wave-08",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 8,
+      "tasks": 12,
+      "archiveSha256": "3955fb04e229c49b641900d672e1d0a2bb387a3f349464fe37de8559196c47f0",
+      "archiveBytes": 72933,
+      "path": "batches/mind-wave-08"
+    },
+    {
+      "id": "mind-wave-09",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 9,
+      "tasks": 12,
+      "archiveSha256": "291df35a0635cf32e060c5205ea8014c269bea7f7b42a7e7b0675dc1254ab09b",
+      "archiveBytes": 68646,
+      "path": "batches/mind-wave-09"
+    },
+    {
+      "id": "mind-wave-10",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 10,
+      "tasks": 12,
+      "archiveSha256": "488b99455e8037554b4fc9703c013359bad1d6afcbbe77d360dd33300977014f",
+      "archiveBytes": 66923,
+      "path": "batches/mind-wave-10"
+    },
+    {
+      "id": "mind-wave-11",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 11,
+      "tasks": 12,
+      "archiveSha256": "1a5dfdbd09ea4eaddfd7bcdafebeda5be0f71014553ebe1ce96624ac0716911c",
+      "archiveBytes": 72585,
+      "path": "batches/mind-wave-11"
+    },
+    {
+      "id": "mind-wave-12",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 12,
+      "tasks": 12,
+      "archiveSha256": "d666de321be7b1978a4bd19424d3e06b345573e63b203c33c7f7433e401c1d59",
+      "archiveBytes": 75575,
+      "path": "batches/mind-wave-12"
+    },
+    {
+      "id": "mind-wave-13",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 13,
+      "tasks": 12,
+      "archiveSha256": "5eaf32fe171ff69d2aaaa9b7be44cff63c26f9f00dfdb1e86e49d608175e4d36",
+      "archiveBytes": 69242,
+      "path": "batches/mind-wave-13"
+    },
+    {
+      "id": "mind-wave-14",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 14,
+      "tasks": 12,
+      "archiveSha256": "2acdd40a5e882d4fd077b752cc146f8134f23496b7ba9581b99ca29f2587535c",
+      "archiveBytes": 73732,
+      "path": "batches/mind-wave-14"
+    },
+    {
+      "id": "mind-wave-15",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 15,
+      "tasks": 12,
+      "archiveSha256": "3f6b31c1b8c59518e7723b1ddf6791e321458f0a1766735d694bde34feccc610",
+      "archiveBytes": 73467,
+      "path": "batches/mind-wave-15"
+    },
+    {
+      "id": "mind-wave-16",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 16,
+      "tasks": 12,
+      "archiveSha256": "20bc28c277e5dfb129e6bc3191994b368c26fdfc3588f908eb130371d19bba25",
+      "archiveBytes": 74436,
+      "path": "batches/mind-wave-16"
+    },
+    {
+      "id": "mind-wave-17",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 17,
+      "tasks": 12,
+      "archiveSha256": "402fe6973758fa31f4de3a8e3257fc0440c4e6ea354ee851169733be44009ac6",
+      "archiveBytes": 77666,
+      "path": "batches/mind-wave-17"
+    },
+    {
+      "id": "mind-wave-18",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 18,
+      "tasks": 12,
+      "archiveSha256": "aa8aedc8aa40a2cf9a9a20bdb4d8e82e9e265a92da57340fd8a7b895a895c43d",
+      "archiveBytes": 74960,
+      "path": "batches/mind-wave-18"
+    },
+    {
+      "id": "mind-wave-19",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 19,
+      "tasks": 12,
+      "archiveSha256": "f5ffa949fb8322afde848cb0c55d7f0da6da6f1d9bea6578172497ab110e35f1",
+      "archiveBytes": 80000,
+      "path": "batches/mind-wave-19"
+    },
+    {
+      "id": "mind-wave-20",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 20,
+      "tasks": 12,
+      "archiveSha256": "e69007f689eeed53ef8b46d5e581c93bc17257de88f0e8e605293092d83e0d79",
+      "archiveBytes": 75449,
+      "path": "batches/mind-wave-20"
+    },
+    {
+      "id": "mind-wave-21",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 21,
+      "tasks": 12,
+      "archiveSha256": "a4b15114728bd46ef2af10c9383b7245622012f2592da61dda02eb1783b04a95",
+      "archiveBytes": 79586,
+      "path": "batches/mind-wave-21"
+    },
+    {
+      "id": "mind-wave-22",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 22,
+      "tasks": 12,
+      "archiveSha256": "4c4d6b82e882678c4f8b1036f42e1b3eef17d4580d00abb758ce5990f1919c4c",
+      "archiveBytes": 78564,
+      "path": "batches/mind-wave-22"
+    },
+    {
+      "id": "mind-wave-23",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 23,
+      "tasks": 12,
+      "archiveSha256": "9c0bcb51cb8d75065c5562e4b49bfdfc1ef7f87ff13cf9d5727632b9033cca44",
+      "archiveBytes": 76162,
+      "path": "batches/mind-wave-23"
+    },
+    {
+      "id": "mind-wave-24",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 24,
+      "tasks": 12,
+      "archiveSha256": "19c84f910e6ba17ba44ac80e76329489b30ad7e9b500b09777f48cac58ae23d9",
+      "archiveBytes": 77527,
+      "path": "batches/mind-wave-24"
+    },
+    {
+      "id": "mind-wave-25",
+      "kind": "mind-wave",
+      "arm": null,
+      "index": 25,
+      "tasks": 12,
+      "archiveSha256": "2d0dbb36946a10dc729dc30b3d443c3e28aaf4cbb936d7612985e44f6ded7c2c",
+      "archiveBytes": 74904,
+      "path": "batches/mind-wave-25"
     }
   ],
-  "completedTaskRowsArchived": 3808,
-  "uniqueArchivedTaskIdsVerified": 3808
+  "completedTaskRowsArchived": 4152,
+  "uniqueArchivedTaskIdsVerified": 4152
 }

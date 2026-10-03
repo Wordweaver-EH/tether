@@ -1,0 +1,181 @@
+{
+  "schema": "tether-training-completed-batch-v1",
+  "kind": "selection-candidate",
+  "arm": "conventional-useful-4x",
+  "index": null,
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "taskCount": 32,
+  "taskIds": [
+    "selection-conventional-useful-4x-g4-c9-k0-o0-s0",
+    "selection-conventional-useful-4x-g4-c9-k0-o0-s1",
+    "selection-conventional-useful-4x-g4-c9-k0-o1-s0",
+    "selection-conventional-useful-4x-g4-c9-k0-o1-s1",
+    "selection-conventional-useful-4x-g4-c9-k0-o2-s0",
+    "selection-conventional-useful-4x-g4-c9-k0-o2-s1",
+    "selection-conventional-useful-4x-g4-c9-k0-o3-s0",
+    "selection-conventional-useful-4x-g4-c9-k0-o3-s1",
+    "selection-conventional-useful-4x-g4-c9-k1-o0-s0",
+    "selection-conventional-useful-4x-g4-c9-k1-o0-s1",
+    "selection-conventional-useful-4x-g4-c9-k1-o1-s0",
+    "selection-conventional-useful-4x-g4-c9-k1-o1-s1",
+    "selection-conventional-useful-4x-g4-c9-k1-o2-s0",
+    "selection-conventional-useful-4x-g4-c9-k1-o2-s1",
+    "selection-conventional-useful-4x-g4-c9-k1-o3-s0",
+    "selection-conventional-useful-4x-g4-c9-k1-o3-s1",
+    "selection-conventional-useful-4x-g4-c9-k2-o0-s0",
+    "selection-conventional-useful-4x-g4-c9-k2-o0-s1",
+    "selection-conventional-useful-4x-g4-c9-k2-o1-s0",
+    "selection-conventional-useful-4x-g4-c9-k2-o1-s1",
+    "selection-conventional-useful-4x-g4-c9-k2-o2-s0",
+    "selection-conventional-useful-4x-g4-c9-k2-o2-s1",
+    "selection-conventional-useful-4x-g4-c9-k2-o3-s0",
+    "selection-conventional-useful-4x-g4-c9-k2-o3-s1",
+    "selection-conventional-useful-4x-g4-c9-k3-o0-s0",
+    "selection-conventional-useful-4x-g4-c9-k3-o0-s1",
+    "selection-conventional-useful-4x-g4-c9-k3-o1-s0",
+    "selection-conventional-useful-4x-g4-c9-k3-o1-s1",
+    "selection-conventional-useful-4x-g4-c9-k3-o2-s0",
+    "selection-conventional-useful-4x-g4-c9-k3-o2-s1",
+    "selection-conventional-useful-4x-g4-c9-k3-o3-s0",
+    "selection-conventional-useful-4x-g4-c9-k3-o3-s1"
+  ],
+  "completionMarkers": [],
+  "files": {
+    "PUBLIC-LOCK-BINDING.json": {
+      "bytes": 553,
+      "sha256": "4b2e7f32464471a262e1d4823a057b6acec0ec5f8499165e85ddef1b0e3b06b9"
+    },
+    "SELECTION-CANDIDATE.json": {
+      "bytes": 693,
+      "sha256": "e33f60c631e729cacdea125a2b751dd2f1ee053b99c29946beef1a0328587d07"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o0-s0.json": {
+      "bytes": 2117,
+      "sha256": "2e1f823ed1591b0d86b79099f5c8123ee695cea62100105894911b6b0a1aed2e"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o0-s1.json": {
+      "bytes": 2118,
+      "sha256": "6bc3a0cf9a04e0cecccaa34733a251cc30330aac2632bf15298fbdcaffad1dba"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o1-s0.json": {
+      "bytes": 2124,
+      "sha256": "2d086c0b1fc2f440d2fbad4167a475a4be2d0a2c28aaab60a4940c17145c4134"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o1-s1.json": {
+      "bytes": 2117,
+      "sha256": "14cd7193cb502c31ce9387d64f45dff62629926d743207057286d1e46a06d2fc"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o2-s0.json": {
+      "bytes": 27305,
+      "sha256": "b2c7729249771155791b71e33bce6d2d2c9135fbfa19cd182bcfd6f1196418f7"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o2-s1.json": {
+      "bytes": 2815,
+      "sha256": "884e26c0b8ba32ae6c574970a0a2232a82eb4b03c4b815d7eae265423626dee6"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o3-s0.json": {
+      "bytes": 2115,
+      "sha256": "b17c5bdd87125103ce835a9f87ed042443ff0bee9d1b990d8a4a78552453719e"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k0-o3-s1.json": {
+      "bytes": 2113,
+      "sha256": "18a3a5fbe24fcc8108eef752c5254d37572e732c139acb13f843292030dda3f7"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o0-s0.json": {
+      "bytes": 2458,
+      "sha256": "c7cb369095fcb0de51ae904a9d2fbcf2417add8e3a5567c1ce3ea72eacf7f1b5"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o0-s1.json": {
+      "bytes": 2117,
+      "sha256": "36aca69d91fa4ee0c10c124473cb2076d201ecdcb8550bc182ec67c4d5577445"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o1-s0.json": {
+      "bytes": 2120,
+      "sha256": "1b4c1bcaa1ff02b51ef34ace3af52575c533a17408716f7c5283f9aa7eff0303"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o1-s1.json": {
+      "bytes": 2123,
+      "sha256": "ea80b60571318abd712d39df46558f0c9527b0a03b8f327ba59a727a750ad389"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o2-s0.json": {
+      "bytes": 3861,
+      "sha256": "2fd3b8a68ccd3b918fe991a33fbbc84decd1bdcaeac9db2aecfc0ed6f0cbd4bc"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o2-s1.json": {
+      "bytes": 19142,
+      "sha256": "be10d4e8940440230887c96a64d4716de6699ed5bff6b221e4e4765436177bb0"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o3-s0.json": {
+      "bytes": 2457,
+      "sha256": "634879a8cab104a85e28e0b751f9932f0c7e1a27afa6ced83a81fb1315abc77d"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k1-o3-s1.json": {
+      "bytes": 2118,
+      "sha256": "29f9eba360889a67cc4972bc7e47c38b9620be18d48f2ff7e941ec9deb84a9a4"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o0-s0.json": {
+      "bytes": 2119,
+      "sha256": "aae26e131491d1595d6e6884fae98330db34152398f41237d99a12622b9ecf57"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o0-s1.json": {
+      "bytes": 2119,
+      "sha256": "0196667f616d4c63edde7cca3a2b0790a8d1e03330c36a17e880a8f4e06b27a6"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o1-s0.json": {
+      "bytes": 2459,
+      "sha256": "deb22e3833d551756a49aad78e3c80fdedfca8f09af7aa4f9f770cb27940da3d"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o1-s1.json": {
+      "bytes": 2122,
+      "sha256": "b6b5237524567a27f7b472c3a3ed4841a057db434576d55203ef92fcdf43a1e4"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o2-s0.json": {
+      "bytes": 4949,
+      "sha256": "cfe5bc62ac983f5a0e09015e3d983be3d5e01f75da8a53536caef69a20681341"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o2-s1.json": {
+      "bytes": 28594,
+      "sha256": "9071ba046a06f752ba7147534df592b3e7eef617d69d8e6ee6806f6087bcf0e2"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o3-s0.json": {
+      "bytes": 2458,
+      "sha256": "b4b2b0dbda490c0750696226fed73997796798f8033282c7225dc1280f617a10"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k2-o3-s1.json": {
+      "bytes": 2457,
+      "sha256": "1701e383a043ca4eb9a08943999c483a7a9e7ea9e43e51ba1aed0be27a8deaf1"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o0-s0.json": {
+      "bytes": 2458,
+      "sha256": "99166dc6882d9d51857a6e5c175b9a0b3c122a9704858095b2f2e017da59370b"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o0-s1.json": {
+      "bytes": 2458,
+      "sha256": "ff2e29f84945c812d58c42a6909c8533f57fe8c069f0de3e70bba4cd93059553"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o1-s0.json": {
+      "bytes": 2461,
+      "sha256": "2000c8f97a3a40ffe30da77c3148f552e338cb86bac4e960a9a6a495899b2b7a"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o1-s1.json": {
+      "bytes": 2120,
+      "sha256": "46e4069726d6a0b9e745438268f0385fc667b8d1773f9c46f7cc54d234aae014"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o2-s0.json": {
+      "bytes": 3852,
+      "sha256": "c1a51c9906826f7c4e29eeb5f64466112e197294d41fd76facd5b2d0435ba566"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o2-s1.json": {
+      "bytes": 8461,
+      "sha256": "007d2d8aad58dd47c398b6395ace7d35bba4df071de90e9306d0eb7fd4972fd0"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o3-s0.json": {
+      "bytes": 2457,
+      "sha256": "e8fb1e4327345f7e29371949e6969783bd20f929fdb82440754189c901d4631a"
+    },
+    "raw/selection-conventional-useful-4x-g4-c9-k3-o3-s1.json": {
+      "bytes": 2799,
+      "sha256": "2bf83bfc2b5d473bc3ba95d3ee0f80a8d449d6da952a0b09ec8c85be47bfd934"
+    }
+  }
+}

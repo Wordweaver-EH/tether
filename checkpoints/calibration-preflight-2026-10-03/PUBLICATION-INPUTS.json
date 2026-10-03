@@ -1,0 +1,17 @@
+{
+  "status": "Reviewed calibration-only preflight; no timing outcomes or execution release",
+  "sourceCommit": "b9134f6a6859032ae37fce8f266f848c483db467",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "sourceManifestSha256": "4577d9c705862cb52c491fb958b629f0710ef328c0cdbcb78cd2de296d56d309",
+  "harnessHashes": {
+    "CALIBRATION-PLAN.json": "929d796f43f88288b8e748cc1b1562decaa7e35b398c3769fe211a67047d0611",
+    "calibration-worker.mjs": "235ed28cb4598b5a913736f61cd21b26484c14e6c50560a1d94505a3b1f84a02",
+    "run-calibration.py": "8d782602ec04884af883dd70c4e53f65265b137ce8d3429bc89cfc85ce973f71",
+    "calibration-workload.mjs": "5b1a847c48d2e76731176e0484049a9bbd112f3ed43a7ebd081322287fb786f7",
+    "calibration-static.test.mjs": "ededf6f59855dadd1dfca967c0e39d14a986975f6532329e95529fd3e856a664",
+    "summarize-calibration.py": "c78fd350baccb9a38504bd1aef7ae224527825a87dae85d6bdc9b92d40ed27ac"
+  },
+  "archiveSha256": "f3423730923724441e28e22f4fecf607b3162ed8a0356c56613fe53f23e79993",
+  "staticTestsPassed": 3,
+  "syntheticSavedRowGolden": "PASS"
+}

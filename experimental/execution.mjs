@@ -14,3 +14,15 @@ export function resourceTotals({completedCpuSeconds=0,liveCpuSeconds=0,parentUsa
  if(rawBytes>limits.maxPhaseRawBytes)throw new Error('phase aggregate raw-byte ceiling exceeded');
  return {cpuSeconds,rawBytes};
 }
+
+// Only a disappearing procfs process is tolerated. Permissions, malformed data,
+// other I/O and raw-file errors remain failures.
+export async function readLiveProcess(pid,read){
+ let statText,statusText;
+ try{statText=await read(`/proc/${pid}/stat`,'utf8');statusText=await read(`/proc/${pid}/status`,'utf8');}
+ catch(error){if(error.code==='ENOENT'||error.code==='ESRCH')return {exited:true,reason:error.code};throw error;}
+ const terminalState=statusText.match(/^State:\s+([ZXx])/m)?.[1];if(terminalState)return {exited:true,reason:`process-state-${terminalState}`};
+ const fields=statText.slice(statText.lastIndexOf(')')+2).split(' '),userTicks=Number(fields[11]),systemTicks=Number(fields[12]),match=statusText.match(/^VmRSS:\s+(\d+)/m);
+ if(!Number.isFinite(userTicks)||!Number.isFinite(systemTicks)||!match)throw new Error('invalid live process accounting data');
+ return {exited:false,userTicks,systemTicks,rssBytes:Number(match[1])*1024};
+}

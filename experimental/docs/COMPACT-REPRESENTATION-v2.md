@@ -1,0 +1,10 @@
+# Exact compact representation details
+
+This supplements the approved field map without removing any required field. The first prototype and its offline receipts remain preserved. One lossless numeric-reference refinement is implemented; no gameplay has run.
+
+- Each complete native dictionary object is identified by SHA256 of tagged serialization of [kind,value], including full content and revision. A task-local numeric index aliases that identity only within the same file. Index definitions carry kind, full contentHash and exact value. Definitions are bundled inside the decision that first uses them, avoiding extra chained rows and repeated long hash references. No revision-only identity is used.
+- Small current C2 lastObservation objects remain inline exactly, rather than receiving a new random digest/reference on nearly every observation. Forecast/assessment/disposition identities retain full native content and task scope.
+- actualReportSha256 hashes the actual full report. comparedFieldsSha256 hashes the documented faithfulnessProjection: both-seat actual commands, proposed/committed focal commands, actual commit-time presence/value, receipt/sensor ticks and clocks, and exactly the native focus, novelty, branch completion, report-delivered packet, monitor prediction fields and pre-motor input used by invariant comparisons. Null and absence remain distinct, including a separate commitTimePresent flag.
+- Runtime rows store actual commitTime. Legacy transform rows keep it absent unless an original mismatch witness recorded the actual value, and label the source. All original mismatch witnesses and original recorded check verdicts remain preserved; missing observed timestamps are never replaced with tick/120 observations.
+- Full world-checkpoint hashes are emitted every120 ticks plus terminal by the new runtime. The legacy offline transform binds the already verified every120-tick checkpoint sidecar in each receipt. Both use the same fixed cadence and locked engine.
+- Observer timers separately report per-decision processing and terminal calibration/censor/memory persistence. Focal act timer boundaries and native calls are unchanged.

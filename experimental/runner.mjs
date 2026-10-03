@@ -1,4 +1,4 @@
-import {active,cancelActive,execute,resourceTotals} from './execution.mjs';
+import {active,cancelActive,execute,resourceTotals,readLiveProcess} from './execution.mjs';
 import {execFileSync} from 'node:child_process';import {mkdir,readFile,writeFile,stat} from 'node:fs/promises';import {resolve,dirname} from 'node:path';import {fileURLToPath} from 'node:url';
 import {validatePlan,validateTasks} from './plan-validation.mjs';
 import {json,consumeRelease,verifyLock} from './lock.mjs';import {sha256,parse} from './raw-stream.mjs';
@@ -32,12 +32,12 @@ else {
  let supervising=false;
  const supervisor=setInterval(async()=>{if(supervising||failure)return;supervising=true;try{
   let liveCpu=0,liveRawBytes=0;const completedRawAtSampleStart=totalRawBytes,completedCpuAtSampleStart=totalCpuSeconds,childrenAtSampleStart=[...active];
-  for(const child of childrenAtSampleStart){try{
-   liveRawBytes+=(await stat(child.rawPath)).size;
-   const processStat=await readFile(`/proc/${child.pid}/stat`,'utf8'),fields=processStat.slice(processStat.lastIndexOf(')')+2).split(' ');liveCpu+=(Number(fields[11])+Number(fields[12]))/clockTicks;
-   const status=await readFile(`/proc/${child.pid}/status`,'utf8'),rss=Number(status.match(/^VmRSS:\s+(\d+)/m)?.[1]??0)*1024;
-   if(rss>limits.maxTaskRssBytes)throw new Error('live child RSS ceiling exceeded');
-  }catch(error){if(error.code!=='ENOENT')throw error;}}
+  for(const child of childrenAtSampleStart){
+   try{liveRawBytes+=(await stat(child.rawPath)).size;}catch(error){if(error.code!=='ENOENT')throw error;}
+   const usage=await readLiveProcess(child.pid,readFile);if(usage.exited)continue;
+   liveCpu+=(usage.userTicks+usage.systemTicks)/clockTicks;
+   if(usage.rssBytes>limits.maxTaskRssBytes)throw new Error('live child RSS ceiling exceeded');
+  }
   resourceTotals({completedCpuSeconds:completedCpuAtSampleStart,liveCpuSeconds:liveCpu,parentUsage:process.resourceUsage(),completedRawBytes:completedRawAtSampleStart,liveRawBytes},limits);
  }catch(error){failure??=error;cancelActive();}finally{supervising=false;}},250);
  const timer=setTimeout(()=>{failure=new Error('phase wall ceiling exceeded');cancelActive();},limits.maxPhaseWallSeconds*1000);

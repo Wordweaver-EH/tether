@@ -1,6 +1,6 @@
 # Completed outcome-blind calibration: raw checkpoint
 
-The sole released pass completed all 40 controller/trial runs in 27.009 seconds, without failures or repeats. The exact archive includes prepared source/plan, technical release bindings, every raw timing/work row, execution summary and generated timing receipt. CHECKSUMS.json preserves byte counts and SHA-256 identities. The generated receipt reports PASS; independent saved-row audit is pending at this checkpoint, so this publication is not training authorization.
+The sole released pass completed all 40 controller/trial runs in 27.009 seconds, without failures or repeats. The exact archive includes prepared source/plan, technical release bindings, every raw timing/work row, execution summary and generated timing receipt. CHECKSUMS.json preserves byte counts and SHA-256 identities. The generated receipt and independent saved-row audit both report PASS. The audit verified bindings, row counts, means, coverage, actual work and the fixed resource formula without repeating timing. See INDEPENDENT-RESULT-REVIEW.md. Training still requires its separate explicit release.
 
 Selected useful levels are 4 and 5. Their mean decision wall-time ratios to the mind on this synthetic workload are 3.2065× and 5.2156×, respectively, versus requested lower bounds of 2× and 4×. These are the lowest levels meeting the targets under the fixed rule; overshoot is explicit. They are workload-specific ratios, not equal total compute or gameplay-strength evidence. Actual gameplay timing must also be reported.
 

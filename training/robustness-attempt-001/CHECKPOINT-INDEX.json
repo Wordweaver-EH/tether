@@ -264,8 +264,28 @@
       "archiveSha256": "4bf4e43ce0f40734d95d16b950f37e1c671cb4ac51a6ba53591d065c37d38ad7",
       "archiveBytes": 4470,
       "path": "batches/conventional-useful-2x-selection-completed"
+    },
+    {
+      "id": "conventional-useful-4x-generation-0",
+      "kind": "generation",
+      "arm": "conventional-useful-4x",
+      "index": 0,
+      "tasks": 128,
+      "archiveSha256": "486c2cbeb84437f9d0708c701771afffe4531a53180b3dc8b429b10c20469766",
+      "archiveBytes": 57241,
+      "path": "batches/conventional-useful-4x-generation-0"
+    },
+    {
+      "id": "conventional-useful-4x-generation-1",
+      "kind": "generation",
+      "arm": "conventional-useful-4x",
+      "index": 1,
+      "tasks": 128,
+      "archiveSha256": "3f1c23302207329c20fef55c04e7ed06cd74eb48c902f3ddb8c1d04a195e1c14",
+      "archiveBytes": 57592,
+      "path": "batches/conventional-useful-4x-generation-1"
     }
   ],
-  "completedTaskRowsArchived": 2560,
-  "uniqueArchivedTaskIdsVerified": 2560
+  "completedTaskRowsArchived": 2816,
+  "uniqueArchivedTaskIdsVerified": 2816
 }

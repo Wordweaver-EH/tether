@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_REVIEW_PASS_FOR_COMPLETED_TASK_BATCHING",
+  "scope": "Local read-only validation and bounded archive preparation; no external publication authorization",
+  "files": {
+    "select_completed.mjs": "0280a2484dad9dd56ace14a22ee66810cb2d37628b6d822024d1e39fd8489cbe",
+    "stream_archive.py": "68ed1959734cd4fa78ab95dd675f030611cc7a6afdff7de64353bbd224fb5b01",
+    "test_stream_archive.py": "9e9837fead9efea3ed1f0e7f2a18897a62585108c63af04fce411ecea6a244b8"
+  },
+  "checks": [
+    "Only parent post-exit progress IDs, exact closed lock/release/task provenance, complete block/proof/result/memory identity",
+    "Full source closure verified; immutable source/member hashes rechecked before/after streaming",
+    "At most64 completed tasks and8MB transport parts; no whole archive duplicate",
+    "Three independent synthetic archive tests pass; saved64-task verification receipt inspected"
+  ],
+  "limits": [
+    "Does not certify whole-phase CPU",
+    "Must preserve original raw and partial/failed attempts",
+    "Publication remains sole-publisher/root controlled"
+  ]
+}

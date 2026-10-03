@@ -376,6 +376,16 @@
       "path": "batches/conventional-useful-4x-selection-candidate-g0-c8"
     },
     {
+      "id": "conventional-useful-4x-selection-candidate-g3-c2",
+      "kind": "selection-candidate",
+      "arm": "conventional-useful-4x",
+      "index": null,
+      "tasks": 32,
+      "archiveSha256": "aea2ec729372214d6b11a67b38a8d8a062b02c3a98f8e90e8f2ccf9550e55bb3",
+      "archiveBytes": 22487,
+      "path": "batches/conventional-useful-4x-selection-candidate-g3-c2"
+    },
+    {
       "id": "conventional-useful-4x-selection-candidate-g4-c14",
       "kind": "selection-candidate",
       "arm": "conventional-useful-4x",
@@ -406,6 +416,6 @@
       "path": "batches/conventional-useful-4x-selection-candidate-g6-c9"
     }
   ],
-  "completedTaskRowsArchived": 3776,
-  "uniqueArchivedTaskIdsVerified": 3776
+  "completedTaskRowsArchived": 3808,
+  "uniqueArchivedTaskIdsVerified": 3808
 }

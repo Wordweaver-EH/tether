@@ -1,0 +1,64 @@
+{
+  "purpose": "wiring/cadence/logging/compression only; no efficacy interpretation",
+  "rows": [
+    {
+      "boutId": "smoke-P1-unchanged",
+      "structuralChecks": "pass",
+      "durationSec": 3,
+      "wallSeconds": 0.11877150800000026,
+      "rawIdentity": {
+        "compressedSha256": "cab7ea552ffb2af3084f18e6b05059c016194e1bb4cba200c85b54074ad278fb",
+        "uncompressedSha256": "fdd5a8eedb7cd17880d67c7b08522712e12c44bda6fe29ed45f4bf75bd875708",
+        "compressedBytes": 72752,
+        "uncompressedBytes": 668002,
+        "file": "smoke-P1-unchanged.jsonl.gz"
+      }
+    },
+    {
+      "boutId": "smoke-P1-awareness",
+      "structuralChecks": "pass",
+      "durationSec": 3,
+      "wallSeconds": 0.07669241200000033,
+      "rawIdentity": {
+        "compressedSha256": "40d283eca44894b8bdb8fd816196c51a1e17a7c797a13c8a8c03fa050bc5d7dd",
+        "uncompressedSha256": "60a10de21581c612913d02dbc5d2005ac7938e0fe301b07698afd1ec54e6ddfc",
+        "compressedBytes": 69165,
+        "uncompressedBytes": 643467,
+        "file": "smoke-P1-awareness.jsonl.gz"
+      }
+    },
+    {
+      "boutId": "smoke-P2-unchanged",
+      "structuralChecks": "pass",
+      "durationSec": 3,
+      "wallSeconds": 0.07450648099999989,
+      "rawIdentity": {
+        "compressedSha256": "5427186a655365a3bf7a9d77c59510ed36a41c30984eb5a5f1e8eac8e6c42e13",
+        "uncompressedSha256": "12d5a9bab0a88785a8c6fa7b9efb7e6c0e20e037a2710616c5ba9e8dee30ebcf",
+        "compressedBytes": 71585,
+        "uncompressedBytes": 660024,
+        "file": "smoke-P2-unchanged.jsonl.gz"
+      }
+    },
+    {
+      "boutId": "smoke-P2-awareness",
+      "structuralChecks": "pass",
+      "durationSec": 3,
+      "wallSeconds": 0.0723852880000004,
+      "rawIdentity": {
+        "compressedSha256": "948e7544e9083fc62ed162232a012234f1ccb3949d76a5eb9c45f09a968989c5",
+        "uncompressedSha256": "843c8c707f3596c2918a519613f6e43b83a15d4b0ba1d97e2e1c7d5660d2ddf7",
+        "compressedBytes": 71334,
+        "uncompressedBytes": 648829,
+        "file": "smoke-P2-awareness.jsonl.gz"
+      }
+    }
+  ],
+  "wallSeconds": 0.34235568900000085,
+  "compressedBytes": 284836,
+  "projectedMainWallSeconds": 1095.5382048000026,
+  "projectedCompressedBytes": 911475200,
+  "safetyFactor": 3,
+  "projectedStorageWithSafetyBytes": 2734425600,
+  "freeBytes": 7918493696
+}

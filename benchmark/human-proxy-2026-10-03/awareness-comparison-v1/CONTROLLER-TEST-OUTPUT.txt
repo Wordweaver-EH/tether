@@ -1,0 +1,16 @@
+✔ arbitration exact no warning and unchanged passthrough (1.537515ms)
+✔ scan uses sole aim, withholds throw, preserves recall and exact certified movement (0.386592ms)
+✔ unchanged wrapper byte-equivalent through actual motor commits on synthetic packet sequence (13.548774ms)
+✔ quiet awareness is byte-equivalent; real frozen warning integrates exact scan/movement (0.564459ms)
+✔ final issued movement reaches awareness tie memory, and suppressed throw is not committed as throw (0.363988ms)
+✔ existing interface provides exactly one latency queue, cadence and motor sample (4.088154ms)
+✔ actual MODE_B packet excludes enemy target; unused truth sentinels cannot enter controllers (1.01583ms)
+✔ frozen prototype byte identity and exact fresh paired manifest (1.852479ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 119.903909

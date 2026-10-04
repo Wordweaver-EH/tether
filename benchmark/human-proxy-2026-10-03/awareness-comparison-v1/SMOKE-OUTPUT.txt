@@ -1,0 +1,10 @@
+file:///workspace/scratch/75679def3745/tether-human-proxy/awareness-comparison-v1/run.mjs:125
+  if(result.summary.failures.length)throw Error('structural smoke validity failed');verifyRaw(path.join(outputDir,result.rawIdentity.file),result.rawIdentity,{roundtrip:true});
+                                          ^
+
+Error: structural smoke validity failed
+    at runSmoke (file:///workspace/scratch/75679def3745/tether-human-proxy/awareness-comparison-v1/run.mjs:125:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///workspace/scratch/75679def3745/tether-human-proxy/awareness-comparison-v1/run.mjs:185:79
+
+Node.js v24.19.0

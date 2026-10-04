@@ -1,0 +1,1154 @@
+[
+  {
+    "cluster": 0,
+    "episodeId": 2413610640,
+    "counterSeed": 4258290266,
+    "ordinarySeed": 2661266487,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-00-P1-unchanged"
+  },
+  {
+    "cluster": 0,
+    "episodeId": 2413610640,
+    "counterSeed": 4258290266,
+    "ordinarySeed": 2661266487,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-00-P1-awareness"
+  },
+  {
+    "cluster": 0,
+    "episodeId": 2413610640,
+    "counterSeed": 4258290266,
+    "ordinarySeed": 2661266487,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-00-P2-unchanged"
+  },
+  {
+    "cluster": 0,
+    "episodeId": 2413610640,
+    "counterSeed": 4258290266,
+    "ordinarySeed": 2661266487,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-00-P2-awareness"
+  },
+  {
+    "cluster": 1,
+    "episodeId": 2117057050,
+    "counterSeed": 3284845370,
+    "ordinarySeed": 4048469304,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-01-P1-awareness"
+  },
+  {
+    "cluster": 1,
+    "episodeId": 2117057050,
+    "counterSeed": 3284845370,
+    "ordinarySeed": 4048469304,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-01-P1-unchanged"
+  },
+  {
+    "cluster": 1,
+    "episodeId": 2117057050,
+    "counterSeed": 3284845370,
+    "ordinarySeed": 4048469304,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-01-P2-awareness"
+  },
+  {
+    "cluster": 1,
+    "episodeId": 2117057050,
+    "counterSeed": 3284845370,
+    "ordinarySeed": 4048469304,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-01-P2-unchanged"
+  },
+  {
+    "cluster": 2,
+    "episodeId": 1239963796,
+    "counterSeed": 2861834464,
+    "ordinarySeed": 890299110,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-02-P1-unchanged"
+  },
+  {
+    "cluster": 2,
+    "episodeId": 1239963796,
+    "counterSeed": 2861834464,
+    "ordinarySeed": 890299110,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-02-P1-awareness"
+  },
+  {
+    "cluster": 2,
+    "episodeId": 1239963796,
+    "counterSeed": 2861834464,
+    "ordinarySeed": 890299110,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-02-P2-unchanged"
+  },
+  {
+    "cluster": 2,
+    "episodeId": 1239963796,
+    "counterSeed": 2861834464,
+    "ordinarySeed": 890299110,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-02-P2-awareness"
+  },
+  {
+    "cluster": 3,
+    "episodeId": 916440691,
+    "counterSeed": 3304672629,
+    "ordinarySeed": 3716719247,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-03-P1-awareness"
+  },
+  {
+    "cluster": 3,
+    "episodeId": 916440691,
+    "counterSeed": 3304672629,
+    "ordinarySeed": 3716719247,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-03-P1-unchanged"
+  },
+  {
+    "cluster": 3,
+    "episodeId": 916440691,
+    "counterSeed": 3304672629,
+    "ordinarySeed": 3716719247,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-03-P2-awareness"
+  },
+  {
+    "cluster": 3,
+    "episodeId": 916440691,
+    "counterSeed": 3304672629,
+    "ordinarySeed": 3716719247,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-03-P2-unchanged"
+  },
+  {
+    "cluster": 4,
+    "episodeId": 1092238208,
+    "counterSeed": 1200591654,
+    "ordinarySeed": 151868135,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-04-P1-unchanged"
+  },
+  {
+    "cluster": 4,
+    "episodeId": 1092238208,
+    "counterSeed": 1200591654,
+    "ordinarySeed": 151868135,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-04-P1-awareness"
+  },
+  {
+    "cluster": 4,
+    "episodeId": 1092238208,
+    "counterSeed": 1200591654,
+    "ordinarySeed": 151868135,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-04-P2-unchanged"
+  },
+  {
+    "cluster": 4,
+    "episodeId": 1092238208,
+    "counterSeed": 1200591654,
+    "ordinarySeed": 151868135,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-04-P2-awareness"
+  },
+  {
+    "cluster": 5,
+    "episodeId": 628682560,
+    "counterSeed": 2133076733,
+    "ordinarySeed": 3753452688,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-05-P1-awareness"
+  },
+  {
+    "cluster": 5,
+    "episodeId": 628682560,
+    "counterSeed": 2133076733,
+    "ordinarySeed": 3753452688,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-05-P1-unchanged"
+  },
+  {
+    "cluster": 5,
+    "episodeId": 628682560,
+    "counterSeed": 2133076733,
+    "ordinarySeed": 3753452688,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-05-P2-awareness"
+  },
+  {
+    "cluster": 5,
+    "episodeId": 628682560,
+    "counterSeed": 2133076733,
+    "ordinarySeed": 3753452688,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-05-P2-unchanged"
+  },
+  {
+    "cluster": 6,
+    "episodeId": 2779548979,
+    "counterSeed": 2112138375,
+    "ordinarySeed": 3120171525,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-06-P1-unchanged"
+  },
+  {
+    "cluster": 6,
+    "episodeId": 2779548979,
+    "counterSeed": 2112138375,
+    "ordinarySeed": 3120171525,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-06-P1-awareness"
+  },
+  {
+    "cluster": 6,
+    "episodeId": 2779548979,
+    "counterSeed": 2112138375,
+    "ordinarySeed": 3120171525,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-06-P2-unchanged"
+  },
+  {
+    "cluster": 6,
+    "episodeId": 2779548979,
+    "counterSeed": 2112138375,
+    "ordinarySeed": 3120171525,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-06-P2-awareness"
+  },
+  {
+    "cluster": 7,
+    "episodeId": 2936270422,
+    "counterSeed": 1004992609,
+    "ordinarySeed": 1941699375,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-07-P1-awareness"
+  },
+  {
+    "cluster": 7,
+    "episodeId": 2936270422,
+    "counterSeed": 1004992609,
+    "ordinarySeed": 1941699375,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-07-P1-unchanged"
+  },
+  {
+    "cluster": 7,
+    "episodeId": 2936270422,
+    "counterSeed": 1004992609,
+    "ordinarySeed": 1941699375,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-07-P2-awareness"
+  },
+  {
+    "cluster": 7,
+    "episodeId": 2936270422,
+    "counterSeed": 1004992609,
+    "ordinarySeed": 1941699375,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-07-P2-unchanged"
+  },
+  {
+    "cluster": 8,
+    "episodeId": 2787253526,
+    "counterSeed": 1898842412,
+    "ordinarySeed": 3954730225,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-08-P1-unchanged"
+  },
+  {
+    "cluster": 8,
+    "episodeId": 2787253526,
+    "counterSeed": 1898842412,
+    "ordinarySeed": 3954730225,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-08-P1-awareness"
+  },
+  {
+    "cluster": 8,
+    "episodeId": 2787253526,
+    "counterSeed": 1898842412,
+    "ordinarySeed": 3954730225,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-08-P2-unchanged"
+  },
+  {
+    "cluster": 8,
+    "episodeId": 2787253526,
+    "counterSeed": 1898842412,
+    "ordinarySeed": 3954730225,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-08-P2-awareness"
+  },
+  {
+    "cluster": 9,
+    "episodeId": 295713282,
+    "counterSeed": 3610613715,
+    "ordinarySeed": 4040822225,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-09-P1-awareness"
+  },
+  {
+    "cluster": 9,
+    "episodeId": 295713282,
+    "counterSeed": 3610613715,
+    "ordinarySeed": 4040822225,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-09-P1-unchanged"
+  },
+  {
+    "cluster": 9,
+    "episodeId": 295713282,
+    "counterSeed": 3610613715,
+    "ordinarySeed": 4040822225,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-09-P2-awareness"
+  },
+  {
+    "cluster": 9,
+    "episodeId": 295713282,
+    "counterSeed": 3610613715,
+    "ordinarySeed": 4040822225,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-09-P2-unchanged"
+  },
+  {
+    "cluster": 10,
+    "episodeId": 4173872375,
+    "counterSeed": 770290224,
+    "ordinarySeed": 336249033,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-10-P1-unchanged"
+  },
+  {
+    "cluster": 10,
+    "episodeId": 4173872375,
+    "counterSeed": 770290224,
+    "ordinarySeed": 336249033,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-10-P1-awareness"
+  },
+  {
+    "cluster": 10,
+    "episodeId": 4173872375,
+    "counterSeed": 770290224,
+    "ordinarySeed": 336249033,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-10-P2-unchanged"
+  },
+  {
+    "cluster": 10,
+    "episodeId": 4173872375,
+    "counterSeed": 770290224,
+    "ordinarySeed": 336249033,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-10-P2-awareness"
+  },
+  {
+    "cluster": 11,
+    "episodeId": 4225247325,
+    "counterSeed": 3945182715,
+    "ordinarySeed": 3642958330,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-11-P1-awareness"
+  },
+  {
+    "cluster": 11,
+    "episodeId": 4225247325,
+    "counterSeed": 3945182715,
+    "ordinarySeed": 3642958330,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-11-P1-unchanged"
+  },
+  {
+    "cluster": 11,
+    "episodeId": 4225247325,
+    "counterSeed": 3945182715,
+    "ordinarySeed": 3642958330,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-11-P2-awareness"
+  },
+  {
+    "cluster": 11,
+    "episodeId": 4225247325,
+    "counterSeed": 3945182715,
+    "ordinarySeed": 3642958330,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-11-P2-unchanged"
+  },
+  {
+    "cluster": 12,
+    "episodeId": 3208068709,
+    "counterSeed": 3083736371,
+    "ordinarySeed": 2960603291,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-12-P1-unchanged"
+  },
+  {
+    "cluster": 12,
+    "episodeId": 3208068709,
+    "counterSeed": 3083736371,
+    "ordinarySeed": 2960603291,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-12-P1-awareness"
+  },
+  {
+    "cluster": 12,
+    "episodeId": 3208068709,
+    "counterSeed": 3083736371,
+    "ordinarySeed": 2960603291,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-12-P2-unchanged"
+  },
+  {
+    "cluster": 12,
+    "episodeId": 3208068709,
+    "counterSeed": 3083736371,
+    "ordinarySeed": 2960603291,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-12-P2-awareness"
+  },
+  {
+    "cluster": 13,
+    "episodeId": 242378979,
+    "counterSeed": 2730132326,
+    "ordinarySeed": 3232912712,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-13-P1-awareness"
+  },
+  {
+    "cluster": 13,
+    "episodeId": 242378979,
+    "counterSeed": 2730132326,
+    "ordinarySeed": 3232912712,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-13-P1-unchanged"
+  },
+  {
+    "cluster": 13,
+    "episodeId": 242378979,
+    "counterSeed": 2730132326,
+    "ordinarySeed": 3232912712,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-13-P2-awareness"
+  },
+  {
+    "cluster": 13,
+    "episodeId": 242378979,
+    "counterSeed": 2730132326,
+    "ordinarySeed": 3232912712,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-13-P2-unchanged"
+  },
+  {
+    "cluster": 14,
+    "episodeId": 4075193004,
+    "counterSeed": 1803860879,
+    "ordinarySeed": 2209219474,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-14-P1-unchanged"
+  },
+  {
+    "cluster": 14,
+    "episodeId": 4075193004,
+    "counterSeed": 1803860879,
+    "ordinarySeed": 2209219474,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-14-P1-awareness"
+  },
+  {
+    "cluster": 14,
+    "episodeId": 4075193004,
+    "counterSeed": 1803860879,
+    "ordinarySeed": 2209219474,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-14-P2-unchanged"
+  },
+  {
+    "cluster": 14,
+    "episodeId": 4075193004,
+    "counterSeed": 1803860879,
+    "ordinarySeed": 2209219474,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-14-P2-awareness"
+  },
+  {
+    "cluster": 15,
+    "episodeId": 1556474063,
+    "counterSeed": 281990889,
+    "ordinarySeed": 2240556623,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-15-P1-awareness"
+  },
+  {
+    "cluster": 15,
+    "episodeId": 1556474063,
+    "counterSeed": 281990889,
+    "ordinarySeed": 2240556623,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-15-P1-unchanged"
+  },
+  {
+    "cluster": 15,
+    "episodeId": 1556474063,
+    "counterSeed": 281990889,
+    "ordinarySeed": 2240556623,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-15-P2-awareness"
+  },
+  {
+    "cluster": 15,
+    "episodeId": 1556474063,
+    "counterSeed": 281990889,
+    "ordinarySeed": 2240556623,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-15-P2-unchanged"
+  },
+  {
+    "cluster": 16,
+    "episodeId": 4020359391,
+    "counterSeed": 1070861732,
+    "ordinarySeed": 1626179457,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-16-P1-unchanged"
+  },
+  {
+    "cluster": 16,
+    "episodeId": 4020359391,
+    "counterSeed": 1070861732,
+    "ordinarySeed": 1626179457,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-16-P1-awareness"
+  },
+  {
+    "cluster": 16,
+    "episodeId": 4020359391,
+    "counterSeed": 1070861732,
+    "ordinarySeed": 1626179457,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-16-P2-unchanged"
+  },
+  {
+    "cluster": 16,
+    "episodeId": 4020359391,
+    "counterSeed": 1070861732,
+    "ordinarySeed": 1626179457,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-16-P2-awareness"
+  },
+  {
+    "cluster": 17,
+    "episodeId": 1858045898,
+    "counterSeed": 3614404879,
+    "ordinarySeed": 1099704345,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-17-P1-awareness"
+  },
+  {
+    "cluster": 17,
+    "episodeId": 1858045898,
+    "counterSeed": 3614404879,
+    "ordinarySeed": 1099704345,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-17-P1-unchanged"
+  },
+  {
+    "cluster": 17,
+    "episodeId": 1858045898,
+    "counterSeed": 3614404879,
+    "ordinarySeed": 1099704345,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-17-P2-awareness"
+  },
+  {
+    "cluster": 17,
+    "episodeId": 1858045898,
+    "counterSeed": 3614404879,
+    "ordinarySeed": 1099704345,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-17-P2-unchanged"
+  },
+  {
+    "cluster": 18,
+    "episodeId": 4285987672,
+    "counterSeed": 1294067103,
+    "ordinarySeed": 2853681899,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-18-P1-unchanged"
+  },
+  {
+    "cluster": 18,
+    "episodeId": 4285987672,
+    "counterSeed": 1294067103,
+    "ordinarySeed": 2853681899,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-18-P1-awareness"
+  },
+  {
+    "cluster": 18,
+    "episodeId": 4285987672,
+    "counterSeed": 1294067103,
+    "ordinarySeed": 2853681899,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-18-P2-unchanged"
+  },
+  {
+    "cluster": 18,
+    "episodeId": 4285987672,
+    "counterSeed": 1294067103,
+    "ordinarySeed": 2853681899,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-18-P2-awareness"
+  },
+  {
+    "cluster": 19,
+    "episodeId": 443665209,
+    "counterSeed": 2225099526,
+    "ordinarySeed": 2038759992,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-19-P1-awareness"
+  },
+  {
+    "cluster": 19,
+    "episodeId": 443665209,
+    "counterSeed": 2225099526,
+    "ordinarySeed": 2038759992,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-19-P1-unchanged"
+  },
+  {
+    "cluster": 19,
+    "episodeId": 443665209,
+    "counterSeed": 2225099526,
+    "ordinarySeed": 2038759992,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-19-P2-awareness"
+  },
+  {
+    "cluster": 19,
+    "episodeId": 443665209,
+    "counterSeed": 2225099526,
+    "ordinarySeed": 2038759992,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-19-P2-unchanged"
+  },
+  {
+    "cluster": 20,
+    "episodeId": 4171654243,
+    "counterSeed": 3275793186,
+    "ordinarySeed": 765749774,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-20-P1-unchanged"
+  },
+  {
+    "cluster": 20,
+    "episodeId": 4171654243,
+    "counterSeed": 3275793186,
+    "ordinarySeed": 765749774,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-20-P1-awareness"
+  },
+  {
+    "cluster": 20,
+    "episodeId": 4171654243,
+    "counterSeed": 3275793186,
+    "ordinarySeed": 765749774,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-20-P2-unchanged"
+  },
+  {
+    "cluster": 20,
+    "episodeId": 4171654243,
+    "counterSeed": 3275793186,
+    "ordinarySeed": 765749774,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-20-P2-awareness"
+  },
+  {
+    "cluster": 21,
+    "episodeId": 2254826910,
+    "counterSeed": 1015811003,
+    "ordinarySeed": 1833321431,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-21-P1-awareness"
+  },
+  {
+    "cluster": 21,
+    "episodeId": 2254826910,
+    "counterSeed": 1015811003,
+    "ordinarySeed": 1833321431,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-21-P1-unchanged"
+  },
+  {
+    "cluster": 21,
+    "episodeId": 2254826910,
+    "counterSeed": 1015811003,
+    "ordinarySeed": 1833321431,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-21-P2-awareness"
+  },
+  {
+    "cluster": 21,
+    "episodeId": 2254826910,
+    "counterSeed": 1015811003,
+    "ordinarySeed": 1833321431,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-21-P2-unchanged"
+  },
+  {
+    "cluster": 22,
+    "episodeId": 2015529690,
+    "counterSeed": 2697482604,
+    "ordinarySeed": 956384481,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-22-P1-unchanged"
+  },
+  {
+    "cluster": 22,
+    "episodeId": 2015529690,
+    "counterSeed": 2697482604,
+    "ordinarySeed": 956384481,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-22-P1-awareness"
+  },
+  {
+    "cluster": 22,
+    "episodeId": 2015529690,
+    "counterSeed": 2697482604,
+    "ordinarySeed": 956384481,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-22-P2-unchanged"
+  },
+  {
+    "cluster": 22,
+    "episodeId": 2015529690,
+    "counterSeed": 2697482604,
+    "ordinarySeed": 956384481,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-22-P2-awareness"
+  },
+  {
+    "cluster": 23,
+    "episodeId": 1057076398,
+    "counterSeed": 2722137277,
+    "ordinarySeed": 1447882674,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-23-P1-awareness"
+  },
+  {
+    "cluster": 23,
+    "episodeId": 1057076398,
+    "counterSeed": 2722137277,
+    "ordinarySeed": 1447882674,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-23-P1-unchanged"
+  },
+  {
+    "cluster": 23,
+    "episodeId": 1057076398,
+    "counterSeed": 2722137277,
+    "ordinarySeed": 1447882674,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-23-P2-awareness"
+  },
+  {
+    "cluster": 23,
+    "episodeId": 1057076398,
+    "counterSeed": 2722137277,
+    "ordinarySeed": 1447882674,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-23-P2-unchanged"
+  },
+  {
+    "cluster": 24,
+    "episodeId": 207656770,
+    "counterSeed": 818282456,
+    "ordinarySeed": 305863953,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-24-P1-unchanged"
+  },
+  {
+    "cluster": 24,
+    "episodeId": 207656770,
+    "counterSeed": 818282456,
+    "ordinarySeed": 305863953,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-24-P1-awareness"
+  },
+  {
+    "cluster": 24,
+    "episodeId": 207656770,
+    "counterSeed": 818282456,
+    "ordinarySeed": 305863953,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-24-P2-unchanged"
+  },
+  {
+    "cluster": 24,
+    "episodeId": 207656770,
+    "counterSeed": 818282456,
+    "ordinarySeed": 305863953,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-24-P2-awareness"
+  },
+  {
+    "cluster": 25,
+    "episodeId": 2934800315,
+    "counterSeed": 2350748000,
+    "ordinarySeed": 1951308179,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-25-P1-awareness"
+  },
+  {
+    "cluster": 25,
+    "episodeId": 2934800315,
+    "counterSeed": 2350748000,
+    "ordinarySeed": 1951308179,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-25-P1-unchanged"
+  },
+  {
+    "cluster": 25,
+    "episodeId": 2934800315,
+    "counterSeed": 2350748000,
+    "ordinarySeed": 1951308179,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-25-P2-awareness"
+  },
+  {
+    "cluster": 25,
+    "episodeId": 2934800315,
+    "counterSeed": 2350748000,
+    "ordinarySeed": 1951308179,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-25-P2-unchanged"
+  },
+  {
+    "cluster": 26,
+    "episodeId": 2721271763,
+    "counterSeed": 220072304,
+    "ordinarySeed": 230815960,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-26-P1-unchanged"
+  },
+  {
+    "cluster": 26,
+    "episodeId": 2721271763,
+    "counterSeed": 220072304,
+    "ordinarySeed": 230815960,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-26-P1-awareness"
+  },
+  {
+    "cluster": 26,
+    "episodeId": 2721271763,
+    "counterSeed": 220072304,
+    "ordinarySeed": 230815960,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-26-P2-unchanged"
+  },
+  {
+    "cluster": 26,
+    "episodeId": 2721271763,
+    "counterSeed": 220072304,
+    "ordinarySeed": 230815960,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-26-P2-awareness"
+  },
+  {
+    "cluster": 27,
+    "episodeId": 1834303981,
+    "counterSeed": 792232282,
+    "ordinarySeed": 4242193864,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-27-P1-awareness"
+  },
+  {
+    "cluster": 27,
+    "episodeId": 1834303981,
+    "counterSeed": 792232282,
+    "ordinarySeed": 4242193864,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-27-P1-unchanged"
+  },
+  {
+    "cluster": 27,
+    "episodeId": 1834303981,
+    "counterSeed": 792232282,
+    "ordinarySeed": 4242193864,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-27-P2-awareness"
+  },
+  {
+    "cluster": 27,
+    "episodeId": 1834303981,
+    "counterSeed": 792232282,
+    "ordinarySeed": 4242193864,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-27-P2-unchanged"
+  },
+  {
+    "cluster": 28,
+    "episodeId": 3318004020,
+    "counterSeed": 1506404011,
+    "ordinarySeed": 601527212,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-28-P1-unchanged"
+  },
+  {
+    "cluster": 28,
+    "episodeId": 3318004020,
+    "counterSeed": 1506404011,
+    "ordinarySeed": 601527212,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-28-P1-awareness"
+  },
+  {
+    "cluster": 28,
+    "episodeId": 3318004020,
+    "counterSeed": 1506404011,
+    "ordinarySeed": 601527212,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-28-P2-unchanged"
+  },
+  {
+    "cluster": 28,
+    "episodeId": 3318004020,
+    "counterSeed": 1506404011,
+    "ordinarySeed": 601527212,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-28-P2-awareness"
+  },
+  {
+    "cluster": 29,
+    "episodeId": 2718349549,
+    "counterSeed": 2259522139,
+    "ordinarySeed": 564500270,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-29-P1-awareness"
+  },
+  {
+    "cluster": 29,
+    "episodeId": 2718349549,
+    "counterSeed": 2259522139,
+    "ordinarySeed": 564500270,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-29-P1-unchanged"
+  },
+  {
+    "cluster": 29,
+    "episodeId": 2718349549,
+    "counterSeed": 2259522139,
+    "ordinarySeed": 564500270,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-29-P2-awareness"
+  },
+  {
+    "cluster": 29,
+    "episodeId": 2718349549,
+    "counterSeed": 2259522139,
+    "ordinarySeed": 564500270,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-29-P2-unchanged"
+  },
+  {
+    "cluster": 30,
+    "episodeId": 1971970287,
+    "counterSeed": 3440603800,
+    "ordinarySeed": 3787982608,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-30-P1-unchanged"
+  },
+  {
+    "cluster": 30,
+    "episodeId": 1971970287,
+    "counterSeed": 3440603800,
+    "ordinarySeed": 3787982608,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-30-P1-awareness"
+  },
+  {
+    "cluster": 30,
+    "episodeId": 1971970287,
+    "counterSeed": 3440603800,
+    "ordinarySeed": 3787982608,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-30-P2-unchanged"
+  },
+  {
+    "cluster": 30,
+    "episodeId": 1971970287,
+    "counterSeed": 3440603800,
+    "ordinarySeed": 3787982608,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-30-P2-awareness"
+  },
+  {
+    "cluster": 31,
+    "episodeId": 3031679850,
+    "counterSeed": 3027142953,
+    "ordinarySeed": 616445489,
+    "counterSeat": "P1",
+    "arm": "awareness",
+    "boutId": "cluster-31-P1-awareness"
+  },
+  {
+    "cluster": 31,
+    "episodeId": 3031679850,
+    "counterSeed": 3027142953,
+    "ordinarySeed": 616445489,
+    "counterSeat": "P1",
+    "arm": "unchanged",
+    "boutId": "cluster-31-P1-unchanged"
+  },
+  {
+    "cluster": 31,
+    "episodeId": 3031679850,
+    "counterSeed": 3027142953,
+    "ordinarySeed": 616445489,
+    "counterSeat": "P2",
+    "arm": "awareness",
+    "boutId": "cluster-31-P2-awareness"
+  },
+  {
+    "cluster": 31,
+    "episodeId": 3031679850,
+    "counterSeed": 3027142953,
+    "ordinarySeed": 616445489,
+    "counterSeat": "P2",
+    "arm": "unchanged",
+    "boutId": "cluster-31-P2-unchanged"
+  }
+]

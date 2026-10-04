@@ -1,0 +1,1949 @@
+{
+  "status": "pass",
+  "scope": "Saved-data-only independent audit; no controllers, new matches, searches or outcome tuning executed",
+  "reportSha256": "87e62a7ebcb16358034087a118ddbe04e542ee0da6f7588ec1b2a6c2cdf2c774",
+  "rawManifestSha256": "43574fb305e4b364375184865ea240b89e13b1e375bc05325b3a931c2b04ce4e",
+  "runIdentitySha256": "f2732962804460e15ef6419e1e70e4c6688e26476595e3a79852ae57bf3c5c40",
+  "checks": {
+    "frozenFiles": 30,
+    "dependencies": 52,
+    "priorFiles": 91,
+    "originalRawFiles": 64,
+    "originalFrozenFiles": 20,
+    "identityAndFreshness": "pass",
+    "attemptsPerRow": 1,
+    "rawRecordTypes": {
+      "header": 128,
+      "sourcePacket": 1152000,
+      "ordinaryIssued": 1151488,
+      "event": 194756,
+      "counterReceipt": 1151104,
+      "interfaces": 128,
+      "measurements": 128,
+      "end": 128,
+      "postScanSource": 100234
+    },
+    "rawFiles": [
+      {
+        "file": "cluster-00-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "736811e241726f8243dbcaa93b994f5feaa06d8c7b9b835eef7523c5f369b747",
+        "uncompressedSha256": "b62764cb69655a6bf526d95fc5e4b63be2d32b3c78936387763592eb73a09973",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-00-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "6fea0100e1345f871d05b1137cb64df2690ed16d6932ba0123da1cade7a872db",
+        "uncompressedSha256": "742c3b243e684241e80de0be2af9aaa6026b17eea0998ca8913aa80080e270f3",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-00-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "a5bd457670b79467ea56751896474d6e691a34d32d96ad8ea19fdfc113d4222c",
+        "uncompressedSha256": "f6a38b73db4b6283c6466c1b3350cc6cda21ae23197f5ddeb36932935a8121e4",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-00-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "d21dfbf8554b59bbf6f7ec5d93e1f2e92f0b3c24d18e5e91f96703dff94cc3c5",
+        "uncompressedSha256": "243ab0ff88d9aa1b4a25da42966b319553985ca8289ebb7936371597e9cbd365",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-01-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "291092cbffcd37fe373f1ef21f299c61c10538cdf10c5be3bdf7e187507f37eb",
+        "uncompressedSha256": "7fbf84fc3acd25d31067cb722d873e58113b8a95f28c19ac47b9e2fdafdde41a",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-01-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "3419fe5ceaa3b03899d2374496e90ceb0f690955e5cc5f47af6606335df724f7",
+        "uncompressedSha256": "9efbc3ea5153662c50a02dc380382fa89214c14e876656b91f3df98254e4d7c8",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-01-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "4fa1894ba889eee1782631755cd854793965b98ae7c44167b9d9c0014783faf2",
+        "uncompressedSha256": "0282a881252e6a8f34cdcee35a492416a061c0d705bd19226c3d208f067ce1c0",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-01-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "14610a02e90e006afa9cf2caddc07a1c7e6304204a20d956171dfd1da577ba23",
+        "uncompressedSha256": "e6935633675fa715205c8366df159a56a079869c19b615809c8ed4b4b4ded62d",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-02-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "55ac259f696ded6433da6dbdd1b7477a0215fe6039eebd91bb936a53347c0253",
+        "uncompressedSha256": "eb7d34425e8e01cb2d59ad91a545d834f5893cecf328a5ba7077bb0709b25c5d",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-02-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "e231469400bd981aa1bf42578004ca8c998898345d2d667da23a4c4d9ba632e2",
+        "uncompressedSha256": "8b7f356fa163c51b6ac43baf3c1ba7560087cb2608f929ee3db0fc607a392514",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-02-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "e15eae340e2f7e59b44cfaa0d1b8622d5bc69ea601066d100a9e754c06ec6091",
+        "uncompressedSha256": "e7d272f1a8cde81efaedd364deaa8cd3fa7174ca922df573295f481aefa8c5e6",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-02-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "2a73087727f464bf0b5b5065f981ab234e6b5fc6175aebd53e15bcd6793439fe",
+        "uncompressedSha256": "d1a81d349d2062096ee5d1a26abaeb7c573528db6cfba0039b9f0586d6b3ec2d",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-03-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "1861de42adc54b3538ea85831a16703fa12d04785ed8f4a3a389b8420c43441d",
+        "uncompressedSha256": "276901cd947e268d6f97d38dfa176c625033ded45760b4c8f25e9747aa71020e",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-03-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "1940fc2e38848a6e05d212d0d3705bab3c7d754e94ab5ef3cb792aa352c03329",
+        "uncompressedSha256": "dc77ffe2d957d76dd493af8fcfcb87812514d085a62258bf0ecae4453b42617f",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-03-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "89edc42d2518da74351d3948fbca8d9bc0930a256058c0665899282661285530",
+        "uncompressedSha256": "f243860c43878f6a926ae9a6718008b9fbf43ed093b2a2ff3b7ce60c4edcfe25",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-03-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "4da50e7de01e8dec0a2536047d23d0539996ca467d7b3d57891cf3bd36cbc6e7",
+        "uncompressedSha256": "ea6c98209cdfe6785b766ea5a856ef73968c8cf7aede3bc260fcf0cf58531a27",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-04-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "817db8288595a24458689bcabcdcb41e08cbe73ac4219cb79878217e90d83568",
+        "uncompressedSha256": "7ecd5b6e9b11b89b5af37c4374a318db13d2d4e5dfaf674ddcd351c04c403c1c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-04-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "51ff49caa116518a6792d2fe182061f92d8986546ee811ccdf4b4ad4ad2c01de",
+        "uncompressedSha256": "64293738ffa5311eba60af62f13fdbc3319ec5e9a189d9637ac907ac2a1cee11",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-04-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "369976f8aa282cfd0a388e3da1ad6244623aeeddf3a2c9892978a5c203b53b8a",
+        "uncompressedSha256": "b230c68920f94dfb2938a193923413aa8bc631e3f9164a0316dc83428e6e653c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-04-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "94a79819584fa0e195ed8397505a5eda7abd2ef2f2a66692ce4df9be1e8f94bc",
+        "uncompressedSha256": "5036ec18caa670b795e9c4ef2f596be4ea55432818773f09ba7e78219656bf76",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-05-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "83ae7be1396047264bf70d841cc919298d7ae89e6fbc56060dc5fdb93e197f41",
+        "uncompressedSha256": "81382c066bb1a6340afd41e507f158169673ae3f67703c940891432dd251d7ae",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-05-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "c4c22b11c105e5c2483835a402061a9aa075c304024d875511278eaeaa9d990f",
+        "uncompressedSha256": "bf7bf485d794e137957e17971b66abd24d5adc94b967b6717d91663d342d2776",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-05-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "6f9f2763300ec41803e6bae68bccbf9d685bf24891ff92857d94c1bdadc3770c",
+        "uncompressedSha256": "6c79dcbe6a608595900a64b0d3cc406eef9802e78eb5e9e81d1383723c78b6a6",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-05-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "66b0ff5bcac4dc0b1748c634a4b3090c42ddf408716f1d1e9a1978060429aa34",
+        "uncompressedSha256": "ec73075e487314d468ed5659625fda02c8943cfb496f58c3fce0f1ab07dc05ca",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-06-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "610af2382b08c04e6d1392730f8717a5a588a750a1dafe54b235901ee387286f",
+        "uncompressedSha256": "0265423a506a35ed3c8eab583c1a25c995c5b0de2fac555369d37eed15a4c7d7",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-06-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "07441732058e48dd0ab7eb72e1eaad4bfe61965edecf1624c9ce0ce6a6534935",
+        "uncompressedSha256": "a66f3559eb461452a1297736dee7daf026a65de988aaf6139d5a1a49b6e9e11c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-06-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "1b9a8f505f2d41343fe73229b9bf70210b89d52995f23ab53fd68183d790f25d",
+        "uncompressedSha256": "d6df75a51db558d6b6dd021737b4a6531878c6336c16ac5086e5c8d7a5f8dc52",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-06-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "9d3d5d423bfea510b2088a74ddd6b5cd8e527633d33b16bcafc4a48390cdae04",
+        "uncompressedSha256": "95c0af88ce699a5764ed2cd79727f3abc56feb129a976a356e67aec8de46c0c9",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-07-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "ab4291a8e372ea95f560c0e6bc08cef224470439f09d7bf3d42db9b82b05af11",
+        "uncompressedSha256": "c3a8a70d549208aa79bbf37528987e2f38f0a19895296be53568b85e710d71b7",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-07-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "288b9a6828965bcc7eb2b7f5d3b24b66d2cb64b8a8737ef79dee052fb5e12ee8",
+        "uncompressedSha256": "83d81456a298583a37ca0d65aecd5880b95173215bdd5515773a45a3a2f99fb6",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-07-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "ab40ca79d70d1bd5a4cac29fb989817d250ba71dc7b8cac82ae3f3bead50089b",
+        "uncompressedSha256": "78642b4f5b22ba4e5f14e8ac72aa63df9929e619195225ba89d41754e8f6230b",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-07-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "5bcca1d6f803f58b566ba3d5fb0bd06a1e01c9eb471327f0080e802a07995ca3",
+        "uncompressedSha256": "ce1f7ba51ef4c12a44d0a233b777872fdfdd51201ef3f94168bccc99a3f64db9",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-08-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "71ea74e36d2efbd74f2473bd6464ff1710aabe3be29fc016664fa6061d8c1074",
+        "uncompressedSha256": "458769e27427e431c506f12421fc1ee0c90ce65e632988c3dada6c587b5365cb",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-08-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "66a3fec9737f83404fc1899a6705313047652cf63577cfc37bf7a1f7b882756e",
+        "uncompressedSha256": "8ff69ff5c6da72589e22d67ef3172f4fc087fd055b9369de7df28c3d3477de87",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-08-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "26b042b796c714f314db5ca62160986ce9fde7c7f465ea59468aebb963ee44b6",
+        "uncompressedSha256": "f57b8e083370690a874776187a5219e2545cf87ddf55a30e61c3e5f70533a60c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-08-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "3714e43e71590ba4198b692b5c7618bbbeaf1ecda002fca6d1790827f86d4f49",
+        "uncompressedSha256": "62600bc928105da43b4364eec1ae1b6c171c68840b69dc719373bc961c29f184",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-09-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "826537c89a006f597944f0f961c72a1b7b06e8f707027664997ade6226bb16b6",
+        "uncompressedSha256": "151a53ac381ccc2a8b6f2738f00cfe1057963e24b7499b46923f182beed8cc4e",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-09-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "7573d9d3dcc15bc3de18275d6acb44cd072a7829139ebac741bbb2c0e11412c8",
+        "uncompressedSha256": "fee31f8a9c94d9e53896228954e7ade0feccb3139607e904823804d33de5f0f2",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-09-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "93cb81c1c7754c79cc5aa25e2d1482b878c87b3ff126be5de04e4fcbe0e1c9de",
+        "uncompressedSha256": "d0bc1a30feec854b663d0b350f93e4786e7416906cb2af07be89ac6849a7afe3",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-09-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "756ffe85f7b615fed020af3af8ae5359d58a61308df0396da6e7c813c2a52e8b",
+        "uncompressedSha256": "fee123683877d9ca741a83d55ffff6fefd83cf0bc554ceceee077cc4003331cf",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-10-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "2c44e1bbe04503540909498f68bb2edfd968543ded117dcef4d4c1f9c822b8b1",
+        "uncompressedSha256": "9d3aabf45d7650f7d64a3ac55ce1ed550e70d7b9c4df5c4b0fdc047a13b64d1f",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-10-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "e7fc4d7fdfa8b0d9f5cfdba76af27ef7e7e7e3f3dc579d95b930bc7d974193ae",
+        "uncompressedSha256": "3c78b44032d77863fe6e9ed0fac5bb7bcd57e0c9225974c2df00898072138566",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-10-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "d1aae35c02177f1e9908174101c6241b0548b053a5f73550595b36bad971fe79",
+        "uncompressedSha256": "33ae9de78f1e4dae902a192174b44b4ba07bc537483d42b39f7def0c79baec52",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-10-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "165e28e7a0df120e017c530ebc75a80ffdf028b3d2717870deadebc3bf68be77",
+        "uncompressedSha256": "9b378ee853926ab0dcd272f11ea06f79b4ef4ae5688f208df821d589aa1b853c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-11-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "e471c2b9893d01a0e47bc7d3720ec6f02d6673320c221ce4cef4d99edda8e68a",
+        "uncompressedSha256": "04e277852d6edf39c582dd72f18df760c227bcd999a044a4a526c27f8fc44d2d",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-11-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "77ad137457101c00f3f1bfbae4f91bf23d033a0363e0607ea3daddbdcae75b3a",
+        "uncompressedSha256": "f28090dcb82ef78784f0e8914923da8cec4f0d7d74a329242c11c51efa71d2c8",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-11-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "d50fee5623dc9237e6aef3872a5a23d72f13b9068513821816f1e402cec26336",
+        "uncompressedSha256": "5978aad751e85b6411003fddce1a67ed1a85639f0f7026311c1d1d6b508cd1ea",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-11-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "0d0bf85f8d19e4bb94ff023ec69b5341de1be485514a37894ece1d038068b0fc",
+        "uncompressedSha256": "c0b77e7ceea7d46ca74e1e093e93607afa39a368086382602ac11b97924ac950",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-12-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "1b20a801a43ca2a062cd540a4a30072a7ba75fabf48dbdde9fd7ae1d29576547",
+        "uncompressedSha256": "d54da3e69ffcb83a541936e6aaaa0e16df4054ce500c65baea61e43bc6982c61",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-12-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "c36cc3493fd70a7cc4b70204520bf48d4c3a6356a91b5bcd8745feb45cda9ac7",
+        "uncompressedSha256": "3131c731a6692aa3407abda332708eeff3e0d339724c3fb9e1b374991756d272",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-12-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "7a87b381bb66fc8c568ca53e71f87f92c508f7a89fe14d2811065601ac23befc",
+        "uncompressedSha256": "bb37cb3a86b67b5ec78b95f462d58ca9b824d0290c9f482d9cd9c4eea1805f5c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-12-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "92d025cce9dc4eab12c4b3d80fb7abbab2874cf74a47aa1323dcd9c9ef44a6c4",
+        "uncompressedSha256": "27cc4a448e7a025ce649e843e3c0294cb3c67c1dc499578c4887c83544fd0cab",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-13-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "199de84b098b2cc1567f408c698bd57beff3b90f87e416a94ced8f1487323e01",
+        "uncompressedSha256": "053882763360f29d81feb59d5786fc47c84f03bbf52a74661cdab6cf89e4b58a",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-13-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "5e87ab495461e97c573c61773ade81f3f899cdac43e964ac253749067d049ca7",
+        "uncompressedSha256": "9e451b768374ee7ee65591f16f801c33d19c6a1d368327688cf459c04efdbcff",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-13-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "86d5b5b7fe9230b020e38eabd399f09a6afc9f90061fbf18498a9ef08391cbd6",
+        "uncompressedSha256": "ef8504efbbb46d440add85a1cb47b4dfbdabcf96e2964bae3267b62de000e127",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-13-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "64cd0058adc272fd33e721ff5e7cdaca740c0d6817c5f5edc26c5c7a52f7c868",
+        "uncompressedSha256": "bd4555a154f7979a0b6bc85363424d54538a70efa540948511f64b2889b818fd",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-14-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "151e7cea5915f2e8cb97e47a57f0299be69cb97251b6df9aea6165337d3fa189",
+        "uncompressedSha256": "878faf5e8b29e9fe5eafd28f2cc575e5eee062da881983654a1d64fecc78d4e0",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-14-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "bbaa02dc8f0478c72890aad5ecd10b2d3893c74c99910a953517ceff9b16148d",
+        "uncompressedSha256": "dc4900936094aee7fea606ed4a1b81fcd72a23dd6aacb8a8d2defee758494840",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-14-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "39ac9c2046b32ea86c75d59497411cc1ecc30eb8fd0eb7a358d282d29de46794",
+        "uncompressedSha256": "828b0deea7c8f203f1f06c3e4ec1033b518bdeb06bf1fb8422171c31c011f3dc",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-14-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "07d33aa1963a5313f3af7223e187b083b0424ca038164810320ea8d7179b0476",
+        "uncompressedSha256": "85aa15e40767126600a8e51c4590ee007c56e05f01f546d3f4dae07b37a35c26",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-15-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "b283fd67543b6a792c32b9c74433eac5527e3886c814f71836f755c19e84e341",
+        "uncompressedSha256": "46b944569c368a09ec53325424e826c05ce8b6c76b3ec22f597c71fb88d17127",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-15-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "c44e4587f092d3f4d384e6721195c26b05a017528f51607baa412b7643ef5b7e",
+        "uncompressedSha256": "ce40554678219c813ee8fe68e56c73b5e46829dc1ce4918210191937dd645617",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-15-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "657445b23255e5b6e66330d3819c192153c961c8c40cc300f88700938bb13b71",
+        "uncompressedSha256": "46158d4a51b71b87ba02ebfebd00cd8a801566292374df70e1c1c5244ded3117",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-15-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "6dffedb11692ff9211671ece2c615855d891dd5c8318168792e32f346763ebfa",
+        "uncompressedSha256": "79a17c0d13d812ff3f7c5b5960b234472f7e982d487c6312fe0ae4a4643e5d49",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-16-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "dd6da82e7983fd07ca751b5a068b46840a5a8b61fba5ec251156b2c0250d2e44",
+        "uncompressedSha256": "611408cc18689359b9caea8f3e783f453b5cbdb236c6659a2021c0862404f7ae",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-16-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "1ca18a985f17b69cf546fbcf25771300f8cce68bf4dd6dc4e137aa7df833d8ea",
+        "uncompressedSha256": "48e80573083e3d923ff8f3f10f3e7b6cce24e372904189a0348a0b95733f4a43",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-16-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "4fac9e500de74dfd9e5971e30205363a515aa99f40fbfc15094a57d0632ae660",
+        "uncompressedSha256": "fbbcc42fbb32412ed6b785e86d94f6f81df08823072a7fd8de4322af7e215f2f",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-16-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "da97762066d651349c52dad1f35caa4d482714c6a8134e40d658adbae8d3b606",
+        "uncompressedSha256": "38756afaeb8a38443e941ee5e19537ffc65cfcb49666199d617ed8ffd4595f91",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-17-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "340466c3d6c4f886ccdeaa346e90141d17d8532a010318a8fc7fcbe86aa9dcfa",
+        "uncompressedSha256": "e729f1e2be8c7ef5bc44862d5e29d2f76a8d0a55a793c680588e7a3882bc6644",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-17-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "e81e14ecb3e07eb3e396b136cd50ebda3c531cb0bdf679a07ea8a311226b5eb5",
+        "uncompressedSha256": "75d1feb6e07e5046bcac3399a0668e7cbd51d372ba6b7f707f4017d2b516bc41",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-17-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "b6766a6ed1d7eacec776b7c6675df460f33bf9d2acdf71f1019c216e2e4e20f0",
+        "uncompressedSha256": "89cf854f5d0811e86caf0d14369c6b96635dbc2c2e9c3f6f13d46f206326f8ee",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-17-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "51b93ef1e19677394d0775ead4efc7ae1661f666a311ed324bbfbb34c01ed8d9",
+        "uncompressedSha256": "72d303e5b0558ebb8ae01c73a7c021bb986afd717498b061cc3a133047685903",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-18-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "bdfc9180558aea79b12285ffacb32e9054055d3d37d50e98dbf7d76c63b89187",
+        "uncompressedSha256": "e6e0360f6220b70f5eb650da4da23bf8f3227afd775e85c649dab48c82a316d7",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-18-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "bba63ac4103c0cba6c7795aabb1458000a708f1addb05f1b7f6c3bf313b8e92f",
+        "uncompressedSha256": "230c62cd09ba2e7ff8ec06c429f2e33f84440825a3255a237b07dcd664c12fa5",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-18-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "42515d5a822e01d94379e1e8380a39483f3150bf4f7ae56792af653123dc53ed",
+        "uncompressedSha256": "b3b9a9f611adcdaa1ae9f67835295d8f72a610b9e490ab6a13ee9468404972ca",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-18-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "84b46beb9ba51882ad93b109fb74105ab58c038e784bb0478bec6be8197ba31b",
+        "uncompressedSha256": "d149f5613a4871781066b36e3cc276c7122ef9db54ee8ee7f28412d5b0d7c85f",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-19-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "11c344e5c7ae97a367076608d0e1498ec3142849b21aa39c162ffcd671d83138",
+        "uncompressedSha256": "b4f3053dbc2d12bb0d82ed803a4e32c5795daea8500cdb98bd5a2ad8f38767ab",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-19-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "92cf829beb91ca2972abb0cc6ec085fd3d256467d712da157657f7c03a860857",
+        "uncompressedSha256": "d7b0870a71d826ac79083502bc251531caee0df59fd9c66a5aad87d140c69647",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-19-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "35671ed7384d452df4ea93abb877df5561d2aeabbfa6b3e86db02ebebef363e0",
+        "uncompressedSha256": "261d57af1d159eae3256d1654612b577205b1381dd68a416b748cb5f514cc87e",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-19-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "8f5f664227adc51b2cc26eb763634a9e52bcdd4633a5f59e6c41aec30a7f272f",
+        "uncompressedSha256": "b36f7a7c7fd9688bc83a4d48d10ff26d5e66d92b30eb153052cfb91108c6968b",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-20-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "d817c63bb0ab34bdb814ff77cf082742c76586792a9f4d6c9b084a8e1768528e",
+        "uncompressedSha256": "91b7cf0971be1c9655c5fe4575404d370b8da679c0ea344bf8d60e3b60cb9d08",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-20-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "176354d3cbbe904a1ab39a01a5212ab0dd7ef6c8bb9c680562abb499ff8571c2",
+        "uncompressedSha256": "db0561ac5d038ead7e4d1c4c8c3a2a196d2d572643cfbec4d8b279ba59810db5",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-20-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "6a75d0573e68678f75d69bcfaa20b30656833f24b9fd1ba54d2e0c2fdb82c40a",
+        "uncompressedSha256": "f663e056443a541020fc6afbad7464a9f2c88ac86ed8d13448398f16959b6ca9",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-20-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "d3883cf8c8074f54b4ddb5922fe6a4532225ce82c9b2f590d38d0edef983b1e0",
+        "uncompressedSha256": "ce8a5deeddc2e09d551d39030ecef2ebf4b6710a04604026fd32488b058f7535",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-21-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "ebb9980cbb42dc51d9e096e670c9ac16384d274a4a13c05ea0d43f691e7f70d4",
+        "uncompressedSha256": "11a84d7b9d3467dcac7ad3e2b2f2b62705feaed7e0eb072789253b8e41a22301",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-21-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "8d241fec84bc911fec35ce98aac4a4c704f5cefe07743b68f13e4308ca8420f5",
+        "uncompressedSha256": "3945869459db51ac43e2d5590a53842bf9859e61b4cc4243868002de3e06f4d1",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-21-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "407b546868ee85243fc17e6edaa4c702246ff73ce834e8bc814cb70c2f8c70c2",
+        "uncompressedSha256": "9c2d1ece8cfd57a356498b8c85b4e22900712beaee920aad5b606b010934a56a",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-21-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "b56832a261c3fa886c34fb7acc53af07ce67effe7d0f297b382c0c0a890a5539",
+        "uncompressedSha256": "565616b3cf6db30baaece641f3f36e6643e1f1a0c29126afa3e13d296f38a8b4",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-22-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "72f94827c4f34777e933b912c4e111e365953fe36b4620c98c7301b96325513a",
+        "uncompressedSha256": "ad52748394c3fd58cc4e1abe0278e13f52f93c319449e10b5e6ac57495479161",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-22-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "9aa2db7958d6d89630ad537097f5cbe178ebac10f1d1f2ac0b8c68291893496c",
+        "uncompressedSha256": "959109f9a4b9b223b275d38bf167d7b182f8b9d896138125b19ddb17bfb8d236",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-22-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "e0d9fd17bf96929e99ec20d7f75d43f6e7923ac5738c8f3a7c279a87bd8f187e",
+        "uncompressedSha256": "d7495e6b94aaaead9e38ba1bf4424de25f197447808dd391d92cc6fe6dbac7da",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-22-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "a99b78b1214ed8c19ac317309b28222afb2a0f5498ddb3cd425ab9633cf6c03a",
+        "uncompressedSha256": "8fc09ae1a5c45084f26f8a5808c6365dea67258a0bd5a3d03e87234d79dd64a9",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-23-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "da97f501eb63ce900c2054927d7c388065327de6727fe4dc0b620d44922d73f4",
+        "uncompressedSha256": "1a76e4b89860b38e0aa40a826196828974391968d739f0aa1b8abd3a1ff5dd5c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-23-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "ddee51dad7f92e37c805b87ec1e1d19dc46bc55c882bb794cc262973f41e954c",
+        "uncompressedSha256": "2c932972c6d33d8494410c816aa86bf5979bc50d748a144621700b2877ead7f2",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-23-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "c85eb058e8f594c901520c057b664738441f84264c44f6f5115b764b3963fe61",
+        "uncompressedSha256": "3a516f3d44628de76bd0ff66fa5552d89c1b34e99619e504edc3272927e600f3",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-23-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "0f06349b41fdfde6606caad6d68a0e65e82a93b10be7e93806e6606e3d4f1ed1",
+        "uncompressedSha256": "942b596dda1f8b81a2f125c8fba5df495174b16696c09ce9d2af77f11528fe4f",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-24-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "2efa964ecbc0988394a23a033d2cdf253f1dc84b0162428a31fdc40bba2d152f",
+        "uncompressedSha256": "b981ee4288ebf6f83ddab7ca51180bc6d6a74ab2ca4632b307acf45c66f0e7e9",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-24-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "fabc19ce1efb44b8cdcac9e592eb52e6ddfb36e85540d6414cf163bc67c6d4b1",
+        "uncompressedSha256": "70ece1c9bab9b388520aae6243041656da65bbe770b67bbd942114abd1af0a8b",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-24-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "eb719a5558c2ccd9b63d4719143d49e0ad9f0171d12a7618c0ec386862ef1448",
+        "uncompressedSha256": "246872fc554242416b95443608cec816925259cdb2df0be87273ea760cff9a31",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-24-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "65c703716c11981d51bd297caaf5bd37a077bcf9d76b34b515dd2c99512f477b",
+        "uncompressedSha256": "44e183e3857234f0533b98db0731e66843a7345b4fdf0f107d93ba3f0bf0f1ef",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-25-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "0b0e0dcaa9a24f1db0aef39a97e71bdb8bcc30ba2f563ab1fbbb46ce6055588e",
+        "uncompressedSha256": "4014362b9f8bdc6e87dbfc09b53d786ac4c957b9412f5ef3b4ee192ac377987c",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-25-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "835308951ba3c7e5c42d34834e6faf100615de6ce45741dcdc7c5c0770d3c7bf",
+        "uncompressedSha256": "8ebbef0b195ea18b1fe74ee3a16f7648c96d45b635d87bf5ffcdb3da329b88e5",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-25-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "65564f8b44f4c27a41dceb4a3fb5c6acc6b3f6d9130217e3beaf5206a01bfec5",
+        "uncompressedSha256": "64805f8933a0c5c023b79cda36121415cc1fcdb696151edc8d03cccfc55bbff0",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-25-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "9862021e5fcd5a25187d8f168aba260be617ceedf236f166df15135a8ae12278",
+        "uncompressedSha256": "ade0533f33cf2e31bd9fdcffc9b79551fca9ae7685d53ffee7d09652f7afa8ed",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-26-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "8f6ba9997162187d533dc11d85489262f82027bd660b1f792fd903f694542576",
+        "uncompressedSha256": "a7a01fdbd0f899de7e4a726326769f93e0d34d583eb84352dd33e5ab3b3cee87",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-26-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "0b4e44187e5a3b9aeb06dc7ecbe8d880e6e3bef396ace925cbe05458611769fd",
+        "uncompressedSha256": "420c04037f0cee1325197cd6086ceb4caad5f8a33637550a8f916cf48cd6b046",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-26-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "92f14be28ad618eed1c808a6eadfaec9cdd26721812fe163ef29b59dc5ae9718",
+        "uncompressedSha256": "8f949237aabce1344f5c84556df96453f59c3cbd2b7aded4757e27422d674fa3",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-26-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "b1890b439eb687bfb119ac0cadcbade212bb225de8fede14b049288d4d7b8d33",
+        "uncompressedSha256": "2db0d65031ad553cbc8527f0d8b01376b7ddf4564816be8afe9694dbc9770353",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-27-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "623adb6f30f63720cfb4f2a8881127c8a50678e973c016dc98d6859c2e069da9",
+        "uncompressedSha256": "c607f0d9a1438195eabc01673b19b813154afdab953449d8cfedaabfcc48602f",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-27-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "72ff668a817e2456e290878d1b8232aa809955b17cec8c5d891fd4f3518bf3e5",
+        "uncompressedSha256": "e52763f99881297a960e67464682a94d31425be70955fd82ceb0b9ba5d4c0633",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-27-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "d36e20e619a495ceaa49abae50c3667e1660bbfd68d53fbca8d337e011251202",
+        "uncompressedSha256": "d1bf37944da590d1bfd702f4fb6f65c4faffb7bce4cd70153f59e5c83136f3cf",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-27-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "609ed559c89456b5cd770dd9a7c84363d16a4fbf41a13bc61b3d5b4f7cd639f5",
+        "uncompressedSha256": "de489880f6185cb3644dc96468153b906809bb621f924cf16ecd9de90d72d1e3",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-28-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "1a730918377ad87f5b99f944efe64c054ccce65ab499fb8f358c95cefe6d2da9",
+        "uncompressedSha256": "92022357374bc75a66fa6527c8130281b6abd9df57c7a5a2d442d4d43724fed7",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-28-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "2d32839e85a2672999f46274ac2b4975a5ef264067669320a0d99244ba29768e",
+        "uncompressedSha256": "ad42223f20d08a1b7f89620b49eb82f355947afaf9683e67b6175d312ff258b3",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-28-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "ddbbc30b3045acede00af0ab53f5fa85f11cc545c795af23dd8381d3970b954b",
+        "uncompressedSha256": "7a6f1c873d592fee1b94e298c680962f8bd58d2adfc02589f1f2551e3cc2118e",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-28-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "b026b96d6a92f4428627991a4fc748057edbdcb6f954acca2d71bd5cf7f81a02",
+        "uncompressedSha256": "405fece6d748d0197f5184f9eaab6d35d195de2f2c0d0ab07c2b6906a268e309",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-29-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "fc45d24c6026aefd6f756b37e40e1ca7bcb050e1460f7d1b9a2d7f8f5e5b2f31",
+        "uncompressedSha256": "68ec8a31ea680dcf5022d02d0a7178c2fbae8176f040310bedcd5bbc280c6501",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-29-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "18956992c6e519b5d54c43404eedf6a7b2a7615b91e4fba2deeb9a52795772dc",
+        "uncompressedSha256": "a71652863650f4ee97ab06cc897519fb073907d52da9c247727aa55325c171af",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-29-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "9882dd223115268bb663acdbac3dc1eaa14c31e1b0f78c1df676321fe2e8de27",
+        "uncompressedSha256": "06b973f9bae7acce9a05a58c7c2c639e1e2dca469e4e817de434b29495bbfea8",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-29-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "004a655581a169c4b5b5221c324d1f507e395a5448be3c8f0c81084e07c04c00",
+        "uncompressedSha256": "770137e90a5f351f8fbf49c89ed87e66c213b07385c2adc6c2dd5bb0001fdf91",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-30-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "1171f9ece11d83a64af0236358171b879e654d394519f682cb4b4e911acd7ce0",
+        "uncompressedSha256": "0b2c67da7b244db5e09776b1bdedfa97caeaac0bfb9551ff09798324fd3af056",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-30-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "9843d8937549fd758e8b1ec10d31aef7f5e0f0b9ba667e431e5030618eefd1f4",
+        "uncompressedSha256": "a2644610fb3ecdb7a1222aafbdb1f21fce4863037b9da6d481d91015543a64e2",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-30-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "f299c62ccd19f30cee6a6979e79ea955cd95475e207308b536272fed2492f8b9",
+        "uncompressedSha256": "2e7837ce4de402c2eb27d848a8d8557ef113d22be2e683d0d3a5296d079bf43d",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-30-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "8b9d6a99598dce1f47ba6857672fc5bab3bd69accc8bf6552d04e88b89900586",
+        "uncompressedSha256": "8f0a6936e7aadeaefbf7834c098bd4dde694cce076ea2f3bdd3c533a2ed2981e",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-31-P1-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "e132d8571984c692b24edc0d9366c0d6ee8d425fef3788bcf47875b78f7bee03",
+        "uncompressedSha256": "ebdebb2a9bd6920a23cfe56972361b6fff5dca0dd0a793aab94cce190077b63d",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-31-P1-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "c7bb5c0144a42a9e862eb3b2136c271da25221bd53683310450b85526db08185",
+        "uncompressedSha256": "18163d36ce7c01e580d88a5e3393ffb99215131ba19d0547898b43f0d87dc30e",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-31-P2-awareness.attempt-1.jsonl.gz",
+        "compressedSha256": "0776e6f41bfeb44ed22c72470f5def6b8a09330670fc2c7bf360cc90695ae16a",
+        "uncompressedSha256": "27576d9147e7281624508122c5a898792eecb7ffc30e228dcdf05462063acca0",
+        "status": "pass"
+      },
+      {
+        "file": "cluster-31-P2-unchanged.attempt-1.jsonl.gz",
+        "compressedSha256": "b1a38df8a07191f8a10a70a4cbf20c9abac4c6a6266fc97da01579d87c15c37c",
+        "uncompressedSha256": "bb85cda406fe694e008f571f433a8fdba1216554c2a4dc4feb312e6e647950c0",
+        "status": "pass"
+      }
+    ],
+    "indexedNoiseSamplesVerified": 2302592,
+    "maxMotorAimReconstructionError": 1.27675647831893e-15,
+    "statistics": {
+      "primaryAndArmIntervals": "pass",
+      "secondaryMetricsChecked": 41,
+      "resamples": 20000,
+      "clusters": 32,
+      "independentImplementation": "Python/NumPy; no original statistic function imported"
+    },
+    "elapsedSeconds": 238.75470352172852
+  },
+  "totals": {
+    "unchanged": {
+      "returningReceived": 1144.0,
+      "outboundReceived": 779.0,
+      "totalReceived": 1923.0,
+      "delivered": 1741.0,
+      "returningDelivered": 476.0,
+      "outboundDelivered": 1265.0,
+      "actualThrows": 10692.0,
+      "actualRecalls": 8848.0,
+      "baseProposedThrows": 10692.0,
+      "throwCommands": 10692.0,
+      "withheldThrows": 0.0,
+      "alignedAwayOpportunities": 10692.0,
+      "warnings": 94922.0,
+      "warningEpisodes": 6490.0,
+      "scans": 0.0,
+      "movementOverrides": 0.0,
+      "scanOnly": 0.0,
+      "warningExpired": 3196.0,
+      "warningScoreResets": 3663.0,
+      "reacquisitions": 2959.0,
+      "visibleOpponentDecisions": 575512.0,
+      "visibleSpearDecisions": 397660.0,
+      "visibleReturningDecisions": 102256.0,
+      "decisions": 575552.0,
+      "scanAimDisplacementRadTotal": 0.0,
+      "motorSigmaTotal": 25370.817504818056,
+      "warningActualReturning": 41742.0,
+      "warningActualNotReturning": 53180.0,
+      "postScanSamples": 0.0,
+      "postScanSpearVisible": 0.0,
+      "postScanReturningVisible": 0.0,
+      "postScanOpponentVisible": 0.0
+    },
+    "awareness": {
+      "returningReceived": 611.0,
+      "outboundReceived": 951.0,
+      "totalReceived": 1562.0,
+      "delivered": 1341.0,
+      "returningDelivered": 359.0,
+      "outboundDelivered": 982.0,
+      "actualThrows": 10106.0,
+      "actualRecalls": 8535.0,
+      "baseProposedThrows": 10200.0,
+      "throwCommands": 10109.0,
+      "withheldThrows": 91.0,
+      "alignedAwayOpportunities": 10200.0,
+      "warnings": 100254.0,
+      "warningEpisodes": 9317.0,
+      "scans": 100254.0,
+      "movementOverrides": 38781.0,
+      "scanOnly": 61473.0,
+      "warningExpired": 323.0,
+      "warningScoreResets": 2900.0,
+      "reacquisitions": 2139.0,
+      "visibleOpponentDecisions": 478385.0,
+      "visibleSpearDecisions": 423864.0,
+      "visibleReturningDecisions": 125265.0,
+      "decisions": 575552.0,
+      "scanAimDisplacementRadTotal": 235643.20112118172,
+      "motorSigmaTotal": 28383.150561915274,
+      "warningActualReturning": 46648.0,
+      "warningActualNotReturning": 53606.0,
+      "postScanSamples": 100234.0,
+      "postScanSpearVisible": 44875.0,
+      "postScanReturningVisible": 24526.0,
+      "postScanOpponentVisible": 45922.0
+    }
+  },
+  "statistics": {
+    "primary": {
+      "estimate": -0.12187500000000002,
+      "ci95": [
+        -0.546875,
+        0.290625
+      ],
+      "undefinedResamples": 0
+    },
+    "againstOrdinary": {
+      "unchanged": {
+        "estimate": -0.56875,
+        "ci95": [
+          -0.921875,
+          -0.20304687500000676
+        ],
+        "undefinedResamples": 0
+      },
+      "awareness": {
+        "estimate": -0.690625,
+        "ci95": [
+          -0.9125000000000001,
+          -0.46875000000000006
+        ],
+        "undefinedResamples": 0
+      }
+    },
+    "secondary": {
+      "returningReceived": {
+        "estimate": 1.665625,
+        "ci95": [
+          1.4625,
+          1.86875
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 3.575,
+            "ci95": [
+              3.40625,
+              3.7375
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 1.9093749999999998,
+            "ci95": [
+              1.78125,
+              2.04375
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "outboundReceived": {
+        "estimate": -0.5375000000000001,
+        "ci95": [
+          -0.8218749999999999,
+          -0.25625
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 2.434375,
+            "ci95": [
+              2.225,
+              2.65
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 2.971875,
+            "ci95": [
+              2.8,
+              3.1468749999999996
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "totalReceived": {
+        "estimate": 1.128125,
+        "ci95": [
+          0.8343750000000001,
+          1.4281249999999999
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 6.009375,
+            "ci95": [
+              5.753125,
+              6.25625
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 4.88125,
+            "ci95": [
+              4.721875000000001,
+              5.04375
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "delivered": {
+        "estimate": -1.25,
+        "ci95": [
+          -1.4468750000000001,
+          -1.065625
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 5.440625,
+            "ci95": [
+              5.2875,
+              5.590624999999999
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 4.190625,
+            "ci95": [
+              4.059375,
+              4.31875
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "returningDelivered": {
+        "estimate": -0.36562500000000003,
+        "ci95": [
+          -0.5125,
+          -0.21874999999999994
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 1.4874999999999998,
+            "ci95": [
+              1.36875,
+              1.603125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 1.121875,
+            "ci95": [
+              1.0374999999999999,
+              1.2062499999999998
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "outboundDelivered": {
+        "estimate": -0.8843749999999999,
+        "ci95": [
+          -1.08125,
+          -0.7031249999999999
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 3.953125,
+            "ci95": [
+              3.8,
+              4.1125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 3.06875,
+            "ci95": [
+              2.95625,
+              3.1812500000000004
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "actualThrows": {
+        "estimate": -1.8312499999999998,
+        "ci95": [
+          -2.224999999999999,
+          -1.4406249999999998
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 33.412499999999994,
+            "ci95": [
+              33.140625,
+              33.7125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 31.58125,
+            "ci95": [
+              31.31875,
+              31.853125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "actualRecalls": {
+        "estimate": -0.9781249999999996,
+        "ci95": [
+          -1.2999999999999994,
+          -0.6562499999999996
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 27.65,
+            "ci95": [
+              27.434375000000003,
+              27.865624999999998
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 26.671875,
+            "ci95": [
+              26.45625,
+              26.890625
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "baseProposedThrows": {
+        "estimate": -1.5375,
+        "ci95": [
+          -1.934375,
+          -1.1437499999999998
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 33.412499999999994,
+            "ci95": [
+              33.140625,
+              33.7125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 31.875,
+            "ci95": [
+              31.615625,
+              32.14375
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "throwCommands": {
+        "estimate": -1.821875,
+        "ci95": [
+          -2.2125000000000004,
+          -1.4312500000000004
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 33.412499999999994,
+            "ci95": [
+              33.140625,
+              33.7125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 31.590625,
+            "ci95": [
+              31.328125,
+              31.8625
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "withheldThrows": {
+        "estimate": 0.28437500000000004,
+        "ci95": [
+          0.21875000000000003,
+          0.35
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.28437500000000004,
+            "ci95": [
+              0.21875000000000003,
+              0.35
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "alignedAwayOpportunities": {
+        "estimate": -1.5375,
+        "ci95": [
+          -1.934375,
+          -1.1437499999999998
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 33.412499999999994,
+            "ci95": [
+              33.140625,
+              33.7125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 31.875,
+            "ci95": [
+              31.615625,
+              32.14375
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warnings": {
+        "estimate": 16.662500000000005,
+        "ci95": [
+          11.621875000000006,
+          21.850156249999994
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 296.63124999999997,
+            "ci95": [
+              293.22804687499996,
+              299.95007812500006
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 313.29375000000005,
+            "ci95": [
+              308.825,
+              317.88757812500006
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningEpisodes": {
+        "estimate": 8.834375,
+        "ci95": [
+          8.437499999999998,
+          9.2375
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 20.28125,
+            "ci95": [
+              19.959375,
+              20.60625
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 29.115625,
+            "ci95": [
+              28.771875,
+              29.446875
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "scans": {
+        "estimate": 313.29375000000005,
+        "ci95": [
+          308.825,
+          317.88757812500006
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 313.29375000000005,
+            "ci95": [
+              308.825,
+              317.88757812500006
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "movementOverrides": {
+        "estimate": 121.19062500000001,
+        "ci95": [
+          117.403046875,
+          124.712578125
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 121.19062500000001,
+            "ci95": [
+              117.403046875,
+              124.712578125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "scanOnly": {
+        "estimate": 192.10312499999998,
+        "ci95": [
+          187.94375,
+          196.400078125
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 192.10312499999998,
+            "ci95": [
+              187.94375,
+              196.400078125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningExpired": {
+        "estimate": -8.978124999999999,
+        "ci95": [
+          -9.196874999999999,
+          -8.765625
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 9.9875,
+            "ci95": [
+              9.79375,
+              10.178124999999998
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 1.009375,
+            "ci95": [
+              0.9,
+              1.125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningScoreResets": {
+        "estimate": -2.384375,
+        "ci95": [
+          -2.65625,
+          -2.115625
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 11.446874999999999,
+            "ci95": [
+              11.24375,
+              11.659375
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 9.0625,
+            "ci95": [
+              8.878125,
+              9.253125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "reacquisitions": {
+        "estimate": -2.5625,
+        "ci95": [
+          -3.0,
+          -2.14375
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 9.246875,
+            "ci95": [
+              8.921875,
+              9.578125
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 6.684374999999999,
+            "ci95": [
+              6.409375,
+              6.96875
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "visibleOpponentDecisions": {
+        "estimate": -303.5218749999999,
+        "ci95": [
+          -308.97539062499993,
+          -298.18749999999994
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 1798.475,
+            "ci95": [
+              1798.39375,
+              1798.5437499999998
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 1494.953125,
+            "ci95": [
+              1489.5031250000002,
+              1500.28125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "visibleSpearDecisions": {
+        "estimate": 81.8875,
+        "ci95": [
+          72.10000000000002,
+          91.58453124999998
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 1242.6875,
+            "ci95": [
+              1235.18109375,
+              1250.8065625000002
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 1324.575,
+            "ci95": [
+              1318.2528125000001,
+              1330.771953125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "visibleReturningDecisions": {
+        "estimate": 71.90312500000002,
+        "ci95": [
+          68.528125,
+          75.228203125
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 319.54999999999995,
+            "ci95": [
+              316.512421875,
+              322.671875
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 391.453125,
+            "ci95": [
+              388.7125,
+              394.25625
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "decisions": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 1798.6,
+            "ci95": [
+              1798.6,
+              1798.6
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 1798.6,
+            "ci95": [
+              1798.6,
+              1798.6
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningActualReturning": {
+        "estimate": 15.331249999999999,
+        "ci95": [
+          12.765625,
+          18.040625
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 130.44374999999997,
+            "ci95": [
+              128.359375,
+              132.59375
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 145.775,
+            "ci95": [
+              143.268671875,
+              148.309375
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningActualNotReturning": {
+        "estimate": 1.331249999999999,
+        "ci95": [
+          -3.4250781250000015,
+          6.212578124999995
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 166.1875,
+            "ci95": [
+              162.715625,
+              169.590625
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 167.51874999999998,
+            "ci95": [
+              164.518671875,
+              170.64999999999998
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanSamples": {
+        "estimate": 313.23125,
+        "ci95": [
+          308.75921875,
+          317.831328125
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 313.23125,
+            "ci95": [
+              308.75921875,
+              317.831328125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanSpearVisible": {
+        "estimate": 140.234375,
+        "ci95": [
+          138.249921875,
+          142.2625
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 140.234375,
+            "ci95": [
+              138.249921875,
+              142.2625
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanReturningVisible": {
+        "estimate": 76.64375,
+        "ci95": [
+          75.35,
+          77.931328125
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 76.64375,
+            "ci95": [
+              75.35,
+              77.931328125
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanOpponentVisible": {
+        "estimate": 143.50625,
+        "ci95": [
+          141.384296875,
+          145.596875
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 143.50625,
+            "ci95": [
+              141.384296875,
+              145.596875
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "meanScanAimDisplacementRad": {
+        "estimate": null,
+        "ci95": null,
+        "undefinedResamples": 20000,
+        "arms": {
+          "unchanged": {
+            "estimate": null,
+            "ci95": null,
+            "undefinedResamples": 20000
+          },
+          "awareness": {
+            "estimate": 2.3504618381429343,
+            "ci95": [
+              2.3396900305216954,
+              2.3620302644066333
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "meanMotorSigmaRad": {
+        "estimate": 0.00523381563628867,
+        "ci95": [
+          0.0051138744623183095,
+          0.005351103574689712
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.04408084326840678,
+            "ci95": [
+              0.04401719684446555,
+              0.044146129397733
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.04931465890469545,
+            "ci95": [
+              0.04923127576138474,
+              0.04939786741126708
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningDecisionFraction": {
+        "estimate": 0.009264149894362278,
+        "ci95": [
+          0.006461622928944727,
+          0.012148424469031475
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.16492341265428667,
+            "ci95": [
+              0.16303127258701214,
+              0.16676864123484933
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.17418756254864895,
+            "ci95": [
+              0.17170299121538976,
+              0.17674167581730235
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "visibleOpponentFraction": {
+        "estimate": -0.1687545174024241,
+        "ci95": [
+          -0.17178660659679756,
+          -0.1657886689647503
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.9999305015011676,
+            "ci95": [
+              0.9998853274769265,
+              0.9999687256755254
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.8311759840987435,
+            "ci95": [
+              0.8281458495496498,
+              0.8341383576114756
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "visibleSpearFraction": {
+        "estimate": 0.045528466585121774,
+        "ci95": [
+          0.040086734126542956,
+          0.05091989950517068
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.6909193261425554,
+            "ci95": [
+              0.6867458544145446,
+              0.6954334273879684
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.7364477927276771,
+            "ci95": [
+              0.7329327324029801,
+              0.7398932242438564
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "visibleReturningFraction": {
+        "estimate": 0.0399772739908818,
+        "ci95": [
+          0.03810081452240632,
+          0.041825977496386085
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.17766596241521182,
+            "ci95": [
+              0.17597710545702214,
+              0.17940168742355164
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.21764323640609362,
+            "ci95": [
+              0.21611948181919272,
+              0.21920174024241076
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningActualReturningFraction": {
+        "estimate": 0.025547610701737222,
+        "ci95": [
+          0.016330273946063532,
+          0.03457365767502387
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.4397505320157603,
+            "ci95": [
+              0.4322598456475804,
+              0.4473260719714102
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.46529814271749753,
+            "ci95": [
+              0.46016746415181936,
+              0.4705704776181518
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "warningActualNotReturningFraction": {
+        "estimate": -0.025547610701737278,
+        "ci95": [
+          -0.03457365767502388,
+          -0.01633027394606356
+        ],
+        "undefinedResamples": 0,
+        "arms": {
+          "unchanged": {
+            "estimate": 0.5602494679842397,
+            "ci95": [
+              0.5526739280285898,
+              0.5677401543524195
+            ],
+            "undefinedResamples": 0
+          },
+          "awareness": {
+            "estimate": 0.5347018572825024,
+            "ci95": [
+              0.5294295223818483,
+              0.5398325358481807
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanSpearVisibleFraction": {
+        "estimate": null,
+        "ci95": null,
+        "undefinedResamples": 20000,
+        "arms": {
+          "unchanged": {
+            "estimate": null,
+            "ci95": null,
+            "undefinedResamples": 20000
+          },
+          "awareness": {
+            "estimate": 0.4477023764391324,
+            "ci95": [
+              0.443320455069604,
+              0.45209462425131425
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanReturningVisibleFraction": {
+        "estimate": null,
+        "ci95": null,
+        "undefinedResamples": 20000,
+        "arms": {
+          "unchanged": {
+            "estimate": null,
+            "ci95": null,
+            "undefinedResamples": 20000
+          },
+          "awareness": {
+            "estimate": 0.24468743141049942,
+            "ci95": [
+              0.24026290134960854,
+              0.2491518752448662
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      },
+      "postScanOpponentVisibleFraction": {
+        "estimate": null,
+        "ci95": null,
+        "undefinedResamples": 20000,
+        "arms": {
+          "unchanged": {
+            "estimate": null,
+            "ci95": null,
+            "undefinedResamples": 20000
+          },
+          "awareness": {
+            "estimate": 0.4581479338348265,
+            "ci95": [
+              0.4535761852325346,
+              0.46274987492718683
+            ],
+            "undefinedResamples": 0
+          }
+        }
+      }
+    }
+  }
+}

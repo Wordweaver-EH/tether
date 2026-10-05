@@ -41,6 +41,13 @@ export async function materializeCurrentMindWithOriginalWorkspace() {
   try {
     const currentMind = resolve(repoRoot, 'src/mind');
     cpSync(currentMind, resolve(path, 'mind'), {recursive: true});
+    // The optional Cover visibility contract is a current shared dependency.
+    // Copy it unchanged into both current-controller workspace-swap arms.
+    const visibility = readFileSync(resolve(repoRoot, 'src/visibility.js'));
+    writeFileSync(resolve(path, 'visibility.js'), visibility);
+    writeFileSync(resolve(path, 'package.json'), '{"type":"module"}\n');
+    if (!readFileSync(resolve(path, 'visibility.js')).equals(visibility))
+      throw new Error('Current visibility dependency copy mismatch');
     const originalWorkspace = readFileSync(resolve(compatibilityFixtureRoot, 'original-v2/src/mind/workspace.mjs'));
     writeFileSync(resolve(path, 'mind/workspace.mjs'), originalWorkspace);
     for (const name of readdirSync(currentMind)) {

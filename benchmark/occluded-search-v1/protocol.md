@@ -100,6 +100,12 @@ physics ticks (2 seconds) after release, inclusive of the decision at that final
 state. There are 241 state frames from release through release+240, with no extra
 physics step after the endpoint. No per-arm lost-target qualification or exclusion.
 
+The terminal decision at release+240 is issued and logged, but has no following
+physical step. Raw `physicalStepFollows` marks this distinction; the terminal
+command columns describe issuance, not movement after the observation deadline.
+Every raw episode preserves initial controller settings and embodiment settings;
+the frozen intervention code defines the subsequent hidden-only switch changes.
+
 ## Five fixed arms
 
 All minds are fresh per scene, normal difficulty, 192-unit declared cognition

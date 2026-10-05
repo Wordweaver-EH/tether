@@ -14,13 +14,14 @@
     </header>
     <section class="stage" aria-label="Tether arena">
       <canvas id="arena" aria-label="Arena, player view"></canvas>
-      <div id="objectiveHud" class="objective-hud" hidden><strong>Cover Control · baseline NPC</strong><span id="objectiveStatus"></span><small>Ring status is public</small></div>
+      <div id="objectiveHud" class="objective-hud" hidden><strong id="objectiveTitle">Cover Control · baseline NPC</strong><span id="objectiveStatus"></span><small>Ring status is public</small></div>
       <div id="start" class="dialog">
         <div class="eyebrow">A DUEL OF ATTENTION</div>
         <h1>Hold the line.<br><em>Watch the other.</em></h1>
         <p>One spear each. Throw to pin it in the arena. Recall it across a fixed line to catch your opponent.</p>
         <div class="selectors">
           <label class="game-selector">Game<select id="gameMode"><option value="DUEL" selected>Duel · original rules</option><option value="COVER_CONTROL">Cover Control · optional</option></select></label>
+          <label id="coverOpponentSelector" class="game-selector" hidden>Cover opponent<select id="coverOpponent" aria-describedby="coverGuide"><option value="baseline" selected>Baseline NPC · conventional route-and-contest</option><option value="mind">Existing mind · experimental hunt/search</option></select></label>
           <label>Mind difficulty<select id="difficulty"><option value="easy">Easy</option><option value="normal" selected>Normal</option><option value="hard">Hard</option></select></label>
           <label>Visibility<select id="mode"><option value="MODE_B" selected>Mode B · forward cone</option><option value="MODE_A">Mode A · full view</option></select></label>
         </div>

@@ -2,6 +2,7 @@
 // never a hidden opponent position or a simulation-world entity.
 export const COVER_RULES = 'Hold the ring alone for 2 seconds = 1 point, without a reset. Both inside, leaving it empty, or changing holder resets progress. Spear hit = 1 point + reset.';
 export const COVER_GUIDE = 'North is shorter and exposed; south is longer and sheltered. Mode B walls block sight. Thrown spears stop at cover; returning spears pass through it. Ring status is public. The baseline NPC has 150ms perception delay, 30Hz decisions and aim noise. It does not learn.';
+export const COVER_MIND_GUIDE = 'North is shorter and exposed; south is longer and sheltered. Mode B walls block sight. Thrown spears stop at cover; returning spears pass through it. Ring status is public. Experimental existing hunt/search policy, not yet taught ring capture. It has 150ms perception delay, 30Hz decisions and aim noise. Records actual mind traces; starts fresh each bout, with no saved Duel learning.';
 
 export function objectiveProgress(objective) {
   if (!objective?.holdTicksRequired) return 0;

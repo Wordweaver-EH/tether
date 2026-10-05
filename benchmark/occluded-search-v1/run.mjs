@@ -77,10 +77,11 @@ export const FRAME_FIELDS = Object.freeze(['receiptTick', 'sensorTick', 'bodyVis
   'executedMoveX', 'executedMoveY', 'executedAimX', 'executedAimY',
   'focus', 'beliefX', 'beliefY', 'beliefConfidence', 'episodicReadDelivered',
   'attentionContentDelivered', 'plannerContentDelivered', 'hiddenCut', 'logicalWork', 'tier',
-  'physicalBodyVisible', 'physicalOwnX', 'physicalOwnY', 'physicalTargetX', 'physicalTargetY']);
+  'physicalBodyVisible', 'physicalOwnX', 'physicalOwnY', 'physicalTargetX', 'physicalTargetY', 'physicalStepFollows']);
 
 export function runScene(scene, arm, { history = true, mode = 'MODE_B' } = {}) {
   const world = createSceneWorld(scene), engine = createAssayEngine(arm, scene.seed);
+  const initialControllerSettings = copy(engine.settings());
   const records = [];
   let tick = 0, serial = -1, streak = 0, successTick = null, firstReacquisitionTick = null;
   const controller = {
@@ -134,11 +135,13 @@ export function runScene(scene, arm, { history = true, mode = 'MODE_B' } = {}) {
       d.focus, t?.belief.mean.x ?? null, t?.belief.mean.y ?? null, t?.confidence.opponent ?? null,
       +!!c?.recalled, +!!c?.receivers?.attention?.delivered, +!!c?.receivers?.planner?.delivered,
       +(arm.endsWith('-cut') && !v.opponent), d.cognition.budget.spent, d.cognition.tier,
-      +r.physical.bodyVisible, r.physical.own.x, r.physical.own.y, r.physical.target.x, r.physical.target.y];
+      +r.physical.bodyVisible, r.physical.own.x, r.physical.own.y, r.physical.target.x, r.physical.target.y,
+      +(r.tick < endTick)];
   });
   const latency = successTick === null ? THRESHOLDS.deadlineSec : (successTick - scene.releaseTick) / 120;
   return { sceneId: scene.id, clusterId: scene.clusterId, arm, history, mode,
     condition: mode === 'MODE_A' ? 'always-visible' : history ? 'scored' : 'never-observed',
+    initialControllerSettings, embodiment: embodied.settings().embodiment,
     success: successTick !== null, successTick, firstReacquisitionTick,
     censoredLatencySec: latency, releaseTick: scene.releaseTick, endTick,
     initialVisibleDecisionCount: frames.filter(f => f[0] < scene.releaseTick && f[2]).length,
@@ -252,7 +255,7 @@ function sourcePaths() {
     x.isDirectory() ? walk(`${dir}/${x.name}`) : [`${dir}/${x.name}`]); }
   return [...walk('src'), 'benchmark/occluded-search-v1/run.mjs',
     'benchmark/occluded-search-v1/scenes.mjs', 'benchmark/occluded-search-v1/protocol.md',
-    'test/cover-mind.test.mjs', 'test/occluded-search.test.mjs'].sort();
+    'test/cover-mind.test.mjs', 'test/occluded-search.test.mjs', 'tools/compatibility-fixtures.mjs'].sort();
 }
 export function makeFreeze() {
   return { version: 1, sourceBase: '91f0d7aefb756f96042c5424d498a2bfcbb6fae6',

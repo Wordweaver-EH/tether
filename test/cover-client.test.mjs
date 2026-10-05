@@ -5,10 +5,11 @@ import { createWorld, hashWorld, step } from '../src/sim.js';
 import { percept } from '../src/perception.js';
 import { createMind } from '../src/mind/index.mjs';
 import { createCoverAgent } from '../src/agents/cover-control.mjs';
+import { createCoverMind } from '../src/agents/cover-mind.mjs';
 import { createSessionLogger } from '../src/log.js';
 import { renderModel } from '../client/render-model.mjs';
 import { drawCone, drawOutsideCone, drawObjective } from '../client/canvas.mjs';
-import { COVER_RULES, COVER_GUIDE, objectiveProgress, objectiveStatus, visibilityPolygon } from '../client/cover-display.mjs';
+import { COVER_RULES, COVER_GUIDE, COVER_MIND_GUIDE, objectiveProgress, objectiveStatus, visibilityPolygon } from '../client/cover-display.mjs';
 import { MEMORY_KEY } from '../client/memory-store.mjs';
 import { TELEMETRY_KEY } from '../client/telemetry.mjs';
 import { parseLog } from '../replay/log-data.mjs';
@@ -86,8 +87,10 @@ test('public objective text and drawing distinguish open, held and contested sta
   assert.match(objectiveStatus(objective), /Ring open/);
   assert.equal(objectiveStatus({ ...objective, contested: true }), 'Both inside: progress resets');
   assert.equal(objectiveStatus({ ...objective, controller: 'P1', holdTicks: 239 }), 'You holding · 99%');
+  assert.equal(objectiveStatus({ ...objective, controller: 'P2', holdTicks: 120 }, { P1: 'You', P2: 'Existing mind' }), 'Existing mind holding · 50%');
   assert.match(COVER_RULES, /without a reset/); assert.match(COVER_RULES, /Both inside/);
   assert.match(COVER_GUIDE, /returning spears pass through/);
+  assert.match(COVER_MIND_GUIDE, /Experimental existing hunt\/search policy, not yet taught ring capture/);
   const { ctx, calls } = recordingContext();
   drawObjective(ctx, { ...objective, controller: 'P1', holdTicks: 120 });
   assert.equal(calls.filter(([name]) => name === 'arc').length, 2);
@@ -135,7 +138,7 @@ async function appHarness({ testMode = true, page = 'client' } = {}) {
     if (descriptor) Object.defineProperty(globalThis, key, descriptor); else delete globalThis[key];
   } };
   for (const [key, value] of Object.entries(globals)) Object.defineProperty(globalThis, key, { value, configurable: true, writable: true });
-  for (const [id, value] of [['mode', 'MODE_B'], ['difficulty', 'normal'], ['gameMode', 'DUEL'], ['speed', '1']])
+  for (const [id, value] of [['mode', 'MODE_B'], ['difficulty', 'normal'], ['gameMode', 'DUEL'], ['coverOpponent', 'baseline'], ['speed', '1']])
     if (elements.has(id)) elements.get(id).value = value;
   try { await import(`../${page}/app.mjs?harness=${Math.random()}`); }
   catch (error) { cleanup(); throw error; }
@@ -147,10 +150,16 @@ test('client API keeps Cover mode through restore and reset(seed) retains the ex
   const dom = await appHarness();
   try {
     const originalMemory = dom.values.get(MEMORY_KEY);
+    assert.equal(dom.el('coverOpponentSelector').hidden, true);
+    assert.equal(dom.el('coverOpponent').value, 'baseline');
     assert.equal(dom.api.reset(73, 'COVER_CONTROL'), hashWorld(createWorld({ gameMode: 'COVER_CONTROL' })));
-    dom.api.advance(180, Array.from({ length: 180 }, () => ({ moveY: -1 })));
+    const baselineWorld = createWorld({ gameMode: 'COVER_CONTROL' }), baseline = createCoverAgent({ seed: 73 });
+    const coverInputs = Array.from({ length: 180 }, () => ({ moveY: -1 }));
+    for (const input of coverInputs) step(baselineWorld, [input, baseline.act(percept(baselineWorld, 'P2', 'MODE_B'), 1 / 120)]);
+    assert.equal(dom.api.advance(180, coverInputs).hash, hashWorld(baselineWorld));
     const snapshot = dom.api.snapshot();
     assert.equal(snapshot.gameMode, 'COVER_CONTROL');
+    assert.equal(snapshot.coverOpponent, undefined, 'default Cover snapshots preserve their existing shape');
     assert.equal(snapshot.world.gameMode, 'COVER_CONTROL');
     assert.equal(dom.api.restore(snapshot), snapshot.hash);
     dom.api.render();
@@ -165,8 +174,10 @@ test('client API keeps Cover mode through restore and reset(seed) retains the ex
     assert.equal(dom.api.advance(inputs.length, inputs).hash, hashWorld(world));
     const duel = dom.api.snapshot();
     assert.equal(duel.gameMode, undefined); assert.equal(duel.world.gameMode, undefined);
+    assert.equal(duel.coverOpponent, undefined);
     assert.equal(dom.api.restore(duel), duel.hash);
     assert.throws(() => dom.api.reset(1, 'OTHER'), /invalid game mode/);
+    assert.throws(() => dom.api.reset(1, 'COVER_CONTROL', 'OTHER'), /invalid Cover opponent/);
   } finally { dom.cleanup(); }
 });
 
@@ -176,6 +187,8 @@ test('Cover UI handles pause, early-end, download, rematch and mode changes with
     const originalMemory = dom.values.get(MEMORY_KEY);
     dom.el('gameMode').value = 'COVER_CONTROL'; await dom.el('gameMode').dispatch('change');
     assert.equal(dom.el('difficulty').disabled, true); assert.equal(dom.el('coverInfo').hidden, false);
+    assert.equal(dom.el('coverOpponentSelector').hidden, false); assert.equal(dom.el('coverOpponent').value, 'baseline');
+    assert.equal(dom.el('coverGuide').textContent, COVER_GUIDE);
     await dom.el('resetMemory').dispatch('click');
     assert.equal(dom.values.get(MEMORY_KEY), originalMemory);
     await dom.el('begin').dispatch('click'); dom.frame(0); dom.frame(100);
@@ -219,6 +232,147 @@ test('Cover baseline reaches the natural result screen without missing mind meth
     assert.equal(dom.el('result').hidden, false);
     assert.match(dom.el('resultScore').textContent, /Baseline NPC/);
     assert.ok(!dom.writes.includes(MEMORY_KEY)); assert.ok(!dom.removes.includes(MEMORY_KEY));
+  } finally { dom.cleanup(); }
+});
+
+test('optional Cover mind uses its fresh controller, restores the choice and logs only its actual traces', async () => {
+  const dom = await appHarness();
+  try {
+    const originalMemory = dom.values.get(MEMORY_KEY);
+    const world = createWorld({ gameMode: 'COVER_CONTROL' });
+    const mind = createCoverMind({ seed: 37, captureTrace: true });
+    const inputs = Array.from({ length: 300 }, (_, i) => ({ moveY: i < 180 ? -1 : 1, throw: i === 160 }));
+    dom.api.reset(37, 'COVER_CONTROL', 'mind');
+    for (const input of inputs) step(world, [input, mind.act(percept(world, 'P2', 'MODE_B'), 1 / 120)]);
+    assert.equal(dom.api.advance(inputs.length, inputs).hash, hashWorld(world));
+    const snapshot = dom.api.snapshot();
+    assert.equal(snapshot.coverOpponent, 'mind');
+    dom.api.reset(37, 'COVER_CONTROL');
+    assert.equal(dom.el('opponentLabel').textContent, 'BASELINE NPC');
+    assert.equal(dom.api.restore(snapshot), snapshot.hash);
+    assert.equal(dom.el('coverOpponent').value, 'mind');
+    assert.equal(dom.el('opponentLabel').textContent, 'EXISTING MIND');
+    assert.match(dom.el('objectiveTitle').textContent, /existing mind \(experimental\)/);
+    const continuation = Array.from({ length: 120 }, () => ({ moveX: 1 }));
+    for (const input of continuation) step(world, [input, mind.act(percept(world, 'P2', 'MODE_B'), 1 / 120)]);
+    assert.equal(dom.api.advance(continuation.length, continuation).hash, hashWorld(world));
+    await dom.window.dispatch('keydown', { code: 'Escape' }); await dom.el('endEarly').dispatch('click');
+    mind.finish(percept(world, 'P2', 'MODE_B'));
+    await dom.el('download').dispatch('click');
+    const parsed = parseLog(await (await fetch(dom.downloads[0].href)).text());
+    assert.equal(parsed.metadata.agent_technical[1].controller, 'cover-existing-mind-v1');
+    assert.ok(parsed.traces.length > 0);
+    assert.deepEqual(parsed.traces, JSON.parse(JSON.stringify(mind.trace())), 'downloaded traces come from the selected controller');
+    assert.match(dom.el('learnedSummary').textContent, /not yet taught ring capture/);
+    assert.match(dom.el('resultScore').textContent, /Existing mind/);
+    assert.equal(JSON.parse(dom.values.get(TELEMETRY_KEY)).bouts.at(-1).opponent, 'cover-control-mind');
+    assert.equal(dom.values.get(MEMORY_KEY), originalMemory);
+    assert.ok(!dom.writes.includes(MEMORY_KEY)); assert.ok(!dom.removes.includes(MEMORY_KEY));
+  } finally { dom.cleanup(); }
+});
+
+test('Cover mind UI remains experimental through rematch and cannot save or clear Duel memory', async () => {
+  const dom = await appHarness({ testMode: false });
+  try {
+    const originalMemory = dom.values.get(MEMORY_KEY);
+    dom.el('gameMode').value = 'COVER_CONTROL'; await dom.el('gameMode').dispatch('change');
+    dom.el('coverOpponent').value = 'mind'; await dom.el('coverOpponent').dispatch('change');
+    assert.equal(dom.el('difficulty').disabled, true);
+    assert.equal(dom.el('resetMemory').disabled, true);
+    assert.equal(dom.el('coverGuide').textContent, COVER_MIND_GUIDE);
+    assert.match(dom.el('memoryStatus').textContent, /never loaded from or saved to your Duel profile/);
+    await dom.el('resetMemory').dispatch('click'); await dom.el('begin').dispatch('click');
+    dom.frame(0); dom.frame(500);
+    await dom.window.dispatch('pagehide');
+    await dom.window.dispatch('blur'); await dom.el('endEarly').dispatch('click');
+    await dom.el('resetMemory').dispatch('click');
+    await dom.el('rematch').dispatch('click'); await dom.el('rematch').dispatch('click');
+    assert.equal(dom.el('coverOpponent').value, 'mind');
+    assert.equal(dom.el('opponentLabel').textContent, 'EXISTING MIND');
+    assert.equal(JSON.parse(dom.values.get(TELEMETRY_KEY)).rematches, 1);
+    dom.frame(600); dom.frame(1100);
+    await dom.window.dispatch('keydown', { code: 'Escape' }); await dom.el('endEarly').dispatch('click');
+    await dom.el('changeMode').dispatch('click');
+    assert.equal(dom.el('coverOpponent').value, 'mind');
+    dom.el('coverOpponent').value = 'baseline'; await dom.el('coverOpponent').dispatch('change');
+    assert.equal(dom.el('coverGuide').textContent, COVER_GUIDE);
+    await dom.el('begin').dispatch('click');
+    assert.equal(dom.el('opponentLabel').textContent, 'BASELINE NPC');
+    await dom.window.dispatch('keydown', { code: 'Escape' }); await dom.el('endEarly').dispatch('click');
+    assert.equal(JSON.parse(dom.values.get(TELEMETRY_KEY)).bouts.at(-1).opponent, 'cover-control-baseline');
+    assert.equal(dom.values.get(MEMORY_KEY), originalMemory);
+    assert.ok(!dom.writes.includes(MEMORY_KEY)); assert.ok(!dom.removes.includes(MEMORY_KEY));
+    await dom.el('changeMode').dispatch('click');
+    dom.el('gameMode').value = 'DUEL'; await dom.el('gameMode').dispatch('change');
+    assert.equal(dom.el('difficulty').disabled, false); assert.equal(dom.el('coverOpponentSelector').hidden, true);
+    await dom.el('begin').dispatch('click');
+    assert.equal(dom.el('opponentLabel').textContent, 'MIND');
+    await dom.window.dispatch('pagehide');
+    assert.ok(dom.writes.includes(MEMORY_KEY), 'Duel retains its original persistence path');
+  } finally { dom.cleanup(); }
+});
+
+test('Cover test-mode rematches snapshot their new seed and input history for either opponent', async () => {
+  const dom = await appHarness();
+  try {
+    const originalMemory = dom.values.get(MEMORY_KEY);
+    for (const opponent of ['baseline', 'mind']) {
+      dom.api.reset(7, 'COVER_CONTROL', opponent);
+      dom.api.advance(120, Array.from({ length: 120 }, () => ({ moveY: -1 })));
+      await dom.window.dispatch('keydown', { code: 'Escape' }); await dom.el('endEarly').dispatch('click');
+      await dom.el('rematch').dispatch('click');
+      const inputs = Array.from({ length: 180 }, () => ({ moveY: 1 }));
+      dom.api.advance(inputs.length, inputs);
+      const snapshot = dom.api.snapshot();
+      assert.equal(snapshot.coverOpponent, opponent === 'mind' ? 'mind' : undefined);
+      assert.equal(snapshot.inputs.length, snapshot.world.tick);
+      assert.deepEqual(snapshot.inputs, inputs, 'prior bout input history is discarded');
+      const world = createWorld({ gameMode: 'COVER_CONTROL' });
+      const agent = opponent === 'mind' ? createCoverMind({ seed: snapshot.seed }) : createCoverAgent({ seed: snapshot.seed });
+      for (const input of inputs) step(world, [input, agent.act(percept(world, 'P2', 'MODE_B'), 1 / 120)]);
+      assert.equal(snapshot.hash, hashWorld(world), 'snapshot records the rematch seed');
+      assert.equal(dom.api.restore(snapshot), snapshot.hash);
+      assert.equal(dom.el('coverOpponent').value, opponent);
+      assert.equal(dom.el('opponentLabel').textContent, opponent === 'mind' ? 'EXISTING MIND' : 'BASELINE NPC');
+    }
+    assert.equal(dom.values.get(MEMORY_KEY), originalMemory);
+    assert.ok(!dom.writes.includes(MEMORY_KEY)); assert.ok(!dom.removes.includes(MEMORY_KEY));
+  } finally { dom.cleanup(); }
+});
+
+test('Mind View distinguishes experimental Cover traces and restores baseline labels on reload', async () => {
+  const world = createWorld({ gameMode: 'COVER_CONTROL' });
+  const mind = createCoverMind({ seed: 37, captureTrace: true });
+  const logger = createSessionLogger({ world, mode: 'MODE_B' });
+  logger.records[0].agent_technical = [null, mind.settings()];
+  for (let i = 0; i < 180; i++) {
+    const inputs = [{}, mind.act(percept(world, 'P2', 'MODE_B'), 1 / 120)];
+    logger.recordStep(world, inputs, step(world, inputs));
+  }
+  for (const row of mind.trace()) logger.records.push({ recordType: 'MIND_TRACE', mode: 'MODE_B',
+    player: 'P2', step: Math.round(row.time * 120), timestamp: row.time, trace: row });
+  const dom = await appHarness({ page: 'replay' });
+  try {
+    const load = (text) => dom.el('file').dispatch('change', { target: { files: [{ text: async () => text }] } });
+    await load(logger.toJSONL());
+    assert.match(dom.el('verification').textContent, /^VERIFIED/);
+    assert.match(dom.el('focus').textContent, /Existing mind \(experimental\)/);
+    assert.match(dom.el('traceTime').textContent, /not yet taught ring capture/);
+    dom.el('scrub').value = '1.5'; await dom.el('scrub').dispatch('input');
+    assert.match(dom.el('focus').textContent, new RegExp(mind.trace().at(-1).focus));
+    assert.match(dom.el('traceTime').textContent, /Cognitive cycle/);
+    assert.ok(dom.el('saliences').children.length > 0, 'recorded specialists are rendered');
+    assert.ok(dom.el('cognition').children.length > 1, 'recorded processing readouts are rendered');
+    dom.el('scrub').value = '0'; await dom.el('scrub').dispatch('input');
+    assert.match(dom.el('focus').textContent, /Existing mind \(experimental\)/);
+    await load(logger.records.filter((row) => row.recordType !== 'MIND_TRACE').map((row) => JSON.stringify(row)).join('\n'));
+    assert.match(dom.el('focus').textContent, /Existing mind \(experimental\) · No focus/);
+    assert.match(dom.el('saliences').textContent, /No recorded mind trace at this time/);
+    assert.equal(dom.el('saliences').children.length, 0, 'missing traces are never synthesized');
+    await load(createSessionLogger({ world: createWorld({ gameMode: 'COVER_CONTROL' }), mode: 'MODE_B' }).toJSONL());
+    assert.equal(dom.el('focus').textContent, 'Cover Control · baseline NPC');
+    assert.match(dom.el('saliences').textContent, /does not produce a mind trace/);
+    assert.doesNotMatch(dom.el('traceTime').textContent, /hunt\/search|Cognitive cycle/);
   } finally { dom.cleanup(); }
 });
 

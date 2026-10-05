@@ -100,10 +100,13 @@ function recentSpeech(t) {
 }
 function updateSide(trace, frame) {
   const world = frame.world, cover = world.gameMode === 'COVER_CONTROL';
-  $('focus').textContent = cover ? 'Cover Control · baseline NPC' : trace?.focus ?? 'No focus';
+  const coverMind = cover && data.metadata.agent_technical?.[1]?.controller === 'cover-existing-mind-v1';
+  $('focus').textContent = coverMind ? `Existing mind (experimental) · ${trace?.focus ?? 'No focus'}`
+    : cover ? 'Cover Control · baseline NPC' : trace?.focus ?? 'No focus';
   $('traceTime').textContent = cover
     ? `P1 ${world.players[0].score} : ${world.players[1].score} P2 · ${objectiveStatus({ ...world.experiment.OBJECTIVE, ...world.objective }, { P1: 'P1', P2: 'P2' })}`
     : trace ? `Cognitive cycle ${fmt(trace.time)}` : '';
+  if (coverMind) $('traceTime').textContent += ` · Existing hunt/search policy, not yet taught ring capture.${trace ? ` Cognitive cycle ${fmt(trace.time)}` : ''}`;
   for (const [id, rows] of [['cognition', cognitionReadouts(trace)], ['adaptation', adaptationReadouts(trace)]]) {
     $(id).replaceChildren();
     for (const [label, value] of rows) addReadout($(id), label, value);
@@ -111,7 +114,8 @@ function updateSide(trace, frame) {
   $('ignition').textContent = trace?.ignition ? '✦ IGNITION' : '';
   const bars = $('saliences'); bars.replaceChildren(); bars.classList.remove('empty');
   if (!trace) {
-    bars.textContent = cover ? 'Deterministic, percept-only baseline. This opponent does not produce a mind trace or learn across bouts.' : 'No mind trace at this time.';
+    bars.textContent = coverMind ? 'No recorded mind trace at this time. This experimental opponent starts fresh each bout.'
+      : cover ? 'Deterministic, percept-only baseline. This opponent does not produce a mind trace or learn across bouts.' : 'No mind trace at this time.';
     drawAffect(null); $('readouts').replaceChildren(); $('confidence').replaceChildren();
     $('speech').textContent = '—'; $('counterfactual').textContent = '—';
     return;

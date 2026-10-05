@@ -1,8 +1,17 @@
 import { add, sub, scale, distance, inCone, legalPoint, normal, point, clamp } from './math.mjs';
+import { hasLineOfSight } from '../visibility.js';
 
 
 const MAX_SPEED = 4;
 const copy = (p) => point(p.x, p.y);
+
+// Negative evidence must use the percept's public visibility contract. In the
+// opt-in Cover map, a point behind a wall is not expected to be observed merely
+// because it lies in the facing cone. Keep the original Duel arithmetic intact.
+export function expectedVisible(view, target) {
+  return inCone(view.own.position, view.own.facing, target, view.cone.halfAngleRad) &&
+    (!view.cone.occlusion || hasLineOfSight(view.own.position, target, view.arena.obstacles));
+}
 
 export function createBelief(random, ablations = {}, count = 48) {
   const COUNT = Math.max(4, Math.min(48, Math.floor(count)));
@@ -94,21 +103,18 @@ export function createBelief(random, ablations = {}, count = 48) {
     } else {
       hadMissing = true;
       surprise = 0;
-      // A missing body is evidence: particles in the actual current cone are unlikely.
-      const weights = particles.map((p) => inCone(view.own.position, view.own.facing,
-        p.position, view.cone.halfAngleRad) ? 0.005 : 1);
+      // A missing body is evidence only in the actually observable region.
+      const weights = particles.map((p) => expectedVisible(view, p.position) ? 0.005 : 1);
       resample(weights);
       // If every particle was in the cone, resampling weights alone cannot
       // create an alternative hypothesis. Rejuvenate into the unseen region.
       const b = arena.bounds;
       for (const p of particles) {
-        if (!inCone(view.own.position, view.own.facing, p.position,
-          view.cone.halfAngleRad) || random() > 0.82) continue;
+        if (!expectedVisible(view, p.position) || random() > 0.82) continue;
         for (let attempt = 0; attempt < 20; attempt++) {
           const q = legalPoint(point(b.minX + (b.maxX - b.minX) * random(),
             b.minY + (b.maxY - b.minY) * random()), arena);
-          if (!inCone(view.own.position, view.own.facing, q,
-            view.cone.halfAngleRad)) { p.position = q; p.velocity = point(0, 0); break; }
+          if (!expectedVisible(view, q)) { p.position = q; p.velocity = point(0, 0); break; }
         }
       }
     }
@@ -117,8 +123,7 @@ export function createBelief(random, ablations = {}, count = 48) {
         direction: copy(view.opponentSpear.direction), seenAt: now };
     } else if (ablations.noBelief) {
       spear = { state: 'UNKNOWN', position: null, seenAt: -Infinity };
-    } else if (spear.position && inCone(view.own.position, view.own.facing,
-      spear.position, view.cone.halfAngleRad)) {
+    } else if (spear.position && expectedVisible(view, spear.position)) {
       spear = { ...spear, state: 'UNKNOWN' };
     }
     return summary(now);

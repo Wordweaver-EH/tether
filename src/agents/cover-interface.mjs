@@ -34,6 +34,7 @@ export function createCoverInterface(controller, { seed = 1 } = {}) {
         const delayed = queue.shift();
         if ((tick - COVER_INTERFACE.latencyTicks) % COVER_INTERFACE.decisionTicks === 0) {
           const transformed = coverMotorTransform(controller.act(delayed, 1 / 30), previousAngle, normal(random));
+          controller.commitCommand?.(transformed.command, delayed, view.time.elapsedSec);
           previousAngle = transformed.previousAngle; result = transformed.command;
           held = { ...result, throw: false, recall: false };
         }

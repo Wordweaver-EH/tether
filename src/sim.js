@@ -1,3 +1,4 @@
+import { COVER_CONTROL, emptyControl, stepControl } from './cover-control.js';
 import { hypot, sqrt, sinCosTurn } from './deterministic-math.js';
 // Deterministic rules. This module has no rendering, experiment mode, or clock.
 const freeze = (value) => {
@@ -74,7 +75,9 @@ export function createWorld(config = {}) {
     'OUTBOUND_SPEED', 'RETURN_SPEED'];
   if (Object.keys(override).some((key) => !allowed.includes(key)))
     throw new RangeError('unsupported experiment override');
-  const experiment = { ...E, ...override };
+  const gameMode = config.gameMode ?? 'DUEL';
+  if (!['DUEL', 'COVER_CONTROL'].includes(gameMode)) throw new RangeError('invalid gameMode');
+  const experiment = { ...E, ...(gameMode === 'COVER_CONTROL' ? COVER_CONTROL : {}), ...override };
   for (const key of allowed) {
     if (!Number.isFinite(experiment[key]) || experiment[key] <= 0)
       throw new RangeError(`invalid experiment override: ${key}`);
@@ -100,7 +103,7 @@ export function createWorld(config = {}) {
   return { tick: 0, elapsedSec: 0, remainingSec: experiment.BOUT_SECONDS,
     ended: false, technical, experiment,
     experimentOverrides: Object.keys(override).length ? structuredClone(override) : null,
-    players, spears };
+    players, spears, ...(gameMode === 'COVER_CONTROL' ? { gameMode, objective: emptyControl() } : {}) };
 }
 
 // First entry into a closed axis-aligned box. The contact face names the box face.
@@ -403,6 +406,7 @@ export function step(world, inputs) {
       scores: { P1: world.players[0].score, P2: world.players[1].score } });
     resetAfterHit(world);
   }
+  stepControl(world, hits.length > 0, events);
   world.tick++;
   world.elapsedSec = world.tick * DT;
   world.remainingSec = Math.max(0, E.BOUT_SECONDS - world.elapsedSec);
@@ -414,6 +418,8 @@ export function step(world, inputs) {
 export function hashWorld(world) {
   const state = [world.tick, world.elapsedSec, world.remainingSec, world.ended,
     ...(world.experimentOverrides ? [world.experimentOverrides] : []),
+    ...(world.gameMode ? [world.gameMode, world.objective.controller,
+      world.objective.contested, world.objective.holdTicks] : []),
     world.technical.moveDeadzone, world.technical.aimDeadzone, world.technical.epsilon,
     ...world.players.flatMap((p) => [p.id, p.position.x, p.position.y,
       p.velocity.x, p.velocity.y, p.facing.x, p.facing.y, p.score]),

@@ -1,5 +1,5 @@
 import { CONSTANTS, createWorld, hashWorld, step } from './sim.js';
-import { isVisible } from './perception.js';
+import { pointVisible } from './perception.js';
 import { MATH_VERSION } from './deterministic-math.js';
 
 // Records are JSON values. Compare all keys recursively, independent of order.
@@ -23,13 +23,13 @@ function visibility(world, index, mode) {
   const ownSpear = world.spears[index];
   const enemySpear = world.spears[1 - index];
   const opponentVisible = mode === 'MODE_A' ||
-    isVisible(own.position, own.facing, enemy.position);
+    pointVisible(world, own, enemy.position);
   return {
     opponent_visible: opponentVisible,
     own_nonheld_spear_visible: ownSpear.state !== 'HELD' &&
-      (mode === 'MODE_A' || isVisible(own.position, own.facing, ownSpear.position)),
+      (mode === 'MODE_A' || pointVisible(world, own, ownSpear.position)),
     enemy_nonheld_spear_visible: enemySpear.state !== 'HELD' &&
-      (mode === 'MODE_A' || isVisible(own.position, own.facing, enemySpear.position)),
+      (mode === 'MODE_A' || pointVisible(world, own, enemySpear.position)),
   };
 }
 
@@ -53,6 +53,7 @@ function sample(world, mode) {
     recordType: 'SAMPLE', mode, step: world.tick,
     timestamp: world.elapsedSec, bout_elapsed_time: world.elapsedSec,
     players, spears,
+    ...(world.gameMode ? { objective: clone(world.objective) } : {}),
     visibility_from_P1: visibility(world, 0, mode),
     visibility_from_P2: visibility(world, 1, mode),
     hash: hashWorld(world),
@@ -64,16 +65,16 @@ function trackedEntities(world, viewerIndex) {
   const enemy = world.players[1 - viewerIndex];
   const ownSpear = world.spears[viewerIndex];
   const enemySpear = world.spears[1 - viewerIndex];
-  const opponentVisible = isVisible(own.position, own.facing, enemy.position);
+  const opponentVisible = pointVisible(world, own, enemy.position);
   return [
     { entity_id: enemy.id, entity_type: 'PLAYER', entity_pos: copy(enemy.position),
       visible: opponentVisible },
     { entity_id: `${own.id}_SPEAR`, entity_type: 'SPEAR',
       entity_pos: copy(ownSpear.position), visible: ownSpear.state === 'HELD' ||
-        isVisible(own.position, own.facing, ownSpear.position) },
+        pointVisible(world, own, ownSpear.position) },
     { entity_id: `${enemy.id}_SPEAR`, entity_type: 'SPEAR',
       entity_pos: copy(enemySpear.position), visible: enemySpear.state === 'HELD'
-        ? opponentVisible : isVisible(own.position, own.facing, enemySpear.position) },
+        ? opponentVisible : pointVisible(world, own, enemySpear.position) },
   ];
 }
 
@@ -95,7 +96,8 @@ export function createSessionLogger({ world, mode, sessionId = 'session-1',
   if (mode !== 'MODE_A' && mode !== 'MODE_B') throw new RangeError('invalid mode');
   if (world.tick !== 0) throw new RangeError('logger must start at step 0');
   const records = [{
-    recordType: 'METADATA', mode, session_id: sessionId, bout_id: boutId,
+    recordType: 'METADATA', mode,
+    ...(world.gameMode ? { game_mode: world.gameMode } : {}), session_id: sessionId, bout_id: boutId,
     timestamp_start: timestampStart, experiment_mode: mode,
     experiment_constants: clone(world.experiment ?? E), simulation_math: MATH_VERSION, sim_rate: T.SIM_HZ,
     render_rate: renderRate,
@@ -158,14 +160,7 @@ export function replayFromLog(lines) {
   if (metadata.simulation_math !== MATH_VERSION)
     throw new Error(`log math version ${metadata.simulation_math ?? 'legacy-native (unversioned)'} does not match ${MATH_VERSION}; replay legacy logs with their original source build and producing runtime`);
   if (metadata.sim_rate !== T.SIM_HZ) throw new Error('log constants do not match this build');
-  const overrides = {};
-  for (const key of ['PLAYER_SPEED', 'TURN_RATE_RAD', 'OUTBOUND_SPEED', 'RETURN_SPEED']) {
-    if (metadata.experiment_constants?.[key] !== E[key]) overrides[key] = metadata.experiment_constants?.[key];
-  }
-  if (!isDeepStrictEqual(metadata.experiment_constants, { ...E, ...overrides }))
-    throw new Error('log constants do not match this build');
-  const world = createWorld({ experiment: overrides, moveDeadzone: metadata.deadzones.move,
-    aimDeadzone: metadata.deadzones.aim, epsilon: metadata.epsilon });
+  const world = createWorld(worldConfigFromMetadata(metadata));
   const logger = createSessionLogger({ world, mode: metadata.mode });
   const actual = records.slice(1).filter((record) => record.recordType !== 'MIND_TRACE');
   let pending = {};
@@ -203,4 +198,18 @@ export function replayFromLog(lines) {
     if (record.recordType === 'SAMPLE') verifiedSamples++;
   }
   return { world, verifiedSamples, finalHash: hashWorld(world) };
+}
+
+// Shared by verifier and replay renderer, so optional map/rules cannot diverge.
+export function worldConfigFromMetadata(metadata) {
+  const gameMode = metadata.game_mode ?? 'DUEL';
+  const base = createWorld({ gameMode }).experiment;
+  const overrides = {};
+  for (const key of ['PLAYER_SPEED', 'TURN_RATE_RAD', 'OUTBOUND_SPEED', 'RETURN_SPEED']) {
+    if (metadata.experiment_constants?.[key] !== base[key]) overrides[key] = metadata.experiment_constants?.[key];
+  }
+  if (!isDeepStrictEqual(metadata.experiment_constants, { ...base, ...overrides }))
+    throw new Error('log constants do not match this build');
+  return { gameMode, experiment: overrides, moveDeadzone: metadata.deadzones.move,
+    aimDeadzone: metadata.deadzones.aim, epsilon: metadata.epsilon };
 }

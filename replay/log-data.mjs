@@ -1,5 +1,5 @@
 import { createWorld, step, snapshotWorld, CONSTANTS } from '../src/sim.js';
-import { replayFromLog } from '../src/log.js';
+import { replayFromLog, worldConfigFromMetadata } from '../src/log.js';
 
 export function parseLog(text) {
   const records = (typeof text === 'string' ? text.split(/\r?\n/) : text)
@@ -13,8 +13,7 @@ export function parseLog(text) {
     r.step !== i * (CONSTANTS.technical.SIM_HZ / CONSTANTS.experiment.STATE_LOG_HZ)))
     throw new Error('Missing or out-of-order state samples');
   const metadata = records[0];
-  const world = createWorld({ moveDeadzone: metadata.deadzones.move,
-    aimDeadzone: metadata.deadzones.aim, epsilon: metadata.epsilon });
+  const world = createWorld(worldConfigFromMetadata(metadata));
   const events = records.filter((r) => r.recordType === 'EVENT');
   const traces = records.filter((r) => r.recordType === 'MIND_TRACE' && r.player === 'P2')
     .map((r) => r.trace).sort((a, b) => a.time - b.time);
@@ -53,7 +52,7 @@ export function parseLog(text) {
       sweeps = [];
     }
   }
-  const jumps = events.filter((r) => ['HIT', 'EMBED', 'RECALL_START', 'RECALL_COMPLETE', 'SPEAR_NEUTRALIZED'].includes(r.type))
+  const jumps = events.filter((r) => ['HIT', 'EMBED', 'RECALL_START', 'RECALL_COMPLETE', 'SPEAR_NEUTRALIZED', 'CONTROL_POINT'].includes(r.type))
     .map((r) => ({ time: r.timestamp, label: r.type.replaceAll('_', ' '), type: r.type }));
   for (let i = 1; i < traces.length - 1; i++) {
     const value = traces[i].surprise ?? 0;

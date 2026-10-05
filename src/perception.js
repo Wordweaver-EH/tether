@@ -1,7 +1,6 @@
 import { CONSTANTS } from './sim.js';
 import { hasLineOfSight } from './visibility.js';
 
-const E = CONSTANTS.experiment;
 const copy = (point) => ({ x: point.x, y: point.y });
 
 export function isVisible(viewerPos, viewerFacing, targetPos) {

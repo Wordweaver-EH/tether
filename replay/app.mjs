@@ -2,7 +2,8 @@ import { cognitionReadouts, adaptationReadouts, counterfactualReadout } from '..
 import { CONSTANTS } from '../src/sim.js';
 import { parseLog, nearestFrame, traceAt } from './log-data.mjs';
 import { PALETTE, prepareCanvas, beginWorld, drawArena, drawCone,
-  drawWorldEntities } from '../client/canvas.mjs';
+  drawObjective, drawWorldEntities } from '../client/canvas.mjs';
+import { objectiveStatus } from '../client/cover-display.mjs';
 
 const $ = (id) => document.getElementById(id);
 const colors = { Hunt: '#70dfc1', Threat: '#ed967c', Anchor: '#d1ba7a',
@@ -30,11 +31,15 @@ function drawBelief(ctx, trace) {
 function drawReplay(frame, trace) {
   const { ctx, vp, width, height } = prepareCanvas($('arena'));
   beginWorld(ctx, vp, width, height);
-  drawArena(ctx, { bounds: CONSTANTS.experiment.ARENA, obstacles: CONSTANTS.experiment.OBSTACLES });
   const w = frame.world;
+  const experiment = w.experiment ?? CONSTANTS.experiment;
+  const arena = { bounds: experiment.ARENA, obstacles: experiment.OBSTACLES };
+  const cover = w.gameMode === 'COVER_CONTROL';
+  drawArena(ctx, arena);
   if (layers.cones) for (const p of w.players) drawCone(ctx, {
     origin: p.position, facing: p.facing, halfAngleRad: CONSTANTS.experiment.FOV_HALF_ANGLE_RAD,
-  }, PALETTE[p.id], 0.075);
+    occlusion: cover && data.metadata.mode === 'MODE_B',
+  }, PALETTE[p.id], 0.075, arena);
   if (layers.humanCone && trace?.opponentCone) drawCone(ctx, {
     ...trace.opponentCone, halfAngleRad: CONSTANTS.experiment.FOV_HALF_ANGLE_RAD,
   }, '#f2d378', 0.065 * (trace.opponentCone.confidence ?? 1));
@@ -50,6 +55,7 @@ function drawReplay(frame, trace) {
     ctx.strokeStyle = PALETTE[segment.owner]; ctx.globalAlpha = 0.38; ctx.lineWidth = 0.035; ctx.stroke();
   }
   ctx.globalAlpha = 1;
+  if (cover) drawObjective(ctx, { ...experiment.OBJECTIVE, ...w.objective });
   if (layers.belief) drawBelief(ctx, trace);
   if (layers.world) drawWorldEntities(ctx, w.players, w.spears);
   ctx.restore();
@@ -92,9 +98,12 @@ function recentSpeech(t) {
   }
   return lines.reverse().join('\n') || '—';
 }
-function updateSide(trace) {
-  $('focus').textContent = trace?.focus ?? 'No focus';
-  $('traceTime').textContent = trace ? `Cognitive cycle ${fmt(trace.time)}` : ''; 
+function updateSide(trace, frame) {
+  const world = frame.world, cover = world.gameMode === 'COVER_CONTROL';
+  $('focus').textContent = cover ? 'Cover Control · baseline NPC' : trace?.focus ?? 'No focus';
+  $('traceTime').textContent = cover
+    ? `P1 ${world.players[0].score} : ${world.players[1].score} P2 · ${objectiveStatus({ ...world.experiment.OBJECTIVE, ...world.objective }, { P1: 'P1', P2: 'P2' })}`
+    : trace ? `Cognitive cycle ${fmt(trace.time)}` : '';
   for (const [id, rows] of [['cognition', cognitionReadouts(trace)], ['adaptation', adaptationReadouts(trace)]]) {
     $(id).replaceChildren();
     for (const [label, value] of rows) addReadout($(id), label, value);
@@ -102,7 +111,7 @@ function updateSide(trace) {
   $('ignition').textContent = trace?.ignition ? '✦ IGNITION' : '';
   const bars = $('saliences'); bars.replaceChildren(); bars.classList.remove('empty');
   if (!trace) {
-    bars.textContent = 'No mind trace at this time.';
+    bars.textContent = cover ? 'Deterministic, percept-only baseline. This opponent does not produce a mind trace or learn across bouts.' : 'No mind trace at this time.';
     drawAffect(null); $('readouts').replaceChildren(); $('confidence').replaceChildren();
     $('speech').textContent = '—'; $('counterfactual').textContent = '—';
     return;
@@ -152,7 +161,7 @@ function update() {
   if (!data) return;
   const frame = nearestFrame(data.frames, time), trace = traceAt(data.traces, time);
   if (frame !== lastFrame || trace !== lastTrace) {
-    drawReplay(frame, trace); updateSide(trace); drawTimeline();
+    drawReplay(frame, trace); updateSide(trace, frame); drawTimeline();
     lastFrame = frame; lastTrace = trace;
   }
   $('scrub').value = String(time); $('clock').textContent = `${fmt(time)} / ${fmt(data.duration)}`;

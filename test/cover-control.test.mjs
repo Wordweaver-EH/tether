@@ -127,3 +127,31 @@ test('Cover log and replay frame reconstruction round-trip geometry, public stat
   const altered=structuredClone(logger.records);delete altered[0].game_mode;assert.throws(()=>replayFromLog(altered),/constants/);
   const sampled=logger.records.find(r=>r.recordType==='SAMPLE');assert.equal(sampled.visibility_from_P1.opponent_visible,false);
 });
+
+test('Cover embodiment delays all percept fields 150ms, decides at 30Hz, and does not repeat button edges', async () => {
+  const {createCoverInterface,COVER_INTERFACE,coverMotorTransform}=await import('../src/agents/cover-interface.mjs');
+  const {motorTransform}=await import('../benchmark/interface.mjs');
+  const calls=[];const controller={settings:()=>({}),act:(view,dt)=>{calls.push({view,dt});return {moveX:1,aimX:1,aimY:.2,throw:true,recall:true};}};
+  const wrapped=createCoverInterface(controller,{seed:19}),w=cover();const output=[];
+  for(let tick=0;tick<27;tick++){
+    const view=percept(w,'P1','MODE_B');view.objective.holdTicks=tick;
+    output.push(wrapped.act(view,1/120));step(w,[{},{}]);
+  }
+  assert.equal(output.slice(0,18).some(a=>Object.values(a).some(Boolean)),false);
+  assert.deepEqual(calls.map(c=>c.view.time.elapsedSec),[0,4/120,8/120]);
+  assert.deepEqual(calls.map(c=>c.view.objective.holdTicks),[0,4,8]);assert.ok(calls.every(c=>c.dt===1/30));
+  assert.deepEqual(output.map((a,i)=>a.throw?i:null).filter(v=>v!==null),[18,22,26]);
+  assert.equal(output[19].moveX,1);assert.equal(output[19].recall,false);
+  assert.equal(COVER_INTERFACE.latencySec,.15);assert.equal(COVER_INTERFACE.decisionHz,30);
+  for(const sample of [-2,0,1.2])for(const angle of [-2,0,2])assert.deepEqual(coverMotorTransform({aimX:.2,aimY:.8,throw:true},angle,sample),motorTransform({aimX:.2,aimY:.8,throw:true},angle,sample));
+});
+
+test('seeded Cover agents reproduce complete inputs and logs in both visibility modes', () => {
+  for(const mode of ['MODE_A','MODE_B']) {
+    function run(){const w=cover(),agents=[createCoverAgent({seed:37}),createCoverAgent({seed:12})];
+      const logger=createSessionLogger({world:w,mode,timestampStart:'fixed',seed:37});
+      for(let i=0;i<900;i++){const inputs=agents.map((a,j)=>a.act(percept(w,`P${j+1}`,mode),1/120));logger.recordStep(w,inputs,step(w,inputs));}
+      return logger.toJSONL();}
+    const a=run(),b=run();assert.equal(a,b);assert.ok(replayFromLog(a).verifiedSamples>1);
+  }
+});

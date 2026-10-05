@@ -1,3 +1,4 @@
+import { createCoverInterface, COVER_INTERFACE } from './cover-interface.mjs';
 // Deliberately small, untrained baseline. Only the same percept exposed to a
 // human enters this controller; there is no world, opponent oracle or learning.
 export function controlRoute(viewerId, route = 'north') {
@@ -9,7 +10,7 @@ export function controlRoute(viewerId, route = 'north') {
     { x: side * 2.1, y: 0 }, { x: side * 0.55, y: 0 }];
 }
 
-export function createCoverAgent({ seed = 1, route = null } = {}) {
+function createCoverController({ seed = 1, route = null } = {}) {
   if (route !== null && !['north', 'south'].includes(route)) throw new RangeError('invalid route');
   let waypoint = 0, previous = null;
   const selected = route ?? ((seed >>> 0) % 2 ? 'north' : 'south');
@@ -17,19 +18,22 @@ export function createCoverAgent({ seed = 1, route = null } = {}) {
     settings: () => ({ controller: 'cover-control-baseline-v1', route: selected, seed }),
     act(view) {
       if (view.gameMode !== 'COVER_CONTROL') throw new RangeError('Cover Control percept required');
-      const own = view.own.position;
+      const measured = view.own.position;
+      // Predict only our own motion through the known sensor delay.
+      const own = { x: measured.x + view.own.velocity.x * COVER_INTERFACE.latencySec,
+        y: measured.y + view.own.velocity.y * COVER_INTERFACE.latencySec };
       const side = view.viewerId === 'P1' ? -1 : 1;
       // Recognize the ordinary public reset from our own teleport, never from
       // hidden hit data. Keep the chosen route stable for seeded replay.
-      if (previous && Math.abs(own.x - side * 5.5) < 0.1 && Math.abs(own.y) < 0.1 &&
-          (own.x - previous.x) ** 2 + (own.y - previous.y) ** 2 > 1) waypoint = 0;
-      previous = { ...own };
+      if (previous && Math.abs(measured.x - side * 5.5) < 0.1 && Math.abs(measured.y) < 0.1 &&
+          (measured.x - previous.x) ** 2 + (measured.y - previous.y) ** 2 > 1) waypoint = 0;
+      previous = { ...measured };
       const path = controlRoute(view.viewerId, selected);
       while (waypoint < path.length - 1 &&
-          (own.x - path[waypoint].x) ** 2 + (own.y - path[waypoint].y) ** 2 < 0.10 ** 2) waypoint++;
+          (own.x - path[waypoint].x) ** 2 + (own.y - path[waypoint].y) ** 2 < 0.20 ** 2) waypoint++;
       const target = path[waypoint];
       const dx = target.x - own.x, dy = target.y - own.y;
-      const moving = dx * dx + dy * dy > 0.06 ** 2;
+      const moving = dx * dx + dy * dy > 0.16 ** 2;
       const enemy = view.opponent?.position;
       const look = enemy ? { x: enemy.x - own.x, y: enemy.y - own.y } : moving ?
         { x: dx, y: dy } : [{ x: -side, y: 0 }, { x: 0, y: -1 },
@@ -44,4 +48,8 @@ export function createCoverAgent({ seed = 1, route = null } = {}) {
         recall: !view.own.spear || view.own.spear.state === 'EMBEDDED' };
     },
   };
+}
+
+export function createCoverAgent(options = {}) {
+  return createCoverInterface(createCoverController(options), options);
 }

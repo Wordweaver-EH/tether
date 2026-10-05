@@ -1,3 +1,5 @@
+> Optional prototype (2026-10-05): [Cover Control](COVER_CONTROL.md) adds sight-blocking cover, two routes and one public control ring. Choose it explicitly at the start screen; Duel remains the default, with unchanged rules and cognitive controller. The prototype uses a separate delayed/noisy conventional baseline NPC.
+
 > Current version (2026-10-03): the default controller is now the experimental rebuilt N/S + C1/C2 checkpoint. Start with [CURRENT_STATUS.md](CURRENT_STATUS.md) for 264-test verification, source identity, completed new evidence and remaining gaps. The older study results and source manifests below apply only to their explicitly named historical versions.
 
 # Tether
@@ -28,7 +30,7 @@ Prediction and adaptive gaze helped in original v2; the narrow opponent-cone heu
 node serve.mjs
 ```
 
-Open `http://localhost:8765/`. The server binds only to localhost. Choose easy, normal, or hard, and Mode B (forward cone, default) or Mode A (full view). Bouts last five minutes.
+Open `http://localhost:8765/`. The server binds only to localhost. Choose Duel (default) or optional Cover Control. Duel offers easy, normal, or hard; Cover Control uses its own fixed baseline. Both offer Mode B (forward cone, with wall occlusion in Cover Control) or Mode A (full view). Bouts last five minutes. See [Cover Control rules and verification](COVER_CONTROL.md).
 
 - WASD moves; the mouse sets desired facing, subject to the 360°/second turn limit
 - Left click throws; right click or Space recalls an embedded spear

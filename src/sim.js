@@ -1,6 +1,6 @@
 import { COVER_CONTROL, emptyControl, stepControl } from './cover-control.js';
 import { hypot, sqrt, sinCosTurn } from './deterministic-math.js';
-// Deterministic rules. This module has no rendering, experiment mode, or clock.
+// Deterministic rules. This module has no rendering or wall clock.
 const freeze = (value) => {
   if (value && typeof value === 'object') {
     for (const child of Object.values(value)) freeze(child);

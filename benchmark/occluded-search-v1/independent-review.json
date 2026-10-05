@@ -1,0 +1,49 @@
+{
+  "reviewer": "Independent occluded-search reviewer",
+  "status": "APPROVED_FOR_ROOT_RELEASE_AFTER_VERIFIED_GIT_CHECKPOINT",
+  "approved": true,
+  "freezeSha256": "74ee8d6f4c25f34b50642d4e217bc3dd04b933ca7895bd91330948d1e48f474f",
+  "runnerSha256": "f804bf7ffbe39df4cfac3586d2cfb70d863c87fac61a48a5e93be020ed738329",
+  "protocolSha256": "a11b7a4339a385d564fb374156cff664b2b47700f4a5c86286ebd154fe51d641",
+  "sceneDigest": "ca1851915c13cd65641cb7a8d617533591280df132738e4999260083adcae4d2",
+  "scoredPolicyOutcomesInspected": false,
+  "blockingIssues": [],
+  "verification": [
+    "Exact frozen runtime, protocol, tests and scene digest independently recomputed and matched.",
+    "Default commands, full traces, cognition and exported memory exactly matched published pre-adapter 91f0d7a source across 24 synthetic configurations and 8,640 frames.",
+    "Two differing hidden target worlds gave identical legal percepts, commands and traces across 120 open-loop frames.",
+    "Recovered Cover mind and occluded-search synthetic/geometry tests independently rerun: 10 passed, 0 failed.",
+    "32 geometry-only scenes valid, 16 dependent mirror pairs, 16/16 seat balance; fixed setup gaze does not track concealed state.",
+    "Full normal mind remains primary; isolated learning-frozen profile is secondary only.",
+    "Broad hidden-only cut closes declared particle, facing, drift, episodic-read, attention/planner delivery and monitor-control paths; reflex excluded by assertion.",
+    "Intact-history benefit, difference-in-differences and always-visible parity gates prevent a broad-cut prior effect alone from qualifying as remembered-target benefit.",
+    "Complete 288-row condition allocation is checked; primary statistics exclude controls; paired stratified mirror-cluster bootstrap preserves dependencies.",
+    "Three consecutive received sightings, fixed missing release, bounded endpoint and terminal physicalStepFollows semantics reviewed.",
+    "Current-controller workspace compatibility fixture copies the new visibility dependency identically; historical source manifests are unchanged."
+  ],
+  "remainingPrerequisites": [
+    "Root must verify exact Git checkpoint and explicitly release the first scored run."
+  ],
+  "interpretationLimits": [
+    "Narrow shallow-corner search with stationary target after concealment and equally suppressed weapons; no general gameplay benefit follows.",
+    "Broad target-history-path lesion changes uncertainty, strategy use and random-number consumption; it is not an isolated episodic-memory or total-amnesia intervention.",
+    "Ordinary within-episode learning remains active; its intent ledger can record throws suppressed by the assay.",
+    "Conventional tracker is one fixed simple controller, not the strongest possible baseline; common declared logical cap is not equal total computation.",
+    "No subjective experience, consciousness, general intelligence or unique architectural advantage follows from this assay."
+  ],
+  "recovery": "Earlier temporary artifacts were lost in the execution filesystem reset; listed parity and synthetic checks were regenerated after recovery.",
+  "artifacts": {
+    "independent-parity.mjs": {
+      "sha256": "c26dbd3d5ea37021ae27f11fa2fde9d3870f8abcff430a483a43bf67712e1718",
+      "bytes": 2977
+    },
+    "independent-parity-result.jsonl": {
+      "sha256": "d28a2cd16119b5638a902c921cac132c9f6d54deda53bbe84360260f828190a8",
+      "bytes": 349
+    },
+    "recovered-synthetic-tests.txt": {
+      "sha256": "ad0296db3c05976ac51f5a94b5d6c6d31170ab1f03a96a6fc2f0595e2407d7b7",
+      "bytes": 1092
+    }
+  }
+}

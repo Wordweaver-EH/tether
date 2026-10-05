@@ -1,0 +1,18 @@
+{
+  "approved": true,
+  "status": "HUMAN_REPORT_ACCURACY_REVIEW_PASS",
+  "reviewedAt": "2026-10-03T13:13:24.744209+00:00",
+  "reportPath": "/workspace/scratch/75679def3745/tether-final-report/TETHER-ROBUSTNESS-REPORT.txt",
+  "reportSha256": "5796e3ed4dcc1560694a068bde0be0d656c8c39e0c9bbe97ba0ebbc23d33d78c",
+  "numericReviewSha256": "b670a51c9fe0c276c3bcc4350c657eca8ccace208bc3c6d3d66a16673e315c65",
+  "machineReportSha256": "0beae12c0f132fd87e43af3164ae487b1453d9df55a1b7bf377e0e24c659532e",
+  "scope": [
+    "Headline negative primary result and both guards",
+    "Default HIT counts/rates and relative-drop direction/units",
+    "Useful2x/4x sensitivity panels and harm veto",
+    "Recovery, completed-native calibration target, Type2/novelty and ablation statements",
+    "Source/training/exploratory bootstrap/recovery and timing/CPU limitations",
+    "No complete remote-backup claim; unmeasured human checks separate; no next study"
+  ],
+  "outstandingIssues": []
+}

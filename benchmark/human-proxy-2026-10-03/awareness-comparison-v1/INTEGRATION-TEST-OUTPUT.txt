@@ -1,0 +1,21 @@
+✔ arbitration exact no warning and unchanged passthrough (1.543953ms)
+✔ scan uses sole aim, withholds throw, preserves recall and exact certified movement (0.376706ms)
+✔ unchanged wrapper byte-equivalent through actual motor commits on synthetic packet sequence (13.206341ms)
+✔ quiet awareness is byte-equivalent; real frozen warning integrates exact scan/movement (0.90431ms)
+✔ final issued movement reaches awareness tie memory, and suppressed throw is not committed as throw (0.549386ms)
+✔ existing interface provides exactly one latency queue, cadence and motor sample (5.089629ms)
+✔ actual MODE_B packet excludes enemy target; unused truth sentinels cannot enter controllers (1.114838ms)
+✔ frozen prototype byte identity and exact fresh paired manifest (1.748231ms)
+✔ main is gated and CLI has no default gameplay (196.344087ms)
+✔ release is bound to exactly one absolute output and positive disk reserve (0.434654ms)
+✔ lossless completed-gzip identity rejects corruption and incomplete records (1.516502ms)
+✔ synthetic event accounting uses RECALL_START.owner and HIT phase rather than inferred state (0.52525ms)
+✔ all prior raw and frozen source identities still verify (2659.057283ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2953.028393

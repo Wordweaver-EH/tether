@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "verdict": "PASS-prerelease-independent-review",
+  "reviewedAt": "2026-10-04T01:15:11.381Z",
+  "reviewer": "review_awareness_comparison_protocol",
+  "freezeSha256": "356e9f22241dcd44429041eccc6680c7c0d31d3483ea6051eb7c3980f9f43343",
+  "freezeFileSha256": "a1e2c41539d9f27374bdc353cbcffba031c7b5c8cb6b9e8ee3adb885345fbc89",
+  "freezeMatchesCurrentSource": true,
+  "packageFileCount": 30,
+  "dependencyFileCount": 52,
+  "sourceHashes": {
+    "PREDECLARATION.md": "c03221bc1cd607bb63ebcf628f66d4554ea73aa32a0d037424b6024c7ae13cfd",
+    "RECOVERY-POLICY.md": "0db339ff751bcc07f3b281aac6b466cc3e2ca0c09b255197bb2d9a84692808ad",
+    "controller.mjs": "95e1ddbd56a32847301f91048a46fdc7df5f03b92ee6c5b2385664e3248717e1",
+    "frozen-awareness.mjs": "bb78bce500b06697b3ab6c9320c55ce52691b43f4714dce224fad9cc3f409250",
+    "protocol.mjs": "9f10f6b60f246ede6417d211d76aa5d3a5b9cdfccd0f1cc1f383a62c4ee2b9bd",
+    "run.mjs": "7c00854cb97defbe36d81524ed89a67d6e0b563748b0ba327bbac1100566b23b",
+    "statistics.mjs": "1388b47ad8c942011ccda66c434ed1aa660e7b82b035472b9bdec97e657cd969",
+    "RUN-MANIFEST.json": "59fe962e36706a4f897535ffd69d4ea41c1ea7bdd1d6587e2c769c826a16515a",
+    "seeds.json": "8b77809009227aa64b50e1eb5e36f22884ad2f5a88364dac0121c459a20b7014",
+    "DEVELOPMENT-LOG.md": "e5b3f1d12286b2bb3f94f3b9bdec2cb90822baaf6be48bfceec08dda87756abe",
+    "SMOKE-STRUCTURAL-RESULT.json": "8a19a922131f393845c56db3dc0ec5d81acbaa5a5cf27a4c87a8f6dd7782f6ed"
+  },
+  "originalIntegrity": {
+    "ordinary": {
+      "arm": "conventional",
+      "id": "conventional-g5-c0",
+      "level": null,
+      "vector": [
+        0.2232754042251036,
+        0.5398771175894266,
+        0.733876585025197,
+        0.4906195347057983,
+        0.3885911001889035,
+        0.3062100098254158,
+        1,
+        0.07266486261039973,
+        0.11554968237876893,
+        0.3807369380090385,
+        0.3889320341843683,
+        0.7746265225203877,
+        0.40983384828362623,
+        0.9752428147941827,
+        0.894988076557095,
+        0.4378310157796368,
+        1,
+        0.11297092713415623,
+        0,
+        0,
+        0.33838236861862225
+      ],
+      "parameterSha256": "eaa8c3a9b3dc539f13e8c9aae59b4160009b0ed351f1bf1a847dbc0eba29806a",
+      "qualifiedCommit": "36398123d89881576443145b0b7826c8cf2203c9",
+      "publicHeadVerified": "0e54ee3a3d72802f58251941f07f62ae49a6047f"
+    },
+    "originalRawChecked": true,
+    "originalFrozenFiles": 20,
+    "originalRawFileCount": 64,
+    "priorFileCount": 91
+  },
+  "testReruns": {
+    "comparison": {
+      "passed": 28,
+      "failed": 0,
+      "exit": 0,
+      "output": "FINAL-COMPARISON-TEST-OUTPUT-v2.txt"
+    },
+    "baseAndInterface": {
+      "passed": 50,
+      "failed": 0,
+      "exit": 0,
+      "output": "FINAL-BASE-TEST-OUTPUT.txt"
+    },
+    "prototype": {
+      "passed": 22,
+      "failed": 0,
+      "exit": 0,
+      "output": "FINAL-PROTOTYPE-TEST-OUTPUT.txt"
+    }
+  },
+  "independentChecks": {
+    "syntheticBootstrap": "INDEPENDENT-STATISTICS-CHECK.json",
+    "smokeHashesAndFinalStatistics": "SMOKE-INTEGRITY-AND-STATISTICS-RECHECK.json",
+    "fullMatchesExecutedByReviewer": 0,
+    "gitWritesByReviewer": 0,
+    "mainOutcomesInspectedByReviewer": false
+  },
+  "design": {
+    "clusters": 32,
+    "seats": 2,
+    "arms": 2,
+    "rows": 128,
+    "durationSec": 300,
+    "inferentialUnit": "paired seed cluster",
+    "counterLatencySec": 0.25,
+    "ordinaryLatencySec": 0.15,
+    "primaryEstimand": "awareness minus unchanged net physical HITs per minute",
+    "attribution": "whole awareness, scan, certified movement and scan-withheld-throw intervention package"
+  },
+  "resolvedFindings": [
+    "all-artifact attempt numbering handles started-only interruption",
+    "atomic fsynced no-overwrite JSON checkpoints",
+    "idempotent validated finalization",
+    "explicit root-approved startup-only recovery",
+    "post-scan first later source-grid sample is receipt+2 ticks",
+    "all-evidence expiration and all-received-score-change metric semantics documented"
+  ],
+  "remainingBlockers": [],
+  "releaseConditions": [
+    "root verified Git checkpoint must contain this exact freeze",
+    "root release must name this freeze and one absolute outputDir",
+    "main execution remains separately gated",
+    "independent saved-result review before any efficacy claim"
+  ]
+}

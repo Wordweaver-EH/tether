@@ -27,6 +27,10 @@ export function runGameBout({ game, adapter, agents, mode, seed = 1,
         records.push({ type: 'hash', tick: tick + 1, hash: game.hashWorld(world) });
     }
   }
+  // Settle the last observed outcome, including the terminal scoring step.
+  // Optional for scripted agents; minds expose an idempotent finish hook.
+  agents.forEach((agent, index) => agent.finish?.(
+    structuredClone(game.percept(world, ids[index], mode))));
   const traces = captureTraces ? agents.map((agent) => agent.trace?.() ?? []) : null;
   if (records && traces) {
     for (let i = 0; i < 2; i++) {

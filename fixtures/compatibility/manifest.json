@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Bounded frozen controller fixtures for structural compatibility, not evaluation evidence",
+  "origins": {
+    "rebuilt-s": {
+      "commit": "a514c0f7f95f6df1bb987bee315830261b5c6188",
+      "scope": "Complete src/mind import closure"
+    },
+    "original-v2": {
+      "sourceFingerprint": "19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5",
+      "scope": "src/mind/workspace.mjs only",
+      "manifest": "reports/provenance/source-manifest.json"
+    }
+  },
+  "historicalAffectTest": {
+    "path": "docs/build-history/affect-test.pre-c1c2.mjs.txt",
+    "sha256": "3286197484c6b4d1bd910c52bf27b1a428dec9dfcd19e96f4fa12a71a1f99789"
+  },
+  "files": {
+    "original-v2/src/mind/workspace.mjs": "99fc7e9723e5a08f1ecf6e2e470c4608b53615e092be1a2e29ac192e5ed64767",
+    "rebuilt-s/src/mind/belief.mjs": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8",
+    "rebuilt-s/src/mind/cognition.mjs": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+    "rebuilt-s/src/mind/components.mjs": "79091c38a2c9553d3e94652822dc1c04c1f64ef69b8ac30593450054257fa050",
+    "rebuilt-s/src/mind/index.mjs": "60b493ea450abbc9e9fa8d3d3cdeedd448ae46783d9e5590f3227f88bbb58063",
+    "rebuilt-s/src/mind/math.mjs": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+    "rebuilt-s/src/mind/novelty.mjs": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468",
+    "rebuilt-s/src/mind/own-spear.mjs": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+    "rebuilt-s/src/mind/percept-contact.mjs": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+    "rebuilt-s/src/mind/rollout-completion.mjs": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+    "rebuilt-s/src/mind/specialists.mjs": "b69ab03ff4c964be7e651450837e75ac208c51c1ee9241f374f27dad17068379",
+    "rebuilt-s/src/mind/workspace.mjs": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9"
+  }
+}

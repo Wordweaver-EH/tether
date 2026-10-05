@@ -1,0 +1,34 @@
+> Current version (2026-10-03): the default controller is now the experimental rebuilt N/S + C1/C2 checkpoint. Start with [CURRENT_STATUS.md](CURRENT_STATUS.md) for 264-test verification, source identity, completed new evidence and remaining gaps. The older study results and source manifests below apply only to their explicitly named historical versions.
+
+# Reproduce and verify
+
+Use Node v24.19.0, the evaluated runtime. No package installation or build is required.
+
+## Current code and regression tests
+
+```sh
+git fetch origin data/tether-evidence-2026-10-02
+node --test
+node tools/math-audit.mjs
+node serve.mjs
+```
+
+The cross-build affect regression automatically materializes the original runtime into a temporary directory from pinned evidence commit `c3b8814bb92e4086d273e2c525b722de4144a17a`. It checks all 55 runtime-file SHA-256 hashes before use and removes the temporary copy afterward. No duplicate runtime is tracked in this branch. Git and that commit's objects must be available; shallow clones should run the fetch above. Missing evidence is a hard error, never a silent skip or comparison against the current controller.
+
+Alternatively, set `ORIGINAL_SOURCE=/absolute/path/to/tether-evidence/reference/v2-source` to use a separately checked-out frozen runtime. This override preserves the existing explicit comparison-source mechanism.
+
+Current source fingerprint: `4a7fbb875395bb4f99658eb5b8c78f17558d2c98b6430eb0877e4f97d550b854`. The evaluated repaired fingerprint was `c3ead812bf8a53ab91d7f335fee94839352fe382669dc9f812d0a2f2f7fc55cd`; the only subsequent production-scope change is the HTTP root redirect in `serve.mjs`, with no agent/simulation changes. Original-v2 fingerprint: `19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5`. Small source manifests remain in `reports/provenance/`. Raw measurements are unchanged. `current-source-manifest.json` describes the served revision; `repaired-source-manifest.json` remains the scientific evaluated-source record.
+
+## Historical experiments and raw evidence
+
+Follow [RAW_DATA.md](RAW_DATA.md) to create a pinned evidence worktree. Run the full reproduction guide in that worktree: it retains every original path, runner, registered protocol, source snapshot and available raw-data artifact. This includes exact original-v2 Phase 4, general-audit and learning commands; affect-study reproduction; and output-only report recovery. Do not relabel those broad original-v2 results as repaired-version evaluations. The complete learning raw parts are now available in the appended data commit; use the separate reconstruction commands in RAW_DATA.md.
+
+## Browser replay
+
+```sh
+node tools/serve-replay-probe.mjs
+# Open http://127.0.0.1:8766/tools/replay-probe.html and download its replay fixture
+node tools/verify-browser-replay.mjs /path/to/tether-browser-replay.jsonl
+```
+
+A user-supplied fixture reported as Edge 154 was independently replayed with Node v24.19.0: 3,600 ticks, 601 samples, final hash `9b729b88b12f9d19`. Browser identity is user-reported. This verifies that fixture; live play, input, audio, storage persistence and human engagement remain unverified. Legacy logs without `simulation_math: ieee-arithmetic-v1` need their original source/runtime.

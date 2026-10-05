@@ -1,0 +1,92 @@
+{
+  "prototype": "cover-control-v1",
+  "date": "2026-10-05",
+  "baselineCommit": "eba3d3c104741a60c469efbfb1478b00e5890bd2",
+  "runtime": "Node v24.19.0",
+  "scope": "Optional playable prototype; no new benchmark or cognitive-benefit claim",
+  "applicationTests": {
+    "command": "node --test test/*.test.mjs delivery-tests/*.test.mjs",
+    "tests": 288,
+    "passed": 288,
+    "failed": 0
+  },
+  "recursiveTests": {
+    "command": "node --test",
+    "tests": 421,
+    "passed": 414,
+    "failed": 7
+  },
+  "cleanBaselineRecursiveTests": {
+    "tests": 403,
+    "passed": 399,
+    "failed": 4
+  },
+  "knownRecursiveFailures": [
+    {
+      "test": "benchmark/human-proxy-2026-10-03/awareness-comparison-v1/controller.test.mjs",
+      "classification": "baseline missing archived repo/src/sim.js"
+    },
+    {
+      "test": "benchmark/human-proxy-2026-10-03/awareness-comparison-v1/harness.test.mjs",
+      "classification": "baseline missing archived repo/human-proxy/protocol.mjs"
+    },
+    {
+      "test": "benchmark/human-proxy-2026-10-03/sensor-awareness-v1/awareness.test.mjs F22",
+      "classification": "baseline missing ORIGINAL-INPUT-MANIFEST.json"
+    },
+    {
+      "test": "experimental/search.test.mjs",
+      "classification": "baseline missing external frozen DESIGN.json"
+    },
+    {
+      "test": "human-proxy/counter.test.mjs frozen source/protocol/vector exact bytes",
+      "classification": "original source-freeze guard rejects changed src/headless.mjs"
+    },
+    {
+      "test": "human-proxy/counter.test.mjs ordinary frozen constructor exact action parity",
+      "classification": "original source-freeze guard rejects changed src/headless.mjs"
+    },
+    {
+      "test": "human-proxy/harness.test.mjs missing or wrong release refuses",
+      "classification": "original source-freeze guard rejects changed src/headless.mjs"
+    }
+  ],
+  "otherChecks": {
+    "syntax": "passed for changed runtime/client/replay modules",
+    "gitDiffCheck": "passed",
+    "mathAudit": "passed existing sampled arithmetic audit"
+  },
+  "browserQA": {
+    "status": "blocked",
+    "error": "net::ERR_BLOCKED_BY_CLIENT",
+    "surface": "cloud browser",
+    "target": "http://127.0.0.1:8765/client/?test=1",
+    "workaroundAttempted": false,
+    "unverified": [
+      "visual layout",
+      "live input feel",
+      "sound",
+      "human playability"
+    ]
+  },
+  "sourceFiles": {
+    "src/sim.js": "5334e549fb280ed9c5b33d65876a720b0bcd96f1c51e8000aff7b47bb0cbcbec",
+    "src/cover-control.js": "a3ff4d08b44d408b0eb1236c9e0b4602135ae073c21c2fd14aae7e1d0cc53ca1",
+    "src/visibility.js": "1ff9e316262dfdbb9d8645359b39033c229926cfd1eafa0ae1faeaaa8a28c11d",
+    "src/perception.js": "b50c327c3e593d58034b4c40210195b1d2b7242ae91a8bedf2168d1882f2ccb3",
+    "src/log.js": "2097bc8e1337b6210f2e8fa147959634c5e12c9c492bd31b59ed17285355bbe8",
+    "src/headless.mjs": "c70314343a7b9c5dbe2776a5654b9ff63db77c98a2fe764940a7ec781678b8d1",
+    "src/agents/cover-control.mjs": "42007be15c44eb203ec28f1fd8fa953baff2ba53eee75518c5f04272f5deb07c",
+    "src/agents/cover-interface.mjs": "6b1e76e947d1461b36737f16a627db31a032065842b94b41951c58fb3a26c555",
+    "client/app.mjs": "0533ea94249d0bd2616d13648d3a960a76f867e28907029813565abfba598bc2",
+    "client/cover-display.mjs": "6a1d47b1fa163c224d64806cf0435243d531ab55c71cf1a13777d31c81b423cb",
+    "client/canvas.mjs": "6f793862c4833e1e64e9ed47481cc4cf9a3db6a4d931f1b549170e941fa9564b",
+    "client/index.html": "24e77f4beb839eeccaae435ce435cd4818d8ad098d00b6c9be1621c2597d80f6",
+    "client/render-model.mjs": "1f6b74a933ff064d848e96c587e82e79f604adfb385441de0c55f141dc365958",
+    "client/style.css": "36446b4413ce1dabddab6d07e044c288d67d49fd971e266d4e59ec2eb6be2561",
+    "replay/app.mjs": "7a1aa4b33611120a9e4a8dc1704019a75f769af2371b3da546c8356c513e2328",
+    "replay/log-data.mjs": "c55c837a1625eea084c86fbaf4b145a3819713afb61560dc46e28698820655ee",
+    "test/cover-control.test.mjs": "d54791d12b09768fe8f267da4106c8ec95d4d56b4590c3c5309c13ef8e0de880",
+    "test/cover-client.test.mjs": "4a681ad1157b8a7635dbb553d73e509c6943ce8dc713ca417efbc2f39eac5603"
+  }
+}

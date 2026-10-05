@@ -1,0 +1,206 @@
+{
+  "status": "REVIEWED_SOURCE_ONLY_NOT_EXECUTION_RELEASE",
+  "sourceFingerprint": "cc62c10edd292e033f01f297a2567e58f5868a50fc921c46ee5d116a6f39525e",
+  "files": [
+    {
+      "path": "benchmark/interface.mjs",
+      "key": "repo/benchmark/interface.mjs",
+      "sha256": "bf6bb587887b35d6a97a68d605c5d44e7d5d8a8aee8881e23d94edcfb282f1ca"
+    },
+    {
+      "path": "package.json",
+      "key": "repo/package.json",
+      "sha256": "6bb0ae63bd538f17da6bc4102895b1cdaa821fa0bc5865037186aa2f219e67fa"
+    },
+    {
+      "path": "src/agents/basic.mjs",
+      "key": "repo/src/agents/basic.mjs",
+      "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e"
+    },
+    {
+      "path": "src/agents/dodger.mjs",
+      "key": "repo/src/agents/dodger.mjs",
+      "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3"
+    },
+    {
+      "path": "src/agents/param.mjs",
+      "key": "repo/src/agents/param.mjs",
+      "sha256": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1"
+    },
+    {
+      "path": "src/agents/robust-baseline-agent.mjs",
+      "key": "repo/src/agents/robust-baseline-agent.mjs",
+      "sha256": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d"
+    },
+    {
+      "path": "src/agents/robust-baseline.mjs",
+      "key": "repo/src/agents/robust-baseline.mjs",
+      "sha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0"
+    },
+    {
+      "path": "src/agents/spear-memory.mjs",
+      "key": "repo/src/agents/spear-memory.mjs",
+      "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573"
+    },
+    {
+      "path": "src/agents/strategies.mjs",
+      "key": "repo/src/agents/strategies.mjs",
+      "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b"
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "key": "repo/src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca"
+    },
+    {
+      "path": "src/headless.mjs",
+      "key": "repo/src/headless.mjs",
+      "sha256": "7b67c3483a2636fe953d82afa178150dda1f2a464fc6f564d25c954847e8cc26"
+    },
+    {
+      "path": "src/log.js",
+      "key": "repo/src/log.js",
+      "sha256": "fc82e01484e7f059381fc3291f8b85da6db02fc77b6709c42ed4b1d50bea9ce6"
+    },
+    {
+      "path": "src/mind/belief.mjs",
+      "key": "repo/src/mind/belief.mjs",
+      "sha256": "41616271cc157ff8f14714857b212cb7df9d1d2c3639e487deaa826e11b23dc8"
+    },
+    {
+      "path": "src/mind/cognition.mjs",
+      "key": "repo/src/mind/cognition.mjs",
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b"
+    },
+    {
+      "path": "src/mind/components.mjs",
+      "key": "repo/src/mind/components.mjs",
+      "sha256": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706"
+    },
+    {
+      "path": "src/mind/content-broadcast.mjs",
+      "key": "repo/src/mind/content-broadcast.mjs",
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615"
+    },
+    {
+      "path": "src/mind/coordination.mjs",
+      "key": "repo/src/mind/coordination.mjs",
+      "sha256": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf"
+    },
+    {
+      "path": "src/mind/index.mjs",
+      "key": "repo/src/mind/index.mjs",
+      "sha256": "559f9de723a0af18e55b06ff5ee6fb8f1b495280ebf9d75e53ec67339cfd0900"
+    },
+    {
+      "path": "src/mind/math.mjs",
+      "key": "repo/src/mind/math.mjs",
+      "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617"
+    },
+    {
+      "path": "src/mind/novelty.mjs",
+      "key": "repo/src/mind/novelty.mjs",
+      "sha256": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468"
+    },
+    {
+      "path": "src/mind/own-spear.mjs",
+      "key": "repo/src/mind/own-spear.mjs",
+      "sha256": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668"
+    },
+    {
+      "path": "src/mind/percept-contact.mjs",
+      "key": "repo/src/mind/percept-contact.mjs",
+      "sha256": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8"
+    },
+    {
+      "path": "src/mind/prediction-monitor.mjs",
+      "key": "repo/src/mind/prediction-monitor.mjs",
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0"
+    },
+    {
+      "path": "src/mind/rollout-completion.mjs",
+      "key": "repo/src/mind/rollout-completion.mjs",
+      "sha256": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5"
+    },
+    {
+      "path": "src/mind/specialists.mjs",
+      "key": "repo/src/mind/specialists.mjs",
+      "sha256": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0"
+    },
+    {
+      "path": "src/mind/target-memory.mjs",
+      "key": "repo/src/mind/target-memory.mjs",
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3"
+    },
+    {
+      "path": "src/mind/workspace.mjs",
+      "key": "repo/src/mind/workspace.mjs",
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9"
+    },
+    {
+      "path": "src/perception.js",
+      "key": "repo/src/perception.js",
+      "sha256": "42221dafa9351864f81755e454c9ed7b2c1371dbdb223b99d156a21300304aa9"
+    },
+    {
+      "path": "src/sim.js",
+      "key": "repo/src/sim.js",
+      "sha256": "3ccf374b125af083a616fe6d67f40acd074e6058999485363723bdcae24bcc6d"
+    },
+    {
+      "path": "benchmark/training/initial-vectors.json",
+      "key": "training/initial-vectors.json",
+      "sha256": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68"
+    },
+    {
+      "path": "benchmark/training/lock-contract.mjs",
+      "key": "training/lock-contract.mjs",
+      "sha256": "271ec091b6edf4527f469b9d6244c86ab765a3304b1d84f503a75fee13b8660c"
+    },
+    {
+      "path": "benchmark/training/lock-contract.test.mjs",
+      "key": "training/lock-contract.test.mjs",
+      "sha256": "ecaa98ef3e4e4b438d67800dc1b5df1f014e661c963491efec25a0aee93d4c86"
+    },
+    {
+      "path": "benchmark/training/runtime-controls.mjs",
+      "key": "training/runtime-controls.mjs",
+      "sha256": "402715e9410196fd51357abdff46460a7d8ccff13e82c02372535549849d8200"
+    },
+    {
+      "path": "benchmark/training/runtime-controls.test.mjs",
+      "key": "training/runtime-controls.test.mjs",
+      "sha256": "ed4f4111334aca2c24bffe8de5f793f6f283a0dc49a0600111fd6d9fefddb582"
+    },
+    {
+      "path": "benchmark/training/training-plan.mjs",
+      "key": "training/training-plan.mjs",
+      "sha256": "424a5ae995445dd201a1d249920ccabe4c9cd14614cdb305908c31d8954ee3ed"
+    },
+    {
+      "path": "benchmark/training/training-plan.test.mjs",
+      "key": "training/training-plan.test.mjs",
+      "sha256": "4ba905731590775d50657cb886270a33d1847d5acdf28eda31a3fd66c53e5c65"
+    },
+    {
+      "path": "benchmark/training/TRAINING-PROTOCOL.md",
+      "key": "training/TRAINING-PROTOCOL.md",
+      "sha256": "cfa72a97447fb35159f1436f8068effc79f42854596fffe6c9e28b1fe5d4bdb2"
+    },
+    {
+      "path": "benchmark/training/training-runner.mjs",
+      "key": "training/training-runner.mjs",
+      "sha256": "e150f59299c738d8e00d64abf4d5233b49dcafa6856db346f8a50858c2da575c"
+    },
+    {
+      "path": "benchmark/training/TRAINING-SEEDS.json",
+      "key": "training/TRAINING-SEEDS.json",
+      "sha256": "c67d51df764c01b0f9755ef46527de1bfa3ea1bda4a51e47df99f420d963895d"
+    },
+    {
+      "path": "benchmark/training/training-worker.mjs",
+      "key": "training/training-worker.mjs",
+      "sha256": "c495cb5f275d3fad1977ba36f559c6734c8dd4ad19fa9d1b9ff0d77d29dbf8c0"
+    }
+  ]
+}

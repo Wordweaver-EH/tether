@@ -1,88 +1,90 @@
+> Optional prototype (2026-10-05): [Cover Control](COVER_CONTROL.md) adds sight-blocking cover, two routes and one public control ring. Choose it explicitly at the start screen; Duel remains the default, with unchanged rules and cognitive controller. The prototype uses a separate delayed/noisy conventional baseline NPC.
+
+> Current version (2026-10-03): the default controller is now the experimental rebuilt N/S + C1/C2 checkpoint. Start with [CURRENT_STATUS.md](CURRENT_STATUS.md) for 264-test verification, source identity, completed new evidence and remaining gaps. The older study results and source manifests below apply only to their explicitly named historical versions.
+
 # Tether
 
-This repository contains the deterministic rules, visibility filter, raw session log, a CPU-only headless harness, the NPC mind and tournament, and a static web client with Mind View replay. `SPEC.md` defines the rules. `DESIGN.md` defines the mind and later phases. Node 24 is required; there are no packages to install.
+A deterministic spear-duel web game and CPU-only test bed for a non-LLM cognitive architecture. Play a human against the NPC, inspect its recorded mind state, and test cognitive mechanisms through explicit ablations. Plain JavaScript, Node 24, no package dependencies and no build step.
 
-## Play and inspect a bout
+`SPEC.md` governs the game rules. `DESIGN.md` describes the research plan. The motivating cognitive-architecture document in `docs/background/` is context, not a claim that the full design or subjective consciousness has been implemented.
 
-Start the local static server with `node serve.mjs`, then open `http://localhost:8765/` for human versus mind. The server listens only on localhost and needs no build step or installed packages. Choose easy, normal, or hard and Mode B (forward cone, default) or Mode A (full view). Each bout lasts five minutes. The arena border flashes briefly after a point; play resumes immediately.
+## Current status
 
-Move with **WASD**; point the mouse to set desired facing. Facing turns at 360°/s. **Left click** throws, **right click** or **Space** recalls an embedded spear, and **Esc** pauses. An optional gamepad uses the left stick for movement, right stick for facing, right trigger to throw, and left trigger to recall. The sound button mutes the subtle action and score tones.
+The implementation/evaluation pass is complete, with explicit unmet goals and verification limits. The playable code is the **post-audit affect-repaired revision**, source `c3ead812…fc55cd`. It passes **148/148** delivery tests and has a separate 768-bout targeted study.
 
-After the bout, download the full JSONL log, including mind traces. Open `http://localhost:8765/replay/` (Mind View), choose that file or drag it onto the viewer. Mind View verifies the log by replaying raw inputs, then offers a scrubber, speed and frame controls, event jumps, world and belief overlays, and the mind's focus timeline. Browser rendering and audio require a browser playtest; `node --test` covers the pure client and replay logic.
+The earlier **original v2** build, source `19800346…0bc9e5`, completed the Phase 4 search, 39,168-bout mechanism audit, and 8,704-bout learning/adaptation study. Those results are preserved under their original version. They must not be relabeled as full evaluations of the repaired controller; its full 16-ablation/budget/learning/exploit reruns remain unperformed.
 
-## Run
+Prediction and adaptive gaze helped in original v2; the narrow opponent-cone heuristic hurt. Its affect path was structurally ineffective, prompting the separately tested repair. The predicted workspace scarcity pattern, four-stage competence trajectory, and primary adaptation hit-rate benefits were not demonstrated. A user-supplied Edge 154 replay fixture passes Node verification (3,600 ticks, 601 samples); live presentation and human engagement remain unverified. No game-rule change was adopted.
 
-```sh
-node --test
-```
+- [Results and honest scope](RESULTS.md)
+- [Acceptance status and open goals](CURRENT_STATUS.md)
+- [Independent evidence review](reports/independent-review/evidence-review.md)
+- [Reproduce tests, versioned experiments, and browser replay](REPRODUCE.md)
+- [Evidence index](reports/README.md)
+- [Source, authorship, and license provenance](PROVENANCE.md)
+- [Original owner handoff and earlier build briefs](docs/build-history/README.md)
 
-Run the CPU tournament (up to eight worker threads):
-
-```sh
-node arena/tournament.mjs --n 8 --keyN 192 --workers 8 --durationSec 300 --out reports/tournament
-```
-
-`n` is bouts per unordered pair per mode. `keyN` replaces it for pairs containing the normal mind and for immediateRecaller versus embedWaiter. Seats alternate across seeds. The outputs are `<out>.json` (individual bout results and aggregate statistics) and `<out>.md` (tables). At `keyN=192`, each key pair has 384 bouts across A and B, giving a worst-case sampling half-width near five percentage points when the modes are combined. Per-mode intervals are wider. The full round robin includes three difficulties, eight ablations, and six scripted strategies.
-
-`--policy tuned` is the default mind. `--policy baseline` reproduces the before-tuning policy used in `reports/phase2-before.*` with the same strategy scripts and corrected metric adapter. Both policies use the same percept boundary, rules, difficulty settings, and ablation interface.
-
-The tournament JSON stores scores and behavior aggregates for every bout. It does not store 120 Hz world states. Use `runGameBout({log:true,captureTraces:true})` or `runBout({log:true,captureTraces:true})` for a replayable single-bout record.
-
-Run a five-second scripted bout and verify its log:
+## Play
 
 ```sh
-node --input-type=module -e "import {runBout} from './src/headless.mjs'; import {replayFromLog} from './src/log.js'; import {idle,aimAndThrow} from './src/agents/basic.mjs'; const result=runBout({agents:[aimAndThrow(),idle],mode:'MODE_B',seed:1,durationSec:5,log:true}); console.log(result.score,result.events.length,replayFromLog(result.logLines).verifiedSamples)"
+node serve.mjs
 ```
 
-The sample benchmark used 20 full, unlogged MODE_B bouts with two idle agents on one core, after two warmup bouts:
+Open `http://localhost:8765/`. The server binds only to localhost. Choose Duel (default) or optional Cover Control. Duel offers easy, normal, or hard; Cover Control uses its own fixed baseline. Both offer Mode B (forward cone, with wall occlusion in Cover Control) or Mode A (full view). Bouts last five minutes. See [Cover Control rules and verification](COVER_CONTROL.md).
+
+- WASD moves; the mouse sets desired facing, subject to the 360°/second turn limit
+- Left click throws; right click or Space recalls an embedded spear
+- Esc pauses; the sound button mutes action and score tones
+- Optional gamepad: left stick moves, right stick faces, right trigger throws, left trigger recalls
+
+The client keeps one local opponent-memory profile in browser storage, saves it after completed/interrupted play, and reuses it for rematches. The reset-learning control confirms before clearing that profile. Storage failures are handled in the code; actual browser-reload persistence has not been reverified in this environment.
+
+After a bout, download the JSONL log. Open `http://localhost:8765/replay/` and choose or drag in the file. Mind View verifies raw-input replay and offers a scrubber, speed/frame controls, event jumps, world/belief overlays, and recorded cognitive readouts. An observed long-lived focus is not automatically a viewer bug.
+
+## Tests
 
 ```sh
-node --input-type=module -e "import {runBout} from './src/headless.mjs'; import {idle} from './src/agents/basic.mjs'; for(let i=0;i<2;i++) runBout({agents:[idle,idle],durationSec:300}); const n=20,t=process.hrtime.bigint(); for(let i=0;i<n;i++) runBout({agents:[idle,idle],durationSec:300}); console.log(Math.round(n*300*120/(Number(process.hrtime.bigint()-t)/1e9))+' steps/s')"
+node --test                            # 148 tests: repaired implementation + delivery diagnostics
+node --test test/*.test.mjs            # 139 repaired implementation/runner tests
+node --test delivery-tests/*.test.mjs  # 9 diagnostic-server tests
 ```
 
-## API
+The cross-build affect regression materializes checksum-verified original source from the pinned data-branch commit; run `git fetch origin data/tether-evidence-2026-10-02` first in shallow clones. `ORIGINAL_SOURCE` can override it. See [REPRODUCE.md](REPRODUCE.md). The original 131-test suite and its original source are retained in the frozen archive. Diagnostic helpers and portability-only test changes are documented separately from the evaluated production fingerprints.
 
-- `src/sim.js`: `CONSTANTS.experiment`, `CONSTANTS.technical`, `createWorld(config?)`, `step(world, [p1, p2])`, `hashWorld(world)`, `snapshotWorld(world)`, and `restoreWorld(snapshot)`. A step is exactly 1/120 s. Each input has `moveX`, `moveY`, `aimX`, `aimY`, `throw`, and `recall`; the booleans mean a press on that step. `step` mutates the world and returns that step's events. `createWorld` accepts optional technical `moveDeadzone`, `aimDeadzone`, and `epsilon` values. `hashWorld` returns a 16-character hexadecimal FNV-1a hash of all mutable rule state. Snapshots are independent deep copies. The simulation never reads a mode.
-- `src/perception.js`: `percept(world, 'P1'|'P2', 'MODE_A'|'MODE_B')` and `isVisible(viewerPos, viewerFacing, targetPos)`. Percepts are deep copies. A hidden opponent and its HELD spear are `null`; a visible non-HELD spear can appear without its owner. In MODE_B, either player's off-cone non-HELD spear is `null`; an own HELD spear remains visible.
-- `src/log.js`: `createSessionLogger({world,mode,sessionId,boutId,timestampStart,renderRate,buildId,seed})`, `serializeLog(records)`, and `replayFromLog(lines)`. Create the logger at tick 0, then call `logger.recordStep(world, inputs, events)` after each `step`. `logger.records`, `logger.lines()`, and `logger.toJSONL()` expose the log. Replay accepts an array of JSONL lines or a JSONL string, replays paired raw inputs, verifies sampled hashes plus every logged sample field and event, and returns `{world, verifiedSamples, finalHash}`. A replayable session begins at the normal `createWorld` start state.
-- `src/headless.mjs`: `runBout({agents:[a1,a2],mode,seed,durationSec,log,captureTraces})`. Each agent has `act(percept, dt)`. The return value contains `score`, `winner` (`null` for a tie), `elapsedSec`, `events`, and `logLines` when logging is enabled. `captureTraces:true` adds `traces` and, with `log:true`, `MIND_TRACE` records; replay ignores these annotations while verifying samples and events. `durationSec` defaults to 300 and may shorten a run; the rule-level bout still ends at 300 seconds. `seed` is recorded in metadata and does not affect the seedless simulation.
+## NPC architecture
 
-`runBout` and the arena runner structured-clone each percept before calling an agent and clone each returned input before stepping. Arena worker threads therefore pass agents cloned percepts, even when an adapter returns references into its world. Agent functions still execute in the simulation's JavaScript realm within each thread. They can alter shared intrinsics such as `Array.prototype` or `Math`; the clone boundary is not a security sandbox for untrusted code.
-- `src/mind/index.mjs`: `createMind({seed,difficulty,ablations,captureTrace,memorySnapshot,policy})`. Difficulties are `easy`, `normal`, and `hard` (or 0..1). `act(percept,dt)` runs a 30 Hz cognitive cycle after a queued percept latency (200/150/100 ms respectively), then emits the six standard input fields. Aim noise and action thresholds scale with difficulty; visibility never does. `policy` is `tuned` (default) or `baseline`. `trace()` returns cycle records; `settings()`, `memory()`, `reflect()`, `reflectionNotes()`, and `selfReport(time)` expose the phase 4 extension points. A caller can persist `memory()` and pass it back as `memorySnapshot` in a later bout. `captureTrace:false` avoids retaining large particle traces during tournaments. Supported ablations: `noBelief`, `noPrediction`, `singleUtility`, `noWorkspace`, `noHysteresis`, `noMetacog`, `noAttentionSchema`, `noToM`.
-- `src/agents/strategies.mjs`: perception-only factories `immediateRecaller`, `camper`, `spinner`, `spearRusher`, `directShooter`, and `embedWaiter`.
-- `arena/core.mjs`: generic `runGameBout({game,adapter,agents,mode,seed,durationSec,log,captureTraces})` and `replayGameLog(game,adapter,records)`. The game module supplies `{CONSTANTS,createWorld,step,percept,hashWorld}`. An adapter supplies player IDs, clock/score access, agents, and optional metrics. `arena/tether-adapter.mjs` is the only arena module that imports Tether. `arena/tournament.mjs` distributes bouts over worker threads and writes JSON and Markdown. [arena/README.md](arena/README.md) gives the full adapter contract.
+The normal mind receives percepts after a 150 ms queue, runs a 30 Hz cognitive cycle, and has a default 192-unit declared logical-work cap. Difficulty changes delay and action noise, never visibility. The belief tracks uncertain opponent position/velocity and remembered spear state. Specialists compete for a workspace focus, which affects attention, movement, action, and recorded inner speech.
 
-### Mind and behavior measurements
+Mind v2 adds bounded reflex/intuition/deliberation tiers, outcome-trained tactical values, metacognitive error awareness, an automatic-habit candidate path, percept-only opponent adaptation, bounded counterfactual simulation, and persisted memory. The post-audit revision additionally repairs appraisal-driven workspace persistence. Automatic labels do not guarantee execution of the learned tactic: embedded-state choices can be overwritten by downstream action rules. Every claim of behavioral contribution depends on the corresponding ablation evidence. An implementation test is not evidence of improved tournament play or consciousness.
 
-The particle belief contains 48 position/velocity samples and a separate remembered spear state/position. An unseen opponent downweights and replaces particles in the current cone. Surprise is the negative log of an observation's kernel likelihood under the predicted particles. Confidence falls with dispersion and time since sighting. Six specialists compete for one workspace focus; its broadcast drives gaze, movement, actions, memory, and transition-only inner speech. Gaze has a per-item refresh schedule, and the opponent-attention model enables Deceive. V1 memory learns visible recall delays and scan reversals from percepts, and v1 reflection estimates recall hit chance from belief particles. Policy learning from persisted memory and snapshot-driven counterfactuals remain phase 4 work.
+The work ledger is a reproducible **logical cost model**, not an assertion of exact CPU-time, energy, instruction-count, or wall-clock equality. Full and ablated minds share the same configured cap. The separate searched policy controllers are not matched for action rate, motor noise, cognition cap, or offline training; their win rates cannot isolate cognitive mechanisms.
 
-`secondLocationFraction` counts embeds that last **more than 2 seconds** and, while embedded, have at least **2 world units of owner path** and at least **1 world unit of maximum displacement from the body position at embed time**. The denominator is all embeds, including those neutralized or cut short by a reset. `lookAwayFraction` measures time the opponent lies outside the physical 120° cone in either mode. `hitsWithinOneSecLookAway` counts hits within one second after a visible-to-hidden cone transition. `scanReversalsPerMinute` counts turn-sign changes separated by at least 0.15 seconds. Recall delays are recorded from EMBED to RECALL_START, with p25/p50/p75/p90 in the JSON.
+Exported switches: `noBelief`, `noPrediction`, `singleUtility`, `noWorkspace`, `noHysteresis`, `noMetacog`, `noAttentionSchema`, `noToM`, `noReflex`, `noIntuition`, `noDeliberation`, `noLearning`, `noAutomatization`, `noAdaptation`, `noCounterfactual`, `noAffect`.
 
-### Performance
+D18's optional terminal-reward-only emergent-objective experiment is not implemented. The actual learner uses sparse short-horizon score credit. The four competence stages and workspace advantage under scarce compute are hypotheses, not built-in labels or established findings.
 
-Before the clone boundary and D13 spear visibility change, local 20-bout, 300-second, unlogged MODE_B runs measured **0.018 s/bout (2.00 million ticks/s)** for idle versus idle and **0.508 s/bout (70,829 ticks/s)** for the tuned normal mind versus immediateRecaller. The two 8,432-bout, eight-worker tournaments took **473.4 s** (baseline) and **480.5 s** (tuned). These are historical measurements; run the benchmark above for the current build. Trace capture and raw JSONL logging cost memory and time and are disabled for tournament workers.
+## Main interfaces
 
-## SPEC checklist coverage
+- `src/sim.js`: `createWorld`, `step`, `hashWorld`, snapshots, and constants. Each step is 1/120 second. The six input fields are `moveX`, `moveY`, `aimX`, `aimY`, `throw`, and `recall`. Physics does not read the visibility mode
+- `src/perception.js`: `percept(world, player, mode)` and `isVisible`. Hidden world entities are omitted; returned data is copied
+- `src/log.js`: JSONL session logging and `replayFromLog`. Replay checks sampled state hashes, logged fields, and events. New logs identify `simulation_math: ieee-arithmetic-v1`; legacy logs need their original source/runtime
+- `src/headless.mjs`: `runBout({agents, mode, seed, durationSec, log, captureTraces})`. Logging and particle-trace capture are optional and expensive
+- `src/mind/index.mjs`: `createMind({seed, difficulty, ablations, captureTrace, memorySnapshot, policy, cognitionBudget, outboundSpeed, returnSpeed})`. `act` emits inputs; `trace`, `cognition`, and `memory` expose diagnostics/state. Call `finish(finalPercept)` before exporting final memory so terminal score credit is settled
+- `arena/core.mjs`: generic `runGameBout` and `replayGameLog`. See [arena/README.md](arena/README.md) for the adapter contract
+- `arena/audit.mjs`: paired single-bout mechanism audit and source fingerprinting
+- `arena/learning-audit.mjs`: repeated-training, held-out-memory, and within-bout adaptation protocols
+- `arena/phase4-final.mjs`: fixed search/validation/independent-confirmation protocol
 
-| Checklist area | Automated coverage |
-| --- | --- |
-| Movement, facing, outbound, embedded, recall | Exact speed, turn, contact, slide, state transition, and timing checks; near miss and TOI tie cases; all static face IDs. |
-| Scoring, reset, arena, bout | Outbound and returning scores, simultaneous hits, one reset, starts, dimensions, obstacle symmetry, 300-second tie, and no forced resolution. |
-| Modes and perception | Exact cone boundary, no occlusion or range cutoff, hidden HELD spear, deep scan for hidden values, mutation isolation, and A/B hash equality. |
-| Logging | Required metadata, raw inputs, event fields, 20 Hz samples, visibility transitions, mode on every record, replay equality and tamper detection. |
-| Contamination | Legal spear states, no spear interaction, no auto recall, and seeded 20,000-step fuzz runs in **each** mode checking geometry, state, scoring, and stationary embeds. |
+Agents receive cloned percepts and inputs are cloned before simulation. They still execute in the same JavaScript realm within each worker: this is an experimental isolation boundary, **not a security sandbox for untrusted agent code**.
 
-The static client draws from the P1 percept and the replay shows the true world only as a separate inspection tool. Browser display, input, and audio behavior still need a browser playtest.
+## Interpreting measurements
 
-## Interpretations
+`secondLocationFraction` requires an embed longer than two seconds, more than two world units of owner path, and more than one world unit of maximum displacement since embedding. Its denominator includes all embeds, including early resets or neutralizations. High embed counts alone do not show persistent-anchor play.
 
-- The unspecified technical deadzones are both **0.1**. Inputs must exceed the deadzone. Collision and TOI tie epsilon is **1e-9**. The sim rate is fixed at **120 Hz**; these values are included in metadata.
-- A HELD spear's stored point is its owner's center, with direction following the owner's facing. Throw starts at the owner's edge, before movement; a newly thrown or recalled spear advances during that same step.
-- Player velocity records the requested full-speed movement vector even when a wall blocks some displacement. Movement slides along AABBs expanded by the player radius. Neutralization tests the straight previous-center-to-current-center segment, as the spec phrases it, even if sliding made the actual route bent.
-- At an exact obstacle corner, X entry selects the face before Y entry. If two static surfaces have equal TOI within epsilon, the lexicographically first surface ID wins. A player hit wins over static contact within epsilon.
-- An exact 180-degree aim tie turns counterclockwise for either player; signed zero is normalized so mirrored positions behave the same way.
-- A zero-distance recall completes immediately only when the stored point and owner center are exactly equal. Returning travel clamps to the fixed target within collision epsilon to avoid a one-tick floating-point overrun.
-- MODE_B returns visible opponent spear state, point, and direction, while keeping its embed surface and fixed recall target private. MODE_A includes those fields. Own non-HELD spear metadata is available only while that spear is in the cone. The mind keeps a private estimate from its prior sightings and actions while it is hidden; that estimate can be wrong until the spear reappears.
-- Logs include an initial state sample at time 0, then one every six steps. Input timestamps mark the start of the step; event and sample timestamps mark its end. Visibility enter/exit events compare each end-of-step view with the initial view, so already-visible entities do not generate an initial enter event.
-- Visibility events track the opponent body and both spears. An own HELD spear is always visible; an enemy HELD spear follows enemy body visibility. No last-known object is retained in percepts.
-- `durationSec` is rounded to the nearest 120 Hz tick. A shorter headless run is a partial bout. Scripted agent PRNG state comes from `randomWalker(seed)`; the harness `seed` is metadata only.
+Win points assign 1 to a win, 0.5 to a draw, and 0 to a loss. Report intervals are seed-cluster bootstrap intervals with their stated scope and limitations. They are descriptive and not multiplicity-adjusted; an interval compatible with zero does not establish equivalence. Human enjoyment, readability, speech usefulness, and subjective experience are not inferred from bot bouts.
+
+Historical Phase 2 tournaments, old browser screenshots, smoke tests, preliminary physics screens, and superseded diagnostics are separated from final evidence under `reports/`. Do not pool them with the final frozen-source results.
+
+## Play acceptance
+
+The `/` launch route now redirects to `/client/` so relative JavaScript, CSS and import-map paths resolve correctly without broadening the server allowlist. Two HTTP regressions cover launch assets, HEAD and existing restrictions. Follow [the short play checklist](PLAYTEST.md); live browser play is still unverified. This serving-only change does not alter evaluated agents or simulation. Current source manifest: `reports/provenance/current-source-manifest.json`.

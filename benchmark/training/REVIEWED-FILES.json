@@ -1,0 +1,22 @@
+{
+  "status": "PASS for six-level training-only source, protocol and fixed resource formula; timing evidence and explicit execution lock still required",
+  "reviewedInputManifestSha256": "f6d8fe483cf52042bfb0db3f79cc434946fe8fad3393ecddbc25a029f911291e",
+  "tests": {
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0
+  },
+  "files": {
+    "TRAINING-PROTOCOL.md": "cfa72a97447fb35159f1436f8068effc79f42854596fffe6c9e28b1fe5d4bdb2",
+    "TRAINING-SEEDS.json": "c67d51df764c01b0f9755ef46527de1bfa3ea1bda4a51e47df99f420d963895d",
+    "initial-vectors.json": "9d4a54fde8b87e0b2babdc4974a21400632b37d5eca3d2f20691b30b28d5fa68",
+    "lock-contract.mjs": "271ec091b6edf4527f469b9d6244c86ab765a3304b1d84f503a75fee13b8660c",
+    "lock-contract.test.mjs": "ecaa98ef3e4e4b438d67800dc1b5df1f014e661c963491efec25a0aee93d4c86",
+    "runtime-controls.mjs": "402715e9410196fd51357abdff46460a7d8ccff13e82c02372535549849d8200",
+    "runtime-controls.test.mjs": "ed4f4111334aca2c24bffe8de5f793f6f283a0dc49a0600111fd6d9fefddb582",
+    "training-plan.mjs": "424a5ae995445dd201a1d249920ccabe4c9cd14614cdb305908c31d8954ee3ed",
+    "training-plan.test.mjs": "4ba905731590775d50657cb886270a33d1847d5acdf28eda31a3fd66c53e5c65",
+    "training-runner.mjs": "e150f59299c738d8e00d64abf4d5233b49dcafa6856db346f8a50858c2da575c",
+    "training-worker.mjs": "c495cb5f275d3fad1977ba36f559c6734c8dd4ad19fa9d1b9ff0d77d29dbf8c0"
+  }
+}

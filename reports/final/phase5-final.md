@@ -1,0 +1,467 @@
+# Tether functional indicator audit
+
+Run status: Full-length matched audit; descriptive evidence. 39168 bouts, 300 seconds each; 32 independent seed clusters.
+Budgets: 48, 192, 512 deterministic work units per cycle. Requested budget is identical within every matched pair; charged units are deterministic algorithmic work counts, not wall-clock time or measured CPU instructions. Actual spending can differ.
+
+## Interpretation
+All effects are ablated minus full. Negative win/score effects favor the full mind. Behavior effects and internal compute usage are reported separately. Bootstrap 95% intervals resample seed clusters, keeping repeated modes/seats/opponents together. These are descriptive and unadjusted for multiple comparisons; they do not establish subjective experience, general intelligence, or human engagement.
+Null-compatible intervals are inconclusive; exact zero on measured outputs is an observed null for this protocol, not proof of absence. A mechanism is not validated merely because its internal telemetry changes.
+Single bouts start with fresh memory. Across-bout competence stages require the separate learning protocol. First/last-third hits-per-throw-count ratios here are descriptive, are not launch-cohort probabilities, and can exceed one when delayed hits cross intervals; they do not identify adaptation. No human-derived proxy data were available. Speech/bluff effects are untested because opponents do not consume speech.
+
+## Paired win and behavior effects
+Each budget row averages paired seats, modes and opponents within each seed; n is the number of independent seed clusters, not the much larger bout count. A given seed initializes agents equally but ablation can change later PRNG consumption.
+| Ablation | Budget | Δ win [95% CI] | Δ score margin | Δ throws/min | Δ look-away | Δ scan reversals/min |
+|---|---:|---|---|---|---|---|
+| noBelief | 48 | -0.007 [-0.040, 0.025] | -0.158 [-0.625, 0.332] | -0.114 [-0.284, 0.040] | -0.001 [-0.010, 0.009] | 0.390 [-2.763, 3.195] |
+| noPrediction | 48 | -0.094 [-0.120, -0.066] | -5.083 [-5.655, -4.503] | 0.445 [0.286, 0.596] | 0.017 [0.008, 0.026] | -2.786 [-5.528, 0.137] |
+| singleUtility | 48 | -0.199 [-0.219, -0.176] | -21.576 [-22.211, -20.924] | 9.865 [9.719, 9.997] | 0.193 [0.184, 0.203] | -18.046 [-21.456, -14.520] |
+| noWorkspace | 48 | -0.017 [-0.044, 0.011] | -12.898 [-15.512, -10.421] | 12.589 [12.176, 13.017] | -0.006 [-0.013, 0.001] | 5.939 [3.827, 8.055] |
+| noHysteresis | 48 | -0.089 [-0.117, -0.061] | -22.042 [-24.435, -19.958] | 4.332 [3.957, 4.770] | 0.002 [-0.005, 0.009] | 2.523 [0.307, 4.659] |
+| noMetacog | 48 | 0.005 [-0.022, 0.035] | -0.628 [-1.228, 0.001] | -0.132 [-0.256, -0.017] | 0.019 [0.011, 0.027] | -5.576 [-8.163, -2.933] |
+| noAttentionSchema | 48 | -0.330 [-0.358, -0.303] | -18.908 [-19.534, -18.271] | 0.445 [0.294, 0.586] | 0.617 [0.610, 0.624] | -143.152 [-145.304, -141.052] |
+| noToM | 48 | 0.088 [0.070, 0.105] | 1.548 [1.246, 1.855] | 0.195 [0.087, 0.302] | -0.020 [-0.027, -0.014] | 5.485 [3.516, 7.468] |
+| noReflex | 48 | -0.120 [-0.149, -0.090] | -1.417 [-1.904, -0.898] | 0.115 [0.010, 0.220] | -0.012 [-0.020, -0.003] | 3.845 [1.039, 6.576] |
+| noIntuition | 48 | -0.203 [-0.230, -0.174] | -22.314 [-22.961, -21.638] | 10.055 [9.903, 10.187] | 0.212 [0.200, 0.224] | -19.156 [-22.377, -15.878] |
+| noDeliberation | 48 | 0.007 [-0.025, 0.040] | -0.596 [-1.145, -0.040] | -0.051 [-0.120, 0.017] | 0.005 [0.004, 0.007] | -1.568 [-2.146, -0.982] |
+| noLearning | 48 | -0.029 [-0.053, -0.005] | -1.612 [-2.056, -1.159] | 0.334 [0.240, 0.422] | 0.004 [0.003, 0.005] | -2.074 [-2.668, -1.463] |
+| noAutomatization | 48 | 0.000 [0.000, 0.000] | 0.005 [-0.034, 0.047] | 0.001 [-0.004, 0.007] | -0.000 [-0.000, 0.000] | 0.005 [-0.013, 0.024] |
+| noAdaptation | 48 | -0.022 [-0.048, 0.003] | -1.473 [-1.897, -1.059] | 0.309 [0.218, 0.396] | 0.004 [0.003, 0.005] | -1.802 [-2.313, -1.286] |
+| noCounterfactual | 48 | 0.005 [-0.027, 0.039] | -0.518 [-1.078, 0.035] | -0.051 [-0.133, 0.027] | 0.005 [0.004, 0.007] | -1.543 [-2.079, -0.977] |
+| noAffect | 48 | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] |
+| noBelief | 192 | -0.036 [-0.066, -0.008] | -0.552 [-1.240, 0.057] | 0.193 [0.060, 0.333] | -0.008 [-0.017, 0.001] | 2.605 [-0.279, 5.694] |
+| noPrediction | 192 | -0.141 [-0.177, -0.108] | -5.275 [-5.805, -4.815] | 0.700 [0.568, 0.837] | 0.010 [0.001, 0.021] | -0.856 [-4.175, 2.218] |
+| singleUtility | 192 | -0.215 [-0.247, -0.186] | -20.914 [-21.574, -20.206] | 10.147 [10.033, 10.261] | 0.189 [0.179, 0.200] | -16.197 [-19.971, -12.707] |
+| noWorkspace | 192 | -0.038 [-0.073, -0.008] | -12.928 [-15.227, -10.805] | 12.288 [11.874, 12.745] | -0.014 [-0.022, -0.007] | 8.099 [5.816, 10.484] |
+| noHysteresis | 192 | -0.122 [-0.156, -0.089] | -22.474 [-24.893, -20.366] | 4.534 [4.101, 4.994] | -0.007 [-0.014, 0.001] | 4.564 [2.220, 6.997] |
+| noMetacog | 192 | -0.012 [-0.041, 0.018] | -0.836 [-1.297, -0.389] | -0.020 [-0.115, 0.083] | 0.009 [0.001, 0.017] | -3.103 [-5.661, -0.560] |
+| noAttentionSchema | 192 | -0.360 [-0.393, -0.331] | -18.702 [-19.290, -18.161] | 0.556 [0.430, 0.693] | 0.609 [0.601, 0.616] | -141.156 [-143.420, -138.837] |
+| noToM | 192 | 0.081 [0.066, 0.097] | 1.637 [1.362, 1.918] | 0.296 [0.225, 0.366] | -0.028 [-0.035, -0.021] | 7.561 [5.522, 9.755] |
+| noReflex | 192 | -0.117 [-0.146, -0.088] | -1.016 [-1.415, -0.616] | 0.251 [0.140, 0.361] | -0.020 [-0.031, -0.010] | 6.243 [3.053, 9.320] |
+| noIntuition | 192 | -0.220 [-0.249, -0.193] | -21.936 [-22.488, -21.397] | 10.488 [10.349, 10.631] | 0.205 [0.194, 0.217] | -17.681 [-21.472, -13.987] |
+| noDeliberation | 192 | -0.014 [-0.046, 0.018] | -0.652 [-1.132, -0.177] | 0.040 [-0.020, 0.098] | 0.006 [0.005, 0.007] | -1.979 [-2.502, -1.476] |
+| noLearning | 192 | -0.055 [-0.081, -0.029] | -2.255 [-2.714, -1.785] | 0.436 [0.341, 0.534] | 0.005 [0.003, 0.006] | -2.576 [-3.215, -1.946] |
+| noAutomatization | 192 | 0.000 [0.000, 0.000] | 0.000 [-0.040, 0.047] | -0.001 [-0.011, 0.011] | 0.000 [-0.000, 0.000] | 0.010 [-0.024, 0.054] |
+| noAdaptation | 192 | -0.057 [-0.087, -0.028] | -1.956 [-2.428, -1.518] | 0.395 [0.307, 0.486] | 0.004 [0.003, 0.006] | -2.303 [-2.927, -1.666] |
+| noCounterfactual | 192 | -0.011 [-0.044, 0.024] | -0.617 [-1.118, -0.151] | 0.036 [-0.026, 0.094] | 0.006 [0.005, 0.007] | -2.032 [-2.544, -1.508] |
+| noAffect | 192 | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] |
+| noBelief | 512 | -0.006 [-0.036, 0.023] | 0.176 [-0.299, 0.652] | 0.107 [-0.040, 0.254] | -0.008 [-0.017, 0.002] | 2.882 [-0.153, 5.638] |
+| noPrediction | 512 | -0.132 [-0.160, -0.107] | -5.284 [-5.850, -4.723] | 0.748 [0.578, 0.913] | 0.007 [-0.003, 0.017] | 0.486 [-2.608, 3.587] |
+| singleUtility | 512 | -0.206 [-0.233, -0.180] | -21.438 [-22.178, -20.706] | 10.159 [10.023, 10.300] | 0.188 [0.180, 0.197] | -15.798 [-19.114, -12.506] |
+| noWorkspace | 512 | -0.014 [-0.037, 0.011] | -13.018 [-15.298, -10.754] | 12.259 [11.763, 12.750] | -0.018 [-0.024, -0.012] | 9.457 [7.659, 11.290] |
+| noHysteresis | 512 | -0.079 [-0.101, -0.058] | -22.184 [-24.401, -20.107] | 4.718 [4.355, 5.094] | -0.010 [-0.016, -0.004] | 5.793 [3.991, 7.503] |
+| noMetacog | 512 | -0.007 [-0.033, 0.019] | -0.798 [-1.232, -0.342] | -0.014 [-0.113, 0.093] | 0.013 [0.006, 0.020] | -4.159 [-6.292, -1.865] |
+| noAttentionSchema | 512 | -0.333 [-0.353, -0.313] | -18.749 [-19.346, -18.164] | 0.746 [0.598, 0.884] | 0.605 [0.599, 0.613] | -139.901 [-141.766, -138.073] |
+| noToM | 512 | 0.079 [0.060, 0.098] | 1.641 [1.263, 2.031] | 0.355 [0.278, 0.428] | -0.030 [-0.036, -0.025] | 8.538 [6.756, 10.323] |
+| noReflex | 512 | -0.109 [-0.133, -0.084] | -1.021 [-1.393, -0.622] | 0.253 [0.144, 0.365] | -0.024 [-0.031, -0.016] | 7.372 [4.924, 9.776] |
+| noIntuition | 512 | -0.219 [-0.244, -0.195] | -22.180 [-22.738, -21.616] | 10.515 [10.398, 10.634] | 0.201 [0.190, 0.211] | -14.529 [-18.137, -11.028] |
+| noDeliberation | 512 | -0.016 [-0.037, 0.005] | -0.632 [-1.092, -0.143] | 0.035 [-0.036, 0.107] | 0.005 [0.004, 0.007] | -1.703 [-2.220, -1.117] |
+| noLearning | 512 | -0.057 [-0.082, -0.035] | -1.961 [-2.404, -1.509] | 0.496 [0.393, 0.605] | 0.004 [0.003, 0.006] | -2.182 [-2.753, -1.601] |
+| noAutomatization | 512 | 0.000 [0.000, 0.000] | -0.049 [-0.104, -0.007] | -0.005 [-0.011, -0.001] | 0.000 [-0.000, 0.000] | -0.007 [-0.027, 0.012] |
+| noAdaptation | 512 | -0.050 [-0.072, -0.028] | -1.605 [-2.098, -1.138] | 0.457 [0.354, 0.567] | 0.004 [0.002, 0.005] | -1.949 [-2.530, -1.381] |
+| noCounterfactual | 512 | -0.012 [-0.033, 0.007] | -0.549 [-1.034, -0.077] | 0.030 [-0.046, 0.104] | 0.005 [0.004, 0.006] | -1.748 [-2.266, -1.217] |
+| noAffect | 512 | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] |
+
+## External behavior verdicts
+These labels use only externally visible action/behavior metrics, not internal counters. Multiple comparisons are unadjusted; differences are exploratory, not a validated consciousness indicator.
+| Ablation | Budget | Outcome |
+|---|---:|---|
+| noBelief | 48 | external difference (exploratory) |
+| noPrediction | 48 | external difference (exploratory) |
+| singleUtility | 48 | external difference (exploratory) |
+| noWorkspace | 48 | external difference (exploratory) |
+| noHysteresis | 48 | external difference (exploratory) |
+| noMetacog | 48 | external difference (exploratory) |
+| noAttentionSchema | 48 | external difference (exploratory) |
+| noToM | 48 | external difference (exploratory) |
+| noReflex | 48 | external difference (exploratory) |
+| noIntuition | 48 | external difference (exploratory) |
+| noDeliberation | 48 | external difference (exploratory) |
+| noLearning | 48 | external difference (exploratory) |
+| noAutomatization | 48 | external difference (exploratory) |
+| noAdaptation | 48 | external difference (exploratory) |
+| noCounterfactual | 48 | external difference (exploratory) |
+| noAffect | 48 | observed null on tracked behavior |
+| noBelief | 192 | external difference (exploratory) |
+| noPrediction | 192 | external difference (exploratory) |
+| singleUtility | 192 | external difference (exploratory) |
+| noWorkspace | 192 | external difference (exploratory) |
+| noHysteresis | 192 | external difference (exploratory) |
+| noMetacog | 192 | external difference (exploratory) |
+| noAttentionSchema | 192 | external difference (exploratory) |
+| noToM | 192 | external difference (exploratory) |
+| noReflex | 192 | external difference (exploratory) |
+| noIntuition | 192 | external difference (exploratory) |
+| noDeliberation | 192 | external difference (exploratory) |
+| noLearning | 192 | external difference (exploratory) |
+| noAutomatization | 192 | external difference (exploratory) |
+| noAdaptation | 192 | external difference (exploratory) |
+| noCounterfactual | 192 | external difference (exploratory) |
+| noAffect | 192 | observed null on tracked behavior |
+| noBelief | 512 | external difference (exploratory) |
+| noPrediction | 512 | external difference (exploratory) |
+| singleUtility | 512 | external difference (exploratory) |
+| noWorkspace | 512 | external difference (exploratory) |
+| noHysteresis | 512 | external difference (exploratory) |
+| noMetacog | 512 | external difference (exploratory) |
+| noAttentionSchema | 512 | external difference (exploratory) |
+| noToM | 512 | external difference (exploratory) |
+| noReflex | 512 | external difference (exploratory) |
+| noIntuition | 512 | external difference (exploratory) |
+| noDeliberation | 512 | external difference (exploratory) |
+| noLearning | 512 | external difference (exploratory) |
+| noAutomatization | 512 | external difference (exploratory) |
+| noAdaptation | 512 | external difference (exploratory) |
+| noCounterfactual | 512 | external difference (exploratory) |
+| noAffect | 512 | observed null on tracked behavior |
+
+## Cognition diagnostics (not external behavioral validation)
+| Ablation | Budget | Δ spent/cycle | Δ escalation fraction | Δ automatic fraction | Win interpretation |
+|---|---:|---|---|---|---|
+| noBelief | 48 | -0.058 [-0.152, 0.045] | -0.004 [-0.009, 0.002] | -0.020 [-0.037, -0.004] | inconclusive / null-compatible |
+| noPrediction | 48 | -0.708 [-0.813, -0.594] | -0.041 [-0.046, -0.034] | -0.018 [-0.033, -0.004] | decrease |
+| singleUtility | 48 | -6.222 [-6.369, -6.072] | -0.305 [-0.314, -0.296] | -0.121 [-0.135, -0.106] | decrease |
+| noWorkspace | 48 | -1.998 [-2.138, -1.860] | -0.104 [-0.110, -0.097] | -0.048 [-0.063, -0.033] | inconclusive / null-compatible |
+| noHysteresis | 48 | -1.544 [-1.675, -1.413] | -0.072 [-0.078, -0.066] | -0.039 [-0.056, -0.020] | decrease |
+| noMetacog | 48 | -12.151 [-12.217, -12.082] | -0.757 [-0.761, -0.753] | -0.202 [-0.214, -0.189] | inconclusive / null-compatible |
+| noAttentionSchema | 48 | -0.145 [-0.253, -0.027] | -0.011 [-0.017, -0.004] | -0.169 [-0.184, -0.155] | decrease |
+| noToM | 48 | -0.315 [-0.379, -0.250] | -0.024 [-0.028, -0.021] | 0.035 [0.023, 0.046] | increase |
+| noReflex | 48 | 0.626 [0.555, 0.696] | 0.017 [0.013, 0.021] | -0.014 [-0.028, 0.000] | decrease |
+| noIntuition | 48 | -5.912 [-6.080, -5.760] | -0.289 [-0.300, -0.280] | -0.202 [-0.214, -0.189] | decrease |
+| noDeliberation | 48 | -12.155 [-12.220, -12.087] | -0.757 [-0.761, -0.753] | -0.202 [-0.214, -0.189] | inconclusive / null-compatible |
+| noLearning | 48 | -7.769 [-7.912, -7.623] | -0.483 [-0.492, -0.474] | -0.202 [-0.214, -0.189] | decrease |
+| noAutomatization | 48 | 0.026 [0.013, 0.039] | 0.002 [0.001, 0.002] | -0.202 [-0.214, -0.189] | inconclusive / null-compatible |
+| noAdaptation | 48 | -0.251 [-0.344, -0.150] | -0.013 [-0.019, -0.007] | 0.010 [-0.003, 0.023] | inconclusive / null-compatible |
+| noCounterfactual | 48 | 2.394 [2.287, 2.501] | -0.029 [-0.035, -0.024] | -0.005 [-0.015, 0.004] | inconclusive / null-compatible |
+| noAffect | 48 | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | inconclusive / null-compatible |
+| noBelief | 192 | -1.116 [-1.521, -0.695] | -0.015 [-0.021, -0.009] | -0.005 [-0.020, 0.010] | decrease |
+| noPrediction | 192 | -3.739 [-4.155, -3.344] | -0.053 [-0.059, -0.047] | -0.019 [-0.036, -0.000] | decrease |
+| singleUtility | 192 | -21.624 [-22.445, -20.860] | -0.296 [-0.307, -0.286] | -0.121 [-0.133, -0.109] | decrease |
+| noWorkspace | 192 | -7.205 [-7.818, -6.610] | -0.104 [-0.110, -0.097] | -0.033 [-0.044, -0.021] | decrease |
+| noHysteresis | 192 | -6.703 [-7.345, -6.068] | -0.078 [-0.086, -0.071] | -0.043 [-0.056, -0.030] | decrease |
+| noMetacog | 192 | -49.993 [-50.356, -49.665] | -0.765 [-0.769, -0.760] | -0.196 [-0.208, -0.186] | inconclusive / null-compatible |
+| noAttentionSchema | 192 | 0.967 [0.537, 1.347] | -0.019 [-0.025, -0.013] | -0.159 [-0.172, -0.147] | decrease |
+| noToM | 192 | -1.677 [-1.914, -1.428] | -0.026 [-0.029, -0.023] | 0.036 [0.028, 0.045] | increase |
+| noReflex | 192 | 2.130 [1.782, 2.472] | 0.010 [0.005, 0.015] | 0.016 [-0.002, 0.033] | decrease |
+| noIntuition | 192 | -22.249 [-23.032, -21.509] | -0.303 [-0.313, -0.293] | -0.196 [-0.208, -0.186] | decrease |
+| noDeliberation | 192 | -49.994 [-50.345, -49.675] | -0.765 [-0.769, -0.760] | -0.196 [-0.208, -0.186] | inconclusive / null-compatible |
+| noLearning | 192 | -31.475 [-32.131, -30.867] | -0.484 [-0.495, -0.475] | -0.196 [-0.208, -0.186] | decrease |
+| noAutomatization | 192 | 0.125 [0.091, 0.159] | 0.002 [0.001, 0.002] | -0.196 [-0.208, -0.186] | inconclusive / null-compatible |
+| noAdaptation | 192 | -1.722 [-2.101, -1.336] | -0.023 [-0.029, -0.018] | 0.011 [-0.001, 0.023] | decrease |
+| noCounterfactual | 192 | -26.628 [-26.946, -26.341] | -0.034 [-0.039, -0.030] | 0.004 [-0.005, 0.014] | inconclusive / null-compatible |
+| noAffect | 192 | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | inconclusive / null-compatible |
+| noBelief | 512 | -0.946 [-1.658, -0.219] | -0.009 [-0.015, -0.002] | -0.004 [-0.022, 0.012] | inconclusive / null-compatible |
+| noPrediction | 512 | -3.846 [-4.573, -3.180] | -0.051 [-0.059, -0.043] | -0.021 [-0.037, -0.005] | decrease |
+| singleUtility | 512 | -12.560 [-13.665, -11.460] | -0.300 [-0.311, -0.289] | -0.117 [-0.130, -0.103] | decrease |
+| noWorkspace | 512 | -4.239 [-5.069, -3.385] | -0.100 [-0.108, -0.093] | -0.028 [-0.042, -0.015] | inconclusive / null-compatible |
+| noHysteresis | 512 | -6.182 [-6.885, -5.487] | -0.076 [-0.082, -0.069] | -0.038 [-0.051, -0.025] | decrease |
+| noMetacog | 512 | -52.486 [-52.962, -52.008] | -0.761 [-0.766, -0.757] | -0.196 [-0.206, -0.186] | inconclusive / null-compatible |
+| noAttentionSchema | 512 | 6.464 [5.927, 7.002] | -0.023 [-0.029, -0.016] | -0.159 [-0.170, -0.148] | decrease |
+| noToM | 512 | -3.072 [-3.468, -2.677] | -0.027 [-0.030, -0.025] | 0.044 [0.032, 0.055] | increase |
+| noReflex | 512 | 1.684 [1.155, 2.211] | 0.012 [0.007, 0.017] | 0.004 [-0.010, 0.019] | decrease |
+| noIntuition | 512 | -13.057 [-14.173, -11.952] | -0.294 [-0.304, -0.284] | -0.196 [-0.206, -0.186] | decrease |
+| noDeliberation | 512 | -52.489 [-52.968, -52.008] | -0.761 [-0.766, -0.757] | -0.196 [-0.206, -0.186] | inconclusive / null-compatible |
+| noLearning | 512 | -32.143 [-32.816, -31.538] | -0.484 [-0.494, -0.475] | -0.196 [-0.206, -0.186] | decrease |
+| noAutomatization | 512 | 0.119 [0.077, 0.169] | 0.002 [0.001, 0.003] | -0.196 [-0.206, -0.186] | inconclusive / null-compatible |
+| noAdaptation | 512 | -1.549 [-1.933, -1.191] | -0.020 [-0.025, -0.015] | 0.017 [0.003, 0.031] | decrease |
+| noCounterfactual | 512 | -29.177 [-29.646, -28.700] | -0.033 [-0.040, -0.027] | 0.004 [-0.006, 0.014] | inconclusive / null-compatible |
+| noAffect | 512 | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | inconclusive / null-compatible |
+
+## Opponent-specific score effects
+| Ablation | Budget | Opponent | Δ score margin [95% CI] |
+|---|---:|---|---|
+| noBelief | 48 | immediateRecaller | 0.344 [-2.133, 2.930] |
+| noBelief | 48 | embedWaiter | -2.055 [-3.117, -0.961] |
+| noBelief | 48 | camper | 0.734 [-0.305, 1.703] |
+| noBelief | 48 | spinner | 0.031 [-0.734, 0.773] |
+| noBelief | 48 | reactiveDodger | -0.023 [-0.328, 0.266] |
+| noBelief | 48 | mind | 0.023 [-0.773, 0.781] |
+| noPrediction | 48 | immediateRecaller | -21.508 [-23.836, -19.125] |
+| noPrediction | 48 | embedWaiter | -5.336 [-6.828, -3.813] |
+| noPrediction | 48 | camper | -1.008 [-2.000, 0.000] |
+| noPrediction | 48 | spinner | 0.289 [-0.563, 1.094] |
+| noPrediction | 48 | reactiveDodger | -0.250 [-0.477, -0.039] |
+| noPrediction | 48 | mind | -2.688 [-3.531, -1.820] |
+| singleUtility | 48 | immediateRecaller | -30.766 [-33.000, -28.461] |
+| singleUtility | 48 | embedWaiter | -86.086 [-87.258, -84.820] |
+| singleUtility | 48 | camper | -39.109 [-40.461, -37.797] |
+| singleUtility | 48 | spinner | 20.914 [18.828, 23.188] |
+| singleUtility | 48 | reactiveDodger | 13.344 [12.406, 14.102] |
+| singleUtility | 48 | mind | -7.750 [-9.031, -6.469] |
+| noWorkspace | 48 | immediateRecaller | 1.883 [-0.609, 4.313] |
+| noWorkspace | 48 | embedWaiter | 26.813 [25.695, 27.922] |
+| noWorkspace | 48 | camper | -54.836 [-69.438, -42.086] |
+| noWorkspace | 48 | spinner | -58.172 [-62.344, -53.523] |
+| noWorkspace | 48 | reactiveDodger | 1.922 [1.672, 2.172] |
+| noWorkspace | 48 | mind | 5.000 [4.320, 5.672] |
+| noHysteresis | 48 | immediateRecaller | -28.297 [-30.625, -25.883] |
+| noHysteresis | 48 | embedWaiter | -4.563 [-5.734, -3.391] |
+| noHysteresis | 48 | camper | -48.023 [-62.719, -36.055] |
+| noHysteresis | 48 | spinner | -56.008 [-60.828, -50.977] |
+| noHysteresis | 48 | reactiveDodger | 2.805 [2.484, 3.109] |
+| noHysteresis | 48 | mind | 1.836 [1.164, 2.445] |
+| noMetacog | 48 | immediateRecaller | -7.508 [-9.914, -5.031] |
+| noMetacog | 48 | embedWaiter | 1.133 [-0.211, 2.492] |
+| noMetacog | 48 | camper | 3.438 [2.102, 4.648] |
+| noMetacog | 48 | spinner | -0.039 [-0.719, 0.648] |
+| noMetacog | 48 | reactiveDodger | 0.047 [-0.016, 0.109] |
+| noMetacog | 48 | mind | -0.836 [-1.594, -0.039] |
+| noAttentionSchema | 48 | immediateRecaller | -22.523 [-25.320, -19.695] |
+| noAttentionSchema | 48 | embedWaiter | -37.781 [-39.438, -36.063] |
+| noAttentionSchema | 48 | camper | -24.359 [-25.328, -23.383] |
+| noAttentionSchema | 48 | spinner | -25.711 [-26.734, -24.664] |
+| noAttentionSchema | 48 | reactiveDodger | 7.344 [6.906, 7.797] |
+| noAttentionSchema | 48 | mind | -10.414 [-11.266, -9.609] |
+| noToM | 48 | immediateRecaller | -0.352 [-1.352, 0.633] |
+| noToM | 48 | embedWaiter | -1.102 [-2.102, -0.109] |
+| noToM | 48 | camper | 0.000 [0.000, 0.000] |
+| noToM | 48 | spinner | 10.289 [9.578, 11.070] |
+| noToM | 48 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noToM | 48 | mind | 0.453 [-0.258, 1.164] |
+| noReflex | 48 | immediateRecaller | 4.859 [2.164, 7.445] |
+| noReflex | 48 | embedWaiter | -3.461 [-4.367, -2.586] |
+| noReflex | 48 | camper | -4.625 [-5.570, -3.703] |
+| noReflex | 48 | spinner | -3.539 [-4.578, -2.391] |
+| noReflex | 48 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noReflex | 48 | mind | -1.734 [-2.570, -0.914] |
+| noIntuition | 48 | immediateRecaller | -35.992 [-38.406, -33.516] |
+| noIntuition | 48 | embedWaiter | -64.984 [-66.188, -63.789] |
+| noIntuition | 48 | camper | -63.039 [-64.383, -61.805] |
+| noIntuition | 48 | spinner | 26.508 [24.805, 28.273] |
+| noIntuition | 48 | reactiveDodger | 10.039 [9.359, 10.656] |
+| noIntuition | 48 | mind | -6.414 [-7.875, -4.961] |
+| noDeliberation | 48 | immediateRecaller | -5.828 [-8.359, -3.242] |
+| noDeliberation | 48 | embedWaiter | 0.438 [-1.133, 1.969] |
+| noDeliberation | 48 | camper | 2.648 [1.641, 3.672] |
+| noDeliberation | 48 | spinner | 0.000 [0.000, 0.000] |
+| noDeliberation | 48 | reactiveDodger | 0.047 [-0.016, 0.109] |
+| noDeliberation | 48 | mind | -0.883 [-1.891, 0.125] |
+| noLearning | 48 | immediateRecaller | -7.703 [-9.820, -5.500] |
+| noLearning | 48 | embedWaiter | -1.594 [-2.734, -0.398] |
+| noLearning | 48 | camper | 0.461 [-0.438, 1.305] |
+| noLearning | 48 | spinner | 0.000 [0.000, 0.000] |
+| noLearning | 48 | reactiveDodger | 0.063 [-0.117, 0.250] |
+| noLearning | 48 | mind | -0.898 [-1.750, -0.039] |
+| noAutomatization | 48 | immediateRecaller | 0.000 [0.000, 0.000] |
+| noAutomatization | 48 | embedWaiter | 0.031 [-0.203, 0.281] |
+| noAutomatization | 48 | camper | 0.000 [0.000, 0.000] |
+| noAutomatization | 48 | spinner | 0.000 [0.000, 0.000] |
+| noAutomatization | 48 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noAutomatization | 48 | mind | 0.000 [0.000, 0.000] |
+| noAdaptation | 48 | immediateRecaller | -7.461 [-9.484, -5.328] |
+| noAdaptation | 48 | embedWaiter | -1.859 [-2.992, -0.672] |
+| noAdaptation | 48 | camper | 0.516 [-0.359, 1.344] |
+| noAdaptation | 48 | spinner | 0.000 [0.000, 0.000] |
+| noAdaptation | 48 | reactiveDodger | 0.031 [-0.148, 0.219] |
+| noAdaptation | 48 | mind | -0.063 [-0.883, 0.805] |
+| noCounterfactual | 48 | immediateRecaller | -5.523 [-7.727, -3.320] |
+| noCounterfactual | 48 | embedWaiter | 0.531 [-1.063, 2.125] |
+| noCounterfactual | 48 | camper | 2.648 [1.641, 3.672] |
+| noCounterfactual | 48 | spinner | 0.000 [0.000, 0.000] |
+| noCounterfactual | 48 | reactiveDodger | 0.047 [-0.016, 0.109] |
+| noCounterfactual | 48 | mind | -0.813 [-1.781, 0.156] |
+| noAffect | 48 | immediateRecaller | 0.000 [0.000, 0.000] |
+| noAffect | 48 | embedWaiter | 0.000 [0.000, 0.000] |
+| noAffect | 48 | camper | 0.000 [0.000, 0.000] |
+| noAffect | 48 | spinner | 0.000 [0.000, 0.000] |
+| noAffect | 48 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noAffect | 48 | mind | 0.000 [0.000, 0.000] |
+| noBelief | 192 | immediateRecaller | -1.383 [-4.320, 1.539] |
+| noBelief | 192 | embedWaiter | -0.430 [-1.375, 0.531] |
+| noBelief | 192 | camper | -1.188 [-4.188, 0.750] |
+| noBelief | 192 | spinner | 0.109 [-0.820, 0.984] |
+| noBelief | 192 | reactiveDodger | 0.148 [-0.156, 0.453] |
+| noBelief | 192 | mind | -0.570 [-1.422, 0.297] |
+| noPrediction | 192 | immediateRecaller | -23.195 [-25.547, -20.945] |
+| noPrediction | 192 | embedWaiter | -3.961 [-5.641, -2.320] |
+| noPrediction | 192 | camper | -1.359 [-2.258, -0.406] |
+| noPrediction | 192 | spinner | 0.391 [-0.336, 1.141] |
+| noPrediction | 192 | reactiveDodger | -0.156 [-0.406, 0.070] |
+| noPrediction | 192 | mind | -3.367 [-4.531, -2.305] |
+| singleUtility | 192 | immediateRecaller | -29.961 [-32.516, -27.242] |
+| singleUtility | 192 | embedWaiter | -86.578 [-87.625, -85.563] |
+| singleUtility | 192 | camper | -38.172 [-39.336, -36.992] |
+| singleUtility | 192 | spinner | 23.125 [20.875, 25.164] |
+| singleUtility | 192 | reactiveDodger | 13.914 [13.188, 14.523] |
+| singleUtility | 192 | mind | -7.813 [-9.016, -6.563] |
+| noWorkspace | 192 | immediateRecaller | 2.031 [-0.367, 4.328] |
+| noWorkspace | 192 | embedWaiter | 26.781 [25.672, 27.961] |
+| noWorkspace | 192 | camper | -56.461 [-69.953, -43.930] |
+| noWorkspace | 192 | spinner | -56.484 [-61.242, -51.578] |
+| noWorkspace | 192 | reactiveDodger | 2.273 [1.953, 2.594] |
+| noWorkspace | 192 | mind | 4.289 [3.359, 5.219] |
+| noHysteresis | 192 | immediateRecaller | -26.914 [-29.047, -24.875] |
+| noHysteresis | 192 | embedWaiter | -4.398 [-5.594, -3.273] |
+| noHysteresis | 192 | camper | -51.414 [-64.773, -39.391] |
+| noHysteresis | 192 | spinner | -55.492 [-60.039, -50.922] |
+| noHysteresis | 192 | reactiveDodger | 2.953 [2.648, 3.273] |
+| noHysteresis | 192 | mind | 0.422 [-0.477, 1.273] |
+| noMetacog | 192 | immediateRecaller | -8.789 [-11.125, -6.633] |
+| noMetacog | 192 | embedWaiter | 0.750 [-0.617, 2.156] |
+| noMetacog | 192 | camper | 3.469 [2.695, 4.258] |
+| noMetacog | 192 | spinner | 0.305 [-0.766, 1.281] |
+| noMetacog | 192 | reactiveDodger | 0.055 [-0.016, 0.148] |
+| noMetacog | 192 | mind | -0.805 [-1.570, -0.016] |
+| noAttentionSchema | 192 | immediateRecaller | -22.469 [-24.820, -20.063] |
+| noAttentionSchema | 192 | embedWaiter | -35.695 [-37.086, -34.289] |
+| noAttentionSchema | 192 | camper | -25.984 [-26.969, -24.992] |
+| noAttentionSchema | 192 | spinner | -24.805 [-25.875, -23.758] |
+| noAttentionSchema | 192 | reactiveDodger | 7.625 [7.234, 8.008] |
+| noAttentionSchema | 192 | mind | -10.883 [-12.016, -9.664] |
+| noToM | 192 | immediateRecaller | -0.031 [-1.031, 0.875] |
+| noToM | 192 | embedWaiter | -0.867 [-1.922, 0.156] |
+| noToM | 192 | camper | 0.000 [0.000, 0.000] |
+| noToM | 192 | spinner | 10.594 [9.781, 11.422] |
+| noToM | 192 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noToM | 192 | mind | 0.125 [-0.547, 0.773] |
+| noReflex | 192 | immediateRecaller | 4.648 [2.461, 6.711] |
+| noReflex | 192 | embedWaiter | -2.469 [-3.281, -1.609] |
+| noReflex | 192 | camper | -4.117 [-5.063, -3.188] |
+| noReflex | 192 | spinner | -3.078 [-4.070, -2.008] |
+| noReflex | 192 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noReflex | 192 | mind | -1.078 [-1.938, -0.188] |
+| noIntuition | 192 | immediateRecaller | -36.656 [-39.211, -34.016] |
+| noIntuition | 192 | embedWaiter | -64.516 [-65.875, -63.133] |
+| noIntuition | 192 | camper | -62.070 [-63.094, -61.039] |
+| noIntuition | 192 | spinner | 27.328 [24.961, 29.758] |
+| noIntuition | 192 | reactiveDodger | 11.047 [10.523, 11.539] |
+| noIntuition | 192 | mind | -6.750 [-7.828, -5.680] |
+| noDeliberation | 192 | immediateRecaller | -7.047 [-9.086, -5.117] |
+| noDeliberation | 192 | embedWaiter | 1.313 [0.016, 2.609] |
+| noDeliberation | 192 | camper | 2.672 [1.531, 3.727] |
+| noDeliberation | 192 | spinner | 0.000 [0.000, 0.000] |
+| noDeliberation | 192 | reactiveDodger | 0.055 [-0.016, 0.148] |
+| noDeliberation | 192 | mind | -0.906 [-1.734, -0.055] |
+| noLearning | 192 | immediateRecaller | -11.406 [-13.758, -9.219] |
+| noLearning | 192 | embedWaiter | -0.820 [-2.047, 0.383] |
+| noLearning | 192 | camper | -0.148 [-0.867, 0.531] |
+| noLearning | 192 | spinner | -0.016 [-0.047, 0.000] |
+| noLearning | 192 | reactiveDodger | 0.031 [-0.188, 0.242] |
+| noLearning | 192 | mind | -1.172 [-2.078, -0.281] |
+| noAutomatization | 192 | immediateRecaller | 0.000 [0.000, 0.000] |
+| noAutomatization | 192 | embedWaiter | 0.000 [-0.242, 0.281] |
+| noAutomatization | 192 | camper | 0.000 [0.000, 0.000] |
+| noAutomatization | 192 | spinner | 0.000 [0.000, 0.000] |
+| noAutomatization | 192 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noAutomatization | 192 | mind | 0.000 [0.000, 0.000] |
+| noAdaptation | 192 | immediateRecaller | -9.898 [-12.305, -7.594] |
+| noAdaptation | 192 | embedWaiter | -0.789 [-1.883, 0.352] |
+| noAdaptation | 192 | camper | -0.055 [-0.773, 0.633] |
+| noAdaptation | 192 | spinner | -0.016 [-0.047, 0.000] |
+| noAdaptation | 192 | reactiveDodger | 0.070 [-0.156, 0.297] |
+| noAdaptation | 192 | mind | -1.047 [-1.992, -0.141] |
+| noCounterfactual | 192 | immediateRecaller | -7.031 [-9.031, -5.172] |
+| noCounterfactual | 192 | embedWaiter | 1.477 [0.211, 2.789] |
+| noCounterfactual | 192 | camper | 2.672 [1.531, 3.727] |
+| noCounterfactual | 192 | spinner | 0.000 [0.000, 0.000] |
+| noCounterfactual | 192 | reactiveDodger | 0.055 [-0.016, 0.148] |
+| noCounterfactual | 192 | mind | -0.875 [-1.648, -0.039] |
+| noAffect | 192 | immediateRecaller | 0.000 [0.000, 0.000] |
+| noAffect | 192 | embedWaiter | 0.000 [0.000, 0.000] |
+| noAffect | 192 | camper | 0.000 [0.000, 0.000] |
+| noAffect | 192 | spinner | 0.000 [0.000, 0.000] |
+| noAffect | 192 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noAffect | 192 | mind | 0.000 [0.000, 0.000] |
+| noBelief | 512 | immediateRecaller | 1.367 [-0.711, 3.570] |
+| noBelief | 512 | embedWaiter | -0.891 [-2.305, 0.492] |
+| noBelief | 512 | camper | -0.023 [-0.992, 0.875] |
+| noBelief | 512 | spinner | -0.164 [-1.023, 0.688] |
+| noBelief | 512 | reactiveDodger | 0.000 [-0.258, 0.273] |
+| noBelief | 512 | mind | 0.766 [-0.281, 1.766] |
+| noPrediction | 512 | immediateRecaller | -22.438 [-24.641, -20.094] |
+| noPrediction | 512 | embedWaiter | -4.711 [-6.703, -2.820] |
+| noPrediction | 512 | camper | -1.703 [-2.430, -0.969] |
+| noPrediction | 512 | spinner | -0.016 [-0.992, 1.016] |
+| noPrediction | 512 | reactiveDodger | -0.164 [-0.344, 0.016] |
+| noPrediction | 512 | mind | -2.672 [-3.508, -1.828] |
+| singleUtility | 512 | immediateRecaller | -29.141 [-31.914, -26.516] |
+| singleUtility | 512 | embedWaiter | -86.719 [-87.625, -85.805] |
+| singleUtility | 512 | camper | -39.578 [-40.977, -38.148] |
+| singleUtility | 512 | spinner | 19.734 [17.836, 21.672] |
+| singleUtility | 512 | reactiveDodger | 14.109 [13.281, 14.883] |
+| singleUtility | 512 | mind | -7.031 [-8.383, -5.711] |
+| noWorkspace | 512 | immediateRecaller | 3.789 [1.320, 6.430] |
+| noWorkspace | 512 | embedWaiter | 26.492 [25.500, 27.453] |
+| noWorkspace | 512 | camper | -57.836 [-70.172, -46.094] |
+| noWorkspace | 512 | spinner | -58.156 [-61.984, -53.766] |
+| noWorkspace | 512 | reactiveDodger | 2.039 [1.773, 2.289] |
+| noWorkspace | 512 | mind | 5.563 [4.563, 6.516] |
+| noHysteresis | 512 | immediateRecaller | -24.953 [-27.063, -22.820] |
+| noHysteresis | 512 | embedWaiter | -4.797 [-6.242, -3.398] |
+| noHysteresis | 512 | camper | -53.117 [-64.055, -43.297] |
+| noHysteresis | 512 | spinner | -55.195 [-58.969, -51.250] |
+| noHysteresis | 512 | reactiveDodger | 2.891 [2.594, 3.188] |
+| noHysteresis | 512 | mind | 2.070 [1.156, 2.891] |
+| noMetacog | 512 | immediateRecaller | -8.273 [-10.328, -6.305] |
+| noMetacog | 512 | embedWaiter | 1.820 [0.602, 3.094] |
+| noMetacog | 512 | camper | 2.305 [1.422, 3.164] |
+| noMetacog | 512 | spinner | -0.172 [-1.133, 0.789] |
+| noMetacog | 512 | reactiveDodger | -0.023 [-0.094, 0.031] |
+| noMetacog | 512 | mind | -0.445 [-1.328, 0.508] |
+| noAttentionSchema | 512 | immediateRecaller | -23.289 [-25.664, -20.820] |
+| noAttentionSchema | 512 | embedWaiter | -35.914 [-37.430, -34.313] |
+| noAttentionSchema | 512 | camper | -25.719 [-26.852, -24.594] |
+| noAttentionSchema | 512 | spinner | -25.320 [-26.391, -24.188] |
+| noAttentionSchema | 512 | reactiveDodger | 7.781 [7.227, 8.367] |
+| noAttentionSchema | 512 | mind | -10.031 [-10.984, -9.055] |
+| noToM | 512 | immediateRecaller | -0.508 [-1.836, 0.852] |
+| noToM | 512 | embedWaiter | -0.266 [-1.359, 0.898] |
+| noToM | 512 | camper | 0.000 [0.000, 0.000] |
+| noToM | 512 | spinner | 10.391 [9.594, 11.148] |
+| noToM | 512 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noToM | 512 | mind | 0.227 [-0.453, 0.969] |
+| noReflex | 512 | immediateRecaller | 5.320 [3.469, 7.188] |
+| noReflex | 512 | embedWaiter | -2.234 [-3.258, -1.195] |
+| noReflex | 512 | camper | -4.609 [-5.641, -3.617] |
+| noReflex | 512 | spinner | -4.016 [-4.820, -3.109] |
+| noReflex | 512 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noReflex | 512 | mind | -0.586 [-1.438, 0.203] |
+| noIntuition | 512 | immediateRecaller | -35.016 [-37.141, -32.969] |
+| noIntuition | 512 | embedWaiter | -63.594 [-64.773, -62.414] |
+| noIntuition | 512 | camper | -63.359 [-64.594, -62.102] |
+| noIntuition | 512 | spinner | 24.469 [22.602, 26.320] |
+| noIntuition | 512 | reactiveDodger | 10.594 [9.914, 11.266] |
+| noIntuition | 512 | mind | -6.172 [-7.516, -4.844] |
+| noDeliberation | 512 | immediateRecaller | -6.633 [-8.734, -4.508] |
+| noDeliberation | 512 | embedWaiter | 1.148 [-0.273, 2.602] |
+| noDeliberation | 512 | camper | 1.914 [1.141, 2.656] |
+| noDeliberation | 512 | spinner | 0.000 [0.000, 0.000] |
+| noDeliberation | 512 | reactiveDodger | -0.023 [-0.094, 0.031] |
+| noDeliberation | 512 | mind | -0.195 [-1.250, 0.875] |
+| noLearning | 512 | immediateRecaller | -9.695 [-11.867, -7.695] |
+| noLearning | 512 | embedWaiter | -0.547 [-1.656, 0.664] |
+| noLearning | 512 | camper | -0.750 [-1.719, 0.219] |
+| noLearning | 512 | spinner | 0.000 [0.000, 0.000] |
+| noLearning | 512 | reactiveDodger | -0.141 [-0.352, 0.063] |
+| noLearning | 512 | mind | -0.633 [-1.523, 0.188] |
+| noAutomatization | 512 | immediateRecaller | 0.000 [0.000, 0.000] |
+| noAutomatization | 512 | embedWaiter | -0.297 [-0.625, -0.039] |
+| noAutomatization | 512 | camper | 0.000 [0.000, 0.000] |
+| noAutomatization | 512 | spinner | 0.000 [0.000, 0.000] |
+| noAutomatization | 512 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noAutomatization | 512 | mind | 0.000 [0.000, 0.000] |
+| noAdaptation | 512 | immediateRecaller | -8.648 [-10.836, -6.617] |
+| noAdaptation | 512 | embedWaiter | -0.133 [-1.242, 0.984] |
+| noAdaptation | 512 | camper | -0.727 [-1.688, 0.234] |
+| noAdaptation | 512 | spinner | 0.000 [0.000, 0.000] |
+| noAdaptation | 512 | reactiveDodger | -0.141 [-0.352, 0.063] |
+| noAdaptation | 512 | mind | 0.016 [-0.930, 0.820] |
+| noCounterfactual | 512 | immediateRecaller | -6.266 [-8.398, -4.180] |
+| noCounterfactual | 512 | embedWaiter | 1.305 [-0.422, 3.047] |
+| noCounterfactual | 512 | camper | 1.914 [1.141, 2.656] |
+| noCounterfactual | 512 | spinner | 0.000 [0.000, 0.000] |
+| noCounterfactual | 512 | reactiveDodger | -0.023 [-0.094, 0.031] |
+| noCounterfactual | 512 | mind | -0.227 [-1.242, 0.828] |
+| noAffect | 512 | immediateRecaller | 0.000 [0.000, 0.000] |
+| noAffect | 512 | embedWaiter | 0.000 [0.000, 0.000] |
+| noAffect | 512 | camper | 0.000 [0.000, 0.000] |
+| noAffect | 512 | spinner | 0.000 [0.000, 0.000] |
+| noAffect | 512 | reactiveDodger | 0.000 [0.000, 0.000] |
+| noAffect | 512 | mind | 0.000 [0.000, 0.000] |
+
+## Reproduce
+Command: node arena/audit.mjs --seeds 32 --workers 6 --durationSec 300 --budgets 48,192,512 --opponents immediateRecaller,embedWaiter,camper,spinner,reactiveDodger,mind --variants full,noBelief,noPrediction,singleUtility,noWorkspace,noHysteresis,noMetacog,noAttentionSchema,noToM,noReflex,noIntuition,noDeliberation,noLearning,noAutomatization,noAdaptation,noCounterfactual,noAffect --modes MODE_A,MODE_B --out ../final-reports/phase5-final --label final --seedStart 1 --resume false
+Source SHA-256: 19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5
+Source unchanged during run: true
+Node: v24.19.0; elapsed seconds: 28643.370; workers: 6
+
+The JSON includes every bout, complete metric effects, mode splits, settings, budget checks, and source file hashes. Results apply only to the recorded source snapshot and opponents.

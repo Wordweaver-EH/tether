@@ -1,2 +1,7 @@
 jobs/
 node_modules/
+
+# Local reproduction outputs; delivered evidence remains tracked
+reports/reproduction/
+# Reconstructed evidence belongs in the data-branch worktree
+reports/final/phase5-final.json.gz

@@ -9,24 +9,28 @@
   <main class="shell">
     <header class="topbar">
       <div class="brand"><span class="brandmark">T</span><span>TETHER <small>ARENA / 01</small></span></div>
-      <div id="hud" class="hud" hidden><span class="label">YOU</span><strong id="p1Score">0</strong><span class="divider">:</span><strong id="p2Score">0</strong><span class="label">MIND</span><span id="timer" class="timer">05:00</span></div>
-      <div class="tools"><button id="mute" class="text-button" aria-pressed="false">Sound on</button><a href="../replay/">Mind View ↗</a></div>
+      <div id="hud" class="hud" hidden><span class="label">YOU</span><strong id="p1Score">0</strong><span class="divider">:</span><strong id="p2Score">0</strong><span id="opponentLabel" class="label">MIND</span><span id="timer" class="timer">05:00</span></div>
+      <div class="tools"><button id="resetMemory" class="text-button" title="Forget the locally learned opponent profile">Reset learning</button><button id="mute" class="text-button" aria-pressed="false">Sound on</button><a href="../replay/">Mind View ↗</a></div>
     </header>
     <section class="stage" aria-label="Tether arena">
       <canvas id="arena" aria-label="Arena, player view"></canvas>
+      <div id="objectiveHud" class="objective-hud" hidden><strong id="objectiveTitle">Cover Control · baseline NPC</strong><span id="objectiveStatus"></span><small>Ring status is public</small></div>
       <div id="start" class="dialog">
         <div class="eyebrow">A DUEL OF ATTENTION</div>
         <h1>Hold the line.<br><em>Watch the other.</em></h1>
         <p>One spear each. Throw to pin it in the arena. Recall it across a fixed line to catch your opponent.</p>
         <div class="selectors">
+          <label class="game-selector">Game<select id="gameMode"><option value="DUEL" selected>Duel · original rules</option><option value="COVER_CONTROL">Cover Control · optional</option></select></label>
+          <label id="coverOpponentSelector" class="game-selector" hidden>Cover opponent<select id="coverOpponent" aria-describedby="coverGuide"><option value="baseline" selected>Baseline NPC · conventional route-and-contest</option><option value="mind">Existing mind · experimental hunt/search</option></select></label>
           <label>Mind difficulty<select id="difficulty"><option value="easy">Easy</option><option value="normal" selected>Normal</option><option value="hard">Hard</option></select></label>
           <label>Visibility<select id="mode"><option value="MODE_B" selected>Mode B · forward cone</option><option value="MODE_A">Mode A · full view</option></select></label>
         </div>
+        <div id="coverInfo" class="cover-info" hidden><p id="coverRules"></p><p id="coverGuide"></p></div>
         <button id="begin" class="primary">Enter arena <span>→</span></button>
-        <div id="stats" class="stats"></div>
+        <div id="stats" class="stats"></div><p id="memoryStatus" class="memory-status" aria-live="polite"></p>
       </div>
-      <div id="pause" class="dialog compact" hidden><div class="eyebrow">PAUSED</div><h2>Take a breath.</h2><button id="resume" class="primary">Resume <span>→</span></button><p>Esc to resume</p></div>
-      <div id="result" class="dialog compact" hidden><div class="eyebrow">BOUT COMPLETE</div><h2 id="resultTitle">Draw</h2><p id="resultScore"></p><div class="actions"><button id="rematch" class="primary">Rematch <span>→</span></button><button id="download" class="secondary">Download log</button></div><a href="../replay/">Open Mind View ↗</a></div>
+      <div id="pause" class="dialog compact" hidden><div class="eyebrow">PAUSED</div><h2>Take a breath.</h2><div class="actions"><button id="resume" class="primary">Resume <span>→</span></button><button id="endEarly" class="secondary">End bout</button></div><p>Esc to resume. End the bout to download its log or choose another mode.</p></div>
+      <div id="result" class="dialog compact" hidden><div class="eyebrow">BOUT COMPLETE</div><h2 id="resultTitle">Draw</h2><p id="resultScore"></p><section class="learned"><h3 id="learnedTitle">What the mind observed</h3><p id="learnedSummary"></p></section><div class="actions"><button id="rematch" class="primary">Rematch <span>→</span></button><button id="download" class="secondary">Download log</button><button id="changeMode" class="secondary">Change mode</button></div><a href="../replay/">Open Mind View ↗</a></div>
     </section>
     <footer><span><b>WASD</b> move <b>Mouse</b> face <b>Click</b> throw <b>Right click / Space</b> recall <b>Esc</b> pause</span><span id="status">MODE B / 120 HZ</span></footer>
   </main>

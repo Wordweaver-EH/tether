@@ -1,0 +1,30 @@
+✔ F01: no evidence is quiet (1.70081ms)
+✔ F02: visible HELD clears remembered-away evidence (0.787846ms)
+✔ F03: visible away states delegate rather than claim unseen return (0.446301ms)
+✔ F04: remembered rear wall spear yields uncertain warning, scan and lateral suggestion (0.813104ms)
+✔ F05: outbound hypothesis stops at public obstacle and can become rear (0.498791ms)
+✔ F06: side/front remembered landmark stays quiet without claiming safety (0.307122ms)
+✔ F07: hidden remembered RETURNING remains an uncertain continuation, with no endpoint (1.125705ms)
+✔ F08: memory includes exactly 0.8 source seconds and then expires (0.337598ms)
+✔ F09: delayed score/end clears old evidence and snapshots (0.631831ms)
+✔ F10: both bearing frames preserve either issued world-space lateral direction (0.774997ms)
+✔ F11: both near-wall cases select the full-envelope open side (0.84335ms)
+✔ F12: a public obstacle blocks one side and selects the other (0.21272ms)
+✔ F13: blocked sides and overlapping uncertainty yield scan-only (0.402436ms)
+✔ F14: unobserved reset-spawn envelope also constrains movement (0.334133ms)
+✔ F15: coincident nominal landmark abstains with finite data (0.194583ms)
+✔ F16: one queue enforces 250-ms age, 30-Hz receipt cadence and startup (4.723865ms)
+✔ F17: source-tick-61 reset cannot clear memory until receipt tick 94 (2.579392ms)
+✔ F18: hidden worlds and unused oracle getters are indistinguishable (0.732974ms)
+✔ F19: malformed contracts fail closed; extra allowed-boundary noise is ignored (2.244449ms)
+✔ F20: determinism, input/snapshot isolation and no attack command fields (0.798482ms)
+✔ F21: independent sampled body/reset-envelope segment geometry has zero collisions (32.063755ms)
+✔ F22: original bytes, frozen sources and prototype-only source boundary stay intact (2753.160199ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2898.178887

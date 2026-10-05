@@ -24,7 +24,14 @@ export function makeServer() {
       response.writeHead(405, { Allow: 'GET, HEAD' }); response.end(); return;
     }
     let file;
-    try { file = resolveRequest(new URL(request.url, 'http://localhost').pathname); }
+    try {
+      const url = new URL(request.url, 'http://localhost');
+      if (url.pathname === '/') {
+        response.writeHead(302, { Location: `/client/${url.search}`, 'Cache-Control': 'no-store' });
+        response.end(); return;
+      }
+      file = resolveRequest(url.pathname);
+    }
     catch { response.writeHead(400); response.end(); return; }
     if (!file) { response.writeHead(403); response.end(); return; }
     try {

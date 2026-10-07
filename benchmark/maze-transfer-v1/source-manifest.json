@@ -1,0 +1,144 @@
+{
+  "protocol": {
+    "version": 1,
+    "pilotSeed": 991,
+    "seeds": [
+      1709,
+      3253,
+      6421
+    ],
+    "conditions": [
+      "familiar",
+      "switch"
+    ],
+    "variants": [
+      "full",
+      "contentCut",
+      "memoryOff",
+      "monitorOff",
+      "fixed",
+      "conventional"
+    ],
+    "switchTick": 24,
+    "maxTicks": 64,
+    "baseCommit": "2b673c6bd8b6a32a87ff413fea135b1098209344"
+  },
+  "files": {
+    "benchmark/maze-transfer-v1/PROTOCOL.md": "64e839172a50c36570bbaf2fa0d41ec6667fe1d59ebd34292ec1e6ee370b4ded",
+    "benchmark/maze-transfer-v1/run.mjs": "ac25eb115b4709e60eaebdad407e745e00a764512ed3d58e5c9a05793675aa75",
+    "maze/README.md": "71f6ff866312e0c211a5f1d0516e94c0113764da310c44818026609b1ba8641e",
+    "maze/controller.mjs": "a959e9a7abaf584c84b9ac3828968fd990ed63b51b74a0526e67aa3c65000e2d",
+    "maze/planner.mjs": "5e54ceae5421ed2214cf50fcacf14b8be57703c210aba97438884a0db819a0f2",
+    "maze/run.mjs": "3b90576c184b24a9f036f6eb531f6a04d34783f43a9a0e0c8077524bbfa257ca",
+    "maze/world.mjs": "006817fa1e067e39f4930fff45682c297383ffa3ceea8b766c619ea5d1ffaa4f",
+    "src/mind/cognition.mjs": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+    "src/mind/content-broadcast.mjs": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+    "src/mind/coordination.mjs": "2064667a947944d6d35a963ad93008cfce0e53a64eb8d38a39686d9cfaa2a7fc",
+    "src/mind/math.mjs": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+    "src/mind/percept-contact.mjs": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+    "src/mind/prediction-monitor.mjs": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+    "src/mind/rollout-completion.mjs": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+    "src/mind/target-memory.mjs": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+    "src/mind/workspace.mjs": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+    "test/maze-transfer.test.mjs": "aaa7f67c27d8cf90b506ed7b7114045f5fad058be36e4634c4844cc82924f773"
+  },
+  "reused": {
+    "src/mind/workspace.mjs": {
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+      "functions": [
+        {
+          "name": "appraisalControl",
+          "startLine": 8,
+          "endLine": 18
+        },
+        {
+          "name": "createWorkspace",
+          "startLine": 20,
+          "endLine": 59
+        }
+      ],
+      "note": "Functions imported and exercised unchanged"
+    },
+    "src/mind/coordination.mjs": {
+      "sha256": "2064667a947944d6d35a963ad93008cfce0e53a64eb8d38a39686d9cfaa2a7fc",
+      "functions": [
+        {
+          "name": "projectContentBelief",
+          "startLine": 30,
+          "endLine": 43
+        },
+        {
+          "name": "coordinateAttention",
+          "startLine": 45,
+          "endLine": 61
+        },
+        {
+          "name": "createCoordination",
+          "startLine": 63,
+          "endLine": 166
+        }
+      ],
+      "note": "Functions imported and exercised unchanged"
+    },
+    "src/mind/content-broadcast.mjs": {
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+      "functions": [
+        {
+          "name": "createContentPacket",
+          "startLine": 91,
+          "endLine": 93
+        },
+        {
+          "name": "validateContentPacket",
+          "startLine": 96,
+          "endLine": 98
+        },
+        {
+          "name": "overrideContentPacket",
+          "startLine": 101,
+          "endLine": 112
+        },
+        {
+          "name": "deliverContentPacket",
+          "startLine": 115,
+          "endLine": 125
+        }
+      ],
+      "note": "Functions imported and exercised unchanged"
+    },
+    "src/mind/target-memory.mjs": {
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+      "functions": [
+        {
+          "name": "createTargetMemory",
+          "startLine": 41,
+          "endLine": 108
+        }
+      ],
+      "note": "Functions imported and exercised unchanged"
+    },
+    "src/mind/prediction-monitor.mjs": {
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+      "functions": [
+        {
+          "name": "createPredictionMonitor",
+          "startLine": 92,
+          "endLine": 213
+        }
+      ],
+      "note": "Functions imported and exercised unchanged"
+    },
+    "src/mind/cognition.mjs": {
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+      "functions": [
+        {
+          "name": "createBudget",
+          "startLine": 4,
+          "endLine": 12
+        }
+      ],
+      "note": "Only createBudget executes; other combat definitions are not transferred"
+    }
+  },
+  "fingerprint": "85d2cdf7753068cc3e82ad7761746746ca16e88052a536c3ce07b78c26dcec05"
+}

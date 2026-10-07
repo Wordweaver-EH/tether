@@ -1,0 +1,54 @@
+{
+  "scope": "Pre-score correctness and module portability, not held-out performance",
+  "runtime": "v24.19.0",
+  "baseCommit": "2b673c6bd8b6a32a87ff413fea135b1098209344",
+  "sourceFingerprint": "85d2cdf7753068cc3e82ad7761746746ca16e88052a536c3ce07b78c26dcec05",
+  "inheritedFrozenFilesVerified": 44,
+  "regression": {
+    "command": "ORIGINAL_SOURCE=/workspace/shared/tether-uncertainty-reference node --test test/*.test.mjs delivery-tests/*.test.mjs",
+    "tests": 358,
+    "passed": 358,
+    "failed": 0,
+    "newMazeTests": 12,
+    "existingTests": 346
+  },
+  "pilot": {
+    "seed": 991,
+    "conditions": [
+      "familiar",
+      "switch"
+    ],
+    "variants": [
+      "full",
+      "contentCut",
+      "memoryOff",
+      "monitorOff",
+      "fixed",
+      "conventional"
+    ],
+    "rawEpisodes": 12,
+    "scored": false
+  },
+  "causalFixtures": {
+    "contentDelivery": "Cut changes emitted gaze on identical pilot percepts; content override changes actual command without refreshing evidence or TTL",
+    "predictionMonitor": "Control cut changes emitted movement on identical pilot percepts while monitor state stays equal",
+    "episodicMemory": "Read cut changes emitted move E to W on identical three-percept stream, identical Threat focus, work and no monitor request",
+    "workspaceRouting": "Existing noWorkspace changes move N to E with identical focus, selected packet and work; shared fixed every-step replan isolates routing"
+  },
+  "independentReview": {
+    "coreAndFixtureAudit": "44 inherited source hashes and 73 inherited mechanism tests independently verified; sensor boundary and action-level fixtures reviewed",
+    "noPrivilegedGhostStateFound": true
+  },
+  "limitations": [
+    "Single ghost mapped to existing opponent referent",
+    "Full combat controller and learned competence not transferred",
+    "New maze world model, goals, perception and two-step planner",
+    "Inherited TTL/thresholds/speed bound unchanged, not calibrated for maze",
+    "Planner ignores radius and confidence magnitude; linear memory may cross walls",
+    "Inspect has no demonstrated ordinary selected-focus role",
+    "Nominal budget, not operation-matched; fixed requests not invalidation-matched",
+    "Conventional comparator differs in multiple mechanisms"
+  ],
+  "scoreStatus": "Not started; requires root-verified remote checkpoint",
+  "publication": "Code, protocol and compact summaries only; raw retained separately and not uploaded"
+}

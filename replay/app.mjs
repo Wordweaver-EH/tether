@@ -100,13 +100,17 @@ function recentSpeech(t) {
 }
 function updateSide(trace, frame) {
   const world = frame.world, cover = world.gameMode === 'COVER_CONTROL';
-  const coverMind = cover && data.metadata.agent_technical?.[1]?.controller === 'cover-existing-mind-v1';
-  $('focus').textContent = coverMind ? `Existing mind (experimental) · ${trace?.focus ?? 'No focus'}`
+  const coverController = data.metadata.agent_technical?.[1]?.controller;
+  const integratedMind = cover && coverController === 'cover-integrated-mind-v1';
+  const coverMind = cover && ['cover-existing-mind-v1', 'cover-integrated-mind-v1'].includes(coverController);
+  $('focus').textContent = integratedMind ? `Integrated mind (experimental) · ${trace?.focus ?? 'No focus'}`
+    : coverMind ? `Existing mind (experimental) · ${trace?.focus ?? 'No focus'}`
     : cover ? 'Cover Control · baseline NPC' : trace?.focus ?? 'No focus';
   $('traceTime').textContent = cover
     ? `P1 ${world.players[0].score} : ${world.players[1].score} P2 · ${objectiveStatus({ ...world.experiment.OBJECTIVE, ...world.objective }, { P1: 'P1', P2: 'P2' })}`
     : trace ? `Cognitive cycle ${fmt(trace.time)}` : '';
-  if (coverMind) $('traceTime').textContent += ` · Existing hunt/search policy, not yet taught ring capture.${trace ? ` Cognitive cycle ${fmt(trace.time)}` : ''}`;
+  if (integratedMind) $('traceTime').textContent += ` · Competing ring/threat/search goals; bounded planning and session-only procedural route cache.${trace ? ` Cognitive cycle ${fmt(trace.time)}` : ''}`;
+  else if (coverMind) $('traceTime').textContent += ` · Existing hunt/search policy, not yet taught ring capture.${trace ? ` Cognitive cycle ${fmt(trace.time)}` : ''}`;
   for (const [id, rows] of [['cognition', cognitionReadouts(trace)], ['adaptation', adaptationReadouts(trace)]]) {
     $(id).replaceChildren();
     for (const [label, value] of rows) addReadout($(id), label, value);

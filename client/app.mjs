@@ -3,6 +3,7 @@ import { percept } from '../src/perception.js';
 import { createMind } from '../src/mind/index.mjs';
 import { createCoverAgent } from '../src/agents/cover-control.mjs';
 import { createCoverMind } from '../src/agents/cover-mind.mjs';
+import { createIntegratedCoverMind } from '../src/agents/cover-integrated.mjs';
 import { createSessionLogger } from '../src/log.js';
 import { createAccumulator } from './fixed-step.mjs';
 import { createInputState } from './input.mjs';
@@ -12,7 +13,7 @@ import { readTelemetry, recordBout, recordRematch, recordSessionDuration } from 
 
 import { readMemory, saveMemory, resetMemory } from './memory-store.mjs';
 import { learnedSummary } from './mind-readouts.mjs';
-import { COVER_RULES, COVER_GUIDE, COVER_MIND_GUIDE, objectiveStatus } from './cover-display.mjs';
+import { COVER_RULES, COVER_GUIDE, COVER_MIND_GUIDE, COVER_INTEGRATED_GUIDE, objectiveStatus } from './cover-display.mjs';
 
 // Storage can be disabled by browser privacy settings. Gameplay still works.
 let storage = null;
@@ -28,9 +29,10 @@ let memorySnapshot = readMemory(storage), boutNumber = 0, embedAt = new Map(), s
 const testMode = new URLSearchParams(location.search).get('test') === '1';
 let testSeed = null, testInputs = [];
 const isCover = () => gameMode === 'COVER_CONTROL';
-const isCoverMind = () => isCover() && coverOpponent === 'mind';
+const isIntegratedCoverMind = () => isCover() && coverOpponent === 'integrated';
+const isCoverMind = () => isCover() && ['mind', 'integrated'].includes(coverOpponent);
 const hasMind = () => !isCover() || isCoverMind();
-const opponentName = () => isCoverMind() ? 'Existing mind' : isCover() ? 'Baseline NPC' : 'Mind';
+const opponentName = () => isIntegratedCoverMind() ? 'Integrated mind' : isCoverMind() ? 'Existing mind' : isCover() ? 'Baseline NPC' : 'Mind';
 function updateSelection() {
   if (phase !== 'start') return;
   gameMode = $('gameMode').value;
@@ -39,9 +41,11 @@ function updateSelection() {
   $('difficulty').disabled = isCover();
   $('coverOpponentSelector').hidden = !isCover();
   $('coverInfo').hidden = !isCover();
-  $('coverGuide').textContent = isCoverMind() ? COVER_MIND_GUIDE : COVER_GUIDE;
+  $('coverGuide').textContent = isIntegratedCoverMind() ? COVER_INTEGRATED_GUIDE : isCoverMind() ? COVER_MIND_GUIDE : COVER_GUIDE;
   $('resetMemory').disabled = isCover();
-  $('memoryStatus').textContent = isCoverMind()
+  $('memoryStatus').textContent = isIntegratedCoverMind()
+    ? 'Experimental integrated mind: session-only procedural route cache, fresh each bout. No learning is loaded from or saved to your Duel profile.'
+    : isCoverMind()
     ? 'Experimental existing mind: fresh each bout. Its learning is never loaded from or saved to your Duel profile.'
     : isCover()
     ? 'Cover Control uses a deterministic baseline NPC. Duel learning is kept separately.'
@@ -88,7 +92,8 @@ function startBout(rematch = false, seedOverride = null) {
   world = isCover() ? createWorld({ gameMode }) : createWorld();
   const seed = seedOverride ?? (Date.now() + boutNumber) >>> 0;
   if (testMode && isCover() && rematch) { testSeed = seed; testInputs = []; }
-  mind = isCoverMind() ? createCoverMind({ seed, captureTrace: true })
+  mind = isIntegratedCoverMind() ? createIntegratedCoverMind({ seed, captureTrace: true })
+    : isCoverMind() ? createCoverMind({ seed, captureTrace: true })
     : isCover() ? createCoverAgent({ seed })
     : createMind({ seed, difficulty: $('difficulty').value, captureTrace: true, memorySnapshot });
   logger = createSessionLogger({ world, mode, sessionId: String(sessionStart),
@@ -100,14 +105,17 @@ function startBout(rematch = false, seedOverride = null) {
   outer = null; outerUntil = 0; lastSpeechReportTime = -1; input.releaseAll();
   $('status').textContent = `${isCover() ? 'COVER CONTROL / ' : ''}${mode === 'MODE_B' ? 'MODE B' : 'MODE A'} / 120 HZ`;
   $('opponentLabel').textContent = opponentName().toUpperCase();
-  $('objectiveTitle').textContent = isCoverMind() ? 'Cover Control · existing mind (experimental)' : 'Cover Control · baseline NPC';
+  $('objectiveTitle').textContent = isIntegratedCoverMind() ? 'Cover Control · integrated mind (experimental)'
+    : isCoverMind() ? 'Cover Control · existing mind (experimental)' : 'Cover Control · baseline NPC';
   show('playing');
 }
 function endBout() {
   if (phase !== 'playing') return;
   mind.finish?.(percept(world, 'P2', mode));
   $('learnedTitle').textContent = isCover() ? 'About this opponent' : 'What the mind observed';
-  if (isCoverMind()) {
+  if (isIntegratedCoverMind()) {
+    $('learnedSummary').textContent = 'Experimental integrated mind: ring, threat and search goals compete with bounded planning and an explicit fallback. Actual mind traces and post-noise commands are included in the log. Its procedural route cache is session-only and discarded after each bout; no saved Duel profile is used or changed.';
+  } else if (isCoverMind()) {
     $('learnedSummary').textContent = 'Experimental existing hunt/search policy, not yet taught ring capture. Any recorded mind traces are included in the log. Learning is discarded after each bout; your Duel opponent profile is unchanged.';
   } else if (isCover()) {
     $('learnedSummary').textContent = 'A deterministic, percept-only baseline NPC with 150ms perception delay, 30Hz decisions and aim noise. It does not learn or produce a mind trace. Your Duel opponent profile is unchanged.';
@@ -127,7 +135,7 @@ function endBout() {
   const winner = score.P1 === score.P2 ? 'Draw' : score.P1 > score.P2 ? 'You win' : `${opponentName()} wins`;
   $('resultTitle').textContent = winner;
   $('resultScore').textContent = `You ${score.P1} · ${score.P2} ${opponentName()}`;
-  recordBout(storage, { mode, ...(isCover() ? { gameMode, opponent: isCoverMind() ? 'cover-control-mind' : 'cover-control-baseline' } : {}),
+  recordBout(storage, { mode, ...(isCover() ? { gameMode, opponent: isIntegratedCoverMind() ? 'cover-control-integrated' : isCoverMind() ? 'cover-control-mind' : 'cover-control-baseline' } : {}),
     difficulty: isCover() ? null : $('difficulty').value, score,
     elapsedSec: world.elapsedSec, finishedAt: new Date().toISOString(), ...stats });
   show('result'); updateStats();
@@ -254,7 +262,7 @@ if (testMode) window.__codegame = {
   reset(seed, requestedGameMode = 'DUEL', requestedCoverOpponent = 'baseline') {
     if (!Number.isSafeInteger(seed) || seed < 0) throw new RangeError('seed must be a nonnegative integer');
     if (!['DUEL', 'COVER_CONTROL'].includes(requestedGameMode)) throw new RangeError('invalid game mode');
-    if (!['baseline', 'mind'].includes(requestedCoverOpponent)) throw new RangeError('invalid Cover opponent');
+    if (!['baseline', 'mind', 'integrated'].includes(requestedCoverOpponent)) throw new RangeError('invalid Cover opponent');
     testSeed = seed; testInputs = [];
     if (requestedGameMode === 'DUEL') memorySnapshot = null;
     $('gameMode').value = requestedGameMode;

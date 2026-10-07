@@ -1,7 +1,7 @@
 // Test-only, offline comparison fixtures. Never substitute current code for a
 // missing historical baseline, and never fetch or trust an environment override.
 import {createHash} from 'node:crypto';
-import {cpSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync} from 'node:fs';
+import {cpSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {dirname, resolve} from 'node:path';
 import {fileURLToPath, pathToFileURL} from 'node:url';
@@ -45,6 +45,14 @@ export async function materializeCurrentMindWithOriginalWorkspace() {
     // Copy it unchanged into both current-controller workspace-swap arms.
     const visibility = readFileSync(resolve(repoRoot, 'src/visibility.js'));
     writeFileSync(resolve(path, 'visibility.js'), visibility);
+    // Cover policy reuses the unchanged public route and embodiment helpers.
+    mkdirSync(resolve(path, 'agents'));
+    for (const name of ['cover-control.mjs', 'cover-interface.mjs']) {
+      const bytes = readFileSync(resolve(repoRoot, 'src/agents', name));
+      writeFileSync(resolve(path, 'agents', name), bytes);
+      if (!readFileSync(resolve(path, 'agents', name)).equals(bytes))
+        throw new Error(`Current Cover dependency copy mismatch: ${name}`);
+    }
     writeFileSync(resolve(path, 'package.json'), '{"type":"module"}\n');
     if (!readFileSync(resolve(path, 'visibility.js')).equals(visibility))
       throw new Error('Current visibility dependency copy mismatch');

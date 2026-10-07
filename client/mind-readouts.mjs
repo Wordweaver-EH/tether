@@ -27,7 +27,31 @@ export function cognitionReadouts(trace) {
     rows.push(['Work units', `${c.budget.spent} / ${c.budget.limit}`]);
   if (c.tactic) rows.push(['Tactic', String(c.tactic)]);
   if (typeof c.automatic === 'boolean') rows.push(['Learned automatic response', c.automatic ? 'Yes' : 'No']);
+  if (c.cover) {
+    if (c.cover.intent) rows.push(['Cover intent', String(c.cover.intent)]);
+    if (c.cover.reason) rows.push(['Cover reason', String(c.cover.reason)]);
+    if (c.cover.actionSource) rows.push(['Command source', String(c.cover.actionSource)]);
+    if (typeof c.cover.routeCache?.reused === 'boolean')
+      rows.push(['Route cache reused', c.cover.routeCache.reused ? 'Yes' : 'No']);
+    if (c.cover.planning?.status) rows.push(['Planning status', String(c.cover.planning.status)]);
+    if (c.cover.planning && Object.hasOwn(c.cover.planning, 'fallback'))
+      rows.push(['Planning fallback', c.cover.planning.fallback ? String(c.cover.planning.fallback) : 'None']);
+  }
+  if (trace.actualCommand) {
+    if (trace.input) rows.push(['Requested input (before noise)', commandReadout(trace.input)]);
+    rows.push(['Actual command (post-noise)', commandReadout(trace.actualCommand)]);
+  }
   return rows;
+}
+function commandReadout(command) {
+  const parts = [];
+  if (finite(command.moveX) && finite(command.moveY))
+    parts.push(`move (${command.moveX.toFixed(3)}, ${command.moveY.toFixed(3)})`);
+  if (finite(command.aimX) && finite(command.aimY))
+    parts.push(`aim (${command.aimX.toFixed(3)}, ${command.aimY.toFixed(3)})`);
+  if (typeof command.throw === 'boolean') parts.push(`throw ${command.throw ? 'yes' : 'no'}`);
+  if (typeof command.recall === 'boolean') parts.push(`recall ${command.recall ? 'yes' : 'no'}`);
+  return parts.join(' · ') || 'Not recorded';
 }
 export function adaptationReadouts(trace) {
   const a = trace?.cognition?.adaptation ?? trace?.adaptation;

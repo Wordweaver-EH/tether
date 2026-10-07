@@ -1,3 +1,4 @@
+import { createCoverPolicy } from './cover-policy.mjs';
 import {createCoordination,COORDINATION_NOMINAL_UNITS} from './coordination.mjs';
 import {selectCompletedBranch} from './rollout-completion.mjs';
 import { createBelief } from './belief.mjs';
@@ -33,7 +34,7 @@ function settings(difficulty) {
 }
 
 export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
-  benchmarkInterface = false, deferCommand = false, fixedTeacherSchedule = null, captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
+  coverControl = null, benchmarkInterface = false, deferCommand = false, fixedTeacherSchedule = null, captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
   if (deferCommand && !benchmarkInterface) throw new Error('deferCommand requires benchmark interface');
   if (typeof benchmarkInterface !== 'boolean') throw new TypeError('benchmarkInterface must be boolean');
   if (benchmarkInterface && difficulty !== 'normal') throw new Error('benchmark interface requires normal difficulty');
@@ -66,6 +67,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     reflexes: 0, automaticDecisions: 0, learningUpdates: 0, counterfactualBranches: 0,
     decisionLatencySec: 0, bySituation: {} };
   const config = settings(difficulty);
+  const cover = coverControl === null ? null : createCoverPolicy(coverControl);
   const belief = createBelief(random, ablations, particleCount);
   const workspace = createWorkspace(ablations);
   const attention = createAttentionSchema(ablations);
@@ -110,7 +112,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     model.embedAge = now - embedSince;
     model.unseenFor = now - lastVisibleAt;
     model.timeSinceThrow = now - lastThrowAt;
-    const flinch = ablations.noReflex ? null : reflex(view);
+    const flinch = ablations.noReflex || cover?.enabled.threat === false ? null : reflex(view);
     const coordinationActive = coordinationEnabled && !flinch && budget.remaining >= particleCount * 2 + COORDINATION_NOMINAL_UNITS && budget.spend('coordination',COORDINATION_NOMINAL_UNITS);
     if (!flinch) budget.spend('belief', particleCount * 2);
     const b = flinch ? (cachedBelief ?? belief.summary(now)) : belief.update(view, now);
@@ -131,7 +133,8 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
       point(Math.cos(scanAngle) * 5, Math.sin(scanAngle) * 5));
     model.searchTarget = b.confidence > 0.1 ? b.mean :
       point(view.own.position.x > 0 ? -2 : 2, Math.sin(now * 0.4) * 3);
-    const candidates = specialists(view, workingBelief, model, { arousal: 0 }, ablations);
+    let candidates = specialists(view, workingBelief, model, { arousal: 0 }, ablations);
+    if (cover) candidates = cover.prepare(view, workingBelief, model, candidates, budget, flinch);
     let mood = affect.update(view, workingBelief, ablations.singleUtility ?
       { Threat: { salience: 0 } } : candidates);
     if (ablations.noAffect) mood = { arousal: 0, valence: 0, confidenceMood: 0, scoreMargin: 0 };
@@ -158,8 +161,9 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const invalidatedRecallPlan = monitorForced && recallPlan ? {...recallPlan} : null;
     if (monitorForced) recallPlan = null;
     const fixedTeacherDue = fixedTeacherSchedule !== null && totals.cycles % fixedTeacherSchedule.every === fixedTeacherSchedule.phase;
-    const escalate = fixedTeacherSchedule !== null ? fixedTeacherDue && !flinch && !ablations.noDeliberation : monitorForced || noveltyForced || !flinch && !ablations.noDeliberation && !ablations.noMetacog &&
+    let escalate = fixedTeacherSchedule !== null ? fixedTeacherDue && !flinch && !ablations.noDeliberation : monitorForced || noveltyForced || !flinch && !ablations.noDeliberation && !ablations.noMetacog &&
       (!habit.automatic || habit.aware) && (conflict || b.confidence < 0.6 || b.surprise > 5 || habit.aware);
+    if (cover) escalate = cover.request(view, workingBelief, chosen, monitorForced, flinch, budget) && !ablations.noDeliberation;
     let tactic = ablations.noIntuition ? 'direct' : habit.automatic ? habit.tactic : 'lead';
     if (!ablations.noIntuition && !habit.automatic && opponentModel.enabled && opponentModel.samples >= 3)
       tactic = opponentModel.sampledSide > 0 ? 'left' : 'right';
@@ -171,7 +175,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
       // compute tax is imposed on noWorkspace: it uses the same planning kernel.
       const branchAllowance = budget.remaining;
       const local = budget;
-      const alternatives = ablations.noCounterfactual ? [tactic] : view.own.spear.state === 'EMBEDDED' ? ['direct','lead'] : [tactic, ...TACTICS.filter(t => t !== tactic)];
+      const alternatives = cover && view.own.spear.state === 'EMBEDDED' ? ['direct'] : ablations.noCounterfactual ? [tactic] : view.own.spear.state === 'EMBEDDED' ? ['direct','lead'] : [tactic, ...TACTICS.filter(t => t !== tactic)];
       // Interleave hypotheses so a scarce budget does not privilege the first option.
       const n = Math.max(1, Math.min(8, Math.floor(branchAllowance / (alternatives.length * 4))));
       for (const t of alternatives) {
@@ -187,7 +191,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
         learning.counterfactual(key,branch.tactic,branch.value);
 
     }
-    if (!flinch && (ablations.noWorkspace || ['Hunt','Threat','Deceive','Utility'].includes(chosen.focus)) && view.own.spear.state === 'HELD') {
+    if (!flinch && (!cover || view.opponent) && (ablations.noWorkspace || ['Hunt','Threat','Deceive','Utility', ...(cover ? ['Objective'] : [])].includes(chosen.focus)) && view.own.spear.state === 'HELD') {
       const target = tacticTarget(tactic,view,planningBelief,planningAdaptation);
       chosen.outputs.gaze = target;
       chosen.outputs.throw = !!chosen.outputs.throw && dot(view.own.facing,unit(sub(target,view.own.position))) > Math.cos(model.throwAngleRad);
@@ -204,15 +208,17 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
       if (opponentModel.enabled && opponentModel.neutralization > 0.7 && model.embedAge > 2) chosen.outputs.recall = true;
     }
     const input = EMPTY();
+    if (cover) schedule = cover.schedule(schedule, view, workingBelief, chosen);
     const gaze = planGaze(view, chosen.outputs.gaze, schedule, now, model, random, ablations, benchmarkInterface);
     input.aimX = gaze.x; input.aimY = gaze.y;
-    const move = planMove(view.own.position, chosen.outputs.move, view.arena);
+    const move = cover ? cover.move(view, chosen.outputs.move, planMove) : planMove(view.own.position, chosen.outputs.move, view.arena);
     input.moveX = move.x; input.moveY = move.y;
     if (flinch) { input.moveX = flinch.x; input.moveY = flinch.y; tier = 0; }
     input.throw = !!chosen.outputs.throw && view.own.spear.state === 'HELD';
     input.recall = !!chosen.outputs.recall && view.own.spear.state === 'EMBEDDED';
+    if (cover) cover.safeShot(view, input);
     const proposedInput = { ...input };
-    const handoffBlocked = (noveltyForced || monitorForced) && (!selectedBranch || selectedBranch.tactic !== tactic);
+    const handoffBlocked = !cover && (noveltyForced || monitorForced) && (!selectedBranch || selectedBranch.tactic !== tactic);
     if (handoffBlocked) { input.throw = false; input.recall = false; }
     if (!deferCommand) ownSpearMemory.command(input, view, now + config.latencySec);
     const counterfactualNote = !ablations.noCounterfactual && (input.recall ||
@@ -230,6 +236,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const cognition = { budget: budget.report(), tier, situation: key, tactic, automatic: habit.automatic,
       predictedFailure: habit.predictedFailure, habit: { ...habit }, novelty, noveltyRequested, noveltyForced, monitorForced, handoffBlocked, planStatus, selectedBranch, issuedLearningTier, completedBranches: branches.filter(b=>b.completion.complete).length, supportUpdate, proposedInput, outcome, adaptation: opponentModel, branches,
       decisionLatencySec: config.latencySec };
+    if (cover) cognition.cover = cover.finish(view, chosen, input, cognition);
     if (fixedTeacherSchedule !== null) cognition.fixedTeacher = { due:fixedTeacherDue, opportunity:fixedTeacherDue && !flinch && !ablations.noDeliberation,
       attempted:tier===2, completed:!!selectedBranch, issuedTeachingAction:issuedLearningTier===2 && (input.throw || input.recall), ...fixedTeacherSchedule };
     cognition.coordination = coordination.finish({chosen,cognition,input,now,pendingRecallPlan:recallPlan,invalidatedRecallPlan});
@@ -249,7 +256,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     cell.automaticDecisions += habit.automatic ? 1 : 0;
     if (outcome) { const completed = totals.bySituation[outcome.key];
       if (completed) { completed.outcomes++; completed.successes += outcome.reward > 0 ? 1 : 0; completed.failures += outcome.actualFailure; } }
-    const innerSpeech = speech.transition(chosen);
+    const innerSpeech = cover && chosen.ignition ? (chosen.broadcast?.content ?? 'Avoid the observed incoming spear') : speech.transition(chosen);
     const outerSpeech = speech.outer(chosen);
     if (!freezeLearning && chosen.ignition) memory.remember({ kind: 'workspace', time: now,
       focus: chosen.focus, content: chosen.broadcast?.content ?? null, innerSpeech });
@@ -269,7 +276,10 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
   }
 
   return {
-    ...(deferCommand ? { commitCommand(input, view, commandTime) { ownSpearMemory.command(input, view, commandTime); } } : {}),
+    ...(deferCommand ? { commitCommand(input, view, commandTime) { ownSpearMemory.command(input, view, commandTime);
+      if (cover) { const record = records.at(-1); if (record) { record.actualCommand = { ...input }; record.commandTime = commandTime; }
+        if (lastDecision) { lastDecision.actualCommand = { ...input }; lastDecision.commandTime = commandTime; } }
+    } } : {}),
     act(view, dt) {
       if (!view || !view.own || !view.arena || !view.cone) {
         throw new TypeError('act requires a percept');
@@ -301,7 +311,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     },
     trace: () => structuredClone(records),
     lastDecision: () => structuredClone(lastDecision),
-    settings: () => ({ ...config, ...(coordinationEnabled?{coordinationEnabled:true,coordinationNominalUnits:COORDINATION_NOMINAL_UNITS}:{}), ...(freezeLearning ? {freezeLearning:true} : {}), ablations: { ...ablations }, cycleHz: 30, policy, cognitionBudget, outboundSpeed, returnSpeed }),
+    settings: () => ({ ...config, ...(cover ? { coverControl: { ...cover.enabled } } : {}), ...(coordinationEnabled?{coordinationEnabled:true,coordinationNominalUnits:COORDINATION_NOMINAL_UNITS}:{}), ...(freezeLearning ? {freezeLearning:true} : {}), ablations: { ...ablations }, cycleHz: 30, policy, cognitionBudget, outboundSpeed, returnSpeed }),
     cognition: () => structuredClone({ ...totals, pendingOutcome: learning.diagnostics().pending }),
     memory: () => ({ version: 2, episodes: memory.episodes(), playerModel: memory.playerModel(),
       learning: learning.snapshot(), adaptation: adaptation.snapshot(), novelty: noveltySupport.snapshot(), ...(coordinationEnabled?{predictionReliability:coordination.snapshot()}: {}) }),

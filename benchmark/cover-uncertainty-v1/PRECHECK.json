@@ -1,0 +1,36 @@
+{
+  "status": "passed before scored matrix",
+  "sourceBase": "9361222ce9daaecab51ce3e09efc604d3b142db0",
+  "sourceManifestSha256": "2e84c2ea73aaada59c1bad4062f5845d2ebdc783374dd8f2ea63ea5129e7d298",
+  "node": "v24.19.0",
+  "applicationTests": {
+    "command": "node --test test/*.test.mjs delivery-tests/*.test.mjs",
+    "passed": 346,
+    "failed": 0,
+    "skipped": 0
+  },
+  "focusedTestsPassed": 37,
+  "mathAudit": "passed 100000 sampled comparisons; not proof of correct rounding",
+  "telemetryPilot": {
+    "seed": 991,
+    "bouts": 12,
+    "secondsPerBout": 8,
+    "allCommandsEventsHashesFinalWorldReplayExactly": true,
+    "sourceUnchanged": true
+  },
+  "neutralGeometry": {
+    "seed": 991,
+    "durationSec": 50,
+    "seats": 2,
+    "conditions": 2,
+    "quietHoldingAndFourCompletedCircuitsVerified": true,
+    "actualRouteAdoptionDiagnosticsVerified": true
+  },
+  "pristineReferenceParity": [
+    "old Integrated with targetMonitoring:false",
+    "default Duel",
+    "Existing Cover including settings"
+  ],
+  "scoredRunsStarted": false,
+  "scope": "Correctness and wiring evidence only. No performance result; no raw upload."
+}

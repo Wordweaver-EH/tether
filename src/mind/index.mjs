@@ -37,6 +37,8 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
   coverControl = null, benchmarkInterface = false, deferCommand = false, fixedTeacherSchedule = null, captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
   if (deferCommand && !benchmarkInterface) throw new Error('deferCommand requires benchmark interface');
   if (typeof benchmarkInterface !== 'boolean') throw new TypeError('benchmarkInterface must be boolean');
+  if (coordinationControls.fixedMonitorSchedule != null && !benchmarkInterface)
+    throw new Error('fixed monitor schedule requires benchmark interface');
   if (benchmarkInterface && difficulty !== 'normal') throw new Error('benchmark interface requires normal difficulty');
   if (fixedTeacherSchedule !== null && (!benchmarkInterface || !ablations.noMetacog || coordinationControls.monitorControl !== false ||
       !Number.isInteger(fixedTeacherSchedule.every) || fixedTeacherSchedule.every < 1 || fixedTeacherSchedule.every > 1000 ||
@@ -164,7 +166,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const fixedTeacherDue = fixedTeacherSchedule !== null && totals.cycles % fixedTeacherSchedule.every === fixedTeacherSchedule.phase;
     let escalate = fixedTeacherSchedule !== null ? fixedTeacherDue && !flinch && !ablations.noDeliberation : monitorForced || noveltyForced || !flinch && !ablations.noDeliberation && !ablations.noMetacog &&
       (!habit.automatic || habit.aware) && (conflict || b.confidence < 0.6 || b.surprise > 5 || habit.aware);
-    if (cover) escalate = cover.request(view, workingBelief, chosen, monitorForced, flinch, budget) && !ablations.noDeliberation;
+    if (cover) escalate = cover.request(view, workingBelief, chosen, monitorForced, flinch, budget, coordinationStart.request?.reason) && !ablations.noDeliberation;
     let tactic = ablations.noIntuition ? 'direct' : habit.automatic ? habit.tactic : 'lead';
     if (!ablations.noIntuition && !habit.automatic && opponentModel.enabled && opponentModel.samples >= 3)
       tactic = opponentModel.sampledSide > 0 ? 'left' : 'right';
@@ -209,7 +211,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
       if (opponentModel.enabled && opponentModel.neutralization > 0.7 && model.embedAge > 2) chosen.outputs.recall = true;
     }
     const input = EMPTY();
-    if (cover) schedule = cover.schedule(schedule, view, workingBelief, chosen);
+    if (cover) schedule = cover.schedule(schedule, view, workingBelief, chosen, coordinationStart.request);
     const gaze = planGaze(view, chosen.outputs.gaze, schedule, now, model, random, ablations, benchmarkInterface);
     input.aimX = gaze.x; input.aimY = gaze.y;
     const move = cover ? cover.move(view, chosen.outputs.move, planMove) : planMove(view.own.position, chosen.outputs.move, view.arena);

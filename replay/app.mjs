@@ -101,7 +101,7 @@ function recentSpeech(t) {
 function updateSide(trace, frame) {
   const world = frame.world, cover = world.gameMode === 'COVER_CONTROL';
   const coverController = data.metadata.agent_technical?.[1]?.controller;
-  const integratedMind = cover && ['cover-integrated-mind-v1', 'cover-integrated-mind-v2'].includes(coverController);
+  const integratedMind = cover && ['cover-integrated-mind-v1', 'cover-integrated-mind-v2', 'cover-integrated-mind-v3'].includes(coverController);
   const coverMind = cover && (coverController === 'cover-existing-mind-v1' || integratedMind);
   $('focus').textContent = integratedMind ? `Integrated mind (experimental) · ${trace?.focus ?? 'No focus'}`
     : coverMind ? `Existing mind (experimental) · ${trace?.focus ?? 'No focus'}`

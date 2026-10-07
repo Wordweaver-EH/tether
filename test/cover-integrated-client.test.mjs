@@ -141,7 +141,7 @@ test('integrated selection restores its deterministic controller and logs its ac
     await dom.el('download').dispatch('click');
     const text = await (await fetch(dom.downloads[0].href)).text();
     const parsed = parseLog(text), records = text.trim().split('\n').map(JSON.parse);
-    assert.equal(parsed.metadata.agent_technical[1].controller, 'cover-integrated-mind-v2');
+    assert.equal(parsed.metadata.agent_technical[1].controller, 'cover-integrated-mind-v3');
     assert.ok(parsed.traces.length > 0);
     assert.deepEqual(parsed.traces, JSON.parse(JSON.stringify(mind.trace())));
     assert.ok(parsed.traces.every(row => row.cognition?.cover && row.actualCommand));

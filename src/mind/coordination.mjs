@@ -10,16 +10,20 @@ const clone = value => structuredClone(value);
 const finitePoint = p => p && Number.isFinite(p.x) && Number.isFinite(p.y);
 
 function controls(input={}) {
-  const allowed=['deliver','memoryWrite','memoryRead','monitorFeedback','monitorControl','reportEnabled','contentOverride'];
+  const allowed=['deliver','memoryWrite','memoryRead','monitorFeedback','monitorControl','reportEnabled','contentOverride','fixedMonitorSchedule'];
   if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(k=>!allowed.includes(k)))throw new TypeError('invalid coordination controls');
-  for(const key of allowed.filter(k=>!['deliver','contentOverride'].includes(k)))if(input[key]!==undefined&&typeof input[key]!=='boolean')throw new TypeError('coordination switches must be booleans');
+  for(const key of allowed.filter(k=>!['deliver','contentOverride','fixedMonitorSchedule'].includes(k)))if(input[key]!==undefined&&typeof input[key]!=='boolean')throw new TypeError('coordination switches must be booleans');
+  const fixed=input.fixedMonitorSchedule??null;
+  if(fixed !== null && (typeof fixed!=='object' || Array.isArray(fixed) || input.monitorControl!==false || Object.keys(fixed).some(k=>!['every','phase'].includes(k)) ||
+    !Number.isInteger(fixed.every)||fixed.every<1||fixed.every>1000||!Number.isInteger(fixed.phase)||fixed.phase<0||fixed.phase>=fixed.every))
+    throw new TypeError('fixed monitor schedule requires disabled monitor control and valid every/phase');
   const deliver=input.deliver??{};
   if(!deliver||typeof deliver!=='object'||Array.isArray(deliver)||Object.keys(deliver).some(k=>!['attention','memory','planner','report'].includes(k)||typeof deliver[k]!=='boolean'))throw new TypeError('invalid recipient switches');
   const replacement=input.contentOverride??null;
   if(replacement && (typeof replacement!=='object'||Array.isArray(replacement)||Object.keys(replacement).some(k=>!['mean','velocity','entity','uncertainty'].includes(k))))throw new TypeError('invalid content intervention');
   return clone({deliver,memoryWrite:input.memoryWrite!==false,memoryRead:input.memoryRead!==false,
     monitorFeedback:input.monitorFeedback!==false,monitorControl:input.monitorControl!==false,
-    reportEnabled:input.reportEnabled!==false,contentOverride:replacement});
+    reportEnabled:input.reportEnabled!==false,contentOverride:replacement,fixedMonitorSchedule:fixed});
 }
 
 /** A read hypothesis, not an observation update to the persistent particle filter. */
@@ -42,7 +46,7 @@ export function coordinateAttention(base,packet,monitorRequest,localTarget) {
   const monitorSchedule=base.map(item=>({...item,target:item.target?{...item.target}:null}));
   if(monitorRequest?.reacquire) {
     const item=monitorSchedule.find(item=>item.item==='opponent');
-    if(item){item.target=finitePoint(localTarget)?{...localTarget}:item.target;item.priority=1;item.due=!!item.target;item.reason='prediction-monitor';}
+    if(item){item.target=finitePoint(localTarget)?{...localTarget}:item.target;item.priority=1;item.due=!!item.target;item.reason=monitorRequest.reason==='fixed-monitor-schedule'?'fixed-monitor-schedule':'prediction-monitor';}
   }
   const proposed=monitorSchedule.map(item=>({...item,target:item.target?{...item.target}:null}));
   if(packet) {
@@ -71,7 +75,10 @@ export function createCoordination({reliabilitySnapshot=null,readOnly=false,rese
     }
     const assessment=monitor.settle(observation,now,{commitFeedback:config.monitorFeedback});
     const proposedRequest=monitor.request();
-    const request=config.monitorControl?proposedRequest:null;
+    const fixed=config.fixedMonitorSchedule;
+    const scheduled=fixed && (revision-1)%fixed.every===fixed.phase;
+    const request=config.monitorControl?proposedRequest:scheduled?
+      {reacquire:true,replan:true,reason:'fixed-monitor-schedule',entity:'opponent',revision}:null;
     // Compute the read regardless of its delivery switch; never reimport cross-bout coordinates.
     const recalled=targetMemory.recall('opponent',now,{enabled:config.memoryRead&&!view.opponent,revision});
     const workingBelief=recalled?projectContentBelief(belief,recalled,now,view.arena):belief;

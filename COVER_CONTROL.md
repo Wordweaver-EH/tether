@@ -1,3 +1,5 @@
+> Update (2026-10-07): Cover Control now offers the original baseline, Existing mind, and an optional [Integrated mind](COVER_INTEGRATED.md). The integrated option adds ring/threat arbitration and bounded fallback; its mixed short-bout results do not establish stronger or fun play. The original baseline prototype details remain below.
+
 # Cover Control: optional prototype
 
 Select **Cover Control** on the start screen, then Enter arena. `node serve.mjs`

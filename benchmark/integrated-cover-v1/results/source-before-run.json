@@ -1,0 +1,34 @@
+{
+  "declared": "2026-10-07",
+  "files": {
+    "src/mind/index.mjs": "a19f9e8d809f2d791dcea2d2f7f1525555a278d0b926b98f96e65bf0baee420a",
+    "src/mind/cover-policy.mjs": "0173ab52eca7c1c6787ae129c3fd4af9aee572a9f3352f9b497463c6ba02a8ac",
+    "src/agents/cover-integrated.mjs": "918d7867d14b6e430b6608a1f025a2e47757de9b6a7d26a782d875ca4ce5b081",
+    "src/agents/cover-control.mjs": "42007be15c44eb203ec28f1fd8fa953baff2ba53eee75518c5f04272f5deb07c",
+    "src/agents/cover-interface.mjs": "0fdfbb7021d77bd5e843d67ea6405bbf2ee656ad3a67dae988ca4c6e300fb46d",
+    "benchmark/integrated-cover-v1/PROTOCOL.md": "54aa8bfd17b35b0d6ac265232d412e1f25bcf0169cf14982842ec277bd70e5ab",
+    "benchmark/integrated-cover-v1/run.mjs": "b7359b8f0fcbdc4669cb1b823ec024499b3112c576f18f57536d7762e7a2096b"
+  },
+  "seeds": [
+    101,
+    307,
+    509,
+    911
+  ],
+  "durationSec": 30,
+  "variants": {
+    "full": {},
+    "objectiveOff": {
+      "objective": false
+    },
+    "threatOff": {
+      "threat": false
+    },
+    "routeCacheOff": {
+      "routeCache": false
+    },
+    "reportOff": {
+      "report": false
+    }
+  }
+}

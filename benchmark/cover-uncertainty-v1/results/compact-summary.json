@@ -1,0 +1,2631 @@
+{
+  "protocol": {
+    "version": 1,
+    "seeds": [
+      5653,
+      6761,
+      7873,
+      8923
+    ],
+    "seats": [
+      "P1",
+      "P2"
+    ],
+    "conditions": [
+      "familiar",
+      "switch"
+    ],
+    "variants": [
+      "full",
+      "monitorOff",
+      "fixed"
+    ],
+    "durationSec": 60,
+    "switchSec": 30,
+    "fixedSchedule": {
+      "every": 30,
+      "phase": 0
+    },
+    "pilotSeed": 991,
+    "sourceBase": "9361222ce9daaecab51ce3e09efc604d3b142db0"
+  },
+  "checkpoint": "b7568f2c1fa1f969b811ac636db370cd1842108a",
+  "independentSeedClusters": 4,
+  "aggregates": {
+    "familiar/full": {
+      "bouts": 8,
+      "subjectPoints": 224,
+      "opponentPoints": 16,
+      "subjectHitPoints": 216,
+      "subjectRingPoints": 8,
+      "opponentHitPoints": 13,
+      "opponentRingPoints": 3,
+      "subjectRingSeconds": 71.54166666666666,
+      "opponentRingSeconds": 55.35000000000001,
+      "contestedSeconds": 30.75,
+      "process": {
+        "decisions": 14368,
+        "visible": 8969,
+        "hidden": 5399,
+        "staleSamples": 5208,
+        "staleErrorSum": 18352.445936473232,
+        "staleLarge": 4348,
+        "commandErrorSum": 17961.435578997818,
+        "packets": 13618,
+        "forecasts": 1118,
+        "assessments": 1081,
+        "censoredForecasts": 30,
+        "largeAssessments": 617,
+        "assessmentsNearReset": 443,
+        "largeAssessmentsNearReset": 356,
+        "highErrorDecisions": 13392,
+        "requests": 13295,
+        "fixedRequests": 0,
+        "checkAimMatches": 13295,
+        "checksAwayFromVisible": 0,
+        "checksOutsideRing": 11247,
+        "planning": 368,
+        "completed": 75,
+        "unfinished": 293,
+        "budget": 1677556,
+        "visibilityLosses": 324,
+        "reacquisitions": 328,
+        "staleMean": 3.5238951490924024,
+        "commandTimeStaleMean": 3.4488163554143276
+      },
+      "recovery": {
+        "completed": 20,
+        "censored": 6,
+        "completedMedianSec": 14.049999999999999,
+        "completedMeanSec": 16.456666666666667,
+        "warning": "on-policy and censored; completed-only times are not unconditional recovery rates"
+      },
+      "phases": {
+        "before": {
+          "decisions": 7200,
+          "visible": 4501,
+          "hidden": 2699,
+          "staleSamples": 2508,
+          "staleErrorSum": 8787.098150607993,
+          "staleLarge": 2093,
+          "commandErrorSum": 8600.175562275941,
+          "packets": 6755,
+          "forecasts": 552,
+          "assessments": 531,
+          "censoredForecasts": 13,
+          "largeAssessments": 314,
+          "assessmentErrorSum": 801.4256578309082,
+          "assessmentsNearReset": 217,
+          "largeAssessmentsNearReset": 177,
+          "highErrorDecisions": 6558,
+          "requests": 6503,
+          "fixedRequests": 0,
+          "checkAimMatches": 6503,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 5537,
+          "planning": 187,
+          "completed": 41,
+          "unfinished": 146,
+          "budget": 839800,
+          "visibilityLosses": 162,
+          "reacquisitions": 169,
+          "meanStaleError": 3.503627651757573,
+          "meanCommandTimeStaleError": 3.429097114145112,
+          "meanAssessedError": 1.5092761917719553
+        },
+        "after": {
+          "decisions": 7168,
+          "visible": 4468,
+          "hidden": 2700,
+          "staleSamples": 2700,
+          "staleErrorSum": 9565.34778586524,
+          "staleLarge": 2255,
+          "commandErrorSum": 9361.260016721877,
+          "packets": 6863,
+          "forecasts": 566,
+          "assessments": 550,
+          "censoredForecasts": 17,
+          "largeAssessments": 303,
+          "assessmentErrorSum": 810.8050483504235,
+          "assessmentsNearReset": 226,
+          "largeAssessmentsNearReset": 179,
+          "highErrorDecisions": 6834,
+          "requests": 6792,
+          "fixedRequests": 0,
+          "checkAimMatches": 6792,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 5710,
+          "planning": 181,
+          "completed": 34,
+          "unfinished": 147,
+          "budget": 837756,
+          "visibilityLosses": 162,
+          "reacquisitions": 159,
+          "meanStaleError": 3.5427214021723112,
+          "meanCommandTimeStaleError": 3.467133339526621,
+          "meanAssessedError": 1.47419099700077
+        }
+      }
+    },
+    "familiar/monitorOff": {
+      "bouts": 8,
+      "subjectPoints": 132,
+      "opponentPoints": 28,
+      "subjectHitPoints": 111,
+      "subjectRingPoints": 21,
+      "opponentHitPoints": 27,
+      "opponentRingPoints": 1,
+      "subjectRingSeconds": 218.24166666666665,
+      "opponentRingSeconds": 120.62500000000001,
+      "contestedSeconds": 112.21666666666667,
+      "process": {
+        "decisions": 14368,
+        "visible": 10769,
+        "hidden": 3599,
+        "staleSamples": 3408,
+        "staleErrorSum": 10011.995338977067,
+        "staleLarge": 2433,
+        "commandErrorSum": 10328.293719808462,
+        "packets": 13530,
+        "forecasts": 1271,
+        "assessments": 1232,
+        "censoredForecasts": 31,
+        "largeAssessments": 743,
+        "assessmentsNearReset": 272,
+        "largeAssessmentsNearReset": 229,
+        "highErrorDecisions": 12860,
+        "requests": 0,
+        "fixedRequests": 0,
+        "checkAimMatches": 0,
+        "checksAwayFromVisible": 0,
+        "checksOutsideRing": 0,
+        "planning": 397,
+        "completed": 140,
+        "unfinished": 257,
+        "budget": 1669453,
+        "visibilityLosses": 196,
+        "reacquisitions": 202,
+        "staleMean": 2.9377920595589986,
+        "commandTimeStaleMean": 3.0306026173146896
+      },
+      "recovery": {
+        "completed": 48,
+        "censored": 7,
+        "completedMedianSec": 5.266666666666666,
+        "completedMeanSec": 8.004861111111111,
+        "warning": "on-policy and censored; completed-only times are not unconditional recovery rates"
+      },
+      "phases": {
+        "before": {
+          "decisions": 7200,
+          "visible": 5472,
+          "hidden": 1728,
+          "staleSamples": 1537,
+          "staleErrorSum": 4922.5345492695915,
+          "staleLarge": 1173,
+          "commandErrorSum": 5000.251632867177,
+          "packets": 6745,
+          "forecasts": 631,
+          "assessments": 611,
+          "censoredForecasts": 12,
+          "largeAssessments": 390,
+          "assessmentErrorSum": 618.1361686968904,
+          "assessmentsNearReset": 136,
+          "largeAssessmentsNearReset": 119,
+          "highErrorDecisions": 6382,
+          "requests": 0,
+          "fixedRequests": 0,
+          "checkAimMatches": 0,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 0,
+          "planning": 207,
+          "completed": 78,
+          "unfinished": 129,
+          "budget": 834904,
+          "visibilityLosses": 90,
+          "reacquisitions": 94,
+          "meanStaleError": 3.2026900125371447,
+          "meanCommandTimeStaleError": 3.2532541528088337,
+          "meanAssessedError": 1.0116794905022757
+        },
+        "after": {
+          "decisions": 7168,
+          "visible": 5297,
+          "hidden": 1871,
+          "staleSamples": 1871,
+          "staleErrorSum": 5089.460789707475,
+          "staleLarge": 1260,
+          "commandErrorSum": 5328.042086941284,
+          "packets": 6785,
+          "forecasts": 640,
+          "assessments": 621,
+          "censoredForecasts": 19,
+          "largeAssessments": 353,
+          "assessmentErrorSum": 604.3125991456542,
+          "assessmentsNearReset": 136,
+          "largeAssessmentsNearReset": 110,
+          "highErrorDecisions": 6478,
+          "requests": 0,
+          "fixedRequests": 0,
+          "checkAimMatches": 0,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 0,
+          "planning": 190,
+          "completed": 62,
+          "unfinished": 128,
+          "budget": 834549,
+          "visibilityLosses": 106,
+          "reacquisitions": 108,
+          "meanStaleError": 2.7201821430825626,
+          "meanCommandTimeStaleError": 2.8476975344421613,
+          "meanAssessedError": 0.9731281789785091
+        }
+      }
+    },
+    "familiar/fixed": {
+      "bouts": 8,
+      "subjectPoints": 141,
+      "opponentPoints": 21,
+      "subjectHitPoints": 119,
+      "subjectRingPoints": 22,
+      "opponentHitPoints": 21,
+      "opponentRingPoints": 0,
+      "subjectRingSeconds": 232.12500000000003,
+      "opponentRingSeconds": 125.05,
+      "contestedSeconds": 121.9,
+      "process": {
+        "decisions": 14368,
+        "visible": 10950,
+        "hidden": 3418,
+        "staleSamples": 3227,
+        "staleErrorSum": 9341.82118318449,
+        "staleLarge": 2274,
+        "commandErrorSum": 9622.646198956223,
+        "packets": 13728,
+        "forecasts": 1296,
+        "assessments": 1260,
+        "censoredForecasts": 28,
+        "largeAssessments": 742,
+        "assessmentsNearReset": 272,
+        "largeAssessmentsNearReset": 230,
+        "highErrorDecisions": 12657,
+        "requests": 480,
+        "fixedRequests": 480,
+        "checkAimMatches": 480,
+        "checksAwayFromVisible": 0,
+        "checksOutsideRing": 245,
+        "planning": 426,
+        "completed": 155,
+        "unfinished": 271,
+        "budget": 1675025,
+        "visibilityLosses": 188,
+        "reacquisitions": 194,
+        "staleMean": 2.8948934562083943,
+        "commandTimeStaleMean": 2.9819170123818477
+      },
+      "recovery": {
+        "completed": 55,
+        "censored": 8,
+        "completedMedianSec": 4.633333333333333,
+        "completedMeanSec": 6.54,
+        "warning": "on-policy and censored; completed-only times are not unconditional recovery rates"
+      },
+      "phases": {
+        "before": {
+          "decisions": 7200,
+          "visible": 5461,
+          "hidden": 1739,
+          "staleSamples": 1548,
+          "staleErrorSum": 4743.206644384862,
+          "staleLarge": 1143,
+          "commandErrorSum": 4859.858640436932,
+          "packets": 6764,
+          "forecasts": 634,
+          "assessments": 614,
+          "censoredForecasts": 12,
+          "largeAssessments": 389,
+          "assessmentErrorSum": 614.5772204627776,
+          "assessmentsNearReset": 132,
+          "largeAssessmentsNearReset": 114,
+          "highErrorDecisions": 6324,
+          "requests": 240,
+          "fixedRequests": 240,
+          "checkAimMatches": 240,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 124,
+          "planning": 215,
+          "completed": 79,
+          "unfinished": 136,
+          "budget": 837356,
+          "visibilityLosses": 88,
+          "reacquisitions": 94,
+          "meanStaleError": 3.064086979576784,
+          "meanCommandTimeStaleError": 3.1394435661737283,
+          "meanAssessedError": 1.0009400984735792
+        },
+        "after": {
+          "decisions": 7168,
+          "visible": 5489,
+          "hidden": 1679,
+          "staleSamples": 1679,
+          "staleErrorSum": 4598.614538799628,
+          "staleLarge": 1131,
+          "commandErrorSum": 4762.787558519292,
+          "packets": 6964,
+          "forecasts": 662,
+          "assessments": 646,
+          "censoredForecasts": 16,
+          "largeAssessments": 353,
+          "assessmentErrorSum": 599.4535423317226,
+          "assessmentsNearReset": 140,
+          "largeAssessmentsNearReset": 116,
+          "highErrorDecisions": 6333,
+          "requests": 240,
+          "fixedRequests": 240,
+          "checkAimMatches": 240,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 121,
+          "planning": 211,
+          "completed": 76,
+          "unfinished": 135,
+          "budget": 837669,
+          "visibilityLosses": 100,
+          "reacquisitions": 100,
+          "meanStaleError": 2.7389008569384323,
+          "meanCommandTimeStaleError": 2.8366810950085126,
+          "meanAssessedError": 0.9279466599562269
+        }
+      }
+    },
+    "switch/full": {
+      "bouts": 8,
+      "subjectPoints": 196,
+      "opponentPoints": 17,
+      "subjectHitPoints": 190,
+      "subjectRingPoints": 6,
+      "opponentHitPoints": 14,
+      "opponentRingPoints": 3,
+      "subjectRingSeconds": 116.375,
+      "opponentRingSeconds": 39.21666666666667,
+      "contestedSeconds": 21.55,
+      "process": {
+        "decisions": 14368,
+        "visible": 7556,
+        "hidden": 6812,
+        "staleSamples": 6621,
+        "staleErrorSum": 27234.279810177075,
+        "staleLarge": 5488,
+        "commandErrorSum": 27268.919370973832,
+        "packets": 13385,
+        "forecasts": 1044,
+        "assessments": 932,
+        "censoredForecasts": 104,
+        "largeAssessments": 544,
+        "assessmentsNearReset": 222,
+        "largeAssessmentsNearReset": 180,
+        "highErrorDecisions": 13619,
+        "requests": 13533,
+        "fixedRequests": 0,
+        "checkAimMatches": 13533,
+        "checksAwayFromVisible": 0,
+        "checksOutsideRing": 10141,
+        "planning": 466,
+        "completed": 208,
+        "unfinished": 258,
+        "budget": 1684939,
+        "visibilityLosses": 356,
+        "reacquisitions": 359,
+        "staleMean": 4.113318201204814,
+        "commandTimeStaleMean": 4.118549972960857
+      },
+      "recovery": {
+        "completed": 8,
+        "censored": 8,
+        "completedMedianSec": 13.516666666666666,
+        "completedMeanSec": 13.554166666666665,
+        "warning": "on-policy and censored; completed-only times are not unconditional recovery rates"
+      },
+      "phases": {
+        "before": {
+          "decisions": 7200,
+          "visible": 4501,
+          "hidden": 2699,
+          "staleSamples": 2508,
+          "staleErrorSum": 8787.098150607993,
+          "staleLarge": 2093,
+          "commandErrorSum": 8600.175562275941,
+          "packets": 6755,
+          "forecasts": 552,
+          "assessments": 531,
+          "censoredForecasts": 13,
+          "largeAssessments": 314,
+          "assessmentErrorSum": 801.4256578309082,
+          "assessmentsNearReset": 217,
+          "largeAssessmentsNearReset": 177,
+          "highErrorDecisions": 6558,
+          "requests": 6503,
+          "fixedRequests": 0,
+          "checkAimMatches": 6503,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 5537,
+          "planning": 187,
+          "completed": 41,
+          "unfinished": 146,
+          "budget": 839800,
+          "visibilityLosses": 162,
+          "reacquisitions": 169,
+          "meanStaleError": 3.503627651757573,
+          "meanCommandTimeStaleError": 3.429097114145112,
+          "meanAssessedError": 1.5092761917719553
+        },
+        "after": {
+          "decisions": 7168,
+          "visible": 3055,
+          "hidden": 4113,
+          "staleSamples": 4113,
+          "staleErrorSum": 18447.181659569083,
+          "staleLarge": 3395,
+          "commandErrorSum": 18668.74380869789,
+          "packets": 6630,
+          "forecasts": 492,
+          "assessments": 401,
+          "censoredForecasts": 91,
+          "largeAssessments": 230,
+          "assessmentErrorSum": 860.477879194189,
+          "assessmentsNearReset": 5,
+          "largeAssessmentsNearReset": 3,
+          "highErrorDecisions": 7061,
+          "requests": 7030,
+          "fixedRequests": 0,
+          "checkAimMatches": 7030,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 4604,
+          "planning": 279,
+          "completed": 167,
+          "unfinished": 112,
+          "budget": 845139,
+          "visibilityLosses": 194,
+          "reacquisitions": 190,
+          "meanStaleError": 4.485091577818888,
+          "meanCommandTimeStaleError": 4.538960323048356,
+          "meanAssessedError": 2.1458301226787757
+        }
+      }
+    },
+    "switch/monitorOff": {
+      "bouts": 8,
+      "subjectPoints": 141,
+      "opponentPoints": 19,
+      "subjectHitPoints": 125,
+      "subjectRingPoints": 16,
+      "opponentHitPoints": 18,
+      "opponentRingPoints": 1,
+      "subjectRingSeconds": 225.46666666666667,
+      "opponentRingSeconds": 103.18333333333334,
+      "contestedSeconds": 98.81666666666668,
+      "process": {
+        "decisions": 14368,
+        "visible": 8891,
+        "hidden": 5477,
+        "staleSamples": 5286,
+        "staleErrorSum": 17246.557465876762,
+        "staleLarge": 4315,
+        "commandErrorSum": 17542.630699671812,
+        "packets": 13131,
+        "forecasts": 1141,
+        "assessments": 1037,
+        "censoredForecasts": 96,
+        "largeAssessments": 600,
+        "assessmentsNearReset": 145,
+        "largeAssessmentsNearReset": 127,
+        "highErrorDecisions": 13191,
+        "requests": 0,
+        "fixedRequests": 0,
+        "checkAimMatches": 0,
+        "checksAwayFromVisible": 0,
+        "checksOutsideRing": 0,
+        "planning": 405,
+        "completed": 216,
+        "unfinished": 189,
+        "budget": 1677326,
+        "visibilityLosses": 247,
+        "reacquisitions": 249,
+        "staleMean": 3.262685861876043,
+        "commandTimeStaleMean": 3.318696689306056
+      },
+      "recovery": {
+        "completed": 25,
+        "censored": 8,
+        "completedMedianSec": 4.900000000000002,
+        "completedMeanSec": 8.224,
+        "warning": "on-policy and censored; completed-only times are not unconditional recovery rates"
+      },
+      "phases": {
+        "before": {
+          "decisions": 7200,
+          "visible": 5472,
+          "hidden": 1728,
+          "staleSamples": 1537,
+          "staleErrorSum": 4922.5345492695915,
+          "staleLarge": 1173,
+          "commandErrorSum": 5000.251632867177,
+          "packets": 6745,
+          "forecasts": 631,
+          "assessments": 611,
+          "censoredForecasts": 12,
+          "largeAssessments": 390,
+          "assessmentErrorSum": 618.1361686968904,
+          "assessmentsNearReset": 136,
+          "largeAssessmentsNearReset": 119,
+          "highErrorDecisions": 6382,
+          "requests": 0,
+          "fixedRequests": 0,
+          "checkAimMatches": 0,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 0,
+          "planning": 207,
+          "completed": 78,
+          "unfinished": 129,
+          "budget": 834904,
+          "visibilityLosses": 90,
+          "reacquisitions": 94,
+          "meanStaleError": 3.2026900125371447,
+          "meanCommandTimeStaleError": 3.2532541528088337,
+          "meanAssessedError": 1.0116794905022757
+        },
+        "after": {
+          "decisions": 7168,
+          "visible": 3419,
+          "hidden": 3749,
+          "staleSamples": 3749,
+          "staleErrorSum": 12324.02291660717,
+          "staleLarge": 3142,
+          "commandErrorSum": 12542.379066804637,
+          "packets": 6386,
+          "forecasts": 510,
+          "assessments": 426,
+          "censoredForecasts": 84,
+          "largeAssessments": 210,
+          "assessmentErrorSum": 432.5387733614051,
+          "assessmentsNearReset": 9,
+          "largeAssessmentsNearReset": 8,
+          "highErrorDecisions": 6809,
+          "requests": 0,
+          "fixedRequests": 0,
+          "checkAimMatches": 0,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 0,
+          "planning": 198,
+          "completed": 138,
+          "unfinished": 60,
+          "budget": 842422,
+          "visibilityLosses": 157,
+          "reacquisitions": 155,
+          "meanStaleError": 3.2872827198205306,
+          "meanCommandTimeStaleError": 3.3455265582300977,
+          "meanAssessedError": 1.015349233242735
+        }
+      }
+    },
+    "switch/fixed": {
+      "bouts": 8,
+      "subjectPoints": 139,
+      "opponentPoints": 17,
+      "subjectHitPoints": 118,
+      "subjectRingPoints": 21,
+      "opponentHitPoints": 17,
+      "opponentRingPoints": 0,
+      "subjectRingSeconds": 244.7333333333333,
+      "opponentRingSeconds": 102.19999999999999,
+      "contestedSeconds": 101.63333333333333,
+      "process": {
+        "decisions": 14368,
+        "visible": 8876,
+        "hidden": 5492,
+        "staleSamples": 5301,
+        "staleErrorSum": 17304.628352549145,
+        "staleLarge": 4234,
+        "commandErrorSum": 17681.965043148968,
+        "packets": 13197,
+        "forecasts": 1155,
+        "assessments": 1052,
+        "censoredForecasts": 95,
+        "largeAssessments": 606,
+        "assessmentsNearReset": 137,
+        "largeAssessmentsNearReset": 118,
+        "highErrorDecisions": 12891,
+        "requests": 478,
+        "fixedRequests": 478,
+        "checkAimMatches": 478,
+        "checksAwayFromVisible": 1,
+        "checksOutsideRing": 237,
+        "planning": 429,
+        "completed": 230,
+        "unfinished": 199,
+        "budget": 1680626,
+        "visibilityLosses": 240,
+        "reacquisitions": 245,
+        "staleMean": 3.2644082913693917,
+        "commandTimeStaleMean": 3.3355904627709805
+      },
+      "recovery": {
+        "completed": 29,
+        "censored": 8,
+        "completedMedianSec": 7.900000000000002,
+        "completedMeanSec": 9.78735632183908,
+        "warning": "on-policy and censored; completed-only times are not unconditional recovery rates"
+      },
+      "phases": {
+        "before": {
+          "decisions": 7200,
+          "visible": 5461,
+          "hidden": 1739,
+          "staleSamples": 1548,
+          "staleErrorSum": 4743.206644384862,
+          "staleLarge": 1143,
+          "commandErrorSum": 4859.858640436932,
+          "packets": 6764,
+          "forecasts": 634,
+          "assessments": 614,
+          "censoredForecasts": 12,
+          "largeAssessments": 389,
+          "assessmentErrorSum": 614.5772204627776,
+          "assessmentsNearReset": 132,
+          "largeAssessmentsNearReset": 114,
+          "highErrorDecisions": 6324,
+          "requests": 240,
+          "fixedRequests": 240,
+          "checkAimMatches": 240,
+          "checksAwayFromVisible": 0,
+          "checksOutsideRing": 124,
+          "planning": 215,
+          "completed": 79,
+          "unfinished": 136,
+          "budget": 837356,
+          "visibilityLosses": 88,
+          "reacquisitions": 94,
+          "meanStaleError": 3.064086979576784,
+          "meanCommandTimeStaleError": 3.1394435661737283,
+          "meanAssessedError": 1.0009400984735792
+        },
+        "after": {
+          "decisions": 7168,
+          "visible": 3415,
+          "hidden": 3753,
+          "staleSamples": 3753,
+          "staleErrorSum": 12561.421708164286,
+          "staleLarge": 3091,
+          "commandErrorSum": 12822.106402712036,
+          "packets": 6433,
+          "forecasts": 521,
+          "assessments": 438,
+          "censoredForecasts": 83,
+          "largeAssessments": 217,
+          "assessmentErrorSum": 443.7990677128018,
+          "assessmentsNearReset": 5,
+          "largeAssessmentsNearReset": 4,
+          "highErrorDecisions": 6567,
+          "requests": 238,
+          "fixedRequests": 238,
+          "checkAimMatches": 238,
+          "checksAwayFromVisible": 1,
+          "checksOutsideRing": 113,
+          "planning": 214,
+          "completed": 151,
+          "unfinished": 63,
+          "budget": 843270,
+          "visibilityLosses": 152,
+          "reacquisitions": 151,
+          "meanStaleError": 3.3470348276483572,
+          "meanCommandTimeStaleError": 3.4164951779142116,
+          "meanAssessedError": 1.013239880622835
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 20,
+      "comparatorMargin": 14,
+      "marginDifference": 6,
+      "inputEqual": false,
+      "budgetDifference": 317,
+      "planningDifference": -2
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 20,
+      "comparatorMargin": 14,
+      "marginDifference": 6,
+      "inputEqual": false,
+      "budgetDifference": 189,
+      "planningDifference": -4
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 22,
+      "comparatorMargin": 16,
+      "marginDifference": 6,
+      "inputEqual": false,
+      "budgetDifference": 903,
+      "planningDifference": 6
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 22,
+      "comparatorMargin": 15,
+      "marginDifference": 7,
+      "inputEqual": false,
+      "budgetDifference": 905,
+      "planningDifference": 6
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 26,
+      "comparatorMargin": 14,
+      "marginDifference": 12,
+      "inputEqual": false,
+      "budgetDifference": 965,
+      "planningDifference": 2
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 26,
+      "comparatorMargin": 19,
+      "marginDifference": 7,
+      "inputEqual": false,
+      "budgetDifference": -953,
+      "planningDifference": -7
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 23,
+      "comparatorMargin": 15,
+      "marginDifference": 8,
+      "inputEqual": false,
+      "budgetDifference": 1398,
+      "planningDifference": 11
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 23,
+      "comparatorMargin": 17,
+      "marginDifference": 6,
+      "inputEqual": false,
+      "budgetDifference": 647,
+      "planningDifference": 6
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 29,
+      "comparatorMargin": 12,
+      "marginDifference": 17,
+      "inputEqual": false,
+      "budgetDifference": 1281,
+      "planningDifference": -7
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 29,
+      "comparatorMargin": 17,
+      "marginDifference": 12,
+      "inputEqual": false,
+      "budgetDifference": 365,
+      "planningDifference": -10
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 21,
+      "comparatorMargin": 15,
+      "marginDifference": 6,
+      "inputEqual": false,
+      "budgetDifference": 629,
+      "planningDifference": 10
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 21,
+      "comparatorMargin": 17,
+      "marginDifference": 4,
+      "inputEqual": false,
+      "budgetDifference": 157,
+      "planningDifference": 6
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 31,
+      "comparatorMargin": 11,
+      "marginDifference": 20,
+      "inputEqual": false,
+      "budgetDifference": 2454,
+      "planningDifference": 0
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 31,
+      "comparatorMargin": 15,
+      "marginDifference": 16,
+      "inputEqual": false,
+      "budgetDifference": 1441,
+      "planningDifference": -3
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 25,
+      "comparatorMargin": 15,
+      "marginDifference": 10,
+      "inputEqual": false,
+      "budgetDifference": 1672,
+      "planningDifference": 14
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 25,
+      "comparatorMargin": 16,
+      "marginDifference": 9,
+      "inputEqual": false,
+      "budgetDifference": 681,
+      "planningDifference": 8
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 27,
+      "comparatorMargin": 15,
+      "marginDifference": 12,
+      "inputEqual": false,
+      "budgetDifference": -256,
+      "planningDifference": -12
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 27,
+      "comparatorMargin": 15,
+      "marginDifference": 12,
+      "inputEqual": false,
+      "budgetDifference": -384,
+      "planningDifference": -14
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 24,
+      "comparatorMargin": 16,
+      "marginDifference": 8,
+      "inputEqual": false,
+      "budgetDifference": -471,
+      "planningDifference": -2
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 24,
+      "comparatorMargin": 15,
+      "marginDifference": 9,
+      "inputEqual": false,
+      "budgetDifference": -437,
+      "planningDifference": -2
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 32,
+      "comparatorMargin": 12,
+      "marginDifference": 20,
+      "inputEqual": false,
+      "budgetDifference": 2396,
+      "planningDifference": -2
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 32,
+      "comparatorMargin": 12,
+      "marginDifference": 20,
+      "inputEqual": false,
+      "budgetDifference": 1698,
+      "planningDifference": -4
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 28,
+      "comparatorMargin": 15,
+      "marginDifference": 13,
+      "inputEqual": false,
+      "budgetDifference": 717,
+      "planningDifference": 2
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 28,
+      "comparatorMargin": 14,
+      "marginDifference": 14,
+      "inputEqual": false,
+      "budgetDifference": 751,
+      "planningDifference": 3
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 25,
+      "comparatorMargin": 12,
+      "marginDifference": 13,
+      "inputEqual": false,
+      "budgetDifference": 801,
+      "planningDifference": -4
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 25,
+      "comparatorMargin": 12,
+      "marginDifference": 13,
+      "inputEqual": false,
+      "budgetDifference": 718,
+      "planningDifference": -7
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 19,
+      "comparatorMargin": 12,
+      "marginDifference": 7,
+      "inputEqual": false,
+      "budgetDifference": 1682,
+      "planningDifference": 9
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 19,
+      "comparatorMargin": 11,
+      "marginDifference": 8,
+      "inputEqual": false,
+      "budgetDifference": 1384,
+      "planningDifference": 5
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "monitorOff",
+      "fullMargin": 18,
+      "comparatorMargin": 14,
+      "marginDifference": 4,
+      "inputEqual": false,
+      "budgetDifference": 145,
+      "planningDifference": -4
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "familiar",
+      "comparator": "fixed",
+      "fullMargin": 18,
+      "comparatorMargin": 16,
+      "marginDifference": 2,
+      "inputEqual": false,
+      "budgetDifference": -543,
+      "planningDifference": -9
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "monitorOff",
+      "fullMargin": 17,
+      "comparatorMargin": 18,
+      "marginDifference": -1,
+      "inputEqual": false,
+      "budgetDifference": 1083,
+      "planningDifference": 11
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "switch",
+      "comparator": "fixed",
+      "fullMargin": 17,
+      "comparatorMargin": 17,
+      "marginDifference": 0,
+      "inputEqual": false,
+      "budgetDifference": 225,
+      "planningDifference": 5
+    }
+  ],
+  "seedClusters": [
+    {
+      "seed": 5653,
+      "comparator": "monitorOff",
+      "familiar": 9,
+      "switched": 7,
+      "differenceInDifferences": -2
+    },
+    {
+      "seed": 5653,
+      "comparator": "fixed",
+      "familiar": 6.5,
+      "switched": 6.5,
+      "differenceInDifferences": 0
+    },
+    {
+      "seed": 6761,
+      "comparator": "monitorOff",
+      "familiar": 18.5,
+      "switched": 8,
+      "differenceInDifferences": -10.5
+    },
+    {
+      "seed": 6761,
+      "comparator": "fixed",
+      "familiar": 14,
+      "switched": 6.5,
+      "differenceInDifferences": -7.5
+    },
+    {
+      "seed": 7873,
+      "comparator": "monitorOff",
+      "familiar": 16,
+      "switched": 10.5,
+      "differenceInDifferences": -5.5
+    },
+    {
+      "seed": 7873,
+      "comparator": "fixed",
+      "familiar": 16,
+      "switched": 11.5,
+      "differenceInDifferences": -4.5
+    },
+    {
+      "seed": 8923,
+      "comparator": "monitorOff",
+      "familiar": 8.5,
+      "switched": 3,
+      "differenceInDifferences": -5.5
+    },
+    {
+      "seed": 8923,
+      "comparator": "fixed",
+      "familiar": 7.5,
+      "switched": 4,
+      "differenceInDifferences": -3.5
+    }
+  ],
+  "bouts": [
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 22,
+      "opponentScore": 2,
+      "margin": 20,
+      "points": {
+        "hit": [
+          20,
+          2
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        1706,
+        1052
+      ],
+      "contestedTicks": 631,
+      "maxBudget": 180,
+      "inputSha256": "936ced51c126b68066a9265fb7631c9a4ca1ee8d9ad3f95d4f61914163fe7cdd",
+      "finalWorldHash": "c38b3795f44074cc"
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 17,
+      "opponentScore": 3,
+      "margin": 14,
+      "points": {
+        "hit": [
+          14,
+          3
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3551,
+        1830
+      ],
+      "contestedTicks": 1782,
+      "maxBudget": 180,
+      "inputSha256": "0fb3ad79306348f80d5362ed423c89f0300ea1f8096d0f70b40d7093fc7601a9",
+      "finalWorldHash": "a4ff26c6086ae48d"
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 17,
+      "opponentScore": 3,
+      "margin": 14,
+      "points": {
+        "hit": [
+          14,
+          3
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3551,
+        1830
+      ],
+      "contestedTicks": 1782,
+      "maxBudget": 180,
+      "inputSha256": "3d7db7d5ab6acf23af13baba0a545bd65e67d85ff526b5bdf8118bfa418106d8",
+      "finalWorldHash": "a4ff26c6086ae48d"
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 23,
+      "opponentScore": 1,
+      "margin": 22,
+      "points": {
+        "hit": [
+          21,
+          1
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        2294,
+        575
+      ],
+      "contestedTicks": 335,
+      "maxBudget": 180,
+      "inputSha256": "94b0fe01da8f60d99a97c6dfbc070789dd7bf2da31b9533ba9c436d380d96a05",
+      "finalWorldHash": "218e5a2b09d545fa"
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 18,
+      "opponentScore": 2,
+      "margin": 16,
+      "points": {
+        "hit": [
+          17,
+          2
+        ],
+        "ring": [
+          1,
+          0
+        ]
+      },
+      "ringTicks": [
+        3177,
+        1675
+      ],
+      "contestedTicks": 1627,
+      "maxBudget": 180,
+      "inputSha256": "a5a0eddc0aff02c19406814dd81518f62340ec0ba9ea2de30ba0794b95d97e1b",
+      "finalWorldHash": "ce18b57f8134fc2b"
+    },
+    {
+      "seed": 5653,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 17,
+      "opponentScore": 2,
+      "margin": 15,
+      "points": {
+        "hit": [
+          15,
+          2
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        3534,
+        1672
+      ],
+      "contestedTicks": 1624,
+      "maxBudget": 180,
+      "inputSha256": "b3dec0696598aa4131b77e81478eb452401189e9428277fe7d21802dc7603753",
+      "finalWorldHash": "ec8dfc5a77db6d5d"
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 27,
+      "opponentScore": 1,
+      "margin": 26,
+      "points": {
+        "hit": [
+          1,
+          24
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        671,
+        1946
+      ],
+      "contestedTicks": 430,
+      "maxBudget": 180,
+      "inputSha256": "c9ea92c8d24e306996c472288914a0317ff24193f074932d8a8fee0391a815e6",
+      "finalWorldHash": "3f989f8ff47c9c3c"
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 17,
+      "opponentScore": 3,
+      "margin": 14,
+      "points": {
+        "hit": [
+          2,
+          14
+        ],
+        "ring": [
+          1,
+          3
+        ]
+      },
+      "ringTicks": [
+        1711,
+        2976
+      ],
+      "contestedTicks": 1337,
+      "maxBudget": 180,
+      "inputSha256": "7c89ec9b078807f0f8cd54f6b338f7c48feb95faccaada8e826cd25915c078b5",
+      "finalWorldHash": "acc40fe4bb2fcf5d"
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 20,
+      "opponentScore": 1,
+      "margin": 19,
+      "points": {
+        "hit": [
+          1,
+          17
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        1642,
+        3430
+      ],
+      "contestedTicks": 1638,
+      "maxBudget": 180,
+      "inputSha256": "97d926c8b6ba43e66ff4460750628ceae9c158b074de4bc4e37d67bc10e2cd66",
+      "finalWorldHash": "8b842b7ce622e31b"
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 25,
+      "opponentScore": 2,
+      "margin": 23,
+      "points": {
+        "hit": [
+          2,
+          23
+        ],
+        "ring": [
+          0,
+          2
+        ]
+      },
+      "ringTicks": [
+        297,
+        2329
+      ],
+      "contestedTicks": 244,
+      "maxBudget": 180,
+      "inputSha256": "34e524533ec7336922c3a193a47d2bd1cac4cd46a01834c962b42149f1c8a4c2",
+      "finalWorldHash": "1278f219dcbb353a"
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 18,
+      "opponentScore": 3,
+      "margin": 15,
+      "points": {
+        "hit": [
+          2,
+          17
+        ],
+        "ring": [
+          1,
+          1
+        ]
+      },
+      "ringTicks": [
+        1462,
+        2543
+      ],
+      "contestedTicks": 1111,
+      "maxBudget": 180,
+      "inputSha256": "5a1d47e3f2d63657c578af6ba671899f78705180a405e382e17030b937bfb723",
+      "finalWorldHash": "463020d98cd07daf"
+    },
+    {
+      "seed": 5653,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 19,
+      "opponentScore": 2,
+      "margin": 17,
+      "points": {
+        "hit": [
+          2,
+          16
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        1276,
+        3575
+      ],
+      "contestedTicks": 1272,
+      "maxBudget": 180,
+      "inputSha256": "31f8d6ad7501f63655ff5b6e382fd904c1b4c28f5bc11cca3a9c6480c33100ba",
+      "finalWorldHash": "53393959e6167b4e"
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 31,
+      "opponentScore": 2,
+      "margin": 29,
+      "points": {
+        "hit": [
+          31,
+          2
+        ],
+        "ring": [
+          0,
+          0
+        ]
+      },
+      "ringTicks": [
+        660,
+        776
+      ],
+      "contestedTicks": 541,
+      "maxBudget": 180,
+      "inputSha256": "9de2a9ba9cf5a519e10e02ad667d5a64d1bc551fa687fef3b68af8ae64e563f6",
+      "finalWorldHash": "e63c01fed89cb7a6"
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 16,
+      "opponentScore": 4,
+      "margin": 12,
+      "points": {
+        "hit": [
+          12,
+          4
+        ],
+        "ring": [
+          4,
+          0
+        ]
+      },
+      "ringTicks": [
+        3672,
+        1638
+      ],
+      "contestedTicks": 1540,
+      "maxBudget": 180,
+      "inputSha256": "861a6eece6e3b41dcff0e33520ce6e17939192fda745e9e10512a05292a86b2c",
+      "finalWorldHash": "bb560bbea56b2408"
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 1,
+      "margin": 17,
+      "points": {
+        "hit": [
+          15,
+          1
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3793,
+        1973
+      ],
+      "contestedTicks": 1967,
+      "maxBudget": 180,
+      "inputSha256": "2f53ec29bb41292dd0b3d2b8142b4f5d92e2b2a4c7c557d7053fa37f2c081bd7",
+      "finalWorldHash": "7ee46aed82f36a67"
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 25,
+      "opponentScore": 4,
+      "margin": 21,
+      "points": {
+        "hit": [
+          25,
+          4
+        ],
+        "ring": [
+          0,
+          0
+        ]
+      },
+      "ringTicks": [
+        1778,
+        582
+      ],
+      "contestedTicks": 576,
+      "maxBudget": 180,
+      "inputSha256": "17fd4af72104c0f34c1ae5f10b150c65899366e83b267af29fdb94bfc4a7ff5f",
+      "finalWorldHash": "55c11e49836c2bc5"
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 17,
+      "opponentScore": 2,
+      "margin": 15,
+      "points": {
+        "hit": [
+          14,
+          2
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3695,
+        1468
+      ],
+      "contestedTicks": 1372,
+      "maxBudget": 180,
+      "inputSha256": "28844ef7e6c010cb9185e274d5bf229fdf24343a9792d2d947e21712747645a9",
+      "finalWorldHash": "c5a1a14a6f30ca4d"
+    },
+    {
+      "seed": 6761,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 1,
+      "margin": 17,
+      "points": {
+        "hit": [
+          15,
+          1
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3797,
+        1450
+      ],
+      "contestedTicks": 1444,
+      "maxBudget": 180,
+      "inputSha256": "c35aef5d59369d931e443a430f69e5c4e47d39a634fbc85853c9feadc57de1ce",
+      "finalWorldHash": "8ea0c64bace14b01"
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 33,
+      "opponentScore": 2,
+      "margin": 31,
+      "points": {
+        "hit": [
+          2,
+          33
+        ],
+        "ring": [
+          0,
+          0
+        ]
+      },
+      "ringTicks": [
+        470,
+        442
+      ],
+      "contestedTicks": 312,
+      "maxBudget": 180,
+      "inputSha256": "d95c4f3568aa73acb4572234ef2b90ae39252766c7d752304d532e797bc60e3b",
+      "finalWorldHash": "7f166e23e16df1a1"
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 15,
+      "opponentScore": 4,
+      "margin": 11,
+      "points": {
+        "hit": [
+          4,
+          13
+        ],
+        "ring": [
+          0,
+          2
+        ]
+      },
+      "ringTicks": [
+        1851,
+        2976
+      ],
+      "contestedTicks": 1650,
+      "maxBudget": 180,
+      "inputSha256": "0c78df23d384dde619a5400b5b4a21890e1a89227d87d8d65ee8f920196f2d90",
+      "finalWorldHash": "ad2c437a96ea0b19"
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 3,
+      "margin": 15,
+      "points": {
+        "hit": [
+          3,
+          15
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        1842,
+        3440
+      ],
+      "contestedTicks": 1774,
+      "maxBudget": 180,
+      "inputSha256": "b066268bc43c15e9cfd764e5e1f06cb70ee1a3dd3c29c1239e32f3e2db1cd93a",
+      "finalWorldHash": "d33ccb215ff3d54a"
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 26,
+      "opponentScore": 1,
+      "margin": 25,
+      "points": {
+        "hit": [
+          1,
+          26
+        ],
+        "ring": [
+          0,
+          0
+        ]
+      },
+      "ringTicks": [
+        504,
+        1451
+      ],
+      "contestedTicks": 346,
+      "maxBudget": 180,
+      "inputSha256": "cf6a8cdf00fc82a12bc3d56d6a7bd0c8cb6bb6b4f04ac1856fa63d5ee2e39d18",
+      "finalWorldHash": "a32a3aad2a3a3305"
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 17,
+      "opponentScore": 2,
+      "margin": 15,
+      "points": {
+        "hit": [
+          2,
+          13
+        ],
+        "ring": [
+          0,
+          4
+        ]
+      },
+      "ringTicks": [
+        1516,
+        4089
+      ],
+      "contestedTicks": 1516,
+      "maxBudget": 180,
+      "inputSha256": "a02361b84d01783fdc3494de54cab85430ca44e01a8d57ff5d1a7309f852141d",
+      "finalWorldHash": "3802b51663d86bf8"
+    },
+    {
+      "seed": 6761,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 2,
+      "margin": 16,
+      "points": {
+        "hit": [
+          2,
+          16
+        ],
+        "ring": [
+          0,
+          2
+        ]
+      },
+      "ringTicks": [
+        1475,
+        3476
+      ],
+      "contestedTicks": 1475,
+      "maxBudget": 180,
+      "inputSha256": "2e882a71125f46e653296c9279df63721e718e39a6bc8a2deb8738ba5ebc5eb0",
+      "finalWorldHash": "4615626ebd26d044"
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 29,
+      "opponentScore": 2,
+      "margin": 27,
+      "points": {
+        "hit": [
+          29,
+          2
+        ],
+        "ring": [
+          0,
+          0
+        ]
+      },
+      "ringTicks": [
+        452,
+        724
+      ],
+      "contestedTicks": 368,
+      "maxBudget": 180,
+      "inputSha256": "08d9a6e1b05f2954f9aeebf8c1de316a2db3eb869db334ec50f35147ec76ca2b",
+      "finalWorldHash": "d3541e720c61c40c"
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 18,
+      "opponentScore": 3,
+      "margin": 15,
+      "points": {
+        "hit": [
+          16,
+          3
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        3243,
+        1878
+      ],
+      "contestedTicks": 1831,
+      "maxBudget": 180,
+      "inputSha256": "f50632395f5f74514f512ea3ba5e85c33d8f32119ec534be3f55da31b9a79ae5",
+      "finalWorldHash": "5d930c0ddf65143d"
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 3,
+      "margin": 15,
+      "points": {
+        "hit": [
+          16,
+          3
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        3244,
+        1878
+      ],
+      "contestedTicks": 1831,
+      "maxBudget": 180,
+      "inputSha256": "79860211ceff58dd218bf27e624cb1553914a0167960709d66bfe1dc5246c807",
+      "finalWorldHash": "5d930c0ddf65143d"
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 26,
+      "opponentScore": 2,
+      "margin": 24,
+      "points": {
+        "hit": [
+          26,
+          2
+        ],
+        "ring": [
+          0,
+          0
+        ]
+      },
+      "ringTicks": [
+        1306,
+        304
+      ],
+      "contestedTicks": 174,
+      "maxBudget": 180,
+      "inputSha256": "b568340356338d5d97a3af65025492f2e6c8247cc5e369df70411b5098cd5fcd",
+      "finalWorldHash": "7626590367bece08"
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 18,
+      "opponentScore": 2,
+      "margin": 16,
+      "points": {
+        "hit": [
+          17,
+          2
+        ],
+        "ring": [
+          1,
+          0
+        ]
+      },
+      "ringTicks": [
+        3279,
+        1752
+      ],
+      "contestedTicks": 1752,
+      "maxBudget": 180,
+      "inputSha256": "fa619d09c3b5d1e323fea539a49183580bec80b9644334ff207b38f5c6421a03",
+      "finalWorldHash": "1a57b71439f8c418"
+    },
+    {
+      "seed": 7873,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 17,
+      "opponentScore": 2,
+      "margin": 15,
+      "points": {
+        "hit": [
+          15,
+          2
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        3672,
+        1803
+      ],
+      "contestedTicks": 1803,
+      "maxBudget": 180,
+      "inputSha256": "b3e7a46ba0f6b441f31dd18b005d5a9c8fcad9076e7dad52f0bffe316f49a338",
+      "finalWorldHash": "228e2744de8184bb"
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 32,
+      "opponentScore": 0,
+      "margin": 32,
+      "points": {
+        "hit": [
+          0,
+          31
+        ],
+        "ring": [
+          0,
+          1
+        ]
+      },
+      "ringTicks": [
+        664,
+        1089
+      ],
+      "contestedTicks": 452,
+      "maxBudget": 180,
+      "inputSha256": "7b80e8454b12fe0bd3754f9952d98ff51d036f4f83ed1b0b400f931a32fa8597",
+      "finalWorldHash": "696eecd231f7d4a7"
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 16,
+      "opponentScore": 4,
+      "margin": 12,
+      "points": {
+        "hit": [
+          4,
+          15
+        ],
+        "ring": [
+          0,
+          1
+        ]
+      },
+      "ringTicks": [
+        1908,
+        2565
+      ],
+      "contestedTicks": 1696,
+      "maxBudget": 180,
+      "inputSha256": "2f45247e27ec239a8d3d5eb0ad0dd835fa1eecc0b187c3a222413e874888c87c",
+      "finalWorldHash": "ba2496e1232db38f"
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 16,
+      "opponentScore": 4,
+      "margin": 12,
+      "points": {
+        "hit": [
+          4,
+          14
+        ],
+        "ring": [
+          0,
+          2
+        ]
+      },
+      "ringTicks": [
+        1937,
+        3022
+      ],
+      "contestedTicks": 1757,
+      "maxBudget": 180,
+      "inputSha256": "3a92b7fc36b05141014d57354dd11b0f14d52341923d8726ce5895a27a7ea33b",
+      "finalWorldHash": "3a1ee2a4d556edfd"
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 29,
+      "opponentScore": 1,
+      "margin": 28,
+      "points": {
+        "hit": [
+          0,
+          29
+        ],
+        "ring": [
+          1,
+          0
+        ]
+      },
+      "ringTicks": [
+        677,
+        872
+      ],
+      "contestedTicks": 86,
+      "maxBudget": 180,
+      "inputSha256": "797ea4e37bbb83ec1e79a50b587bff4d8cfd0b2a106d070d151f5e25f20b6b8a",
+      "finalWorldHash": "79d357ea1edd7e62"
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 18,
+      "opponentScore": 3,
+      "margin": 15,
+      "points": {
+        "hit": [
+          3,
+          17
+        ],
+        "ring": [
+          0,
+          1
+        ]
+      },
+      "ringTicks": [
+        1545,
+        3079
+      ],
+      "contestedTicks": 1545,
+      "maxBudget": 180,
+      "inputSha256": "2a2dc684b5bef189f3d3604e8f3475b09c76f6e356de93c562a7046e26ecdc38",
+      "finalWorldHash": "92e7ee4d14610aba"
+    },
+    {
+      "seed": 7873,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 17,
+      "opponentScore": 3,
+      "margin": 14,
+      "points": {
+        "hit": [
+          3,
+          15
+        ],
+        "ring": [
+          0,
+          2
+        ]
+      },
+      "ringTicks": [
+        1591,
+        3482
+      ],
+      "contestedTicks": 1591,
+      "maxBudget": 180,
+      "inputSha256": "322a1303d592a50392fa674272dce509271905600de0b875d198c0d04c754659",
+      "finalWorldHash": "a2ba4c58e657ba25"
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 28,
+      "opponentScore": 3,
+      "margin": 25,
+      "points": {
+        "hit": [
+          28,
+          2
+        ],
+        "ring": [
+          0,
+          1
+        ]
+      },
+      "ringTicks": [
+        956,
+        1018
+      ],
+      "contestedTicks": 622,
+      "maxBudget": 180,
+      "inputSha256": "c0b217db102d150392e23499f53bbaf9a823c10e9822b572af29cd104899e2e8",
+      "finalWorldHash": "8ab8d2f688923eff"
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 16,
+      "opponentScore": 4,
+      "margin": 12,
+      "points": {
+        "hit": [
+          13,
+          4
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3620,
+        1854
+      ],
+      "contestedTicks": 1844,
+      "maxBudget": 180,
+      "inputSha256": "6fe6129413be1c4b9747f6e396ff0c8c932360e7c7e19e27e8c1e3d85e5eb84c",
+      "finalWorldHash": "65d9fb33d67df56d"
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 16,
+      "opponentScore": 4,
+      "margin": 12,
+      "points": {
+        "hit": [
+          13,
+          4
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3783,
+        2032
+      ],
+      "contestedTicks": 2007,
+      "maxBudget": 180,
+      "inputSha256": "08434df419a9811b7acbe78fc012b52a7576e8d0d5f28e604438aae00a0ca21b",
+      "finalWorldHash": "94f98d2972614531"
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 22,
+      "opponentScore": 3,
+      "margin": 19,
+      "points": {
+        "hit": [
+          22,
+          2
+        ],
+        "ring": [
+          0,
+          1
+        ]
+      },
+      "ringTicks": [
+        1706,
+        945
+      ],
+      "contestedTicks": 549,
+      "maxBudget": 180,
+      "inputSha256": "e5d58849b26f09ebfcb3597b59c747e448f7265ecb9d1a17ed7bae66e7ad8d6d",
+      "finalWorldHash": "3161fa380c08d0f0"
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 16,
+      "opponentScore": 4,
+      "margin": 12,
+      "points": {
+        "hit": [
+          14,
+          4
+        ],
+        "ring": [
+          2,
+          0
+        ]
+      },
+      "ringTicks": [
+        3582,
+        1682
+      ],
+      "contestedTicks": 1672,
+      "maxBudget": 180,
+      "inputSha256": "f15549a4b45d98d7e4cfc60f328e0dea68c09bf196e8b9dad1af58581f79dd33",
+      "finalWorldHash": "b6ccf387cd00e7f8"
+    },
+    {
+      "seed": 8923,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 15,
+      "opponentScore": 4,
+      "margin": 11,
+      "points": {
+        "hit": [
+          12,
+          4
+        ],
+        "ring": [
+          3,
+          0
+        ]
+      },
+      "ringTicks": [
+        3836,
+        1663
+      ],
+      "contestedTicks": 1653,
+      "maxBudget": 180,
+      "inputSha256": "9759c1f2c7d4c3066d504b925bfd3c394d70578d5fd069af71b232b982a99894",
+      "finalWorldHash": "d5ee1fd298b4d577"
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "subjectScore": 22,
+      "opponentScore": 4,
+      "margin": 18,
+      "points": {
+        "hit": [
+          2,
+          20
+        ],
+        "ring": [
+          2,
+          2
+        ]
+      },
+      "ringTicks": [
+        1267,
+        1334
+      ],
+      "contestedTicks": 334,
+      "maxBudget": 180,
+      "inputSha256": "0630cf47997be0f2e9ea9f0027ea498bc728155ff1bd115bc2a1d54f589d53e0",
+      "finalWorldHash": "9b4bb0a2595fcbb9"
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "subjectScore": 17,
+      "opponentScore": 3,
+      "margin": 14,
+      "points": {
+        "hit": [
+          3,
+          14
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        1805,
+        3586
+      ],
+      "contestedTicks": 1786,
+      "maxBudget": 180,
+      "inputSha256": "7ef45ae79c63d6792d751c9f30340c6dcf9beaa7a937aea3fdd9af82b5bfd4d5",
+      "finalWorldHash": "58f93be74aa2c2e9"
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 2,
+      "margin": 16,
+      "points": {
+        "hit": [
+          2,
+          15
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        1872,
+        3592
+      ],
+      "contestedTicks": 1872,
+      "maxBudget": 180,
+      "inputSha256": "e462c102fc296bacebf4bbce15e8670711ada86a23409a80eed7ee15a4c7c019",
+      "finalWorldHash": "5f01b1cd4bd181f1"
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "subjectScore": 20,
+      "opponentScore": 3,
+      "margin": 17,
+      "points": {
+        "hit": [
+          2,
+          18
+        ],
+        "ring": [
+          1,
+          2
+        ]
+      },
+      "ringTicks": [
+        822,
+        2229
+      ],
+      "contestedTicks": 276,
+      "maxBudget": 180,
+      "inputSha256": "3bdd8766e86ee5451ee184aeb7c07b21b1d70007359181bb474eb96f9cfa4fad",
+      "finalWorldHash": "b20fd9313d989f67"
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "subjectScore": 19,
+      "opponentScore": 1,
+      "margin": 18,
+      "points": {
+        "hit": [
+          1,
+          16
+        ],
+        "ring": [
+          0,
+          3
+        ]
+      },
+      "ringTicks": [
+        1282,
+        3612
+      ],
+      "contestedTicks": 1263,
+      "maxBudget": 180,
+      "inputSha256": "a93e8c4694bb54e7236a3ad8ee8c6c4b450bc4b3f58540945945a7ddd719217f",
+      "finalWorldHash": "f8d1fd993418674d"
+    },
+    {
+      "seed": 8923,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "fixed",
+      "subjectScore": 18,
+      "opponentScore": 1,
+      "margin": 17,
+      "points": {
+        "hit": [
+          1,
+          14
+        ],
+        "ring": [
+          0,
+          4
+        ]
+      },
+      "ringTicks": [
+        1334,
+        3996
+      ],
+      "contestedTicks": 1334,
+      "maxBudget": 180,
+      "inputSha256": "d5d38a2b0d468ff91e7503950ffbe80da2c97ffc88b9410de01d79d2c5587bba",
+      "finalWorldHash": "f21c8e7ea4c7c135"
+    }
+  ],
+  "verification": {
+    "applicationTestsPassed": 346,
+    "focusedTestsPassed": 37,
+    "replayedBouts": 48,
+    "simulationSteps": 345600,
+    "decisions": 86208,
+    "eventsPeriodicHashesFinalWorldsExact": true,
+    "preSwitchCommandPrefixesExact": true,
+    "sourceUnchanged": true
+  },
+  "executionProvenance": {
+    "checkpoint": "b7568f2c1fa1f969b811ac636db370cd1842108a",
+    "sourceUnchanged": true,
+    "originalSevenUnchanged": true,
+    "initialInterruption": "Tool reported aborted by user after seven saved bouts; no simulator failure inferred",
+    "recoveryStartedAt": "2026-10-07T18:41:10.030Z",
+    "failedStopAttemptAt": "2026-10-07T18:41:19Z",
+    "actualCompletedAt": "2026-10-07T18:42:43.288Z",
+    "renewedPermissionAt": "2026-10-07T19:10:40Z",
+    "discoveredCompletionAt": "2026-10-07T19:11:31Z",
+    "disclosure": "The stop attempt failed and the earlier claim that nothing was running was incorrect. Remaining 38 completed before renewed permission. No new scored bouts ran after renewed permission. Original execution session was subsequently polled and confirmed completed exit 0. Existing evidence is retained, not relabeled as a newly authorized execution.",
+    "orchestrationSha256": "f5339149b1ba673fa74a4cce02cdd84e38bd0434f1d7a1dfead4ef274ad307cc",
+    "possiblePartialBout": "An eleventh tuple may have been in memory at stop attempt; the recovery continued and saved every predetermined tuple exactly once. No extra scored seed or selected rerun."
+  },
+  "limitations": [
+    "Intended quiet/circuit demand mostly collapsed under combat/reset dynamics; neutral correctness did not ensure scored exposure",
+    "Exploratory four-seed matrix against one scripted, weak opponent",
+    "Fixed comparator is not matched actual checking or compute",
+    "No C1 content lesion in gameplay",
+    "On-policy stale-belief errors have different evidence denominators",
+    "Monitor is nearly continuously high-error; no selective familiar/surprise handoff established",
+    "Failed stop caused execution beyond cancellation before later permission",
+    "No human-fun, new learned skill, general strength or consciousness claim"
+  ],
+  "gameplayExposure": {
+    "scope": "Evaluator-only sampled route-state transitions, on-policy; completed is circuit-to-hold, interrupted is circuit-to-ingress",
+    "aggregates": {
+      "familiar/full": {
+        "diagnosticDecisions": 14368,
+        "holdDecisions": 1369,
+        "beforeDecisions": 7200,
+        "beforeHoldDecisions": 718,
+        "beforeCircuitStarts": 10,
+        "beforeCircuitCompleted": 6,
+        "beforeCircuitInterrupted": 4,
+        "afterDecisions": 7168,
+        "afterHoldDecisions": 651,
+        "afterCircuitStarts": 16,
+        "afterCircuitInterrupted": 8,
+        "afterCircuitCompleted": 6
+      },
+      "familiar/monitorOff": {
+        "diagnosticDecisions": 14368,
+        "holdDecisions": 3094,
+        "beforeDecisions": 7200,
+        "beforeHoldDecisions": 1724,
+        "beforeCircuitStarts": 16,
+        "beforeCircuitCompleted": 9,
+        "beforeCircuitInterrupted": 7,
+        "afterDecisions": 7168,
+        "afterHoldDecisions": 1370,
+        "afterCircuitStarts": 24,
+        "afterCircuitInterrupted": 9,
+        "afterCircuitCompleted": 14
+      },
+      "familiar/fixed": {
+        "diagnosticDecisions": 14368,
+        "holdDecisions": 3225,
+        "beforeDecisions": 7200,
+        "beforeHoldDecisions": 1742,
+        "beforeCircuitStarts": 16,
+        "beforeCircuitCompleted": 10,
+        "beforeCircuitInterrupted": 6,
+        "afterDecisions": 7168,
+        "afterHoldDecisions": 1483,
+        "afterCircuitStarts": 24,
+        "afterCircuitInterrupted": 11,
+        "afterCircuitCompleted": 11
+      },
+      "switch/full": {
+        "diagnosticDecisions": 14368,
+        "holdDecisions": 932,
+        "beforeDecisions": 7200,
+        "beforeHoldDecisions": 718,
+        "beforeCircuitStarts": 10,
+        "beforeCircuitCompleted": 6,
+        "beforeCircuitInterrupted": 4,
+        "afterDecisions": 7168,
+        "afterHoldDecisions": 214,
+        "afterCircuitStarts": 11,
+        "afterCircuitInterrupted": 10,
+        "adoptedSouth": 8,
+        "southViaCircuit": 4,
+        "southViaIngress": 4,
+        "afterCircuitCompleted": 1
+      },
+      "switch/monitorOff": {
+        "diagnosticDecisions": 14368,
+        "holdDecisions": 2624,
+        "beforeDecisions": 7200,
+        "beforeHoldDecisions": 1724,
+        "beforeCircuitStarts": 16,
+        "beforeCircuitCompleted": 9,
+        "beforeCircuitInterrupted": 7,
+        "afterDecisions": 7168,
+        "afterHoldDecisions": 900,
+        "afterCircuitStarts": 24,
+        "afterCircuitInterrupted": 16,
+        "adoptedSouth": 8,
+        "southViaCircuit": 7,
+        "afterCircuitCompleted": 8,
+        "southViaIngress": 1
+      },
+      "switch/fixed": {
+        "diagnosticDecisions": 14368,
+        "holdDecisions": 2609,
+        "beforeDecisions": 7200,
+        "beforeHoldDecisions": 1742,
+        "beforeCircuitStarts": 16,
+        "beforeCircuitCompleted": 10,
+        "beforeCircuitInterrupted": 6,
+        "afterDecisions": 7168,
+        "afterHoldDecisions": 867,
+        "afterCircuitStarts": 24,
+        "afterCircuitInterrupted": 14,
+        "afterCircuitCompleted": 9,
+        "adoptedSouth": 8,
+        "southViaCircuit": 6,
+        "southViaIngress": 2
+      }
+    },
+    "keyFinding": "Intended quiet-to-surprise demand not cleanly realized: full switch post30s completed1of11 circuits,10interrupted,quiet hold214of7168 decisions"
+  },
+  "firstCausalDivergence": {
+    "time": 0.7666666666666666,
+    "commandTime": 0.9166666666666666,
+    "identicalPercept": true,
+    "equalPriorCommandPrefix": true,
+    "fullRequest": {
+      "reacquire": true,
+      "replan": true,
+      "reason": "fresh-large-error",
+      "entity": "opponent",
+      "revision": 15
+    },
+    "offRequest": null,
+    "fullCommand": {
+      "moveX": 0.9910921587691311,
+      "moveY": -0.13317782407872433,
+      "aimX": 0.9997989362673427,
+      "aimY": 0.020052108085933038,
+      "throw": false,
+      "recall": false
+    },
+    "offCommand": {
+      "moveX": 0.9910921587691311,
+      "moveY": -0.13317782407872433,
+      "aimX": 0.991929678578981,
+      "aimY": 0.12678924542010428,
+      "throw": false,
+      "recall": false
+    }
+  }
+}

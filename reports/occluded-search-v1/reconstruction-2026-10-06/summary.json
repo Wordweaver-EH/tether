@@ -1,0 +1,133 @@
+{
+  "sourceCommit": "b1516040b116eb771ba75c53a9586c4ad60ef510",
+  "freezeSha256": "74ee8d6f4c25f34b50642d4e217bc3dd04b933ca7895bd91330948d1e48f474f",
+  "rawSha256": "23780c413849d9810245b9fbe3782852b5033ca30b371ff4f3df8f61ee89fa36",
+  "sceneDigest": "ca1851915c13cd65641cb7a8d617533591280df132738e4999260083adcae4d2",
+  "episodeCount": 288,
+  "byArm": {
+    "full": {
+      "n": 32,
+      "successes": 32,
+      "successRate": 1,
+      "meanCensoredLatencySec": 0.3041666666666667,
+      "meanWork": 171.39240506329116,
+      "maxWork": 180
+    },
+    "full-history-cut": {
+      "n": 32,
+      "successes": 15,
+      "successRate": 0.46875,
+      "meanCensoredLatencySec": 1.453125,
+      "meanWork": 178.63291139240505,
+      "maxWork": 180
+    },
+    "conventional": {
+      "n": 32,
+      "successes": 32,
+      "successRate": 1,
+      "meanCensoredLatencySec": 0.3145833333333334,
+      "meanWork": 16,
+      "maxWork": 16
+    },
+    "isolated": {
+      "n": 32,
+      "successes": 18,
+      "successRate": 0.5625,
+      "meanCensoredLatencySec": 1.071875,
+      "meanWork": 137.34177215189877,
+      "maxWork": 180
+    },
+    "isolated-belief-cut": {
+      "n": 32,
+      "successes": 15,
+      "successRate": 0.46875,
+      "meanCensoredLatencySec": 1.3489583333333335,
+      "meanWork": 146.39240506329116,
+      "maxWork": 180
+    }
+  },
+  "primary": {
+    "intact": "full",
+    "cut": "full-history-cut",
+    "successAdvantage": 0.53125,
+    "meanCensoredLatencyAdvantageSec": 1.1489583333333333,
+    "latency95PctClusterBootstrap": [
+      1.1281250000000003,
+      1.1656250000000001
+    ],
+    "intactOnlySuccesses": 17,
+    "cutOnlySuccesses": 0
+  },
+  "secondary": {
+    "intact": "isolated",
+    "cut": "isolated-belief-cut",
+    "successAdvantage": 0.09375,
+    "meanCensoredLatencyAdvantageSec": 0.27708333333333335,
+    "latency95PctClusterBootstrap": [
+      0.20416666666666666,
+      0.3729166666666667
+    ],
+    "intactOnlySuccesses": 9,
+    "cutOnlySuccesses": 6
+  },
+  "conventionalComparison": {
+    "intact": "full",
+    "cut": "conventional",
+    "successAdvantage": 0,
+    "meanCensoredLatencyAdvantageSec": 0.010416666666666664,
+    "latency95PctClusterBootstrap": [
+      0.006249999999999999,
+      0.01458333333333333
+    ],
+    "intactOnlySuccesses": 0,
+    "cutOnlySuccesses": 0
+  },
+  "conventionalSuperiorityGate": false,
+  "fullFunctionalGate": true,
+  "historyAttributionGate": true,
+  "alwaysVisibleParity": true,
+  "positiveCriterionMet": true,
+  "neverObservedContrast": {
+    "intact": "full",
+    "cut": "full-history-cut",
+    "successAdvantage": 0,
+    "meanCensoredLatencyAdvantageSec": 0,
+    "latency95PctClusterBootstrap": [
+      0,
+      0
+    ],
+    "intactOnlySuccesses": 0,
+    "cutOnlySuccesses": 0
+  },
+  "historyBenefit": {
+    "successAdvantage": 0.5,
+    "meanCensoredLatencyAdvantageSec": 0.8500000000000001,
+    "latency95PctClusterBootstrap": [
+      0.8416666666666668,
+      0.8583333333333334
+    ]
+  },
+  "historyInteraction": {
+    "successAdvantage": 0.53125,
+    "meanCensoredLatencyAdvantageSec": 1.1489583333333333,
+    "latency95PctClusterBootstrap": [
+      1.1281250000000003,
+      1.1656250000000001
+    ]
+  },
+  "neverObservedByArm": {
+    "full": {
+      "n": 32,
+      "successes": 16,
+      "successRate": 0.5,
+      "meanCensoredLatencySec": 1.1541666666666666
+    },
+    "full-history-cut": {
+      "n": 32,
+      "successes": 16,
+      "successRate": 0.5,
+      "meanCensoredLatencySec": 1.1541666666666666
+    }
+  },
+  "interpretation": "Narrow generated corner-search assay; broad history-path intervention; no consciousness or general gameplay claim"
+}

@@ -1,0 +1,190 @@
+{
+  "kind": "forensic-reproduction-raw-transport",
+  "sourceCommit": "b1516040b116eb771ba75c53a9586c4ad60ef510",
+  "raw": {
+    "path": "result/raw.jsonl",
+    "bytes": 9342976,
+    "sha256": "23780c413849d9810245b9fbe3782852b5033ca30b371ff4f3df8f61ee89fa36",
+    "matchesRetainedOriginal": true
+  },
+  "gzip": {
+    "path": "result/raw.jsonl.gz",
+    "bytes": 2611389,
+    "sha256": "cb1c933f4cd11b76b1d40bfa7fb112f5336967f06d8a7d15e137a9ae0bf39192",
+    "matchesRetainedOriginal": true,
+    "mtime": 0
+  },
+  "base64": {
+    "path": "result/raw.jsonl.gz.base64",
+    "encoding": "ASCII / UTF-8, one final LF",
+    "bytes": 3481853,
+    "sha256": "b6f75806f274b5eca43f2bc68ae3feb1f0715307b36b9331b2368d1b211dd5b2",
+    "gitBlobSha1": "9d7f4e430bde8f4d90bde6b0f6f4739af84cba47",
+    "matchesRetainedOriginal": true
+  },
+  "chunks": [
+    {
+      "path": "transport-chunks/part-001.txt",
+      "offset": 0,
+      "bytes": 131072,
+      "sha256": "6e12f441b672e73bd85704f3f4ed2bed65ff06fa9587812a6da892fb5caadf39"
+    },
+    {
+      "path": "transport-chunks/part-002.txt",
+      "offset": 131072,
+      "bytes": 131072,
+      "sha256": "a40a72d2e35a55c9b1c1051a40d8dcd8a950764a874ba71679cdffed8bd855fd"
+    },
+    {
+      "path": "transport-chunks/part-003.txt",
+      "offset": 262144,
+      "bytes": 131072,
+      "sha256": "084aa8cae468d8b1ba09379df6d49c35489c5d03ca8e6831ccda498a9cc0c2dc"
+    },
+    {
+      "path": "transport-chunks/part-004.txt",
+      "offset": 393216,
+      "bytes": 131072,
+      "sha256": "4676dd90075d889cb59a0a50f057852afcffc020fba82f4b396e7578f16a4a35"
+    },
+    {
+      "path": "transport-chunks/part-005.txt",
+      "offset": 524288,
+      "bytes": 131072,
+      "sha256": "f7b91eede7d860a364258a1d1b69de9309c5d1d5892fbf22deaaeea9ca3a33c5"
+    },
+    {
+      "path": "transport-chunks/part-006.txt",
+      "offset": 655360,
+      "bytes": 131072,
+      "sha256": "d09b625838cc09681a7350c9fde18b8eed4d7c468b76ffb5659acf2227f83a70"
+    },
+    {
+      "path": "transport-chunks/part-007.txt",
+      "offset": 786432,
+      "bytes": 131072,
+      "sha256": "11114c01171c8021a9023e7ec2a1e532e73bbd6bf15d076d9b1f182daf63572f"
+    },
+    {
+      "path": "transport-chunks/part-008.txt",
+      "offset": 917504,
+      "bytes": 131072,
+      "sha256": "17b0f76b5880ad8b018ff80fca9156c636796d6c8e8a738ed9e3ec7063ff22f7"
+    },
+    {
+      "path": "transport-chunks/part-009.txt",
+      "offset": 1048576,
+      "bytes": 131072,
+      "sha256": "a685abef10457f6524d735b019112796252d236cfac6531825c57ea78e379bc7"
+    },
+    {
+      "path": "transport-chunks/part-010.txt",
+      "offset": 1179648,
+      "bytes": 131072,
+      "sha256": "f9444b0d2e0e725e9802b0ede0fe709097feed9f483f77661fb26c7619d2280d"
+    },
+    {
+      "path": "transport-chunks/part-011.txt",
+      "offset": 1310720,
+      "bytes": 131072,
+      "sha256": "8a2cc7266ac583a227a0d6c224734a7d5df61eeb778b3b9f4f2f9ff09e1c09ed"
+    },
+    {
+      "path": "transport-chunks/part-012.txt",
+      "offset": 1441792,
+      "bytes": 131072,
+      "sha256": "f3f99c7f30b24ff9bbd28f4ddfb53e020c765f52301fb12353b77e08d789e697"
+    },
+    {
+      "path": "transport-chunks/part-013.txt",
+      "offset": 1572864,
+      "bytes": 131072,
+      "sha256": "b3d66d68b590d284413b3e664cf634b9892c0e80775cf03cae5780ce039e671a"
+    },
+    {
+      "path": "transport-chunks/part-014.txt",
+      "offset": 1703936,
+      "bytes": 131072,
+      "sha256": "6b539a5003b69bd4f9ac91d12f2439b6a55b6b8be8b0932fc598547b33fe4955"
+    },
+    {
+      "path": "transport-chunks/part-015.txt",
+      "offset": 1835008,
+      "bytes": 131072,
+      "sha256": "b1e15bc89e8eeff52bc9be6782518d08d5e23780054fe93fabb4dd44f1501ca9"
+    },
+    {
+      "path": "transport-chunks/part-016.txt",
+      "offset": 1966080,
+      "bytes": 131072,
+      "sha256": "2fa5f4a315410213889826c6134d9dacbaf865af8543efdfa03eae9754ee43a3"
+    },
+    {
+      "path": "transport-chunks/part-017.txt",
+      "offset": 2097152,
+      "bytes": 131072,
+      "sha256": "ef18317d6a1696d51249d97b07f82762bf6605b3882c7f4777c1b18386f571e7"
+    },
+    {
+      "path": "transport-chunks/part-018.txt",
+      "offset": 2228224,
+      "bytes": 131072,
+      "sha256": "8352a514282b2e0de21a2ef6b7d6e7d9f4aef123f47767799ac84d71f533140a"
+    },
+    {
+      "path": "transport-chunks/part-019.txt",
+      "offset": 2359296,
+      "bytes": 131072,
+      "sha256": "bb049c866ccf032be63aeb1a3c8bc72ff645a518d6c2e0becb5cd0378a672186"
+    },
+    {
+      "path": "transport-chunks/part-020.txt",
+      "offset": 2490368,
+      "bytes": 131072,
+      "sha256": "5a0333826d8b05fa54333c0032b4f73d9edd588f117e2a2cea8e1151ccdd5efc"
+    },
+    {
+      "path": "transport-chunks/part-021.txt",
+      "offset": 2621440,
+      "bytes": 131072,
+      "sha256": "523a344a3313bc0125beee45f2e9ed3e0d2e97bd7860c984852bdb76f07fbf28"
+    },
+    {
+      "path": "transport-chunks/part-022.txt",
+      "offset": 2752512,
+      "bytes": 131072,
+      "sha256": "df30c4bf9a8cc451c4841bcc628e9257b7c8e1d1e9babfd880808a96662d61b9"
+    },
+    {
+      "path": "transport-chunks/part-023.txt",
+      "offset": 2883584,
+      "bytes": 131072,
+      "sha256": "caa2c302f460763060299956a63e1fc817af8d2d835530b6599a4860eb13436f"
+    },
+    {
+      "path": "transport-chunks/part-024.txt",
+      "offset": 3014656,
+      "bytes": 131072,
+      "sha256": "96b52cbf8cbd0714f70b36daef4e4bae50eba2fc988c690a276178197bb9b8e1"
+    },
+    {
+      "path": "transport-chunks/part-025.txt",
+      "offset": 3145728,
+      "bytes": 131072,
+      "sha256": "1330b931f20e2f85119b38864d5491a9af48221fa96eb9a30f22c584b37ac244"
+    },
+    {
+      "path": "transport-chunks/part-026.txt",
+      "offset": 3276800,
+      "bytes": 131072,
+      "sha256": "5edeae20aab98f6e15a5b5e35f340d9ff6194d85513b9a59711cf1c1db9ef5c6"
+    },
+    {
+      "path": "transport-chunks/part-027.txt",
+      "offset": 3407872,
+      "bytes": 73981,
+      "sha256": "81eb704d9a01b2183bf4386928aba4baed3e9ec38a1d655e2b06bbaba6b1bcd6"
+    }
+  ],
+  "note": "Chunks concatenate byte-for-byte to the single base64 file; no policy execution during packaging. Regenerated transport, not recovered original disk files."
+}

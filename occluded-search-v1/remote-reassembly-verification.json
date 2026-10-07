@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-10-07T02:00:32.715389+00:00",
+  "repository": "Wordweaver-EH/tether",
+  "remotePartsFetched": 27,
+  "everyPartMatchesExpectedSha256AndGitBlobSha1": true,
+  "everyRemotePartEqualsLocalReconstruction": true,
+  "reassembled": {
+    "base64": {
+      "bytes": 3481853,
+      "sha256": "b6f75806f274b5eca43f2bc68ae3feb1f0715307b36b9331b2368d1b211dd5b2"
+    },
+    "gzip": {
+      "bytes": 2611389,
+      "sha256": "cb1c933f4cd11b76b1d40bfa7fb112f5336967f06d8a7d15e137a9ae0bf39192"
+    },
+    "raw": {
+      "bytes": 9342976,
+      "sha256": "23780c413849d9810245b9fbe3782852b5033ca30b371ff4f3df8f61ee89fa36"
+    }
+  },
+  "noStudyExecutionDuringVerification": true
+}

@@ -1,0 +1,256 @@
+{
+  "replayBouts": 16,
+  "pairs": [
+    {
+      "seed": 1237,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 1237,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 2081,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 2081,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 3253,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 3253,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 4447,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 4447,
+      "seat": "P2",
+      "inputEqual": false,
+      "worldEqual": false,
+      "scoreEqual": true,
+      "changedInputTicks": 316,
+      "weaponDifferenceTicks": [
+        3246,
+        3250,
+        3298,
+        3302,
+        3306,
+        3310,
+        3314,
+        3318,
+        3322,
+        3326,
+        3330
+      ],
+      "firstDifference": {
+        "tick": 3246,
+        "v1": {
+          "focus": null,
+          "tier": 0,
+          "input": {
+            "moveX": 0.07269945263659854,
+            "moveY": -0.9973538938543023,
+            "aimX": -0.02647060804696182,
+            "aimY": 0.9996495920619506,
+            "throw": false,
+            "recall": false
+          }
+        },
+        "repaired": {
+          "focus": null,
+          "tier": 0,
+          "input": {
+            "moveX": 0.07269945263659854,
+            "moveY": -0.9973538938543023,
+            "aimX": -0.02647060804696182,
+            "aimY": 0.9996495920619506,
+            "throw": false,
+            "recall": true
+          },
+          "guard": {
+            "shotRequestedBeforeGuard": false,
+            "shotAllowed": false,
+            "reason": "no shot intention",
+            "evidence": "currently received delayed percept; final pre-noise aim",
+            "aim": {
+              "x": -0.02647060804696182,
+              "y": 0.9996495920619506
+            }
+          }
+        }
+      }
+    }
+  ],
+  "embedded": [
+    {
+      "id": "v1-1237-P1",
+      "tick": 1710,
+      "time": 14.1,
+      "tier": 2,
+      "focus": "Threat",
+      "input": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.5594734126843749,
+        "aimY": 0.8288482976391393,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.4741278496224825,
+        "aimY": 0.8804560081073673,
+        "throw": false,
+        "recall": true
+      }
+    },
+    {
+      "id": "repaired-1237-P1",
+      "tick": 1710,
+      "time": 14.1,
+      "tier": 2,
+      "focus": "Threat",
+      "input": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.5594734126843749,
+        "aimY": 0.8288482976391393,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.4741278496224825,
+        "aimY": 0.8804560081073673,
+        "throw": false,
+        "recall": true
+      }
+    },
+    {
+      "id": "v1-4447-P2",
+      "tick": 3246,
+      "time": 26.9,
+      "tier": 0,
+      "focus": null,
+      "input": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.02647060804696182,
+        "aimY": 0.9996495920619506,
+        "throw": false,
+        "recall": false
+      },
+      "actual": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.12117140739596648,
+        "aimY": 0.9926315983433536,
+        "throw": false,
+        "recall": false
+      }
+    },
+    {
+      "id": "v1-4447-P2",
+      "tick": 3250,
+      "time": 26.933333333333334,
+      "tier": 2,
+      "focus": "Threat",
+      "input": {
+        "moveX": 0.8291272646259616,
+        "moveY": 0.5590599064982843,
+        "aimX": -0.5590599064982845,
+        "aimY": 0.8291272646259616,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.8291272646259616,
+        "moveY": 0.5590599064982843,
+        "aimX": -0.5107246987553081,
+        "aimY": 0.8597443120377708,
+        "throw": false,
+        "recall": true
+      }
+    },
+    {
+      "id": "repaired-4447-P2",
+      "tick": 3246,
+      "time": 26.9,
+      "tier": 0,
+      "focus": null,
+      "input": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.02647060804696182,
+        "aimY": 0.9996495920619506,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.12117140739596648,
+        "aimY": 0.9926315983433536,
+        "throw": false,
+        "recall": true
+      }
+    }
+  ],
+  "guards": {
+    "no shot intention": 435,
+    "facing incompatible with visible target": 21,
+    "allowed": 1
+  },
+  "maxBudget": 180
+}

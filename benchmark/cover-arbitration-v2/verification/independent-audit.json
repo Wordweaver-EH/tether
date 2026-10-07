@@ -1,0 +1,432 @@
+{
+  "reviewedCommit": "d767e9bd3be604791a5b7f2b61f8c86bad9e1f42",
+  "sourceAndReferenceHashesMatched": true,
+  "sourceFileCount": 42,
+  "referenceSourceFileCount": 34,
+  "bouts": [
+    {
+      "variant": "v1",
+      "seed": 1237,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        4,
+        6
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "0bb6bbc9f83b5196f0f15f353dba92023ef2e26703359bcc0d359c1d0b2fc717"
+    },
+    {
+      "variant": "repaired",
+      "seed": 1237,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        4,
+        6
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "ca08d5caf5fb2fea2c461f153536015ea727dc2fb49580590d9186379760499c"
+    },
+    {
+      "variant": "v1",
+      "seed": 1237,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        6,
+        2
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "87202efd25118379705c9eefe0615e89055bd5b20f4740fbcdbfafbe5cfd8af3"
+    },
+    {
+      "variant": "repaired",
+      "seed": 1237,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        6,
+        2
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "478146ab2b9b34b525935349e944c50ffcaf5c17adb2471b6bbafc06103b4e27"
+    },
+    {
+      "variant": "v1",
+      "seed": 2081,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        5,
+        4
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "a77a0d26acb1bc4f905c6ec75675b82436284d40354f9cc85b3837a754cd31db"
+    },
+    {
+      "variant": "repaired",
+      "seed": 2081,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        5,
+        4
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "2c2349355e6169cd0d9de8b982d217f23ecda29939fac6e917e3c978bed2ee93"
+    },
+    {
+      "variant": "v1",
+      "seed": 2081,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        6,
+        2
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "ee5c05f71b90210b1353b88584590fb817291ca71d9ebb0d5b3bc9bfed3fe6c4"
+    },
+    {
+      "variant": "repaired",
+      "seed": 2081,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        6,
+        2
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "a7d4154fdafdf2984de0196ea8a68c726aa09219bea73a9ac09c09d9aa7aa65c"
+    },
+    {
+      "variant": "v1",
+      "seed": 3253,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        1,
+        8
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "4e46b11ceb66ce2e6508a7159ee04533ebca09617e87d709c7ab09207576a919"
+    },
+    {
+      "variant": "repaired",
+      "seed": 3253,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        1,
+        8
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "e6227fe7d9134d51a4330694d44039f73d0279a3804299d5167ffe2b7fe65481"
+    },
+    {
+      "variant": "v1",
+      "seed": 3253,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        4,
+        4
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "cae5ecfeb7ba5b57ddda08b631a374abfd504fc7bf6a68e36f4f04d489dedd22"
+    },
+    {
+      "variant": "repaired",
+      "seed": 3253,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        4,
+        4
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "df86ff8a65e5e5a6cb5fd0afc62661cff1cc0d29bc57e200f4a0d9a850ba6dd6"
+    },
+    {
+      "variant": "v1",
+      "seed": 4447,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        0,
+        10
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "6f6c08e250a979ec31f936cc12a14856ce0508357569a1e3fc1900c312ce14bc"
+    },
+    {
+      "variant": "repaired",
+      "seed": 4447,
+      "seat": "P1",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        0,
+        10
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "5e2f40f0eea038d09901779f40cfd83c37a519f24bc52cfb109c54c366065be7"
+    },
+    {
+      "variant": "v1",
+      "seed": 4447,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        5,
+        1
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "d3d5fac82fd8a5a5af2043849171cbde2dbcbef8b27714950145c2b2056c8448"
+    },
+    {
+      "variant": "repaired",
+      "seed": 4447,
+      "seat": "P2",
+      "steps": 3600,
+      "decisions": 896,
+      "score": [
+        5,
+        1
+      ],
+      "commandsAndEventCountsMatch": true,
+      "diagnosticsMatch": true,
+      "logHash": "42e0c757038416749457e4129f087f1240e3aa5443bb3ad6c0c222bc8d9dff78"
+    }
+  ],
+  "totalSteps": 57600,
+  "totalDecisions": 14336,
+  "pairs": [
+    {
+      "seed": 1237,
+      "seat": "P1",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 1237,
+      "seat": "P2",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 2081,
+      "seat": "P1",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 2081,
+      "seat": "P2",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 3253,
+      "seat": "P1",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 3253,
+      "seat": "P2",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 4447,
+      "seat": "P1",
+      "identicalScore": true,
+      "identicalCommands": true,
+      "differingCommandTicks": 0,
+      "firstDifferenceTick": null
+    },
+    {
+      "seed": 4447,
+      "seat": "P2",
+      "identicalScore": true,
+      "identicalCommands": false,
+      "differingCommandTicks": 316,
+      "firstDifferenceTick": 3246
+    }
+  ],
+  "firstDivergence": {
+    "v1": {
+      "tick": 3246,
+      "focus": null,
+      "tier": 0,
+      "sensorTime": 26.9,
+      "commandTime": 27.05,
+      "input": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.02647060804696182,
+        "aimY": 0.9996495920619506,
+        "throw": false,
+        "recall": false
+      },
+      "actualCommand": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.12117140739596648,
+        "aimY": 0.9926315983433536,
+        "throw": false,
+        "recall": false
+      },
+      "selectedBranch": null,
+      "planning": {
+        "requested": false,
+        "reason": "reflex priority",
+        "nextEligible": 26.866666666666667,
+        "status": "not-requested",
+        "fallback": null,
+        "availableUnits": 184,
+        "attempted": false,
+        "completedBranches": 0,
+        "actionModel": "immediate recovery only; delayed recall unsupported"
+      }
+    },
+    "repaired": {
+      "tick": 3246,
+      "focus": null,
+      "tier": 0,
+      "sensorTime": 26.9,
+      "commandTime": 27.05,
+      "input": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.02647060804696182,
+        "aimY": 0.9996495920619506,
+        "throw": false,
+        "recall": true
+      },
+      "actualCommand": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.12117140739596648,
+        "aimY": 0.9926315983433536,
+        "throw": false,
+        "recall": true
+      },
+      "selectedBranch": null,
+      "planning": {
+        "requested": false,
+        "reason": "reflex priority",
+        "nextEligible": 26.866666666666667,
+        "status": "not-requested",
+        "fallback": null,
+        "availableUnits": 184,
+        "attempted": false,
+        "completedBranches": 0,
+        "weaponIssued": true,
+        "selectedRolloutCommandIssued": false,
+        "execution": "unplanned compatible weapon command; no completed-plan credit",
+        "actionModel": "immediate recovery only; delayed recall unsupported"
+      }
+    },
+    "v1RecallEvents": [
+      {
+        "tick": 3250,
+        "time": 27.083333333333332,
+        "events": [
+          {
+            "type": "RECALL_START",
+            "owner": "P2",
+            "spear_start": {
+              "x": -2.8,
+              "y": 0.2701053506136476
+            },
+            "recall_target": {
+              "x": 0.580290998585008,
+              "y": -0.11426845260212634
+            },
+            "opponent_pos": {
+              "x": -0.4323441524229888,
+              "y": 0.18725529164031401
+            },
+            "owner_facing": {
+              "x": -0.7798523511994948,
+              "y": 0.6259635055884806
+            }
+          }
+        ]
+      }
+    ],
+    "repairedRecallEvents": [
+      {
+        "tick": 3246,
+        "time": 27.05,
+        "events": [
+          {
+            "type": "RECALL_START",
+            "owner": "P2",
+            "spear_start": {
+              "x": -2.8,
+              "y": 0.2701053506136476
+            },
+            "recall_target": {
+              "x": 0.5705977382334615,
+              "y": 0.018712066578447283
+            },
+            "opponent_pos": {
+              "x": -0.5599728701846929,
+              "y": 0.22583881377452392
+            },
+            "owner_facing": {
+              "x": -0.8929558370895159,
+              "y": 0.4501442802122022
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "limitation": "Stored-output accounting audit only; no new bouts or simulator replay"
+}

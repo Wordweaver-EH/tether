@@ -1,0 +1,17 @@
+✔ mirrored defense preserves dodge and gaze while an embedded own spear really starts returning (13.780292ms)
+✔ a baited incoming line permits real recovery through unchanged delay/noise, then objective resumes (67.054299ms)
+✔ reflex can retain an already eligible aligned visible shot without changing dodge or gaze (7.062154ms)
+✔ an eligible shot cannot follow incompatible final defensive gaze (2.429804ms)
+✔ real attention redirection passes through planGaze before the defensive compatibility guard (0.575562ms)
+✔ fresh visibility and facing guard reject a stale cached target during reflex (2.029188ms)
+✔ hidden target, occluded shot, and non-held own spear cannot create defensive throws (4.900001ms)
+✔ completed rollout without an executed weapon never earns completed-command credit (1.484819ms)
+✔ arbitration keeps common motor noise formula and leaves post-noise command distinct (0.30824ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.110354

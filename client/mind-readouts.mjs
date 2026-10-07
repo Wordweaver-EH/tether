@@ -31,9 +31,16 @@ export function cognitionReadouts(trace) {
     if (c.cover.intent) rows.push(['Cover intent', String(c.cover.intent)]);
     if (c.cover.reason) rows.push(['Cover reason', String(c.cover.reason)]);
     if (c.cover.actionSource) rows.push(['Command source', String(c.cover.actionSource)]);
+    if (c.cover.arbitration) {
+      const a = c.cover.arbitration;
+      if (a.locomotionSource) rows.push(['Movement source', String(a.locomotionSource)]);
+      if (a.weaponSource) rows.push(['Weapon intention source', String(a.weaponSource)]);
+      if (a.guard) rows.push(['Pre-noise shot guard', a.guard.shotAllowed ? 'Compatible with received visible target' : String(a.guard.reason ?? 'No shot issued')]);
+    }
     if (typeof c.cover.routeCache?.reused === 'boolean')
       rows.push(['Route cache reused', c.cover.routeCache.reused ? 'Yes' : 'No']);
     if (c.cover.planning?.status) rows.push(['Planning status', String(c.cover.planning.status)]);
+    if (c.cover.planning?.execution) rows.push(['Weapon execution', String(c.cover.planning.execution)]);
     if (c.cover.planning && Object.hasOwn(c.cover.planning, 'fallback'))
       rows.push(['Planning fallback', c.cover.planning.fallback ? String(c.cover.planning.fallback) : 'None']);
   }

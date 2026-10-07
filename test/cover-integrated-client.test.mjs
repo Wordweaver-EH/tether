@@ -141,7 +141,7 @@ test('integrated selection restores its deterministic controller and logs its ac
     await dom.el('download').dispatch('click');
     const text = await (await fetch(dom.downloads[0].href)).text();
     const parsed = parseLog(text), records = text.trim().split('\n').map(JSON.parse);
-    assert.equal(parsed.metadata.agent_technical[1].controller, 'cover-integrated-mind-v1');
+    assert.equal(parsed.metadata.agent_technical[1].controller, 'cover-integrated-mind-v2');
     assert.ok(parsed.traces.length > 0);
     assert.deepEqual(parsed.traces, JSON.parse(JSON.stringify(mind.trace())));
     assert.ok(parsed.traces.every(row => row.cognition?.cover && row.actualCommand));
@@ -278,6 +278,10 @@ test('Mind View labels integrated traces, renders evidence, and clears labels on
     const cognition = readoutText(dom.el('cognition'));
     assert.match(cognition, /Cover intent/);
     assert.match(cognition, /Planning status/);
+    assert.match(cognition, /Movement source/);
+    assert.match(cognition, /Weapon intention source/);
+    assert.match(cognition, /Pre-noise shot guard/);
+    assert.match(cognition, /Weapon execution/);
     assert.match(cognition, /Route cache reused/);
     assert.match(cognition, /Requested input \(before noise\)/);
     assert.match(cognition, /Actual command \(post-noise\)/);
@@ -287,6 +291,16 @@ test('Mind View labels integrated traces, renders evidence, and clears labels on
     assert.match(dom.el('focus').textContent, /Integrated mind \(experimental\) · No focus/);
     assert.match(dom.el('saliences').textContent, /No recorded mind trace/);
     assert.equal(dom.el('saliences').children.length, 0);
+    const oldIntegrated = structuredClone(logger.records);
+    oldIntegrated[0].agent_technical[1].controller = 'cover-integrated-mind-v1';
+    for (const row of oldIntegrated) if (row.trace?.cognition?.cover) {
+      delete row.trace.cognition.cover.arbitration;
+      delete row.trace.cognition.cover.planning.execution;
+    }
+    await load(oldIntegrated.map(JSON.stringify).join('\n'));
+    assert.match(dom.el('focus').textContent, /Integrated mind \(experimental\)/);
+    dom.el('scrub').value = '2'; await dom.el('scrub').dispatch('input');
+    assert.doesNotMatch(readoutText(dom.el('cognition')), /Weapon intention source/);
     const legacy = createSessionLogger({ world: createWorld({ gameMode: 'COVER_CONTROL' }), mode: 'MODE_B' });
     legacy.records[0].agent_technical = [null, { controller: 'cover-existing-mind-v1' }];
     await load(legacy.toJSONL());

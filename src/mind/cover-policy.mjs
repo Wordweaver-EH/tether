@@ -13,7 +13,7 @@ export function createCoverPolicy(controls = {}) {
   let route = null, waypoint = 0, previous = null, traversing = false;
   let routeSource = null;
   let cachedRoute = null, successes = 0, nextPlan = -Infinity, lastSignature = null;
-  let state = null;
+  let state = null, weaponIntent = null;
   function prepare(view, belief, model, original, budget, flinch = null) {
     if (view.gameMode !== 'COVER_CONTROL') throw new RangeError('integrated mind requires Cover Control');
     const now = view.time.elapsedSec, measured = view.own.position;
@@ -61,6 +61,7 @@ export function createCoverPolicy(controls = {}) {
     const shot = seen && !!original.Hunt.wants.throw && hasLineOfSight(measured, gaze, view.arena.obstacles);
     const recall = view.own.spear.state === 'EMBEDDED';
     const action = { gaze, throw: shot, recall };
+    weaponIntent = { throw: shot, recall };
     const objective = { content: enemyHolding || contested ? 'Contest the public ring' : holding ? 'Hold the public ring' : 'Reach the public ring',
       salience: enabled.objective ? enemyHolding ? .94 : holding ? .88 : .84 : 0,
       wants: { ...action, move: inside && !contested ? null : destination } };
@@ -71,7 +72,7 @@ export function createCoverPolicy(controls = {}) {
       wants: { gaze: remembered ? belief.mean : model.scanTarget,
         move: inside ? measured : remembered ? belief.mean : model.searchTarget, recall } };
     if (seen || enemyHolding) search.salience = .05;
-    const candidates = { Threat: { ...threat, wants: { ...threat.wants, recall } },
+    const candidates = { Threat: { ...threat, wants: { ...threat.wants, throw: shot, recall } },
       Hunt: hunt, Search: search, Objective: objective };
     // Immediate danger can beat even an urgent contested ring without changing
     // the old Duel threat weights. The reflex path remains the first safety tier.
@@ -90,6 +91,29 @@ export function createCoverPolicy(controls = {}) {
       routeStatus: routeSource,
       danger, destination: { ...destination }, inside, reset: !!reset };
     return candidates;
+  }
+  function arbitrate(chosen, flinch) {
+    const defensive = !!flinch || chosen.focus === 'Threat';
+    // Defense owns locomotion and gaze. Recovery is an independent button;
+    // a shot can survive only if its existing intention passes the final-aim
+    // guard below. In particular a reflex never invents an aim from stale belief.
+    if (defensive) {
+      chosen.outputs.recall = weaponIntent.recall;
+      chosen.outputs.throw = weaponIntent.throw;
+    }
+    state.arbitration = { defensive,
+      locomotionSource: flinch ? 'observed-spear reflex' : 'workspace winner',
+      gazeSource: flinch ? 'observed-spear reflex proposal; subject to unchanged attention selection' : 'workspace/tactical/attention selection',
+      gazeProposal: chosen.outputs.gaze ? { ...chosen.outputs.gaze } : null,
+      weaponSource: defensive ? 'existing Cover visible-shot or immediate-recovery intention' : 'workspace winner',
+      intended: { throw: !!chosen.outputs.throw, recall: !!chosen.outputs.recall },
+      guard: null, issued: null };
+  }
+  function branchMatches(view, input, branch) {
+    if (!branch) return false;
+    if (input.recall) return view.own.spear.state === 'EMBEDDED' && branch.tactic === 'direct';
+    if (!input.throw || view.own.spear.state !== 'HELD' || !branch.target) return false;
+    return dot(unit({ x: input.aimX, y: input.aimY }), unit(sub(branch.target, view.own.position))) > 1 - 1e-10;
   }
   function request(view, belief, chosen, monitorForced, flinch, budget) {
     const now = view.time.elapsedSec;
@@ -113,6 +137,12 @@ export function createCoverPolicy(controls = {}) {
     if (unresolved) state.planning.fallback = 'selected workspace movement; visible clear-line shot or spear recovery';
     state.planning.attempted = cognition.tier === 2;
     state.planning.completedBranches = cognition.completedBranches;
+    // A completed rollout is not proof that its weapon command was issued.
+    state.planning.weaponIssued = !!(input.throw || input.recall);
+    state.planning.selectedRolloutCommandIssued = branchMatches(view, input, cognition.selectedBranch);
+    state.planning.execution = !state.planning.weaponIssued ? 'no weapon command issued' :
+      state.planning.selectedRolloutCommandIssued ? 'selected rollout command issued before motor noise' :
+        'unplanned compatible weapon command; no completed-plan credit';
     state.intent = chosen.broadcast?.content ?? (cognition.tier === 0 ? 'Avoid the observed incoming spear' : 'No selected goal');
     if (cognition.tier === 0) state.reason = 'observed imminent moving spear';
     else if (chosen.focus === 'Threat') state.reason = `${view.opponentSpear ? 'observed' : 'remembered'} spear crossing line`;
@@ -122,10 +152,11 @@ export function createCoverPolicy(controls = {}) {
     state.selectedFocus = chosen.focus;
     state.actionSource = cognition.tier === 0 ? 'observed-spear reflex' : 'workspace winner';
     state.requestedInput = { ...input };
+    state.arbitration.issued = { throw: input.throw, recall: input.recall };
     state.tacticalScoreLearning = 'disabled: ring points are not shot outcomes';
     return structuredClone(state);
   }
-  return { enabled, prepare, request, finish,
+  return { enabled, prepare, arbitrate, branchMatches, request, finish,
     state: () => structuredClone(state),
     move(view, target, planner) {
       const predicted = add(view.own.position, scale(view.own.velocity, .15));
@@ -136,9 +167,22 @@ export function createCoverPolicy(controls = {}) {
         ? schedule.map(item => item.item === 'opponent' ? { ...item, due: false } : item) : schedule;
     },
     safeShot(view, input) {
-      if (!input.throw) return;
-      input.throw = !!view.opponent && hasLineOfSight(view.own.position, view.opponent.position, view.arena.obstacles) &&
-        dot(view.own.facing, unit(sub(view.opponent.position, view.own.position))) > Math.cos(.18);
+      const requested = input.throw;
+      const target = view.opponent?.position;
+      let reason = !requested ? state.arbitration.intended.throw ? 'earlier alignment gate' : 'no shot intention' :
+        !target ? 'no currently received visible opponent' :
+        !hasLineOfSight(view.own.position, target, view.arena.obstacles) ? 'blocked visible target line' :
+        dot(view.own.facing, unit(sub(target, view.own.position))) <= Math.cos(.18) ? 'facing incompatible with visible target' : null;
+      if (!reason && state.arbitration.defensive) {
+        const aim = unit({ x: input.aimX, y: input.aimY });
+        const aimEnd = add(view.own.position, scale(aim, distance(view.own.position, target)));
+        if (dot(aim, unit(sub(target, view.own.position))) <= Math.cos(.18)) reason = 'final pre-noise aim incompatible with visible target';
+        else if (!hasLineOfSight(view.own.position, aimEnd, view.arena.obstacles)) reason = 'final pre-noise aim crosses cover';
+      }
+      input.throw = !!requested && !reason;
+      state.arbitration.guard = { shotRequestedBeforeGuard: !!requested, shotAllowed: input.throw, reason,
+        evidence: 'currently received delayed percept; final pre-noise aim',
+        aim: { x: input.aimX, y: input.aimY } };
     },
   };
 }

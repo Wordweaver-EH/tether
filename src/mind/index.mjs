@@ -144,6 +144,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
     const chosen = flinch ? { focus:null,ignition:false,broadcast:null,outputs:{ gaze:view.opponentSpear.position } } : workspace.choose((ablations.singleUtility || ablations.noIntuition) ?
       { Utility: singleUtility(view, workingBelief, model) } : candidates, now, mood);
     if (ablations.noIntuition) chosen.outputs = singleUtility(view, workingBelief, model).wants;
+    if (cover) cover.arbitrate(chosen, flinch);
     coordination.broadcast(chosen,view,workingBelief,now);
     schedule = coordination.attend(schedule,workingBelief.mean);
     planningBelief = coordination.plan(workingBelief,now,view.arena);
@@ -226,7 +227,8 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
       reflection.considerRecall({ time: now, spear: view.own.spear,
         own: view.own.position, particles: b.particles }) : null;
     // Tier 2 may have run without resolving the executed tactic. Do not call that teacher-backed evidence.
-    const issuedLearningTier = tier === 2 && (!selectedBranch || selectedBranch.tactic !== tactic) ? 1 : tier;
+    const issuedLearningTier = tier === 2 && (!selectedBranch || selectedBranch.tactic !== tactic ||
+      (cover && !cover.branchMatches(view, input, selectedBranch))) ? 1 : tier;
     if (input.throw || input.recall) {
       const wasPending = learning.diagnostics().pending;
       learning.record(key,tactic,view,now,issuedLearningTier);

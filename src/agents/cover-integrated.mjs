@@ -17,7 +17,7 @@ export function createIntegratedCoverMind({ seed = 1, captureTrace = true,
       if (view.gameMode !== 'COVER_CONTROL') throw new RangeError('Cover Control percept required');
       return embodied.act(view, dt);
     },
-    settings: () => ({ ...embodied.settings(), controller: 'cover-integrated-mind-v1', seed,
+    settings: () => ({ ...embodied.settings(), controller: 'cover-integrated-mind-v2', seed,
       scope: 'engineered ring/threat/search workspace integration; session-only route cache; tactical score learning disabled' }),
   };
 }

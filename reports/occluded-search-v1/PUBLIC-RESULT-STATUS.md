@@ -1,6 +1,8 @@
 # Occluded-search v1: result and availability status
 
-Updated 2026-10-06. **One authorized forensic reproduction reconstructed the
+Updated 2026-10-07. Raw publication is complete: [verified data and reassembly instructions](https://github.com/Wordweaver-EH/tether/blob/b1314d0d9acdb08c3780841931c182f330524966/occluded-search-v1/README.md). All 27 remote parts were downloaded and reconstructed, matching the original raw, gzip and base64 hashes. This resolves this study's raw availability gap; it does not recover older studies' missing evidence.
+
+Reconstruction history, recorded 2026-10-06: **One authorized forensic reproduction reconstructed the
 raw JSONL byte-for-byte**, matching its retained original SHA-256 and byte count.
 The original disk copies and post-run audit package remain unavailable. This is
 newly written from retained run/audit messages and the newly completed exact-source
@@ -48,7 +50,7 @@ The retained finding is useful prior-observation-dependent search in this
 specific task. It does not demonstrate superiority to ordinary tracking,
 consciousness, general intelligence, or general gameplay improvement. The
 new reconstruction matches the original raw hash exactly, making those contents
-available again. Raw Git publication still requires a verified upload; the
+available again. Raw Git publication is now verified at the data commit linked above; the
 original post-run audit files have not been restored.
 
 ## Interpretation limits retained from the protocol and audit

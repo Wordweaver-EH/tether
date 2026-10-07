@@ -1,0 +1,3438 @@
+{
+  "protocol": {
+    "version": 1,
+    "pilotSeed": 991,
+    "seeds": [
+      1709,
+      3253,
+      6421
+    ],
+    "conditions": [
+      "familiar",
+      "switch"
+    ],
+    "variants": [
+      "full",
+      "contentCut",
+      "memoryOff",
+      "monitorOff",
+      "fixed",
+      "conventional"
+    ],
+    "switchTick": 24,
+    "maxTicks": 64,
+    "baseCommit": "2b673c6bd8b6a32a87ff413fea135b1098209344"
+  },
+  "checkpoint": "824f86d661eec93c0445be166de2c6e5d03a8e1d",
+  "sourceFingerprint": "85d2cdf7753068cc3e82ad7761746746ca16e88052a536c3ce07b78c26dcec05",
+  "episodes": [
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "full",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 57,
+      "postBoundarySteps": 33,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 57,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 29,
+        "logicalUnits": 2093,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 33,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 16,
+        "logicalUnits": 1192,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "contentCut",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 57,
+      "postBoundarySteps": 33,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 57,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 29,
+        "logicalUnits": 2093,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 33,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 16,
+        "logicalUnits": 1192,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "memoryOff",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 57,
+      "postBoundarySteps": 33,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 57,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 29,
+        "logicalUnits": 2093,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 33,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 16,
+        "logicalUnits": 1192,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 57,
+      "postBoundarySteps": 33,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 57,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 29,
+        "logicalUnits": 2093,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 33,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 16,
+        "logicalUnits": 1192,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "fixed",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 58,
+      "postBoundarySteps": 34,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 58,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 15,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 30,
+        "logicalUnits": 2142,
+        "branchUnits": 750,
+        "foodCells": 1350
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 34,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 9,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 17,
+        "logicalUnits": 1241,
+        "branchUnits": 425,
+        "foodCells": 765
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "conventional",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 58,
+      "postBoundarySteps": 34,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 58,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 15,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 30,
+        "logicalUnits": 2142,
+        "branchUnits": 750,
+        "foodCells": 1350
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 34,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 9,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 17,
+        "logicalUnits": 1241,
+        "branchUnits": 425,
+        "foodCells": 765
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "full",
+      "pellets": 43,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 34,
+      "metrics": {
+        "steps": 64,
+        "visible": 33,
+        "packets": 35,
+        "recalls": 2,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 22,
+        "freshErrorRequests": 13,
+        "highErrorRequests": 9,
+        "invalidations": 17,
+        "replans": 42,
+        "logicalUnits": 2586,
+        "branchUnits": 1050,
+        "foodCells": 1890
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 40,
+        "visible": 32,
+        "packets": 32,
+        "recalls": 0,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 22,
+        "freshErrorRequests": 13,
+        "highErrorRequests": 9,
+        "invalidations": 17,
+        "replans": 29,
+        "logicalUnits": 1685,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "recovery": [
+        {
+          "from": 20,
+          "to": 20.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 21,
+          "to": 25,
+          "duration": 4,
+          "censored": false
+        },
+        {
+          "from": 26,
+          "to": 26.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 27,
+          "to": 32,
+          "duration": 5,
+          "censored": true
+        }
+      ]
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "contentCut",
+      "pellets": 43,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 34,
+      "metrics": {
+        "steps": 64,
+        "visible": 33,
+        "packets": 35,
+        "recalls": 2,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 22,
+        "freshErrorRequests": 13,
+        "highErrorRequests": 9,
+        "invalidations": 17,
+        "replans": 42,
+        "logicalUnits": 2586,
+        "branchUnits": 1050,
+        "foodCells": 1890
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 40,
+        "visible": 32,
+        "packets": 32,
+        "recalls": 0,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 22,
+        "freshErrorRequests": 13,
+        "highErrorRequests": 9,
+        "invalidations": 17,
+        "replans": 29,
+        "logicalUnits": 1685,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "recovery": [
+        {
+          "from": 20,
+          "to": 20.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 21,
+          "to": 25,
+          "duration": 4,
+          "censored": false
+        },
+        {
+          "from": 26,
+          "to": 26.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 27,
+          "to": 32,
+          "duration": 5,
+          "censored": true
+        }
+      ]
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "memoryOff",
+      "pellets": 43,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 34,
+      "metrics": {
+        "steps": 64,
+        "visible": 33,
+        "packets": 35,
+        "recalls": 0,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 22,
+        "freshErrorRequests": 13,
+        "highErrorRequests": 9,
+        "invalidations": 17,
+        "replans": 42,
+        "logicalUnits": 2586,
+        "branchUnits": 1050,
+        "foodCells": 1890
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 40,
+        "visible": 32,
+        "packets": 32,
+        "recalls": 0,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 22,
+        "freshErrorRequests": 13,
+        "highErrorRequests": 9,
+        "invalidations": 17,
+        "replans": 29,
+        "logicalUnits": 1685,
+        "branchUnits": 725,
+        "foodCells": 1305
+      },
+      "recovery": [
+        {
+          "from": 20,
+          "to": 20.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 21,
+          "to": 25,
+          "duration": 4,
+          "censored": false
+        },
+        {
+          "from": 26,
+          "to": 26.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 27,
+          "to": 32,
+          "duration": 5,
+          "censored": true
+        }
+      ]
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "monitorOff",
+      "pellets": 43,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 34,
+      "metrics": {
+        "steps": 64,
+        "visible": 33,
+        "packets": 35,
+        "recalls": 2,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 33,
+        "logicalUnits": 2361,
+        "branchUnits": 825,
+        "foodCells": 1485
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 40,
+        "visible": 32,
+        "packets": 32,
+        "recalls": 0,
+        "assessments": 31,
+        "largeErrors": 13,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 20,
+        "logicalUnits": 1460,
+        "branchUnits": 500,
+        "foodCells": 900
+      },
+      "recovery": [
+        {
+          "from": 20,
+          "to": 20.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 21,
+          "to": 25,
+          "duration": 4,
+          "censored": false
+        },
+        {
+          "from": 26,
+          "to": 26.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 27,
+          "to": 32,
+          "duration": 5,
+          "censored": true
+        }
+      ]
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "fixed",
+      "pellets": 28,
+      "dead": true,
+      "completed": false,
+      "steps": 33,
+      "postBoundarySteps": 9,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 33,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 9,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 18,
+        "logicalUnits": 1242,
+        "branchUnits": 450,
+        "foodCells": 810
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 9,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 3,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 5,
+        "logicalUnits": 341,
+        "branchUnits": 125,
+        "foodCells": 225
+      },
+      "recovery": []
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "conventional",
+      "pellets": 28,
+      "dead": true,
+      "completed": false,
+      "steps": 33,
+      "postBoundarySteps": 9,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 33,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 9,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 18,
+        "logicalUnits": 1242,
+        "branchUnits": 450,
+        "foodCells": 810
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 9,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 3,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 5,
+        "logicalUnits": 341,
+        "branchUnits": 125,
+        "foodCells": 225
+      },
+      "recovery": []
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "full",
+      "pellets": 32,
+      "dead": true,
+      "completed": false,
+      "steps": 45,
+      "postBoundarySteps": 21,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 30,
+      "metrics": {
+        "steps": 45,
+        "visible": 13,
+        "packets": 18,
+        "recalls": 8,
+        "assessments": 9,
+        "largeErrors": 2,
+        "requests": 5,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 3,
+        "invalidations": 5,
+        "replans": 27,
+        "logicalUnits": 1755,
+        "branchUnits": 675,
+        "foodCells": 1215
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 2,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 1,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 21,
+        "visible": 8,
+        "packets": 12,
+        "recalls": 6,
+        "assessments": 7,
+        "largeErrors": 1,
+        "requests": 3,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 2,
+        "invalidations": 3,
+        "replans": 12,
+        "logicalUnits": 804,
+        "branchUnits": 300,
+        "foodCells": 540
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 15,
+          "to": 15.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "contentCut",
+      "pellets": 32,
+      "dead": true,
+      "completed": false,
+      "steps": 45,
+      "postBoundarySteps": 21,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 45,
+        "visible": 11,
+        "packets": 14,
+        "recalls": 6,
+        "assessments": 7,
+        "largeErrors": 1,
+        "requests": 4,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 3,
+        "invalidations": 4,
+        "replans": 27,
+        "logicalUnits": 1755,
+        "branchUnits": 675,
+        "foodCells": 1215
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 2,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 1,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 21,
+        "visible": 6,
+        "packets": 8,
+        "recalls": 4,
+        "assessments": 5,
+        "largeErrors": 0,
+        "requests": 2,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 2,
+        "invalidations": 2,
+        "replans": 12,
+        "logicalUnits": 804,
+        "branchUnits": 300,
+        "foodCells": 540
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "memoryOff",
+      "pellets": 32,
+      "dead": true,
+      "completed": false,
+      "steps": 45,
+      "postBoundarySteps": 21,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 45,
+        "visible": 11,
+        "packets": 15,
+        "recalls": 0,
+        "assessments": 7,
+        "largeErrors": 1,
+        "requests": 4,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 3,
+        "invalidations": 4,
+        "replans": 27,
+        "logicalUnits": 1755,
+        "branchUnits": 675,
+        "foodCells": 1215
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 0,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 2,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 1,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 21,
+        "visible": 6,
+        "packets": 9,
+        "recalls": 0,
+        "assessments": 5,
+        "largeErrors": 0,
+        "requests": 2,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 2,
+        "invalidations": 2,
+        "replans": 12,
+        "logicalUnits": 804,
+        "branchUnits": 300,
+        "foodCells": 540
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "pellets": 32,
+      "dead": true,
+      "completed": false,
+      "steps": 45,
+      "postBoundarySteps": 21,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 30,
+      "metrics": {
+        "steps": 45,
+        "visible": 13,
+        "packets": 18,
+        "recalls": 8,
+        "assessments": 9,
+        "largeErrors": 2,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 25,
+        "logicalUnits": 1705,
+        "branchUnits": 625,
+        "foodCells": 1125
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 14,
+        "logicalUnits": 926,
+        "branchUnits": 350,
+        "foodCells": 630
+      },
+      "post": {
+        "steps": 21,
+        "visible": 8,
+        "packets": 12,
+        "recalls": 6,
+        "assessments": 7,
+        "largeErrors": 1,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 11,
+        "logicalUnits": 779,
+        "branchUnits": 275,
+        "foodCells": 495
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 15,
+          "to": 15.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "fixed",
+      "pellets": 32,
+      "dead": true,
+      "completed": false,
+      "steps": 45,
+      "postBoundarySteps": 21,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 30,
+      "metrics": {
+        "steps": 45,
+        "visible": 13,
+        "packets": 18,
+        "recalls": 8,
+        "assessments": 9,
+        "largeErrors": 2,
+        "requests": 12,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 2,
+        "replans": 25,
+        "logicalUnits": 1705,
+        "branchUnits": 625,
+        "foodCells": 1125
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 14,
+        "logicalUnits": 926,
+        "branchUnits": 350,
+        "foodCells": 630
+      },
+      "post": {
+        "steps": 21,
+        "visible": 8,
+        "packets": 12,
+        "recalls": 6,
+        "assessments": 7,
+        "largeErrors": 1,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 11,
+        "logicalUnits": 779,
+        "branchUnits": 275,
+        "foodCells": 495
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 15,
+          "to": 15.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "conventional",
+      "pellets": 32,
+      "dead": true,
+      "completed": false,
+      "steps": 45,
+      "postBoundarySteps": 21,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 45,
+        "visible": 11,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 12,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 4,
+        "replans": 27,
+        "logicalUnits": 1755,
+        "branchUnits": 675,
+        "foodCells": 1215
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 21,
+        "visible": 6,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 2,
+        "replans": 12,
+        "logicalUnits": 804,
+        "branchUnits": 300,
+        "foodCells": 540
+      },
+      "recovery": []
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "full",
+      "pellets": 26,
+      "dead": true,
+      "completed": false,
+      "steps": 38,
+      "postBoundarySteps": 14,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 30,
+      "metrics": {
+        "steps": 38,
+        "visible": 13,
+        "packets": 18,
+        "recalls": 6,
+        "assessments": 10,
+        "largeErrors": 2,
+        "requests": 5,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 3,
+        "invalidations": 5,
+        "replans": 23,
+        "logicalUnits": 1487,
+        "branchUnits": 575,
+        "foodCells": 1035
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 2,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 1,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 14,
+        "visible": 8,
+        "packets": 12,
+        "recalls": 4,
+        "assessments": 8,
+        "largeErrors": 1,
+        "requests": 3,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 2,
+        "invalidations": 3,
+        "replans": 8,
+        "logicalUnits": 536,
+        "branchUnits": 200,
+        "foodCells": 360
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 15,
+          "to": 15.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "contentCut",
+      "pellets": 26,
+      "dead": true,
+      "completed": false,
+      "steps": 38,
+      "postBoundarySteps": 14,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 38,
+        "visible": 9,
+        "packets": 12,
+        "recalls": 4,
+        "assessments": 6,
+        "largeErrors": 1,
+        "requests": 4,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 3,
+        "invalidations": 4,
+        "replans": 23,
+        "logicalUnits": 1487,
+        "branchUnits": 575,
+        "foodCells": 1035
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 2,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 1,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 14,
+        "visible": 4,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 4,
+        "largeErrors": 0,
+        "requests": 2,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 2,
+        "invalidations": 2,
+        "replans": 8,
+        "logicalUnits": 536,
+        "branchUnits": 200,
+        "foodCells": 360
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "memoryOff",
+      "pellets": 26,
+      "dead": true,
+      "completed": false,
+      "steps": 38,
+      "postBoundarySteps": 14,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 38,
+        "visible": 9,
+        "packets": 12,
+        "recalls": 0,
+        "assessments": 6,
+        "largeErrors": 1,
+        "requests": 4,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 3,
+        "invalidations": 4,
+        "replans": 23,
+        "logicalUnits": 1487,
+        "branchUnits": 575,
+        "foodCells": 1035
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 0,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 2,
+        "freshErrorRequests": 1,
+        "highErrorRequests": 1,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 14,
+        "visible": 4,
+        "packets": 6,
+        "recalls": 0,
+        "assessments": 4,
+        "largeErrors": 0,
+        "requests": 2,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 2,
+        "invalidations": 2,
+        "replans": 8,
+        "logicalUnits": 536,
+        "branchUnits": 200,
+        "foodCells": 360
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "monitorOff",
+      "pellets": 26,
+      "dead": true,
+      "completed": false,
+      "steps": 38,
+      "postBoundarySteps": 14,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 30,
+      "metrics": {
+        "steps": 38,
+        "visible": 13,
+        "packets": 18,
+        "recalls": 6,
+        "assessments": 10,
+        "largeErrors": 2,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 21,
+        "logicalUnits": 1437,
+        "branchUnits": 525,
+        "foodCells": 945
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 14,
+        "logicalUnits": 926,
+        "branchUnits": 350,
+        "foodCells": 630
+      },
+      "post": {
+        "steps": 14,
+        "visible": 8,
+        "packets": 12,
+        "recalls": 4,
+        "assessments": 8,
+        "largeErrors": 1,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 7,
+        "logicalUnits": 511,
+        "branchUnits": 175,
+        "foodCells": 315
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 15,
+          "to": 15.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "fixed",
+      "pellets": 26,
+      "dead": true,
+      "completed": false,
+      "steps": 38,
+      "postBoundarySteps": 14,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 30,
+      "metrics": {
+        "steps": 38,
+        "visible": 13,
+        "packets": 18,
+        "recalls": 6,
+        "assessments": 10,
+        "largeErrors": 2,
+        "requests": 10,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 2,
+        "replans": 21,
+        "logicalUnits": 1437,
+        "branchUnits": 525,
+        "foodCells": 945
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 6,
+        "recalls": 2,
+        "assessments": 2,
+        "largeErrors": 1,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 14,
+        "logicalUnits": 926,
+        "branchUnits": 350,
+        "foodCells": 630
+      },
+      "post": {
+        "steps": 14,
+        "visible": 8,
+        "packets": 12,
+        "recalls": 4,
+        "assessments": 8,
+        "largeErrors": 1,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 7,
+        "logicalUnits": 511,
+        "branchUnits": 175,
+        "foodCells": 315
+      },
+      "recovery": [
+        {
+          "from": 11.5,
+          "to": 13,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 15,
+          "to": 15.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "conventional",
+      "pellets": 26,
+      "dead": true,
+      "completed": false,
+      "steps": 38,
+      "postBoundarySteps": 14,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 38,
+        "visible": 9,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 10,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 3,
+        "replans": 22,
+        "logicalUnits": 1462,
+        "branchUnits": 550,
+        "foodCells": 990
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 5,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 6,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 2,
+        "replans": 15,
+        "logicalUnits": 951,
+        "branchUnits": 375,
+        "foodCells": 675
+      },
+      "post": {
+        "steps": 14,
+        "visible": 4,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 7,
+        "logicalUnits": 511,
+        "branchUnits": 175,
+        "foodCells": 315
+      },
+      "recovery": []
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "full",
+      "pellets": 41,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 64,
+        "visible": 36,
+        "packets": 44,
+        "recalls": 8,
+        "assessments": 32,
+        "largeErrors": 11,
+        "requests": 26,
+        "freshErrorRequests": 11,
+        "highErrorRequests": 15,
+        "invalidations": 23,
+        "replans": 44,
+        "logicalUnits": 2636,
+        "branchUnits": 1100,
+        "foodCells": 1980
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 2,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 6,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 4,
+        "invalidations": 6,
+        "replans": 16,
+        "logicalUnits": 976,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "post": {
+        "steps": 40,
+        "visible": 26,
+        "packets": 32,
+        "recalls": 6,
+        "assessments": 24,
+        "largeErrors": 9,
+        "requests": 20,
+        "freshErrorRequests": 9,
+        "highErrorRequests": 11,
+        "invalidations": 17,
+        "replans": 28,
+        "logicalUnits": 1660,
+        "branchUnits": 700,
+        "foodCells": 1260
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "duration": 1,
+          "censored": false
+        },
+        {
+          "from": 16,
+          "to": 16.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "duration": 1,
+          "censored": false
+        },
+        {
+          "from": 19,
+          "to": 19.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 26.5,
+          "duration": 6.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "contentCut",
+      "pellets": 41,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 64,
+        "visible": 36,
+        "packets": 44,
+        "recalls": 8,
+        "assessments": 32,
+        "largeErrors": 11,
+        "requests": 26,
+        "freshErrorRequests": 11,
+        "highErrorRequests": 15,
+        "invalidations": 23,
+        "replans": 44,
+        "logicalUnits": 2636,
+        "branchUnits": 1100,
+        "foodCells": 1980
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 2,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 6,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 4,
+        "invalidations": 6,
+        "replans": 16,
+        "logicalUnits": 976,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "post": {
+        "steps": 40,
+        "visible": 26,
+        "packets": 32,
+        "recalls": 6,
+        "assessments": 24,
+        "largeErrors": 9,
+        "requests": 20,
+        "freshErrorRequests": 9,
+        "highErrorRequests": 11,
+        "invalidations": 17,
+        "replans": 28,
+        "logicalUnits": 1660,
+        "branchUnits": 700,
+        "foodCells": 1260
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "duration": 1,
+          "censored": false
+        },
+        {
+          "from": 16,
+          "to": 16.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "duration": 1,
+          "censored": false
+        },
+        {
+          "from": 19,
+          "to": 19.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 26.5,
+          "duration": 6.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "memoryOff",
+      "pellets": 41,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 64,
+        "visible": 36,
+        "packets": 44,
+        "recalls": 0,
+        "assessments": 32,
+        "largeErrors": 11,
+        "requests": 27,
+        "freshErrorRequests": 11,
+        "highErrorRequests": 16,
+        "invalidations": 23,
+        "replans": 44,
+        "logicalUnits": 2636,
+        "branchUnits": 1100,
+        "foodCells": 1980
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 0,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 6,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 4,
+        "invalidations": 6,
+        "replans": 16,
+        "logicalUnits": 976,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "post": {
+        "steps": 40,
+        "visible": 26,
+        "packets": 32,
+        "recalls": 0,
+        "assessments": 24,
+        "largeErrors": 9,
+        "requests": 21,
+        "freshErrorRequests": 9,
+        "highErrorRequests": 12,
+        "invalidations": 17,
+        "replans": 28,
+        "logicalUnits": 1660,
+        "branchUnits": 700,
+        "foodCells": 1260
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 14,
+          "to": 15.5,
+          "duration": 1.5,
+          "censored": false
+        },
+        {
+          "from": 16,
+          "to": 16.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "duration": 1,
+          "censored": false
+        },
+        {
+          "from": 19,
+          "to": 19.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 26.5,
+          "duration": 6.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 60,
+      "postBoundarySteps": 36,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 60,
+        "visible": 18,
+        "packets": 22,
+        "recalls": 6,
+        "assessments": 15,
+        "largeErrors": 4,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 31,
+        "logicalUnits": 2215,
+        "branchUnits": 775,
+        "foodCells": 1395
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 2,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 36,
+        "visible": 8,
+        "packets": 10,
+        "recalls": 4,
+        "assessments": 7,
+        "largeErrors": 2,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 18,
+        "logicalUnits": 1314,
+        "branchUnits": 450,
+        "foodCells": 810
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "fixed",
+      "pellets": 11,
+      "dead": true,
+      "completed": false,
+      "steps": 16,
+      "postBoundarySteps": 0,
+      "reachedBoundary": false,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "pre": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "post": {
+        "steps": 0,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 0,
+        "logicalUnits": 0,
+        "branchUnits": 0,
+        "foodCells": 0
+      },
+      "recovery": []
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "conventional",
+      "pellets": 11,
+      "dead": true,
+      "completed": false,
+      "steps": 16,
+      "postBoundarySteps": 0,
+      "reachedBoundary": false,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "pre": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "post": {
+        "steps": 0,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 0,
+        "logicalUnits": 0,
+        "branchUnits": 0,
+        "foodCells": 0
+      },
+      "recovery": []
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "full",
+      "pellets": 41,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 64,
+        "visible": 50,
+        "packets": 52,
+        "recalls": 2,
+        "assessments": 48,
+        "largeErrors": 18,
+        "requests": 36,
+        "freshErrorRequests": 18,
+        "highErrorRequests": 18,
+        "invalidations": 34,
+        "replans": 50,
+        "logicalUnits": 2786,
+        "branchUnits": 1250,
+        "foodCells": 2250
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 2,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 6,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 4,
+        "invalidations": 6,
+        "replans": 16,
+        "logicalUnits": 976,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "post": {
+        "steps": 40,
+        "visible": 40,
+        "packets": 40,
+        "recalls": 0,
+        "assessments": 40,
+        "largeErrors": 16,
+        "requests": 30,
+        "freshErrorRequests": 16,
+        "highErrorRequests": 14,
+        "invalidations": 28,
+        "replans": 34,
+        "logicalUnits": 1810,
+        "branchUnits": 850,
+        "foodCells": 1530
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 13,
+          "to": 18,
+          "duration": 5,
+          "censored": false
+        },
+        {
+          "from": 19,
+          "to": 19.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 29,
+          "duration": 9,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "contentCut",
+      "pellets": 41,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 64,
+        "visible": 50,
+        "packets": 52,
+        "recalls": 2,
+        "assessments": 48,
+        "largeErrors": 18,
+        "requests": 36,
+        "freshErrorRequests": 18,
+        "highErrorRequests": 18,
+        "invalidations": 34,
+        "replans": 50,
+        "logicalUnits": 2786,
+        "branchUnits": 1250,
+        "foodCells": 2250
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 2,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 6,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 4,
+        "invalidations": 6,
+        "replans": 16,
+        "logicalUnits": 976,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "post": {
+        "steps": 40,
+        "visible": 40,
+        "packets": 40,
+        "recalls": 0,
+        "assessments": 40,
+        "largeErrors": 16,
+        "requests": 30,
+        "freshErrorRequests": 16,
+        "highErrorRequests": 14,
+        "invalidations": 28,
+        "replans": 34,
+        "logicalUnits": 1810,
+        "branchUnits": 850,
+        "foodCells": 1530
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 13,
+          "to": 18,
+          "duration": 5,
+          "censored": false
+        },
+        {
+          "from": 19,
+          "to": 19.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 29,
+          "duration": 9,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "memoryOff",
+      "pellets": 41,
+      "dead": false,
+      "completed": false,
+      "steps": 64,
+      "postBoundarySteps": 40,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 64,
+        "visible": 50,
+        "packets": 52,
+        "recalls": 0,
+        "assessments": 48,
+        "largeErrors": 18,
+        "requests": 36,
+        "freshErrorRequests": 18,
+        "highErrorRequests": 18,
+        "invalidations": 34,
+        "replans": 50,
+        "logicalUnits": 2786,
+        "branchUnits": 1250,
+        "foodCells": 2250
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 0,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 6,
+        "freshErrorRequests": 2,
+        "highErrorRequests": 4,
+        "invalidations": 6,
+        "replans": 16,
+        "logicalUnits": 976,
+        "branchUnits": 400,
+        "foodCells": 720
+      },
+      "post": {
+        "steps": 40,
+        "visible": 40,
+        "packets": 40,
+        "recalls": 0,
+        "assessments": 40,
+        "largeErrors": 16,
+        "requests": 30,
+        "freshErrorRequests": 16,
+        "highErrorRequests": 14,
+        "invalidations": 28,
+        "replans": 34,
+        "logicalUnits": 1810,
+        "branchUnits": 850,
+        "foodCells": 1530
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 13,
+          "to": 18,
+          "duration": 5,
+          "censored": false
+        },
+        {
+          "from": 19,
+          "to": 19.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 29,
+          "duration": 9,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "monitorOff",
+      "pellets": 44,
+      "dead": false,
+      "completed": true,
+      "steps": 61,
+      "postBoundarySteps": 37,
+      "reachedBoundary": true,
+      "firstPostBoundaryLargeErrorTick": 24,
+      "metrics": {
+        "steps": 61,
+        "visible": 47,
+        "packets": 49,
+        "recalls": 2,
+        "assessments": 45,
+        "largeErrors": 14,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 31,
+        "logicalUnits": 2239,
+        "branchUnits": 775,
+        "foodCells": 1395
+      },
+      "pre": {
+        "steps": 24,
+        "visible": 10,
+        "packets": 12,
+        "recalls": 2,
+        "assessments": 8,
+        "largeErrors": 2,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 13,
+        "logicalUnits": 901,
+        "branchUnits": 325,
+        "foodCells": 585
+      },
+      "post": {
+        "steps": 37,
+        "visible": 37,
+        "packets": 37,
+        "recalls": 0,
+        "assessments": 37,
+        "largeErrors": 12,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 18,
+        "logicalUnits": 1338,
+        "branchUnits": 450,
+        "foodCells": 810
+      },
+      "recovery": [
+        {
+          "from": 8.5,
+          "to": 11,
+          "duration": 2.5,
+          "censored": false
+        },
+        {
+          "from": 12,
+          "to": 12.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 18,
+          "to": 18.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 20,
+          "to": 20.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 21,
+          "to": 21.5,
+          "duration": 0.5,
+          "censored": false
+        },
+        {
+          "from": 22,
+          "to": 26,
+          "duration": 4,
+          "censored": false
+        },
+        {
+          "from": 27,
+          "to": 27.5,
+          "duration": 0.5,
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "fixed",
+      "pellets": 11,
+      "dead": true,
+      "completed": false,
+      "steps": 16,
+      "postBoundarySteps": 0,
+      "reachedBoundary": false,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "pre": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 3,
+        "recalls": 2,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "post": {
+        "steps": 0,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 0,
+        "logicalUnits": 0,
+        "branchUnits": 0,
+        "foodCells": 0
+      },
+      "recovery": []
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "conventional",
+      "pellets": 11,
+      "dead": true,
+      "completed": false,
+      "steps": 16,
+      "postBoundarySteps": 0,
+      "reachedBoundary": false,
+      "firstPostBoundaryLargeErrorTick": null,
+      "metrics": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "pre": {
+        "steps": 16,
+        "visible": 1,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 4,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 1,
+        "replans": 9,
+        "logicalUnits": 609,
+        "branchUnits": 225,
+        "foodCells": 405
+      },
+      "post": {
+        "steps": 0,
+        "visible": 0,
+        "packets": 0,
+        "recalls": 0,
+        "assessments": 0,
+        "largeErrors": 0,
+        "requests": 0,
+        "freshErrorRequests": 0,
+        "highErrorRequests": 0,
+        "invalidations": 0,
+        "replans": 0,
+        "logicalUnits": 0,
+        "branchUnits": 0,
+        "foodCells": 0
+      },
+      "recovery": []
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "alternative": "contentCut",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "alternative": "memoryOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "alternative": "monitorOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "alternative": "fixed",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": -1
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "alternative": "conventional",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": -1
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "alternative": "contentCut",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "alternative": "memoryOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "alternative": "monitorOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "alternative": "fixed",
+      "pellets": 15,
+      "deaths": -1,
+      "steps": 31
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "alternative": "conventional",
+      "pellets": 15,
+      "deaths": -1,
+      "steps": 31
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "alternative": "contentCut",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "alternative": "memoryOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "alternative": "monitorOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "alternative": "fixed",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "alternative": "conventional",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "alternative": "contentCut",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "alternative": "memoryOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "alternative": "monitorOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "alternative": "fixed",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "alternative": "conventional",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "alternative": "contentCut",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "alternative": "memoryOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "alternative": "monitorOff",
+      "pellets": -3,
+      "deaths": 0,
+      "steps": 4
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "alternative": "fixed",
+      "pellets": 30,
+      "deaths": -1,
+      "steps": 48
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "alternative": "conventional",
+      "pellets": 30,
+      "deaths": -1,
+      "steps": 48
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "alternative": "contentCut",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "alternative": "memoryOff",
+      "pellets": 0,
+      "deaths": 0,
+      "steps": 0
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "alternative": "monitorOff",
+      "pellets": -3,
+      "deaths": 0,
+      "steps": 3
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "alternative": "fixed",
+      "pellets": 30,
+      "deaths": -1,
+      "steps": 48
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "alternative": "conventional",
+      "pellets": 30,
+      "deaths": -1,
+      "steps": 48
+    }
+  ],
+  "commonPercepts": [
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "contentCut",
+      "steps": 57,
+      "moveChanges": 0,
+      "gazeChanges": 2,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "memoryOff",
+      "steps": 57,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "steps": 57,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "fixed",
+      "steps": 57,
+      "moveChanges": 7,
+      "gazeChanges": 7,
+      "first": {
+        "tick": 9,
+        "full": {
+          "move": "E",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "N",
+          "gaze": "N"
+        }
+      }
+    },
+    {
+      "seed": 1709,
+      "condition": "familiar",
+      "variant": "conventional",
+      "steps": 57,
+      "moveChanges": 7,
+      "gazeChanges": 9,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "contentCut",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 2,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "memoryOff",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "monitorOff",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "fixed",
+      "steps": 64,
+      "moveChanges": 1,
+      "gazeChanges": 1,
+      "first": {
+        "tick": 9,
+        "full": {
+          "move": "E",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "N",
+          "gaze": "N"
+        }
+      }
+    },
+    {
+      "seed": 1709,
+      "condition": "switch",
+      "variant": "conventional",
+      "steps": 64,
+      "moveChanges": 1,
+      "gazeChanges": 3,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "contentCut",
+      "steps": 45,
+      "moveChanges": 0,
+      "gazeChanges": 6,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "memoryOff",
+      "steps": 45,
+      "moveChanges": 1,
+      "gazeChanges": 3,
+      "first": {
+        "tick": 29,
+        "full": {
+          "move": "S",
+          "gaze": "N"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "E"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "steps": 45,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "fixed",
+      "steps": 45,
+      "moveChanges": 0,
+      "gazeChanges": 1,
+      "first": {
+        "tick": 40,
+        "full": {
+          "move": "E",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "E",
+          "gaze": "N"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "familiar",
+      "variant": "conventional",
+      "steps": 45,
+      "moveChanges": 0,
+      "gazeChanges": 6,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "contentCut",
+      "steps": 38,
+      "moveChanges": 0,
+      "gazeChanges": 6,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "memoryOff",
+      "steps": 38,
+      "moveChanges": 0,
+      "gazeChanges": 2,
+      "first": {
+        "tick": 29,
+        "full": {
+          "move": "S",
+          "gaze": "N"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "E"
+        }
+      }
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "monitorOff",
+      "steps": 38,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "fixed",
+      "steps": 38,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 3253,
+      "condition": "switch",
+      "variant": "conventional",
+      "steps": 38,
+      "moveChanges": 0,
+      "gazeChanges": 6,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "contentCut",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 6,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "memoryOff",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "steps": 64,
+      "moveChanges": 4,
+      "gazeChanges": 0,
+      "first": {
+        "tick": 24,
+        "full": {
+          "move": "W",
+          "gaze": "S"
+        },
+        "alternative": {
+          "move": "N",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "fixed",
+      "steps": 64,
+      "moveChanges": 1,
+      "gazeChanges": 1,
+      "first": {
+        "tick": 9,
+        "full": {
+          "move": "E",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "N",
+          "gaze": "N"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "familiar",
+      "variant": "conventional",
+      "steps": 64,
+      "moveChanges": 1,
+      "gazeChanges": 9,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "contentCut",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 2,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "memoryOff",
+      "steps": 64,
+      "moveChanges": 0,
+      "gazeChanges": 0,
+      "first": null
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "monitorOff",
+      "steps": 64,
+      "moveChanges": 4,
+      "gazeChanges": 0,
+      "first": {
+        "tick": 24,
+        "full": {
+          "move": "W",
+          "gaze": "S"
+        },
+        "alternative": {
+          "move": "N",
+          "gaze": "S"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "fixed",
+      "steps": 64,
+      "moveChanges": 1,
+      "gazeChanges": 1,
+      "first": {
+        "tick": 9,
+        "full": {
+          "move": "E",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "N",
+          "gaze": "N"
+        }
+      }
+    },
+    {
+      "seed": 6421,
+      "condition": "switch",
+      "variant": "conventional",
+      "steps": 64,
+      "moveChanges": 1,
+      "gazeChanges": 3,
+      "first": {
+        "tick": 1,
+        "full": {
+          "move": "S",
+          "gaze": "E"
+        },
+        "alternative": {
+          "move": "S",
+          "gaze": "S"
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "episodesReplayed": 36,
+    "sourceVerifiedBeforeAndAfter": true
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "checkpoint": "824f86d661eec93c0445be166de2c6e5d03a8e1d",
+  "sourceFingerprint": "85d2cdf7753068cc3e82ad7761746746ca16e88052a536c3ce07b78c26dcec05",
+  "logs": [
+    {
+      "filename": "1709-familiar-full.json",
+      "sha256": "cceaf7b244d1c50b07fb82694259383ff3da03e622deb64643529b0f46205f5c",
+      "bytes": 363657
+    },
+    {
+      "filename": "1709-familiar-contentCut.json",
+      "sha256": "0981070d6c8638278ee1df9049631021c61e1fbba0d1b51ee160454d234d195e",
+      "bytes": 361602
+    },
+    {
+      "filename": "1709-familiar-memoryOff.json",
+      "sha256": "109810cba942ea4b4b3f419eafa71849ed5d4e47ebed2779ade02527a32d4a8d",
+      "bytes": 363037
+    },
+    {
+      "filename": "1709-familiar-monitorOff.json",
+      "sha256": "e2737d99afaf799cb4257e11e99fc03f1b1a575c4361a06ba2311d073ae96ceb",
+      "bytes": 358992
+    },
+    {
+      "filename": "1709-familiar-fixed.json",
+      "sha256": "d842b0cbabfe8cfe5747226032ec73020288bc07933f8f180afc60a77175650a",
+      "bytes": 368548
+    },
+    {
+      "filename": "1709-familiar-conventional.json",
+      "sha256": "ffdb0ae6aebc8e42c4c44b59edd9ca6c0f7929213d8309179fa7ce1d7bf03be1",
+      "bytes": 251444
+    },
+    {
+      "filename": "1709-switch-full.json",
+      "sha256": "418cce92b92849c3cfaa6b4bbafbc981265ca065ec0b94c78060f1dbeeb4577d",
+      "bytes": 526655
+    },
+    {
+      "filename": "1709-switch-contentCut.json",
+      "sha256": "7c2b7f6c18aaa7fdb8b13f2500717a081933f258dcadc9c21e14c91a2a28aa91",
+      "bytes": 502840
+    },
+    {
+      "filename": "1709-switch-memoryOff.json",
+      "sha256": "4946f38e1334a4564c1ee2437b9d26582488e6503a956c06efee7c3a16b761c6",
+      "bytes": 526035
+    },
+    {
+      "filename": "1709-switch-monitorOff.json",
+      "sha256": "e69db9d2f68a64b6517e80ceea04a0c6a37d72f8e6eca567f5ff7b031b61a171",
+      "bytes": 509592
+    },
+    {
+      "filename": "1709-switch-fixed.json",
+      "sha256": "e568a51ff489c7ff97d11b8cbf1a25d49f7f6f94284edf718437da6c26b33ca9",
+      "bytes": 218828
+    },
+    {
+      "filename": "1709-switch-conventional.json",
+      "sha256": "754f02b2935fb82a32dd2563cba2029925bb35ce51ec1df54e00fd7fa73ff443",
+      "bytes": 148987
+    },
+    {
+      "filename": "3253-familiar-full.json",
+      "sha256": "e2fe876dd236be758cc6a0856c18355af172da89c767190b85fb2721959afa2d",
+      "bytes": 350474
+    },
+    {
+      "filename": "3253-familiar-contentCut.json",
+      "sha256": "faea3ddcf2d07fdf2c0c05058221b71f188e652e90f9887c2c90d366bf801d57",
+      "bytes": 328757
+    },
+    {
+      "filename": "3253-familiar-memoryOff.json",
+      "sha256": "d080a5c5569374abfee15006330e65cf6e8c650b15f4b20b8f4bc6d1ab29f163",
+      "bytes": 338892
+    },
+    {
+      "filename": "3253-familiar-monitorOff.json",
+      "sha256": "60a0f84fdf54e36a4c0b39d07b3abca4120398bc7de9fc33a21c4bf98b389bb9",
+      "bytes": 343950
+    },
+    {
+      "filename": "3253-familiar-fixed.json",
+      "sha256": "aca262cfbf1bb94183239ca58bb4a79281d4da7a5a8d76f2daf8bb4d7a88f0cb",
+      "bytes": 346072
+    },
+    {
+      "filename": "3253-familiar-conventional.json",
+      "sha256": "7991154b508b7f2ee32f0ff8f9816f5d004cd2f6d8b0fd2f5a350d64280dcb07",
+      "bytes": 206216
+    },
+    {
+      "filename": "3253-switch-full.json",
+      "sha256": "e1b0230febb79a6c3dfc77aa345db8d91aa6908326262349fea7e6cee8b649db",
+      "bytes": 304140
+    },
+    {
+      "filename": "3253-switch-contentCut.json",
+      "sha256": "59816e36798e34a7a44a576e02bfc9c539d04e5978c07e134bc84da100fb8663",
+      "bytes": 277814
+    },
+    {
+      "filename": "3253-switch-memoryOff.json",
+      "sha256": "a0023e544787596ced22e1c04dcb921b9685ebd01aad24c7ac39e48335536168",
+      "bytes": 284797
+    },
+    {
+      "filename": "3253-switch-monitorOff.json",
+      "sha256": "be76ffac4c27cf315afda69f68ea59a4a02e6da25fe82d451e9dd4b411595eb0",
+      "bytes": 298217
+    },
+    {
+      "filename": "3253-switch-fixed.json",
+      "sha256": "0a5da71415ce67760676c2cad4087bc030902a109198bfa77c9ad7be1c70f0b7",
+      "bytes": 300053
+    },
+    {
+      "filename": "3253-switch-conventional.json",
+      "sha256": "5f177c62816f0bb333f605e680ca43429a287901b4e4a59a7c412984913adab4",
+      "bytes": 174492
+    },
+    {
+      "filename": "6421-familiar-full.json",
+      "sha256": "0ef8adbfd93d051dcc62c3fa85fc01caf310984a5011a83610ca544766c0fa10",
+      "bytes": 559728
+    },
+    {
+      "filename": "6421-familiar-contentCut.json",
+      "sha256": "b58dd8d84dfaf40293c91b636c147b29e675f91442879c03d5b59b5ab1989d1a",
+      "bytes": 529315
+    },
+    {
+      "filename": "6421-familiar-memoryOff.json",
+      "sha256": "f8e6eb68ba5c474da898c217f46fc47c48b4878ffa220349acf0381d57da9b02",
+      "bytes": 557079
+    },
+    {
+      "filename": "6421-familiar-monitorOff.json",
+      "sha256": "4495e366c8230830b0c82d896a479788b0d3ab9e9f024806ebff9f44626ef7ae",
+      "bytes": 449006
+    },
+    {
+      "filename": "6421-familiar-fixed.json",
+      "sha256": "2d93643940ff153e7fa85ff54667b8aa38dfa33dc7f4d9f9ec4c5123d3bfd1cc",
+      "bytes": 111784
+    },
+    {
+      "filename": "6421-familiar-conventional.json",
+      "sha256": "345a927b71c6e788111e700369e0cf7ae8171e46c1f99d0a463ba0988a3addd7",
+      "bytes": 74249
+    },
+    {
+      "filename": "6421-switch-full.json",
+      "sha256": "a3793ad74275203e1c902ccd6e6c7e97ca48b71aa3f2e91ff3dfb74b8a6611ff",
+      "bytes": 595094
+    },
+    {
+      "filename": "6421-switch-contentCut.json",
+      "sha256": "d843065cae149deb01832c1707f56fc7aad1768105a9313362ccddd49186c44e",
+      "bytes": 559729
+    },
+    {
+      "filename": "6421-switch-memoryOff.json",
+      "sha256": "d010fcc55d8e3558e5540e5fd01ea7b4685cbadd2ce22f4de1c290c300eb73d3",
+      "bytes": 594474
+    },
+    {
+      "filename": "6421-switch-monitorOff.json",
+      "sha256": "0a0f0c29a459c56f2c80b65548b5c04547d0b5fc2a1cad988004eb95e8908b92",
+      "bytes": 537865
+    },
+    {
+      "filename": "6421-switch-fixed.json",
+      "sha256": "f408b0c6aa29885feeb33ccbc1522b9b3967bf43e6e10e04df515b8e7e8621de",
+      "bytes": 111782
+    },
+    {
+      "filename": "6421-switch-conventional.json",
+      "sha256": "59d80a25c87ed4aa08dce1ee0e46de374cfeb38c83896929fab589351e921cbb",
+      "bytes": 74247
+    }
+  ]
+}

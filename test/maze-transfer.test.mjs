@@ -8,10 +8,12 @@ import {runEpisode} from '../maze/run.mjs';
 const clone=structuredClone;
 const pilot=()=>runEpisode({seed:991});
 
-test('all 44 inherited frozen source files are byte-identical',()=>{
+test('42 inherited files stay byte-identical; two calibrated opt-in extensions are explicitly hash-pinned',()=>{
   const manifest=JSON.parse(fs.readFileSync(new URL('../benchmark/cover-uncertainty-v1/source-manifest.json',import.meta.url)));
   assert.equal(Object.keys(manifest.files).length,44);
-  for(const[p,h]of Object.entries(manifest.files))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL('../'+p,import.meta.url))).digest('hex'),h,p);
+  const delta=JSON.parse(fs.readFileSync(new URL('../benchmark/cover-uncertainty-v2/legacy-source-delta.json',import.meta.url))).files;
+  assert.deepEqual(Object.keys(delta).sort(),['src/mind/coordination.mjs','src/mind/index.mjs']);
+  for(const[p,h]of Object.entries(manifest.files)){if(delta[p])assert.equal(delta[p].historicalSha256,h,p);assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL('../'+p,import.meta.url))).digest('hex'),delta[p]?.currentSha256??h,p);}
 });
 test('sensor respects gaze, range and walls; hidden coordinates and policy cannot leak',()=>{
   const{world}=createWorld();world.ghost={x:4,y:1};assert.ok(observe(world).opponent);

@@ -1,0 +1,89 @@
+{
+  "protocol": {
+    "version": 2,
+    "fitSeeds": [
+      1103,
+      2203
+    ],
+    "calibrationSeeds": [
+      3301,
+      4409
+    ],
+    "pilotSeeds": [
+      991
+    ],
+    "evaluationSeeds": [
+      5107,
+      6211,
+      7307,
+      8423
+    ],
+    "seats": [
+      "P1",
+      "P2"
+    ],
+    "conditions": [
+      "familiar",
+      "switch"
+    ],
+    "variants": [
+      "full",
+      "monitorOff",
+      "scheduled"
+    ],
+    "durationSec": 60,
+    "switchSec": 30,
+    "sourceBase": "386ad071ccc954550f81f624c3d309f23fe976a0",
+    "scope": "trained prediction and checking; no trained action habits"
+  },
+  "files": {
+    "benchmark/cover-uncertainty-v2/PROTOCOL.md": "faf157816bbd18d656178b44494d0b54675c13e0f85b8cd11f9a3176e7de8afd",
+    "benchmark/cover-uncertainty-v2/README.md": "f281b2426bfbd634a69fefd6baebb10383e0ff59aace0899f88e5acb642e4021",
+    "benchmark/cover-uncertainty-v2/audit.mjs": "b5f0ea52600ac826c8d771916af8f3d4c222261a94b29baab724e4531c79a296",
+    "benchmark/cover-uncertainty-v2/experiment.mjs": "1baf1e31115c1e294144ca890a06713dd274223a218572bdb163e23776a00750",
+    "benchmark/cover-uncertainty-v2/legacy-source-delta.json": "6b9bc431d65c80bee2a4d0e977702ffac65c339c036bc96f285aa78f003900f5",
+    "benchmark/cover-uncertainty-v2/opponent.mjs": "37f08e978c83efa9b0d3b10ff28f7932141a2d12344e0e9b67f9c159e1ee47b1",
+    "benchmark/cover-uncertainty-v2/run.mjs": "2deb4ce1ba6062011be491079987fe870d9a13fe1613fe7495c4ee146f07e0fd",
+    "benchmark/cover-uncertainty-v2/training-model.json": "983d8e6017659a3dd9aa18565db0d105c1f96c96ebc79b6e262ea66dc2c167f7",
+    "benchmark/cover-uncertainty-v2/training-provenance.json": "5a621226d2c7d451230914ce9dc294cc0678a5798e3c754a0578997fd5c84c42",
+    "src/agents/basic.mjs": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
+    "src/agents/cover-calibrated-monitor.mjs": "ea487a2f12cb436a112c256c1fe746354528e418347c28684c73865e3ce6181f",
+    "src/agents/cover-control.mjs": "42007be15c44eb203ec28f1fd8fa953baff2ba53eee75518c5f04272f5deb07c",
+    "src/agents/cover-integrated.mjs": "a615cba6b7c594e21bdfdb0701e4e4214b51742204f3ff93d2a07d1d64a33974",
+    "src/agents/cover-interface.mjs": "0fdfbb7021d77bd5e843d67ea6405bbf2ee656ad3a67dae988ca4c6e300fb46d",
+    "src/agents/cover-mind.mjs": "ff25cea4c9d4c71b339d00e3e4e3850df4aa2dfb89aad3ac188d179718e7cf32",
+    "src/agents/dodger.mjs": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
+    "src/agents/param.mjs": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1",
+    "src/agents/robust-baseline-agent.mjs": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d",
+    "src/agents/robust-baseline.mjs": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0",
+    "src/agents/spear-memory.mjs": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
+    "src/agents/strategies.mjs": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
+    "src/cover-control.js": "a3ff4d08b44d408b0eb1236c9e0b4602135ae073c21c2fd14aae7e1d0cc53ca1",
+    "src/deterministic-math.js": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",
+    "src/headless.mjs": "c70314343a7b9c5dbe2776a5654b9ff63db77c98a2fe764940a7ec781678b8d1",
+    "src/log.js": "2097bc8e1337b6210f2e8fa147959634c5e12c9c492bd31b59ed17285355bbe8",
+    "src/mind/belief.mjs": "c42aea8723c257d33108a62ccd63c0d755105f4356d03aa85aeafa73da9ba426",
+    "src/mind/calibrated-checking.mjs": "bb400f5b9f500f9f2cd8d7a8c0c5128274bf0e7705d41689f29ab62d73905c76",
+    "src/mind/cognition.mjs": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+    "src/mind/components.mjs": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706",
+    "src/mind/content-broadcast.mjs": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+    "src/mind/coordination.mjs": "c7a91308a340903776327a7a3ec8be548096ff317016d4d246a52828b76d988e",
+    "src/mind/cover-policy.mjs": "1e39188b6fb89e3a93947436fc84d08555de48993c07c2317901cae880053c77",
+    "src/mind/index.mjs": "d2f8c1ca6fb11bfcf44c4755cc29fc7e83a06454a27447cd7ca36927bfee0751",
+    "src/mind/math.mjs": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+    "src/mind/novelty.mjs": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468",
+    "src/mind/own-spear.mjs": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+    "src/mind/percept-contact.mjs": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+    "src/mind/prediction-monitor.mjs": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+    "src/mind/rollout-completion.mjs": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+    "src/mind/specialists.mjs": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0",
+    "src/mind/target-memory.mjs": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+    "src/mind/workspace.mjs": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+    "src/perception.js": "b50c327c3e593d58034b4c40210195b1d2b7242ae91a8bedf2168d1882f2ccb3",
+    "src/sim.js": "5334e549fb280ed9c5b33d65876a720b0bcd96f1c51e8000aff7b47bb0cbcbec",
+    "src/visibility.js": "1ff9e316262dfdbb9d8645359b39033c229926cfd1eafa0ae1faeaaa8a28c11d",
+    "test/calibrated-checking.test.mjs": "b8de7d2a3626a629067ae70a4a5ecab89041ecf7a971e9a885eb54394ea67d5c",
+    "test/cover-monitoring.test.mjs": "cad55478a62d879973d8a0dc51f4e5b82453667fcbf0e3613893156548b1899d",
+    "test/maze-transfer.test.mjs": "79506af420dc06786803731e9f007791d6378b0e23c713d80af7ef20e99cda20"
+  }
+}

@@ -34,7 +34,7 @@ function settings(difficulty) {
 }
 
 export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
-  coverControl = null, benchmarkInterface = false, deferCommand = false, fixedTeacherSchedule = null, captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
+  calibratedMonitoring = null, coverControl = null, benchmarkInterface = false, deferCommand = false, fixedTeacherSchedule = null, captureTrace = true, captureDiagnostics = false, freezeLearning = false, coordinationEnabled = true, coordinationControls = {}, memorySnapshot = null, policy = 'tuned', cognitionBudget = 192, outboundSpeed = 12, returnSpeed = 12 } = {}) {
   if (deferCommand && !benchmarkInterface) throw new Error('deferCommand requires benchmark interface');
   if (typeof benchmarkInterface !== 'boolean') throw new TypeError('benchmarkInterface must be boolean');
   if (coordinationControls.fixedMonitorSchedule != null && !benchmarkInterface)
@@ -79,7 +79,7 @@ export function createMind({ seed = 1, difficulty = 'normal', ablations = {},
   const reflection = createReflection();
   const speech = createSpeech();
   const ownSpearMemory = createOwnSpearMemory({ outboundSpeed, returnSpeed });
-  const coordination = createCoordination({reliabilitySnapshot:memorySnapshot?.predictionReliability,readOnly:freezeLearning,researchControls:coordinationControls});
+  const coordination = createCoordination({calibratedMonitoring,reliabilitySnapshot:memorySnapshot?.predictionReliability,readOnly:freezeLearning,researchControls:coordinationControls});
   const records = [];
   let tick = 0, recallPlan = null, cachedBelief = null;
   let queue = [];

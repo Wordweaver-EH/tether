@@ -46,7 +46,7 @@ export function coordinateAttention(base,packet,monitorRequest,localTarget) {
   const monitorSchedule=base.map(item=>({...item,target:item.target?{...item.target}:null}));
   if(monitorRequest?.reacquire) {
     const item=monitorSchedule.find(item=>item.item==='opponent');
-    if(item){item.target=finitePoint(localTarget)?{...localTarget}:item.target;item.priority=1;item.due=!!item.target;item.reason=monitorRequest.reason==='fixed-monitor-schedule'?'fixed-monitor-schedule':'prediction-monitor';}
+    if(item){item.target=finitePoint(monitorRequest.target)?{...monitorRequest.target}:finitePoint(localTarget)?{...localTarget}:item.target;item.priority=1;item.due=!!item.target;item.reason=monitorRequest.reason==='fixed-monitor-schedule'?'fixed-monitor-schedule':'prediction-monitor';}
   }
   const proposed=monitorSchedule.map(item=>({...item,target:item.target?{...item.target}:null}));
   if(packet) {
@@ -60,21 +60,22 @@ export function coordinateAttention(base,packet,monitorRequest,localTarget) {
   return {local:monitorSchedule,proposed};
 }
 
-export function createCoordination({reliabilitySnapshot=null,readOnly=false,researchControls={}}={}) {
+export function createCoordination({calibratedMonitoring=null,reliabilitySnapshot=null,readOnly=false,researchControls={}}={}) {
   let config=controls(researchControls),revision=0,evidenceSequence=0,lastEvidence=null,lastPacket=null,lastCycle=null;
   const targetMemory=createTargetMemory(null,{readOnly}); // Episode-local; elapsed clocks reset across bouts.
   const monitor=createPredictionMonitor(reliabilitySnapshot,{readOnly});
   const reports=[];
   function begin(view,belief,now,{active=true,reason=null}={}) {
     revision++;
-    if(!active) {lastCycle={active:false,reason,revision,time:now,packet:null,request:null,work:{reservedUnits:0}};return {belief,request:null};}
+    const calibrated=calibratedMonitoring?.update(view)??null;
+    if(!active) {lastCycle={active:false,reason,revision,time:now,packet:null,request:null,...(calibrated?{calibrated}:{}),work:{reservedUnits:0}};return {belief,request:null};}
     let observation=null;
     if(view.opponent && (!lastEvidence||now>lastEvidence.time)) {
       observation={evidenceId:++evidenceSequence,entity:'opponent',position:{...view.opponent.position},time:now,source:'observed'};
       lastEvidence={...observation,velocity:{...view.opponent.velocity}};
     }
     const assessment=monitor.settle(observation,now,{commitFeedback:config.monitorFeedback});
-    const proposedRequest=monitor.request();
+    const proposedRequest=calibrated?calibrated.request:monitor.request();
     const fixed=config.fixedMonitorSchedule;
     const scheduled=fixed && (revision-1)%fixed.every===fixed.phase;
     const request=config.monitorControl?proposedRequest:scheduled?
@@ -82,7 +83,7 @@ export function createCoordination({reliabilitySnapshot=null,readOnly=false,rese
     // Compute the read regardless of its delivery switch; never reimport cross-bout coordinates.
     const recalled=targetMemory.recall('opponent',now,{enabled:config.memoryRead&&!view.opponent,revision});
     const workingBelief=recalled?projectContentBelief(belief,recalled,now,view.arena):belief;
-    lastCycle={active:true,revision,time:now,packet:null,assessment,proposedRequest,request,
+    lastCycle={active:true,revision,time:now,packet:null,assessment,proposedRequest,request,...(calibrated?{calibrated}:{}),
       recalled,receivers:{},contentIntervened:false,work:{reservedUnits:COORDINATION_NOMINAL_UNITS,
         monitorSettles:1,memoryReads:1,memoryWrites:0,packetBuilds:0,attentionProjections:0,plannerProjections:0,forecastIssues:0,reportBuilds:0},
       accounting:'declared nominal work reservation; not a full operation audit'};

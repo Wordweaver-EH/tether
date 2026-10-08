@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "producerReplay": {
+    "logs": 168,
+    "windows": 3360,
+    "worldEventReplay": true,
+    "endpointsAndCosts": true,
+    "reportSha256": "28e9101d12228c93f1422e3995a95f34e7d7dac3847920c8fb73901440e01982"
+  },
+  "independent": {
+    "cells": 168,
+    "windows": 3360,
+    "rawBytes": 87220565,
+    "featuresLabelsFrozenModelsChoicesCostsCountMatchingMonitor": true,
+    "actualResetsInSensorWindow": 3625,
+    "missedResets": 0,
+    "falsePositiveResets": 0,
+    "cacheStraddles": 0,
+    "expectedTailResets": 5,
+    "reportSha256": "233810e5df375517d4a06bbc5c1e837a3f9e9cfb4f6126d32a2830fe38aa9902"
+  },
+  "sourceBoundTests": {
+    "passed": 397,
+    "failed": 0,
+    "freezeSha256": "1852197b5ab0ec0dace972ff22d9b649c08c2f07d2d0a7c6344cafece5817f98",
+    "sourceUnchanged": true
+  },
+  "rawEvidencePublished": false
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "velocityGain": 0.46353059461360063,
+  "residualRateThreshold": 3.57040372826879,
+  "missingAfterSec": 2.5666666666666664,
+  "fitSamples": 532,
+  "calibrationSamples": 545,
+  "missingSamples": 50,
+  "calibrationCoverage": 0.9027522935779817,
+  "priors": {
+    "dueSec": 0.3,
+    "expirySec": 1,
+    "quantile": 0.9,
+    "residualFloor": 0.05,
+    "cooldownSec": 1,
+    "checkWindowSec": 0.4,
+    "maxPulsesPerAbsence": 2,
+    "missingFloorSec": 0.5,
+    "missingCeilingSec": 3,
+    "minFitSamples": 20,
+    "minCalibrationSamples": 20
+  }
+}

@@ -1,3 +1,5 @@
+import { objectiveProgress, visibilityPolygon } from './cover-display.mjs';
+
 export const PALETTE = { P1: '#70dfc1', P2: '#f0a875', ink: '#08131b' };
 
 export function viewport(width, height) {
@@ -39,8 +41,20 @@ export function drawArena(ctx, arena, flash = false) {
   ctx.strokeStyle = flash ? '#f6d79a' : '#5c7782'; ctx.lineWidth = flash ? 0.11 : 0.055;
   ctx.strokeRect(b.minX + 0.025, b.minY + 0.025, b.maxX - b.minX - 0.05, b.maxY - b.minY - 0.05);
 }
-export function drawCone(ctx, cone, color, opacity = 0.09) {
+function polygonPath(ctx, points) {
+  ctx.moveTo(points[0].x, points[0].y);
+  for (const point of points.slice(1)) ctx.lineTo(point.x, point.y);
+  ctx.closePath();
+}
+export function drawCone(ctx, cone, color, opacity = 0.09, arena = null) {
   if (!cone) return;
+  if (cone.occlusion && arena) {
+    ctx.save(); ctx.beginPath(); polygonPath(ctx, visibilityPolygon(cone, arena));
+    ctx.fillStyle = color; ctx.globalAlpha = opacity; ctx.fill();
+    ctx.strokeStyle = color; ctx.globalAlpha = Math.min(opacity * 2.8, 0.45);
+    ctx.lineWidth = 0.018; ctx.stroke(); ctx.restore();
+    return;
+  }
   const a = Math.atan2(cone.facing.y, cone.facing.x);
   ctx.beginPath(); ctx.moveTo(cone.origin.x, cone.origin.y);
   ctx.arc(cone.origin.x, cone.origin.y, 25, a - cone.halfAngleRad, a + cone.halfAngleRad);
@@ -52,6 +66,47 @@ export function drawCone(ctx, cone, color, opacity = 0.09) {
   }
   ctx.globalAlpha = 1;
 }
+// Shade only the static arena outside the percept cone; no hidden entities
+// are passed into this renderer. The even-odd hole preserves the visible wedge.
+export function drawOutsideCone(ctx, cone, bounds, opacity = 0.62, obstacles = []) {
+  if (!cone) return;
+  const a = Math.atan2(cone.facing.y, cone.facing.x);
+  ctx.save(); ctx.beginPath();
+  ctx.rect(bounds.minX, bounds.minY, bounds.maxX - bounds.minX, bounds.maxY - bounds.minY);
+  if (cone.occlusion) polygonPath(ctx, visibilityPolygon(cone, { bounds, obstacles }));
+  else {
+    ctx.moveTo(cone.origin.x, cone.origin.y);
+    ctx.arc(cone.origin.x, cone.origin.y, 25, a - cone.halfAngleRad, a + cone.halfAngleRad);
+    ctx.closePath();
+  }
+  ctx.fillStyle = '#02070d'; ctx.globalAlpha = opacity;
+  ctx.fill('evenodd'); ctx.restore();
+}
+export function drawObjective(ctx, objective) {
+  if (!objective) return;
+  const { x, y } = objective.position;
+  const color = objective.contested ? '#f6d79a' : PALETTE[objective.controller] ?? '#abc4cf';
+  ctx.save(); ctx.beginPath(); ctx.arc(x, y, objective.radius, 0, Math.PI * 2);
+  ctx.fillStyle = color; ctx.globalAlpha = 0.08; ctx.fill(); ctx.globalAlpha = 1;
+  ctx.strokeStyle = color; ctx.lineWidth = 0.045; ctx.setLineDash([0.10, 0.07]); ctx.stroke();
+  ctx.setLineDash([]);
+  const progress = objectiveProgress(objective);
+  if (progress > 0) {
+    ctx.beginPath(); ctx.arc(x, y, objective.radius + 0.085, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * progress);
+    ctx.lineWidth = 0.10; ctx.stroke();
+  }
+  ctx.fillStyle = color; ctx.font = '0.17px system-ui'; ctx.textAlign = 'center';
+  ctx.fillText(objective.contested ? 'CONTESTED' : 'CONTROL', x, y - objective.radius - 0.23);
+  ctx.restore();
+}
+export function spearGlyph(spear) {
+  const d = spear.direction, held = spear.state === 'HELD';
+  // A shoulder offset separates the held shaft from the central facing notch.
+  const side = held ? 0.25 : 0, forward = held ? 0.42 : 0;
+  return { x: spear.position.x + d.x * forward - d.y * side,
+    y: spear.position.y + d.y * forward + d.x * side,
+    half: held ? 0.35 : 0.27, held };
+}
 export function drawPlayer(ctx, player) {
   const { x, y } = player.position; const color = PALETTE[player.id];
   ctx.beginPath(); ctx.arc(x, y, 0.35, 0, Math.PI * 2);
@@ -62,9 +117,7 @@ export function drawPlayer(ctx, player) {
 }
 export function drawSpear(ctx, spear) {
   const { x, y } = spear.position, d = spear.direction;
-  const held = spear.state === 'HELD';
-  const half = held ? 0.35 : 0.27;
-  const cx = x + (held ? d.x * 0.42 : 0), cy = y + (held ? d.y * 0.42 : 0);
+  const { x: cx, y: cy, half, held } = spearGlyph(spear);
   ctx.beginPath(); ctx.moveTo(cx - d.x * half, cy - d.y * half);
   ctx.lineTo(cx + d.x * half, cy + d.y * half);
   ctx.strokeStyle = PALETTE[spear.owner]; ctx.lineWidth = held ? 0.085 : 0.105;
@@ -92,8 +145,10 @@ export function drawCaption(ctx, player, line) {
 export function drawPlay(canvas, model, flash) {
   const { ctx, vp, width, height } = prepareCanvas(canvas);
   beginWorld(ctx, vp, width, height); drawArena(ctx, model.arena, flash);
-  if (model.mode === 'MODE_B') drawCone(ctx, model.cone, PALETTE.P1, 0.10);
-  if (model.npcCone) drawCone(ctx, model.npcCone, PALETTE.P2, 0.055);
+  if (model.mode === 'MODE_B') drawCone(ctx, model.cone, PALETTE.P1, 0.10, model.arena);
+  if (model.npcCone) drawCone(ctx, model.npcCone, PALETTE.P2, 0.055, model.arena);
+  if (model.mode === 'MODE_B') drawOutsideCone(ctx, model.cone, model.arena.bounds, 0.62, model.arena.obstacles);
+  drawObjective(ctx, model.objective);
   drawWorldEntities(ctx, model.players, model.spears);
   drawCaption(ctx, model.players.find((p) => p.id === 'P2'), model.outerSpeech);
   ctx.restore();

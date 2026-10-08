@@ -1,0 +1,1104 @@
+{
+  "replay": [
+    {
+      "log": "v1-1237-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-1237-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-1237-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-1237-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-2081-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-2081-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-2081-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-2081-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-3253-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-3253-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-3253-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-3253-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-4447-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-4447-P1.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "v1-4447-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    },
+    {
+      "log": "repaired-4447-P2.jsonl.gz",
+      "frames": 3600,
+      "decisions": 896,
+      "eventsExact": true,
+      "finalWorldExact": true
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 1237,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 1237,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 2081,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 2081,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 3253,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 3253,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 4447,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true,
+      "scoreEqual": true,
+      "changedInputTicks": 0,
+      "weaponDifferenceTicks": [],
+      "firstDifference": null
+    },
+    {
+      "seed": 4447,
+      "seat": "P2",
+      "inputEqual": false,
+      "worldEqual": false,
+      "scoreEqual": true,
+      "changedInputTicks": 316,
+      "weaponDifferenceTicks": [
+        3246,
+        3250,
+        3298,
+        3302,
+        3306,
+        3310,
+        3314,
+        3318,
+        3322,
+        3326,
+        3330
+      ],
+      "firstDifference": {
+        "tick": 3246,
+        "v1": {
+          "record": "decision",
+          "tick": 3246,
+          "serial": 808,
+          "sensorTime": 26.9,
+          "commandTime": 27.05,
+          "sensor": {
+            "viewerId": "P2",
+            "mode": "MODE_B",
+            "gameMode": "COVER_CONTROL",
+            "objective": {
+              "id": "CONTROL",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": 1.05,
+              "holdTicksRequired": 240,
+              "controller": null,
+              "contested": true,
+              "holdTicks": 0
+            },
+            "own": {
+              "position": {
+                "x": 0.6229304487131395,
+                "y": -0.37737099969800325
+              },
+              "facing": {
+                "x": -0.8639081611087933,
+                "y": 0.5036493712590373
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "spear": {
+                "state": "EMBEDDED",
+                "position": {
+                  "x": -2.8,
+                  "y": 0.2701053506136476
+                },
+                "direction": {
+                  "x": -0.9833148114757096,
+                  "y": 0.18191201591013595
+                },
+                "embedSurfaceId": "WEST_E",
+                "recallTarget": null
+              }
+            },
+            "scores": {
+              "P1": 5,
+              "P2": 0
+            },
+            "time": {
+              "elapsedSec": 26.9,
+              "remainingSec": 273.1,
+              "ended": false
+            },
+            "arena": {
+              "bounds": {
+                "minX": -8,
+                "maxX": 8,
+                "minY": -5,
+                "maxY": 5
+              },
+              "obstacles": [
+                {
+                  "id": "WEST",
+                  "minX": -3.8,
+                  "maxX": -2.8,
+                  "minY": -1,
+                  "maxY": 2.2
+                },
+                {
+                  "id": "EAST",
+                  "minX": 2.8,
+                  "maxX": 3.8,
+                  "minY": -1,
+                  "maxY": 2.2
+                },
+                {
+                  "id": "SOUTH",
+                  "minX": -1.3,
+                  "maxX": 1.3,
+                  "minY": 1.4,
+                  "maxY": 2.2
+                }
+              ]
+            },
+            "opponent": {
+              "position": {
+                "x": -0.8056522014841325,
+                "y": -0.022483605484108132
+              },
+              "facing": {
+                "x": 0.9664556387996732,
+                "y": -0.25683360027908214
+              },
+              "velocity": {
+                "x": -3.5958097871031947,
+                "y": 1.7521849146060129
+              }
+            },
+            "opponentSpear": {
+              "state": "RETURNING",
+              "position": {
+                "x": 0.6058214335205361,
+                "y": 0.26874260779923
+              },
+              "direction": {
+                "x": -0.9973538938543023,
+                "y": -0.07269945263659854
+              }
+            },
+            "cone": {
+              "halfAngleRad": 1.0471975511965976,
+              "totalAngleRad": 2.0943951023931953,
+              "origin": {
+                "x": 0.6229304487131395,
+                "y": -0.37737099969800325
+              },
+              "facing": {
+                "x": -0.8639081611087933,
+                "y": 0.5036493712590373
+              },
+              "occlusion": true,
+              "maxDistance": null
+            }
+          },
+          "focus": null,
+          "tier": 0,
+          "situation": "EMBEDDED:seen:near",
+          "tactic": "lead",
+          "issuedLearningTier": 0,
+          "automatic": false,
+          "budget": {
+            "limit": 192,
+            "spent": 8,
+            "remaining": 184,
+            "byKind": {
+              "control": 8
+            }
+          },
+          "cover": {
+            "intent": "Avoid the observed incoming spear",
+            "reason": "observed imminent moving spear",
+            "evidence": {
+              "sensorTime": 26.9,
+              "opponent": "visible",
+              "objective": {
+                "controller": null,
+                "contested": true,
+                "holdTicks": 0
+              }
+            },
+            "routeCache": {
+              "reused": false,
+              "activeFromCache": true,
+              "route": "north",
+              "successfulTraversals": 6,
+              "kind": "engineered successful-route cache; not tactical learning"
+            },
+            "routeStatus": "cached",
+            "danger": true,
+            "destination": {
+              "x": 0.55,
+              "y": 0
+            },
+            "inside": true,
+            "reset": false,
+            "planning": {
+              "requested": false,
+              "reason": "reflex priority",
+              "nextEligible": 26.866666666666667,
+              "status": "not-requested",
+              "fallback": null,
+              "availableUnits": 184,
+              "attempted": false,
+              "completedBranches": 0,
+              "actionModel": "immediate recovery only; delayed recall unsupported"
+            },
+            "selectedFocus": null,
+            "actionSource": "observed-spear reflex",
+            "requestedInput": {
+              "moveX": 0.07269945263659854,
+              "moveY": -0.9973538938543023,
+              "aimX": -0.02647060804696182,
+              "aimY": 0.9996495920619506,
+              "throw": false,
+              "recall": false
+            },
+            "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+          },
+          "selectedBranch": null,
+          "branches": [],
+          "input": {
+            "moveX": 0.07269945263659854,
+            "moveY": -0.9973538938543023,
+            "aimX": -0.02647060804696182,
+            "aimY": 0.9996495920619506,
+            "throw": false,
+            "recall": false
+          },
+          "actualCommand": {
+            "moveX": 0.07269945263659854,
+            "moveY": -0.9973538938543023,
+            "aimX": -0.12117140739596648,
+            "aimY": 0.9926315983433536,
+            "throw": false,
+            "recall": false
+          }
+        },
+        "repaired": {
+          "record": "decision",
+          "tick": 3246,
+          "serial": 808,
+          "sensorTime": 26.9,
+          "commandTime": 27.05,
+          "sensor": {
+            "viewerId": "P2",
+            "mode": "MODE_B",
+            "gameMode": "COVER_CONTROL",
+            "objective": {
+              "id": "CONTROL",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": 1.05,
+              "holdTicksRequired": 240,
+              "controller": null,
+              "contested": true,
+              "holdTicks": 0
+            },
+            "own": {
+              "position": {
+                "x": 0.6229304487131395,
+                "y": -0.37737099969800325
+              },
+              "facing": {
+                "x": -0.8639081611087933,
+                "y": 0.5036493712590373
+              },
+              "velocity": {
+                "x": 0,
+                "y": 0
+              },
+              "spear": {
+                "state": "EMBEDDED",
+                "position": {
+                  "x": -2.8,
+                  "y": 0.2701053506136476
+                },
+                "direction": {
+                  "x": -0.9833148114757096,
+                  "y": 0.18191201591013595
+                },
+                "embedSurfaceId": "WEST_E",
+                "recallTarget": null
+              }
+            },
+            "scores": {
+              "P1": 5,
+              "P2": 0
+            },
+            "time": {
+              "elapsedSec": 26.9,
+              "remainingSec": 273.1,
+              "ended": false
+            },
+            "arena": {
+              "bounds": {
+                "minX": -8,
+                "maxX": 8,
+                "minY": -5,
+                "maxY": 5
+              },
+              "obstacles": [
+                {
+                  "id": "WEST",
+                  "minX": -3.8,
+                  "maxX": -2.8,
+                  "minY": -1,
+                  "maxY": 2.2
+                },
+                {
+                  "id": "EAST",
+                  "minX": 2.8,
+                  "maxX": 3.8,
+                  "minY": -1,
+                  "maxY": 2.2
+                },
+                {
+                  "id": "SOUTH",
+                  "minX": -1.3,
+                  "maxX": 1.3,
+                  "minY": 1.4,
+                  "maxY": 2.2
+                }
+              ]
+            },
+            "opponent": {
+              "position": {
+                "x": -0.8056522014841325,
+                "y": -0.022483605484108132
+              },
+              "facing": {
+                "x": 0.9664556387996732,
+                "y": -0.25683360027908214
+              },
+              "velocity": {
+                "x": -3.5958097871031947,
+                "y": 1.7521849146060129
+              }
+            },
+            "opponentSpear": {
+              "state": "RETURNING",
+              "position": {
+                "x": 0.6058214335205361,
+                "y": 0.26874260779923
+              },
+              "direction": {
+                "x": -0.9973538938543023,
+                "y": -0.07269945263659854
+              }
+            },
+            "cone": {
+              "halfAngleRad": 1.0471975511965976,
+              "totalAngleRad": 2.0943951023931953,
+              "origin": {
+                "x": 0.6229304487131395,
+                "y": -0.37737099969800325
+              },
+              "facing": {
+                "x": -0.8639081611087933,
+                "y": 0.5036493712590373
+              },
+              "occlusion": true,
+              "maxDistance": null
+            }
+          },
+          "focus": null,
+          "tier": 0,
+          "situation": "EMBEDDED:seen:near",
+          "tactic": "direct",
+          "issuedLearningTier": 0,
+          "automatic": false,
+          "budget": {
+            "limit": 192,
+            "spent": 8,
+            "remaining": 184,
+            "byKind": {
+              "control": 8
+            }
+          },
+          "cover": {
+            "intent": "Avoid the observed incoming spear",
+            "reason": "observed imminent moving spear",
+            "evidence": {
+              "sensorTime": 26.9,
+              "opponent": "visible",
+              "objective": {
+                "controller": null,
+                "contested": true,
+                "holdTicks": 0
+              }
+            },
+            "routeCache": {
+              "reused": false,
+              "activeFromCache": true,
+              "route": "north",
+              "successfulTraversals": 6,
+              "kind": "engineered successful-route cache; not tactical learning"
+            },
+            "routeStatus": "cached",
+            "danger": true,
+            "destination": {
+              "x": 0.55,
+              "y": 0
+            },
+            "inside": true,
+            "reset": false,
+            "arbitration": {
+              "defensive": true,
+              "locomotionSource": "observed-spear reflex",
+              "gazeSource": "observed-spear reflex proposal; subject to unchanged attention selection",
+              "gazeProposal": {
+                "x": 0.6058214335205361,
+                "y": 0.26874260779923
+              },
+              "weaponSource": "existing Cover visible-shot or immediate-recovery intention",
+              "intended": {
+                "throw": false,
+                "recall": true
+              },
+              "guard": {
+                "shotRequestedBeforeGuard": false,
+                "shotAllowed": false,
+                "reason": "no shot intention",
+                "evidence": "currently received delayed percept; final pre-noise aim",
+                "aim": {
+                  "x": -0.02647060804696182,
+                  "y": 0.9996495920619506
+                }
+              },
+              "issued": {
+                "throw": false,
+                "recall": true
+              }
+            },
+            "planning": {
+              "requested": false,
+              "reason": "reflex priority",
+              "nextEligible": 26.866666666666667,
+              "status": "not-requested",
+              "fallback": null,
+              "availableUnits": 184,
+              "attempted": false,
+              "completedBranches": 0,
+              "weaponIssued": true,
+              "selectedRolloutCommandIssued": false,
+              "execution": "unplanned compatible weapon command; no completed-plan credit",
+              "actionModel": "immediate recovery only; delayed recall unsupported"
+            },
+            "selectedFocus": null,
+            "actionSource": "observed-spear reflex",
+            "requestedInput": {
+              "moveX": 0.07269945263659854,
+              "moveY": -0.9973538938543023,
+              "aimX": -0.02647060804696182,
+              "aimY": 0.9996495920619506,
+              "throw": false,
+              "recall": true
+            },
+            "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+          },
+          "selectedBranch": null,
+          "branches": [],
+          "input": {
+            "moveX": 0.07269945263659854,
+            "moveY": -0.9973538938543023,
+            "aimX": -0.02647060804696182,
+            "aimY": 0.9996495920619506,
+            "throw": false,
+            "recall": true
+          },
+          "actualCommand": {
+            "moveX": 0.07269945263659854,
+            "moveY": -0.9973538938543023,
+            "aimX": -0.12117140739596648,
+            "aimY": 0.9926315983433536,
+            "throw": false,
+            "recall": true
+          }
+        }
+      }
+    }
+  ],
+  "defensiveEmbedded": [
+    {
+      "id": "v1-1237-P1",
+      "tick": 1710,
+      "time": 14.1,
+      "tier": 2,
+      "focus": "Threat",
+      "input": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.5594734126843749,
+        "aimY": 0.8288482976391393,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.4741278496224825,
+        "aimY": 0.8804560081073673,
+        "throw": false,
+        "recall": true
+      },
+      "cover": {
+        "intent": "Avoid a spear line",
+        "reason": "observed spear crossing line",
+        "evidence": {
+          "sensorTime": 14.1,
+          "opponent": "visible",
+          "objective": {
+            "controller": null,
+            "contested": true,
+            "holdTicks": 0
+          }
+        },
+        "routeCache": {
+          "reused": false,
+          "activeFromCache": true,
+          "route": "north",
+          "successfulTraversals": 5,
+          "kind": "engineered successful-route cache; not tactical learning"
+        },
+        "routeStatus": "cached",
+        "danger": true,
+        "destination": {
+          "x": -0.55,
+          "y": 0
+        },
+        "inside": true,
+        "reset": false,
+        "planning": {
+          "requested": true,
+          "reason": "changed tactical situation",
+          "nextEligible": 14.6,
+          "status": "completed",
+          "fallback": null,
+          "availableUnits": 76,
+          "attempted": true,
+          "completedBranches": 1,
+          "actionModel": "immediate recovery only; delayed recall unsupported"
+        },
+        "selectedFocus": "Threat",
+        "actionSource": "workspace winner",
+        "requestedInput": {
+          "moveX": 0.8288482976391391,
+          "moveY": -0.5594734126843749,
+          "aimX": 0.5594734126843749,
+          "aimY": 0.8288482976391393,
+          "throw": false,
+          "recall": true
+        },
+        "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+      }
+    },
+    {
+      "id": "repaired-1237-P1",
+      "tick": 1710,
+      "time": 14.1,
+      "tier": 2,
+      "focus": "Threat",
+      "input": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.5594734126843749,
+        "aimY": 0.8288482976391393,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.8288482976391391,
+        "moveY": -0.5594734126843749,
+        "aimX": 0.4741278496224825,
+        "aimY": 0.8804560081073673,
+        "throw": false,
+        "recall": true
+      },
+      "cover": {
+        "intent": "Avoid a spear line",
+        "reason": "observed spear crossing line",
+        "evidence": {
+          "sensorTime": 14.1,
+          "opponent": "visible",
+          "objective": {
+            "controller": null,
+            "contested": true,
+            "holdTicks": 0
+          }
+        },
+        "routeCache": {
+          "reused": false,
+          "activeFromCache": true,
+          "route": "north",
+          "successfulTraversals": 5,
+          "kind": "engineered successful-route cache; not tactical learning"
+        },
+        "routeStatus": "cached",
+        "danger": true,
+        "destination": {
+          "x": -0.55,
+          "y": 0
+        },
+        "inside": true,
+        "reset": false,
+        "arbitration": {
+          "defensive": true,
+          "locomotionSource": "workspace winner",
+          "gazeSource": "workspace/tactical/attention selection",
+          "gazeProposal": {
+            "x": -0.20544417988147484,
+            "y": 0.3447336296455949
+          },
+          "weaponSource": "existing Cover visible-shot or immediate-recovery intention",
+          "intended": {
+            "throw": false,
+            "recall": true
+          },
+          "guard": {
+            "shotRequestedBeforeGuard": false,
+            "shotAllowed": false,
+            "reason": "no shot intention",
+            "evidence": "currently received delayed percept; final pre-noise aim",
+            "aim": {
+              "x": 0.5594734126843749,
+              "y": 0.8288482976391393
+            }
+          },
+          "issued": {
+            "throw": false,
+            "recall": true
+          }
+        },
+        "planning": {
+          "requested": true,
+          "reason": "changed tactical situation",
+          "nextEligible": 14.6,
+          "status": "completed",
+          "fallback": null,
+          "availableUnits": 76,
+          "attempted": true,
+          "completedBranches": 1,
+          "weaponIssued": true,
+          "selectedRolloutCommandIssued": true,
+          "execution": "selected rollout command issued before motor noise",
+          "actionModel": "immediate recovery only; delayed recall unsupported"
+        },
+        "selectedFocus": "Threat",
+        "actionSource": "workspace winner",
+        "requestedInput": {
+          "moveX": 0.8288482976391391,
+          "moveY": -0.5594734126843749,
+          "aimX": 0.5594734126843749,
+          "aimY": 0.8288482976391393,
+          "throw": false,
+          "recall": true
+        },
+        "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+      }
+    },
+    {
+      "id": "v1-4447-P2",
+      "tick": 3246,
+      "time": 26.9,
+      "tier": 0,
+      "focus": null,
+      "input": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.02647060804696182,
+        "aimY": 0.9996495920619506,
+        "throw": false,
+        "recall": false
+      },
+      "actual": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.12117140739596648,
+        "aimY": 0.9926315983433536,
+        "throw": false,
+        "recall": false
+      },
+      "cover": {
+        "intent": "Avoid the observed incoming spear",
+        "reason": "observed imminent moving spear",
+        "evidence": {
+          "sensorTime": 26.9,
+          "opponent": "visible",
+          "objective": {
+            "controller": null,
+            "contested": true,
+            "holdTicks": 0
+          }
+        },
+        "routeCache": {
+          "reused": false,
+          "activeFromCache": true,
+          "route": "north",
+          "successfulTraversals": 6,
+          "kind": "engineered successful-route cache; not tactical learning"
+        },
+        "routeStatus": "cached",
+        "danger": true,
+        "destination": {
+          "x": 0.55,
+          "y": 0
+        },
+        "inside": true,
+        "reset": false,
+        "planning": {
+          "requested": false,
+          "reason": "reflex priority",
+          "nextEligible": 26.866666666666667,
+          "status": "not-requested",
+          "fallback": null,
+          "availableUnits": 184,
+          "attempted": false,
+          "completedBranches": 0,
+          "actionModel": "immediate recovery only; delayed recall unsupported"
+        },
+        "selectedFocus": null,
+        "actionSource": "observed-spear reflex",
+        "requestedInput": {
+          "moveX": 0.07269945263659854,
+          "moveY": -0.9973538938543023,
+          "aimX": -0.02647060804696182,
+          "aimY": 0.9996495920619506,
+          "throw": false,
+          "recall": false
+        },
+        "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+      }
+    },
+    {
+      "id": "v1-4447-P2",
+      "tick": 3250,
+      "time": 26.933333333333334,
+      "tier": 2,
+      "focus": "Threat",
+      "input": {
+        "moveX": 0.8291272646259616,
+        "moveY": 0.5590599064982843,
+        "aimX": -0.5590599064982845,
+        "aimY": 0.8291272646259616,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.8291272646259616,
+        "moveY": 0.5590599064982843,
+        "aimX": -0.5107246987553081,
+        "aimY": 0.8597443120377708,
+        "throw": false,
+        "recall": true
+      },
+      "cover": {
+        "intent": "Avoid a spear line",
+        "reason": "observed spear crossing line",
+        "evidence": {
+          "sensorTime": 26.933333333333334,
+          "opponent": "visible",
+          "objective": {
+            "controller": null,
+            "contested": true,
+            "holdTicks": 0
+          }
+        },
+        "routeCache": {
+          "reused": false,
+          "activeFromCache": true,
+          "route": "north",
+          "successfulTraversals": 6,
+          "kind": "engineered successful-route cache; not tactical learning"
+        },
+        "routeStatus": "cached",
+        "danger": true,
+        "destination": {
+          "x": 0.55,
+          "y": 0
+        },
+        "inside": true,
+        "reset": false,
+        "planning": {
+          "requested": true,
+          "reason": "changed tactical situation",
+          "nextEligible": 27.433333333333334,
+          "status": "completed",
+          "fallback": null,
+          "availableUnits": 76,
+          "attempted": true,
+          "completedBranches": 1,
+          "actionModel": "immediate recovery only; delayed recall unsupported"
+        },
+        "selectedFocus": "Threat",
+        "actionSource": "workspace winner",
+        "requestedInput": {
+          "moveX": 0.8291272646259616,
+          "moveY": 0.5590599064982843,
+          "aimX": -0.5590599064982845,
+          "aimY": 0.8291272646259616,
+          "throw": false,
+          "recall": true
+        },
+        "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+      }
+    },
+    {
+      "id": "repaired-4447-P2",
+      "tick": 3246,
+      "time": 26.9,
+      "tier": 0,
+      "focus": null,
+      "input": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.02647060804696182,
+        "aimY": 0.9996495920619506,
+        "throw": false,
+        "recall": true
+      },
+      "actual": {
+        "moveX": 0.07269945263659854,
+        "moveY": -0.9973538938543023,
+        "aimX": -0.12117140739596648,
+        "aimY": 0.9926315983433536,
+        "throw": false,
+        "recall": true
+      },
+      "cover": {
+        "intent": "Avoid the observed incoming spear",
+        "reason": "observed imminent moving spear",
+        "evidence": {
+          "sensorTime": 26.9,
+          "opponent": "visible",
+          "objective": {
+            "controller": null,
+            "contested": true,
+            "holdTicks": 0
+          }
+        },
+        "routeCache": {
+          "reused": false,
+          "activeFromCache": true,
+          "route": "north",
+          "successfulTraversals": 6,
+          "kind": "engineered successful-route cache; not tactical learning"
+        },
+        "routeStatus": "cached",
+        "danger": true,
+        "destination": {
+          "x": 0.55,
+          "y": 0
+        },
+        "inside": true,
+        "reset": false,
+        "arbitration": {
+          "defensive": true,
+          "locomotionSource": "observed-spear reflex",
+          "gazeSource": "observed-spear reflex proposal; subject to unchanged attention selection",
+          "gazeProposal": {
+            "x": 0.6058214335205361,
+            "y": 0.26874260779923
+          },
+          "weaponSource": "existing Cover visible-shot or immediate-recovery intention",
+          "intended": {
+            "throw": false,
+            "recall": true
+          },
+          "guard": {
+            "shotRequestedBeforeGuard": false,
+            "shotAllowed": false,
+            "reason": "no shot intention",
+            "evidence": "currently received delayed percept; final pre-noise aim",
+            "aim": {
+              "x": -0.02647060804696182,
+              "y": 0.9996495920619506
+            }
+          },
+          "issued": {
+            "throw": false,
+            "recall": true
+          }
+        },
+        "planning": {
+          "requested": false,
+          "reason": "reflex priority",
+          "nextEligible": 26.866666666666667,
+          "status": "not-requested",
+          "fallback": null,
+          "availableUnits": 184,
+          "attempted": false,
+          "completedBranches": 0,
+          "weaponIssued": true,
+          "selectedRolloutCommandIssued": false,
+          "execution": "unplanned compatible weapon command; no completed-plan credit",
+          "actionModel": "immediate recovery only; delayed recall unsupported"
+        },
+        "selectedFocus": null,
+        "actionSource": "observed-spear reflex",
+        "requestedInput": {
+          "moveX": 0.07269945263659854,
+          "moveY": -0.9973538938543023,
+          "aimX": -0.02647060804696182,
+          "aimY": 0.9996495920619506,
+          "throw": false,
+          "recall": true
+        },
+        "tacticalScoreLearning": "disabled: ring points are not shot outcomes"
+      }
+    }
+  ],
+  "defensiveShotGuardReasons": {
+    "no shot intention": 435,
+    "facing incompatible with visible target": 21,
+    "allowed": 1
+  },
+  "maxBudget": 180,
+  "sourceCommit": "d767e9bd3be604791a5b7f2b61f8c86bad9e1f42",
+  "scope": "Post-run replay/accounting audit only; no policy edits or extra bouts"
+}

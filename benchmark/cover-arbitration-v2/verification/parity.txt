@@ -1,0 +1,119 @@
+{
+  "node": "v24.19.0",
+  "reference": "97cbc63a78f9a9d543f25d582e4078c4c9910ef2",
+  "cases": [
+    {
+      "gameMode": "DUEL",
+      "mode": "MODE_A",
+      "seat": "P1",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "DUEL",
+      "mode": "MODE_A",
+      "seat": "P2",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "DUEL",
+      "mode": "MODE_B",
+      "seat": "P1",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "DUEL",
+      "mode": "MODE_B",
+      "seat": "P2",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "COVER_CONTROL",
+      "mode": "MODE_A",
+      "seat": "P1",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "COVER_CONTROL",
+      "mode": "MODE_A",
+      "seat": "P2",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "COVER_CONTROL",
+      "mode": "MODE_B",
+      "seat": "P1",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    },
+    {
+      "gameMode": "COVER_CONTROL",
+      "mode": "MODE_B",
+      "seat": "P2",
+      "ticks": 600,
+      "equal": [
+        "inputs",
+        "trace",
+        "memory",
+        "cognition",
+        "settings"
+      ]
+    }
+  ],
+  "totalParityTicks": 4800,
+  "defenseCases": 12,
+  "defensiveMovementAndFinalAimExact": true,
+  "runtimeChanges": [
+    "src/agents/cover-integrated.mjs",
+    "src/mind/cover-policy.mjs",
+    "src/mind/index.mjs"
+  ],
+  "scope": "Exact public-input replay and mirrored fixtures, not performance evidence"
+}

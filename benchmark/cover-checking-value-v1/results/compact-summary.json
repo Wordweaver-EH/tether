@@ -1,0 +1,4045 @@
+{
+  "protocolVersion": 1,
+  "publishedSourceCommit": "9715f508f5eeeef4ee0893b7e1651f9ea798bb26",
+  "release": "--parent-release=9715f508f5eeeef4ee0893b7e1651f9ea798bb26_parentrelease2026-10-08T03:34Z",
+  "freezeSha256": "1852197b5ab0ec0dace972ff22d9b649c08c2f07d2d0a7c6344cafece5817f98",
+  "trainingBundleSha256": "159ecabb7ead898652574c5341db899c3ced5c70fd861ff045693d664338e4de",
+  "bouts": 168,
+  "windows": 3360,
+  "seedClusters": 6,
+  "primary": "raw public score margin over complete64sensor seconds",
+  "variants": {
+    "learned": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -259,
+      "rawMarginMean": -10.791666666666666,
+      "pricedUtilityMean": -11.583291666666668,
+      "extraOperationsTotal": 37998,
+      "embargoSecondsMean": 3.150000000000001,
+      "acquisitionsTotal": 1758,
+      "completedReconsiderations": 302,
+      "changedPlans": 177,
+      "changedMovementTicks": 4686,
+      "actions": {
+        "continue": 26,
+        "check": 152,
+        "reconsider": 302
+      },
+      "finalSimulatorHitMargin": -275,
+      "finalSimulatorRingMargin": 15
+    },
+    "monitor": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -384,
+      "rawMarginMean": -16,
+      "pricedUtilityMean": -16.001208333333334,
+      "extraOperationsTotal": 58,
+      "embargoSecondsMean": 0.020833333333333332,
+      "acquisitionsTotal": 58,
+      "completedReconsiderations": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "actions": {
+        "continue": 475,
+        "check": 5,
+        "reconsider": 0
+      },
+      "finalSimulatorHitMargin": -400,
+      "finalSimulatorRingMargin": 16
+    },
+    "off": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -377,
+      "rawMarginMean": -15.708333333333334,
+      "pricedUtilityMean": -15.708333333333334,
+      "extraOperationsTotal": 0,
+      "embargoSecondsMean": 0,
+      "acquisitionsTotal": 0,
+      "completedReconsiderations": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "actions": {
+        "continue": 480,
+        "check": 0,
+        "reconsider": 0
+      },
+      "finalSimulatorHitMargin": -393,
+      "finalSimulatorRingMargin": 16
+    },
+    "scheduled": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -339,
+      "rawMarginMean": -14.125,
+      "pricedUtilityMean": -14.91666666666667,
+      "extraOperationsTotal": 38000,
+      "embargoSecondsMean": 3.150000000000001,
+      "acquisitionsTotal": 1760,
+      "completedReconsiderations": 302,
+      "changedPlans": 149,
+      "changedMovementTicks": 4612,
+      "actions": {
+        "continue": 26,
+        "check": 152,
+        "reconsider": 302
+      },
+      "finalSimulatorHitMargin": -348,
+      "finalSimulatorRingMargin": 9
+    },
+    "alwaysCheck": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -182,
+      "rawMarginMean": -7.583333333333333,
+      "pricedUtilityMean": -7.699333333333331,
+      "extraOperationsTotal": 5568,
+      "embargoSecondsMean": 2.0000000000000004,
+      "acquisitionsTotal": 5568,
+      "completedReconsiderations": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "actions": {
+        "continue": 0,
+        "check": 480,
+        "reconsider": 0
+      },
+      "finalSimulatorHitMargin": -289,
+      "finalSimulatorRingMargin": 105
+    },
+    "shuffled": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -377,
+      "rawMarginMean": -15.708333333333334,
+      "pricedUtilityMean": -15.735020833333335,
+      "extraOperationsTotal": 1281,
+      "embargoSecondsMean": 0.4583333333333334,
+      "acquisitionsTotal": 1281,
+      "completedReconsiderations": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "actions": {
+        "continue": 370,
+        "check": 110,
+        "reconsider": 0
+      },
+      "finalSimulatorHitMargin": -391,
+      "finalSimulatorRingMargin": 15
+    },
+    "ordinaryRefresh": {
+      "bouts": 24,
+      "seedClusters": 6,
+      "rawMarginTotal": -49,
+      "rawMarginMean": -2.0416666666666665,
+      "pricedUtilityMean": -2.0416666666666665,
+      "extraOperationsTotal": 0,
+      "embargoSecondsMean": 0,
+      "acquisitionsTotal": 0,
+      "completedReconsiderations": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "actions": {
+        "continue": 480,
+        "check": 0,
+        "reconsider": 0
+      },
+      "finalSimulatorHitMargin": -110,
+      "finalSimulatorRingMargin": 62
+    }
+  },
+  "paired": {
+    "scheduled": {
+      "estimand": "learned minus comparator; each seed averages both seats and both families",
+      "meanRawDifference": 3.3333333333333335,
+      "meanPricedDifference": 3.3333750000000006,
+      "positiveSeedClusters": 4,
+      "zeroSeedClusters": 0,
+      "negativeSeedClusters": 2,
+      "bySeed": [
+        {
+          "seed": 34019,
+          "pairedBouts": 4,
+          "rawDifference": -2.25,
+          "pricedDifference": -2.249875000000001
+        },
+        {
+          "seed": 34031,
+          "pairedBouts": 4,
+          "rawDifference": 6.25,
+          "pricedDifference": 6.250125000000001
+        },
+        {
+          "seed": 34033,
+          "pairedBouts": 4,
+          "rawDifference": -1.75,
+          "pricedDifference": -1.7499999999999964
+        },
+        {
+          "seed": 34039,
+          "pairedBouts": 4,
+          "rawDifference": 15.25,
+          "pricedDifference": 15.249750000000002
+        },
+        {
+          "seed": 34057,
+          "pairedBouts": 4,
+          "rawDifference": 2,
+          "pricedDifference": 1.9998749999999994
+        },
+        {
+          "seed": 34061,
+          "pairedBouts": 4,
+          "rawDifference": 0.5,
+          "pricedDifference": 0.5003749999999982
+        }
+      ]
+    },
+    "shuffled": {
+      "estimand": "learned minus comparator; each seed averages both seats and both families",
+      "meanRawDifference": 4.916666666666667,
+      "meanPricedDifference": 4.151729166666665,
+      "positiveSeedClusters": 6,
+      "zeroSeedClusters": 0,
+      "negativeSeedClusters": 0,
+      "bySeed": [
+        {
+          "seed": 34019,
+          "pairedBouts": 4,
+          "rawDifference": 1.25,
+          "pricedDifference": 0.6098749999999971
+        },
+        {
+          "seed": 34031,
+          "pairedBouts": 4,
+          "rawDifference": 7.25,
+          "pricedDifference": 6.484624999999999
+        },
+        {
+          "seed": 34033,
+          "pairedBouts": 4,
+          "rawDifference": 1.25,
+          "pricedDifference": 0.3283750000000012
+        },
+        {
+          "seed": 34039,
+          "pairedBouts": 4,
+          "rawDifference": 11.75,
+          "pricedDifference": 11.232375
+        },
+        {
+          "seed": 34057,
+          "pairedBouts": 4,
+          "rawDifference": 3,
+          "pricedDifference": 2.1434999999999995
+        },
+        {
+          "seed": 34061,
+          "pairedBouts": 4,
+          "rawDifference": 5,
+          "pricedDifference": 4.1116249999999965
+        }
+      ]
+    },
+    "off": {
+      "estimand": "learned minus comparator; each seed averages both seats and both families",
+      "meanRawDifference": 4.916666666666667,
+      "meanPricedDifference": 4.125041666666665,
+      "positiveSeedClusters": 6,
+      "zeroSeedClusters": 0,
+      "negativeSeedClusters": 0,
+      "bySeed": [
+        {
+          "seed": 34019,
+          "pairedBouts": 4,
+          "rawDifference": 1.25,
+          "pricedDifference": 0.5996249999999979
+        },
+        {
+          "seed": 34031,
+          "pairedBouts": 4,
+          "rawDifference": 7.25,
+          "pricedDifference": 6.4758749999999985
+        },
+        {
+          "seed": 34033,
+          "pairedBouts": 4,
+          "rawDifference": 1.25,
+          "pricedDifference": 0.2833749999999995
+        },
+        {
+          "seed": 34039,
+          "pairedBouts": 4,
+          "rawDifference": 11.25,
+          "pricedDifference": 10.717875
+        },
+        {
+          "seed": 34057,
+          "pairedBouts": 4,
+          "rawDifference": 3,
+          "pricedDifference": 2.1129999999999995
+        },
+        {
+          "seed": 34061,
+          "pairedBouts": 4,
+          "rawDifference": 5.5,
+          "pricedDifference": 4.5604999999999976
+        }
+      ]
+    },
+    "monitor": {
+      "estimand": "learned minus comparator; each seed averages both seats and both families",
+      "meanRawDifference": 5.208333333333333,
+      "meanPricedDifference": 4.417916666666665,
+      "positiveSeedClusters": 6,
+      "zeroSeedClusters": 0,
+      "negativeSeedClusters": 0,
+      "bySeed": [
+        {
+          "seed": 34019,
+          "pairedBouts": 4,
+          "rawDifference": 1.25,
+          "pricedDifference": 0.5996249999999979
+        },
+        {
+          "seed": 34031,
+          "pairedBouts": 4,
+          "rawDifference": 7.75,
+          "pricedDifference": 6.9773749999999986
+        },
+        {
+          "seed": 34033,
+          "pairedBouts": 4,
+          "rawDifference": 2.25,
+          "pricedDifference": 1.287749999999999
+        },
+        {
+          "seed": 34039,
+          "pairedBouts": 4,
+          "rawDifference": 11.25,
+          "pricedDifference": 10.717875
+        },
+        {
+          "seed": 34057,
+          "pairedBouts": 4,
+          "rawDifference": 3,
+          "pricedDifference": 2.1129999999999995
+        },
+        {
+          "seed": 34061,
+          "pairedBouts": 4,
+          "rawDifference": 5.75,
+          "pricedDifference": 4.811874999999997
+        }
+      ]
+    },
+    "alwaysCheck": {
+      "estimand": "learned minus comparator; each seed averages both seats and both families",
+      "meanRawDifference": -3.2083333333333335,
+      "meanPricedDifference": -3.8839583333333345,
+      "positiveSeedClusters": 2,
+      "zeroSeedClusters": 0,
+      "negativeSeedClusters": 4,
+      "bySeed": [
+        {
+          "seed": 34019,
+          "pairedBouts": 4,
+          "rawDifference": -10.25,
+          "pricedDifference": -10.784375000000002
+        },
+        {
+          "seed": 34031,
+          "pairedBouts": 4,
+          "rawDifference": -1,
+          "pricedDifference": -1.658125
+        },
+        {
+          "seed": 34033,
+          "pairedBouts": 4,
+          "rawDifference": 1.25,
+          "pricedDifference": 0.39937499999999915
+        },
+        {
+          "seed": 34039,
+          "pairedBouts": 4,
+          "rawDifference": 11,
+          "pricedDifference": 10.583874999999999
+        },
+        {
+          "seed": 34057,
+          "pairedBouts": 4,
+          "rawDifference": -3.25,
+          "pricedDifference": -4.021000000000001
+        },
+        {
+          "seed": 34061,
+          "pairedBouts": 4,
+          "rawDifference": -17,
+          "pricedDifference": -17.823500000000003
+        }
+      ]
+    },
+    "ordinaryRefresh": {
+      "estimand": "learned minus comparator; each seed averages both seats and both families",
+      "meanRawDifference": -8.75,
+      "meanPricedDifference": -9.541625000000002,
+      "positiveSeedClusters": 0,
+      "zeroSeedClusters": 0,
+      "negativeSeedClusters": 6,
+      "bySeed": [
+        {
+          "seed": 34019,
+          "pairedBouts": 4,
+          "rawDifference": -17,
+          "pricedDifference": -17.650375000000004
+        },
+        {
+          "seed": 34031,
+          "pairedBouts": 4,
+          "rawDifference": -13.25,
+          "pricedDifference": -14.024125000000002
+        },
+        {
+          "seed": 34033,
+          "pairedBouts": 4,
+          "rawDifference": -9,
+          "pricedDifference": -9.966625
+        },
+        {
+          "seed": 34039,
+          "pairedBouts": 4,
+          "rawDifference": -4,
+          "pricedDifference": -4.532125000000001
+        },
+        {
+          "seed": 34057,
+          "pairedBouts": 4,
+          "rawDifference": -4,
+          "pricedDifference": -4.8870000000000005
+        },
+        {
+          "seed": 34061,
+          "pairedBouts": 4,
+          "rawDifference": -5.25,
+          "pricedDifference": -6.1895000000000024
+        }
+      ]
+    }
+  },
+  "families": {
+    "reactiveOrbit": {
+      "learned": {
+        "bouts": 12,
+        "rawMean": -10,
+        "pricedMean": -10.802916666666668
+      },
+      "monitor": {
+        "bouts": 12,
+        "rawMean": -14.583333333333334,
+        "pricedMean": -14.58475
+      },
+      "off": {
+        "bouts": 12,
+        "rawMean": -14.166666666666666,
+        "pricedMean": -14.166666666666666
+      },
+      "scheduled": {
+        "bouts": 12,
+        "rawMean": -14.416666666666666,
+        "pricedMean": -15.219708333333335
+      },
+      "alwaysCheck": {
+        "bouts": 12,
+        "rawMean": -7.083333333333333,
+        "pricedMean": -7.199333333333333
+      },
+      "shuffled": {
+        "bouts": 12,
+        "rawMean": -14.333333333333334,
+        "pricedMean": -14.369750000000002
+      },
+      "ordinaryRefresh": {
+        "bouts": 12,
+        "rawMean": -1.3333333333333333,
+        "pricedMean": -1.3333333333333333
+      }
+    },
+    "reactiveFlank": {
+      "learned": {
+        "bouts": 12,
+        "rawMean": -11.583333333333334,
+        "pricedMean": -12.363666666666669
+      },
+      "monitor": {
+        "bouts": 12,
+        "rawMean": -17.416666666666668,
+        "pricedMean": -17.417666666666666
+      },
+      "off": {
+        "bouts": 12,
+        "rawMean": -17.25,
+        "pricedMean": -17.25
+      },
+      "scheduled": {
+        "bouts": 12,
+        "rawMean": -13.833333333333334,
+        "pricedMean": -14.613625
+      },
+      "alwaysCheck": {
+        "bouts": 12,
+        "rawMean": -8.083333333333334,
+        "pricedMean": -8.199333333333334
+      },
+      "shuffled": {
+        "bouts": 12,
+        "rawMean": -17.083333333333332,
+        "pricedMean": -17.100291666666667
+      },
+      "ordinaryRefresh": {
+        "bouts": 12,
+        "rawMean": -2.75,
+        "pricedMean": -2.75
+      }
+    }
+  },
+  "perBout": [
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -11,
+      "pricedUtility": -12.036500000000002,
+      "actions": {
+        "continue": 0,
+        "check": 3,
+        "reconsider": 17
+      },
+      "extraOperations": 2073,
+      "embargoSeconds": 3.700000000000001,
+      "acquisitions": 33,
+      "reconsiderCompleted": 17,
+      "changedPlans": 11,
+      "changedMovementTicks": 306,
+      "finalWorldHash": "0bc1261f74b1b199",
+      "rawLogSha256": "961b730aedab92ae26f50efb10c83aeb4dbe121a42ac0e25aa28ded5ce36865f"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "501b702541731fa3",
+      "rawLogSha256": "8db14e77e4373362203e9f2d01751e57d286eaeb8c67f2686912f0b6e784b264"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "501b702541731fa3",
+      "rawLogSha256": "2e3ebf513fff9ea243975648cc0931199f3487a91363a9da4966b8d07bc9d10d"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -8,
+      "pricedUtility": -9.037500000000001,
+      "actions": {
+        "continue": 0,
+        "check": 3,
+        "reconsider": 17
+      },
+      "extraOperations": 2075,
+      "embargoSeconds": 3.700000000000001,
+      "acquisitions": 35,
+      "reconsiderCompleted": 17,
+      "changedPlans": 6,
+      "changedMovementTicks": 306,
+      "finalWorldHash": "5a8c2f595d9f15d8",
+      "rawLogSha256": "21700ca635df8fb29767e0d346ef00f71054d8ee17532d87a8a2e8cfa576e9fd"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": 10,
+      "pricedUtility": 9.884,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "6574e90d362058ab",
+      "rawLogSha256": "43eb261e052c6afe2eaed87cbe41b627afe96248460ddc47501b051a8e5c7a25"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -16,
+      "pricedUtility": -16.041,
+      "actions": {
+        "continue": 13,
+        "check": 7,
+        "reconsider": 0
+      },
+      "extraOperations": 82,
+      "embargoSeconds": 0.7,
+      "acquisitions": 82,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "907e9cccc6807640",
+      "rawLogSha256": "578d013aa1bd388232e23753b21d2cd799a0d500d23dbcf58980995fd66e89f6"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 8,
+      "pricedUtility": 8,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "7a1cb372fbbcc4be",
+      "rawLogSha256": "6a4c39f3e3ae9073918096d29678360c063c4cb2df11d5e2c2ae2ee969faa91a"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -2,
+      "pricedUtility": -2.7600000000000002,
+      "actions": {
+        "continue": 1,
+        "check": 7,
+        "reconsider": 12
+      },
+      "extraOperations": 1520,
+      "embargoSeconds": 3.100000000000001,
+      "acquisitions": 80,
+      "reconsiderCompleted": 12,
+      "changedPlans": 4,
+      "changedMovementTicks": 194,
+      "finalWorldHash": "d17077eae0980b1e",
+      "rawLogSha256": "417927c5023079fe4312919cb1482d03f4a5fc8a44d8a8f4113afd7c4334a2a3"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c0265607fda4fd27",
+      "rawLogSha256": "1334c33eb25c4cd0bef045dbb28bde009ea263303ba87f281b5631f4058c8be8"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c0265607fda4fd27",
+      "rawLogSha256": "5b32d745531298142130cbe4464446fc8fd9cf2e1e36e81ddc6057b3d6664898"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -5,
+      "pricedUtility": -5.761000000000001,
+      "actions": {
+        "continue": 1,
+        "check": 7,
+        "reconsider": 12
+      },
+      "extraOperations": 1522,
+      "embargoSeconds": 3.100000000000001,
+      "acquisitions": 82,
+      "reconsiderCompleted": 12,
+      "changedPlans": 3,
+      "changedMovementTicks": 163,
+      "finalWorldHash": "60371957a792c6b3",
+      "rawLogSha256": "5cace7a613ff0c410d065436181b81ac0c882448ef224668033fc946bcecdb7a"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": 18,
+      "pricedUtility": 17.884,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "a0249bc8780be4ef",
+      "rawLogSha256": "15038d1e4e41fb461ba98f88fc1197dabde5688099ed7b534fc1d54a6489148a"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c0265607fda4fd27",
+      "rawLogSha256": "465702b7ebac0370a7d8799b38401500cd595c0081c581cb5f297cebb1cf7b97"
+    },
+    {
+      "seed": 34019,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 20,
+      "pricedUtility": 20,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "8e15b5b7cbfc76af",
+      "rawLogSha256": "a579d1cd25d25c822d9a071e3eb65db2fd6f93c011252386ca3b041650fd684d"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -12,
+      "pricedUtility": -12.430000000000003,
+      "actions": {
+        "continue": 2,
+        "check": 12,
+        "reconsider": 6
+      },
+      "extraOperations": 860,
+      "embargoSeconds": 2.4000000000000004,
+      "acquisitions": 140,
+      "reconsiderCompleted": 6,
+      "changedPlans": 4,
+      "changedMovementTicks": 108,
+      "finalWorldHash": "c3180285a4cca7e4",
+      "rawLogSha256": "74cb9d7bb540dd680d9f06214ec13a9db81fa39b2414c19c3fee47edd509cdd0"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": 1,
+      "pricedUtility": 1,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "0c4f6c067ed6f0cc",
+      "rawLogSha256": "d5f1e4bd1ed1f6574cc73040f6cd9ed6230839a6237c00389d43d5214a0ae662"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": 1,
+      "pricedUtility": 1,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "0c4f6c067ed6f0cc",
+      "rawLogSha256": "e9b9a99aa4b11a3081c36e5bd5130117c35075886ca043b21e553541d775f1fb"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -7,
+      "pricedUtility": -7.429000000000002,
+      "actions": {
+        "continue": 2,
+        "check": 12,
+        "reconsider": 6
+      },
+      "extraOperations": 858,
+      "embargoSeconds": 2.4000000000000004,
+      "acquisitions": 138,
+      "reconsiderCompleted": 6,
+      "changedPlans": 2,
+      "changedMovementTicks": 72,
+      "finalWorldHash": "c8daa52c527d7484",
+      "rawLogSha256": "7f40fd140510adf02fbc2759b391a72a0a1d218a9190b607318b8b709cf97b30"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -13,
+      "pricedUtility": -13.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "31e7028184186c91",
+      "rawLogSha256": "de15c3329fe2ffeabbe99c2d79c6922b3d154be8645e412cdd004d73c3ea45df"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": 1,
+      "pricedUtility": 1,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "0c4f6c067ed6f0cc",
+      "rawLogSha256": "fbac71792467bac14dfa041a7f0534b090be0444125113007025519c67ba97ea"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 2,
+      "pricedUtility": 2,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "50821ac6b16fb8a8",
+      "rawLogSha256": "2382caee7efbdd2b087a858e1a2acc5e8a27ad71b6719faaf7457ddb4594004a"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -15,
+      "pricedUtility": -15.375000000000002,
+      "actions": {
+        "continue": 2,
+        "check": 13,
+        "reconsider": 5
+      },
+      "extraOperations": 750,
+      "embargoSeconds": 2.3000000000000007,
+      "acquisitions": 150,
+      "reconsiderCompleted": 5,
+      "changedPlans": 4,
+      "changedMovementTicks": 90,
+      "finalWorldHash": "ec6a5b080d3f3b21",
+      "rawLogSha256": "6bb4a3f31d74936ea239f24705b3f4ff9c2b1b25a1d8ffb490da10604ffa61e4"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -14,
+      "pricedUtility": -14,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "0c586e82ca513e04",
+      "rawLogSha256": "acf883ba5711e0f1c1a67e69a7d48128278d3aef7e2145c7947abbf07a4d3e43"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -14,
+      "pricedUtility": -14,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "0c586e82ca513e04",
+      "rawLogSha256": "de6e802a6367bacfb7a122b39a8ba1bc4bbeefab530275fe36b498b0be073451"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -11,
+      "pricedUtility": -11.374500000000001,
+      "actions": {
+        "continue": 2,
+        "check": 13,
+        "reconsider": 5
+      },
+      "extraOperations": 749,
+      "embargoSeconds": 2.3000000000000003,
+      "acquisitions": 149,
+      "reconsiderCompleted": 5,
+      "changedPlans": 1,
+      "changedMovementTicks": 72,
+      "finalWorldHash": "5f488d992c0f7654",
+      "rawLogSha256": "d1b9e313ed1dbe97af9d5102a57d8f083fa8b291bd4119fe48e8129012063bdd"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -14,
+      "pricedUtility": -14.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "6a9fa612e3f0ef77",
+      "rawLogSha256": "230ef7ed6027a97d18d08f4d3eb0698f73edb193be33598d642ce337b20d3467"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -14,
+      "pricedUtility": -14,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "0c586e82ca513e04",
+      "rawLogSha256": "f1dc855689c9e1d3e9d8d9caf5b34133989c85e49914f72887b71725d0df8a70"
+    },
+    {
+      "seed": 34019,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -2,
+      "pricedUtility": -2,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "d98be6db5813abab",
+      "rawLogSha256": "d687ada505f36576f5e83733456161b17e9971d481f6a319a154a1eeb19e1a11"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -7,
+      "pricedUtility": -7.760000000000001,
+      "actions": {
+        "continue": 1,
+        "check": 7,
+        "reconsider": 12
+      },
+      "extraOperations": 1520,
+      "embargoSeconds": 3.100000000000001,
+      "acquisitions": 80,
+      "reconsiderCompleted": 12,
+      "changedPlans": 8,
+      "changedMovementTicks": 189,
+      "finalWorldHash": "3468c305944717dd",
+      "rawLogSha256": "23b2d4db5557dee7e1b2d2ac7fb6b97ec3026427760f08f8de5c6773813a4f57"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -20,
+      "pricedUtility": -20,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "74d7104f2e9eaf5d",
+      "rawLogSha256": "cd806bfaa4820cc244c650da4ea71d75a55da53f91d82c320f4a2d4532c2c0c5"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -20,
+      "pricedUtility": -20,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "74d7104f2e9eaf5d",
+      "rawLogSha256": "547c00684e18e00f6f7b08e6f36c600cbffd69303c9b7be42e9f1d5f905ff5f3"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -11,
+      "pricedUtility": -11.760500000000004,
+      "actions": {
+        "continue": 1,
+        "check": 7,
+        "reconsider": 12
+      },
+      "extraOperations": 1521,
+      "embargoSeconds": 3.1000000000000014,
+      "acquisitions": 81,
+      "reconsiderCompleted": 12,
+      "changedPlans": 6,
+      "changedMovementTicks": 216,
+      "finalWorldHash": "9873a30e5a875e86",
+      "rawLogSha256": "07bb248434599da325615fa7e7bd396d58ff488425e3b4e5ff3c73afb8aba37b"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -10,
+      "pricedUtility": -10.116000000000001,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "417003a2aa94bf60",
+      "rawLogSha256": "7ef091f16fe235afbfb83dc50bc06fed7d8589adc8846bffc1948fcc09d30048"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -18,
+      "pricedUtility": -18.023500000000002,
+      "actions": {
+        "continue": 16,
+        "check": 4,
+        "reconsider": 0
+      },
+      "extraOperations": 47,
+      "embargoSeconds": 0.4,
+      "acquisitions": 47,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "fc42cef8d50a506d",
+      "rawLogSha256": "d4c078fca89d59e139b05524786ed909952dc2318cc8aadfbc85aab77e91901e"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 11,
+      "pricedUtility": 11,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "141ed516d30a1275",
+      "rawLogSha256": "45567c88710e9a94ef4f9c759d9dd5c41ac718196d30f708aa4dabdc212716cc"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -7,
+      "pricedUtility": -7.767,
+      "actions": {
+        "continue": 0,
+        "check": 8,
+        "reconsider": 12
+      },
+      "extraOperations": 1534,
+      "embargoSeconds": 3.2000000000000006,
+      "acquisitions": 94,
+      "reconsiderCompleted": 12,
+      "changedPlans": 7,
+      "changedMovementTicks": 203,
+      "finalWorldHash": "770ccc512afa2308",
+      "rawLogSha256": "a82cb816cea5237aa3f62b4bc84eade3a4770f49e54e5d575323c9fb10a3e8f8"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -12,
+      "pricedUtility": -12,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "abab4815c0de8be0",
+      "rawLogSha256": "39f768e942e074cd85847ee41140281f642e5277cc70facc0482a2f9704c4f51"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -12,
+      "pricedUtility": -12,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "abab4815c0de8be0",
+      "rawLogSha256": "09a758021555c7c8573d89a9bdfe83cecaa0b21d3be8c329a90cc4c6878033b2"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -11,
+      "pricedUtility": -11.766500000000004,
+      "actions": {
+        "continue": 0,
+        "check": 8,
+        "reconsider": 12
+      },
+      "extraOperations": 1533,
+      "embargoSeconds": 3.2000000000000015,
+      "acquisitions": 93,
+      "reconsiderCompleted": 12,
+      "changedPlans": 7,
+      "changedMovementTicks": 180,
+      "finalWorldHash": "7cdafdae6aa3354e",
+      "rawLogSha256": "e333709a8c45a8060e980a8c9c1e223705de336f38cfa9a4b13cc4a3c83839e7"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -11,
+      "pricedUtility": -11.116000000000001,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "e1b2acce075d6398",
+      "rawLogSha256": "6aa2b9f104f526fc1f257772a54a4857ccbdafcdaab6da3a8fce0c00200bacc5"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -14,
+      "pricedUtility": -14.0115,
+      "actions": {
+        "continue": 18,
+        "check": 2,
+        "reconsider": 0
+      },
+      "extraOperations": 23,
+      "embargoSeconds": 0.2,
+      "acquisitions": 23,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "9d7c57e9ee2b7762",
+      "rawLogSha256": "4e2a6c5ef10978c1449074177f8757f4679e310866b75265353dacda9cf3f9b4"
+    },
+    {
+      "seed": 34031,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 11,
+      "pricedUtility": 11,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c5d8e2f245f91cdd",
+      "rawLogSha256": "2f51be18c62dc5f057025ceac025ab3fca45febf9e3129606c10b275d46fa6ef"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -6,
+      "pricedUtility": -6.706000000000001,
+      "actions": {
+        "continue": 1,
+        "check": 8,
+        "reconsider": 11
+      },
+      "extraOperations": 1412,
+      "embargoSeconds": 3.000000000000001,
+      "acquisitions": 92,
+      "reconsiderCompleted": 11,
+      "changedPlans": 8,
+      "changedMovementTicks": 185,
+      "finalWorldHash": "aee0dc1ffb96cbf1",
+      "rawLogSha256": "dc55c56a30dfbbc189ff9bf2fb75749a1991a105f15d06345c056785a0082513"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "88f489f563430b06",
+      "rawLogSha256": "369a771a14810cf135ffaf259bc8785178dfbe1d0156879fe6da22bdc1463e96"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "88f489f563430b06",
+      "rawLogSha256": "cffd5058a23673e2cb3b5dca9e1f3457c7ad2e2f754ba3df7cda609721508ba3"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -20,
+      "pricedUtility": -20.7065,
+      "actions": {
+        "continue": 1,
+        "check": 8,
+        "reconsider": 11
+      },
+      "extraOperations": 1413,
+      "embargoSeconds": 3.000000000000001,
+      "acquisitions": 93,
+      "reconsiderCompleted": 11,
+      "changedPlans": 5,
+      "changedMovementTicks": 174,
+      "finalWorldHash": "5a1a03c41f07152d",
+      "rawLogSha256": "e923d49438183d152dfc7094678746fecf5f5cf91369319b0b33552b26680159"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": 2,
+      "pricedUtility": 1.883999999999999,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "433d7c46a61a41c7",
+      "rawLogSha256": "2eaffaa2d5549cdb521ec3ec837afa0c9a30a9f5d49c79239c3b0520499731b6"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "88f489f563430b06",
+      "rawLogSha256": "bc63cce242f2eabe4f0dc98359344e47fed929419660f05dce94f423e76660c8"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 2,
+      "pricedUtility": 2,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "6a9d11836a1bd323",
+      "rawLogSha256": "ac4ac33250d04f02954e4568c7edc74ce98a399e0aa32a74ede90bf63b40f981"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -9,
+      "pricedUtility": -9.863500000000004,
+      "actions": {
+        "continue": 2,
+        "check": 4,
+        "reconsider": 14
+      },
+      "extraOperations": 1727,
+      "embargoSeconds": 3.200000000000001,
+      "acquisitions": 47,
+      "reconsiderCompleted": 14,
+      "changedPlans": 8,
+      "changedMovementTicks": 222,
+      "finalWorldHash": "c135a36b12fbbb79",
+      "rawLogSha256": "922b5701db3002a0e743db7220242d5d25df9486cec16e94cf6d1d23569b19c9"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -10,
+      "pricedUtility": -10.006,
+      "actions": {
+        "continue": 19,
+        "check": 1,
+        "reconsider": 0
+      },
+      "extraOperations": 12,
+      "embargoSeconds": 0.1,
+      "acquisitions": 12,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "4534ec9f3ccb8cdd",
+      "rawLogSha256": "e99a210f43a04327965692c92bea8c953b898edf73fa77a6f9cd90e0f05c51f2"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -8,
+      "pricedUtility": -8,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c460d0959614eae9",
+      "rawLogSha256": "e97b06ac927948fc781e6af62a55f8e2e8f4548efde5bf2c459ab475d7b619e9"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -12,
+      "pricedUtility": -12.863500000000005,
+      "actions": {
+        "continue": 2,
+        "check": 4,
+        "reconsider": 14
+      },
+      "extraOperations": 1727,
+      "embargoSeconds": 3.200000000000001,
+      "acquisitions": 47,
+      "reconsiderCompleted": 14,
+      "changedPlans": 8,
+      "changedMovementTicks": 234,
+      "finalWorldHash": "76912507d08063ef",
+      "rawLogSha256": "66ec90f27a25262727f42cb094b608f9a9914c2562a87e4979af98e4c89a0811"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -6,
+      "pricedUtility": -6.116000000000001,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b86a3f45679ec410",
+      "rawLogSha256": "ba84b2be3958573df1d4f9c6cb377d2ec5a0c59c0f495cf553a293db4e67752e"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -8,
+      "pricedUtility": -8,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c460d0959614eae9",
+      "rawLogSha256": "9406eee1461a22c23ec4bf5ae9a519a805636a6b1cac915d1b78f9943fecbb6d"
+    },
+    {
+      "seed": 34031,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 0,
+      "pricedUtility": 0,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b3e2a92ebe45bdea",
+      "rawLogSha256": "f21105e8337f8d7f13b17585799022e31e0583e08f40e091ae6540fb6e0e95ba"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -15,
+      "pricedUtility": -16.0315,
+      "actions": {
+        "continue": 1,
+        "check": 2,
+        "reconsider": 17
+      },
+      "extraOperations": 2063,
+      "embargoSeconds": 3.6000000000000014,
+      "acquisitions": 23,
+      "reconsiderCompleted": 17,
+      "changedPlans": 12,
+      "changedMovementTicks": 248,
+      "finalWorldHash": "93f54802636f9455",
+      "rawLogSha256": "0b527f0252b53a7ac1c452956caeb130adb54ce3767ed0dbcbe3628f9d9660ac"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -16,
+      "pricedUtility": -16.005499999999998,
+      "actions": {
+        "continue": 19,
+        "check": 1,
+        "reconsider": 0
+      },
+      "extraOperations": 11,
+      "embargoSeconds": 0.1,
+      "acquisitions": 11,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "d16200be64c04868",
+      "rawLogSha256": "ddcb95ade3fd859ba0d7df40f60615406dcbae971e0cf9c45db0ea656ef5462e"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5b33e04c47752df1",
+      "rawLogSha256": "3a789c6aae2cb332151aea703cf9a9682104676cad70b2b46b04b4e1dc67809a"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -13,
+      "pricedUtility": -14.031500000000003,
+      "actions": {
+        "continue": 1,
+        "check": 2,
+        "reconsider": 17
+      },
+      "extraOperations": 2063,
+      "embargoSeconds": 3.600000000000001,
+      "acquisitions": 23,
+      "reconsiderCompleted": 17,
+      "changedPlans": 11,
+      "changedMovementTicks": 249,
+      "finalWorldHash": "28b870dcb3804c25",
+      "rawLogSha256": "5b90bde9494d4296914c370ceab8faf43125dfe7a7f901f931649a546ada886d"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -16,
+      "pricedUtility": -16.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "432d09c3400ee005",
+      "rawLogSha256": "0dd2d26a72241e1d66700856d4db8d96ca68b999f216b0743acaf24e1f31b78a"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -18,
+      "pricedUtility": -18.0175,
+      "actions": {
+        "continue": 17,
+        "check": 3,
+        "reconsider": 0
+      },
+      "extraOperations": 35,
+      "embargoSeconds": 0.30000000000000004,
+      "acquisitions": 35,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "71ea1982ef72bb8f",
+      "rawLogSha256": "bcf765ae011cd3265a14c013333d37d3a52e822365b1e4d10e067d52bee570cb"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -6,
+      "pricedUtility": -6,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "fd517ba983f7c49b",
+      "rawLogSha256": "36c89dd2c3ab4692aa4a961d9a6c34c9c4efc74bf03f5d5b4af6c8f6ebda0412"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -17,
+      "pricedUtility": -18.0315,
+      "actions": {
+        "continue": 1,
+        "check": 2,
+        "reconsider": 17
+      },
+      "extraOperations": 2063,
+      "embargoSeconds": 3.600000000000001,
+      "acquisitions": 23,
+      "reconsiderCompleted": 17,
+      "changedPlans": 11,
+      "changedMovementTicks": 259,
+      "finalWorldHash": "27614d56f3aaf8b2",
+      "rawLogSha256": "e36143533bdb47cbfd3fdb6d86a445e6cc754b0a4c17e7266d70d663641656af"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5debe09c86437492",
+      "rawLogSha256": "630102e90547a5a071fbeb8f376abe2ea07dbfc59e6f42a9bd3b753d531d1909"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5debe09c86437492",
+      "rawLogSha256": "f8fbb8b69dcf20b607f16e7b1d79a45c0cafbc54035286bc1a90452b16da581b"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -16,
+      "pricedUtility": -17.031500000000005,
+      "actions": {
+        "continue": 1,
+        "check": 2,
+        "reconsider": 17
+      },
+      "extraOperations": 2063,
+      "embargoSeconds": 3.600000000000001,
+      "acquisitions": 23,
+      "reconsiderCompleted": 17,
+      "changedPlans": 9,
+      "changedMovementTicks": 251,
+      "finalWorldHash": "72fe7b4ae83ab77f",
+      "rawLogSha256": "6317944db18ccb7883da20bd5216cb16800625e48feb1ea8d744deb1c70b388e"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -16,
+      "pricedUtility": -16.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c739a1fddd6935e3",
+      "rawLogSha256": "6e470dd260b3b5f6fa2f64fa69d0e53c6fa63a2ad327c5bfd364e175b6ac37d9"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -18,
+      "pricedUtility": -18.087000000000003,
+      "actions": {
+        "continue": 5,
+        "check": 15,
+        "reconsider": 0
+      },
+      "extraOperations": 174,
+      "embargoSeconds": 1.5000000000000002,
+      "acquisitions": 174,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "f3ca0c068d1638c6",
+      "rawLogSha256": "db21f31b5ba269f3e3411c27d70f369a3abf57b7c4dd4d820b61ec5322ff5b0a"
+    },
+    {
+      "seed": 34033,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -10,
+      "pricedUtility": -10,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "4a87e7cd40c0b127",
+      "rawLogSha256": "dd00e5284e06aabae2fa38ae30e2558dedc16f44fe2be0f70090d40349278217"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -13,
+      "pricedUtility": -14.037000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 3,
+        "reconsider": 17
+      },
+      "extraOperations": 2074,
+      "embargoSeconds": 3.700000000000001,
+      "acquisitions": 34,
+      "reconsiderCompleted": 17,
+      "changedPlans": 10,
+      "changedMovementTicks": 250,
+      "finalWorldHash": "81038914856872be",
+      "rawLogSha256": "dc3edab3b1e887b6284c3bcc656fb3eedcb6063045b30a105272f08cd3094873"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -21,
+      "pricedUtility": -21.006,
+      "actions": {
+        "continue": 19,
+        "check": 1,
+        "reconsider": 0
+      },
+      "extraOperations": 12,
+      "embargoSeconds": 0.1,
+      "acquisitions": 12,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "8fab1995fa4556b6",
+      "rawLogSha256": "7e11a5cebc043571d781e5f5f726076eb7ced1b883239112430861e65d5c9e1b"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -14,
+      "pricedUtility": -14,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "71862ae12b5ab360",
+      "rawLogSha256": "c1e14487bf415db5eb0c97c3d0d81ea001654a186eeb71c4ec8c194e4a9b6eef"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -14,
+      "pricedUtility": -15.037000000000004,
+      "actions": {
+        "continue": 0,
+        "check": 3,
+        "reconsider": 17
+      },
+      "extraOperations": 2074,
+      "embargoSeconds": 3.700000000000001,
+      "acquisitions": 34,
+      "reconsiderCompleted": 17,
+      "changedPlans": 10,
+      "changedMovementTicks": 257,
+      "finalWorldHash": "a856efffa78c0259",
+      "rawLogSha256": "d913ffa2b672be87d614673749ee15ec2acf5c71b7fb70b7b5bccbe268217e0a"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -16,
+      "pricedUtility": -16.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "2d4785c157b32de8",
+      "rawLogSha256": "650ed2dc34d9f85387da529aeab7e6bbae237fd6bffde681ca0abb275716200b"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -16,
+      "pricedUtility": -16.0755,
+      "actions": {
+        "continue": 7,
+        "check": 13,
+        "reconsider": 0
+      },
+      "extraOperations": 151,
+      "embargoSeconds": 1.3,
+      "acquisitions": 151,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "4d119f6b980c7b73",
+      "rawLogSha256": "f8be00bb3e64f98954af28ad54b5e8ae9ca53fab3902307d8b3074f4a14e3d14"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -8,
+      "pricedUtility": -8,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "7ace55e3981b0de1",
+      "rawLogSha256": "91480b6fc8b784f52d2e26b34dd61fead428ee898f181b8d16fc273753bede1a"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -19,
+      "pricedUtility": -19.7665,
+      "actions": {
+        "continue": 0,
+        "check": 8,
+        "reconsider": 12
+      },
+      "extraOperations": 1533,
+      "embargoSeconds": 3.2000000000000006,
+      "acquisitions": 93,
+      "reconsiderCompleted": 12,
+      "changedPlans": 5,
+      "changedMovementTicks": 194,
+      "finalWorldHash": "c28203140f9d1654",
+      "rawLogSha256": "cfcb346ce788ab0c27d079108195950713eaeb290afa1af2cbd3936944e1ea0c"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -17,
+      "pricedUtility": -17.006,
+      "actions": {
+        "continue": 19,
+        "check": 1,
+        "reconsider": 0
+      },
+      "extraOperations": 12,
+      "embargoSeconds": 0.1,
+      "acquisitions": 12,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "4ba69ed800700edd",
+      "rawLogSha256": "516ad04b95311c2d65584f5bb57bdd5df6b0f6f048c32d7608d34bafd9cb2e46"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -17,
+      "pricedUtility": -17,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "65191cb097c001c9",
+      "rawLogSha256": "0402d38604d355d8562728274db767477af08fcf6210a8b38f8ccacd662a1ecb"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -14,
+      "pricedUtility": -14.766500000000002,
+      "actions": {
+        "continue": 0,
+        "check": 8,
+        "reconsider": 12
+      },
+      "extraOperations": 1533,
+      "embargoSeconds": 3.2000000000000006,
+      "acquisitions": 93,
+      "reconsiderCompleted": 12,
+      "changedPlans": 6,
+      "changedMovementTicks": 149,
+      "finalWorldHash": "f0c7d4b7ab9390a0",
+      "rawLogSha256": "d5ec029e232a101e7cd68e3f04dbb88f48b9e474fdf28c0316e61d617c1514a2"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -21,
+      "pricedUtility": -21.116000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c785e010b71e57f2",
+      "rawLogSha256": "096f1a7e2e41020b6d28c06572851709229a339a67c26bce3ad6ac659cf73fd2"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -17,
+      "pricedUtility": -17,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "65191cb097c001c9",
+      "rawLogSha256": "0be2ec684811e101d7105e8b14cc94182e27edb65a13a33ab3deda365039f7fc"
+    },
+    {
+      "seed": 34033,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -4,
+      "pricedUtility": -4,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b66af02a4ed512ca",
+      "rawLogSha256": "c720bd3ccb02a8de369d7bf2b97900b2d124053ba84a96ec6c9449959f953be0"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": 0,
+      "pricedUtility": -0.8745000000000007,
+      "actions": {
+        "continue": 0,
+        "check": 6,
+        "reconsider": 14
+      },
+      "extraOperations": 1749,
+      "embargoSeconds": 3.4000000000000012,
+      "acquisitions": 69,
+      "reconsiderCompleted": 14,
+      "changedPlans": 8,
+      "changedMovementTicks": 190,
+      "finalWorldHash": "e7a53d68688f3a37",
+      "rawLogSha256": "fe5ce4c9c3c3becf88fa66ef3c0a8ddf4ee21fc6ede2e709df3f1b65de33e9a7"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -10,
+      "pricedUtility": -10,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "e452d9c17cb32464",
+      "rawLogSha256": "4bbfd23b1ae26764cc72279cded93c7ae75fbdf69a290bd40104ac254b1f1f19"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -10,
+      "pricedUtility": -10,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "e452d9c17cb32464",
+      "rawLogSha256": "b764d5863e2ab75e1a0267d55a8f07effd246e2d0672c68f4852cf02c9effb4c"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -13,
+      "pricedUtility": -13.874500000000003,
+      "actions": {
+        "continue": 0,
+        "check": 6,
+        "reconsider": 14
+      },
+      "extraOperations": 1749,
+      "embargoSeconds": 3.4000000000000012,
+      "acquisitions": 69,
+      "reconsiderCompleted": 14,
+      "changedPlans": 4,
+      "changedMovementTicks": 252,
+      "finalWorldHash": "4c43b2a866fd93ce",
+      "rawLogSha256": "bd800c1d81698730686feeffcdcd83eb0d672fa339df87182a1e1c3480e6919c"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -12,
+      "pricedUtility": -12.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "185d4d3fa9a0e164",
+      "rawLogSha256": "40ecc1e8ea7fddddf91076ef77b52e6081eba48d2cdf9a3fde870b2a80298ba5"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -12,
+      "pricedUtility": -12.058,
+      "actions": {
+        "continue": 10,
+        "check": 10,
+        "reconsider": 0
+      },
+      "extraOperations": 116,
+      "embargoSeconds": 0.9999999999999999,
+      "acquisitions": 116,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5297099661b1540d",
+      "rawLogSha256": "e9cc8c0c7e60a14a1895b0d536fc45dc16f1c8dec297ee656b7636940930cb50"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 14,
+      "pricedUtility": 14,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "07c5b03ee2b8fbc5",
+      "rawLogSha256": "5ceba15b8ad1947284345383eff4bb6bff30ba247da78cb3a22c5a8d0fde33a2"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -12,
+      "pricedUtility": -12.604000000000001,
+      "actions": {
+        "continue": 0,
+        "check": 11,
+        "reconsider": 9
+      },
+      "extraOperations": 1208,
+      "embargoSeconds": 2.9000000000000004,
+      "acquisitions": 128,
+      "reconsiderCompleted": 9,
+      "changedPlans": 8,
+      "changedMovementTicks": 135,
+      "finalWorldHash": "234f0071b95ae8ab",
+      "rawLogSha256": "93e9faf87158d8c3679b93392b784f7c04c3f0c759efa4eecf3ba246bd2bfd08"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5d089b8da7a565df",
+      "rawLogSha256": "94c208e8a83728306d11a657216f0fea3c773fbe93802979a9508a5cfbb1603a"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5d089b8da7a565df",
+      "rawLogSha256": "6075ed93838e0f1326c53718c356703e61844436d13feb7113ab5acc0477b017"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -16,
+      "pricedUtility": -16.603,
+      "actions": {
+        "continue": 0,
+        "check": 11,
+        "reconsider": 9
+      },
+      "extraOperations": 1206,
+      "embargoSeconds": 2.900000000000001,
+      "acquisitions": 126,
+      "reconsiderCompleted": 9,
+      "changedPlans": 3,
+      "changedMovementTicks": 147,
+      "finalWorldHash": "99df58d81943df8d",
+      "rawLogSha256": "1efe7309df570bbf7b0711b221d47ddee43e9e3a0f82fdcd594bbfbb2071024e"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -13,
+      "pricedUtility": -13.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "8cc4d01cd4add9ba",
+      "rawLogSha256": "6c8e51294a8145b68a0b5af008c3b82cfbad219c30dc2a309f430737ccc1a464"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5d089b8da7a565df",
+      "rawLogSha256": "ad122f92ee04adbe759387a30db9ecf70d1248c1a36406852fcb8be689019544"
+    },
+    {
+      "seed": 34039,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": 5,
+      "pricedUtility": 5,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "caadd6e40d6fde0c",
+      "rawLogSha256": "6905d8cdf14dc12c490924f097b67f1d3f48a3f5561ba7df2bc02db917f06f28"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -1,
+      "pricedUtility": -1.3265000000000011,
+      "actions": {
+        "continue": 1,
+        "check": 15,
+        "reconsider": 4
+      },
+      "extraOperations": 653,
+      "embargoSeconds": 2.300000000000001,
+      "acquisitions": 173,
+      "reconsiderCompleted": 4,
+      "changedPlans": 2,
+      "changedMovementTicks": 72,
+      "finalWorldHash": "489910f192133079",
+      "rawLogSha256": "81cf67c68cd822a778355430c52c99b339d77d8f20c196962122002b1a544abd"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -4,
+      "pricedUtility": -4,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "bd2eac165a828164",
+      "rawLogSha256": "1d36a0064739d2e7414bb55016b452986a528e506cfe14a70293ffcbb03c62be"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -4,
+      "pricedUtility": -4,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "bd2eac165a828164",
+      "rawLogSha256": "63a88640a93f618876172cae1abc9e5a554bb42c6d699c0cef4c639d9d457869"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -20,
+      "pricedUtility": -20.326500000000003,
+      "actions": {
+        "continue": 1,
+        "check": 15,
+        "reconsider": 4
+      },
+      "extraOperations": 653,
+      "embargoSeconds": 2.3000000000000007,
+      "acquisitions": 173,
+      "reconsiderCompleted": 4,
+      "changedPlans": 2,
+      "changedMovementTicks": 70,
+      "finalWorldHash": "4f9dd69249a7b11f",
+      "rawLogSha256": "a6f990d95e442add492891175b198d615112b0a9f573802631196389e9376d6e"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -13,
+      "pricedUtility": -13.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c77c94d26aebf058",
+      "rawLogSha256": "662113e66b99189020ae7ded9e91fa0ca16e39b0acd4d24aaaf544a77a5de45c"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -4,
+      "pricedUtility": -4,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "bd2eac165a828164",
+      "rawLogSha256": "666ceb921c5f01138d1eda56882e4e702faa3637530c8119b7037cf7ecfdca66"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -5,
+      "pricedUtility": -5,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "25314f282361334e",
+      "rawLogSha256": "f6660a2f5e8746e44786e7fe605b431d2b0b7740c7533fc5ce8b88d4f75108f8"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": 7,
+      "pricedUtility": 6.6765,
+      "actions": {
+        "continue": 11,
+        "check": 4,
+        "reconsider": 5
+      },
+      "extraOperations": 647,
+      "embargoSeconds": 1.4000000000000001,
+      "acquisitions": 47,
+      "reconsiderCompleted": 5,
+      "changedPlans": 3,
+      "changedMovementTicks": 90,
+      "finalWorldHash": "4593ed7a6210350b",
+      "rawLogSha256": "c672f7acaf5a56876238540b21a41b8ef908e179ee11bab80c16e443453281fc"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "cd22b1731be1718e",
+      "rawLogSha256": "180c732710b25af48b0e53deea78ad6e79f08aca3221d0188d22aab5bb6a12c2"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "cd22b1731be1718e",
+      "rawLogSha256": "e2afb665a2d2e86768f5226996ae0be31b6b78e2d09f1034caf40f6f67f96448"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -18,
+      "pricedUtility": -18.323500000000003,
+      "actions": {
+        "continue": 11,
+        "check": 4,
+        "reconsider": 5
+      },
+      "extraOperations": 647,
+      "embargoSeconds": 1.4000000000000001,
+      "acquisitions": 47,
+      "reconsiderCompleted": 5,
+      "changedPlans": 2,
+      "changedMovementTicks": 90,
+      "finalWorldHash": "b7ee723e2a74c400",
+      "rawLogSha256": "19b52bd7ac2eede75197383a926e82998f545c197d874bd4eb7f155c0bc2c4b5"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -12,
+      "pricedUtility": -12.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "53b72555d694902f",
+      "rawLogSha256": "90a1646d5bcb533a44e7cd9120fb65aac252e0adba3d1e6774783e5920fb7af9"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "cd22b1731be1718e",
+      "rawLogSha256": "2b58e2d59291e4fca7ca093a00a8a4c7ef43b6ae487b3c6485fc8d2d7588d746"
+    },
+    {
+      "seed": 34039,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -4,
+      "pricedUtility": -4,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "a58bee351aec146e",
+      "rawLogSha256": "57e1fcf2f668a571a57bab91194e6d3f4345d1cf732708c24a0f20911aba1192"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -11,
+      "pricedUtility": -12.037500000000007,
+      "actions": {
+        "continue": 0,
+        "check": 3,
+        "reconsider": 17
+      },
+      "extraOperations": 2075,
+      "embargoSeconds": 3.7000000000000015,
+      "acquisitions": 35,
+      "reconsiderCompleted": 17,
+      "changedPlans": 8,
+      "changedMovementTicks": 293,
+      "finalWorldHash": "c2361f9654df89d7",
+      "rawLogSha256": "540498db867cc7b1eacc6c0d2b0b662f0e20ba341605d3138e70d5b34e781d1a"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -22,
+      "pricedUtility": -22,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "94abb6e2e502c6aa",
+      "rawLogSha256": "1039af1f9bb282cf4e9b867c5a6f3159d16152852c09a3f25261ef7d03660607"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -22,
+      "pricedUtility": -22,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "94abb6e2e502c6aa",
+      "rawLogSha256": "a94264aaf37d928186323aeaba9a00670e90739fe56611f9d1270ecb64137e82"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -24,
+      "pricedUtility": -25.037499999999994,
+      "actions": {
+        "continue": 0,
+        "check": 3,
+        "reconsider": 17
+      },
+      "extraOperations": 2075,
+      "embargoSeconds": 3.700000000000001,
+      "acquisitions": 35,
+      "reconsiderCompleted": 17,
+      "changedPlans": 8,
+      "changedMovementTicks": 264,
+      "finalWorldHash": "800ac2abfe3e2a31",
+      "rawLogSha256": "61f7b8387eeb7f391b95b1b5b26346bdc9d8e6fc30d7abf2bbc5134f079ee907"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -15,
+      "pricedUtility": -15.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "ab580d140a883cd2",
+      "rawLogSha256": "4ce24ee60a495b148f6f79f5a5412ec77c1837b68600ad3c851c233d795fdc60"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -19,
+      "pricedUtility": -19.0695,
+      "actions": {
+        "continue": 8,
+        "check": 12,
+        "reconsider": 0
+      },
+      "extraOperations": 139,
+      "embargoSeconds": 1.2,
+      "acquisitions": 139,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "1d24677905380f80",
+      "rawLogSha256": "2c4074037a89c70c570333356549a3fcc615a2df881d35224a8f9b26584e2107"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -8,
+      "pricedUtility": -8,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "869f7d418cea674a",
+      "rawLogSha256": "7e3d0bfd371e03f4e4069cb4d16d05f6570c957fb17f9be677b2571c685a8616"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -12,
+      "pricedUtility": -12.977500000000001,
+      "actions": {
+        "continue": 1,
+        "check": 3,
+        "reconsider": 16
+      },
+      "extraOperations": 1955,
+      "embargoSeconds": 3.500000000000001,
+      "acquisitions": 35,
+      "reconsiderCompleted": 16,
+      "changedPlans": 11,
+      "changedMovementTicks": 240,
+      "finalWorldHash": "352297222328b83d",
+      "rawLogSha256": "4c0244964a7796bde8367ac06e296cd55ada389bc1e916a20de560870a1d9eb1"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -24,
+      "pricedUtility": -24,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c7074087ccf364e5",
+      "rawLogSha256": "e2f245ff11eff41836c4698b77a256d36bd9969465949c76431a295a84e6fa2e"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -24,
+      "pricedUtility": -24,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "c7074087ccf364e5",
+      "rawLogSha256": "db3b52b6739533aeca51d478c4549c71b9256935db5a242be4ed08cced3759ab"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -18,
+      "pricedUtility": -18.9775,
+      "actions": {
+        "continue": 1,
+        "check": 3,
+        "reconsider": 16
+      },
+      "extraOperations": 1955,
+      "embargoSeconds": 3.500000000000001,
+      "acquisitions": 35,
+      "reconsiderCompleted": 16,
+      "changedPlans": 10,
+      "changedMovementTicks": 254,
+      "finalWorldHash": "d520537f93688aeb",
+      "rawLogSha256": "1b9ebc82cfacfd454ecf99b41247c5a1f6e67ae62412cfba0d23f706eebefd51"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -8,
+      "pricedUtility": -8.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "643b0ce5719ac910",
+      "rawLogSha256": "2baf9e4b9ac39795b94a16b5e6baeaa9a05972b6f5eaf4476d23b523005a896c"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -26,
+      "pricedUtility": -26.029,
+      "actions": {
+        "continue": 15,
+        "check": 5,
+        "reconsider": 0
+      },
+      "extraOperations": 58,
+      "embargoSeconds": 0.5,
+      "acquisitions": 58,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "98fdc8b877ccaa9b",
+      "rawLogSha256": "1b6ebe72a8356dec3c66ccf4e5dd96f113194f2e46a49337f6266c09d09e31e8"
+    },
+    {
+      "seed": 34057,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -9,
+      "pricedUtility": -9,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "7e8cce9ad9b42074",
+      "rawLogSha256": "0c509d20dc9da97d120827410aa0e229353b0949db96ac5e871e25bdef35c36f"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -21,
+      "pricedUtility": -21.712000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 9,
+        "reconsider": 11
+      },
+      "extraOperations": 1424,
+      "embargoSeconds": 3.100000000000001,
+      "acquisitions": 104,
+      "reconsiderCompleted": 11,
+      "changedPlans": 4,
+      "changedMovementTicks": 115,
+      "finalWorldHash": "75d93b31b5771f58",
+      "rawLogSha256": "b5e7dcd990db7281ddc59c225d461ae3612931147a3f720e21a2d08f4e034004"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -15,
+      "pricedUtility": -15,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "26a4e77153996c94",
+      "rawLogSha256": "539847da626f832c7ed7ec4064acbb4e3ed93ed83293f99ea42dadade5cf9802"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -15,
+      "pricedUtility": -15,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "26a4e77153996c94",
+      "rawLogSha256": "48cde4c9f6aa1e94a92efdf1cbcf171db6067d1042c78770995c92f4ca9b6009"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -16,
+      "pricedUtility": -16.712000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 9,
+        "reconsider": 11
+      },
+      "extraOperations": 1424,
+      "embargoSeconds": 3.1000000000000014,
+      "acquisitions": 104,
+      "reconsiderCompleted": 11,
+      "changedPlans": 4,
+      "changedMovementTicks": 169,
+      "finalWorldHash": "50e43b2979074c6c",
+      "rawLogSha256": "83bea26c0f6c859ac7dc0b71be60680e55a6a970a19598c4c64391948c884798"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -8,
+      "pricedUtility": -8.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "f7a49b46ada38e10",
+      "rawLogSha256": "4818a6a52a0baace02aeda340e978b37801980566f445d43716f6f960780df84"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -16,
+      "pricedUtility": -16.023500000000002,
+      "actions": {
+        "continue": 16,
+        "check": 4,
+        "reconsider": 0
+      },
+      "extraOperations": 47,
+      "embargoSeconds": 0.4,
+      "acquisitions": 47,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "af283fde12b18081",
+      "rawLogSha256": "9bea9b41ade7708f231390205975807c252a6522008103c012974b20d766b774"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -13,
+      "pricedUtility": -13,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "9fe47cdb4506ac55",
+      "rawLogSha256": "27c77b50a1944326cdbe74cc1d99c77547346dbcc720e82334771b806bf3e443"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -21,
+      "pricedUtility": -21.820999999999998,
+      "actions": {
+        "continue": 0,
+        "check": 7,
+        "reconsider": 13
+      },
+      "extraOperations": 1642,
+      "embargoSeconds": 3.300000000000001,
+      "acquisitions": 82,
+      "reconsiderCompleted": 13,
+      "changedPlans": 9,
+      "changedMovementTicks": 183,
+      "finalWorldHash": "662b6b2973bf29b6",
+      "rawLogSha256": "cf1d6dd0a94d88131c06447c9481dca1e7f8c38f3e843e79d4d27ee6a8a65f18"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "fb98f2c9cb7a0b21",
+      "rawLogSha256": "e640e9ce02a764ec068529714f17259fa045a68d35c9da6129cad962e284050c"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "fb98f2c9cb7a0b21",
+      "rawLogSha256": "1b2cf288e8e6500901fa38ad746cc4c5498e11f3c9f3e32bbaea466aefe9bf9d"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -15,
+      "pricedUtility": -15.820500000000001,
+      "actions": {
+        "continue": 0,
+        "check": 7,
+        "reconsider": 13
+      },
+      "extraOperations": 1641,
+      "embargoSeconds": 3.300000000000001,
+      "acquisitions": 81,
+      "reconsiderCompleted": 13,
+      "changedPlans": 8,
+      "changedMovementTicks": 169,
+      "finalWorldHash": "367c1ff1f7bf40ab",
+      "rawLogSha256": "0fce2a9b838a1dac401279731c310d86dfdfb966eb0c9eea9f853477ad2263b2"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -21,
+      "pricedUtility": -21.116000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "baeed4d7635a9595",
+      "rawLogSha256": "4e8ed3f84df1410f421d00ecf66389296f4d1955dee29fb1bed664445e5ba79c"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -16,
+      "pricedUtility": -16,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "fb98f2c9cb7a0b21",
+      "rawLogSha256": "edc2ea4edf82b4e2ce78971511fac2b8deeeaac4dc31747455c711c6384109fa"
+    },
+    {
+      "seed": 34057,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -19,
+      "pricedUtility": -19,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "17f5d6abdcef146b",
+      "rawLogSha256": "98044bf49c2b2bad328bfea1e1b43de6aa25f22445c2b5ecbfc4322fe6f3e058"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -9,
+      "pricedUtility": -10.085500000000005,
+      "actions": {
+        "continue": 1,
+        "check": 1,
+        "reconsider": 18
+      },
+      "extraOperations": 2171,
+      "embargoSeconds": 3.7000000000000015,
+      "acquisitions": 11,
+      "reconsiderCompleted": 18,
+      "changedPlans": 11,
+      "changedMovementTicks": 282,
+      "finalWorldHash": "9cf9bd4e12f40e0b",
+      "rawLogSha256": "b3ab6965bd3e5516a72e7483801cfb0ea6684a1e51d7d8d04028d5c5dad9de55"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b5332170a722fbf7",
+      "rawLogSha256": "64fa745f16d3fd673d4d243331b7c1d444f3fab931bb54a5908cf6483c4ac974"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -18,
+      "pricedUtility": -18,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b5332170a722fbf7",
+      "rawLogSha256": "33c5eb9088e24c97db20513642dd7abda969edf73492f6f8d057d924c7b8dcc2"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -9,
+      "pricedUtility": -10.086,
+      "actions": {
+        "continue": 1,
+        "check": 1,
+        "reconsider": 18
+      },
+      "extraOperations": 2172,
+      "embargoSeconds": 3.700000000000001,
+      "acquisitions": 12,
+      "reconsiderCompleted": 18,
+      "changedPlans": 11,
+      "changedMovementTicks": 253,
+      "finalWorldHash": "7a545db247574abf",
+      "rawLogSha256": "1c07a787a01540cdb1eec7647144fd2c144b5bb799231c96aeea491116796beb"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": -12,
+      "pricedUtility": -12.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "2a8d5e76c1a7f9b5",
+      "rawLogSha256": "b0cd0e80f2ce15e45f4fb7f35d1b4ad4f6f4c4a24f1322a6aff29601f8893f22"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -19,
+      "pricedUtility": -19.0705,
+      "actions": {
+        "continue": 8,
+        "check": 12,
+        "reconsider": 0
+      },
+      "extraOperations": 141,
+      "embargoSeconds": 1.2,
+      "acquisitions": 141,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b1db138d517598b8",
+      "rawLogSha256": "49650c5e2dfa4400c14b42c5094a49d144d856fed424e70e2dc708ae41643342"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -7,
+      "pricedUtility": -7,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "f316de1c474451a9",
+      "rawLogSha256": "9edbaf4508272fe8012ecf68db73aa914d7bb242ad4d912fbab7e4993dac8944"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -15,
+      "pricedUtility": -16.200000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 0,
+        "reconsider": 20
+      },
+      "extraOperations": 2400,
+      "embargoSeconds": 4.000000000000001,
+      "acquisitions": 0,
+      "reconsiderCompleted": 20,
+      "changedPlans": 11,
+      "changedMovementTicks": 284,
+      "finalWorldHash": "fcd70311a5d6c314",
+      "rawLogSha256": "2a954d01f872978ba451fad0968289d32644016e6f2e5b8c658311754d696185"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -21,
+      "pricedUtility": -21,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "05e6fd0df54bc9f1",
+      "rawLogSha256": "79246c5d2d012c139eaaafff1f98237af2a1fd424d0edffb9341216c7fe0437c"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -21,
+      "pricedUtility": -21,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "05e6fd0df54bc9f1",
+      "rawLogSha256": "ac418a2f8ff22d94cf9a50aec46f3266844dcc6601a72407be625b081a88bc28"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -15,
+      "pricedUtility": -16.200000000000003,
+      "actions": {
+        "continue": 0,
+        "check": 0,
+        "reconsider": 20
+      },
+      "extraOperations": 2400,
+      "embargoSeconds": 4.000000000000001,
+      "acquisitions": 0,
+      "reconsiderCompleted": 20,
+      "changedPlans": 11,
+      "changedMovementTicks": 284,
+      "finalWorldHash": "fcd70311a5d6c314",
+      "rawLogSha256": "cde0e5635ce214e4f1732a838e3fe5a13cc3f095fd891ffbf280f6c23938e518"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": -11,
+      "pricedUtility": -11.116,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "2a64dafc91809661",
+      "rawLogSha256": "4eb4fb3574ea124ac266420400d9723a38b372cef4d3f1dce72d53d5ef287292"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -16,
+      "pricedUtility": -16.076,
+      "actions": {
+        "continue": 7,
+        "check": 13,
+        "reconsider": 0
+      },
+      "extraOperations": 152,
+      "embargoSeconds": 1.3,
+      "acquisitions": 152,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "9aee03cd2d15e8b1",
+      "rawLogSha256": "4449dd2842a80256c4c85f30757ea6359f9785266518437dd2623870f6db0775"
+    },
+    {
+      "seed": 34061,
+      "seat": "P1",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -10,
+      "pricedUtility": -10,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "61e2228f5876fac0",
+      "rawLogSha256": "d669b6cb66d54097a4c27b688216163559b9880359a19b7a984bd232b3b083a0"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "learned",
+      "rawMargin": -14,
+      "pricedUtility": -14.598000000000003,
+      "actions": {
+        "continue": 1,
+        "check": 10,
+        "reconsider": 9
+      },
+      "extraOperations": 1196,
+      "embargoSeconds": 2.8000000000000007,
+      "acquisitions": 116,
+      "reconsiderCompleted": 9,
+      "changedPlans": 3,
+      "changedMovementTicks": 128,
+      "finalWorldHash": "734d32a2f5e01809",
+      "rawLogSha256": "8102f69b73f2d927a282351524a3f99468f216703a744a426019e14c2814bae8"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "monitor",
+      "rawMargin": -16,
+      "pricedUtility": -16.005499999999998,
+      "actions": {
+        "continue": 19,
+        "check": 1,
+        "reconsider": 0
+      },
+      "extraOperations": 11,
+      "embargoSeconds": 0.1,
+      "acquisitions": 11,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "1d214d019704f705",
+      "rawLogSha256": "d2d7739f819cd12319e6940f6a41f8c00a7d1df862b998df6198d7463491e91f"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "off",
+      "rawMargin": -15,
+      "pricedUtility": -15,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "e36b6337f148da4e",
+      "rawLogSha256": "bc52444d2e9b6c9b34a89397a80f80615674b9303133799cf90ba72edcff9411"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "scheduled",
+      "rawMargin": -18,
+      "pricedUtility": -18.598000000000003,
+      "actions": {
+        "continue": 1,
+        "check": 10,
+        "reconsider": 9
+      },
+      "extraOperations": 1196,
+      "embargoSeconds": 2.8000000000000007,
+      "acquisitions": 116,
+      "reconsiderCompleted": 9,
+      "changedPlans": 5,
+      "changedMovementTicks": 129,
+      "finalWorldHash": "a76924a1398161ea",
+      "rawLogSha256": "4a674d9ffaf5359ffe0b9348aecdbc4eab6f0d05df59bd4dd9c0c16966114064"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "alwaysCheck",
+      "rawMargin": 18,
+      "pricedUtility": 17.884,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "5d6765711d94ab06",
+      "rawLogSha256": "34f880bdf5f5c20581bbbd0a6f818eb4148142669aae1a56f1e00a0ea0b3c9d7"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "shuffled",
+      "rawMargin": -17,
+      "pricedUtility": -17.058,
+      "actions": {
+        "continue": 10,
+        "check": 10,
+        "reconsider": 0
+      },
+      "extraOperations": 116,
+      "embargoSeconds": 0.9999999999999999,
+      "acquisitions": 116,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "4d7bd3c63daddc5c",
+      "rawLogSha256": "687068308733cfe86d38910518996452532a1e066dc73b32e01368e42644ed04"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveOrbit",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -6,
+      "pricedUtility": -6,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "b9e9943ad3c8bda8",
+      "rawLogSha256": "08339888ed089fffc0b8c374042fc50bc1b0d93259dac8e97ab3e121b215e968"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "learned",
+      "rawMargin": -17,
+      "pricedUtility": -17.8745,
+      "actions": {
+        "continue": 0,
+        "check": 6,
+        "reconsider": 14
+      },
+      "extraOperations": 1749,
+      "embargoSeconds": 3.4000000000000012,
+      "acquisitions": 69,
+      "reconsiderCompleted": 14,
+      "changedPlans": 7,
+      "changedMovementTicks": 226,
+      "finalWorldHash": "b7fce3b99d4ae1ea",
+      "rawLogSha256": "729f3820533ac18a63a0c3f5f64106de8d8ccdf802bf81b8671db3b172650732"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "monitor",
+      "rawMargin": -23,
+      "pricedUtility": -23,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "7998cce6af640830",
+      "rawLogSha256": "24fa42e6a8409a8b8160780207d87ed896435fe93dd427c9b9ad88d93be1d43f"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "off",
+      "rawMargin": -23,
+      "pricedUtility": -23,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "7998cce6af640830",
+      "rawLogSha256": "22350efeeaf953579852ccb098acc5b191671ef52185278359e23ed640f7e53c"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "scheduled",
+      "rawMargin": -15,
+      "pricedUtility": -15.875500000000006,
+      "actions": {
+        "continue": 0,
+        "check": 6,
+        "reconsider": 14
+      },
+      "extraOperations": 1751,
+      "embargoSeconds": 3.4000000000000012,
+      "acquisitions": 71,
+      "reconsiderCompleted": 14,
+      "changedPlans": 7,
+      "changedMovementTicks": 208,
+      "finalWorldHash": "5ebc14c21c24faa6",
+      "rawLogSha256": "c9a34e5e0482db9e745711ebee820cb0ec785c1d5ec459467a993fa08ec3162d"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "alwaysCheck",
+      "rawMargin": 18,
+      "pricedUtility": 17.884,
+      "actions": {
+        "continue": 0,
+        "check": 20,
+        "reconsider": 0
+      },
+      "extraOperations": 232,
+      "embargoSeconds": 2.0000000000000004,
+      "acquisitions": 232,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "e8cd49d94c35d256",
+      "rawLogSha256": "34d946e6288d41744c02faa7eda97341a992ddd2aec979da46f49de9e4abcd0e"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "shuffled",
+      "rawMargin": -23,
+      "pricedUtility": -23,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "7998cce6af640830",
+      "rawLogSha256": "57cfbe3be075c1907c5f8c0edd19f273f084f821c1b36dbe3d5cc609028712c0"
+    },
+    {
+      "seed": 34061,
+      "seat": "P2",
+      "family": "reactiveFlank",
+      "variant": "ordinaryRefresh",
+      "rawMargin": -11,
+      "pricedUtility": -11,
+      "actions": {
+        "continue": 20,
+        "check": 0,
+        "reconsider": 0
+      },
+      "extraOperations": 0,
+      "embargoSeconds": 0,
+      "acquisitions": 0,
+      "reconsiderCompleted": 0,
+      "changedPlans": 0,
+      "changedMovementTicks": 0,
+      "finalWorldHash": "046b54104984e553",
+      "rawLogSha256": "188b184b90de1b3c7cc7dba687dc0b5a69d079c45bc36a6ac5f0e63690089d44"
+    }
+  ],
+  "runtime": {
+    "boutWallSecondsTotal": 96.46758307400006,
+    "subjectInterfaceWallMsTotal": 42469.33547200001,
+    "cpuUserMsTotal": 114195.76499999994,
+    "cpuSystemMsTotal": 3102.023,
+    "caveat": "Runtime includes telemetry; shared host wall timings are not isolated planner cost. Exact operation and embargo counts reported separately."
+  },
+  "rawSummarySha256": "2d61cacdc714174719f96b2fb34875eb37dc03913a70160e34437eafaa773fb7"
+}

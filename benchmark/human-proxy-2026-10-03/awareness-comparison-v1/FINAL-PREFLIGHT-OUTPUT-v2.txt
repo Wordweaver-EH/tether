@@ -1,0 +1,36 @@
+✔ arbitration exact no warning and unchanged passthrough (1.44118ms)
+✔ scan uses sole aim, withholds throw, preserves recall and exact certified movement (0.296606ms)
+✔ unchanged wrapper byte-equivalent through actual motor commits on synthetic packet sequence (14.791557ms)
+✔ quiet awareness is byte-equivalent; real frozen warning integrates exact scan/movement (1.074939ms)
+✔ final issued movement reaches awareness tie memory, and suppressed throw is not committed as throw (0.670249ms)
+✔ existing interface provides exactly one latency queue, cadence and motor sample (7.516215ms)
+✔ actual MODE_B packet excludes enemy target; unused truth sentinels cannot enter controllers (1.510705ms)
+✔ frozen prototype byte identity and exact fresh paired manifest (2.229837ms)
+✔ main is gated and CLI has no default gameplay (428.156479ms)
+✔ release is bound to exactly one absolute output and positive disk reserve (0.428876ms)
+✔ lossless completed-gzip identity rejects corruption and incomplete records (4.571221ms)
+✔ synthetic event accounting uses RECALL_START.owner and HIT phase rather than inferred state (0.608356ms)
+✔ all prior raw and frozen source identities still verify (2404.917499ms)
+✔ source-time canonicalization roundoff uses existing strict timing tolerance (1.037222ms)
+✔ attempt numbering preserves started-only crash and all pending artifacts (0.868488ms)
+✔ atomic durable JSON refuses overwrite; interrupted finalization is idempotent (1.082359ms)
+✔ root-approved startup-only recovery handles empty/claimed directories and preserves pending evidence (4.906687ms)
+✔ startup recovery refuses changed main claim or any prior gameplay artifact (0.593884ms)
+✔ constant synthetic deltas give exact known intervals and five-minute rate differences (1096.042354ms)
+✔ pairing averages seats inside each of 32 clusters and all rate CIs share exact SHA-addressed draws (1323.099054ms)
+✔ primary and against-ordinary classification use the exact declared strict boundaries (0.445721ms)
+✔ a 0.5 lower endpoint qualifies practically, but a 0.4 endpoint does not (83.183112ms)
+✔ every fixed metric is aggregated and conditional means expose explicit denominators (38.412386ms)
+✔ exact clipped exposure fields supersede nominal warning/scan count times 1/30 (40.20169ms)
+✔ empty conditional denominators stay null, including CIs, and missing exposure cannot support an awareness claim (3.141399ms)
+✔ conditional resampling retains zero-denominator clusters instead of dropping or redrawing them (127.516152ms)
+✔ malformed manifest rows, durations, hits and net rates are rejected before inference (9.468544ms)
+✔ malformed metrics, impossible subcounts and invalid exposure fields are rejected (8.654167ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2947.093657

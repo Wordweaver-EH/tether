@@ -1,0 +1,18 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {mkdtemp,mkdir,writeFile,readFile,rm} from 'node:fs/promises';import {tmpdir} from 'node:os';import {join} from 'node:path';
+import {sha256,sourceFingerprint,verifyTrainingLock,serialize,parse} from './lock-contract.mjs';
+test('special numeric state survives serialization instead of becoming null',()=>{const x=parse(serialize({a:Infinity,b:-Infinity,c:NaN,d:null}));assert.equal(x.a,Infinity);assert.equal(x.b,-Infinity);assert.ok(Number.isNaN(x.c));assert.equal(x.d,null);});
+test('lock requires exact sources and verified matching receipts',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'tether-lock-test-')),here=join(root,'training'),repo=join(root,'repo');await mkdir(here);await mkdir(join(repo,'src'),{recursive:true});await mkdir(join(repo,'benchmark'));
+ try{const names=['training-plan.mjs','training-runner.mjs','training-worker.mjs','runtime-controls.mjs','lock-contract.mjs','initial-vectors.json','TRAINING-PROTOCOL.md','TRAINING-SEEDS.json'];const files=[];
+ for(const name of names){const path=join(here,name);await writeFile(path,name);files.push({path,key:'training/'+name,sha256:sha256(name)});}
+ for(const name of ['src/dependency.mjs','benchmark/interface.mjs','package.json']){const path=join(repo,name);await writeFile(path,name);files.push({path,key:'repo/'+name,sha256:sha256(name)});}
+ const fp=sourceFingerprint(files),levels={'conventional-useful-2x':0,'conventional-useful-4x':0},commit='a'.repeat(40),lock={status:'TRAINING_ONLY_LOCKED',allowTraining:true,planId:'test',repo,files,sourceFingerprint:fp,remoteVerifiedCommit:commit,workers:8,levels};
+ for(const [which,record]of Object.entries({reviewReceipt:{status:'PASS',sourceFingerprint:fp},publicationReceipt:{status:'VERIFIED',sourceFingerprint:fp,commit},timingReceipt:{status:'PASS',sourceFingerprint:fp,levels,hardwareScope:'test',measurementScope:'test',targetStatus:'unachieved',selectionMetric:'meanWallMs',trials:5,plannedWorkers:8,estimatedCPUHours:1,estimatedWallHours:1}})){const path=join(root,which+'.json'),bytes=JSON.stringify(record);await writeFile(path,bytes);lock[which]={path,sha256:sha256(bytes)};}
+ const p=join(root,'lock.json');await writeFile(p,JSON.stringify(lock));assert.equal((await verifyTrainingLock(p,here,'test')).sourceFingerprint,fp);
+ const originalReview={...lock.reviewReceipt};delete lock.reviewReceipt;await writeFile(p,JSON.stringify(lock));await assert.rejects(verifyTrainingLock(p,here,'test'),/missing reviewReceipt/);lock.reviewReceipt=originalReview;
+ const reviewBytes=await readFile(originalReview.path);const badReview=JSON.stringify({status:'PENDING',sourceFingerprint:fp});await writeFile(originalReview.path,badReview);lock.reviewReceipt={path:originalReview.path,sha256:sha256(badReview)};await writeFile(p,JSON.stringify(lock));await assert.rejects(verifyTrainingLock(p,here,'test'),/invalid status/);await writeFile(originalReview.path,reviewBytes);lock.reviewReceipt=originalReview;
+ const old=lock.files;lock.files=old.slice(1);await writeFile(p,JSON.stringify(lock));await assert.rejects(verifyTrainingLock(p,here,'test'),/missing source dependency/);lock.files=old;
+ lock.levels={...levels,'conventional-useful-4x':1};await writeFile(p,JSON.stringify(lock));await assert.rejects(verifyTrainingLock(p,here,'test'),/calibrated levels/);lock.levels=levels;
+ await writeFile(join(repo,'src/dependency.mjs'),'changed');await writeFile(p,JSON.stringify(lock));await assert.rejects(verifyTrainingLock(p,here,'test'),/source key\/hash mismatch/);
+ }finally{await rm(root,{recursive:true,force:true});}
+});

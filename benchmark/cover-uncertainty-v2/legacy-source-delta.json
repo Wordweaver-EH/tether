@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "reason": "Explicit opt-in calibrated monitoring integration; historical manifest retained unchanged. Exact default behavior remains separately pinned.",
+  "files": {
+    "src/mind/coordination.mjs": {
+      "historicalSha256": "2064667a947944d6d35a963ad93008cfce0e53a64eb8d38a39686d9cfaa2a7fc",
+      "currentSha256": "c7a91308a340903776327a7a3ec8be548096ff317016d4d246a52828b76d988e"
+    },
+    "src/mind/index.mjs": {
+      "historicalSha256": "23ee704a7ce2e38bf49c1b6c2481b11cb36b7cd0597a0145569d223ca72f56eb",
+      "currentSha256": "d2f8c1ca6fb11bfcf44c4755cc29fc7e83a06454a27447cd7ca36927bfee0751"
+    }
+  }
+}

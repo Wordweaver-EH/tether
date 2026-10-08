@@ -1,20 +1,13 @@
-# Handoff: continue Tether (for the owner's ChatGPT Dot, 2026-10-01)
+# Tether continuation handoff
 
-Repo: github.com/Wordweaver-EH/tether (private). Work on your own cloud computer (clone the repo there); do not use the owner's PC or start Codex / Work tasks (those bill a different budget). Start by reading this file, then SPEC.md, DESIGN.md, notes/decisions.md and notes/log.md; docs/build-history/ has the briefs and summaries of every earlier build phase (p2-mind = the mind design, p4-exploits = task 1); docs/background/ has the owner's broader functional-consciousness design that Tether's mind is a test bed for (context, not a spec).
+Start with [RESULTS.md](RESULTS.md), [CURRENT_STATUS.md](CURRENT_STATUS.md), and the [evidence index](reports/README.md). The implementation/evaluation pass is delivered with explicit negative, unsupported, incomplete and blocked goals.
 
-## The project
-Tether is a deterministic spear-duel web game, human vs a non-LLM NPC "mind". Plain JS, Node >= 20, no dependencies, no build step. `SPEC.md` = the game rules (authoritative, do not change rules without a decision record). `DESIGN.md` = the plan and build phases. `notes/decisions.md` = D1-D18 (read before working). `notes/log.md` = history. Run `node --test` (84 tests, all green at the last commit); CPU tournaments: `node arena/tournament.mjs ...` (README).
-Goal: show (a) the game is engaging and (b) the NPC has many mechanisms usually listed as parts of functional consciousness (attention, belief, working memory / workspace, metacognition, attention schema, theory of mind, affect, learning) - each counted ONLY if an ablation of that mechanism changes behavior in tournaments (D4, D14: under a finite per-cycle cognition budget).
+The root project is the post-audit affect-repaired revision (`c3ead812…fc55cd`). Original v2 (`19800346…0bc9e5`) is preserved on the pinned [data branch](RAW_DATA.md), including `reference/v2-source/` and the full frozen archive. The broad Phase 4, general and learning studies evaluate original v2. Only the separate 768-bout affect study evaluates the repaired controller. Do not relabel original rows or claim a comprehensive repaired-version evaluation.
 
-## State at hand-off
-Phases 1-3 done (sim + perception + tests, Mind v1, web client + Mind View replay, browser smoke test). Phase 4 started: `p4-exploits` (strong dodger, parametrised policies, best-response search, degeneracy verdict) was paused mid-search; its work-in-progress is on branch `wip/p4-exploits` (arena/search*, src/agents/dodger.mjs, param.mjs, spear-memory.mjs, reports/phase4a-*.json, edits to sim.js / perception / tether-adapter).
+`SPEC.md` remains authoritative; no rule repair was adopted. D19 and the earlier intentions remain in `notes/decisions.md`. The [owner's original 2026-10-01 handoff](docs/build-history/2026-10-01-owner-handoff.md) is retained verbatim as history; its counts and repository-visibility statement are not current verification. The broader architecture in `docs/background/` is motivation, not an implemented-feature inventory.
 
-## Tasks, in order (one PR per item, each with tests green and a short report in reports/)
-1. **Finish p4-exploits:** does any simple strategy (e.g. immediate recall) dominate? Best-response search against the tuned mind; verdict with numbers; repair candidates only if a degenerate strategy exists (rule changes need a decision record, not silent edits).
-2. **Cross-runtime determinism (must-fix):** a browser-produced log diverges in Node's verifier at tick 132 (tiny float difference in facing). Make the sim's math deterministic across V8 builds (own trig / rotation or quantised facing), with a test that replays a browser log in Node.
-3. **Phase 4 Mind v2:** metacognition, attention schema + theory of mind, affect, memory and learning (D16 four competence stages with light tabular / linear RL, D17 in-session Bayesian adaptation), counterfactuals; D15 processing tiers. Each mechanism behind a switch so it can be ablated.
-4. **Phase 5 indicator audit:** tournaments with each mechanism ablated (equal cognition budget), effect sizes with confidence intervals, a static report page; mechanisms with no behavioral effect are reported as negatives, not dropped silently.
-5. **Small taste fixes** from the smoke review: NPC cone tinted orange and fainter, darker outside-cone space, distinct held-spear vs facing notch, check Mind View focus lock on "Deceive".
+Run `node --test` for all 148 current tests. The cross-build test materializes checksum-verified original-v2 source from the pinned data commit, without a tracked duplicate. [REPRODUCE.md](REPRODUCE.md) gives separate commands for each evaluated version, a permitted-local browser probe, and exact raw-data recovery.
 
-## Rules
-CPU only (the tournaments fit an 8-worker run). No LLM inside the NPC (D3). Keep replay determinism and the log format. Do not change SPEC rules without a decision entry. Work on branches, open PRs, never force-push master. Report progress with numbers (bouts, win rates, effect sizes), not adjectives; say plainly when something did not work.
+Priorities for a further research pass include selective ablation designs, executed learned-action coverage, richer state learning, a properly identified budget interaction, matched adversarial controls, and the outstanding browser/human tests. The independent acceptance matrix identifies the unimplemented remainder; these are not quietly marked complete.
+
+Branch: `dot/complete-tether`, based on `wip/p4-exploits`. Published as draft PR #1. Raw evidence is on the data branch; no merge or deployment was performed.

@@ -1,4 +1,6 @@
-// Deterministic rules. This module has no rendering, experiment mode, or clock.
+import { COVER_CONTROL, emptyControl, stepControl } from './cover-control.js';
+import { hypot, sqrt, sinCosTurn } from './deterministic-math.js';
+// Deterministic rules. This module has no rendering or wall clock.
 const freeze = (value) => {
   if (value && typeof value === 'object') {
     for (const child of Object.values(value)) freeze(child);
@@ -44,6 +46,14 @@ const copy = (p) => vec(p.x, p.y);
 const dot = (a, b) => a.x * b.x + a.y * b.y;
 const pointAt = (p, d, t) => vec(p.x + d.x * t, p.y + d.y * t);
 const playerId = (i) => `P${i + 1}`;
+const turnCache = new Map();
+function rotationFor(limit) {
+  if (!turnCache.has(limit)) {
+    if (turnCache.size >= 64) turnCache.clear();
+    turnCache.set(limit, sinCosTurn(limit));
+  }
+  return turnCache.get(limit);
+}
 
 function inputOf(raw) {
   const finite = (n) => Number.isFinite(n) ? n : 0;
@@ -55,11 +65,23 @@ function inputOf(raw) {
 }
 
 function unitInput(x, y, deadzone) {
-  const length = Math.hypot(x, y);
+  const length = hypot(x, y);
   return length > deadzone ? vec(x / length, y / length) : null;
 }
 
 export function createWorld(config = {}) {
+  const override = config.experiment ?? {};
+  const allowed = ['PLAYER_SPEED', 'TURN_RATE_RAD',
+    'OUTBOUND_SPEED', 'RETURN_SPEED'];
+  if (Object.keys(override).some((key) => !allowed.includes(key)))
+    throw new RangeError('unsupported experiment override');
+  const gameMode = config.gameMode ?? 'DUEL';
+  if (!['DUEL', 'COVER_CONTROL'].includes(gameMode)) throw new RangeError('invalid gameMode');
+  const experiment = { ...E, ...(gameMode === 'COVER_CONTROL' ? COVER_CONTROL : {}), ...override };
+  for (const key of allowed) {
+    if (!Number.isFinite(experiment[key]) || experiment[key] <= 0)
+      throw new RangeError(`invalid experiment override: ${key}`);
+  }
   const technical = {
     moveDeadzone: config.moveDeadzone ?? T.MOVE_DEADZONE,
     aimDeadzone: config.aimDeadzone ?? T.AIM_DEADZONE,
@@ -70,7 +92,7 @@ export function createWorld(config = {}) {
       throw new RangeError(`Invalid technical constant: ${name}`);
     }
   }
-  const players = E.STARTS.map((start, i) => ({
+  const players = experiment.STARTS.map((start, i) => ({
     id: playerId(i), position: copy(start.position), velocity: vec(0, 0),
     facing: copy(start.facing), score: 0,
   }));
@@ -78,8 +100,10 @@ export function createWorld(config = {}) {
     owner: player.id, state: 'HELD', position: copy(player.position),
     direction: copy(player.facing), embedSurfaceId: null, recallTarget: null,
   }));
-  return { tick: 0, elapsedSec: 0, remainingSec: E.BOUT_SECONDS,
-    ended: false, technical, players, spears };
+  return { tick: 0, elapsedSec: 0, remainingSec: experiment.BOUT_SECONDS,
+    ended: false, technical, experiment,
+    experimentOverrides: Object.keys(override).length ? structuredClone(override) : null,
+    players, spears, ...(gameMode === 'COVER_CONTROL' ? { gameMode, objective: emptyControl() } : {}) };
 }
 
 // First entry into a closed axis-aligned box. The contact face names the box face.
@@ -121,7 +145,7 @@ function earliest(best, candidate, epsilon) {
   return best;
 }
 
-function staticContact(start, delta, radius, epsilon) {
+function staticContact(start, delta, radius, epsilon, E) {
   let best = null;
   const arena = E.ARENA;
   if (radius === 0) {
@@ -169,12 +193,12 @@ function staticContact(start, delta, radius, epsilon) {
   return best;
 }
 
-function moveWithSlide(position, delta, epsilon) {
+function moveWithSlide(position, delta, epsilon, E) {
   let pos = copy(position);
   let remaining = copy(delta);
   for (let i = 0; i < 4; i++) {
     if (Math.abs(remaining.x) + Math.abs(remaining.y) <= epsilon) break;
-    const hit = staticContact(pos, remaining, E.PLAYER_RADIUS, epsilon);
+    const hit = staticContact(pos, remaining, E.PLAYER_RADIUS, epsilon, E);
     if (!hit) { pos = pointAt(pos, remaining, 1); break; }
     pos = pointAt(pos, remaining, hit.t);
     remaining = vec(remaining.x * (1 - hit.t), remaining.y * (1 - hit.t));
@@ -214,7 +238,7 @@ function circleTOI(start, delta, centre, radius, epsilon) {
   const discriminant = b * b - 4 * a * c;
   const roundoff = 16 * Number.EPSILON * Math.max(1, b * b, 4 * a * Math.abs(c));
   if (discriminant < -roundoff) return null;
-  const t = (-b - Math.sqrt(Math.max(0, discriminant))) / (2 * a);
+  const t = (-b - sqrt(Math.max(0, discriminant))) / (2 * a);
   return t >= -epsilon && t <= 1 + epsilon ? Math.max(0, Math.min(1, t)) : null;
 }
 
@@ -227,6 +251,7 @@ function setHeld(spear, owner) {
 }
 
 function resetAfterHit(world) {
+  const E = world.experiment ?? CONSTANTS.experiment;
   for (let i = 0; i < 2; i++) {
     const player = world.players[i];
     const start = E.STARTS[i];
@@ -241,6 +266,7 @@ export function step(world, inputs) {
   if (world.ended) return [];
   if (!Array.isArray(inputs) || inputs.length !== 2) throw new TypeError('inputs must be [p1, p2]');
   const actions = inputs.map(inputOf);
+  const E = world.experiment ?? CONSTANTS.experiment;
   const events = [];
   const epsilon = world.technical.epsilon;
   const previous = world.players.map((p) => copy(p.position));
@@ -251,15 +277,20 @@ export function step(world, inputs) {
     const aim = unitInput(actions[i].aimX, actions[i].aimY, world.technical.aimDeadzone);
     if (!aim) continue;
     const cross = player.facing.x * aim.y - player.facing.y * aim.x;
-    // Normalize signed zero: a 180-degree tie always turns counterclockwise.
-    const angle = Math.atan2(cross === 0 ? 0 : cross, dot(player.facing, aim));
-    const limit = E.TURN_RATE_RAD * DT;
-    const turn = Math.max(-limit, Math.min(limit, angle));
-    const cos = Math.cos(turn);
-    const sin = Math.sin(turn);
+    const limit = Math.min(Math.PI, E.TURN_RATE_RAD * DT);
+    const rotation = rotationFor(limit);
+    // Compare angles using a dot product. If the target is within one turn,
+    // use its normalized vector directly; otherwise rotate by the fixed limit.
+    if (limit === Math.PI || dot(player.facing, aim) >= rotation.cos) {
+      player.facing = aim;
+      continue;
+    }
+    // A 180-degree tie (including signed zero) turns counterclockwise.
+    const cos = rotation.cos;
+    const sin = cross < 0 ? -rotation.sin : rotation.sin;
     player.facing = vec(player.facing.x * cos - player.facing.y * sin,
       player.facing.x * sin + player.facing.y * cos);
-    const length = Math.hypot(player.facing.x, player.facing.y);
+    const length = hypot(player.facing.x, player.facing.y);
     player.facing.x /= length;
     player.facing.y /= length;
   }
@@ -279,7 +310,7 @@ export function step(world, inputs) {
     } else if (spear.state === 'EMBEDDED' && action.recall) {
       const start = copy(spear.position);
       const target = copy(player.position);
-      const distance = Math.hypot(target.x - start.x, target.y - start.y);
+      const distance = hypot(target.x - start.x, target.y - start.y);
       events.push({ type: 'RECALL_START', owner: player.id, spear_start: start,
         recall_target: copy(target), opponent_pos: copy(world.players[1 - i].position),
         owner_facing: copy(player.facing) });
@@ -302,7 +333,7 @@ export function step(world, inputs) {
     const move = unitInput(actions[i].moveX, actions[i].moveY, world.technical.moveDeadzone);
     player.velocity = move ? vec(move.x * E.PLAYER_SPEED, move.y * E.PLAYER_SPEED) : vec(0, 0);
     player.position = moveWithSlide(player.position,
-      vec(player.velocity.x * DT, player.velocity.y * DT), epsilon);
+      vec(player.velocity.x * DT, player.velocity.y * DT), epsilon, E);
   }
 
   // 5. Neutralization uses the previous-to-current centre sweep.
@@ -334,13 +365,13 @@ export function step(world, inputs) {
     let completesReturn = false;
     if (phase === 'RETURNING') {
       const target = spear.recallTarget;
-      const distance = Math.hypot(target.x - start.x, target.y - start.y);
+      const distance = hypot(target.x - start.x, target.y - start.y);
       if (distance <= travel + epsilon) { travel = distance; completesReturn = true; }
     }
     const delta = vec(spear.direction.x * travel, spear.direction.y * travel);
     const victim = world.players[1 - i];
     const playerT = circleTOI(start, delta, victim.position, E.PLAYER_RADIUS, epsilon);
-    const staticHit = phase === 'OUTBOUND' ? staticContact(start, delta, 0, epsilon) : null;
+    const staticHit = phase === 'OUTBOUND' ? staticContact(start, delta, 0, epsilon, E) : null;
     if (playerT !== null && (!staticHit || playerT <= staticHit.t + epsilon)) {
       const hitPos = pointAt(start, delta, playerT);
       spear.position = hitPos;
@@ -375,6 +406,7 @@ export function step(world, inputs) {
       scores: { P1: world.players[0].score, P2: world.players[1].score } });
     resetAfterHit(world);
   }
+  stepControl(world, hits.length > 0, events);
   world.tick++;
   world.elapsedSec = world.tick * DT;
   world.remainingSec = Math.max(0, E.BOUT_SECONDS - world.elapsedSec);
@@ -385,6 +417,9 @@ export function step(world, inputs) {
 // Hash an explicit scalar sequence, independent of object insertion order.
 export function hashWorld(world) {
   const state = [world.tick, world.elapsedSec, world.remainingSec, world.ended,
+    ...(world.experimentOverrides ? [world.experimentOverrides] : []),
+    ...(world.gameMode ? [world.gameMode, world.objective.controller,
+      world.objective.contested, world.objective.holdTicks] : []),
     world.technical.moveDeadzone, world.technical.aimDeadzone, world.technical.epsilon,
     ...world.players.flatMap((p) => [p.id, p.position.x, p.position.y,
       p.velocity.x, p.velocity.y, p.facing.x, p.facing.y, p.score]),

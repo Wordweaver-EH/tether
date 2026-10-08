@@ -1,0 +1,88 @@
+v1 seed=1237 seat=P1 score=4:6 defense-recall=1/1
+repaired seed=1237 seat=P1 score=4:6 defense-recall=1/1
+v1 seed=1237 seat=P2 score=6:2 defense-recall=0/0
+repaired seed=1237 seat=P2 score=6:2 defense-recall=0/0
+v1 seed=2081 seat=P1 score=5:4 defense-recall=0/0
+repaired seed=2081 seat=P1 score=5:4 defense-recall=0/0
+v1 seed=2081 seat=P2 score=6:2 defense-recall=0/0
+repaired seed=2081 seat=P2 score=6:2 defense-recall=0/0
+v1 seed=3253 seat=P1 score=1:8 defense-recall=0/0
+repaired seed=3253 seat=P1 score=1:8 defense-recall=0/0
+v1 seed=3253 seat=P2 score=4:4 defense-recall=0/0
+repaired seed=3253 seat=P2 score=4:4 defense-recall=0/0
+v1 seed=4447 seat=P1 score=0:10 defense-recall=0/0
+repaired seed=4447 seat=P1 score=0:10 defense-recall=0/0
+v1 seed=4447 seat=P2 score=5:1 defense-recall=1/2
+repaired seed=4447 seat=P2 score=5:1 defense-recall=1/1
+{
+  "v1": {
+    "bouts": 8,
+    "mindPoints": 19,
+    "baselinePoints": 49,
+    "mindRingPoints": 0,
+    "baselineRingPoints": 0,
+    "mindHitPoints": 19,
+    "baselineHitPoints": 49,
+    "mindThrows": 26,
+    "mindRecalls": 11,
+    "mindThrowEvents": 26,
+    "mindRecallEvents": 10,
+    "mindRingOccupancyTicks": 13464,
+    "baselineRingOccupancyTicks": 7180,
+    "contestedTicks": 6965,
+    "focus": {
+      "Objective": 6665,
+      "Threat": 153,
+      "Reflex": 309,
+      "Hunt": 12,
+      "Search": 29
+    },
+    "decisions": 7168,
+    "defensiveDecisions": 462,
+    "defensiveEmbeddedDecisions": 3,
+    "defensiveThrows": 2,
+    "defensiveRecalls": 2,
+    "defensiveEmbeddedWithoutRecall": 1,
+    "objectiveResumeAfterDefense": 122,
+    "planningRequests": 213,
+    "planningAttempts": 213,
+    "planningCompleted": 151,
+    "planningUnfinished": 62,
+    "budgetSpent": 811624
+  },
+  "repaired": {
+    "bouts": 8,
+    "mindPoints": 19,
+    "baselinePoints": 49,
+    "mindRingPoints": 0,
+    "baselineRingPoints": 0,
+    "mindHitPoints": 19,
+    "baselineHitPoints": 49,
+    "mindThrows": 26,
+    "mindRecalls": 11,
+    "mindThrowEvents": 26,
+    "mindRecallEvents": 10,
+    "mindRingOccupancyTicks": 13479,
+    "baselineRingOccupancyTicks": 7177,
+    "contestedTicks": 6984,
+    "focus": {
+      "Objective": 6670,
+      "Threat": 148,
+      "Reflex": 309,
+      "Hunt": 12,
+      "Search": 29
+    },
+    "decisions": 7168,
+    "defensiveDecisions": 457,
+    "defensiveEmbeddedDecisions": 2,
+    "defensiveThrows": 1,
+    "defensiveRecalls": 2,
+    "defensiveEmbeddedWithoutRecall": 0,
+    "objectiveResumeAfterDefense": 122,
+    "planningRequests": 212,
+    "planningAttempts": 212,
+    "planningCompleted": 149,
+    "planningUnfinished": 63,
+    "budgetSpent": 811592
+  }
+}

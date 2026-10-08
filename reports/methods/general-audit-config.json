@@ -1,0 +1,50 @@
+{
+  "config": {
+    "seeds": 32,
+    "workers": 6,
+    "durationSec": 300,
+    "budgets": [
+      48,
+      192,
+      512
+    ],
+    "opponents": [
+      "immediateRecaller",
+      "embedWaiter",
+      "camper",
+      "spinner",
+      "reactiveDodger",
+      "mind"
+    ],
+    "variants": [
+      "full",
+      "noBelief",
+      "noPrediction",
+      "singleUtility",
+      "noWorkspace",
+      "noHysteresis",
+      "noMetacog",
+      "noAttentionSchema",
+      "noToM",
+      "noReflex",
+      "noIntuition",
+      "noDeliberation",
+      "noLearning",
+      "noAutomatization",
+      "noAdaptation",
+      "noCounterfactual",
+      "noAffect"
+    ],
+    "modes": [
+      "MODE_A",
+      "MODE_B"
+    ],
+    "out": "../final-reports/phase5-final",
+    "label": "final",
+    "seedStart": 1,
+    "resume": false
+  },
+  "jobs": 39168,
+  "startedAt": "2026-10-01T23:40:12.382Z",
+  "sourceHash": "19800346ef69e63f1917ee67d02f4f083285101cb4342ed39d323d195b0bc9e5"
+}

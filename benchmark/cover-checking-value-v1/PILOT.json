@@ -1,0 +1,153 @@
+{
+  "training": {
+    "seeds": [
+      12011,
+      12037,
+      12041,
+      12043,
+      12049,
+      12071,
+      12073,
+      12097,
+      12101,
+      12107,
+      12109,
+      12113
+    ],
+    "bouts": 48,
+    "windows": 960,
+    "counts": {
+      "continue": 310,
+      "check": 326,
+      "reconsider": 324
+    },
+    "nonzeroTaskWindows": 818,
+    "artifactSha256": "159ecabb7ead898652574c5341db899c3ced5c70fd861ff045693d664338e4de",
+    "artifactLocal": "/workspace/shared/tether-checking-value-evidence/training-1/training-bundle.json"
+  },
+  "pilot": {
+    "seeds": [
+      23003,
+      23011,
+      23017
+    ],
+    "policyBouts": 42,
+    "randomValidationBouts": 6,
+    "learningCurves": [
+      {
+        "trainingBouts": 12,
+        "trainingRows": 240,
+        "validationRows": 120,
+        "mse": 0.718906943727783
+      },
+      {
+        "trainingBouts": 24,
+        "trainingRows": 480,
+        "validationRows": 120,
+        "mse": 0.6682248963593661
+      },
+      {
+        "trainingBouts": 48,
+        "trainingRows": 960,
+        "validationRows": 120,
+        "mse": 0.637403730401235
+      }
+    ],
+    "variants": {
+      "learned": {
+        "bouts": 6,
+        "taskReward": -95,
+        "valueReward": -99.82350000000001,
+        "counts": {
+          "continue": 8,
+          "check": 35,
+          "reconsider": 77
+        },
+        "embargoSeconds": 18.900000000000006,
+        "extraWork": 9647,
+        "changedMovementTicks": 1213
+      },
+      "monitor": {
+        "bouts": 6,
+        "taskReward": -110,
+        "valueReward": -110,
+        "counts": {
+          "continue": 120,
+          "check": 0,
+          "reconsider": 0
+        },
+        "embargoSeconds": 0,
+        "extraWork": 0,
+        "changedMovementTicks": 0
+      },
+      "off": {
+        "bouts": 6,
+        "taskReward": -110,
+        "valueReward": -110,
+        "counts": {
+          "continue": 120,
+          "check": 0,
+          "reconsider": 0
+        },
+        "embargoSeconds": 0,
+        "extraWork": 0,
+        "changedMovementTicks": 0
+      },
+      "scheduled": {
+        "bouts": 6,
+        "taskReward": -87,
+        "valueReward": -91.82200000000002,
+        "counts": {
+          "continue": 8,
+          "check": 35,
+          "reconsider": 77
+        },
+        "embargoSeconds": 18.900000000000006,
+        "extraWork": 9644,
+        "changedMovementTicks": 1247
+      },
+      "alwaysCheck": {
+        "bouts": 6,
+        "taskReward": -106,
+        "valueReward": -106.69600000000001,
+        "counts": {
+          "continue": 0,
+          "check": 120,
+          "reconsider": 0
+        },
+        "embargoSeconds": 12.000000000000002,
+        "extraWork": 1392,
+        "changedMovementTicks": 0
+      },
+      "shuffled": {
+        "bouts": 6,
+        "taskReward": -94,
+        "valueReward": -94.10499999999999,
+        "counts": {
+          "continue": 102,
+          "check": 18,
+          "reconsider": 0
+        },
+        "embargoSeconds": 1.8,
+        "extraWork": 210,
+        "changedMovementTicks": 0
+      },
+      "ordinaryRefresh": {
+        "bouts": 6,
+        "taskReward": -28,
+        "valueReward": -28,
+        "counts": {
+          "continue": 120,
+          "check": 0,
+          "reconsider": 0
+        },
+        "embargoSeconds": 0,
+        "extraWork": 0,
+        "changedMovementTicks": 0
+      }
+    },
+    "artifactSha256": "063c5c17cf9593e611c8083883bf6316b7151e68237d66c82ea0485227929a27"
+  },
+  "scored": false,
+  "conclusion": "No useful contextual timing established. Learned does not beat scheduled or shuffled in development; ordinary free processing greatly stronger."
+}

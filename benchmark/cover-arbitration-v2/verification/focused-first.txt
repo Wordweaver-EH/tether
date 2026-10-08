@@ -1,0 +1,60 @@
+✖ mirrored defense preserves dodge and gaze while an embedded own spear really starts returning (10.961544ms)
+✖ a baited incoming line permits real recovery through unchanged delay/noise, then objective resumes (32.544084ms)
+✔ reflex can retain an already eligible aligned visible shot without changing dodge or gaze (10.038381ms)
+✔ an eligible shot cannot follow incompatible final defensive gaze (2.824896ms)
+✔ fresh visibility and facing guard reject a stale cached target during reflex (2.722273ms)
+✔ hidden target, occluded shot, and non-held own spear cannot create defensive throws (6.726813ms)
+✔ completed rollout without an executed weapon never earns completed-command credit (2.050431ms)
+✔ arbitration keeps common motor noise formula and leaves post-noise command distinct (0.431294ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 6
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 262.518013
+
+✖ failing tests:
+
+test at test/cover-arbitration.test.mjs:27:1
+✖ mirrored defense preserves dodge and gaze while an embedded own spear really starts returning (10.961544ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 0.24253562503633289
+  - -1
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75679def3745/tether-integrated-cover/test/cover-arbitration.test.mjs:37:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0.24253562503633289,
+    expected: -1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/cover-arbitration.test.mjs:51:1
+✖ a baited incoming line permits real recovery through unchanged delay/noise, then objective resumes (32.544084ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/75679def3745/tether-integrated-cover/test/cover-arbitration.test.mjs:75:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,149 @@
+{
+  "node": "v24.19.0",
+  "applicationTests": {
+    "passed": 321,
+    "failed": 0
+  },
+  "recursiveTests": {
+    "passed": 447,
+    "failed": 7,
+    "failures": "four missing external historical inputs; three intact historical source freezes reject current runtime"
+  },
+  "defaultParity": {
+    "seeds": [
+      101,
+      307
+    ],
+    "ticksPerCase": 1200,
+    "modes": [
+      "DUEL",
+      "COVER_CONTROL"
+    ],
+    "equal": [
+      "inputs",
+      "traces",
+      "memory",
+      "cognition"
+    ],
+    "reference": "unmodified src/mind/index.mjs at d6815cacdcddd664116de97f7398764327ad9e96"
+  },
+  "checks": {
+    "allSourceHashesMatch": true,
+    "scoresAccountForEvents": true,
+    "noTacticalLearning": true
+  },
+  "pairedControls": [
+    {
+      "variant": "routeCacheOff",
+      "seed": 101,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 101,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 101,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 101,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 307,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 307,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 307,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 307,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 509,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 509,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 509,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 509,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 911,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 911,
+      "seat": "P1",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 911,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    },
+    {
+      "variant": "reportOff",
+      "seed": 911,
+      "seat": "P2",
+      "inputEqual": true,
+      "worldEqual": true
+    }
+  ]
+}

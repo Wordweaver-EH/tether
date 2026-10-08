@@ -1,0 +1,33 @@
+{
+  "audit": "Independent read-only source review and fixed-evidence verification",
+  "checkpoint": "824f86d661eec93c0445be166de2c6e5d03a8e1d",
+  "sourceFingerprint": "85d2cdf7753068cc3e82ad7761746746ca16e88052a536c3ce07b78c26dcec05",
+  "checks": {
+    "rawLogsHashed": 36,
+    "rawBytesVerified": 12808443,
+    "savedRowsReplayed": 1733,
+    "commonPerceptContrastsVerified": 30,
+    "pairedOutcomeContrastsVerified": 30,
+    "unchangedInheritedFiles": 44,
+    "controllerDiagnosticsVerified": "Exact after JSON normalization to match stored representation",
+    "resultsNarrativeNumericReview": "Passed"
+  },
+  "verdict": "Passed. Genuine unchanged-module reuse and action-level causal routes; no full-controller transfer or performance benefit from the isolated content, memory, or monitor mechanisms demonstrated by this matrix.",
+  "outcomes": {
+    "fullPellets": 227,
+    "monitorOffPellets": 233,
+    "fullDeaths": 2,
+    "monitorOffDeaths": 2,
+    "fullCompletions": 1,
+    "monitorOffCompletions": 3,
+    "contentAndMemoryCuts": "Identical pellet/death outcomes to full in every paired case"
+  },
+  "caveats": [
+    "Common-percept contrasts condition on full sensor streams; they do not establish closed-loop benefit.",
+    "Fixed and conventional are bounded bundled comparators, not optimal or actual-compute-matched baselines. Full has 84 cache invalidations, fixed eight.",
+    "The tick-24 observation precedes observable switched policy effects. Policy first changes during step 24 and is observable from tick 25. First subsequent full large-error assessments in switch seed order 1709,3253,6421 occur at ticks 34,30,26; these do not establish reliable change detection.",
+    "Only three independent seed clusters and one small map were scored.",
+    "Inherited continuous projection, one-second memory, and unused uncertainty magnitude limit the adapter."
+  ],
+  "scope": "No additional scored experiments, source edits, raw uploads, or publication performed by this audit. Verification replay used only fixed saved evidence."
+}

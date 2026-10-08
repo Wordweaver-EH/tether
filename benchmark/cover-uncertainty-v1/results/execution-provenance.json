@@ -1,0 +1,14 @@
+{
+  "checkpoint": "b7568f2c1fa1f969b811ac636db370cd1842108a",
+  "sourceUnchanged": true,
+  "originalSevenUnchanged": true,
+  "initialInterruption": "Tool reported aborted by user after seven saved bouts; no simulator failure inferred",
+  "recoveryStartedAt": "2026-10-07T18:41:10.030Z",
+  "failedStopAttemptAt": "2026-10-07T18:41:19Z",
+  "actualCompletedAt": "2026-10-07T18:42:43.288Z",
+  "renewedPermissionAt": "2026-10-07T19:10:40Z",
+  "discoveredCompletionAt": "2026-10-07T19:11:31Z",
+  "disclosure": "The stop attempt failed and the earlier claim that nothing was running was incorrect. Remaining 38 completed before renewed permission. No new scored bouts ran after renewed permission. Original execution session was subsequently polled and confirmed completed exit 0. Existing evidence is retained, not relabeled as a newly authorized execution.",
+  "orchestrationSha256": "f5339149b1ba673fa74a4cce02cdd84e38bd0434f1d7a1dfead4ef274ad307cc",
+  "possiblePartialBout": "An eleventh tuple may have been in memory at stop attempt; the recovery continued and saved every predetermined tuple exactly once. No extra scored seed or selected rerun."
+}

@@ -61,13 +61,23 @@ export function createMemory() {
     episodes.push(item);
     if (episodes.length > 256) episodes.shift();
   }
-  return { remember, episodes: () => episodes.map((x) => ({ ...x })),
+  return { remember, episodes: () => structuredClone(episodes),
     playerModel: () => structuredClone(playerModel),
     load(snapshot) {
       if (!snapshot || typeof snapshot !== 'object') return;
-      for (const key of Object.keys(playerModel)) {
-        if (snapshot.playerModel?.[key] !== undefined)
-          playerModel[key] = structuredClone(snapshot.playerModel[key]);
+      const source = snapshot.playerModel ?? {};
+      if (Array.isArray(source.embedToRecallDelays)) playerModel.embedToRecallDelays =
+        source.embedToRecallDelays.filter(n => Number.isFinite(n) && n >= 0 && n <= 300).slice(-128);
+      for (const key of ['neutralizations','scanReversals']) if (Number.isFinite(source[key]))
+        playerModel[key] = Math.max(0, Math.min(1e6, source[key]));
+      for (const [surface,n] of Object.entries(source.favoriteSurfaces ?? {}).slice(0,64))
+        if (/^[A-Za-z0-9_-]+$/.test(surface) && Number.isFinite(n) && n >= 0)
+          Object.defineProperty(playerModel.favoriteSurfaces,surface,{ value:Math.min(n,1e6),enumerable:true,writable:true,configurable:true });
+      if (Array.isArray(snapshot.episodes)) for (const e of snapshot.episodes.slice(-256)) {
+        if (e?.kind === 'workspace' && Number.isFinite(e.time)) remember({ kind:'workspace',time:e.time,
+          focus: typeof e.focus === 'string' ? e.focus.slice(0,32) : null,
+          content:typeof e.content === 'string' ? e.content.slice(0,256) : null,
+          innerSpeech:typeof e.innerSpeech === 'string' ? e.innerSpeech.slice(0,256) : null });
       }
     },
     observePercept(view, now) {
@@ -85,7 +95,8 @@ export function createMemory() {
         }
         if (spear.state === 'RETURNING' && observedSpearState === 'EMBEDDED' &&
             observedEmbedAt !== null)
-          playerModel.embedToRecallDelays.push(now - observedEmbedAt);
+          { playerModel.embedToRecallDelays.push(now - observedEmbedAt);
+            if (playerModel.embedToRecallDelays.length > 128) playerModel.embedToRecallDelays.shift(); }
         observedSpearState = spear.state;
       } else observedSpearState = 'UNKNOWN';
       if (view.opponent) {
@@ -114,6 +125,7 @@ export function createReflection() {
         estimatedHitChance: hitChance,
         estimatedDelta: hitChance - 0.2, source: 'belief particles' };
       notes.push(note);
+      if (notes.length > 256) notes.shift();
       return note;
     },
     reflect(moment, alternative) {
@@ -122,6 +134,7 @@ export function createReflection() {
         alternative: alternative.choice,
         estimatedDelta: alternative.estimatedValue - moment.estimatedValue };
       notes.push(note);
+      if (notes.length > 256) notes.shift();
       return note;
     },
     notes: () => notes.map((n) => ({ ...n })),
@@ -181,7 +194,7 @@ export function planMove(origin, rawTarget, arena) {
   return distance(origin, waypoint) < 0.25 ? point(0, 0) : unit(delta);
 }
 
-export function planGaze(view, desired, schedule, now, model, random, ablations) {
+export function planGaze(view, desired, schedule, now, model, random, ablations, externalMotorNoise = false) {
   let target = desired;
   if (ablations.noAttentionSchema) {
     const theta = now * Math.PI * 0.9;
@@ -196,6 +209,8 @@ export function planGaze(view, desired, schedule, now, model, random, ablations)
   const angularSpeed = Math.abs(angleDiff(desiredAngle, model.previousGazeAngle)) * 30;
   model.previousGazeAngle = desiredAngle;
   const sigma = model.baseAimNoise + model.speedAimNoise * angularSpeed;
-  const noisy = desiredAngle + normal(random) * Math.min(0.18, sigma);
+  // Preserve shared cognitive RNG advancement when the wrapper owns motor noise.
+  const motorSample = normal(random);
+  const noisy = desiredAngle + (externalMotorNoise ? 0 : motorSample) * Math.min(0.18, sigma);
   return point(Math.cos(noisy), Math.sin(noisy));
 }

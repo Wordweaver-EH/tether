@@ -1,0 +1,770 @@
+{
+  "checkpoint": "b7568f2c1fa1f969b811ac636db370cd1842108a",
+  "completeUniqueFrozenTuples": 48,
+  "independentlyRecomputed": "events/score; timing/count/cap; visibility; selected packets/forecasts/assessments/censoring; monitor requests; planning/logical work; stale sensor error; recovery/censoring; seed paired contrasts",
+  "originalSevenAndSummaryUnchanged": true,
+  "aggregates": {
+    "familiar/full": {
+      "subject": 224,
+      "opponent": 16,
+      "requests": 13295,
+      "plans": 368,
+      "units": 1677556,
+      "staleSamples": 5208,
+      "staleErrorSum": 18352.44593647324,
+      "assessments": 1081,
+      "largeAssessments": 617,
+      "nearResetLarge": 356
+    },
+    "familiar/monitorOff": {
+      "subject": 132,
+      "opponent": 28,
+      "requests": 0,
+      "plans": 397,
+      "units": 1669453,
+      "staleSamples": 3408,
+      "staleErrorSum": 10011.995338977065,
+      "assessments": 1232,
+      "largeAssessments": 743,
+      "nearResetLarge": 229
+    },
+    "familiar/fixed": {
+      "subject": 141,
+      "opponent": 21,
+      "requests": 480,
+      "plans": 426,
+      "units": 1675025,
+      "staleSamples": 3227,
+      "staleErrorSum": 9341.821183184487,
+      "assessments": 1260,
+      "largeAssessments": 742,
+      "nearResetLarge": 230
+    },
+    "switch/full": {
+      "subject": 196,
+      "opponent": 17,
+      "requests": 13533,
+      "plans": 466,
+      "units": 1684939,
+      "staleSamples": 6621,
+      "staleErrorSum": 27234.27981017708,
+      "assessments": 932,
+      "largeAssessments": 544,
+      "nearResetLarge": 180
+    },
+    "switch/monitorOff": {
+      "subject": 141,
+      "opponent": 19,
+      "requests": 0,
+      "plans": 405,
+      "units": 1677326,
+      "staleSamples": 5286,
+      "staleErrorSum": 17246.557465876765,
+      "assessments": 1037,
+      "largeAssessments": 600,
+      "nearResetLarge": 127
+    },
+    "switch/fixed": {
+      "subject": 139,
+      "opponent": 17,
+      "requests": 478,
+      "plans": 429,
+      "units": 1680626,
+      "staleSamples": 5301,
+      "staleErrorSum": 17304.62835254915,
+      "assessments": 1052,
+      "largeAssessments": 606,
+      "nearResetLarge": 118
+    }
+  },
+  "seedClusters": [
+    {
+      "seed": 5653,
+      "comparator": "monitorOff",
+      "familiar": 9.0,
+      "switch": 7.0,
+      "differenceInDifferences": -2.0
+    },
+    {
+      "seed": 5653,
+      "comparator": "fixed",
+      "familiar": 6.5,
+      "switch": 6.5,
+      "differenceInDifferences": 0.0
+    },
+    {
+      "seed": 6761,
+      "comparator": "monitorOff",
+      "familiar": 18.5,
+      "switch": 8.0,
+      "differenceInDifferences": -10.5
+    },
+    {
+      "seed": 6761,
+      "comparator": "fixed",
+      "familiar": 14.0,
+      "switch": 6.5,
+      "differenceInDifferences": -7.5
+    },
+    {
+      "seed": 7873,
+      "comparator": "monitorOff",
+      "familiar": 16.0,
+      "switch": 10.5,
+      "differenceInDifferences": -5.5
+    },
+    {
+      "seed": 7873,
+      "comparator": "fixed",
+      "familiar": 16.0,
+      "switch": 11.5,
+      "differenceInDifferences": -4.5
+    },
+    {
+      "seed": 8923,
+      "comparator": "monitorOff",
+      "familiar": 8.5,
+      "switch": 3.0,
+      "differenceInDifferences": -5.5
+    },
+    {
+      "seed": 8923,
+      "comparator": "fixed",
+      "familiar": 7.5,
+      "switch": 4.0,
+      "differenceInDifferences": -3.5
+    }
+  ],
+  "verifiedLogs": [
+    {
+      "tuple": [
+        5653,
+        "P1",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "69d43ec9cca3fe5b470c42abc1f335a95bcee537c5ea4506c36385493df63f53",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P1",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "5cacadcf0ebd09e63ef7137a985e062d9303bb3dd5219d8f4fe461cfe29e8894",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P1",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "4d71b9c3e34015fdbd8636ed12a7a5732fe5d889d4b67f81de9a82d97abdc9bb",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P1",
+        "switch",
+        "full"
+      ],
+      "logSha256": "9bacab29d601e07fcb996ceecbc433587e895b569fd5d03d1af8d9029faef1c0",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P1",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "34fa656ef6af6cce234aedb19e8330f250cdf3acc59693c715cee905284dfc3d",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P1",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "ad5a2bfebcc84f9106cbf2e17392b7ea36c73d3041f555c1a61f1f8d2de3672c",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P2",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "559909f71047c2b3a29490ef67b119662ec0ab2ecba9b4c9f81d04231979ad6e",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P2",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "e932d8e29afca2a9cd411ad725b1e9df516ef5357b78f765e359eabad1451a48",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P2",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "b52b6af40755fc810c1b5e606d40fab73917dce6c8915167b18de3fa0502f6a3",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P2",
+        "switch",
+        "full"
+      ],
+      "logSha256": "9e951635ab39b1649ca30db3f565a75d1eb0c01a035550cf90c410b7892a3cb5",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P2",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "7310ae2d8f607cf3e0bf46c76e9158bb37f794b8c0b6c57ee83a7de8ed15860a",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        5653,
+        "P2",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "ab143bcde6b452fe42425e9a8f108e61f47dec63c751084f35b79d692294082f",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P1",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "11a2dbc68f23b4c0f3135de7cf08d4ebf67b72119405cc22917027d29d0fa110",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P1",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "c1b4a8f7d81cb2afd421e76fc16a43806e0b35d0c4d3a47327576cf32dafe7e0",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P1",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "e7c191a34419375802707659598ac1423677967f6d2bdaef93633b03a1d3b544",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P1",
+        "switch",
+        "full"
+      ],
+      "logSha256": "ee4842964a32789bc40924fe680403e9d2fcf6b3ce2edfe9c143135aaa1db809",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P1",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "56caee82bd001dd176067af12db0a789d13b7eb6d1636f9e3bf9621aea992a67",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P1",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "ee0417ac9a8746cdaf2aa576bec0842833a7ace1d19daebc80b238cce91a006d",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P2",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "35967a30af8c74be36c617b404022b76f2e8687d7e23ea22d4f111ff929d70b9",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P2",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "6061bdb0f11cfcc4425efbbaa356baf9059272e739d21bb86fb49e001e3b2fbb",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P2",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "eab78abbd48007fa3803ee3f2a4f7d8b164ab3f3b8e67dae725c7bf5d322da4a",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P2",
+        "switch",
+        "full"
+      ],
+      "logSha256": "41e4224e8b8ee5444b94bd22edd389aeca68f8d5b291a7b2c17571b66d911012",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P2",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "c08b2eb9283c8eac782f80eb60512b715ac6b52937d843adbd8fdc3e35adbaca",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        6761,
+        "P2",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "0d5a7b3efbb392ec4bd11e42170bce22843176b3b11f9cd3393fb5eed702497a",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P1",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "35ed3707fdabe0050102a9cedfae0ec912a2ea5bc8231a84bb9f3538da57dd42",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P1",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "be3d645d01df648bfc7c3a2ee3500ecb06232083d29fc9d5f492ba0362111f49",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P1",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "a004d1c5685e3de290619d2c385cb0c2ac191bcddf2db7638620b2bcf0a6fa7b",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P1",
+        "switch",
+        "full"
+      ],
+      "logSha256": "cb058327c580ae8cc2ffbd555e3f29e2cbdc12e5287029bcf160474387f51502",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P1",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "920de769b6d57fb771f9c5d586119182782a692ea5557b43ee81c29b8795c392",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P1",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "28c4581220a05e97a15b47f91d78ba65db132c778e0e8856862781c2bf90a8c4",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P2",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "75f54edc0d2de63ffa769ba603c7962a55bd700e116a42dabdbe1dc8a8e1f8af",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P2",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "9f84ed85cda99d396930afcd6bba9b0a0609136ee6a74567e8d181fb3182a97e",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P2",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "b675e0bd1b234937be65b2e5d676a9a630db9099f43a21eed3f4b9f8652119e8",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P2",
+        "switch",
+        "full"
+      ],
+      "logSha256": "b6490b6defa91a20d3f7419aa96e8d41fd4d46cfd38032c0cc92c46765bef65d",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P2",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "41b292ba303e6db30c78c04cc982399f7b40a31e00d9e6946c7c7444efa37c17",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        7873,
+        "P2",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "79dce4c7ff2f0e6af5abf53bc732afbf7fb5fe15236e239963d8ab07b049f65d",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P1",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "1c864fdb1db6ee9f1d65381ace8f09920752001649136765a624470378201065",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P1",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "ab9fe4cb26655342cc9fb51528ef5b5df14119ab6a7b9d236770ed21dd501b21",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P1",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "3a060a500813ce3e071f63a6a4b629da87ed434cc84a73a53708e2a149ce7f7f",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P1",
+        "switch",
+        "full"
+      ],
+      "logSha256": "3fcb5f25f1fc0b02eec1771d0ac4f599dbb75459673f4a2e65415898472ddef8",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P1",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "c1933f60de955c6a08572f23fd82e49783eac437728c631fa539460812a6641a",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P1",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "8aad030d803fd0825651addba34289f2919d5481d7831da056b3f3fddf04e51a",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P2",
+        "familiar",
+        "full"
+      ],
+      "logSha256": "a3f839fd2ef6bab0cdbb3afb9f6a33f631167f328f0596fa5dd4bd8c2f0ef5e5",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P2",
+        "familiar",
+        "monitorOff"
+      ],
+      "logSha256": "fa4b0d202024826360804612e8acf04ed4551eb60b6bd89ca4082024c8898694",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P2",
+        "familiar",
+        "fixed"
+      ],
+      "logSha256": "0f8d6e38a7f11f901bfae4bee3fb4d40605223acb9ee40e7da662aa22907f4c8",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P2",
+        "switch",
+        "full"
+      ],
+      "logSha256": "97061d7e40f97f8602547609542e9f5c91e12363ade9e65d62ec951f5de805a0",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P2",
+        "switch",
+        "monitorOff"
+      ],
+      "logSha256": "f70dccdba7f07487cfdd4ea2168a72df1aa98209e2e220a5c97c5cdabbf71c71",
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "tuple": [
+        8923,
+        "P2",
+        "switch",
+        "fixed"
+      ],
+      "logSha256": "1213e06683826810ce1560dd795d7bb78a5e41bdae1bb52b6e57becbcc1f27a2",
+      "steps": 7200,
+      "decisions": 1796
+    }
+  ],
+  "exposureScope": "Diagnostic path transitions at subject decision cadence; completed means circuit-to-hold, interrupted means circuit-to-ingress. On-policy exposure, not fixed matched circuits.",
+  "exposureAggregates": {
+    "familiar/full": {
+      "diagnosticDecisions": 14368,
+      "holdDecisions": 1369,
+      "beforeDecisions": 7200,
+      "beforeHoldDecisions": 718,
+      "beforeCircuitStarts": 10,
+      "beforeCircuitCompleted": 6,
+      "beforeCircuitInterrupted": 4,
+      "afterDecisions": 7168,
+      "afterHoldDecisions": 651,
+      "afterCircuitStarts": 16,
+      "afterCircuitInterrupted": 8,
+      "afterCircuitCompleted": 6
+    },
+    "familiar/monitorOff": {
+      "diagnosticDecisions": 14368,
+      "holdDecisions": 3094,
+      "beforeDecisions": 7200,
+      "beforeHoldDecisions": 1724,
+      "beforeCircuitStarts": 16,
+      "beforeCircuitCompleted": 9,
+      "beforeCircuitInterrupted": 7,
+      "afterDecisions": 7168,
+      "afterHoldDecisions": 1370,
+      "afterCircuitStarts": 24,
+      "afterCircuitInterrupted": 9,
+      "afterCircuitCompleted": 14
+    },
+    "familiar/fixed": {
+      "diagnosticDecisions": 14368,
+      "holdDecisions": 3225,
+      "beforeDecisions": 7200,
+      "beforeHoldDecisions": 1742,
+      "beforeCircuitStarts": 16,
+      "beforeCircuitCompleted": 10,
+      "beforeCircuitInterrupted": 6,
+      "afterDecisions": 7168,
+      "afterHoldDecisions": 1483,
+      "afterCircuitStarts": 24,
+      "afterCircuitInterrupted": 11,
+      "afterCircuitCompleted": 11
+    },
+    "switch/full": {
+      "diagnosticDecisions": 14368,
+      "holdDecisions": 932,
+      "beforeDecisions": 7200,
+      "beforeHoldDecisions": 718,
+      "beforeCircuitStarts": 10,
+      "beforeCircuitCompleted": 6,
+      "beforeCircuitInterrupted": 4,
+      "afterDecisions": 7168,
+      "afterHoldDecisions": 214,
+      "afterCircuitStarts": 11,
+      "afterCircuitInterrupted": 10,
+      "adoptedSouth": 8,
+      "southViaCircuit": 4,
+      "southViaIngress": 4,
+      "afterCircuitCompleted": 1
+    },
+    "switch/monitorOff": {
+      "diagnosticDecisions": 14368,
+      "holdDecisions": 2624,
+      "beforeDecisions": 7200,
+      "beforeHoldDecisions": 1724,
+      "beforeCircuitStarts": 16,
+      "beforeCircuitCompleted": 9,
+      "beforeCircuitInterrupted": 7,
+      "afterDecisions": 7168,
+      "afterHoldDecisions": 900,
+      "afterCircuitStarts": 24,
+      "afterCircuitInterrupted": 16,
+      "adoptedSouth": 8,
+      "southViaCircuit": 7,
+      "afterCircuitCompleted": 8,
+      "southViaIngress": 1
+    },
+    "switch/fixed": {
+      "diagnosticDecisions": 14368,
+      "holdDecisions": 2609,
+      "beforeDecisions": 7200,
+      "beforeHoldDecisions": 1742,
+      "beforeCircuitStarts": 16,
+      "beforeCircuitCompleted": 10,
+      "beforeCircuitInterrupted": 6,
+      "afterDecisions": 7168,
+      "afterHoldDecisions": 867,
+      "afterCircuitStarts": 24,
+      "afterCircuitInterrupted": 14,
+      "afterCircuitCompleted": 9,
+      "adoptedSouth": 8,
+      "southViaCircuit": 6,
+      "southViaIngress": 2
+    }
+  },
+  "scope": "Independent read-only recomputation from all retained rows. Exact replay was additionally performed by the frozen audit.mjs. Four-seed descriptive evidence, not broad validity.",
+  "sourceManifestSha256": "2e84c2ea73aaada59c1bad4062f5845d2ebdc783374dd8f2ea63ea5129e7d298",
+  "sourceFilesRechecked": 44,
+  "readOnlyAuditorSha256": "a2b3a99d164e4b7305a22c4bcf3644b5cbc9874130f0bde10a1d5ba791e5ab4b",
+  "exposureAuditorSha256": "19ac1f79090c1b9d1d37f9437694fb697204b80efa21f945a0be8767d58b64a6",
+  "provenanceCaveat": "Actual recovery completed18:42:43UTC before renewed19:10:40 permission; failed-stop timeline independently verified in file artifacts, session failure reported separately."
+}

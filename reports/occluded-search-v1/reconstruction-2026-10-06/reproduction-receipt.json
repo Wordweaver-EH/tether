@@ -1,0 +1,17 @@
+{
+  "kind": "new-forensic-computational-reproduction-not-original-disk-copy",
+  "sourceCommit": "b1516040b116eb771ba75c53a9586c4ad60ef510",
+  "freezeSha256": "74ee8d6f4c25f34b50642d4e217bc3dd04b933ca7895bd91330948d1e48f474f",
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "arch": "x64",
+  "authorizedForensicAttempts": 1,
+  "executedForensicAttempts": 1,
+  "executionExitCode": 0,
+  "originalRawSha256": "23780c413849d9810245b9fbe3782852b5033ca30b371ff4f3df8f61ee89fa36",
+  "reproducedRawSha256": "23780c413849d9810245b9fbe3782852b5033ca30b371ff4f3df8f61ee89fa36",
+  "rawBytes": 9342976,
+  "exactRawByteMatch": true,
+  "completedUTC": "2026-10-06T04:55:11.298534+00:00",
+  "provenance": "Regenerated once from exact published frozen inputs after original raw copies became unavailable. No source changes, retries, tuning or outcome selection."
+}

@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "approved": true,
+  "status": "INDEPENDENT_RESULT_REVIEW_PASS_PRIMARY_HYPOTHESIS_UNSUPPORTED",
+  "approvalScope": "Calculation/evidence/report integrity approved; this is not approval of the primary empirical hypothesis, which failed its fixed criteria. No controller reruns or policy/criteria changes.",
+  "reviewedAt": "2026-10-03T13:10:31.812286+00:00",
+  "reportSha256": "0beae12c0f132fd87e43af3164ae487b1453d9df55a1b7bf377e0e24c659532e",
+  "analysisOutputManifestSha256": "4346e0432d6373097946078ffe44af49f1b4c88572e69cc1196858e07d9ef3b6",
+  "terminalAnalysisExitAuditSha256": "372784a5e87a4916470cb504d892312ff6afa9094ba3ec408acc2ad52abf159d",
+  "adapterManifestSha256": "016816f7077804e78c1b640bd414734729d4bb40427e3533a85d2b46056a0ae6",
+  "frozenAnalysisManifestSha256": "7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632",
+  "analysisReleaseSha256": "0b83ceba01651f93c297688073114dd9575b771f6b33e8334d3e24e61dfdcd64",
+  "independentUnionReviewSha256": "2b1fb34cf146a81038bf54da8889b4883b301e7256af77737977cefcbbbf411c",
+  "reviewToolsManifestSha256": "297fc85c8107307a961c2ce205afcdbddf9ab976066e9f620879a48c7bcfddb7",
+  "reviewEvidence": [
+    {
+      "path": "PERFORMANCE-REVIEW.json",
+      "sha256": "257a20ff4824b4143952a671777902360a662b89cc3659ce06d3574844480b6e"
+    },
+    {
+      "path": "DIAGNOSTIC-AGGREGATE-REVIEW.json",
+      "sha256": "14abff65bf15cccc74f7acecf1e7642249f133b5dc9b433e8278553728275ef3"
+    },
+    {
+      "path": "DIAGNOSTIC-SAMPLE-CHECK.json",
+      "sha256": "8317771257ea36d61de45b425ba8a38571351331e72ff6f070e5d441f01c20c7"
+    }
+  ],
+  "checks": {
+    "performanceLeaves": 52046,
+    "performanceMismatches": 0,
+    "diagnosticComparisons": 1355402,
+    "diagnostics": 4224,
+    "scoresCrosscheckedAgainstGenuineReceipts": 4224,
+    "nativeArmConditionGroups": 88,
+    "calibrationArmFamilies": 40,
+    "all4235OutputFilesBoundToVerifiedManifest": true,
+    "sourceImmutability": "PASS",
+    "shared20000ResampleVectors": "Independently generated JS BigInt and Python vectors identical to frozen vectors",
+    "faithfulness": {
+      "decisions": 37999104,
+      "mismatches": 0,
+      "missingReport": 0,
+      "witnesses": 0
+    },
+    "controllersRun": false,
+    "secondFullRawScan": false
+  },
+  "primary": {
+    "supported": false,
+    "label": "baseline-competence-confounded",
+    "ordinaryDefaultNetPoints": 4316,
+    "mindDefaultNetPoints": 76,
+    "defaultDenominatorMinutes": 240,
+    "ordinaryDefaultNetPerMinute": 17.983333333333334,
+    "mindDefaultNetPerMinute": 0.31666666666666665,
+    "competenceGapMindMinusOrdinary": -17.666666666666668,
+    "requiredCompetenceGapAtLeast": -1,
+    "positiveFamily99pctLowerBounds": 1,
+    "requiredPositiveFamilies": 3,
+    "grand": {
+      "mean": 4.80625,
+      "lower": 3.667777777777778,
+      "upper": 5.821135416666665
+    },
+    "grandUnitsAndDirection": "net points per minute; comparator(default-minus-shift drop) minus full-mind(default-minus-shift drop), not absolute performance advantage",
+    "opponentFamilyContrast": {
+      "mean": 22.4625,
+      "lower": 20.829166666666666,
+      "upper": 23.695833333333333
+    },
+    "explanation": "Both the baseline competence guard and minimum three supportive families fail; positive grand contrast alone cannot support robustness."
+  },
+  "sensitivityPanels": {
+    "conventional-useful-2x": {
+      "supported": false,
+      "label": "baseline-competence-confounded",
+      "grand": {
+        "mean": -0.3869444444444444,
+        "lower": -0.8369444444444445,
+        "upper": 0.1073784722222207
+      },
+      "opponentFamilyHarmVeto": true,
+      "sharedOrdinaryCompetenceGuard": false
+    },
+    "conventional-useful-4x": {
+      "supported": false,
+      "label": "baseline-competence-confounded",
+      "grand": {
+        "mean": -0.06972222222222223,
+        "lower": -0.3229166666666667,
+        "upper": 0.23057986111110898
+      },
+      "opponentFamilyHarmVeto": true,
+      "sharedOrdinaryCompetenceGuard": false
+    }
+  },
+  "recovery": {
+    "sessionNumerator": {
+      "support": "mixed-unsupported-or-inconclusive",
+      "initiallyImpairedFamilies": 5,
+      "jointlySupportiveFamilies": 0
+    },
+    "withinBoutNumerator": {
+      "support": "mixed-unsupported-or-inconclusive",
+      "initiallyImpairedFamilies": 5,
+      "jointlySupportiveFamilies": 0
+    }
+  },
+  "calibrationFullMind": {
+    "arena": {
+      "completed": 5557,
+      "supportClusters": 12,
+      "adequateSupport": true,
+      "favorablePointCriteria": true,
+      "Brier": {
+        "mean": 0.1384873128328871,
+        "lower": 0.1333902770719422,
+        "upper": 0.14314667635907566
+      },
+      "signedBias": {
+        "mean": 0.00417202932672574,
+        "lower": -0.004402635926462039,
+        "upper": 0.01339141229495565
+      },
+      "BrierMinusTrainingReference": {
+        "mean": -0.016802162309223247,
+        "lower": -0.02330964011701364,
+        "upper": -0.010922234402941981
+      }
+    },
+    "spear": {
+      "completed": 3620,
+      "supportClusters": 12,
+      "adequateSupport": true,
+      "favorablePointCriteria": true,
+      "Brier": {
+        "mean": 0.13057589641485337,
+        "lower": 0.1269953734930184,
+        "upper": 0.13402438935485306
+      },
+      "signedBias": {
+        "mean": -0.0029341061370157357,
+        "lower": -0.011567340626941341,
+        "upper": 0.006025045873897589
+      },
+      "BrierMinusTrainingReference": {
+        "mean": -0.008548476589561477,
+        "lower": -0.01167746146860958,
+        "upper": -0.005287070320902451
+      }
+    },
+    "turn": {
+      "completed": 3026,
+      "supportClusters": 12,
+      "adequateSupport": true,
+      "favorablePointCriteria": true,
+      "Brier": {
+        "mean": 0.1334599607633719,
+        "lower": 0.127020913580081,
+        "upper": 0.13964495581478606
+      },
+      "signedBias": {
+        "mean": -0.008698572282876342,
+        "lower": -0.018494025870094234,
+        "upper": 0.00238753414986935
+      },
+      "BrierMinusTrainingReference": {
+        "mean": -0.007615536788143706,
+        "lower": -0.010518910289363165,
+        "upper": -0.004753569930848719
+      }
+    },
+    "fov": {
+      "completed": 2953,
+      "supportClusters": 12,
+      "adequateSupport": true,
+      "favorablePointCriteria": true,
+      "Brier": {
+        "mean": 0.1337315119688597,
+        "lower": 0.12975954887406604,
+        "upper": 0.137451391761819
+      },
+      "signedBias": {
+        "mean": -0.0047165618759093765,
+        "lower": -0.016619515769593574,
+        "upper": 0.008962093109588311
+      },
+      "BrierMinusTrainingReference": {
+        "mean": -0.008128630570719537,
+        "lower": -0.013642236214345696,
+        "upper": -0.002993492622637132
+      }
+    },
+    "opponent": {
+      "completed": 2140,
+      "supportClusters": 12,
+      "adequateSupport": true,
+      "favorablePointCriteria": true,
+      "Brier": {
+        "mean": 0.08734036031230619,
+        "lower": 0.0756005378291074,
+        "upper": 0.09963365214915175
+      },
+      "signedBias": {
+        "mean": -0.009643596203800522,
+        "lower": -0.014055160840569582,
+        "upper": -0.005319006609616474
+      },
+      "BrierMinusTrainingReference": {
+        "mean": -0.001909537688637411,
+        "lower": -0.007086108535883715,
+        "upper": 0.0031537743495813134
+      }
+    }
+  },
+  "escalation": {
+    "fullMindType2ShareMeanRange": [
+      0.9401886949755448,
+      0.9789373981028606
+    ],
+    "conditionsWithPositiveEarlyLateDecline95pctCI": [],
+    "novelMinusFamiliarPositive95pctCIConditions": [
+      "arena-new-obstacles",
+      "default",
+      "spear-minus25"
+    ],
+    "novelMinusFamiliarNegative95pctCIConditions": [
+      "searched-style-1"
+    ],
+    "interpretation": "Type2 was near-continuous rather than generally declining over time. Novelty contrast varies by condition; no broad mechanism-support claim follows."
+  },
+  "attribution": {
+    "positiveFullMindAdvantageAmong20CorrectedContrasts": 0,
+    "negativeCorrectedContrasts": [
+      [
+        "mind-fixed-metacog",
+        "arena"
+      ],
+      [
+        "mind-fixed-metacog",
+        "opponent"
+      ],
+      [
+        "mind-learning-frozen",
+        "spear"
+      ],
+      [
+        "mind-learning-frozen",
+        "opponent"
+      ]
+    ],
+    "interpretation": "No corrected ablation contrast supports smaller drops because a component was present. Negative drop contrasts do not imply absolute performance improvement or a general causal claim."
+  },
+  "costs": {
+    "mind-full": {
+      "decisionMeanMs": 0.8318939110056792,
+      "decisionP95Ms": 1.2386050000004616,
+      "actualMeanRatios": {
+        "versusFullMind": 1,
+        "versusOrdinary": 47.35964203325165
+      }
+    },
+    "mind-no-novelty": {
+      "decisionMeanMs": 0.8323690991646246,
+      "decisionP95Ms": 1.2503919999999766,
+      "actualMeanRatios": {
+        "versusFullMind": 1.0005712124498796,
+        "versusOrdinary": 47.386694450402885
+      }
+    },
+    "mind-fixed-metacog": {
+      "decisionMeanMs": 0.837002169794742,
+      "decisionP95Ms": 1.271944000000076,
+      "actualMeanRatios": {
+        "versusFullMind": 1.0061405171037823,
+        "versusOrdinary": 47.650454725185845
+      }
+    },
+    "mind-learning-frozen": {
+      "decisionMeanMs": 0.4052435250437212,
+      "decisionP95Ms": 0.6058720000000903,
+      "actualMeanRatios": {
+        "versusFullMind": 0.4871336593314176,
+        "versusOrdinary": 23.070475728283895
+      }
+    },
+    "mind-broadcast-cut": {
+      "decisionMeanMs": 0.4471484968274805,
+      "decisionP95Ms": 0.6580599999997503,
+      "actualMeanRatios": {
+        "versusFullMind": 0.5375066350550892,
+        "versusOrdinary": 25.45612182670666
+      }
+    },
+    "conventional": {
+      "decisionMeanMs": 0.017565460279906648,
+      "decisionP95Ms": 0.029595000000028904,
+      "actualMeanRatios": {
+        "versusFullMind": 0.021115024461077863,
+        "versusOrdinary": 1
+      }
+    },
+    "conventional-useful-2x": {
+      "decisionMeanMs": 4.227755880844862,
+      "decisionP95Ms": 8.236141000001226,
+      "actualMeanRatios": {
+        "versusFullMind": 5.0820853776101265,
+        "versusOrdinary": 240.68574426603814
+      }
+    },
+    "conventional-useful-4x": {
+      "decisionMeanMs": 7.1932830195437845,
+      "decisionP95Ms": 13.767394999995304,
+      "actualMeanRatios": {
+        "versusFullMind": 8.646875430122817,
+        "versusOrdinary": 409.5129250767355
+      }
+    }
+  },
+  "qualifications": [
+    "Exploratory approximate stratified bootstrap with12clusters,3per opponent block; retain frozen correction/endpoint hierarchy",
+    "Calibration is a separate positive result and does not rescue failed primary robustness or recovery",
+    "Original805+resumed3419 origin/provenance preserved; seven original partials excluded from primary sample but retained in evidence",
+    "Historical original terminal child/parent/partial CPU unavailable and explicitly null; capacity allowance is not measured actual CPU",
+    "Recorded Node/platform/architecture/CPU model/count identical by origin, but physical allocation, contention and global shared capacity are unproven; costs are instrumented-context timings, not universally matched compute",
+    "Original process extinction/global eight-worker concurrency/exactly-once partial execution remain unproven; qualifications survive complete results",
+    "Observer ledger showed no retained mismatch across37,999,104 decisions; compact commitments do not constitute independent physics replay or recover omitted individual report hashes",
+    "No next experiment, retuning or additional controller execution authorized; stop and report this study"
+  ],
+  "outstandingScientificReviewBlockers": []
+}

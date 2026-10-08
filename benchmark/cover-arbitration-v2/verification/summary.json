@@ -1,0 +1,2796 @@
+{
+  "scope": "fixed bounded repair characterization; no human engagement, general strength, learning or consciousness inference",
+  "node": "v24.19.0",
+  "seeds": [
+    1237,
+    2081,
+    3253,
+    4447
+  ],
+  "durationSec": 30,
+  "reviewedCommit": "d767e9bd3be604791a5b7f2b61f8c86bad9e1f42",
+  "reference": "97cbc63a78f9a9d543f25d582e4078c4c9910ef2",
+  "source": {
+    "src/agents/basic.mjs": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
+    "src/agents/cover-control.mjs": "42007be15c44eb203ec28f1fd8fa953baff2ba53eee75518c5f04272f5deb07c",
+    "src/agents/cover-integrated.mjs": "8c78b4557152f640bc88a6f4fbef05203b26770393a76b574c27f8dd15049e92",
+    "src/agents/cover-interface.mjs": "0fdfbb7021d77bd5e843d67ea6405bbf2ee656ad3a67dae988ca4c6e300fb46d",
+    "src/agents/cover-mind.mjs": "ff25cea4c9d4c71b339d00e3e4e3850df4aa2dfb89aad3ac188d179718e7cf32",
+    "src/agents/dodger.mjs": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
+    "src/agents/param.mjs": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1",
+    "src/agents/robust-baseline-agent.mjs": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d",
+    "src/agents/robust-baseline.mjs": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0",
+    "src/agents/spear-memory.mjs": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
+    "src/agents/strategies.mjs": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
+    "src/cover-control.js": "a3ff4d08b44d408b0eb1236c9e0b4602135ae073c21c2fd14aae7e1d0cc53ca1",
+    "src/deterministic-math.js": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",
+    "src/headless.mjs": "c70314343a7b9c5dbe2776a5654b9ff63db77c98a2fe764940a7ec781678b8d1",
+    "src/log.js": "2097bc8e1337b6210f2e8fa147959634c5e12c9c492bd31b59ed17285355bbe8",
+    "src/mind/belief.mjs": "c42aea8723c257d33108a62ccd63c0d755105f4356d03aa85aeafa73da9ba426",
+    "src/mind/cognition.mjs": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+    "src/mind/components.mjs": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706",
+    "src/mind/content-broadcast.mjs": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+    "src/mind/coordination.mjs": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf",
+    "src/mind/cover-policy.mjs": "128112981ef492e3faa9cadd959dca0f50b9b71ff61e3deb270d0a0648841e2e",
+    "src/mind/index.mjs": "9ee63c32de9827821e64ab204f537ef36a163a3531571a1b101fc5a9189c67cf",
+    "src/mind/math.mjs": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+    "src/mind/novelty.mjs": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468",
+    "src/mind/own-spear.mjs": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+    "src/mind/percept-contact.mjs": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+    "src/mind/prediction-monitor.mjs": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+    "src/mind/rollout-completion.mjs": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+    "src/mind/specialists.mjs": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0",
+    "src/mind/target-memory.mjs": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+    "src/mind/workspace.mjs": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+    "src/perception.js": "b50c327c3e593d58034b4c40210195b1d2b7242ae91a8bedf2168d1882f2ccb3",
+    "src/sim.js": "5334e549fb280ed9c5b33d65876a720b0bcd96f1c51e8000aff7b47bb0cbcbec",
+    "src/visibility.js": "1ff9e316262dfdbb9d8645359b39033c229926cfd1eafa0ae1faeaaa8a28c11d",
+    "client/mind-readouts.mjs": "fcdb83b4489d19edf9a010d49a6add0546f6e92680eac4400880e1b07e2a01bf",
+    "replay/app.mjs": "0d1777d2a247499bb0f06714340a6c07440628d0653b64e1653c736462732cc9",
+    "test/cover-arbitration.test.mjs": "47bf57cfb72b088f93a52691690c884c338b75cdf46e5a0bfac53166d192ba17",
+    "test/cover-integrated-client.test.mjs": "b3cf8e096ab88ceece42b0e2e535f36d2d2d2c24597ba72da63639dfaf541436",
+    "benchmark/cover-arbitration-v2/PROTOCOL.md": "ad8256135477aef77e81a9b5758126c6cfa6d2fe2a063be177c14bfee40d505b",
+    "benchmark/cover-arbitration-v2/run.mjs": "14f83509bbfba5cba72b68027846dd8a1076627aeaf6ba91415bd570cdc74df9",
+    "benchmark/cover-arbitration-v2/verify.mjs": "0f5940b889552eb63d1c82ebc2b5a3ee8ea2cb0abd6f6979f2778d931fd0691b",
+    "benchmark/cover-arbitration-v2/v1-source-manifest.json": "f59f960903ff3993942d973641d1d3642b9b508594214be1b008783dc13e6b13"
+  },
+  "aggregates": {
+    "v1": {
+      "bouts": 8,
+      "mindPoints": 19,
+      "baselinePoints": 49,
+      "mindRingPoints": 0,
+      "baselineRingPoints": 0,
+      "mindHitPoints": 19,
+      "baselineHitPoints": 49,
+      "mindThrows": 26,
+      "mindRecalls": 11,
+      "mindThrowEvents": 26,
+      "mindRecallEvents": 10,
+      "mindRingOccupancyTicks": 13464,
+      "baselineRingOccupancyTicks": 7180,
+      "contestedTicks": 6965,
+      "focus": {
+        "Objective": 6665,
+        "Threat": 153,
+        "Reflex": 309,
+        "Hunt": 12,
+        "Search": 29
+      },
+      "decisions": 7168,
+      "defensiveDecisions": 462,
+      "defensiveEmbeddedDecisions": 3,
+      "defensiveThrows": 2,
+      "defensiveRecalls": 2,
+      "defensiveEmbeddedWithoutRecall": 1,
+      "objectiveResumeAfterDefense": 122,
+      "planningRequests": 213,
+      "planningAttempts": 213,
+      "planningCompleted": 151,
+      "planningUnfinished": 62,
+      "budgetSpent": 811624
+    },
+    "repaired": {
+      "bouts": 8,
+      "mindPoints": 19,
+      "baselinePoints": 49,
+      "mindRingPoints": 0,
+      "baselineRingPoints": 0,
+      "mindHitPoints": 19,
+      "baselineHitPoints": 49,
+      "mindThrows": 26,
+      "mindRecalls": 11,
+      "mindThrowEvents": 26,
+      "mindRecallEvents": 10,
+      "mindRingOccupancyTicks": 13479,
+      "baselineRingOccupancyTicks": 7177,
+      "contestedTicks": 6984,
+      "focus": {
+        "Objective": 6670,
+        "Threat": 148,
+        "Reflex": 309,
+        "Hunt": 12,
+        "Search": 29
+      },
+      "decisions": 7168,
+      "defensiveDecisions": 457,
+      "defensiveEmbeddedDecisions": 2,
+      "defensiveThrows": 1,
+      "defensiveRecalls": 2,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "objectiveResumeAfterDefense": 122,
+      "planningRequests": 212,
+      "planningAttempts": 212,
+      "planningCompleted": 149,
+      "planningUnfinished": 63,
+      "budgetSpent": 811592
+    }
+  },
+  "bouts": [
+    {
+      "variant": "v1",
+      "seed": 1237,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          4,
+          6
+        ]
+      },
+      "throws": [
+        5,
+        27
+      ],
+      "recalls": [
+        2,
+        72
+      ],
+      "throwEvents": [
+        5,
+        14
+      ],
+      "recallEvents": [
+        2,
+        5
+      ],
+      "ringOccupancyTicks": [
+        1370,
+        559
+      ],
+      "contestedTicks": 483,
+      "objectiveResumeAfterDefense": 15,
+      "focus": {
+        "Objective": 815,
+        "Threat": 22,
+        "Reflex": 35,
+        "Hunt": 12,
+        "Search": 12
+      },
+      "decisions": 896,
+      "defensiveDecisions": 57,
+      "defensiveEmbeddedDecisions": 1,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 1,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 19,
+      "planningUnfinished": 6,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101710,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13776,
+        "belief": 79212,
+        "cover-route": 8,
+        "rollout": 1536,
+        "cover-route-cache": 10
+      },
+      "score": [
+        4,
+        6
+      ],
+      "inputSha256": "8aeccef0bc4007e93ab1b5bf3b3505c49095f11e2b5c6307b247f0ca135108d9",
+      "finalWorldHash": "2140ceb1114071ee",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101710,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 25,
+        "reflexes": 35,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 94,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 275,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 31918,
+            "decisionLatencySec": 41.24999999999979,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 304,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 35264,
+            "decisionLatencySec": 45.599999999999746,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 230,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 16,
+            "budgetSpent": 24248,
+            "decisionLatencySec": 34.49999999999985,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 26,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3464,
+            "decisionLatencySec": 3.8999999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 40,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 4316,
+            "decisionLatencySec": 6.0000000000000036,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 296,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 19,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2204,
+            "decisionLatencySec": 2.849999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-1237-P1.jsonl.gz",
+      "logSha256": "0bb6bbc9f83b5196f0f15f353dba92023ef2e26703359bcc0d359c1d0b2fc717",
+      "logBytes": 270578
+    },
+    {
+      "variant": "repaired",
+      "seed": 1237,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          4,
+          6
+        ]
+      },
+      "throws": [
+        5,
+        27
+      ],
+      "recalls": [
+        2,
+        72
+      ],
+      "throwEvents": [
+        5,
+        14
+      ],
+      "recallEvents": [
+        2,
+        5
+      ],
+      "ringOccupancyTicks": [
+        1370,
+        559
+      ],
+      "contestedTicks": 483,
+      "objectiveResumeAfterDefense": 15,
+      "focus": {
+        "Objective": 815,
+        "Threat": 22,
+        "Reflex": 35,
+        "Hunt": 12,
+        "Search": 12
+      },
+      "decisions": 896,
+      "defensiveDecisions": 57,
+      "defensiveEmbeddedDecisions": 1,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 1,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 0,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 57
+      },
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 19,
+      "planningUnfinished": 6,
+      "selectedRolloutCommandsIssued": 2,
+      "budgetSpent": 101710,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13776,
+        "belief": 79212,
+        "cover-route": 8,
+        "rollout": 1536,
+        "cover-route-cache": 10
+      },
+      "score": [
+        4,
+        6
+      ],
+      "inputSha256": "8aeccef0bc4007e93ab1b5bf3b3505c49095f11e2b5c6307b247f0ca135108d9",
+      "finalWorldHash": "2140ceb1114071ee",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101710,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 25,
+        "reflexes": 35,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 94,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 275,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 31918,
+            "decisionLatencySec": 41.24999999999979,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 304,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 35264,
+            "decisionLatencySec": 45.599999999999746,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 230,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 16,
+            "budgetSpent": 24248,
+            "decisionLatencySec": 34.49999999999985,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 26,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3464,
+            "decisionLatencySec": 3.8999999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 40,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 4316,
+            "decisionLatencySec": 6.0000000000000036,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 296,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 19,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2204,
+            "decisionLatencySec": 2.849999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-1237-P1.jsonl.gz",
+      "logSha256": "ca08d5caf5fb2fea2c461f153536015ea727dc2fb49580590d9186379760499c",
+      "logBytes": 300638
+    },
+    {
+      "variant": "v1",
+      "seed": 1237,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        23,
+        3
+      ],
+      "recalls": [
+        43,
+        2
+      ],
+      "throwEvents": [
+        14,
+        3
+      ],
+      "recallEvents": [
+        7,
+        2
+      ],
+      "ringOccupancyTicks": [
+        1044,
+        1784
+      ],
+      "contestedTicks": 1037,
+      "objectiveResumeAfterDefense": 16,
+      "focus": {
+        "Objective": 845,
+        "Reflex": 37,
+        "Threat": 14
+      },
+      "decisions": 896,
+      "defensiveDecisions": 51,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 28,
+      "planningAttempts": 28,
+      "planningCompleted": 20,
+      "planningUnfinished": 8,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101716,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13744,
+        "belief": 79028,
+        "cover-route": 8,
+        "rollout": 1760,
+        "cover-route-cache": 8
+      },
+      "score": [
+        6,
+        2
+      ],
+      "inputSha256": "86ea16345dab77e3ee97696b4928540f2b9294e7e2bd104fe84bf64aae23a44a",
+      "finalWorldHash": "60e6e0872fe971ee",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101716,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 28,
+        "reflexes": 37,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 109,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 273,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 31683,
+            "decisionLatencySec": 40.94999999999979,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 27,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 8,
+            "budgetSpent": 3644,
+            "decisionLatencySec": 4.049999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 184,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 21345,
+            "decisionLatencySec": 27.599999999999916,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 365,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 19,
+            "budgetSpent": 39560,
+            "decisionLatencySec": 54.74999999999966,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 26,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 3016,
+            "decisionLatencySec": 3.8999999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 264,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 18,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2088,
+            "decisionLatencySec": 2.6999999999999993,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:hidden:near": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 116,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-1237-P2.jsonl.gz",
+      "logSha256": "87202efd25118379705c9eefe0615e89055bd5b20f4740fbcdbfafbe5cfd8af3",
+      "logBytes": 284070
+    },
+    {
+      "variant": "repaired",
+      "seed": 1237,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        23,
+        3
+      ],
+      "recalls": [
+        43,
+        2
+      ],
+      "throwEvents": [
+        14,
+        3
+      ],
+      "recallEvents": [
+        7,
+        2
+      ],
+      "ringOccupancyTicks": [
+        1044,
+        1784
+      ],
+      "contestedTicks": 1037,
+      "objectiveResumeAfterDefense": 16,
+      "focus": {
+        "Objective": 845,
+        "Reflex": 37,
+        "Threat": 14
+      },
+      "decisions": 896,
+      "defensiveDecisions": 51,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 5,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 46,
+        "facing incompatible with visible target": 5
+      },
+      "planningRequests": 28,
+      "planningAttempts": 28,
+      "planningCompleted": 20,
+      "planningUnfinished": 8,
+      "selectedRolloutCommandsIssued": 1,
+      "budgetSpent": 101716,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13744,
+        "belief": 79028,
+        "cover-route": 8,
+        "rollout": 1760,
+        "cover-route-cache": 8
+      },
+      "score": [
+        6,
+        2
+      ],
+      "inputSha256": "86ea16345dab77e3ee97696b4928540f2b9294e7e2bd104fe84bf64aae23a44a",
+      "finalWorldHash": "60e6e0872fe971ee",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101716,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 28,
+        "reflexes": 37,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 109,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 273,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 31683,
+            "decisionLatencySec": 40.94999999999979,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 27,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 8,
+            "budgetSpent": 3644,
+            "decisionLatencySec": 4.049999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 184,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 21345,
+            "decisionLatencySec": 27.599999999999916,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 365,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 19,
+            "budgetSpent": 39560,
+            "decisionLatencySec": 54.74999999999966,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 26,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 3016,
+            "decisionLatencySec": 3.8999999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 264,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 18,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2088,
+            "decisionLatencySec": 2.6999999999999993,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:hidden:near": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 116,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-1237-P2.jsonl.gz",
+      "logSha256": "478146ab2b9b34b525935349e944c50ffcaf5c17adb2471b6bbafc06103b4e27",
+      "logBytes": 314498
+    },
+    {
+      "variant": "v1",
+      "seed": 2081,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          4
+        ]
+      },
+      "throws": [
+        6,
+        37
+      ],
+      "recalls": [
+        1,
+        102
+      ],
+      "throwEvents": [
+        6,
+        17
+      ],
+      "recallEvents": [
+        1,
+        8
+      ],
+      "ringOccupancyTicks": [
+        1395,
+        656
+      ],
+      "contestedTicks": 600,
+      "objectiveResumeAfterDefense": 14,
+      "focus": {
+        "Objective": 807,
+        "Threat": 32,
+        "Reflex": 40,
+        "Search": 17
+      },
+      "decisions": 896,
+      "defensiveDecisions": 72,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 17,
+      "planningUnfinished": 8,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101201,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 9
+      },
+      "score": [
+        5,
+        4
+      ],
+      "inputSha256": "db640b036a7637b0344005393c905adb821106d3486d83d0807c85afd0741be3",
+      "finalWorldHash": "abf6680059cf5946",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101201,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 25,
+        "reflexes": 40,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 97,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 321,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 37253,
+            "decisionLatencySec": 48.14999999999972,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 209,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 24244,
+            "decisionLatencySec": 31.34999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 276,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 17,
+            "budgetSpent": 29000,
+            "decisionLatencySec": 41.399999999999785,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 50,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 5692,
+            "decisionLatencySec": 7.500000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 30,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3928,
+            "decisionLatencySec": 4.5,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 148,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 9,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 936,
+            "decisionLatencySec": 1.35,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-2081-P1.jsonl.gz",
+      "logSha256": "a77a0d26acb1bc4f905c6ec75675b82436284d40354f9cc85b3837a754cd31db",
+      "logBytes": 276284
+    },
+    {
+      "variant": "repaired",
+      "seed": 2081,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          4
+        ]
+      },
+      "throws": [
+        6,
+        37
+      ],
+      "recalls": [
+        1,
+        102
+      ],
+      "throwEvents": [
+        6,
+        17
+      ],
+      "recallEvents": [
+        1,
+        8
+      ],
+      "ringOccupancyTicks": [
+        1395,
+        656
+      ],
+      "contestedTicks": 600,
+      "objectiveResumeAfterDefense": 14,
+      "focus": {
+        "Objective": 807,
+        "Threat": 32,
+        "Reflex": 40,
+        "Search": 17
+      },
+      "decisions": 896,
+      "defensiveDecisions": 72,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 4,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 68,
+        "facing incompatible with visible target": 4
+      },
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 17,
+      "planningUnfinished": 8,
+      "selectedRolloutCommandsIssued": 1,
+      "budgetSpent": 101201,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 9
+      },
+      "score": [
+        5,
+        4
+      ],
+      "inputSha256": "db640b036a7637b0344005393c905adb821106d3486d83d0807c85afd0741be3",
+      "finalWorldHash": "abf6680059cf5946",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101201,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 25,
+        "reflexes": 40,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 97,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 321,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 37253,
+            "decisionLatencySec": 48.14999999999972,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 209,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 24244,
+            "decisionLatencySec": 31.34999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 276,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 17,
+            "budgetSpent": 29000,
+            "decisionLatencySec": 41.399999999999785,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 50,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 5692,
+            "decisionLatencySec": 7.500000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 30,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3928,
+            "decisionLatencySec": 4.5,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 148,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 9,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 936,
+            "decisionLatencySec": 1.35,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-2081-P1.jsonl.gz",
+      "logSha256": "2c2349355e6169cd0d9de8b982d217f23ecda29939fac6e917e3c978bed2ee93",
+      "logBytes": 306295
+    },
+    {
+      "variant": "v1",
+      "seed": 2081,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        28,
+        2
+      ],
+      "recalls": [
+        47,
+        1
+      ],
+      "throwEvents": [
+        14,
+        2
+      ],
+      "recallEvents": [
+        8,
+        1
+      ],
+      "ringOccupancyTicks": [
+        1201,
+        1967
+      ],
+      "contestedTicks": 1194,
+      "objectiveResumeAfterDefense": 15,
+      "focus": {
+        "Objective": 847,
+        "Reflex": 36,
+        "Threat": 13
+      },
+      "decisions": 896,
+      "defensiveDecisions": 49,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 16,
+      "planningUnfinished": 9,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101632,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 8
+      },
+      "score": [
+        6,
+        2
+      ],
+      "inputSha256": "21b3f31254dd2edb90b304f31be8a466ee30a3a8a238753ef586fefb6cde1fef",
+      "finalWorldHash": "4fad9aea3ea15b57",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101632,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 25,
+        "reflexes": 36,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 97,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:near": {
+            "decisions": 232,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 26920,
+            "decisionLatencySec": 34.79999999999985,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:far": {
+            "decisions": 187,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 21700,
+            "decisionLatencySec": 28.049999999999912,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 4,
+            "budgetSpent": 2228,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 432,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 20,
+            "budgetSpent": 47504,
+            "decisionLatencySec": 64.7999999999996,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 18,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2088,
+            "decisionLatencySec": 2.6999999999999993,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 148,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 9,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1044,
+            "decisionLatencySec": 1.35,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-2081-P2.jsonl.gz",
+      "logSha256": "ee5c05f71b90210b1353b88584590fb817291ca71d9ebb0d5b3bc9bfed3fe6c4",
+      "logBytes": 284540
+    },
+    {
+      "variant": "repaired",
+      "seed": 2081,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        28,
+        2
+      ],
+      "recalls": [
+        47,
+        1
+      ],
+      "throwEvents": [
+        14,
+        2
+      ],
+      "recallEvents": [
+        8,
+        1
+      ],
+      "ringOccupancyTicks": [
+        1201,
+        1967
+      ],
+      "contestedTicks": 1194,
+      "objectiveResumeAfterDefense": 15,
+      "focus": {
+        "Objective": 847,
+        "Reflex": 36,
+        "Threat": 13
+      },
+      "decisions": 896,
+      "defensiveDecisions": 49,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 2,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 47,
+        "facing incompatible with visible target": 2
+      },
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 16,
+      "planningUnfinished": 9,
+      "selectedRolloutCommandsIssued": 1,
+      "budgetSpent": 101632,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 8
+      },
+      "score": [
+        6,
+        2
+      ],
+      "inputSha256": "21b3f31254dd2edb90b304f31be8a466ee30a3a8a238753ef586fefb6cde1fef",
+      "finalWorldHash": "4fad9aea3ea15b57",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101632,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 25,
+        "reflexes": 36,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 97,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:near": {
+            "decisions": 232,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 26920,
+            "decisionLatencySec": 34.79999999999985,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:far": {
+            "decisions": 187,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 21700,
+            "decisionLatencySec": 28.049999999999912,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 17,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 4,
+            "budgetSpent": 2228,
+            "decisionLatencySec": 2.5499999999999994,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 432,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 20,
+            "budgetSpent": 47504,
+            "decisionLatencySec": 64.7999999999996,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 18,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2088,
+            "decisionLatencySec": 2.6999999999999993,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 1,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 148,
+            "decisionLatencySec": 0.15000000000000002,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 9,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1044,
+            "decisionLatencySec": 1.35,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-2081-P2.jsonl.gz",
+      "logSha256": "a7d4154fdafdf2984de0196ea8a68c726aa09219bea73a9ac09c09d9aa7aa65c",
+      "logBytes": 315239
+    },
+    {
+      "variant": "v1",
+      "seed": 3253,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          1,
+          8
+        ]
+      },
+      "throws": [
+        2,
+        26
+      ],
+      "recalls": [
+        2,
+        42
+      ],
+      "throwEvents": [
+        2,
+        15
+      ],
+      "recallEvents": [
+        1,
+        7
+      ],
+      "ringOccupancyTicks": [
+        1563,
+        724
+      ],
+      "contestedTicks": 724,
+      "objectiveResumeAfterDefense": 17,
+      "focus": {
+        "Objective": 827,
+        "Threat": 27,
+        "Reflex": 42
+      },
+      "decisions": 896,
+      "defensiveDecisions": 69,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 1,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 29,
+      "planningAttempts": 29,
+      "planningCompleted": 19,
+      "planningUnfinished": 10,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101241,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13664,
+        "belief": 78568,
+        "cover-route": 8,
+        "rollout": 1824,
+        "cover-route-cache": 9
+      },
+      "score": [
+        1,
+        8
+      ],
+      "inputSha256": "4447fdc9d77c58d66a6c567fab89234340aa42dcc89e01f77a7008d12d4523aa",
+      "finalWorldHash": "dfc8d68f45254535",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101241,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 29,
+        "reflexes": 42,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 113,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:near": {
+            "decisions": 181,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 21004,
+            "decisionLatencySec": 27.14999999999992,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 332,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 21,
+            "budgetSpent": 35752,
+            "decisionLatencySec": 49.799999999999706,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:far": {
+            "decisions": 319,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 37013,
+            "decisionLatencySec": 47.849999999999724,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 26,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3464,
+            "decisionLatencySec": 3.8999999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 23,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2668,
+            "decisionLatencySec": 3.449999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 264,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 10,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1052,
+            "decisionLatencySec": 1.5,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:hidden:near": {
+            "decisions": 3,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 24,
+            "decisionLatencySec": 0.45000000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-3253-P1.jsonl.gz",
+      "logSha256": "4e46b11ceb66ce2e6508a7159ee04533ebca09617e87d709c7ab09207576a919",
+      "logBytes": 277559
+    },
+    {
+      "variant": "repaired",
+      "seed": 3253,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          1,
+          8
+        ]
+      },
+      "throws": [
+        2,
+        26
+      ],
+      "recalls": [
+        2,
+        42
+      ],
+      "throwEvents": [
+        2,
+        15
+      ],
+      "recallEvents": [
+        1,
+        7
+      ],
+      "ringOccupancyTicks": [
+        1563,
+        724
+      ],
+      "contestedTicks": 724,
+      "objectiveResumeAfterDefense": 17,
+      "focus": {
+        "Objective": 827,
+        "Threat": 27,
+        "Reflex": 42
+      },
+      "decisions": 896,
+      "defensiveDecisions": 69,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 1,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 5,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 64,
+        "compatible visible-target shot": 1,
+        "facing incompatible with visible target": 4
+      },
+      "planningRequests": 29,
+      "planningAttempts": 29,
+      "planningCompleted": 19,
+      "planningUnfinished": 10,
+      "selectedRolloutCommandsIssued": 1,
+      "budgetSpent": 101241,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13664,
+        "belief": 78568,
+        "cover-route": 8,
+        "rollout": 1824,
+        "cover-route-cache": 9
+      },
+      "score": [
+        1,
+        8
+      ],
+      "inputSha256": "4447fdc9d77c58d66a6c567fab89234340aa42dcc89e01f77a7008d12d4523aa",
+      "finalWorldHash": "dfc8d68f45254535",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101241,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 29,
+        "reflexes": 42,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 113,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:near": {
+            "decisions": 181,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 21004,
+            "decisionLatencySec": 27.14999999999992,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 332,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 21,
+            "budgetSpent": 35752,
+            "decisionLatencySec": 49.799999999999706,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:far": {
+            "decisions": 319,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 37013,
+            "decisionLatencySec": 47.849999999999724,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 26,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3464,
+            "decisionLatencySec": 3.8999999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 23,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2668,
+            "decisionLatencySec": 3.449999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 264,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 10,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 1052,
+            "decisionLatencySec": 1.5,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:hidden:near": {
+            "decisions": 3,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 24,
+            "decisionLatencySec": 0.45000000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-3253-P1.jsonl.gz",
+      "logSha256": "e6227fe7d9134d51a4330694d44039f73d0279a3804299d5167ffe2b7fe65481",
+      "logBytes": 307236
+    },
+    {
+      "variant": "v1",
+      "seed": 3253,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          4,
+          4
+        ]
+      },
+      "throws": [
+        27,
+        4
+      ],
+      "recalls": [
+        45,
+        0
+      ],
+      "throwEvents": [
+        12,
+        4
+      ],
+      "recallEvents": [
+        5,
+        0
+      ],
+      "ringOccupancyTicks": [
+        973,
+        1809
+      ],
+      "contestedTicks": 948,
+      "objectiveResumeAfterDefense": 14,
+      "focus": {
+        "Objective": 846,
+        "Reflex": 40,
+        "Threat": 10
+      },
+      "decisions": 896,
+      "defensiveDecisions": 50,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 27,
+      "planningAttempts": 27,
+      "planningCompleted": 20,
+      "planningUnfinished": 7,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101360,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 8,
+        "rollout": 1728,
+        "cover-route-cache": 8
+      },
+      "score": [
+        4,
+        4
+      ],
+      "inputSha256": "2cec66128c1d61aaa24305a042eb8f1fb128a6a48acdfc0138904a00013c0434",
+      "finalWorldHash": "21a3dc71da9786c9",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101360,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 27,
+        "reflexes": 40,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 108,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 216,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 25072,
+            "decisionLatencySec": 32.39999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 28,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3696,
+            "decisionLatencySec": 4.199999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 217,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 25172,
+            "decisionLatencySec": 32.54999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 410,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 20,
+            "budgetSpent": 44520,
+            "decisionLatencySec": 61.499999999999595,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 25,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2900,
+            "decisionLatencySec": 3.7499999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-3253-P2.jsonl.gz",
+      "logSha256": "cae5ecfeb7ba5b57ddda08b631a374abfd504fc7bf6a68e36f4f04d489dedd22",
+      "logBytes": 282056
+    },
+    {
+      "variant": "repaired",
+      "seed": 3253,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          4,
+          4
+        ]
+      },
+      "throws": [
+        27,
+        4
+      ],
+      "recalls": [
+        45,
+        0
+      ],
+      "throwEvents": [
+        12,
+        4
+      ],
+      "recallEvents": [
+        5,
+        0
+      ],
+      "ringOccupancyTicks": [
+        973,
+        1809
+      ],
+      "contestedTicks": 948,
+      "objectiveResumeAfterDefense": 14,
+      "focus": {
+        "Objective": 846,
+        "Reflex": 40,
+        "Threat": 10
+      },
+      "decisions": 896,
+      "defensiveDecisions": 50,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 2,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 48,
+        "facing incompatible with visible target": 2
+      },
+      "planningRequests": 27,
+      "planningAttempts": 27,
+      "planningCompleted": 20,
+      "planningUnfinished": 7,
+      "selectedRolloutCommandsIssued": 0,
+      "budgetSpent": 101360,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 8,
+        "rollout": 1728,
+        "cover-route-cache": 8
+      },
+      "score": [
+        4,
+        4
+      ],
+      "inputSha256": "2cec66128c1d61aaa24305a042eb8f1fb128a6a48acdfc0138904a00013c0434",
+      "finalWorldHash": "21a3dc71da9786c9",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101360,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 27,
+        "reflexes": 40,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 108,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 216,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 25072,
+            "decisionLatencySec": 32.39999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 28,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 7,
+            "budgetSpent": 3696,
+            "decisionLatencySec": 4.199999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 217,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 25172,
+            "decisionLatencySec": 32.54999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 410,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 20,
+            "budgetSpent": 44520,
+            "decisionLatencySec": 61.499999999999595,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 25,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 2900,
+            "decisionLatencySec": 3.7499999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-3253-P2.jsonl.gz",
+      "logSha256": "df86ff8a65e5e5a6cb5fd0afc62661cff1cc0d29bc57e200f4a0d9a850ba6dd6",
+      "logBytes": 312700
+    },
+    {
+      "variant": "v1",
+      "seed": 4447,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          0,
+          10
+        ]
+      },
+      "throws": [
+        0,
+        26
+      ],
+      "recalls": [
+        0,
+        22
+      ],
+      "throwEvents": [
+        0,
+        14
+      ],
+      "recallEvents": [
+        0,
+        4
+      ],
+      "ringOccupancyTicks": [
+        1410,
+        461
+      ],
+      "contestedTicks": 454,
+      "objectiveResumeAfterDefense": 14,
+      "focus": {
+        "Objective": 842,
+        "Reflex": 43,
+        "Threat": 11
+      },
+      "decisions": 896,
+      "defensiveDecisions": 54,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 24,
+      "planningAttempts": 24,
+      "planningCompleted": 17,
+      "planningUnfinished": 7,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 100846,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13648,
+        "belief": 78476,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1536
+      },
+      "score": [
+        0,
+        10
+      ],
+      "inputSha256": "6cda23204c89b13ec794c40fa8001b27128f0ab09506a448fc8408b8e092dfb3",
+      "finalWorldHash": "0535248c6919b627",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 100846,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 24,
+        "reflexes": 43,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 96,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:near": {
+            "decisions": 242,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 28080,
+            "decisionLatencySec": 36.299999999999834,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:far": {
+            "decisions": 298,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 34578,
+            "decisionLatencySec": 44.699999999999754,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 32,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 8,
+            "budgetSpent": 4224,
+            "decisionLatencySec": 4.800000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 324,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 16,
+            "budgetSpent": 33964,
+            "decisionLatencySec": 48.59999999999972,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-4447-P1.jsonl.gz",
+      "logSha256": "6f6c08e250a979ec31f936cc12a14856ce0508357569a1e3fc1900c312ce14bc",
+      "logBytes": 271364
+    },
+    {
+      "variant": "repaired",
+      "seed": 4447,
+      "seat": "P1",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          0,
+          10
+        ]
+      },
+      "throws": [
+        0,
+        26
+      ],
+      "recalls": [
+        0,
+        22
+      ],
+      "throwEvents": [
+        0,
+        14
+      ],
+      "recallEvents": [
+        0,
+        4
+      ],
+      "ringOccupancyTicks": [
+        1410,
+        461
+      ],
+      "contestedTicks": 454,
+      "objectiveResumeAfterDefense": 14,
+      "focus": {
+        "Objective": 842,
+        "Reflex": 43,
+        "Threat": 11
+      },
+      "decisions": 896,
+      "defensiveDecisions": 54,
+      "defensiveEmbeddedDecisions": 0,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 0,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 2,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 52,
+        "facing incompatible with visible target": 2
+      },
+      "planningRequests": 24,
+      "planningAttempts": 24,
+      "planningCompleted": 17,
+      "planningUnfinished": 7,
+      "selectedRolloutCommandsIssued": 0,
+      "budgetSpent": 100846,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13648,
+        "belief": 78476,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1536
+      },
+      "score": [
+        0,
+        10
+      ],
+      "inputSha256": "6cda23204c89b13ec794c40fa8001b27128f0ab09506a448fc8408b8e092dfb3",
+      "finalWorldHash": "0535248c6919b627",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 100846,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 24,
+        "reflexes": 43,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 96,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:near": {
+            "decisions": 242,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 28080,
+            "decisionLatencySec": 36.299999999999834,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:far": {
+            "decisions": 298,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 34578,
+            "decisionLatencySec": 44.699999999999754,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 32,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 8,
+            "budgetSpent": 4224,
+            "decisionLatencySec": 4.800000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 324,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 16,
+            "budgetSpent": 33964,
+            "decisionLatencySec": 48.59999999999972,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-4447-P1.jsonl.gz",
+      "logSha256": "5e2f40f0eea038d09901779f40cfd83c37a519f24bc52cfb109c54c366065be7",
+      "logBytes": 300949
+    },
+    {
+      "variant": "v1",
+      "seed": 4447,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          1
+        ]
+      },
+      "throws": [
+        26,
+        4
+      ],
+      "recalls": [
+        55,
+        3
+      ],
+      "throwEvents": [
+        14,
+        4
+      ],
+      "recallEvents": [
+        11,
+        3
+      ],
+      "ringOccupancyTicks": [
+        1562,
+        2166
+      ],
+      "contestedTicks": 1525,
+      "objectiveResumeAfterDefense": 17,
+      "focus": {
+        "Objective": 836,
+        "Reflex": 36,
+        "Threat": 24
+      },
+      "decisions": 896,
+      "defensiveDecisions": 60,
+      "defensiveEmbeddedDecisions": 2,
+      "defensiveThrows": 1,
+      "defensiveRecalls": 1,
+      "defensiveEmbeddedWithoutRecall": 1,
+      "defensiveShotIntentions": null,
+      "defensiveShotGuardReasons": null,
+      "planningRequests": 30,
+      "planningAttempts": 30,
+      "planningCompleted": 23,
+      "planningUnfinished": 7,
+      "selectedRolloutCommandsIssued": null,
+      "budgetSpent": 101918,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 8,
+        "rollout": 1856,
+        "cover-route-cache": 6
+      },
+      "score": [
+        5,
+        1
+      ],
+      "inputSha256": "645954d52c59db204834d351c7fd6159557b2aa497a4ec39a2351367ae0ff33a",
+      "finalWorldHash": "1fdfd4695bc4b88e",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101918,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 30,
+        "reflexes": 36,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 114,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 224,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 25998,
+            "decisionLatencySec": 33.59999999999986,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 25,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 6,
+            "budgetSpent": 3284,
+            "decisionLatencySec": 3.7499999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 132,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 15204,
+            "decisionLatencySec": 19.79999999999999,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 418,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 22,
+            "budgetSpent": 46332,
+            "decisionLatencySec": 62.699999999999584,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 49,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 5684,
+            "decisionLatencySec": 7.350000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 4,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 2,
+            "budgetSpent": 420,
+            "decisionLatencySec": 0.6000000000000001,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 42,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 4764,
+            "decisionLatencySec": 6.300000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:hidden:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 232,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "v1-4447-P2.jsonl.gz",
+      "logSha256": "d3d5fac82fd8a5a5af2043849171cbde2dbcbef8b27714950145c2b2056c8448",
+      "logBytes": 294882
+    },
+    {
+      "variant": "repaired",
+      "seed": 4447,
+      "seat": "P2",
+      "durationSec": 30,
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          1
+        ]
+      },
+      "throws": [
+        26,
+        4
+      ],
+      "recalls": [
+        64,
+        3
+      ],
+      "throwEvents": [
+        15,
+        4
+      ],
+      "recallEvents": [
+        12,
+        3
+      ],
+      "ringOccupancyTicks": [
+        1559,
+        2181
+      ],
+      "contestedTicks": 1544,
+      "objectiveResumeAfterDefense": 17,
+      "focus": {
+        "Objective": 841,
+        "Reflex": 36,
+        "Threat": 19
+      },
+      "decisions": 896,
+      "defensiveDecisions": 55,
+      "defensiveEmbeddedDecisions": 1,
+      "defensiveThrows": 0,
+      "defensiveRecalls": 1,
+      "defensiveEmbeddedWithoutRecall": 0,
+      "defensiveShotIntentions": 2,
+      "defensiveShotGuardReasons": {
+        "no shot intention": 53,
+        "facing incompatible with visible target": 2
+      },
+      "planningRequests": 29,
+      "planningAttempts": 29,
+      "planningCompleted": 21,
+      "planningUnfinished": 8,
+      "selectedRolloutCommandsIssued": 0,
+      "budgetSpent": 101886,
+      "maxBudgetSpent": 180,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 8,
+        "rollout": 1824,
+        "cover-route-cache": 6
+      },
+      "score": [
+        5,
+        1
+      ],
+      "inputSha256": "4d4e5c0dc53631b2e93d734a10f1c37f8e8a6752c409364299be5b59cfd3e424",
+      "finalWorldHash": "b962b93648a8cbc4",
+      "cognition": {
+        "cycles": 896,
+        "budgetSpent": 101886,
+        "budgetLimit": 192,
+        "maxBudgetSpent": 180,
+        "escalations": 29,
+        "reflexes": 36,
+        "automaticDecisions": 0,
+        "learningUpdates": 0,
+        "counterfactualBranches": 113,
+        "decisionLatencySec": 134.40000000000222,
+        "bySituation": {
+          "HELD:hidden:far": {
+            "decisions": 209,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 24258,
+            "decisionLatencySec": 31.34999999999988,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:far": {
+            "decisions": 25,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 6,
+            "budgetSpent": 3284,
+            "decisionLatencySec": 3.7499999999999987,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:hidden:near": {
+            "decisions": 148,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 17060,
+            "decisionLatencySec": 22.199999999999967,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "HELD:seen:near": {
+            "decisions": 418,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 22,
+            "budgetSpent": 46332,
+            "decisionLatencySec": 62.699999999999584,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "OUTBOUND:seen:near": {
+            "decisions": 49,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 5684,
+            "decisionLatencySec": 7.350000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "EMBEDDED:seen:near": {
+            "decisions": 3,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 1,
+            "budgetSpent": 272,
+            "decisionLatencySec": 0.45000000000000007,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:seen:near": {
+            "decisions": 42,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 4764,
+            "decisionLatencySec": 6.300000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          },
+          "RETURNING:hidden:near": {
+            "decisions": 2,
+            "successes": 0,
+            "failures": 0,
+            "outcomes": 0,
+            "escalations": 0,
+            "budgetSpent": 232,
+            "decisionLatencySec": 0.30000000000000004,
+            "predictedFailure": 0,
+            "automaticDecisions": 0
+          }
+        },
+        "pendingOutcome": null
+      },
+      "logFile": "repaired-4447-P2.jsonl.gz",
+      "logSha256": "42e0c757038416749457e4129f087f1240e3aa5443bb3ad6c0c222bc8d9dff78",
+      "logBytes": 325759
+    }
+  ],
+  "checks": {
+    "sourceUnchanged": true,
+    "referenceUnchanged": true,
+    "scoreReconciled": true,
+    "learnerDisabled": true,
+    "completeLogsRetained": true
+  }
+}

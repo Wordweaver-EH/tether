@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "status": "blocked-pending-independent-review-git-checkpoint-and-root-release",
+  "budget": {
+    "clusters": 32,
+    "seats": 2,
+    "durationSec": 300,
+    "simulationHz": 120,
+    "decisionHz": 30,
+    "bootstrapResamples": 20000
+  },
+  "sourceManifestSha256": "fbbea7601805181450d085baec888084b537381e4e75ad978f90be27869eb3eb",
+  "protocolSha256": "704562f5d954f2ab602594239e1a01d273d715267a3c4e03ce0b4fe2cca7b370",
+  "files": {
+    "human-proxy/baseline-partial/counter.mjs": "75e96e0b51dbff73ba76d09d896ee9411142247ff3e7597ac6cd9150ae666eda",
+    "human-proxy/baseline-partial/interface.mjs": "351ec9d52ea14d9281d1cda10057c57693785687d6eb8c55fed57804103052f0",
+    "human-proxy/baseline-partial/ordinary-freeze.json": "8218473412d6e889cfd1e9f20b4ee24c417b7c66c71c70cb26cce6a1571fe444",
+    "human-proxy/counter.mjs": "5ad235f35533e499356521dbd12d7d039497ba0de043f1d42beeaddff7849fc6",
+    "human-proxy/counter.test.mjs": "ccb32de66e800d1e9cc7f48145a1c8d89e120dfc71f854a329614c6296d4602c",
+    "human-proxy/FROZEN-SOURCE-MANIFEST.json": "12881b9d10d14dd95061b038ad608130d896a5ef404fa9d132644446684f205e",
+    "human-proxy/harness.test.mjs": "430e32388cd36163b2a55df0d841e5ad21ce7444d330a5bacd980d43c455bab1",
+    "human-proxy/interface.mjs": "351ec9d52ea14d9281d1cda10057c57693785687d6eb8c55fed57804103052f0",
+    "human-proxy/measurements.mjs": "21a424a608c4cef54b0caa27702267a4569077d34ab1d8b4f51ec5c01326c656",
+    "human-proxy/measurements.test.mjs": "d74e3a44321a151f5bffc83c673e961eb9eda3ed3aaf9862fbe2360a8130ca1e",
+    "human-proxy/ordinary-freeze.json": "8218473412d6e889cfd1e9f20b4ee24c417b7c66c71c70cb26cce6a1571fe444",
+    "human-proxy/PROTOCOL-PROPOSAL.md": "704562f5d954f2ab602594239e1a01d273d715267a3c4e03ce0b4fe2cca7b370",
+    "human-proxy/protocol.mjs": "e9d514077f0425f1c890961369472332e3439398ca43ec2362652c277a842c2b",
+    "human-proxy/README.md": "4c995c62d7e31d23e820ffd12abac799b58131373a5b9a0de2552f1cd8ffae71",
+    "human-proxy/run.mjs": "70efd577d5346b2d47a1f2ca0959b19968ae1d0a7c943d40d394089d6b503f6f",
+    "human-proxy/seeds.json": "93056822f6913b2cff6b296d7d0ffadab3959055384e964e8f66ea41b1a55b9c",
+    "human-proxy/statistics.mjs": "9c626b4a7aea109b48f6d6450a24fe872cefe3082c671186bb098755816fed71",
+    "human-proxy/validation/all-tests-writable-copy.txt": "ad8d60f2210e6ba464cb92230fdf481b924f6960fb88b5f129ebfe4ee0966da6",
+    "human-proxy/validation/preflight-tests.txt": "d9b985c816b4bc8f2901febac6b21edb5d2d1447891ca9940e3c8e997750476f",
+    "human-proxy/VALIDATION.md": "f5fb28e475ae03d27eb3e47eb94cda1ab8d02c36cbe9ce72b070b7e256b5da0f"
+  },
+  "freezeSha256": "c79bcbd5dbf1f672b52f9c973c1c57c6c2432ed8c5df28ceaaad7177c71eda49"
+}

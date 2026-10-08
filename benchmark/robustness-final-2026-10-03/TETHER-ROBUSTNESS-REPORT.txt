@@ -1,0 +1,80 @@
+Tether held out robustness evaluation
+Final qualified report 3 October 2026
+
+Conclusion
+
+The preregistered robustness claim is not supported. Full mind shows a positive average relative-drop contrast against the ordinary NPC, but it starts far below that NPC on the default task and only one of five shift families meets the corrected positive-evidence criterion. A smaller drop can reflect less room to fall from a weaker starting point rather than a genuine robustness advantage.
+
+All 4,224 planned tasks are included: 805 accepted original tasks and 3,419 resumed tasks. Independent numerical review passed after complete raw/proof, provenance and memory-link validation. The execution is classified COMPLETE_RECOVERED_QUALIFIED, with the recovery and resource limitations below.
+
+Primary comparison and units
+
+Net HIT rate means focal-player HITs minus opponent HITs per simulated minute. Each arm has 48 default tasks of five minutes, totaling 240 minutes.
+
+- Full mind default: 306 focal HITs, 230 opponent HITs, net +76; +0.3167 net HIT/min
+- Ordinary NPC default: 4,677 focal HITs, 361 opponent HITs, net +4,316; +17.9833 net HIT/min
+- Full mind minus ordinary default competence gap: -17.6667 net HIT/min
+
+The baseline guard requires that gap to be at least -1 net HIT/min. It fails.
+
+For each shift, drop = default net HIT/min minus shifted net HIT/min. The reported robustness contrast = ordinary NPC drop minus full-mind drop. Positive values mean full mind loses less relative to its own default; they do not mean full mind scores better in absolute terms under the shift.
+
+Five equally weighted families give a grand contrast of +4.8063 net HIT/min, 95% interval [3.6678, 5.8211]. Family contrasts use 99% intervals:
+
+- Arena: +1.0500 [-0.2861, 2.0389]
+- Spear: +0.8938 [-0.6458, 2.2250]
+- Turn: -0.1979 [-1.6813, 1.3271]
+- Field of view: -0.1771 [-1.7479, 1.1458]
+- Opponent: +22.4625 [20.8292, 23.6958]
+
+Only the opponent family has a lower bound above zero: 1 of 5, versus at least 3 required. This is the second failed guard. The grand-positive condition passes, and no family's upper bound is below the -0.5 net HIT/min harm margin. Those passes do not override the two failures. The frozen classification is baseline-competence-confounded.
+
+Separate useful-compute NPC comparisons
+
+These are separate sensitivity panels, not replacements for the ordinary-NPC primary comparison. Positive still means a smaller relative drop for full mind. Intervals are 95% for the grand contrast and 99% within each family's five-comparison panel.
+
+- Useful 2x NPC: grand -0.3869 [-0.8369, 0.1074]; no supported overall advantage. Family contrasts: arena +0.2403 [-0.3292, 1.0042], spear -0.0708 [-0.8021, 0.8146], turn +0.1854 [-0.2688, 0.8104], field of view -0.1771 [-0.7854, 0.3854], opponent -2.1125 [-2.7125, -1.3625]
+- Useful 4x NPC: grand -0.0697 [-0.3229, 0.2306]; no supported overall advantage. Family contrasts: arena +0.6389 [0.3097, 0.9736], spear -0.2792 [-0.7146, 0.2292], turn +0.5458 [-0.4438, 1.4542], field of view +0.4583 [-0.2313, 1.0938], opponent -1.7125 [-2.1083, -1.3167]
+
+The useful 2x and 4x NPC default net HIT rates are +1.0458 and +1.5458 per minute. Both sensitivity panels also fail the opponent-family harm veto: that family's 99% upper bound is below -0.5 net HIT/min. The frozen competence guard remains the ordinary-NPC guard in both sensitivity panels.
+
+Measured mean decision-interface times: full mind 0.8319 ms; ordinary NPC 0.0176 ms; useful 2x 4.2278 ms; useful 4x 7.1933 ms. The nominal 2x and 4x labels are not measured runtime ratios: their observed means are 5.08x and 8.65x full mind. Full mind is about 47.36x the ordinary NPC on this interface-time measure. Recorded Node, platform, CPU model and CPU count matched across the original and resumed tasks, but identical physical allocation, contention and scheduling are unproven. These are instrumented-context timing comparisons; they do not establish universally equal compute or recover the missing historical phase CPU.
+
+Other evidence
+
+Recovery: all five families meet the declared initial-impairment condition. Neither session recovery nor the separate within-bout endpoint meets the required support rule; both are mixed, unsupported or inconclusive. In the opponent family, full mind's session-recovery contrast is -1.3750 net HIT/min, 99.5% interval [-2.3750, -0.2917]. This is deterioration under that endpoint, not evidence of recovery.
+
+Calibration: the target is native sparse-credit action-completion failure (recorded reward at or below zero), not physical HIT prediction or the C2 spatial-error EWMA. Full-mind completed native forecasts have adequate support in all five families, with all 12 clusters represented. Family Brier scores (lower is better) are arena 0.1385, spear 0.1306, turn 0.1335, field of view 0.1337 and opponent 0.0873. Completed counts are 5,557; 3,620; 3,026; 2,953; and 2,140 respectively. All five meet the declared favorable point criteria. Brier improvement over the frozen training-rate reference has a 95% interval entirely below zero in the first four families; the opponent interval crosses zero. This is completed-outcome calibration, with censoring retained; it does not establish a complete metacognition pass, a robustness win or subjective confidence.
+
+Escalation and novelty: full-mind Type 2 share is near its ceiling, with condition-level means from 94.02% to 97.89%; default is 97.87%. Native unfamiliar-minus-familiar Type 2 differences are small or mixed, and the searched-opponent condition is negative (-3.89 percentage points; 95% interval [-5.22, -2.29]). Every condition's mean early-to-late Type 2 decline is negative, so this summary does not show a mean shift toward less Type 2 use over the session. The frozen-start known-case diagnostic is unavailable: frozen-start novelty labels were not computed. Evolving native familiarity is a different measure.
+
+Ablations: none of the 20 corrected contrasts establishes a positive full-mind relative-drop advantage at the 99.75% interval level. Four contrasts favor the ablated arm's smaller drop: fixed-metacognition in arena and opponent, and learning-frozen in spear and opponent. No-novelty and broadcast-cut intervals all cross zero. These are relative-drop comparisons and do not by themselves establish that a component helps or harms overall competence.
+
+Qualifications and evidence preservation
+
+The study uses 12 independent clusters, three per opponent block, with the frozen 20,000-draw stratified bootstrap. The intervals are exploratory approximations. Findings are conditional on three realized selected conventional fits, without independent optimizer replication. The training freeze is qualified by 14 of 24 ranking deviations; it is not a seed-only optimizer replay. The mirror condition was pilot-exposed, although evaluation randomness was held out.
+
+The original execution was interrupted. Seven original raw-only partial artifacts remain preserved and excluded from the scientific sample; their IDs were completed in the resumed attempt. Original child terminal CPU, original parent total CPU and partial-worker CPU are unavailable, explicitly null. Genuine receipt CPU endpoints are lower bounds, not terminal totals. Resumed terminal CPU is separately reported. No complete combined phase CPU is invented.
+
+Original process extinction, global eight-worker concurrency and exactly-once execution of interrupted partials cannot be certified. The shared aggregate capacity of at most nine logical CPUs is an accepted operational assumption. Watchdog checks have finite latency, and tiny final commit/fsync/exit overhead is excluded. The resumed run completed before its stricter capacity deadline.
+
+Compact proofs verify retained structure and integrity. They do not reconstruct omitted individual report/comparison digests, latent beliefs or full per-decision truth, and they do not constitute a physics replay. The report makes no consciousness, subjective surprise or human-fun claim.
+
+Accepted raw data totals 13,357,437,454 bytes; excluded original partials add 7,580,774 bytes. All attempt raw data totals 13,365,018,228 bytes. Analysis outputs total 3,080,957,057 bytes, predominantly derived per-task diagnostics. Local preservation and manifests do not by themselves mean every file has been backed up to Git. Source/review checkpoints are published; full raw-backup and final-report publication status must be confirmed by the separate verified publication receipt. No claim of a complete remote backup is made here.
+
+Separate owner play and watch track
+
+These four previously requested observations remain unmeasured human checks, not findings from this evaluation:
+
+- A readable response to surprises
+- Repeated susceptibility to the same bait
+- Recovery after a mistaken expectation
+- Whether uncertainty produces sensible hesitation rather than freezing
+
+Stop boundary
+
+This study is finished. No follow-on experiment, retuning, new milestone or autonomous next study is included.
+
+Sources
+
+The authoritative machine report is report.json (SHA256 0beae12c0f132fd87e43af3164ae487b1453d9df55a1b7bf377e0e24c659532e). Numerical tables come from performance.json, scores.json, calibration.json, novelty-teacher.json and resources.json in the same completed analysis output. Frozen analysis source manifest: 7d0cb0abe594be0f9ed267b02d4ae41951eaa128c5bb760cd6057f4f0b3f2632. Qualified adapter v2 manifest: 016816f7077804e78c1b640bd414734729d4bb40427e3533a85d2b46056a0ae6. Independent numerical-review receipt SHA256: b670a51c9fe0c276c3bcc4350c657eca8ccace208bc3c6d3d66a16673e315c65. It passed 52,046 performance comparisons and 1,355,402 diagnostic comparisons. Complete file hashes are supplied in the accompanying publication-bundle manifest.

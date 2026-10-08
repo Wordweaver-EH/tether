@@ -12,18 +12,18 @@ export function recordBout(storage, summary) {
   const data = readTelemetry(storage);
   data.boutsPlayed++;
   data.bouts.push(summary);
-  storage.setItem(TELEMETRY_KEY, JSON.stringify(data));
+  try { storage?.setItem(TELEMETRY_KEY, JSON.stringify(data)); } catch { /* Optional local telemetry. */ }
   return data;
 }
 export function recordRematch(storage) {
   const data = readTelemetry(storage);
   data.rematches++;
-  storage.setItem(TELEMETRY_KEY, JSON.stringify(data));
+  try { storage?.setItem(TELEMETRY_KEY, JSON.stringify(data)); } catch { /* Optional local telemetry. */ }
   return data;
 }
 export function recordSessionDuration(storage, seconds) {
   const data = readTelemetry(storage);
   data.sessionDurationsSec.push(Math.max(0, seconds));
-  storage.setItem(TELEMETRY_KEY, JSON.stringify(data));
+  try { storage?.setItem(TELEMETRY_KEY, JSON.stringify(data)); } catch { /* Optional local telemetry. */ }
   return data;
 }

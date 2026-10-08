@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "reviewedPublicationManifestSha256": "b4fd5e020b03a16ee8191da54a96600545e9cb6ad8aa84aafa935c7cf82be4ff",
+  "publicationEntriesVerified": 14,
+  "byteIdenticalReproducedResultFiles": [
+    "BOUT-SUMMARIES.json",
+    "INPUT-MANIFEST.json",
+    "RECALLS.jsonl",
+    "RETURNING-HITS.jsonl",
+    "SUMMARY.json"
+  ],
+  "analysisOnlyUnitTestsPassed": 7,
+  "pythonValidator": "passed",
+  "independentGeometryAudit": "passed",
+  "files": {
+    "independent-audit.mjs": {
+      "bytes": 9517,
+      "sha256": "3aa9215c933e8359411fa2d5ec32005b8bdc85eb141d32a2df4d97bde98de308"
+    },
+    "INDEPENDENT-AUDIT.json": {
+      "bytes": 945,
+      "sha256": "24595b0a1974833688e447c6995e0b108b13d025fbe771ff2d4b4358579a3514"
+    },
+    "REPRODUCED-UNIT-TESTS.txt": {
+      "bytes": 661,
+      "sha256": "651d165bb4442b74093b808d9b63a8592aa7e713e139e831537e3df426d4e1ce"
+    },
+    "REPRODUCED-PYTHON-VALIDATION.json": {
+      "bytes": 264,
+      "sha256": "3c3484d583a5dc1ffc29634907c2894c9728f85ee69eaeeae12a3b038b9e18ad"
+    }
+  }
+}

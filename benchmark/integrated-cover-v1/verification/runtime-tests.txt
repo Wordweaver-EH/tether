@@ -1,0 +1,20 @@
+✔ integrated opponent captures unattended ring on both sides, then holds without continual thought (342.719529ms)
+✔ ring proposal changes actual workspace focus and movement on identical public input (2.383611ms)
+✔ observed immediate spear interrupts objective; threat cut changes command and pursuit resumes (2.329458ms)
+✔ remembered embedded return line competes in workspace before actuation (7.748478ms)
+✔ public occupied ring drives contest while exact hidden opponent stays unknown (1.540338ms)
+✔ minimum budget reports unfinished planning and continues safe movement and spear recovery (1.064147ms)
+✔ replanning is bounded and reports actual attempt/completion status (91.267204ms)
+✔ successful route cache saves declared work, survives ordinary resets and does not fabricate tactical learning (312.667487ms)
+✔ hidden truth and report-only intervention leave integrated commands unchanged (28.743136ms)
+✔ integrated closed-loop commands and world are exactly seeded-replay deterministic (315.863028ms)
+✔ new non-reflex danger invalidates an established urgent-ring focus through the workspace (2.388967ms)
+✔ Cover completion describes its executable immediate recall, never an unimplemented delayed branch (1.5715ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1245.111313

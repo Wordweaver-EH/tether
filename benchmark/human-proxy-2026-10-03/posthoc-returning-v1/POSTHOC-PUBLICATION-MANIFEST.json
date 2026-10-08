@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "status": "sealed-for-independent-review",
+  "scope": "saved-evidence posthoc returning-HIT diagnosis; no gameplay or Git writes",
+  "sourceFreezeSha256": "c79bcbd5dbf1f672b52f9c973c1c57c6c2432ed8c5df28ceaaad7177c71eda49",
+  "files": [
+    {
+      "file": "PUBLIC-REPORT.md",
+      "bytes": 7482,
+      "sha256": "ed43e5f52f94057af5df2638de114e0c5ac1e0f5a6cce08da32232f01e0cd00d",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3467,
+      "sha256": "ba8a373fbc92269b591edc9eeced44a9120f31f9506af1685c42ff9ccdbaab0f",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "analyze-returning.mjs",
+      "bytes": 20988,
+      "sha256": "64779a854e7276326e975757191d49a5a228d5e593441e142ea2be17481b3a9f",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "analysis-math.mjs",
+      "bytes": 1803,
+      "sha256": "ac40d0be552910d7ad651f9c54d7c3edec22662c001dd0fa9ec1fa9b15436cdb",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "analysis.test.mjs",
+      "bytes": 2785,
+      "sha256": "d93c42161dc648d5acef10201f03df0374217ced062354f21b97abb58983d840",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "validate-summary.py",
+      "bytes": 2399,
+      "sha256": "58f87efc52edca2e74f686d19d1d5a578d4a5d4fc30c5e9a38d7809ca8f198a9",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "UNIT-TEST-OUTPUT.txt",
+      "bytes": 661,
+      "sha256": "70001f2f29c9c4d14a1606ceb7ac16e173190bae20c8548b8d366397f108cf12",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "VALIDATION-OUTPUT.json",
+      "bytes": 264,
+      "sha256": "3c3484d583a5dc1ffc29634907c2894c9728f85ee69eaeeae12a3b038b9e18ad",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "ANALYSIS-OUTPUT-final.txt",
+      "bytes": 11634,
+      "sha256": "e1f346c8348dc0ffe8dc66926827f60591d97ba82f1c082e086990b8bfd51697",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "results-final/BOUT-SUMMARIES.json",
+      "bytes": 14363,
+      "sha256": "c89bd4402e9845e4156895bb760c136b158c1845ca7dccd88b9f15c947d38cc4",
+      "kind": "raw-derived-summary"
+    },
+    {
+      "file": "results-final/INPUT-MANIFEST.json",
+      "bytes": 9143,
+      "sha256": "cf75b0bce7a07eb319761cb47a557717b5381cead1648d41ca9e5a26400de1dc",
+      "kind": "report-analysis-or-check"
+    },
+    {
+      "file": "results-final/RECALLS.jsonl",
+      "bytes": 10791263,
+      "sha256": "41839c3f6f0604b88eef20ebcb2a89ac21f872d6374587ecda57d8fc1cace9d0",
+      "kind": "raw-derived-summary"
+    },
+    {
+      "file": "results-final/RETURNING-HITS.jsonl",
+      "bytes": 5681864,
+      "sha256": "466ac50af66c1a216fd840710e6af1a3344d4f5c46b0672af35e1869c178c52a",
+      "kind": "raw-derived-summary"
+    },
+    {
+      "file": "results-final/SUMMARY.json",
+      "bytes": 8207,
+      "sha256": "87aff741282f6171ffe58c0a287f0ab9a8752ca7deef4adb8f52ef1458c9a3d1",
+      "kind": "report-analysis-or-check"
+    }
+  ]
+}

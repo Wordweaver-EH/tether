@@ -42,6 +42,7 @@ export function makeAgent(variant, seed, policy = 'tuned') {
 
 export function startMetrics() {
   return {
+    throws: [0, 0], outboundHits: [0, 0], returningHits: [0, 0],
     elapsed: 0, embeds: [[], []], open: [null, null], delays: [[], []],
     secondLocation: [0, 0], neutralizations: [0, 0],
     lookAwaySec: [0, 0], lookAwayHit: [0, 0],
@@ -97,6 +98,11 @@ export function observeStep(m, { world, events, dt }) {
   for (const event of events) {
     const owner = event.owner ?? event.player ?? event.spear_owner ?? event.attacker;
     const i = owner === 'P1' ? 0 : 1;
+    if (event.type === 'THROW') m.throws[i]++;
+    if (event.type === 'HIT') {
+      if (event.phase === 'OUTBOUND') m.outboundHits[i]++;
+      else if (event.phase === 'RETURNING') m.returningHits[i]++;
+    }
     if (event.type === 'EMBED') {
       m.embeds[i].push(m.elapsed);
       m.open[i] = { time: m.elapsed, start: { ...world.players[i].position },
@@ -128,6 +134,8 @@ export function observeStep(m, { world, events, dt }) {
 export function finishMetrics(m) {
   for (let i = 0; i < 2; i++) closeEmbed(m, i, m.elapsed);
   return {
+    throws: m.throws, outboundHits: m.outboundHits,
+    returningHits: m.returningHits,
     embedCounts: m.embeds.map((v) => v.length),
     embedToRecallDelays: m.delays,
     secondLocation: m.secondLocation,

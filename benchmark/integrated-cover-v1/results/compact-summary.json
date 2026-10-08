@@ -1,0 +1,2585 @@
+{
+  "scope": "fixed short engineering characterization; no human fun, general strength, learned strategy or consciousness inference",
+  "node": "v24.19.0",
+  "seeds": [
+    101,
+    307,
+    509,
+    911
+  ],
+  "durationSec": 30,
+  "source": {
+    "src/mind/index.mjs": "a19f9e8d809f2d791dcea2d2f7f1525555a278d0b926b98f96e65bf0baee420a",
+    "src/mind/cover-policy.mjs": "0173ab52eca7c1c6787ae129c3fd4af9aee572a9f3352f9b497463c6ba02a8ac",
+    "src/agents/cover-integrated.mjs": "918d7867d14b6e430b6608a1f025a2e47757de9b6a7d26a782d875ca4ce5b081",
+    "src/agents/cover-control.mjs": "42007be15c44eb203ec28f1fd8fa953baff2ba53eee75518c5f04272f5deb07c",
+    "src/agents/cover-interface.mjs": "0fdfbb7021d77bd5e843d67ea6405bbf2ee656ad3a67dae988ca4c6e300fb46d",
+    "benchmark/integrated-cover-v1/PROTOCOL.md": "54aa8bfd17b35b0d6ac265232d412e1f25bcf0169cf14982842ec277bd70e5ab",
+    "benchmark/integrated-cover-v1/run.mjs": "b7359b8f0fcbdc4669cb1b823ec024499b3112c576f18f57536d7762e7a2096b"
+  },
+  "aggregates": {
+    "full": {
+      "bouts": 8,
+      "mindPoints": 18,
+      "baselinePoints": 55,
+      "mindRingPoints": 0,
+      "mindHitPoints": 18,
+      "baselineRingPoints": 0,
+      "baselineHitPoints": 55,
+      "decisions": 7168,
+      "planningAttempts": 194,
+      "planningCompleted": 135,
+      "planningUnfinished": 59,
+      "routeCacheUses": 73,
+      "budgetSpent": 810877,
+      "focus": {
+        "Objective": 6684,
+        "Reflex": 305,
+        "Threat": 159,
+        "Search": 8,
+        "Hunt": 12
+      }
+    },
+    "objectiveOff": {
+      "bouts": 8,
+      "mindPoints": 19,
+      "baselinePoints": 72,
+      "mindRingPoints": 0,
+      "mindHitPoints": 19,
+      "baselineRingPoints": 60,
+      "baselineHitPoints": 12,
+      "decisions": 7168,
+      "planningAttempts": 122,
+      "planningCompleted": 78,
+      "planningUnfinished": 44,
+      "routeCacheUses": 8,
+      "budgetSpent": 815248,
+      "focus": {
+        "Search": 1765,
+        "Hunt": 3179,
+        "Threat": 543,
+        "Reflex": 220,
+        "None": 1461
+      }
+    },
+    "threatOff": {
+      "bouts": 8,
+      "mindPoints": 35,
+      "baselinePoints": 43,
+      "mindRingPoints": 0,
+      "mindHitPoints": 35,
+      "baselineRingPoints": 0,
+      "baselineHitPoints": 43,
+      "decisions": 7168,
+      "planningAttempts": 217,
+      "planningCompleted": 160,
+      "planningUnfinished": 57,
+      "routeCacheUses": 77,
+      "budgetSpent": 844749,
+      "focus": {
+        "Objective": 7168
+      }
+    },
+    "routeCacheOff": {
+      "bouts": 8,
+      "mindPoints": 18,
+      "baselinePoints": 55,
+      "mindRingPoints": 0,
+      "mindHitPoints": 18,
+      "baselineRingPoints": 0,
+      "baselineHitPoints": 55,
+      "decisions": 7168,
+      "planningAttempts": 194,
+      "planningCompleted": 135,
+      "planningUnfinished": 59,
+      "routeCacheUses": 0,
+      "budgetSpent": 811388,
+      "focus": {
+        "Objective": 6684,
+        "Reflex": 305,
+        "Threat": 159,
+        "Search": 8,
+        "Hunt": 12
+      }
+    },
+    "reportOff": {
+      "bouts": 8,
+      "mindPoints": 18,
+      "baselinePoints": 55,
+      "mindRingPoints": 0,
+      "mindHitPoints": 18,
+      "baselineRingPoints": 0,
+      "baselineHitPoints": 55,
+      "decisions": 7168,
+      "planningAttempts": 194,
+      "planningCompleted": 135,
+      "planningUnfinished": 59,
+      "routeCacheUses": 73,
+      "budgetSpent": 810877,
+      "focus": {
+        "Objective": 6684,
+        "Reflex": 305,
+        "Threat": 159,
+        "Search": 8,
+        "Hunt": 12
+      }
+    }
+  },
+  "reportParity": [
+    {
+      "seed": 101,
+      "seat": "P1",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 101,
+      "seat": "P2",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 307,
+      "seat": "P1",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 307,
+      "seat": "P2",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 509,
+      "seat": "P1",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 509,
+      "seat": "P2",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 911,
+      "seat": "P1",
+      "equalInputs": true,
+      "equalWorld": true
+    },
+    {
+      "seed": 911,
+      "seat": "P2",
+      "equalInputs": true,
+      "equalWorld": true
+    }
+  ],
+  "detailSHA256": "ad0745ffffb16d7311169ae867bd15f1a98b5baa9647f1853f5a48bb87c00b45",
+  "bouts": [
+    {
+      "variant": "full",
+      "seed": 101,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        0,
+        10
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          0,
+          10
+        ]
+      },
+      "throws": [
+        0,
+        35
+      ],
+      "recalls": [
+        0,
+        42
+      ],
+      "focus": {
+        "Objective": 839,
+        "Reflex": 42,
+        "Threat": 15
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 15,
+      "planningUnfinished": 11,
+      "fallbackDecisions": 11,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 42,
+      "budgetSpent": 101082,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13664,
+        "belief": 78568,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1664
+      },
+      "inputSha256": "477b197d560f6dca2e0e557602af113b38c516f22bb75eab367e562ceb9ad2ef",
+      "finalWorldHash": "35b059aa70fa6c06",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 101,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        2
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          2
+        ]
+      },
+      "throws": [
+        26,
+        3
+      ],
+      "recalls": [
+        59,
+        2
+      ],
+      "focus": {
+        "Objective": 835,
+        "Reflex": 45,
+        "Threat": 16
+      },
+      "decisions": 896,
+      "planningRequests": 23,
+      "planningAttempts": 23,
+      "planningCompleted": 18,
+      "planningUnfinished": 5,
+      "fallbackDecisions": 5,
+      "routeCacheUses": 9,
+      "routeEvaluations": 1,
+      "reflexes": 45,
+      "budgetSpent": 100533,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13616,
+        "belief": 78292,
+        "cover-route": 8,
+        "rollout": 1440,
+        "cover-route-cache": 9
+      },
+      "inputSha256": "cb24e1ef7e1470b9f38d1a086781c795a51b7fcec7f1ffc5871f28147bb2e4a4",
+      "finalWorldHash": "1a466ba8d820cfbe",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 307,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        3,
+        7
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          3,
+          7
+        ]
+      },
+      "throws": [
+        3,
+        31
+      ],
+      "recalls": [
+        1,
+        56
+      ],
+      "focus": {
+        "Objective": 851,
+        "Reflex": 35,
+        "Threat": 10
+      },
+      "decisions": 896,
+      "planningRequests": 22,
+      "planningAttempts": 22,
+      "planningCompleted": 17,
+      "planningUnfinished": 5,
+      "fallbackDecisions": 5,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 35,
+      "budgetSpent": 101550,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13776,
+        "belief": 79212,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1376
+      },
+      "inputSha256": "7aa332d2784413d1c2fadb00be3b57f27c40d513c8646829d07848f029cf1bc0",
+      "finalWorldHash": "32e66a3b9fd0088c",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 307,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        6,
+        2
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        30,
+        3
+      ],
+      "recalls": [
+        87,
+        2
+      ],
+      "focus": {
+        "Objective": 816,
+        "Reflex": 36,
+        "Threat": 42,
+        "Search": 2
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 17,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 36,
+      "budgetSpent": 101664,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 8,
+        "rollout": 1600,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "587f8866b51334006ec52e74ab920c76f3f830fc39265813428bb1a6abf23e09",
+      "finalWorldHash": "41d0f855444d52e2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 509,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        6
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          6
+        ]
+      },
+      "throws": [
+        3,
+        28
+      ],
+      "recalls": [
+        1,
+        66
+      ],
+      "focus": {
+        "Objective": 851,
+        "Threat": 16,
+        "Reflex": 29
+      },
+      "decisions": 896,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 18,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 29,
+      "budgetSpent": 102388,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13872,
+        "belief": 79764,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "e9acde365e8c0dc2e74296f4ef69255f7afd36e4f695149f6b7a31483024ff3d",
+      "finalWorldHash": "a4344c8beb1c7ee6",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 509,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        5,
+        3
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          3
+        ]
+      },
+      "throws": [
+        31,
+        3
+      ],
+      "recalls": [
+        89,
+        1
+      ],
+      "focus": {
+        "Objective": 825,
+        "Reflex": 39,
+        "Threat": 28,
+        "Search": 4
+      },
+      "decisions": 896,
+      "planningRequests": 27,
+      "planningAttempts": 27,
+      "planningCompleted": 21,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 39,
+      "budgetSpent": 101436,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13712,
+        "belief": 78844,
+        "cover-route": 8,
+        "rollout": 1696,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "fbf2d7bdf717d3d0754d681b934e5262eb7575bb70ca40ad8c48532b0f20c2fc",
+      "finalWorldHash": "4b7eb2acb508f2b1",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 911,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        7
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          7
+        ]
+      },
+      "throws": [
+        4,
+        31
+      ],
+      "recalls": [
+        1,
+        83
+      ],
+      "focus": {
+        "Objective": 827,
+        "Threat": 28,
+        "Reflex": 39,
+        "Search": 2
+      },
+      "decisions": 896,
+      "planningRequests": 19,
+      "planningAttempts": 19,
+      "planningCompleted": 12,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 9,
+      "routeEvaluations": 1,
+      "reflexes": 39,
+      "budgetSpent": 100925,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13712,
+        "belief": 78844,
+        "cover-route": 8,
+        "rollout": 1184,
+        "cover-route-cache": 9
+      },
+      "inputSha256": "f62357a0e660b31c147057da42c35c7ec70d85c0fffa0d6a685b4459030edbb6",
+      "finalWorldHash": "484a4a697638b3a2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "full",
+      "seed": 911,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        4
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          4
+        ]
+      },
+      "throws": [
+        28,
+        5
+      ],
+      "recalls": [
+        18,
+        1
+      ],
+      "focus": {
+        "Objective": 840,
+        "Reflex": 40,
+        "Threat": 4,
+        "Hunt": 12
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 17,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 11,
+      "routeEvaluations": 1,
+      "reflexes": 40,
+      "budgetSpent": 101299,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 8,
+        "rollout": 1664,
+        "cover-route-cache": 11
+      },
+      "inputSha256": "7f58e6b7be59af2333390b5b747c83520e8c37b8c2c722662441cf1f7172308d",
+      "finalWorldHash": "93d2d2f202efed02",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 101,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        1,
+        10
+      ],
+      "points": {
+        "ring": [
+          0,
+          7
+        ],
+        "hit": [
+          1,
+          3
+        ]
+      },
+      "throws": [
+        6,
+        22
+      ],
+      "recalls": [
+        4,
+        56
+      ],
+      "focus": {
+        "Search": 256,
+        "Hunt": 555,
+        "Threat": 55,
+        "Reflex": 30
+      },
+      "decisions": 896,
+      "planningRequests": 21,
+      "planningAttempts": 21,
+      "planningCompleted": 13,
+      "planningUnfinished": 8,
+      "fallbackDecisions": 8,
+      "routeCacheUses": 0,
+      "routeEvaluations": 5,
+      "reflexes": 30,
+      "budgetSpent": 101984,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13856,
+        "belief": 79672,
+        "cover-route": 40,
+        "rollout": 1248
+      },
+      "inputSha256": "dd255a36bdbd4981e3270fee89de187edba7d899b1bb47bed0ebcaca38658d8c",
+      "finalWorldHash": "dfc4fc1c190c15a0",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 101,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        4
+      ],
+      "points": {
+        "ring": [
+          6,
+          0
+        ],
+        "hit": [
+          1,
+          4
+        ]
+      },
+      "throws": [
+        35,
+        10
+      ],
+      "recalls": [
+        104,
+        6
+      ],
+      "focus": {
+        "Search": 223,
+        "Hunt": 525,
+        "Reflex": 30,
+        "Threat": 117,
+        "None": 1
+      },
+      "decisions": 896,
+      "planningRequests": 18,
+      "planningAttempts": 18,
+      "planningCompleted": 12,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 0,
+      "routeEvaluations": 6,
+      "reflexes": 30,
+      "budgetSpent": 101800,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13856,
+        "belief": 79672,
+        "cover-route": 48,
+        "rollout": 1056
+      },
+      "inputSha256": "e7eab6e293ef92926d9a4756ea072587fdc62b4379fb16b8e44a9b7a960f9746",
+      "finalWorldHash": "0d1e7aa5a469a592",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 307,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        1,
+        11
+      ],
+      "points": {
+        "ring": [
+          0,
+          11
+        ],
+        "hit": [
+          1,
+          0
+        ]
+      },
+      "throws": [
+        1,
+        5
+      ],
+      "recalls": [
+        1,
+        5
+      ],
+      "focus": {
+        "Search": 122,
+        "Hunt": 46,
+        "Threat": 5,
+        "Reflex": 10,
+        "None": 713
+      },
+      "decisions": 896,
+      "planningRequests": 3,
+      "planningAttempts": 3,
+      "planningCompleted": 1,
+      "planningUnfinished": 2,
+      "fallbackDecisions": 2,
+      "routeCacheUses": 0,
+      "routeEvaluations": 2,
+      "reflexes": 10,
+      "budgetSpent": 103032,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14176,
+        "belief": 81512,
+        "cover-route": 16,
+        "rollout": 160
+      },
+      "inputSha256": "f5f140ee22f45a8b47c61975c9fdd02e448ea5e5288e46f5d5558771350f3f07",
+      "finalWorldHash": "978dcbaac5cc5a99",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 307,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        11,
+        1
+      ],
+      "points": {
+        "ring": [
+          11,
+          0
+        ],
+        "hit": [
+          0,
+          1
+        ]
+      },
+      "throws": [
+        10,
+        2
+      ],
+      "recalls": [
+        33,
+        1
+      ],
+      "focus": {
+        "Search": 121,
+        "Hunt": 126,
+        "Reflex": 9,
+        "Threat": 51,
+        "None": 589
+      },
+      "decisions": 896,
+      "planningRequests": 6,
+      "planningAttempts": 6,
+      "planningCompleted": 3,
+      "planningUnfinished": 3,
+      "fallbackDecisions": 3,
+      "routeCacheUses": 0,
+      "routeEvaluations": 2,
+      "reflexes": 9,
+      "budgetSpent": 103332,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14192,
+        "belief": 81604,
+        "cover-route": 16,
+        "rollout": 352
+      },
+      "inputSha256": "03599c2fd79094cf23b03338f82351bf3404e46041cc8f79bd05ba748cc49193",
+      "finalWorldHash": "353fb6f864268a54",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 509,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        5,
+        6
+      ],
+      "points": {
+        "ring": [
+          0,
+          4
+        ],
+        "hit": [
+          5,
+          2
+        ]
+      },
+      "throws": [
+        10,
+        45
+      ],
+      "recalls": [
+        4,
+        43
+      ],
+      "focus": {
+        "Search": 304,
+        "Hunt": 408,
+        "Threat": 137,
+        "Reflex": 47
+      },
+      "decisions": 896,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 16,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 5,
+      "routeEvaluations": 3,
+      "reflexes": 47,
+      "budgetSpent": 100361,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13584,
+        "belief": 78108,
+        "cover-route": 24,
+        "rollout": 1472,
+        "cover-route-cache": 5
+      },
+      "inputSha256": "c84e0b96fcb5ce7bbf37add871c49a5d53043e29cc869ec9b72163b8b7367e6e",
+      "finalWorldHash": "5b70bd53f2514168",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 509,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        8,
+        3
+      ],
+      "points": {
+        "ring": [
+          6,
+          0
+        ],
+        "hit": [
+          2,
+          3
+        ]
+      },
+      "throws": [
+        34,
+        7
+      ],
+      "recalls": [
+        90,
+        5
+      ],
+      "focus": {
+        "Search": 247,
+        "Hunt": 331,
+        "Reflex": 42,
+        "Threat": 118,
+        "None": 158
+      },
+      "decisions": 896,
+      "planningRequests": 14,
+      "planningAttempts": 14,
+      "planningCompleted": 12,
+      "planningUnfinished": 2,
+      "fallbackDecisions": 2,
+      "routeCacheUses": 3,
+      "routeEvaluations": 3,
+      "reflexes": 42,
+      "budgetSpent": 100259,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13664,
+        "belief": 78568,
+        "cover-route": 24,
+        "rollout": 832,
+        "cover-route-cache": 3
+      },
+      "inputSha256": "383a13c5f5be7e06dd76a006418f65c14420497621a82da530bd9ea2bb5bd906",
+      "finalWorldHash": "8cf497c8356c6f65",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 911,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        10
+      ],
+      "points": {
+        "ring": [
+          0,
+          9
+        ],
+        "hit": [
+          2,
+          1
+        ]
+      },
+      "throws": [
+        7,
+        19
+      ],
+      "recalls": [
+        5,
+        44
+      ],
+      "focus": {
+        "Search": 170,
+        "Hunt": 666,
+        "Threat": 49,
+        "Reflex": 11
+      },
+      "decisions": 896,
+      "planningRequests": 22,
+      "planningAttempts": 22,
+      "planningCompleted": 14,
+      "planningUnfinished": 8,
+      "fallbackDecisions": 8,
+      "routeCacheUses": 0,
+      "routeEvaluations": 4,
+      "reflexes": 11,
+      "budgetSpent": 104092,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14160,
+        "belief": 81420,
+        "cover-route": 32,
+        "rollout": 1312
+      },
+      "inputSha256": "afed12d549ffa69fff9e231b85dea9c60f55245305322118add37f79345f57cd",
+      "finalWorldHash": "1a5f916e5e59f8ef",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "objectiveOff",
+      "seed": 911,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        9,
+        2
+      ],
+      "points": {
+        "ring": [
+          6,
+          0
+        ],
+        "hit": [
+          3,
+          2
+        ]
+      },
+      "throws": [
+        28,
+        2
+      ],
+      "recalls": [
+        22,
+        0
+      ],
+      "focus": {
+        "Search": 322,
+        "Hunt": 522,
+        "Reflex": 41,
+        "Threat": 11
+      },
+      "decisions": 896,
+      "planningRequests": 13,
+      "planningAttempts": 13,
+      "planningCompleted": 7,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 0,
+      "routeEvaluations": 6,
+      "reflexes": 41,
+      "budgetSpent": 100388,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13680,
+        "belief": 78660,
+        "cover-route": 48,
+        "rollout": 832
+      },
+      "inputSha256": "420ed3148d3cf378faceb0e848d0f321103f4e1b3bad0cfeecca634d19795de5",
+      "finalWorldHash": "1c648ff2fa467f47",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 101,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        5,
+        6
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          6
+        ]
+      },
+      "throws": [
+        5,
+        29
+      ],
+      "recalls": [
+        4,
+        57
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 28,
+      "planningAttempts": 28,
+      "planningCompleted": 21,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 11,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105619,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "cover-route-cache": 11,
+        "rollout": 1664
+      },
+      "inputSha256": "0e6f982144ccf3ed88640be043f8fde8e886cbacc796a7d61e9fcfdb805c1f2f",
+      "finalWorldHash": "285dac075205ded8",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 101,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        5,
+        5
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          5
+        ]
+      },
+      "throws": [
+        30,
+        5
+      ],
+      "recalls": [
+        58,
+        4
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 31,
+      "planningAttempts": 31,
+      "planningCompleted": 24,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105810,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "rollout": 1856,
+        "cover-route-cache": 10
+      },
+      "inputSha256": "dc6aa1f9dade56d96daacef2357520e9ae27c075e0b2f2ad9786c1a9bba98a69",
+      "finalWorldHash": "b323714fa37223b2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 307,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        6,
+        4
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          4
+        ]
+      },
+      "throws": [
+        8,
+        28
+      ],
+      "recalls": [
+        1,
+        29
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 24,
+      "planningAttempts": 24,
+      "planningCompleted": 17,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105458,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1504
+      },
+      "inputSha256": "6c3e9ab300fdabc0b338d2f00a297d18f7c855253a69d204420833b1f7fc10b2",
+      "finalWorldHash": "94869fa13152859f",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 307,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        6,
+        5
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          5
+        ]
+      },
+      "throws": [
+        26,
+        5
+      ],
+      "recalls": [
+        34,
+        3
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 28,
+      "planningAttempts": 28,
+      "planningCompleted": 21,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 11,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105651,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "rollout": 1696,
+        "cover-route-cache": 11
+      },
+      "inputSha256": "c025a92bfbae9f285cd62264c10c5d4dce753d6f509fc56a6cce985072364bd9",
+      "finalWorldHash": "c32edea654d7994c",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 509,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        6
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          6
+        ]
+      },
+      "throws": [
+        4,
+        33
+      ],
+      "recalls": [
+        4,
+        56
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 27,
+      "planningAttempts": 27,
+      "planningCompleted": 21,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105552,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "rollout": 1600,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "b9a4bdb90dcaaf569331090a054c610e7ab6438cc94bca7bd4832f1f1d8d2548",
+      "finalWorldHash": "79ccea7c545b59ab",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 509,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        5,
+        5
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          5
+        ]
+      },
+      "throws": [
+        33,
+        8
+      ],
+      "recalls": [
+        38,
+        3
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 28,
+      "planningAttempts": 28,
+      "planningCompleted": 20,
+      "planningUnfinished": 8,
+      "fallbackDecisions": 8,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105682,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "rollout": 1728,
+        "cover-route-cache": 10
+      },
+      "inputSha256": "deba875a01ee494df1430f2aee5f7a7d7cb4fd95f75d7a75bd7630716751f6ad",
+      "finalWorldHash": "01c65af36ce1c44c",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 911,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        4,
+        4
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          4,
+          4
+        ]
+      },
+      "throws": [
+        7,
+        28
+      ],
+      "recalls": [
+        6,
+        74
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 20,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 7,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105455,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "rollout": 1504,
+        "cover-route-cache": 7
+      },
+      "inputSha256": "1c0ba09aa84c9ae6008f6f86bb9dfa80b8441659cb33727f65a44d4e477cd4c8",
+      "finalWorldHash": "74da48001bd2021b",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "threatOff",
+      "seed": 911,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        3
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          3
+        ]
+      },
+      "throws": [
+        28,
+        4
+      ],
+      "recalls": [
+        16,
+        1
+      ],
+      "focus": {
+        "Objective": 896
+      },
+      "decisions": 896,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 16,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 0,
+      "budgetSpent": 105522,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 14336,
+        "belief": 82432,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 10
+      },
+      "inputSha256": "6b7534cd6d66edb5b908d45cab38162382ee5d96582d38617fd8882c7e54bf23",
+      "finalWorldHash": "ceaa92fd88e2817f",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 101,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        0,
+        10
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          0,
+          10
+        ]
+      },
+      "throws": [
+        0,
+        35
+      ],
+      "recalls": [
+        0,
+        42
+      ],
+      "focus": {
+        "Objective": 839,
+        "Reflex": 42,
+        "Threat": 15
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 15,
+      "planningUnfinished": 11,
+      "fallbackDecisions": 11,
+      "routeCacheUses": 0,
+      "routeEvaluations": 11,
+      "reflexes": 42,
+      "budgetSpent": 101152,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13664,
+        "belief": 78568,
+        "cover-route": 88,
+        "rollout": 1664
+      },
+      "inputSha256": "477b197d560f6dca2e0e557602af113b38c516f22bb75eab367e562ceb9ad2ef",
+      "finalWorldHash": "35b059aa70fa6c06",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 101,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        2
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          2
+        ]
+      },
+      "throws": [
+        26,
+        3
+      ],
+      "recalls": [
+        59,
+        2
+      ],
+      "focus": {
+        "Objective": 835,
+        "Reflex": 45,
+        "Threat": 16
+      },
+      "decisions": 896,
+      "planningRequests": 23,
+      "planningAttempts": 23,
+      "planningCompleted": 18,
+      "planningUnfinished": 5,
+      "fallbackDecisions": 5,
+      "routeCacheUses": 0,
+      "routeEvaluations": 10,
+      "reflexes": 45,
+      "budgetSpent": 100596,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13616,
+        "belief": 78292,
+        "cover-route": 80,
+        "rollout": 1440
+      },
+      "inputSha256": "cb24e1ef7e1470b9f38d1a086781c795a51b7fcec7f1ffc5871f28147bb2e4a4",
+      "finalWorldHash": "1a466ba8d820cfbe",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 307,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        3,
+        7
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          3,
+          7
+        ]
+      },
+      "throws": [
+        3,
+        31
+      ],
+      "recalls": [
+        1,
+        56
+      ],
+      "focus": {
+        "Objective": 851,
+        "Reflex": 35,
+        "Threat": 10
+      },
+      "decisions": 896,
+      "planningRequests": 22,
+      "planningAttempts": 22,
+      "planningCompleted": 17,
+      "planningUnfinished": 5,
+      "fallbackDecisions": 5,
+      "routeCacheUses": 0,
+      "routeEvaluations": 11,
+      "reflexes": 35,
+      "budgetSpent": 101620,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13776,
+        "belief": 79212,
+        "cover-route": 88,
+        "rollout": 1376
+      },
+      "inputSha256": "7aa332d2784413d1c2fadb00be3b57f27c40d513c8646829d07848f029cf1bc0",
+      "finalWorldHash": "32e66a3b9fd0088c",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 307,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        6,
+        2
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        30,
+        3
+      ],
+      "recalls": [
+        87,
+        2
+      ],
+      "focus": {
+        "Objective": 816,
+        "Reflex": 36,
+        "Threat": 42,
+        "Search": 2
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 17,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 0,
+      "routeEvaluations": 9,
+      "reflexes": 36,
+      "budgetSpent": 101720,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 72,
+        "rollout": 1600
+      },
+      "inputSha256": "587f8866b51334006ec52e74ab920c76f3f830fc39265813428bb1a6abf23e09",
+      "finalWorldHash": "41d0f855444d52e2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 509,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        6
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          6
+        ]
+      },
+      "throws": [
+        3,
+        28
+      ],
+      "recalls": [
+        1,
+        66
+      ],
+      "focus": {
+        "Objective": 851,
+        "Threat": 16,
+        "Reflex": 29
+      },
+      "decisions": 896,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 18,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 0,
+      "routeEvaluations": 9,
+      "reflexes": 29,
+      "budgetSpent": 102444,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13872,
+        "belief": 79764,
+        "cover-route": 72,
+        "rollout": 1568
+      },
+      "inputSha256": "e9acde365e8c0dc2e74296f4ef69255f7afd36e4f695149f6b7a31483024ff3d",
+      "finalWorldHash": "a4344c8beb1c7ee6",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 509,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        5,
+        3
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          3
+        ]
+      },
+      "throws": [
+        31,
+        3
+      ],
+      "recalls": [
+        89,
+        1
+      ],
+      "focus": {
+        "Objective": 825,
+        "Reflex": 39,
+        "Threat": 28,
+        "Search": 4
+      },
+      "decisions": 896,
+      "planningRequests": 27,
+      "planningAttempts": 27,
+      "planningCompleted": 21,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 0,
+      "routeEvaluations": 9,
+      "reflexes": 39,
+      "budgetSpent": 101492,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13712,
+        "belief": 78844,
+        "cover-route": 72,
+        "rollout": 1696
+      },
+      "inputSha256": "fbf2d7bdf717d3d0754d681b934e5262eb7575bb70ca40ad8c48532b0f20c2fc",
+      "finalWorldHash": "4b7eb2acb508f2b1",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 911,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        7
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          7
+        ]
+      },
+      "throws": [
+        4,
+        31
+      ],
+      "recalls": [
+        1,
+        83
+      ],
+      "focus": {
+        "Objective": 827,
+        "Threat": 28,
+        "Reflex": 39,
+        "Search": 2
+      },
+      "decisions": 896,
+      "planningRequests": 19,
+      "planningAttempts": 19,
+      "planningCompleted": 12,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 0,
+      "routeEvaluations": 10,
+      "reflexes": 39,
+      "budgetSpent": 100988,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13712,
+        "belief": 78844,
+        "cover-route": 80,
+        "rollout": 1184
+      },
+      "inputSha256": "f62357a0e660b31c147057da42c35c7ec70d85c0fffa0d6a685b4459030edbb6",
+      "finalWorldHash": "484a4a697638b3a2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "routeCacheOff",
+      "seed": 911,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        4
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          4
+        ]
+      },
+      "throws": [
+        28,
+        5
+      ],
+      "recalls": [
+        18,
+        1
+      ],
+      "focus": {
+        "Objective": 840,
+        "Reflex": 40,
+        "Threat": 4,
+        "Hunt": 12
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 17,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 0,
+      "routeEvaluations": 12,
+      "reflexes": 40,
+      "budgetSpent": 101376,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 96,
+        "rollout": 1664
+      },
+      "inputSha256": "7f58e6b7be59af2333390b5b747c83520e8c37b8c2c722662441cf1f7172308d",
+      "finalWorldHash": "93d2d2f202efed02",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 101,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        0,
+        10
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          0,
+          10
+        ]
+      },
+      "throws": [
+        0,
+        35
+      ],
+      "recalls": [
+        0,
+        42
+      ],
+      "focus": {
+        "Objective": 839,
+        "Reflex": 42,
+        "Threat": 15
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 15,
+      "planningUnfinished": 11,
+      "fallbackDecisions": 11,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 42,
+      "budgetSpent": 101082,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13664,
+        "belief": 78568,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1664
+      },
+      "inputSha256": "477b197d560f6dca2e0e557602af113b38c516f22bb75eab367e562ceb9ad2ef",
+      "finalWorldHash": "35b059aa70fa6c06",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 101,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        2
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          2
+        ]
+      },
+      "throws": [
+        26,
+        3
+      ],
+      "recalls": [
+        59,
+        2
+      ],
+      "focus": {
+        "Objective": 835,
+        "Reflex": 45,
+        "Threat": 16
+      },
+      "decisions": 896,
+      "planningRequests": 23,
+      "planningAttempts": 23,
+      "planningCompleted": 18,
+      "planningUnfinished": 5,
+      "fallbackDecisions": 5,
+      "routeCacheUses": 9,
+      "routeEvaluations": 1,
+      "reflexes": 45,
+      "budgetSpent": 100533,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13616,
+        "belief": 78292,
+        "cover-route": 8,
+        "rollout": 1440,
+        "cover-route-cache": 9
+      },
+      "inputSha256": "cb24e1ef7e1470b9f38d1a086781c795a51b7fcec7f1ffc5871f28147bb2e4a4",
+      "finalWorldHash": "1a466ba8d820cfbe",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 307,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        3,
+        7
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          3,
+          7
+        ]
+      },
+      "throws": [
+        3,
+        31
+      ],
+      "recalls": [
+        1,
+        56
+      ],
+      "focus": {
+        "Objective": 851,
+        "Reflex": 35,
+        "Threat": 10
+      },
+      "decisions": 896,
+      "planningRequests": 22,
+      "planningAttempts": 22,
+      "planningCompleted": 17,
+      "planningUnfinished": 5,
+      "fallbackDecisions": 5,
+      "routeCacheUses": 10,
+      "routeEvaluations": 1,
+      "reflexes": 35,
+      "budgetSpent": 101550,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13776,
+        "belief": 79212,
+        "cover-route": 8,
+        "cover-route-cache": 10,
+        "rollout": 1376
+      },
+      "inputSha256": "7aa332d2784413d1c2fadb00be3b57f27c40d513c8646829d07848f029cf1bc0",
+      "finalWorldHash": "32e66a3b9fd0088c",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 307,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        6,
+        2
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          6,
+          2
+        ]
+      },
+      "throws": [
+        30,
+        3
+      ],
+      "recalls": [
+        87,
+        2
+      ],
+      "focus": {
+        "Objective": 816,
+        "Reflex": 36,
+        "Threat": 42,
+        "Search": 2
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 17,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 36,
+      "budgetSpent": 101664,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13760,
+        "belief": 79120,
+        "cover-route": 8,
+        "rollout": 1600,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "587f8866b51334006ec52e74ab920c76f3f830fc39265813428bb1a6abf23e09",
+      "finalWorldHash": "41d0f855444d52e2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 509,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        6
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          6
+        ]
+      },
+      "throws": [
+        3,
+        28
+      ],
+      "recalls": [
+        1,
+        66
+      ],
+      "focus": {
+        "Objective": 851,
+        "Threat": 16,
+        "Reflex": 29
+      },
+      "decisions": 896,
+      "planningRequests": 25,
+      "planningAttempts": 25,
+      "planningCompleted": 18,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 29,
+      "budgetSpent": 102388,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13872,
+        "belief": 79764,
+        "cover-route": 8,
+        "rollout": 1568,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "e9acde365e8c0dc2e74296f4ef69255f7afd36e4f695149f6b7a31483024ff3d",
+      "finalWorldHash": "a4344c8beb1c7ee6",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 509,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        5,
+        3
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          5,
+          3
+        ]
+      },
+      "throws": [
+        31,
+        3
+      ],
+      "recalls": [
+        89,
+        1
+      ],
+      "focus": {
+        "Objective": 825,
+        "Reflex": 39,
+        "Threat": 28,
+        "Search": 4
+      },
+      "decisions": 896,
+      "planningRequests": 27,
+      "planningAttempts": 27,
+      "planningCompleted": 21,
+      "planningUnfinished": 6,
+      "fallbackDecisions": 6,
+      "routeCacheUses": 8,
+      "routeEvaluations": 1,
+      "reflexes": 39,
+      "budgetSpent": 101436,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13712,
+        "belief": 78844,
+        "cover-route": 8,
+        "rollout": 1696,
+        "cover-route-cache": 8
+      },
+      "inputSha256": "fbf2d7bdf717d3d0754d681b934e5262eb7575bb70ca40ad8c48532b0f20c2fc",
+      "finalWorldHash": "4b7eb2acb508f2b1",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 911,
+      "seat": "P1",
+      "durationSec": 30,
+      "score": [
+        2,
+        7
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          2,
+          7
+        ]
+      },
+      "throws": [
+        4,
+        31
+      ],
+      "recalls": [
+        1,
+        83
+      ],
+      "focus": {
+        "Objective": 827,
+        "Threat": 28,
+        "Reflex": 39,
+        "Search": 2
+      },
+      "decisions": 896,
+      "planningRequests": 19,
+      "planningAttempts": 19,
+      "planningCompleted": 12,
+      "planningUnfinished": 7,
+      "fallbackDecisions": 7,
+      "routeCacheUses": 9,
+      "routeEvaluations": 1,
+      "reflexes": 39,
+      "budgetSpent": 100925,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13712,
+        "belief": 78844,
+        "cover-route": 8,
+        "rollout": 1184,
+        "cover-route-cache": 9
+      },
+      "inputSha256": "f62357a0e660b31c147057da42c35c7ec70d85c0fffa0d6a685b4459030edbb6",
+      "finalWorldHash": "484a4a697638b3a2",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    },
+    {
+      "variant": "reportOff",
+      "seed": 911,
+      "seat": "P2",
+      "durationSec": 30,
+      "score": [
+        7,
+        4
+      ],
+      "points": {
+        "ring": [
+          0,
+          0
+        ],
+        "hit": [
+          7,
+          4
+        ]
+      },
+      "throws": [
+        28,
+        5
+      ],
+      "recalls": [
+        18,
+        1
+      ],
+      "focus": {
+        "Objective": 840,
+        "Reflex": 40,
+        "Threat": 4,
+        "Hunt": 12
+      },
+      "decisions": 896,
+      "planningRequests": 26,
+      "planningAttempts": 26,
+      "planningCompleted": 17,
+      "planningUnfinished": 9,
+      "fallbackDecisions": 9,
+      "routeCacheUses": 11,
+      "routeEvaluations": 1,
+      "reflexes": 40,
+      "budgetSpent": 101299,
+      "budgetByKind": {
+        "control": 7168,
+        "coordination": 13696,
+        "belief": 78752,
+        "cover-route": 8,
+        "rollout": 1664,
+        "cover-route-cache": 11
+      },
+      "inputSha256": "7f58e6b7be59af2333390b5b747c83520e8c37b8c2c722662441cf1f7172308d",
+      "finalWorldHash": "93d2d2f202efed02",
+      "maxBudgetSpent": 180,
+      "tacticalLearningUpdates": 0,
+      "automaticDecisions": 0
+    }
+  ],
+  "decisionExamples": [
+    {
+      "time": 0,
+      "focus": "Objective",
+      "intent": "Reach the public ring",
+      "reason": "public ring geometry",
+      "plan": {
+        "requested": false,
+        "reason": "no actionable tactical change",
+        "nextEligible": null,
+        "status": "not-requested",
+        "fallback": null,
+        "availableUnits": 68,
+        "attempted": false,
+        "completedBranches": 0,
+        "actionModel": "bounded shot hypotheses"
+      },
+      "requested": {
+        "moveX": 0.5070201265633939,
+        "moveY": -0.8619342151577696,
+        "aimX": 1,
+        "aimY": 0,
+        "throw": false,
+        "recall": false
+      },
+      "issued": {
+        "moveX": 0.5070201265633939,
+        "moveY": -0.8619342151577696,
+        "aimX": 0.9990952985129398,
+        "aimY": -0.04252745571204362,
+        "throw": false,
+        "recall": false
+      },
+      "evidence": {
+        "sensorTime": 0,
+        "opponent": "unobserved",
+        "objective": {
+          "controller": null,
+          "contested": false,
+          "holdTicks": 0
+        }
+      }
+    },
+    {
+      "time": 4.666666666666667,
+      "focus": "Reflex",
+      "intent": "Avoid the observed incoming spear",
+      "reason": "observed imminent moving spear",
+      "plan": {
+        "requested": false,
+        "reason": "reflex priority",
+        "nextEligible": 4.6,
+        "status": "not-requested",
+        "fallback": null,
+        "availableUnits": 184,
+        "attempted": false,
+        "completedBranches": 0,
+        "actionModel": "bounded shot hypotheses"
+      },
+      "requested": {
+        "moveX": 0.017158188869898193,
+        "moveY": -0.9998527874415838,
+        "aimX": 0.9952160425214094,
+        "aimY": 0.09769866277500557,
+        "throw": false,
+        "recall": false
+      },
+      "issued": {
+        "moveX": 0.017158188869898193,
+        "moveY": -0.9998527874415838,
+        "aimX": 0.998587361416971,
+        "aimY": 0.053134561429371216,
+        "throw": false,
+        "recall": false
+      },
+      "evidence": {
+        "sensorTime": 4.666666666666667,
+        "opponent": "visible",
+        "objective": {
+          "controller": "P1",
+          "contested": false,
+          "holdTicks": 69
+        }
+      }
+    },
+    {
+      "time": 10.166666666666666,
+      "focus": "Threat",
+      "intent": "Avoid a spear line",
+      "reason": "observed spear crossing line",
+      "plan": {
+        "requested": false,
+        "reason": "cooldown",
+        "nextEligible": 10.333333333333334,
+        "status": "not-requested",
+        "fallback": null,
+        "availableUnits": 76,
+        "attempted": false,
+        "completedBranches": 0,
+        "actionModel": "bounded shot hypotheses"
+      },
+      "requested": {
+        "moveX": 0.9999225376438767,
+        "moveY": -0.012446634558388184,
+        "aimX": 0.9315839040688395,
+        "aimY": 0.36352638099573914,
+        "throw": false,
+        "recall": false
+      },
+      "issued": {
+        "moveX": 0.9999225376438767,
+        "moveY": -0.012446634558388184,
+        "aimX": 0.9429726183270423,
+        "aimY": 0.3328703067043415,
+        "throw": false,
+        "recall": false
+      },
+      "evidence": {
+        "sensorTime": 10.166666666666666,
+        "opponent": "visible",
+        "objective": {
+          "controller": null,
+          "contested": true,
+          "holdTicks": 0
+        }
+      }
+    },
+    {
+      "time": 11.533333333333333,
+      "focus": "Objective",
+      "intent": "Reach the public ring",
+      "reason": "public ring geometry",
+      "plan": {
+        "requested": true,
+        "reason": "changed tactical situation",
+        "nextEligible": 12.033333333333333,
+        "status": "unfinished",
+        "fallback": "selected workspace movement; visible clear-line shot or spear recovery",
+        "availableUnits": 76,
+        "attempted": true,
+        "completedBranches": 3,
+        "actionModel": "bounded shot hypotheses"
+      },
+      "requested": {
+        "moveX": 0.9972630359575246,
+        "moveY": -0.07393535766317094,
+        "aimX": 0.6094031439187915,
+        "aimY": 0.7928605225270664,
+        "throw": false,
+        "recall": false
+      },
+      "issued": {
+        "moveX": 0.9972630359575246,
+        "moveY": -0.07393535766317094,
+        "aimX": 0.6778206095380159,
+        "aimY": 0.7352273262641376,
+        "throw": false,
+        "recall": false
+      },
+      "evidence": {
+        "sensorTime": 11.533333333333333,
+        "opponent": "visible",
+        "objective": {
+          "controller": null,
+          "contested": false,
+          "holdTicks": 0
+        }
+      }
+    }
+  ]
+}

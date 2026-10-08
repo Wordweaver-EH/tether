@@ -1,0 +1,197 @@
+{
+  "sourceCommit": "b1516040b116eb771ba75c53a9586c4ad60ef510",
+  "freezeSha256": "74ee8d6f4c25f34b50642d4e217bc3dd04b933ca7895bd91330948d1e48f474f",
+  "allMatched": true,
+  "files": [
+    {
+      "path": "benchmark/occluded-search-v1/protocol.md",
+      "sha256": "a11b7a4339a385d564fb374156cff664b2b47700f4a5c86286ebd154fe51d641",
+      "bytes": 15159
+    },
+    {
+      "path": "benchmark/occluded-search-v1/run.mjs",
+      "sha256": "f804bf7ffbe39df4cfac3586d2cfb70d863c87fac61a48a5e93be020ed738329",
+      "bytes": 18813
+    },
+    {
+      "path": "benchmark/occluded-search-v1/scenes.mjs",
+      "sha256": "b6e7f46d7b5c6e86200543efddd48ef4a73a2de4a4a849181ce1c370045ad911",
+      "bytes": 8851
+    },
+    {
+      "path": "src/agents/basic.mjs",
+      "sha256": "6421abc3b97bc1497634c7c2306026fccc8defe1892cfe58253c302fe895dc6e",
+      "bytes": 1578
+    },
+    {
+      "path": "src/agents/cover-control.mjs",
+      "sha256": "42007be15c44eb203ec28f1fd8fa953baff2ba53eee75518c5f04272f5deb07c",
+      "bytes": 3121
+    },
+    {
+      "path": "src/agents/cover-interface.mjs",
+      "sha256": "0fdfbb7021d77bd5e843d67ea6405bbf2ee656ad3a67dae988ca4c6e300fb46d",
+      "bytes": 2472
+    },
+    {
+      "path": "src/agents/cover-mind.mjs",
+      "sha256": "ff25cea4c9d4c71b339d00e3e4e3850df4aa2dfb89aad3ac188d179718e7cf32",
+      "bytes": 1007
+    },
+    {
+      "path": "src/agents/dodger.mjs",
+      "sha256": "909fb8ebabbb1fdeb97b59970331ec834df786bd4c5fd6f441ae17d079a5edb3",
+      "bytes": 4257
+    },
+    {
+      "path": "src/agents/param.mjs",
+      "sha256": "3dd95510dd63d374085a0990215f83e7a0faac474478080d625dcf55f08d0fd1",
+      "bytes": 9267
+    },
+    {
+      "path": "src/agents/robust-baseline-agent.mjs",
+      "sha256": "2f9b2db87d4d2fc7901f97b8a838f67ac45f6c36c878cfa0d3ecf5270b8bbc9d",
+      "bytes": 1472
+    },
+    {
+      "path": "src/agents/robust-baseline.mjs",
+      "sha256": "9441ac6041daea0d86be20ac6c1ab85711c20bc6c640dbdf15d48359e0d597e0",
+      "bytes": 10222
+    },
+    {
+      "path": "src/agents/spear-memory.mjs",
+      "sha256": "279773a65d72a3fa69f9bb03953d279b0aab410daf33b2e53fa579f771159573",
+      "bytes": 4203
+    },
+    {
+      "path": "src/agents/strategies.mjs",
+      "sha256": "1b947d1e9f8ec777c3ad394cc6db9a51eb9541c9be92c4e9c9de2633adb3506b",
+      "bytes": 6081
+    },
+    {
+      "path": "src/cover-control.js",
+      "sha256": "a3ff4d08b44d408b0eb1236c9e0b4602135ae073c21c2fd14aae7e1d0cc53ca1",
+      "bytes": 1678
+    },
+    {
+      "path": "src/deterministic-math.js",
+      "sha256": "cdaaa9db855a20db0fa38db961e0ace6d7d141f68b6bd86fc86bee3b9cf719ca",
+      "bytes": 1614
+    },
+    {
+      "path": "src/headless.mjs",
+      "sha256": "c70314343a7b9c5dbe2776a5654b9ff63db77c98a2fe764940a7ec781678b8d1",
+      "bytes": 2695
+    },
+    {
+      "path": "src/log.js",
+      "sha256": "2097bc8e1337b6210f2e8fa147959634c5e12c9c492bd31b59ed17285355bbe8",
+      "bytes": 9865
+    },
+    {
+      "path": "src/mind/belief.mjs",
+      "sha256": "c42aea8723c257d33108a62ccd63c0d755105f4356d03aa85aeafa73da9ba426",
+      "bytes": 7505
+    },
+    {
+      "path": "src/mind/cognition.mjs",
+      "sha256": "485f61b577f0b2c9c825cd3fdb21e3e7500313281f7952cdb378305c76d0a91b",
+      "bytes": 11662
+    },
+    {
+      "path": "src/mind/components.mjs",
+      "sha256": "2673d08df3a6ed999521a8ad457824ea39a68337fef838d6c94c39bbf29f4706",
+      "bytes": 9841
+    },
+    {
+      "path": "src/mind/content-broadcast.mjs",
+      "sha256": "a80fae62bd1752517d706cd176ad3b5b08e7849d751e07bc27e6455a325ce615",
+      "bytes": 6807
+    },
+    {
+      "path": "src/mind/coordination.mjs",
+      "sha256": "0fb957e9ac8794d09f3dd3678fe63529e62632210fd341bb1849c8375d8f1bcf",
+      "bytes": 11805
+    },
+    {
+      "path": "src/mind/index.mjs",
+      "sha256": "559f9de723a0af18e55b06ff5ee6fb8f1b495280ebf9d75e53ec67339cfd0900",
+      "bytes": 22058
+    },
+    {
+      "path": "src/mind/math.mjs",
+      "sha256": "b4030e23a0bce42c2195a438566ab8ebdb5031f921dcca0b7417293ed4531617",
+      "bytes": 2065
+    },
+    {
+      "path": "src/mind/novelty.mjs",
+      "sha256": "ac69ca3ecda0e3e6ae59a93964975c0c7b165cd6dac1d422f9a11811e1ecc468",
+      "bytes": 6668
+    },
+    {
+      "path": "src/mind/own-spear.mjs",
+      "sha256": "327229ce358a7608a2971a6b6d32d15340dd1ab58cf924f09b538bb4217ef668",
+      "bytes": 3905
+    },
+    {
+      "path": "src/mind/percept-contact.mjs",
+      "sha256": "a080fdc4d176ea6e8e917520404e012c31d3312740a90e69dc19ea75190c26e8",
+      "bytes": 1641
+    },
+    {
+      "path": "src/mind/prediction-monitor.mjs",
+      "sha256": "3ba9de798391ee863f1bf721e5c94d5efd366c838cf6a261ec3dd8b9313164c0",
+      "bytes": 11071
+    },
+    {
+      "path": "src/mind/rollout-completion.mjs",
+      "sha256": "e77dcd8eaa5fc5d562664188dbed2e0ed1b256c2e32404c6794feb0eac9f74f5",
+      "bytes": 1607
+    },
+    {
+      "path": "src/mind/specialists.mjs",
+      "sha256": "6778c3f07fa68e74fe4b0a7786b837c90863eb8989fbf2068d1a73de403ce0b0",
+      "bytes": 8245
+    },
+    {
+      "path": "src/mind/target-memory.mjs",
+      "sha256": "8e03e8c69f5963218cea3a62b6314cb55caeca7996243a51b4a54c0b1c8da0d3",
+      "bytes": 6093
+    },
+    {
+      "path": "src/mind/workspace.mjs",
+      "sha256": "a70c41353e580fd1038c3915491c3613ef55c99898aff4bc48cf58d0437d08d9",
+      "bytes": 2998
+    },
+    {
+      "path": "src/perception.js",
+      "sha256": "b50c327c3e593d58034b4c40210195b1d2b7242ae91a8bedf2168d1882f2ccb3",
+      "bytes": 3500
+    },
+    {
+      "path": "src/sim.js",
+      "sha256": "5334e549fb280ed9c5b33d65876a720b0bcd96f1c51e8000aff7b47bb0cbcbec",
+      "bytes": 18605
+    },
+    {
+      "path": "src/visibility.js",
+      "sha256": "1ff9e316262dfdbb9d8645359b39033c229926cfd1eafa0ae1faeaaa8a28c11d",
+      "bytes": 926
+    },
+    {
+      "path": "test/cover-mind.test.mjs",
+      "sha256": "5e72bd75cd7ed2e77938ed3a8587019f14791568276549dabdb871eec168ee59",
+      "bytes": 4001
+    },
+    {
+      "path": "test/occluded-search.test.mjs",
+      "sha256": "53a9f7d3521062b17bb35c8064391e777db771cc8b349510039f463388fb7af1",
+      "bytes": 6324
+    },
+    {
+      "path": "tools/compatibility-fixtures.mjs",
+      "sha256": "faba1071c82f33f8fc16f305a2ec6e57778e5b3b5f3e20305c3ab701f16c6d89",
+      "bytes": 3538
+    }
+  ]
+}

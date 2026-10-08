@@ -2,7 +2,7 @@ import { CONSTANTS, createWorld, step } from './sim.js';
 import { percept } from './perception.js';
 import { createSessionLogger } from './log.js';
 
-export function runBout({ agents, mode = 'MODE_B', seed = 1,
+export function runBout({ agents, mode = 'MODE_B', seed = 1, gameMode = 'DUEL',
   durationSec = CONSTANTS.experiment.BOUT_SECONDS, log = false,
   captureTraces = false } = {}) {
   if (!Array.isArray(agents) || agents.length !== 2 ||
@@ -16,7 +16,7 @@ export function runBout({ agents, mode = 'MODE_B', seed = 1,
   }
   const dt = 1 / CONSTANTS.technical.SIM_HZ;
   const ticks = Math.round(durationSec * CONSTANTS.technical.SIM_HZ);
-  const world = createWorld();
+  const world = createWorld({ gameMode });
   const logger = log ? createSessionLogger({ world, mode, seed }) : null;
   if (logger) logger.records[0].agent_technical = agents.map((agent) =>
     agent.settings?.() ?? null);
@@ -32,6 +32,8 @@ export function runBout({ agents, mode = 'MODE_B', seed = 1,
     }
     logger?.recordStep(world, inputs, currentEvents);
   }
+  // Settle any observed terminal score without taking another action.
+  agents.forEach((agent,index) => agent.finish?.(structuredClone(percept(world,`P${index+1}`,mode))));
   const traces = captureTraces ? agents.map((agent) => agent.trace?.() ?? []) : null;
   if (logger && traces) {
     for (let index = 0; index < traces.length; index++) {

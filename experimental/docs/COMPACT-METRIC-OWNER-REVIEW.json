@@ -1,0 +1,22 @@
+{
+  "status": "METRIC_OWNER_DESIGN_APPROVAL_WITH_REQUIRED_VALIDATION",
+  "at": "2026-10-03T04:53:35.155577+00:00",
+  "reviewedFiles": {
+    "COMPACT-LOGGING-PROPOSAL.md": "1c1296cb78d26bbba3b3b27832d8a1d44746be1e5b0d0db7f5a19b860004c2cd",
+    "COMPACT-METRIC-MAP.md": "4b0dd0ffe400b78f9067e78e76f21733c9b10b3dbf8951a0053d3563eb7acdee"
+  },
+  "controllerOrGameplayExecutionByThisReview": false,
+  "scope": "Observer logging/reconstruction only; not source implementation or phase release approval",
+  "primaryColdStart": "Prior genuine completed outcomes summed across the native awareness situation key equal zero, from accepted bout-start memory plus native settlements. Process old settlement before new issue in the same cycle. Keep tactic support separately; exclude modelN; never alter p.",
+  "requiredValidation": [
+    "Exhaustive field-level before/after equivalence over all181 completed preserved pilot tasks",
+    "Exact environment replay from both seats actuator streams, default empty ticks0-17 and pulse/hold semantics; compare every saved receipt/sensor truth/percept hash/event/score and terminal state",
+    "Fixed state-hash checkpoints every120ticks plus initial/terminal",
+    "Task-and-seat scoped native forecast/pending/disposition identity and full object content hash; preserve absence/null/false/zero and tagged numerical values",
+    "Original in-timer native/shared-interface getter and calibration call sequence unchanged; cached return objects never mutated",
+    "Native issuance and settlements streamed contemporaneously; final full calibration rows reconcile one-to-one, shadow remains non-primary",
+    "Every faithfulness check retains applicability/result and every mismatch full witness; no unexposed belief or internal branch reconstruction",
+    "Existing CPU/RSS/wall/raw-data limits remain, with stored and logical byte counts distinguished; conservative pilot-derived feasibility remains required"
+  ],
+  "qualification": "The schema preserves contracted metrics if these validations pass. Physics replay does not reconstruct omitted internal rollouts or authorize additional counterfactual experiments. No retuning, sample/condition reduction, threshold change, or resource-ceiling increase."
+}

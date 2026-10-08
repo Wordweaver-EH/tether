@@ -1,0 +1,6844 @@
+{
+  "checkpoint": "59a62eeb690ab8ffc3478ff688674bfbea11f84c",
+  "sourceManifestSha256": "31e26f15edeb1ab42fa6207d06e3484b5d07bfacda1ece4a110e2ad147104f99",
+  "frozenSourceFilesVerified": 48,
+  "modelSha256": "983d8e6017659a3dd9aa18565db0d105c1f96c96ebc79b6e262ea66dc2c167f7",
+  "boutCount": 48,
+  "stepCount": 345600,
+  "decisionCount": 86208,
+  "fixedOpportunityCount": 240,
+  "method": "Independent Python raw-row recomputation; no simulation or replay executed by this script. Existing builder replay report checked separately.",
+  "aggregates": [
+    {
+      "condition": "familiar",
+      "variant": "full",
+      "decisions": 14368,
+      "proposed": 63,
+      "delivered": 63,
+      "actualResets": 82,
+      "knownResets": 82,
+      "assessments": 920,
+      "large": 64,
+      "usefulChecks": 4,
+      "visibleChecks": 57,
+      "postRecovered": 7,
+      "postRoutine": 5,
+      "margin": 109,
+      "nominalWork": 1673483,
+      "planning": 248,
+      "checkAimMatches": 63,
+      "resetStraddles": 0,
+      "recoveryDenominator": 24,
+      "meanMargin": 13.625
+    },
+    {
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "decisions": 14368,
+      "proposed": 63,
+      "delivered": 0,
+      "actualResets": 84,
+      "knownResets": 84,
+      "assessments": 925,
+      "large": 68,
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "postRecovered": 9,
+      "postRoutine": 6,
+      "margin": 100,
+      "nominalWork": 1671369,
+      "planning": 252,
+      "checkAimMatches": 0,
+      "resetStraddles": 0,
+      "recoveryDenominator": 24,
+      "meanMargin": 12.5
+    },
+    {
+      "condition": "familiar",
+      "variant": "scheduled",
+      "decisions": 14368,
+      "proposed": 63,
+      "delivered": 62,
+      "actualResets": 84,
+      "knownResets": 84,
+      "assessments": 971,
+      "large": 76,
+      "usefulChecks": 11,
+      "visibleChecks": 42,
+      "postRecovered": 10,
+      "postRoutine": 8,
+      "margin": 100,
+      "nominalWork": 1674500,
+      "planning": 275,
+      "checkAimMatches": 62,
+      "resetStraddles": 0,
+      "recoveryDenominator": 24,
+      "meanMargin": 12.5
+    },
+    {
+      "condition": "switch",
+      "variant": "full",
+      "decisions": 14368,
+      "proposed": 69,
+      "delivered": 69,
+      "actualResets": 66,
+      "knownResets": 66,
+      "assessments": 830,
+      "large": 68,
+      "usefulChecks": 5,
+      "visibleChecks": 58,
+      "postRecovered": 9,
+      "postRoutine": 6,
+      "margin": 89,
+      "nominalWork": 1673531,
+      "planning": 248,
+      "checkAimMatches": 69,
+      "resetStraddles": 0,
+      "recoveryDenominator": 24,
+      "meanMargin": 11.125
+    },
+    {
+      "condition": "switch",
+      "variant": "monitorOff",
+      "decisions": 14368,
+      "proposed": 68,
+      "delivered": 0,
+      "actualResets": 57,
+      "knownResets": 57,
+      "assessments": 857,
+      "large": 74,
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "postRecovered": 10,
+      "postRoutine": 6,
+      "margin": 86,
+      "nominalWork": 1673065,
+      "planning": 246,
+      "checkAimMatches": 0,
+      "resetStraddles": 0,
+      "recoveryDenominator": 24,
+      "meanMargin": 10.75
+    },
+    {
+      "condition": "switch",
+      "variant": "scheduled",
+      "decisions": 14368,
+      "proposed": 69,
+      "delivered": 69,
+      "actualResets": 54,
+      "knownResets": 54,
+      "assessments": 817,
+      "large": 65,
+      "usefulChecks": 21,
+      "visibleChecks": 38,
+      "postRecovered": 9,
+      "postRoutine": 7,
+      "margin": 85,
+      "nominalWork": 1669519,
+      "planning": 239,
+      "checkAimMatches": 69,
+      "resetStraddles": 0,
+      "recoveryDenominator": 24,
+      "meanMargin": 10.625
+    }
+  ],
+  "seedEffects": [
+    {
+      "metric": "postRecovered",
+      "control": "monitorOff",
+      "seed": 5107,
+      "familiar": 0.0,
+      "switch": -0.5,
+      "switchMinusFamiliar": -0.5
+    },
+    {
+      "metric": "postRecovered",
+      "control": "monitorOff",
+      "seed": 6211,
+      "familiar": -0.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "postRecovered",
+      "control": "monitorOff",
+      "seed": 7307,
+      "familiar": -1.0,
+      "switch": 1.0,
+      "switchMinusFamiliar": 2.0
+    },
+    {
+      "metric": "postRecovered",
+      "control": "monitorOff",
+      "seed": 8423,
+      "familiar": 0.5,
+      "switch": -1.0,
+      "switchMinusFamiliar": -1.5
+    },
+    {
+      "metric": "postRecovered",
+      "control": "scheduled",
+      "seed": 5107,
+      "familiar": 0.0,
+      "switch": 0.5,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "postRecovered",
+      "control": "scheduled",
+      "seed": 6211,
+      "familiar": -1.0,
+      "switch": 0.0,
+      "switchMinusFamiliar": 1.0
+    },
+    {
+      "metric": "postRecovered",
+      "control": "scheduled",
+      "seed": 7307,
+      "familiar": -0.5,
+      "switch": -0.5,
+      "switchMinusFamiliar": 0.0
+    },
+    {
+      "metric": "postRecovered",
+      "control": "scheduled",
+      "seed": 8423,
+      "familiar": 0.0,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.0
+    },
+    {
+      "metric": "postRoutine",
+      "control": "monitorOff",
+      "seed": 5107,
+      "familiar": 0.5,
+      "switch": -0.5,
+      "switchMinusFamiliar": -1.0
+    },
+    {
+      "metric": "postRoutine",
+      "control": "monitorOff",
+      "seed": 6211,
+      "familiar": -0.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "postRoutine",
+      "control": "monitorOff",
+      "seed": 7307,
+      "familiar": -0.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "postRoutine",
+      "control": "monitorOff",
+      "seed": 8423,
+      "familiar": 0.0,
+      "switch": 0.5,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "postRoutine",
+      "control": "scheduled",
+      "seed": 5107,
+      "familiar": 0.0,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.0
+    },
+    {
+      "metric": "postRoutine",
+      "control": "scheduled",
+      "seed": 6211,
+      "familiar": -1.0,
+      "switch": 0.0,
+      "switchMinusFamiliar": 1.0
+    },
+    {
+      "metric": "postRoutine",
+      "control": "scheduled",
+      "seed": 7307,
+      "familiar": 0.0,
+      "switch": -0.5,
+      "switchMinusFamiliar": -0.5
+    },
+    {
+      "metric": "postRoutine",
+      "control": "scheduled",
+      "seed": 8423,
+      "familiar": -0.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "margin",
+      "control": "monitorOff",
+      "seed": 5107,
+      "familiar": -0.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": 0.5
+    },
+    {
+      "metric": "margin",
+      "control": "monitorOff",
+      "seed": 6211,
+      "familiar": 5.0,
+      "switch": 1.0,
+      "switchMinusFamiliar": -4.0
+    },
+    {
+      "metric": "margin",
+      "control": "monitorOff",
+      "seed": 7307,
+      "familiar": 0.5,
+      "switch": 2.0,
+      "switchMinusFamiliar": 1.5
+    },
+    {
+      "metric": "margin",
+      "control": "monitorOff",
+      "seed": 8423,
+      "familiar": -0.5,
+      "switch": -1.5,
+      "switchMinusFamiliar": -1.0
+    },
+    {
+      "metric": "margin",
+      "control": "scheduled",
+      "seed": 5107,
+      "familiar": -1.5,
+      "switch": 0.5,
+      "switchMinusFamiliar": 2.0
+    },
+    {
+      "metric": "margin",
+      "control": "scheduled",
+      "seed": 6211,
+      "familiar": 5.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": -5.5
+    },
+    {
+      "metric": "margin",
+      "control": "scheduled",
+      "seed": 7307,
+      "familiar": 0.5,
+      "switch": 0.0,
+      "switchMinusFamiliar": -0.5
+    },
+    {
+      "metric": "margin",
+      "control": "scheduled",
+      "seed": 8423,
+      "familiar": 0.0,
+      "switch": 1.5,
+      "switchMinusFamiliar": 1.5
+    }
+  ],
+  "yokePairs": [
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "familiar",
+      "count": 8,
+      "fullDelivered": 8,
+      "scheduledDelivered": 8,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "switch",
+      "count": 8,
+      "fullDelivered": 8,
+      "scheduledDelivered": 8,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "familiar",
+      "count": 16,
+      "fullDelivered": 16,
+      "scheduledDelivered": 15,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "switch",
+      "count": 15,
+      "fullDelivered": 15,
+      "scheduledDelivered": 15,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "familiar",
+      "count": 1,
+      "fullDelivered": 1,
+      "scheduledDelivered": 1,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "switch",
+      "count": 1,
+      "fullDelivered": 1,
+      "scheduledDelivered": 1,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "familiar",
+      "count": 7,
+      "fullDelivered": 7,
+      "scheduledDelivered": 7,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "switch",
+      "count": 8,
+      "fullDelivered": 8,
+      "scheduledDelivered": 8,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "familiar",
+      "count": 8,
+      "fullDelivered": 8,
+      "scheduledDelivered": 8,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "switch",
+      "count": 12,
+      "fullDelivered": 12,
+      "scheduledDelivered": 12,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "familiar",
+      "count": 4,
+      "fullDelivered": 4,
+      "scheduledDelivered": 4,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "switch",
+      "count": 8,
+      "fullDelivered": 8,
+      "scheduledDelivered": 8,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "familiar",
+      "count": 10,
+      "fullDelivered": 10,
+      "scheduledDelivered": 10,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "switch",
+      "count": 11,
+      "fullDelivered": 11,
+      "scheduledDelivered": 11,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "familiar",
+      "count": 9,
+      "fullDelivered": 9,
+      "scheduledDelivered": 9,
+      "deliveryUnmatched": false
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "switch",
+      "count": 6,
+      "fullDelivered": 6,
+      "scheduledDelivered": 6,
+      "deliveryUnmatched": false
+    }
+  ],
+  "firstDivergences": [
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "familiar",
+      "tick": 1142,
+      "sensorTime": 9.366666666666667,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 4.309926153233003,
+          "y": -1.76796745873517
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "switch",
+      "tick": 1142,
+      "sensorTime": 9.366666666666667,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 4.309926153233003,
+          "y": -1.76796745873517
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "familiar",
+      "tick": 194,
+      "sensorTime": 1.4666666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": -2.222297489318972,
+          "y": -0.5504274599252461
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "switch",
+      "tick": 194,
+      "sensorTime": 1.4666666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": -2.222297489318972,
+          "y": -0.5504274599252461
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "familiar",
+      "tick": 1630,
+      "sensorTime": 13.433333333333334,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 0.3405097651600102,
+          "y": 0.41478270357308117
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "switch",
+      "tick": 1630,
+      "sensorTime": 13.433333333333334,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 0.3405097651600102,
+          "y": 0.41478270357308117
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "familiar",
+      "tick": 1610,
+      "sensorTime": 13.266666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": -2.281964473502838,
+          "y": -0.9392352318501922
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "switch",
+      "tick": 1610,
+      "sensorTime": 13.266666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": -2.281964473502838,
+          "y": -0.9392352318501922
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "familiar",
+      "tick": 962,
+      "sensorTime": 7.866666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 1.4792569815175818,
+          "y": -0.019994444266782707
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "switch",
+      "tick": 962,
+      "sensorTime": 7.866666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 1.4792569815175818,
+          "y": -0.019994444266782707
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "familiar",
+      "tick": 2850,
+      "sensorTime": 23.6,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": -2.2383949914979135,
+          "y": -0.5589364421627261
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "switch",
+      "tick": 2850,
+      "sensorTime": 23.6,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": -2.2383949914979135,
+          "y": -0.5589364421627261
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "familiar",
+      "tick": 1970,
+      "sensorTime": 16.266666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 0.3734686823607186,
+          "y": -0.3484985753198948
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "switch",
+      "tick": 1970,
+      "sensorTime": 16.266666666666666,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "fresh-calibrated-error",
+        "entity": "opponent",
+        "target": {
+          "x": 0.3734686823607186,
+          "y": -0.3484985753198948
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "familiar",
+      "tick": 822,
+      "sensorTime": 6.7,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "overdue-observation",
+        "entity": "opponent",
+        "target": {
+          "x": 3.558577018495948,
+          "y": 3.252426265329922
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "switch",
+      "tick": 822,
+      "sensorTime": 6.7,
+      "pulse": true,
+      "reason": {
+        "reacquire": true,
+        "replan": true,
+        "reason": "overdue-observation",
+        "entity": "opponent",
+        "target": {
+          "x": 3.558577018495948,
+          "y": 3.252426265329922
+        }
+      },
+      "gaze": true,
+      "movement": false,
+      "weapon": false,
+      "identicalPriorCommandHistory": true,
+      "identicalSensor": true
+    }
+  ],
+  "bouts": [
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "5107-P1-familiar-full.jsonl.gz",
+      "logSha256": "4c98055bf6e8f98283f17497ef08cf5b60e4c641e3d6cb317f0973b7c2a1f6e4",
+      "margin": 11,
+      "score": [
+        14,
+        3
+      ],
+      "nominalWork": 209696,
+      "planning": 31,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        4730,
+        2901
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 12,
+      "knownResets": 12,
+      "assessments": 119,
+      "large": 9,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 8,
+      "checks": [
+        {
+          "time": 9.366666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 12.3,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 20.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.233333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 33.833333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 42.96666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 46.93333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 52.699999999999996,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7.466666666666667,
+          "completedAt": 12.7,
+          "firstHiddenAt": 9.533333333333333,
+          "firstObservedReturnAt": 11.4,
+          "observedLowAfterReturnAt": 11.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.7
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.066666666666666,
+          "completedAt": 24.433333333333334,
+          "firstHiddenAt": 20.966666666666665,
+          "firstObservedReturnAt": 22.833333333333332,
+          "observedLowAfterReturnAt": 23.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.433333333333334
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 57.43333333333333,
+          "completedAt": null,
+          "firstHiddenAt": 58.96666666666667,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "5107-P1-familiar-monitorOff.jsonl.gz",
+      "logSha256": "96ad38e36d558dafc79d4c9623ff972ded31367f24a714767e13fc08cd394e88",
+      "margin": 12,
+      "score": [
+        15,
+        3
+      ],
+      "nominalWork": 210094,
+      "planning": 38,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        4320,
+        2096
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 10,
+      "delivered": 0,
+      "actualResets": 14,
+      "knownResets": 14,
+      "assessments": 137,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7.466666666666667,
+          "completedAt": 12.7,
+          "firstHiddenAt": 9.533333333333333,
+          "firstObservedReturnAt": 11.4,
+          "observedLowAfterReturnAt": 11.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.7
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.066666666666666,
+          "completedAt": 24.433333333333334,
+          "firstHiddenAt": 20.966666666666665,
+          "firstObservedReturnAt": 22.833333333333332,
+          "observedLowAfterReturnAt": 23.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.433333333333334
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 33.06666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43.766666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.766666666666666,
+          "firstObservedReturnAt": 56.833333333333336,
+          "observedLowAfterReturnAt": 56.833333333333336,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "5107-P1-familiar-scheduled.jsonl.gz",
+      "logSha256": "6a78da04ea005e0946c829ef40c0b719bf4472813434e05c8c1b610b69df499c",
+      "margin": 12,
+      "score": [
+        15,
+        3
+      ],
+      "nominalWork": 210158,
+      "planning": 39,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        4320,
+        2096
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 14,
+      "knownResets": 14,
+      "assessments": 137,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 6,
+      "checks": [
+        {
+          "time": 2.1,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 9.6,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 17.066666666666666,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 24.566666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 32.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 39.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 47,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 54.5,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7.466666666666667,
+          "completedAt": 12.7,
+          "firstHiddenAt": 9.533333333333333,
+          "firstObservedReturnAt": 11.4,
+          "observedLowAfterReturnAt": 11.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.7
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.066666666666666,
+          "completedAt": 24.433333333333334,
+          "firstHiddenAt": 20.966666666666665,
+          "firstObservedReturnAt": 22.833333333333332,
+          "observedLowAfterReturnAt": 23.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.6
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 33.06666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43.766666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.766666666666666,
+          "firstObservedReturnAt": 56.833333333333336,
+          "observedLowAfterReturnAt": 56.833333333333336,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "5107-P1-switch-full.jsonl.gz",
+      "logSha256": "a4d857ff729aefbff8ddd665b9f9a57a6a81f478848faec16de0db5132e1b6d7",
+      "margin": 7,
+      "score": [
+        11,
+        4
+      ],
+      "nominalWork": 209806,
+      "planning": 33,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        5850,
+        2562
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 6,
+      "knownResets": 6,
+      "assessments": 109,
+      "large": 7,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 5,
+      "checks": [
+        {
+          "time": 9.366666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 12.3,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 20.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.233333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 34.93333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 51,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 56.833333333333336,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 57.833333333333336,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7.466666666666667,
+          "completedAt": 12.7,
+          "firstHiddenAt": 9.533333333333333,
+          "firstObservedReturnAt": 11.4,
+          "observedLowAfterReturnAt": 11.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.7
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.066666666666666,
+          "completedAt": 24.433333333333334,
+          "firstHiddenAt": 20.966666666666665,
+          "firstObservedReturnAt": 22.833333333333332,
+          "observedLowAfterReturnAt": 23.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.433333333333334
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 37.36666666666667,
+          "firstHiddenAt": 31.966666666666665,
+          "firstObservedReturnAt": 32.6,
+          "observedLowAfterReturnAt": 32.6,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 46.36666666666667,
+          "completedAt": 51,
+          "firstHiddenAt": 47.733333333333334,
+          "firstObservedReturnAt": 48.266666666666666,
+          "observedLowAfterReturnAt": 48.266666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 52.03333333333333
+        },
+        {
+          "clock": 55,
+          "status": "returned",
+          "startedAt": 55,
+          "completedAt": 59.36666666666667,
+          "firstHiddenAt": 56.199999999999996,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "5107-P1-switch-monitorOff.jsonl.gz",
+      "logSha256": "cf6aa17fdd667e369259f64f77f0c8dd14197ec28be0110e011476956ee64331",
+      "margin": 10,
+      "score": [
+        13,
+        3
+      ],
+      "nominalWork": 210184,
+      "planning": 36,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        5295,
+        2179
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 9,
+      "delivered": 0,
+      "actualResets": 8,
+      "knownResets": 8,
+      "assessments": 108,
+      "large": 10,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7.466666666666667,
+          "completedAt": 12.7,
+          "firstHiddenAt": 9.533333333333333,
+          "firstObservedReturnAt": 11.4,
+          "observedLowAfterReturnAt": 11.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.7
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.066666666666666,
+          "completedAt": 24.433333333333334,
+          "firstHiddenAt": 20.966666666666665,
+          "firstObservedReturnAt": 22.833333333333332,
+          "observedLowAfterReturnAt": 23.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.433333333333334
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 34.2,
+          "completedAt": 39.233333333333334,
+          "firstHiddenAt": 35.1,
+          "firstObservedReturnAt": 35.56666666666666,
+          "observedLowAfterReturnAt": 35.56666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 40.233333333333334
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.766666666666666,
+          "firstHiddenAt": 44.03333333333333,
+          "firstObservedReturnAt": 46,
+          "observedLowAfterReturnAt": 46.3,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 57.266666666666666,
+          "completedAt": null,
+          "firstHiddenAt": 58.199999999999996,
+          "firstObservedReturnAt": 58.733333333333334,
+          "observedLowAfterReturnAt": 58.733333333333334,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 5107,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "5107-P1-switch-scheduled.jsonl.gz",
+      "logSha256": "b457c37654e57a21baa1b6c52ad7b325ddb2da5314c29daf95f7aa5157646025",
+      "margin": 8,
+      "score": [
+        12,
+        4
+      ],
+      "nominalWork": 209601,
+      "planning": 37,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        5096,
+        2272
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 9,
+      "knownResets": 9,
+      "assessments": 104,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 2,
+      "visibleChecks": 4,
+      "checks": [
+        {
+          "time": 2.1,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 9.6,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 17.066666666666666,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 24.566666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 32.03333333333333,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 39.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 47,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 54.5,
+          "visible": false,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7.466666666666667,
+          "completedAt": 12.7,
+          "firstHiddenAt": 9.533333333333333,
+          "firstObservedReturnAt": 11.4,
+          "observedLowAfterReturnAt": 11.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.7
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.066666666666666,
+          "completedAt": 24.433333333333334,
+          "firstHiddenAt": 20.966666666666665,
+          "firstObservedReturnAt": 22.833333333333332,
+          "observedLowAfterReturnAt": 23.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.6
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 34.2,
+          "completedAt": 39.233333333333334,
+          "firstHiddenAt": 35.1,
+          "firstObservedReturnAt": 35.56666666666666,
+          "observedLowAfterReturnAt": 35.56666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 40.56666666666666
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": 44.03333333333333,
+          "firstObservedReturnAt": 46,
+          "observedLowAfterReturnAt": 46.3,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 57.03333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "5107-P2-familiar-full.jsonl.gz",
+      "logSha256": "773ce95df23258289a1312779afd7ffc13ae1ea079e1cda934738b1cb027cefb",
+      "margin": 8,
+      "score": [
+        1,
+        9
+      ],
+      "nominalWork": 208826,
+      "planning": 23,
+      "checkAimMatches": 16,
+      "ringTicks": [
+        3856,
+        6575
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 16,
+      "delivered": 16,
+      "actualResets": 2,
+      "knownResets": 2,
+      "assessments": 99,
+      "large": 15,
+      "resetStraddles": [],
+      "usefulChecks": 2,
+      "visibleChecks": 12,
+      "checks": [
+        {
+          "time": 1.4666666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 2.966666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 5.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 9.366666666666667,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 12,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 21.53333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 22.53333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 24.733333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.466666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 31.599999999999998,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 35.3,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 39.86666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 44.1,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 52.46666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 55.8,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 11.933333333333334,
+          "firstHiddenAt": 8.633333333333333,
+          "firstObservedReturnAt": 9.9,
+          "observedLowAfterReturnAt": 10.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.033333333333333
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.4,
+          "firstHiddenAt": 20.8,
+          "firstObservedReturnAt": 24.133333333333333,
+          "observedLowAfterReturnAt": 24.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.766666666666666
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 35.333333333333336,
+          "firstHiddenAt": 32.733333333333334,
+          "firstObservedReturnAt": 35.46666666666667,
+          "observedLowAfterReturnAt": 36.3,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.3
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.2,
+          "firstHiddenAt": 44.9,
+          "firstObservedReturnAt": 46.166666666666664,
+          "observedLowAfterReturnAt": 46.733333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.2
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.6,
+          "firstObservedReturnAt": 57.86666666666667,
+          "observedLowAfterReturnAt": 58.36666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "5107-P2-familiar-monitorOff.jsonl.gz",
+      "logSha256": "757a8fddecf5aa60d84f40328d5002ad50c15c32a3d3f848928b0d8029eb91f9",
+      "margin": 8,
+      "score": [
+        4,
+        12
+      ],
+      "nominalWork": 207945,
+      "planning": 30,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2889,
+        4276
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 14,
+      "delivered": 0,
+      "actualResets": 9,
+      "knownResets": 9,
+      "assessments": 104,
+      "large": 11,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 11.933333333333334,
+          "firstHiddenAt": 8.633333333333333,
+          "firstObservedReturnAt": 9.9,
+          "observedLowAfterReturnAt": 10.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 12.933333333333334
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.4,
+          "firstHiddenAt": 20.8,
+          "firstObservedReturnAt": 24.133333333333333,
+          "observedLowAfterReturnAt": 24.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.433333333333334
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 33.03333333333333,
+          "completedAt": 37.766666666666666,
+          "firstHiddenAt": 35.2,
+          "firstObservedReturnAt": 38.43333333333333,
+          "observedLowAfterReturnAt": 38.733333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.666666666666664,
+          "firstHiddenAt": 45.2,
+          "firstObservedReturnAt": 47.2,
+          "observedLowAfterReturnAt": 47.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.666666666666664
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 56.4,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "5107-P2-familiar-scheduled.jsonl.gz",
+      "logSha256": "0cc50f7201b90bbe8bccc1470a8fc0d7d4ba31a3d40663976688b5a9bc08cd25",
+      "margin": 10,
+      "score": [
+        2,
+        12
+      ],
+      "nominalWork": 208447,
+      "planning": 33,
+      "checkAimMatches": 15,
+      "ringTicks": [
+        3027,
+        5574
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 16,
+      "delivered": 15,
+      "actualResets": 7,
+      "knownResets": 7,
+      "assessments": 126,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 3,
+      "visibleChecks": 9,
+      "checks": [
+        {
+          "time": 1.0333333333333332,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 4.8,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 8.533333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 12.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 16,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 19.766666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.5,
+          "visible": false,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 27.233333333333334,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 30.966666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 34.733333333333334,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 38.46666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 42.2,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 45.93333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 49.7,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 57.166666666666664,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 11.933333333333334,
+          "firstHiddenAt": 8.633333333333333,
+          "firstObservedReturnAt": 9.9,
+          "observedLowAfterReturnAt": 10.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.3
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.266666666666666,
+          "firstHiddenAt": 20.666666666666668,
+          "firstObservedReturnAt": 24,
+          "observedLowAfterReturnAt": 24.3,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31.766666666666666,
+          "completedAt": 36.8,
+          "firstHiddenAt": 33.3,
+          "firstObservedReturnAt": 34.56666666666666,
+          "observedLowAfterReturnAt": 35.06666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.8
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 49.3,
+          "firstHiddenAt": 45.7,
+          "firstObservedReturnAt": 46.96666666666667,
+          "observedLowAfterReturnAt": 47.6,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 50.733333333333334
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55.96666666666667,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "5107-P2-switch-full.jsonl.gz",
+      "logSha256": "1edfcd6f11c42d99329a193c0f69b1b0c20abce40b7a14b2c50b9d2512d9bb62",
+      "margin": 10,
+      "score": [
+        1,
+        11
+      ],
+      "nominalWork": 208685,
+      "planning": 27,
+      "checkAimMatches": 15,
+      "ringTicks": [
+        3121,
+        5959
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 15,
+      "delivered": 15,
+      "actualResets": 5,
+      "knownResets": 5,
+      "assessments": 93,
+      "large": 13,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 12,
+      "checks": [
+        {
+          "time": 1.4666666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 2.966666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 5.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 9.366666666666667,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 12,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 21.53333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 22.53333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 24.733333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.466666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 31.599999999999998,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.13333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 47.333333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 54.1,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 56.199999999999996,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 58.86666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 11.933333333333334,
+          "firstHiddenAt": 8.633333333333333,
+          "firstObservedReturnAt": 9.9,
+          "observedLowAfterReturnAt": 10.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.033333333333333
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.4,
+          "firstHiddenAt": 20.8,
+          "firstObservedReturnAt": 24.133333333333333,
+          "observedLowAfterReturnAt": 24.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.766666666666666
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": 32.266666666666666,
+          "firstObservedReturnAt": 32.766666666666666,
+          "observedLowAfterReturnAt": 32.766666666666666,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.56666666666666,
+          "firstObservedReturnAt": 57.199999999999996,
+          "observedLowAfterReturnAt": 57.199999999999996,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "5107-P2-switch-monitorOff.jsonl.gz",
+      "logSha256": "329289a1654201ff735b4c262a02904364c94496ae569d082b3730985e9b5c48",
+      "margin": 7,
+      "score": [
+        2,
+        9
+      ],
+      "nominalWork": 208480,
+      "planning": 26,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        3344,
+        6061
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 13,
+      "delivered": 0,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 96,
+      "large": 11,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 11.933333333333334,
+          "firstHiddenAt": 8.633333333333333,
+          "firstObservedReturnAt": 9.9,
+          "observedLowAfterReturnAt": 10.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 12.933333333333334
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.4,
+          "firstHiddenAt": 20.8,
+          "firstObservedReturnAt": 24.133333333333333,
+          "observedLowAfterReturnAt": 24.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.433333333333334
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.46666666666667,
+          "firstHiddenAt": 44.233333333333334,
+          "firstObservedReturnAt": 44.9,
+          "observedLowAfterReturnAt": 44.9,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.46666666666667
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.3,
+          "firstObservedReturnAt": 58.46666666666667,
+          "observedLowAfterReturnAt": 58.766666666666666,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 5107,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "5107-P2-switch-scheduled.jsonl.gz",
+      "logSha256": "a1ebd710cfc48f3713abc7117318580623aec49bffcfe7648bc178bcc2ef1fe2",
+      "margin": 8,
+      "score": [
+        2,
+        10
+      ],
+      "nominalWork": 209113,
+      "planning": 33,
+      "checkAimMatches": 15,
+      "ringTicks": [
+        3119,
+        5957
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 15,
+      "delivered": 15,
+      "actualResets": 5,
+      "knownResets": 5,
+      "assessments": 106,
+      "large": 10,
+      "resetStraddles": [],
+      "usefulChecks": 6,
+      "visibleChecks": 7,
+      "checks": [
+        {
+          "time": 1.1,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 5.1,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 9.1,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 13.1,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 17.066666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 21.066666666666666,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 25.066666666666666,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 29.066666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 33.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 37.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.03333333333333,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 45.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 49,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 53,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 57,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 11.933333333333334,
+          "firstHiddenAt": 8.633333333333333,
+          "firstObservedReturnAt": 9.9,
+          "observedLowAfterReturnAt": 10.5,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 12.933333333333334
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.4,
+          "firstHiddenAt": 20.8,
+          "firstObservedReturnAt": 24.133333333333333,
+          "observedLowAfterReturnAt": 24.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 26.1
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.233333333333334,
+          "firstObservedReturnAt": 56.666666666666664,
+          "observedLowAfterReturnAt": 56.666666666666664,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "6211-P1-familiar-full.jsonl.gz",
+      "logSha256": "66bfe752053db5f72ac8cfffa12847ae10d9b65e0ba176e1fe7f9bafca3d96dc",
+      "margin": 26,
+      "score": [
+        26,
+        0
+      ],
+      "nominalWork": 207844,
+      "planning": 11,
+      "checkAimMatches": 1,
+      "ringTicks": [
+        6162,
+        556
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 1,
+      "delivered": 1,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 36,
+      "large": 1,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 1,
+      "checks": [
+        {
+          "time": 13.433333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.166666666666666,
+          "firstHiddenAt": 8.666666666666666,
+          "firstObservedReturnAt": 9.933333333333334,
+          "observedLowAfterReturnAt": 10.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.166666666666666
+        },
+        {
+          "clock": 19,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "6211-P1-familiar-monitorOff.jsonl.gz",
+      "logSha256": "e37a48d172561a0fc22003074c9a6d8722b52ad83480429721cfbd1f0382495f",
+      "margin": 26,
+      "score": [
+        26,
+        0
+      ],
+      "nominalWork": 207844,
+      "planning": 11,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        6162,
+        556
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 1,
+      "delivered": 0,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 36,
+      "large": 1,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.166666666666666,
+          "firstHiddenAt": 8.666666666666666,
+          "firstObservedReturnAt": 9.933333333333334,
+          "observedLowAfterReturnAt": 10.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.166666666666666
+        },
+        {
+          "clock": 19,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "6211-P1-familiar-scheduled.jsonl.gz",
+      "logSha256": "bb71a19fc58ae4f04de6e66dc57e3281cd3831d4307702210516d50ef87310e9",
+      "margin": 26,
+      "score": [
+        26,
+        0
+      ],
+      "nominalWork": 207844,
+      "planning": 11,
+      "checkAimMatches": 1,
+      "ringTicks": [
+        6162,
+        556
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 1,
+      "delivered": 1,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 36,
+      "large": 1,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [
+        {
+          "time": 42.6,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.166666666666666,
+          "firstHiddenAt": 8.666666666666666,
+          "firstObservedReturnAt": 9.933333333333334,
+          "observedLowAfterReturnAt": 10.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.166666666666666
+        },
+        {
+          "clock": 19,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "6211-P1-switch-full.jsonl.gz",
+      "logSha256": "f0b08633aa7229084afbcb2688aa5f73ede78ea04c452961bed4a4b172ed5116",
+      "margin": 26,
+      "score": [
+        26,
+        0
+      ],
+      "nominalWork": 207844,
+      "planning": 11,
+      "checkAimMatches": 1,
+      "ringTicks": [
+        6162,
+        556
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 1,
+      "delivered": 1,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 36,
+      "large": 1,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 1,
+      "checks": [
+        {
+          "time": 13.433333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.166666666666666,
+          "firstHiddenAt": 8.666666666666666,
+          "firstObservedReturnAt": 9.933333333333334,
+          "observedLowAfterReturnAt": 10.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.166666666666666
+        },
+        {
+          "clock": 19,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "6211-P1-switch-monitorOff.jsonl.gz",
+      "logSha256": "63a454882ff34bc9a6156e680670dd9a46a838d85d6f0345cc26e08a607d9a9f",
+      "margin": 26,
+      "score": [
+        26,
+        0
+      ],
+      "nominalWork": 207844,
+      "planning": 11,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        6162,
+        556
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 1,
+      "delivered": 0,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 36,
+      "large": 1,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.166666666666666,
+          "firstHiddenAt": 8.666666666666666,
+          "firstObservedReturnAt": 9.933333333333334,
+          "observedLowAfterReturnAt": 10.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.166666666666666
+        },
+        {
+          "clock": 19,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "6211-P1-switch-scheduled.jsonl.gz",
+      "logSha256": "da4cd5fb58ea5a44bcc7a167316e7a32b15209686d3387852cd5aaef2f26eaec",
+      "margin": 26,
+      "score": [
+        26,
+        0
+      ],
+      "nominalWork": 207844,
+      "planning": 11,
+      "checkAimMatches": 1,
+      "ringTicks": [
+        6162,
+        556
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 1,
+      "delivered": 1,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 36,
+      "large": 1,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [
+        {
+          "time": 42.6,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.166666666666666,
+          "firstHiddenAt": 8.666666666666666,
+          "firstObservedReturnAt": 9.933333333333334,
+          "observedLowAfterReturnAt": 10.433333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.166666666666666
+        },
+        {
+          "clock": 19,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "6211-P2-familiar-full.jsonl.gz",
+      "logSha256": "af0b38f0c455aa0c757d84c2ea5cfd8dfbdb16317dda44ad956f38fc4fafb5ba",
+      "margin": 19,
+      "score": [
+        1,
+        20
+      ],
+      "nominalWork": 209839,
+      "planning": 39,
+      "checkAimMatches": 7,
+      "ringTicks": [
+        1452,
+        3348
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 7,
+      "delivered": 7,
+      "actualResets": 19,
+      "knownResets": 19,
+      "assessments": 144,
+      "large": 7,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 7,
+      "checks": [
+        {
+          "time": 13.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 15.466666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 20.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 21.8,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.566666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 55.833333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 21.1,
+          "completedAt": 27.133333333333333,
+          "firstHiddenAt": 23.066666666666666,
+          "firstObservedReturnAt": 24.333333333333332,
+          "observedLowAfterReturnAt": 24.866666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 32.666666666666664,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43.766666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 56.36666666666667,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "6211-P2-familiar-monitorOff.jsonl.gz",
+      "logSha256": "6a969583e73ef1e8a18927fd00dd229773bbec595c472321d9bcd6ad23143bf7",
+      "margin": 9,
+      "score": [
+        4,
+        13
+      ],
+      "nominalWork": 208862,
+      "planning": 39,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2324,
+        4204
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 0,
+      "actualResets": 14,
+      "knownResets": 14,
+      "assessments": 124,
+      "large": 9,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 21.1,
+          "completedAt": 26.8,
+          "firstHiddenAt": 23.166666666666668,
+          "firstObservedReturnAt": 24.433333333333334,
+          "observedLowAfterReturnAt": 24.966666666666665,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 27.8
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 35,
+          "firstHiddenAt": 32.43333333333333,
+          "firstObservedReturnAt": 35.63333333333333,
+          "observedLowAfterReturnAt": 36.233333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.233333333333334
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 56.666666666666664,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "6211-P2-familiar-scheduled.jsonl.gz",
+      "logSha256": "e53e02aa17e252f481cb8cc6eee43be60ead45b87bb76c2f9a20fc3f7ee944d3",
+      "margin": 8,
+      "score": [
+        3,
+        11
+      ],
+      "nominalWork": 209466,
+      "planning": 33,
+      "checkAimMatches": 7,
+      "ringTicks": [
+        2878,
+        5029
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 7,
+      "delivered": 7,
+      "actualResets": 10,
+      "knownResets": 10,
+      "assessments": 123,
+      "large": 7,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 5,
+      "checks": [
+        {
+          "time": 6.066666666666666,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 14.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.166666666666668,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 31.733333333333334,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 40.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 48.833333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 57.4,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 35.233333333333334,
+          "firstHiddenAt": 32.63333333333333,
+          "firstObservedReturnAt": 36.06666666666666,
+          "observedLowAfterReturnAt": 36.36666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.36666666666667
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.4,
+          "firstHiddenAt": 44.7,
+          "firstObservedReturnAt": 46,
+          "observedLowAfterReturnAt": 46.53333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.86666666666667
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 57.1,
+          "completedAt": null,
+          "firstHiddenAt": 58.63333333333333,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "6211-P2-switch-full.jsonl.gz",
+      "logSha256": "2f999613577f59d28c18ea70f5b66bd25b1f01188e45f2086f8014ed11387bb7",
+      "margin": 10,
+      "score": [
+        3,
+        13
+      ],
+      "nominalWork": 209349,
+      "planning": 33,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        2028,
+        4528
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 13,
+      "knownResets": 13,
+      "assessments": 119,
+      "large": 8,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 8,
+      "checks": [
+        {
+          "time": 13.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 15.466666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 20.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 21.8,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.566666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 40.93333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 49.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 21.1,
+          "completedAt": 27.133333333333333,
+          "firstHiddenAt": 23.066666666666666,
+          "firstObservedReturnAt": 24.333333333333332,
+          "observedLowAfterReturnAt": 24.866666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 34.3,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.53333333333333,
+          "firstHiddenAt": 44.233333333333334,
+          "firstObservedReturnAt": 44.8,
+          "observedLowAfterReturnAt": 44.8,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.53333333333333
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "6211-P2-switch-monitorOff.jsonl.gz",
+      "logSha256": "80155a4eea21c0cc7a817e9f6273930aa3be9fbcb021fc91035e898105548208",
+      "margin": 8,
+      "score": [
+        4,
+        12
+      ],
+      "nominalWork": 207765,
+      "planning": 34,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2469,
+        4938
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 10,
+      "delivered": 0,
+      "actualResets": 10,
+      "knownResets": 10,
+      "assessments": 120,
+      "large": 13,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 21.1,
+          "completedAt": 26.8,
+          "firstHiddenAt": 23.166666666666668,
+          "firstObservedReturnAt": 24.433333333333334,
+          "observedLowAfterReturnAt": 24.966666666666665,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 27.8
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 36.166666666666664,
+          "firstHiddenAt": 31.933333333333334,
+          "firstObservedReturnAt": 32.36666666666667,
+          "observedLowAfterReturnAt": 34.36666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.166666666666664
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.13333333333333,
+          "firstObservedReturnAt": 56.6,
+          "observedLowAfterReturnAt": 56.6,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 6211,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "6211-P2-switch-scheduled.jsonl.gz",
+      "logSha256": "2121e385c6f5dedaa12da539fa5e66cfc8aa5d2838eb57fdb6d5d3a9441fb96d",
+      "margin": 10,
+      "score": [
+        2,
+        12
+      ],
+      "nominalWork": 207647,
+      "planning": 34,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        2746,
+        5487
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 7,
+      "knownResets": 7,
+      "assessments": 134,
+      "large": 13,
+      "resetStraddles": [],
+      "usefulChecks": 3,
+      "visibleChecks": 5,
+      "checks": [
+        {
+          "time": 5.3,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 12.8,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 20.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 27.766666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 35.233333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 42.733333333333334,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 50.2,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 57.699999999999996,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 21.1,
+          "completedAt": 26.8,
+          "firstHiddenAt": 23.166666666666668,
+          "firstObservedReturnAt": 24.433333333333334,
+          "observedLowAfterReturnAt": 24.966666666666665,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 28.8
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 36.166666666666664,
+          "firstHiddenAt": 31.933333333333334,
+          "firstObservedReturnAt": 32.36666666666667,
+          "observedLowAfterReturnAt": 34.36666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.166666666666664
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.43333333333333,
+          "firstObservedReturnAt": 57.13333333333333,
+          "observedLowAfterReturnAt": 57.13333333333333,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "7307-P1-familiar-full.jsonl.gz",
+      "logSha256": "84a661e5b27d7e1ca89b85748aaa95f40a2bfe85f981fcd3aabb0a40e844d52d",
+      "margin": 11,
+      "score": [
+        14,
+        3
+      ],
+      "nominalWork": 208353,
+      "planning": 41,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        4701,
+        2724
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 11,
+      "knownResets": 11,
+      "assessments": 129,
+      "large": 8,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 8,
+      "checks": [
+        {
+          "time": 7.866666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 12.733333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 15.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.766666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 31.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 40.46666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 42.56666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 54.666666666666664,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7.533333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31.7,
+          "completedAt": 36.53333333333333,
+          "firstHiddenAt": 33.13333333333333,
+          "firstObservedReturnAt": 34.5,
+          "observedLowAfterReturnAt": 35.06666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.53333333333333
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.93333333333333,
+          "firstHiddenAt": 44.63333333333333,
+          "firstObservedReturnAt": 45.93333333333333,
+          "observedLowAfterReturnAt": 46.46666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 57.833333333333336,
+          "firstObservedReturnAt": 59.1,
+          "observedLowAfterReturnAt": 59.6,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "7307-P1-familiar-monitorOff.jsonl.gz",
+      "logSha256": "7603ee47aaee08bb5a27d60472e765d5d9421b8e0df3a1f430ddb0f65647c58a",
+      "margin": 8,
+      "score": [
+        12,
+        4
+      ],
+      "nominalWork": 208454,
+      "planning": 30,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        5363,
+        2766
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 10,
+      "delivered": 0,
+      "actualResets": 8,
+      "knownResets": 8,
+      "assessments": 123,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7.533333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.1,
+          "completedAt": 26.066666666666666,
+          "firstHiddenAt": 21.233333333333334,
+          "firstObservedReturnAt": 22.5,
+          "observedLowAfterReturnAt": 23.03333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 27.066666666666666
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 36.36666666666667,
+          "firstHiddenAt": 33.233333333333334,
+          "firstObservedReturnAt": 34.46666666666667,
+          "observedLowAfterReturnAt": 35.03333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.36666666666667
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 45.1,
+          "completedAt": 50.733333333333334,
+          "firstHiddenAt": 47.266666666666666,
+          "firstObservedReturnAt": 48.5,
+          "observedLowAfterReturnAt": 49,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 51.733333333333334
+        },
+        {
+          "clock": 55,
+          "status": "returned",
+          "startedAt": 55,
+          "completedAt": 59.733333333333334,
+          "firstHiddenAt": 56.6,
+          "firstObservedReturnAt": 57.86666666666667,
+          "observedLowAfterReturnAt": 58.36666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 3,
+      "postRoutine": 2
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "7307-P1-familiar-scheduled.jsonl.gz",
+      "logSha256": "87685b510ffb203e5c788f9b9e5b97c091d12a37418fc3b8f32e22e812155b15",
+      "margin": 10,
+      "score": [
+        14,
+        4
+      ],
+      "nominalWork": 208147,
+      "planning": 34,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        4839,
+        2378
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 10,
+      "knownResets": 10,
+      "assessments": 127,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 2,
+      "visibleChecks": 4,
+      "checks": [
+        {
+          "time": 1,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 8.5,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 15.966666666666667,
+          "visible": false,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 23.466666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 30.933333333333334,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 38.43333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 45.9,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 53.4,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7.533333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.1,
+          "completedAt": 26.066666666666666,
+          "firstHiddenAt": 21.233333333333334,
+          "firstObservedReturnAt": 22.5,
+          "observedLowAfterReturnAt": 23.03333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 27.066666666666666
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 36.36666666666667,
+          "firstHiddenAt": 33.233333333333334,
+          "firstObservedReturnAt": 34.46666666666667,
+          "observedLowAfterReturnAt": 35.03333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.36666666666667
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 45.1,
+          "completedAt": 50.63333333333333,
+          "firstHiddenAt": 47,
+          "firstObservedReturnAt": 48.233333333333334,
+          "observedLowAfterReturnAt": 48.766666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 57.4,
+          "firstObservedReturnAt": 58.666666666666664,
+          "observedLowAfterReturnAt": 59.199999999999996,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "7307-P1-switch-full.jsonl.gz",
+      "logSha256": "1c168fdecbd6d7615459911e4910f448a122c6731644315e26c1c6b168c7e00f",
+      "margin": 10,
+      "score": [
+        12,
+        2
+      ],
+      "nominalWork": 208719,
+      "planning": 38,
+      "checkAimMatches": 12,
+      "ringTicks": [
+        5114,
+        3134
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 12,
+      "delivered": 12,
+      "actualResets": 9,
+      "knownResets": 9,
+      "assessments": 125,
+      "large": 14,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 11,
+      "checks": [
+        {
+          "time": 7.866666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 12.733333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 15.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.766666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 31.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 32.46666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 36.7,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 46.4,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 49.7,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 52.733333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 54.833333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 59.266666666666666,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7.533333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31.7,
+          "completedAt": 36.36666666666667,
+          "firstHiddenAt": 32.666666666666664,
+          "firstObservedReturnAt": 33.2,
+          "observedLowAfterReturnAt": 33.2,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.46666666666667,
+          "firstHiddenAt": 44.233333333333334,
+          "firstObservedReturnAt": 44.7,
+          "observedLowAfterReturnAt": 44.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.46666666666667
+        },
+        {
+          "clock": 55,
+          "status": "returned",
+          "startedAt": 55,
+          "completedAt": 59.233333333333334,
+          "firstHiddenAt": 56.1,
+          "firstObservedReturnAt": 56.53333333333333,
+          "observedLowAfterReturnAt": 56.53333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 3,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "7307-P1-switch-monitorOff.jsonl.gz",
+      "logSha256": "84c2533b54848ace5a633fac3a3cb4fc71f7664f8142692b39a1c22278ce7a7b",
+      "margin": 5,
+      "score": [
+        9,
+        4
+      ],
+      "nominalWork": 208230,
+      "planning": 25,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        5366,
+        3246
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 12,
+      "delivered": 0,
+      "actualResets": 8,
+      "knownResets": 8,
+      "assessments": 113,
+      "large": 13,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7.533333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19.1,
+          "completedAt": 26.066666666666666,
+          "firstHiddenAt": 21.233333333333334,
+          "firstObservedReturnAt": 22.5,
+          "observedLowAfterReturnAt": 23.03333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 27.066666666666666
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 35.8,
+          "firstHiddenAt": 32.166666666666664,
+          "firstObservedReturnAt": 32.733333333333334,
+          "observedLowAfterReturnAt": 32.733333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 36.8
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "returned",
+          "startedAt": 55,
+          "completedAt": 59.166666666666664,
+          "firstHiddenAt": 56.03333333333333,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "7307-P1-switch-scheduled.jsonl.gz",
+      "logSha256": "f7045b7b53755b4b473ac35837b60a15d7793f171cabd26ee841aee6a0f60f70",
+      "margin": 11,
+      "score": [
+        12,
+        1
+      ],
+      "nominalWork": 208108,
+      "planning": 26,
+      "checkAimMatches": 12,
+      "ringTicks": [
+        5740,
+        3514
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 12,
+      "delivered": 12,
+      "actualResets": 6,
+      "knownResets": 6,
+      "assessments": 108,
+      "large": 5,
+      "resetStraddles": [],
+      "usefulChecks": 3,
+      "visibleChecks": 8,
+      "checks": [
+        {
+          "time": 0.6666666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 5.666666666666667,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 10.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 15.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 20.633333333333333,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 25.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 30.599999999999998,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 35.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 40.56666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 45.56666666666666,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 50.56666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 55.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7.533333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.733333333333334,
+          "firstHiddenAt": 20.6,
+          "firstObservedReturnAt": 21.866666666666667,
+          "observedLowAfterReturnAt": 22.366666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 36.166666666666664,
+          "firstHiddenAt": 32.06666666666666,
+          "firstObservedReturnAt": 32.4,
+          "observedLowAfterReturnAt": 34.233333333333334,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.166666666666664
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.63333333333333,
+          "firstHiddenAt": 44.266666666666666,
+          "firstObservedReturnAt": 46.13333333333333,
+          "observedLowAfterReturnAt": 46.43333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.63333333333333
+        },
+        {
+          "clock": 55,
+          "status": "returned",
+          "startedAt": 55,
+          "completedAt": 59.53333333333333,
+          "firstHiddenAt": 56.3,
+          "firstObservedReturnAt": 56.833333333333336,
+          "observedLowAfterReturnAt": 56.833333333333336,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 3,
+      "postRoutine": 2
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "7307-P2-familiar-full.jsonl.gz",
+      "logSha256": "9921a7a49be322c15230f025d46eb9e1604bc933c6d149fb1fa79820d1959685",
+      "margin": 11,
+      "score": [
+        2,
+        13
+      ],
+      "nominalWork": 209253,
+      "planning": 33,
+      "checkAimMatches": 4,
+      "ringTicks": [
+        3158,
+        4443
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 4,
+      "delivered": 4,
+      "actualResets": 13,
+      "knownResets": 13,
+      "assessments": 130,
+      "large": 4,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 4,
+      "checks": [
+        {
+          "time": 23.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 26.966666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.46666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 53.833333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.066666666666666,
+          "firstHiddenAt": 8.6,
+          "firstObservedReturnAt": 9.866666666666667,
+          "observedLowAfterReturnAt": 11.233333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.066666666666666
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 44.1,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 56.9,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "7307-P2-familiar-monitorOff.jsonl.gz",
+      "logSha256": "373d42d347f208753056eb7fdd75b51512832745513ae8fe81784cdc6a772d6e",
+      "margin": 13,
+      "score": [
+        2,
+        15
+      ],
+      "nominalWork": 208445,
+      "planning": 31,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2740,
+        4507
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 4,
+      "delivered": 0,
+      "actualResets": 13,
+      "knownResets": 13,
+      "assessments": 125,
+      "large": 4,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.066666666666666,
+          "firstHiddenAt": 8.6,
+          "firstObservedReturnAt": 9.866666666666667,
+          "observedLowAfterReturnAt": 11.233333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.066666666666666
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.166666666666664,
+          "firstHiddenAt": 44.8,
+          "firstObservedReturnAt": 46.1,
+          "observedLowAfterReturnAt": 46.666666666666664,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 56.63333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 0
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "7307-P2-familiar-scheduled.jsonl.gz",
+      "logSha256": "51db62d87c47c6605e38579d2a384c01fd5ef47d4a8269113f6cc8d509a40bb4",
+      "margin": 11,
+      "score": [
+        4,
+        15
+      ],
+      "nominalWork": 210142,
+      "planning": 46,
+      "checkAimMatches": 4,
+      "ringTicks": [
+        1920,
+        4284
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 4,
+      "delivered": 4,
+      "actualResets": 14,
+      "knownResets": 14,
+      "assessments": 143,
+      "large": 10,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 4,
+      "checks": [
+        {
+          "time": 2.033333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 17,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 31.966666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 46.93333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 20.833333333333332,
+          "completedAt": 26.066666666666666,
+          "firstHiddenAt": 22.6,
+          "firstObservedReturnAt": 23.866666666666667,
+          "observedLowAfterReturnAt": 24.366666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 27.066666666666666
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 40.733333333333334,
+          "firstHiddenAt": 33.3,
+          "firstObservedReturnAt": 34.53333333333333,
+          "observedLowAfterReturnAt": 35.06666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43.2,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 0
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "7307-P2-switch-full.jsonl.gz",
+      "logSha256": "8048faf2d3d893f8b8354782837c3bed39b73d98fc90b7cf98ce7f97d8da95cd",
+      "margin": 7,
+      "score": [
+        2,
+        9
+      ],
+      "nominalWork": 208926,
+      "planning": 24,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        3742,
+        5782
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 6,
+      "knownResets": 6,
+      "assessments": 104,
+      "large": 8,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 7,
+      "checks": [
+        {
+          "time": 23.6,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 26.966666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 39.13333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.06666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 47.86666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 54.36666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 57.63333333333333,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 59.63333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.066666666666666,
+          "firstHiddenAt": 8.6,
+          "firstObservedReturnAt": 9.866666666666667,
+          "observedLowAfterReturnAt": 11.233333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.066666666666666
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.53333333333333,
+          "firstHiddenAt": 44.233333333333334,
+          "firstObservedReturnAt": 44.766666666666666,
+          "observedLowAfterReturnAt": 44.766666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.9
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.266666666666666,
+          "firstObservedReturnAt": 58.43333333333333,
+          "observedLowAfterReturnAt": 58.733333333333334,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "7307-P2-switch-monitorOff.jsonl.gz",
+      "logSha256": "0b2960f62851b9febd520e26cc0079dbef4acdd4388a08234adbdb775860641e",
+      "margin": 8,
+      "score": [
+        3,
+        11
+      ],
+      "nominalWork": 208713,
+      "planning": 25,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2893,
+        5182
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 9,
+      "delivered": 0,
+      "actualResets": 9,
+      "knownResets": 9,
+      "assessments": 104,
+      "large": 9,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.066666666666666,
+          "firstHiddenAt": 8.6,
+          "firstObservedReturnAt": 9.866666666666667,
+          "observedLowAfterReturnAt": 11.233333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.066666666666666
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 35.6,
+          "firstHiddenAt": 32.46666666666667,
+          "firstObservedReturnAt": 32.9,
+          "observedLowAfterReturnAt": 32.9,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 36.6
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 56.333333333333336,
+          "completedAt": null,
+          "firstHiddenAt": 57.86666666666667,
+          "firstObservedReturnAt": 58.43333333333333,
+          "observedLowAfterReturnAt": 58.43333333333333,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 7307,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "7307-P2-switch-scheduled.jsonl.gz",
+      "logSha256": "19954a125e66d37eeb3daf3d6264481ecf37b3903edfd63918420e571c7e549b",
+      "margin": 6,
+      "score": [
+        4,
+        10
+      ],
+      "nominalWork": 208008,
+      "planning": 29,
+      "checkAimMatches": 8,
+      "ringTicks": [
+        2570,
+        5341
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 8,
+      "actualResets": 8,
+      "knownResets": 8,
+      "assessments": 102,
+      "large": 11,
+      "resetStraddles": [],
+      "usefulChecks": 4,
+      "visibleChecks": 3,
+      "checks": [
+        {
+          "time": 1,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 8.5,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 15.966666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.466666666666665,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 30.933333333333334,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 38.43333333333333,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 45.9,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 53.4,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.066666666666666,
+          "firstHiddenAt": 8.6,
+          "firstObservedReturnAt": 9.866666666666667,
+          "observedLowAfterReturnAt": 11.233333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.066666666666666
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.333333333333332,
+          "firstHiddenAt": 20.733333333333334,
+          "firstObservedReturnAt": 24.1,
+          "observedLowAfterReturnAt": 24.4,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 32.56666666666666,
+          "completedAt": 37.6,
+          "firstHiddenAt": 33.96666666666667,
+          "firstObservedReturnAt": 34.6,
+          "observedLowAfterReturnAt": 34.6,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.3,
+          "firstHiddenAt": 44.13333333333333,
+          "firstObservedReturnAt": 44.6,
+          "observedLowAfterReturnAt": 44.6,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.3
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "8423-P1-familiar-full.jsonl.gz",
+      "logSha256": "d7c9ec0ff0e526db4de0cd747c313a876b53a298492678479a02c2b3f35be054",
+      "margin": 14,
+      "score": [
+        16,
+        2
+      ],
+      "nominalWork": 209849,
+      "planning": 36,
+      "checkAimMatches": 10,
+      "ringTicks": [
+        5073,
+        2226
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 10,
+      "delivered": 10,
+      "actualResets": 10,
+      "knownResets": 10,
+      "assessments": 131,
+      "large": 11,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 9,
+      "checks": [
+        {
+          "time": 16.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 19.966666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 25.466666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 30.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 40.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.96666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 45.06666666666666,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 47.36666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 55.4,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 59.5,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 8.433333333333334,
+          "completedAt": 13.466666666666667,
+          "firstHiddenAt": 9.966666666666667,
+          "firstObservedReturnAt": 11.233333333333333,
+          "observedLowAfterReturnAt": 11.733333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 14.466666666666667
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": 20.766666666666666,
+          "firstObservedReturnAt": 20.833333333333332,
+          "observedLowAfterReturnAt": 20.866666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 35.1,
+          "completedAt": 41.1,
+          "firstHiddenAt": 37.3,
+          "firstObservedReturnAt": 38.56666666666666,
+          "observedLowAfterReturnAt": 39.13333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.46666666666667,
+          "firstHiddenAt": 44.7,
+          "firstObservedReturnAt": 45.96666666666667,
+          "observedLowAfterReturnAt": 46.46666666666667,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.46666666666667
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.833333333333336,
+          "firstObservedReturnAt": 58.1,
+          "observedLowAfterReturnAt": 58.6,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "8423-P1-familiar-monitorOff.jsonl.gz",
+      "logSha256": "4671af3fe2dc50cd1ebff525cab35d9ec2e50f0a535f466e20deae826b23554c",
+      "margin": 13,
+      "score": [
+        16,
+        3
+      ],
+      "nominalWork": 209744,
+      "planning": 37,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        4482,
+        2010
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 0,
+      "actualResets": 13,
+      "knownResets": 13,
+      "assessments": 140,
+      "large": 9,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 8.433333333333334,
+          "completedAt": 13.466666666666667,
+          "firstHiddenAt": 9.966666666666667,
+          "firstObservedReturnAt": 11.233333333333333,
+          "observedLowAfterReturnAt": 11.733333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 14.466666666666667
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": 20.766666666666666,
+          "firstObservedReturnAt": 20.833333333333332,
+          "observedLowAfterReturnAt": 20.866666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 35.1,
+          "completedAt": 41.1,
+          "firstHiddenAt": 37.3,
+          "firstObservedReturnAt": 38.56666666666666,
+          "observedLowAfterReturnAt": 39.13333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 42.1
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.93333333333333,
+          "firstHiddenAt": 44.733333333333334,
+          "firstObservedReturnAt": 46,
+          "observedLowAfterReturnAt": 46.53333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.93333333333333
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "8423-P1-familiar-scheduled.jsonl.gz",
+      "logSha256": "08f052183a14d659c51232151293b286a2c0e4b5fd9d9f6a07ef4bbcf0b2fa0d",
+      "margin": 14,
+      "score": [
+        16,
+        2
+      ],
+      "nominalWork": 210043,
+      "planning": 40,
+      "checkAimMatches": 10,
+      "ringTicks": [
+        4677,
+        2150
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 10,
+      "delivered": 10,
+      "actualResets": 12,
+      "knownResets": 12,
+      "assessments": 141,
+      "large": 10,
+      "resetStraddles": [],
+      "usefulChecks": 2,
+      "visibleChecks": 7,
+      "checks": [
+        {
+          "time": 3.4,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 9.366666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 15.366666666666667,
+          "visible": false,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 21.333333333333332,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 27.333333333333332,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 33.333333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 39.3,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 45.3,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 51.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 57.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 8.433333333333334,
+          "completedAt": 13.466666666666667,
+          "firstHiddenAt": 9.966666666666667,
+          "firstObservedReturnAt": 11.233333333333333,
+          "observedLowAfterReturnAt": 11.733333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 14.466666666666667
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": 20.766666666666666,
+          "firstObservedReturnAt": 20.833333333333332,
+          "observedLowAfterReturnAt": 20.866666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 35.1,
+          "completedAt": 41.1,
+          "firstHiddenAt": 37.3,
+          "firstObservedReturnAt": 38.56666666666666,
+          "observedLowAfterReturnAt": 39.13333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 42.1
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.93333333333333,
+          "firstHiddenAt": 44.733333333333334,
+          "firstObservedReturnAt": 46,
+          "observedLowAfterReturnAt": 46.53333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.93333333333333
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "8423-P1-switch-full.jsonl.gz",
+      "logSha256": "25611e42c5a13f9708290fee1d00a834261c6ea918ec2cbd080b04b9efdd24f7",
+      "margin": 11,
+      "score": [
+        14,
+        3
+      ],
+      "nominalWork": 210718,
+      "planning": 44,
+      "checkAimMatches": 11,
+      "ringTicks": [
+        4713,
+        1742
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 11,
+      "delivered": 11,
+      "actualResets": 11,
+      "knownResets": 11,
+      "assessments": 125,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 9,
+      "checks": [
+        {
+          "time": 16.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 19.966666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 25.466666666666665,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 30.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 33.56666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 35.06666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 37.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.86666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 44.833333333333336,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 45.833333333333336,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 57.699999999999996,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 8.433333333333334,
+          "completedAt": 13.466666666666667,
+          "firstHiddenAt": 9.966666666666667,
+          "firstObservedReturnAt": 11.233333333333333,
+          "observedLowAfterReturnAt": 11.733333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 14.466666666666667
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": 20.766666666666666,
+          "firstObservedReturnAt": 20.833333333333332,
+          "observedLowAfterReturnAt": 20.866666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 34.03333333333333,
+          "completedAt": 39.53333333333333,
+          "firstHiddenAt": 35.3,
+          "firstObservedReturnAt": 35.8,
+          "observedLowAfterReturnAt": 35.8,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 40.53333333333333
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.6,
+          "firstHiddenAt": 44.266666666666666,
+          "firstObservedReturnAt": 46.06666666666666,
+          "observedLowAfterReturnAt": 46.666666666666664,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.6
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 56.43333333333333,
+          "completedAt": null,
+          "firstHiddenAt": 57.9,
+          "firstObservedReturnAt": 58.36666666666667,
+          "observedLowAfterReturnAt": 58.36666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "8423-P1-switch-monitorOff.jsonl.gz",
+      "logSha256": "8e5dde5ac642d6d9dac7441f3469b62fad847f6b3e7c18d970e17b09b5f73044",
+      "margin": 13,
+      "score": [
+        15,
+        2
+      ],
+      "nominalWork": 210910,
+      "planning": 46,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        4731,
+        1484
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 9,
+      "delivered": 0,
+      "actualResets": 11,
+      "knownResets": 11,
+      "assessments": 144,
+      "large": 11,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 8.433333333333334,
+          "completedAt": 13.466666666666667,
+          "firstHiddenAt": 9.966666666666667,
+          "firstObservedReturnAt": 11.233333333333333,
+          "observedLowAfterReturnAt": 11.733333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 14.466666666666667
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": 20.766666666666666,
+          "firstObservedReturnAt": 20.833333333333332,
+          "observedLowAfterReturnAt": 20.866666666666667,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 34.03333333333333,
+          "completedAt": 39.6,
+          "firstHiddenAt": 35.3,
+          "firstObservedReturnAt": 35.8,
+          "observedLowAfterReturnAt": 35.8,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.5,
+          "firstHiddenAt": 44.3,
+          "firstObservedReturnAt": 44.833333333333336,
+          "observedLowAfterReturnAt": 44.833333333333336,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 0
+    },
+    {
+      "seed": 8423,
+      "seat": "P1",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "8423-P1-switch-scheduled.jsonl.gz",
+      "logSha256": "75424b16d5f22b5ecc5e402cff2d92d095335bc1168eb30a90d22ea678bd8def",
+      "margin": 8,
+      "score": [
+        12,
+        4
+      ],
+      "nominalWork": 210406,
+      "planning": 40,
+      "checkAimMatches": 11,
+      "ringTicks": [
+        4849,
+        2296
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 11,
+      "delivered": 11,
+      "actualResets": 11,
+      "knownResets": 11,
+      "assessments": 122,
+      "large": 7,
+      "resetStraddles": [],
+      "usefulChecks": 2,
+      "visibleChecks": 9,
+      "checks": [
+        {
+          "time": 3.0666666666666664,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 8.533333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 13.966666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 19.4,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 24.833333333333332,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 30.3,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 35.733333333333334,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.166666666666664,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 46.63333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 52.06666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 57.5,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 8.433333333333334,
+          "completedAt": 13.466666666666667,
+          "firstHiddenAt": 9.966666666666667,
+          "firstObservedReturnAt": 11.233333333333333,
+          "observedLowAfterReturnAt": 11.733333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 15
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 24.1,
+          "firstHiddenAt": 20.766666666666666,
+          "firstObservedReturnAt": 22.766666666666666,
+          "observedLowAfterReturnAt": 23.066666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.866666666666667
+        },
+        {
+          "clock": 31,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43.93333333333333,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "full",
+      "logFile": "8423-P2-familiar-full.jsonl.gz",
+      "logSha256": "602d1d32fb3d0e3389f67cffc7a60ead1f17ccd6e6f77dcaabe5fb5376e5ce0c",
+      "margin": 9,
+      "score": [
+        3,
+        12
+      ],
+      "nominalWork": 209823,
+      "planning": 34,
+      "checkAimMatches": 9,
+      "ringTicks": [
+        3143,
+        4857
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 9,
+      "delivered": 9,
+      "actualResets": 11,
+      "knownResets": 11,
+      "assessments": 132,
+      "large": 9,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 8,
+      "checks": [
+        {
+          "time": 6.7,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 7.966666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 28.066666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 33.3,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 35.2,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 41.666666666666664,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 54.9,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 59.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.633333333333333,
+          "firstHiddenAt": 8.9,
+          "firstObservedReturnAt": 10.166666666666666,
+          "observedLowAfterReturnAt": 10.666666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.633333333333333
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 21.266666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 48.53333333333333,
+          "firstHiddenAt": 44.766666666666666,
+          "firstObservedReturnAt": 46.03333333333333,
+          "observedLowAfterReturnAt": 46.53333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 49.53333333333333
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "monitorOff",
+      "logFile": "8423-P2-familiar-monitorOff.jsonl.gz",
+      "logSha256": "db784f0aa09f6ee74442a25a56fafc6c6c66a28b4f8112f458da10a5915e9654",
+      "margin": 11,
+      "score": [
+        2,
+        13
+      ],
+      "nominalWork": 209981,
+      "planning": 36,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2619,
+        5241
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 8,
+      "delivered": 0,
+      "actualResets": 9,
+      "knownResets": 9,
+      "assessments": 136,
+      "large": 10,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": 9.633333333333333,
+          "firstObservedReturnAt": 10.9,
+          "observedLowAfterReturnAt": 11.4,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 20.4,
+          "completedAt": 25.233333333333334,
+          "firstHiddenAt": 21.966666666666665,
+          "firstObservedReturnAt": 23.833333333333332,
+          "observedLowAfterReturnAt": 24.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 26.233333333333334
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43.833333333333336,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 57.266666666666666,
+          "completedAt": null,
+          "firstHiddenAt": 58.8,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "familiar",
+      "variant": "scheduled",
+      "logFile": "8423-P2-familiar-scheduled.jsonl.gz",
+      "logSha256": "28aa3e38826e0c32295ec6ad34cdc0e6c69991498a6fe0f49083c7921581cb1d",
+      "margin": 9,
+      "score": [
+        3,
+        12
+      ],
+      "nominalWork": 210253,
+      "planning": 39,
+      "checkAimMatches": 9,
+      "ringTicks": [
+        2962,
+        4437
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 9,
+      "delivered": 9,
+      "actualResets": 13,
+      "knownResets": 13,
+      "assessments": 138,
+      "large": 12,
+      "resetStraddles": [],
+      "usefulChecks": 2,
+      "visibleChecks": 7,
+      "checks": [
+        {
+          "time": 3.7666666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 10.433333333333334,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 17.066666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.733333333333334,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 30.366666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 37.03333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 43.666666666666664,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 50.333333333333336,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 56.96666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 19,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 37.06666666666666,
+          "firstHiddenAt": 33.56666666666666,
+          "firstObservedReturnAt": 34.833333333333336,
+          "observedLowAfterReturnAt": 35.333333333333336,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 38.06666666666666
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 45.166666666666664,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "reset-interrupted",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 1,
+      "postRoutine": 1
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "full",
+      "logFile": "8423-P2-switch-full.jsonl.gz",
+      "logSha256": "e98fc182731d45782b24d357f6fb92f1ae6fe0188d8899333474dbf0be2db342",
+      "margin": 8,
+      "score": [
+        4,
+        12
+      ],
+      "nominalWork": 209484,
+      "planning": 38,
+      "checkAimMatches": 6,
+      "ringTicks": [
+        2248,
+        4662
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 6,
+      "delivered": 6,
+      "actualResets": 12,
+      "knownResets": 12,
+      "assessments": 119,
+      "large": 5,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 5,
+      "checks": [
+        {
+          "time": 6.7,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 7.966666666666667,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 23.266666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 28.066666666666666,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 38.7,
+          "visible": true,
+          "useful": false,
+          "reset": true
+        },
+        {
+          "time": 56.699999999999996,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 12.633333333333333,
+          "firstHiddenAt": 8.9,
+          "firstObservedReturnAt": 10.166666666666666,
+          "observedLowAfterReturnAt": 10.666666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 13.633333333333333
+        },
+        {
+          "clock": 19,
+          "status": "reset-interrupted",
+          "startedAt": 21.266666666666666,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 31,
+          "status": "reset-interrupted",
+          "startedAt": 31,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 43,
+          "status": "reset-interrupted",
+          "startedAt": 43,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 57.46666666666667,
+          "completedAt": null,
+          "firstHiddenAt": 58.666666666666664,
+          "firstObservedReturnAt": 59.233333333333334,
+          "observedLowAfterReturnAt": 59.233333333333334,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 0,
+      "postRoutine": 0
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "monitorOff",
+      "logFile": "8423-P2-switch-monitorOff.jsonl.gz",
+      "logSha256": "639ed5f424d517dfa113631022fee21502441d0c37a832630afc5a108db02e6c",
+      "margin": 9,
+      "score": [
+        2,
+        11
+      ],
+      "nominalWork": 210939,
+      "planning": 43,
+      "checkAimMatches": 0,
+      "ringTicks": [
+        2736,
+        6410
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 5,
+      "delivered": 0,
+      "actualResets": 3,
+      "knownResets": 3,
+      "assessments": 136,
+      "large": 6,
+      "resetStraddles": [],
+      "usefulChecks": 0,
+      "visibleChecks": 0,
+      "checks": [],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "reset-interrupted",
+          "startedAt": 7,
+          "completedAt": null,
+          "firstHiddenAt": 9.633333333333333,
+          "firstObservedReturnAt": 10.9,
+          "observedLowAfterReturnAt": 11.4,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 20.4,
+          "completedAt": 25.233333333333334,
+          "firstHiddenAt": 21.966666666666665,
+          "firstObservedReturnAt": 23.833333333333332,
+          "observedLowAfterReturnAt": 24.133333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 26.233333333333334
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 31,
+          "completedAt": 36.666666666666664,
+          "firstHiddenAt": 32.4,
+          "firstObservedReturnAt": 32.93333333333333,
+          "observedLowAfterReturnAt": 32.93333333333333,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 37.666666666666664
+        },
+        {
+          "clock": 43,
+          "status": "not-started",
+          "startedAt": null,
+          "completedAt": null,
+          "firstHiddenAt": null,
+          "firstObservedReturnAt": null,
+          "observedLowAfterReturnAt": null,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 55,
+          "status": "returned",
+          "startedAt": 55,
+          "completedAt": 59.699999999999996,
+          "firstHiddenAt": 56.3,
+          "firstObservedReturnAt": 56.766666666666666,
+          "observedLowAfterReturnAt": 56.766666666666666,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 1
+    },
+    {
+      "seed": 8423,
+      "seat": "P2",
+      "condition": "switch",
+      "variant": "scheduled",
+      "logFile": "8423-P2-switch-scheduled.jsonl.gz",
+      "logSha256": "fd1925fd8fd4c740d53f09f504dd0299af8c4ac8b79929b27958e2413cf67ca6",
+      "margin": 8,
+      "score": [
+        3,
+        11
+      ],
+      "nominalWork": 208792,
+      "planning": 29,
+      "checkAimMatches": 6,
+      "ringTicks": [
+        2767,
+        6178
+      ],
+      "decisions": 1796,
+      "steps": 7200,
+      "proposed": 6,
+      "delivered": 6,
+      "actualResets": 4,
+      "knownResets": 4,
+      "assessments": 105,
+      "large": 6,
+      "resetStraddles": [],
+      "usefulChecks": 1,
+      "visibleChecks": 2,
+      "checks": [
+        {
+          "time": 5.666666666666667,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 15.633333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 25.6,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 35.6,
+          "visible": false,
+          "useful": true,
+          "reset": false
+        },
+        {
+          "time": 45.56666666666666,
+          "visible": false,
+          "useful": false,
+          "reset": false
+        },
+        {
+          "time": 55.53333333333333,
+          "visible": true,
+          "useful": false,
+          "reset": false
+        }
+      ],
+      "opportunities": [
+        {
+          "clock": 7,
+          "status": "returned",
+          "startedAt": 7,
+          "completedAt": 16.066666666666666,
+          "firstHiddenAt": 9.633333333333333,
+          "firstObservedReturnAt": 10.9,
+          "observedLowAfterReturnAt": 11.4,
+          "recoveredByHorizon": true,
+          "routineResumedAt": null
+        },
+        {
+          "clock": 19,
+          "status": "returned",
+          "startedAt": 19,
+          "completedAt": 23.733333333333334,
+          "firstHiddenAt": 21.1,
+          "firstObservedReturnAt": 24.2,
+          "observedLowAfterReturnAt": 24.6,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 25.6
+        },
+        {
+          "clock": 31,
+          "status": "returned",
+          "startedAt": 33.8,
+          "completedAt": 39.03333333333333,
+          "firstHiddenAt": 35.13333333333333,
+          "firstObservedReturnAt": 35.7,
+          "observedLowAfterReturnAt": 35.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 40.03333333333333
+        },
+        {
+          "clock": 43,
+          "status": "returned",
+          "startedAt": 43,
+          "completedAt": 47.43333333333333,
+          "firstHiddenAt": 44.233333333333334,
+          "firstObservedReturnAt": 44.7,
+          "observedLowAfterReturnAt": 44.7,
+          "recoveredByHorizon": true,
+          "routineResumedAt": 48.43333333333333
+        },
+        {
+          "clock": 55,
+          "status": "terminal-censored",
+          "startedAt": 55,
+          "completedAt": null,
+          "firstHiddenAt": 56.199999999999996,
+          "firstObservedReturnAt": 56.699999999999996,
+          "observedLowAfterReturnAt": 56.699999999999996,
+          "recoveredByHorizon": false,
+          "routineResumedAt": null
+        }
+      ],
+      "postRecovered": 2,
+      "postRoutine": 2
+    }
+  ],
+  "frozenReplayAuditComparison": {
+    "file": "tether-c2-scored-audit-59a62eeb.json",
+    "sha256": "36a94f9340102858adcb6dd3709f2dfe719c1971f57f77acd25a3b259a51622e",
+    "all48Replayed": true,
+    "allOpportunityFieldsAgree": true,
+    "allResetAndUsefulCheckCountsAgree": true,
+    "fullPerceptStreamDesiredCommandsReproduced": 28736,
+    "replayPerformedBy": "builder; independently inspected and cross-checked retained output"
+  }
+}

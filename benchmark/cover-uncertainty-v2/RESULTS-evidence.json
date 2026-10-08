@@ -1,0 +1,354 @@
+{
+  "checkpoint": "59a62eeb690ab8ffc3478ff688674bfbea11f84c",
+  "remoteCheckpointURL": "https://github.com/Wordweaver-EH/tether/commit/59a62eeb690ab8ffc3478ff688674bfbea11f84c",
+  "releaseReceivedUTC": "2026-10-08T01:06:17Z",
+  "originalScoreSession": 1802,
+  "launchConfirmedUTC": "2026-10-08T01:06:22Z",
+  "terminalConfirmedUTC": "2026-10-08T01:08:28Z",
+  "exitCode": 0,
+  "completion": "All48 planned bouts; original session returned Finished score; source unchanged and terminal exit0. No stop request, extra seed, rerun, exclusion or tuning.",
+  "auditSession": 14651,
+  "auditExitCode": 0,
+  "auditTerminalConfirmedUTC": "2026-10-08T01:09:47Z",
+  "sourceManifestSha256": "31e26f15edeb1ab42fa6207d06e3484b5d07bfacda1ece4a110e2ad147104f99",
+  "logs": [
+    {
+      "file": "5107-P1-familiar-full.jsonl.gz",
+      "sha256": "4c98055bf6e8f98283f17497ef08cf5b60e4c641e3d6cb317f0973b7c2a1f6e4",
+      "bytes": 1085908,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P1-familiar-monitorOff.jsonl.gz",
+      "sha256": "96ad38e36d558dafc79d4c9623ff972ded31367f24a714767e13fc08cd394e88",
+      "bytes": 1112507,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P1-familiar-scheduled.jsonl.gz",
+      "sha256": "6a78da04ea005e0946c829ef40c0b719bf4472813434e05c8c1b610b69df499c",
+      "bytes": 1112510,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P1-switch-full.jsonl.gz",
+      "sha256": "a4d857ff729aefbff8ddd665b9f9a57a6a81f478848faec16de0db5132e1b6d7",
+      "bytes": 1038986,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P1-switch-monitorOff.jsonl.gz",
+      "sha256": "cf6aa17fdd667e369259f64f77f0c8dd14197ec28be0110e011476956ee64331",
+      "bytes": 1062576,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P1-switch-scheduled.jsonl.gz",
+      "sha256": "b457c37654e57a21baa1b6c52ad7b325ddb2da5314c29daf95f7aa5157646025",
+      "bytes": 1060271,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P2-familiar-full.jsonl.gz",
+      "sha256": "773ce95df23258289a1312779afd7ffc13ae1ea079e1cda934738b1cb027cefb",
+      "bytes": 1033251,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P2-familiar-monitorOff.jsonl.gz",
+      "sha256": "757a8fddecf5aa60d84f40328d5002ad50c15c32a3d3f848928b0d8029eb91f9",
+      "bytes": 1083342,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P2-familiar-scheduled.jsonl.gz",
+      "sha256": "0cc50f7201b90bbe8bccc1470a8fc0d7d4ba31a3d40663976688b5a9bc08cd25",
+      "bytes": 1088327,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P2-switch-full.jsonl.gz",
+      "sha256": "1edfcd6f11c42d99329a193c0f69b1b0c20abce40b7a14b2c50b9d2512d9bb62",
+      "bytes": 1026214,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P2-switch-monitorOff.jsonl.gz",
+      "sha256": "329289a1654201ff735b4c262a02904364c94496ae569d082b3730985e9b5c48",
+      "bytes": 1042055,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "5107-P2-switch-scheduled.jsonl.gz",
+      "sha256": "a1ebd710cfc48f3713abc7117318580623aec49bffcfe7648bc178bcc2ef1fe2",
+      "bytes": 1063213,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P1-familiar-full.jsonl.gz",
+      "sha256": "66bfe752053db5f72ac8cfffa12847ae10d9b65e0ba176e1fe7f9bafca3d96dc",
+      "bytes": 803947,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P1-familiar-monitorOff.jsonl.gz",
+      "sha256": "e37a48d172561a0fc22003074c9a6d8722b52ad83480429721cfbd1f0382495f",
+      "bytes": 803968,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P1-familiar-scheduled.jsonl.gz",
+      "sha256": "bb71a19fc58ae4f04de6e66dc57e3281cd3831d4307702210516d50ef87310e9",
+      "bytes": 803990,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P1-switch-full.jsonl.gz",
+      "sha256": "f0b08633aa7229084afbcb2688aa5f73ede78ea04c452961bed4a4b172ed5116",
+      "bytes": 803944,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P1-switch-monitorOff.jsonl.gz",
+      "sha256": "63a454882ff34bc9a6156e680670dd9a46a838d85d6f0345cc26e08a607d9a9f",
+      "bytes": 803970,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P1-switch-scheduled.jsonl.gz",
+      "sha256": "da4cd5fb58ea5a44bcc7a167316e7a32b15209686d3387852cd5aaef2f26eaec",
+      "bytes": 803990,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P2-familiar-full.jsonl.gz",
+      "sha256": "af0b38f0c455aa0c757d84c2ea5cfd8dfbdb16317dda44ad956f38fc4fafb5ba",
+      "bytes": 1132695,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P2-familiar-monitorOff.jsonl.gz",
+      "sha256": "6a969583e73ef1e8a18927fd00dd229773bbec595c472321d9bcd6ad23143bf7",
+      "bytes": 1082032,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P2-familiar-scheduled.jsonl.gz",
+      "sha256": "e53e02aa17e252f481cb8cc6eee43be60ead45b87bb76c2f9a20fc3f7ee944d3",
+      "bytes": 1079270,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P2-switch-full.jsonl.gz",
+      "sha256": "2f999613577f59d28c18ea70f5b66bd25b1f01188e45f2086f8014ed11387bb7",
+      "bytes": 1068990,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P2-switch-monitorOff.jsonl.gz",
+      "sha256": "80155a4eea21c0cc7a817e9f6273930aa3be9fbcb021fc91035e898105548208",
+      "bytes": 1061345,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "6211-P2-switch-scheduled.jsonl.gz",
+      "sha256": "2121e385c6f5dedaa12da539fa5e66cfc8aa5d2838eb57fdb6d5d3a9441fb96d",
+      "bytes": 1098989,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P1-familiar-full.jsonl.gz",
+      "sha256": "84a661e5b27d7e1ca89b85748aaa95f40a2bfe85f981fcd3aabb0a40e844d52d",
+      "bytes": 1109290,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P1-familiar-monitorOff.jsonl.gz",
+      "sha256": "7603ee47aaee08bb5a27d60472e765d5d9421b8e0df3a1f430ddb0f65647c58a",
+      "bytes": 1073107,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P1-familiar-scheduled.jsonl.gz",
+      "sha256": "87685b510ffb203e5c788f9b9e5b97c091d12a37418fc3b8f32e22e812155b15",
+      "bytes": 1087959,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P1-switch-full.jsonl.gz",
+      "sha256": "1c168fdecbd6d7615459911e4910f448a122c6731644315e26c1c6b168c7e00f",
+      "bytes": 1084844,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P1-switch-monitorOff.jsonl.gz",
+      "sha256": "84c2533b54848ace5a633fac3a3cb4fc71f7664f8142692b39a1c22278ce7a7b",
+      "bytes": 1045725,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P1-switch-scheduled.jsonl.gz",
+      "sha256": "f7045b7b53755b4b473ac35837b60a15d7793f171cabd26ee841aee6a0f60f70",
+      "bytes": 1060936,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P2-familiar-full.jsonl.gz",
+      "sha256": "9921a7a49be322c15230f025d46eb9e1604bc933c6d149fb1fa79820d1959685",
+      "bytes": 1094839,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P2-familiar-monitorOff.jsonl.gz",
+      "sha256": "373d42d347f208753056eb7fdd75b51512832745513ae8fe81784cdc6a772d6e",
+      "bytes": 1097031,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P2-familiar-scheduled.jsonl.gz",
+      "sha256": "51db62d87c47c6605e38579d2a384c01fd5ef47d4a8269113f6cc8d509a40bb4",
+      "bytes": 1123504,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P2-switch-full.jsonl.gz",
+      "sha256": "8048faf2d3d893f8b8354782837c3bed39b73d98fc90b7cf98ce7f97d8da95cd",
+      "bytes": 1028817,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P2-switch-monitorOff.jsonl.gz",
+      "sha256": "0b2960f62851b9febd520e26cc0079dbef4acdd4388a08234adbdb775860641e",
+      "bytes": 1039730,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "7307-P2-switch-scheduled.jsonl.gz",
+      "sha256": "19954a125e66d37eeb3daf3d6264481ecf37b3903edfd63918420e571c7e549b",
+      "bytes": 1030708,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P1-familiar-full.jsonl.gz",
+      "sha256": "d7c9ec0ff0e526db4de0cd747c313a876b53a298492678479a02c2b3f35be054",
+      "bytes": 1097685,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P1-familiar-monitorOff.jsonl.gz",
+      "sha256": "4671af3fe2dc50cd1ebff525cab35d9ec2e50f0a535f466e20deae826b23554c",
+      "bytes": 1123540,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P1-familiar-scheduled.jsonl.gz",
+      "sha256": "08f052183a14d659c51232151293b286a2c0e4b5fd9d9f6a07ef4bbcf0b2fa0d",
+      "bytes": 1120634,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P1-switch-full.jsonl.gz",
+      "sha256": "25611e42c5a13f9708290fee1d00a834261c6ea918ec2cbd080b04b9efdd24f7",
+      "bytes": 1089159,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P1-switch-monitorOff.jsonl.gz",
+      "sha256": "8e5dde5ac642d6d9dac7441f3469b62fad847f6b3e7c18d970e17b09b5f73044",
+      "bytes": 1110392,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P1-switch-scheduled.jsonl.gz",
+      "sha256": "75424b16d5f22b5ecc5e402cff2d92d095335bc1168eb30a90d22ea678bd8def",
+      "bytes": 1076499,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P2-familiar-full.jsonl.gz",
+      "sha256": "602d1d32fb3d0e3389f67cffc7a60ead1f17ccd6e6f77dcaabe5fb5376e5ce0c",
+      "bytes": 1095582,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P2-familiar-monitorOff.jsonl.gz",
+      "sha256": "db784f0aa09f6ee74442a25a56fafc6c6c66a28b4f8112f458da10a5915e9654",
+      "bytes": 1091316,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P2-familiar-scheduled.jsonl.gz",
+      "sha256": "28aa3e38826e0c32295ec6ad34cdc0e6c69991498a6fe0f49083c7921581cb1d",
+      "bytes": 1097854,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P2-switch-full.jsonl.gz",
+      "sha256": "e98fc182731d45782b24d357f6fb92f1ae6fe0188d8899333474dbf0be2db342",
+      "bytes": 1062643,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P2-switch-monitorOff.jsonl.gz",
+      "sha256": "639ed5f424d517dfa113631022fee21502441d0c37a832630afc5a108db02e6c",
+      "bytes": 1075150,
+      "steps": 7200,
+      "decisions": 1796
+    },
+    {
+      "file": "8423-P2-switch-scheduled.jsonl.gz",
+      "sha256": "fd1925fd8fd4c740d53f09f504dd0299af8c4ac8b79929b27958e2413cf67ca6",
+      "bytes": 1044767,
+      "steps": 7200,
+      "decisions": 1796
+    }
+  ],
+  "totalRawBytes": 50118001,
+  "rawPublication": "not authorized; retained locally only"
+}
